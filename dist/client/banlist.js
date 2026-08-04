@@ -26,7 +26,7 @@ const fallbackCards = [
   { id: 'fallback-initiative', oracle_id: 'fallback-initiative', name: 'White Plume Adventurer', type_line: 'Creature — Human Nomad', oracle_text: 'When White Plume Adventurer enters the battlefield, you take the initiative.\nAt the beginning of your upkeep, untap target creature. It gets +1/+1 and gains vigilance until end of turn.', mana_cost: '{2}{W}', cmc: 3, rarity: 'uncommon', artist: 'Zoltan Boros', set_name: 'Commander Legends: Battle for Baldur’s Gate', color_identity: ['W'], formats: ['legacy', 'pauper'], image: '', scryfall_uri: 'https://scryfall.com/card/clb/36/white-plume-adventurer' },
 ];
 
-const state = { cards: [], filtered: [], selectedFormats: new Set(), query: '', identity: '', type: '', cmc: '', rarity: '', sort: 'name-asc', visible: 48, modalCard: null, modalFace: 0, lastFocus: null, loadingMore: false, loadToken: 0 };
+const state = { cards: [], filtered: [], selectedFormats: new Set(), query: '', identity: '', type: '', cmc: '', rarity: '', sort: 'name-asc', view: 'cards', visible: 48, modalCard: null, modalFace: 0, lastFocus: null, loadingMore: false, loadToken: 0 };
 const cacheKey = `codex-banlist-cache:${site.scryfallQuery}`;
 const cacheTtl = 1000 * 60 * 60 * 6;
 const $ = (id) => document.getElementById(id);
@@ -92,6 +92,7 @@ function readUrl() {
   state.cmc = params.get('cmc') || '';
   state.rarity = params.get('rarity') || '';
   state.sort = params.get('sort') || 'name-asc';
+  state.view = params.get('view') === 'list' ? 'list' : 'cards';
   state.selectedFormats = new Set((params.get('formats') || '').split(',').filter((key) => formats.some((format) => format.key === key)));
   $('searchInput').value = state.query;
   if ($('mobileSearchInput')) $('mobileSearchInput').value = state.query;
@@ -111,6 +112,7 @@ function syncUrl() {
   if (state.cmc) params.set('cmc', state.cmc);
   if (state.rarity) params.set('rarity', state.rarity);
   if (state.sort !== 'name-asc') params.set('sort', state.sort);
+  if (state.view === 'list') params.set('view', 'list');
   history.replaceState(null, '', `${location.pathname}${params.toString() ? `?${params}` : ''}`);
 }
 
@@ -181,6 +183,7 @@ function renderActiveFilters() {
 
 function renderCards() {
   const visibleCards = state.filtered.slice(0, state.visible);
+  $('cardGrid').classList.toggle('is-list', state.view === 'list');
   $('cardGrid').innerHTML = visibleCards.map((card) => {
     const badges = card.formats.slice(0, 3).map((format) => `<span class="format-badge">${formats.find((item) => item.key === format)?.short || format}</span>`).join('');
     const more = card.formats.length > 3 ? `<span class="format-badge format-badge--more">+${card.formats.length - 3}</span>` : '';
@@ -197,6 +200,8 @@ function render() {
   const progressLabel = state.loadingMore ? ' · atualizando arquivo' : '';
   $('resultCount').textContent = state.cards.length ? `${state.filtered.length} ${state.filtered.length === 1 ? 'carta encontrada' : 'cartas encontradas'}${progressLabel}` : 'Nenhuma carta carregada';
   $('filterCount').textContent = `${state.filtered.length} resultados`;
+  const cardsView = $('cardsView'); const listView = $('listView');
+  if (cardsView && listView) { cardsView.setAttribute('aria-pressed', String(state.view === 'cards')); listView.setAttribute('aria-pressed', String(state.view === 'list')); }
 }
 
 function rarityLabel(value) { return ({ common: 'Comum', uncommon: 'Incomum', rare: 'Rara', mythic: 'Mítica' }[value] || 'Especial'); }
@@ -232,7 +237,7 @@ async function loadBackground() {
   } catch { /* fundo abstrato permanece ativo quando a coleção não responder */ }
 }
 
-function clearFilters() { state.selectedFormats.clear(); state.query = ''; state.identity = ''; state.type = ''; state.cmc = ''; state.rarity = ''; state.sort = 'name-asc'; $('searchInput').value = ''; $('identityFilter').value = ''; $('typeFilter').value = ''; $('cmcFilter').value = ''; $('rarityFilter').value = ''; $('sortFilter').value = 'name-asc'; syncUrl(); applyFilters(); }
+function clearFilters() { state.selectedFormats.clear(); state.query = ''; state.identity = ''; state.type = ''; state.cmc = ''; state.rarity = ''; state.sort = 'name-asc'; $('searchInput').value = ''; if ($('mobileSearchInput')) $('mobileSearchInput').value = ''; $('identityFilter').value = ''; $('typeFilter').value = ''; $('cmcFilter').value = ''; $('rarityFilter').value = ''; $('sortFilter').value = 'name-asc'; syncUrl(); applyFilters(); }
 
 function bindParallax() {
   if (matchMedia('(prefers-reduced-motion: reduce)').matches || innerWidth < 700) return;
@@ -249,6 +254,7 @@ function bind() {
   const applySelect = (key, element) => { element.addEventListener('change', () => { state[key] = element.value; syncUrl(); applyFilters(); }); };
   applySelect('identity', $('identityFilter')); applySelect('type', $('typeFilter')); applySelect('cmc', $('cmcFilter')); applySelect('rarity', $('rarityFilter')); applySelect('sort', $('sortFilter'));
   let searchTimer; const searchInputs = [$('searchInput'), $('mobileSearchInput')].filter(Boolean); searchInputs.forEach((input) => input.addEventListener('input', (event) => { clearTimeout(searchTimer); searchInputs.forEach((item) => { if (item !== event.target) item.value = event.target.value; }); searchTimer = setTimeout(() => { state.query = event.target.value.trim(); syncUrl(); applyFilters(); }, 240); }));
+  const setView = (view) => { state.view = view; syncUrl(); render(); }; $('cardsView')?.addEventListener('click', () => setView('cards')); $('listView')?.addEventListener('click', () => setView('list'));
   $('cardGrid').addEventListener('click', (event) => { const tile = event.target.closest('[data-card-id]'); if (tile) openCard(state.cards.find((card) => card.id === tile.dataset.cardId)); });
   $('loadMore').addEventListener('click', () => { state.visible += 48; renderCards(); }); $('clearFilters').addEventListener('click', clearFilters); $('emptyClear').addEventListener('click', clearFilters);
   $('activeFilters').addEventListener('click', (event) => { const button = event.target.closest('[data-remove-filter]'); if (!button) return; const key = button.dataset.removeFilter; if (key.startsWith('format:')) state.selectedFormats.delete(key.slice(7)); else if (key === 'q') state.query = ''; else state[key] = ''; syncUrl(); readUrl(); applyFilters(); });
