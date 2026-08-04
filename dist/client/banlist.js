@@ -26,7 +26,9 @@ const fallbackCards = [
   { id: 'fallback-initiative', oracle_id: 'fallback-initiative', name: 'White Plume Adventurer', type_line: 'Creature — Human Nomad', oracle_text: 'When White Plume Adventurer enters the battlefield, you take the initiative.\nAt the beginning of your upkeep, untap target creature. It gets +1/+1 and gains vigilance until end of turn.', mana_cost: '{2}{W}', cmc: 3, rarity: 'uncommon', artist: 'Zoltan Boros', set_name: 'Commander Legends: Battle for Baldur’s Gate', color_identity: ['W'], formats: ['legacy', 'pauper'], image: '', scryfall_uri: 'https://scryfall.com/card/clb/36/white-plume-adventurer' },
 ];
 
-const state = { cards: [], filtered: [], selectedFormats: new Set(), query: '', identity: '', type: '', cmc: '', rarity: '', sort: 'name-asc', visible: 48, modalCard: null, modalFace: 0, lastFocus: null };
+const state = { cards: [], filtered: [], selectedFormats: new Set(), query: '', identity: '', type: '', cmc: '', rarity: '', sort: 'name-asc', visible: 48, modalCard: null, modalFace: 0, lastFocus: null, loadingMore: false, loadToken: 0 };
+const cacheKey = `codex-banlist-cache:${site.scryfallQuery}`;
+const cacheTtl = 1000 * 60 * 60 * 6;
 const $ = (id) => document.getElementById(id);
 const escapeHtml = (value = '') => String(value).replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[char]));
 const slug = (value = '') => value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
@@ -53,16 +55,31 @@ function dedupeCards(cards) {
   return [...byOracle.values()].filter((card) => card.formats.length || card.id.startsWith('fallback-'));
 }
 
-async function fetchBanlist() {
+function readCardsCache() {
+  try {
+    const cached = JSON.parse(localStorage.getItem(cacheKey) || 'null');
+    if (!cached || !Array.isArray(cached.cards) || Date.now() - cached.savedAt > cacheTtl) return null;
+    return dedupeCards(cached.cards);
+  } catch { return null; }
+}
+
+function writeCardsCache(cards) {
+  try { localStorage.setItem(cacheKey, JSON.stringify({ savedAt: Date.now(), cards })); } catch { /* Storage can be unavailable or full. */ }
+}
+
+async function fetchBanlistProgressively(onPage) {
   const cards = [];
   let url = `https://api.scryfall.com/cards/search?q=${encodeURIComponent(site.scryfallQuery)}&unique=cards&order=name`;
+  let firstPage = true;
   while (url) {
     const response = await fetch(url, { headers: { Accept: 'application/json' } });
     if (!response.ok) throw new Error(`Scryfall ${response.status}`);
     const payload = await response.json();
     cards.push(...(payload.data || []));
+    onPage(dedupeCards(cards), firstPage);
+    firstPage = false;
     url = payload.has_more && payload.next_page ? payload.next_page : '';
-    if (url) await new Promise((resolve) => setTimeout(resolve, 90));
+    if (url) await new Promise((resolve) => setTimeout(resolve, 55));
   }
   return dedupeCards(cards);
 }
@@ -177,7 +194,8 @@ function renderCards() {
 
 function render() {
   renderSeals(); renderActiveFilters(); renderCards();
-  $('resultCount').textContent = state.cards.length ? `${state.filtered.length} ${state.filtered.length === 1 ? 'carta encontrada' : 'cartas encontradas'}` : 'Nenhuma carta carregada';
+  const progressLabel = state.loadingMore ? ' · atualizando arquivo' : '';
+  $('resultCount').textContent = state.cards.length ? `${state.filtered.length} ${state.filtered.length === 1 ? 'carta encontrada' : 'cartas encontradas'}${progressLabel}` : 'Nenhuma carta carregada';
   $('filterCount').textContent = `${state.filtered.length} resultados`;
 }
 
@@ -241,8 +259,27 @@ function bind() {
 }
 
 async function loadCards() {
-  $('loadingState').hidden = false; $('errorState').hidden = true; $('cardGrid').innerHTML = ''; $('emptyState').hidden = true;
-  try { state.cards = await fetchBanlist(); if (!state.cards.length) throw new Error('empty'); $('totalCards').textContent = state.cards.length; $('lastUpdated').textContent = new Intl.DateTimeFormat('pt-BR', { hour: '2-digit', minute: '2-digit' }).format(new Date()); renderSeals(); applyFilters(); } catch { state.cards = fallbackCards.map((card) => ({ ...card, image: card.image || makePlaceholder(card.name, card.color_identity[0]) })); $('totalCards').textContent = '—'; $('lastUpdated').textContent = 'offline'; renderSeals(); applyFilters(); $('errorState').hidden = false; } finally { $('loadingState').hidden = true; const selectedId = new URLSearchParams(location.search).get('card'); const selected = state.cards.find((card) => card.id === selectedId); if (selected) openCard(selected); }
+  const token = ++state.loadToken;
+  const cachedCards = readCardsCache();
+  $('loadingState').hidden = !cachedCards?.length; $('errorState').hidden = true; $('cardGrid').innerHTML = ''; $('emptyState').hidden = true;
+  if (cachedCards?.length) { state.cards = cachedCards; state.loadingMore = true; $('totalCards').textContent = `${cachedCards.length}+`; $('lastUpdated').textContent = 'cache'; renderSeals(); applyFilters(); }
+  try {
+    const fullCards = await fetchBanlistProgressively((partialCards, firstPage) => {
+      if (token !== state.loadToken) return;
+      if (firstPage || !cachedCards?.length) { $('loadingState').hidden = true; state.loadingMore = true; }
+      state.cards = partialCards; $('totalCards').textContent = `${partialCards.length}+`; $('lastUpdated').textContent = 'buscando'; renderSeals(); applyFilters();
+    });
+    if (token !== state.loadToken || !fullCards.length) throw new Error('empty');
+    state.cards = fullCards; state.loadingMore = false; $('totalCards').textContent = fullCards.length; $('lastUpdated').textContent = new Intl.DateTimeFormat('pt-BR', { hour: '2-digit', minute: '2-digit' }).format(new Date()); writeCardsCache(fullCards); renderSeals(); applyFilters();
+  } catch {
+    if (token !== state.loadToken) return;
+    state.loadingMore = false;
+    if (!state.cards.length) { state.cards = fallbackCards.map((card) => ({ ...card, image: card.image || makePlaceholder(card.name, card.color_identity[0]) })); $('totalCards').textContent = '—'; $('lastUpdated').textContent = 'offline'; renderSeals(); applyFilters(); $('errorState').hidden = false; } else { $('lastUpdated').textContent = 'cache'; render(); }
+  } finally {
+    if (token !== state.loadToken) return;
+    $('loadingState').hidden = true;
+    const selectedId = new URLSearchParams(location.search).get('card'); const selected = state.cards.find((card) => card.id === selectedId); if (selected) openCard(selected);
+  }
 }
 
 document.addEventListener('DOMContentLoaded', () => { const initials = $('brandInitials'); if (initials) initials.textContent = site.playgroupInitials; $('brandName').textContent = site.playgroupName; $('pageTitle').textContent = site.pageTitle; $('pageSubtitle').textContent = site.pageSubtitle; $('formatCount').textContent = formats.length; bind(); bindParallax(); loadCards(); loadBackground(); });
