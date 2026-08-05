@@ -23,7 +23,7 @@
     <link rel="preconnect" href="https://cards.scryfall.io" />
     <link rel="preconnect" href="https://api.scryfall.com" />
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=codex-11" />
+    <link rel="stylesheet" href="styles.css?v=codex-12" />
   </head>
   <body>
     <a class="skip-link" href="#archiveTitle">Ir para as cartas</a>
@@ -108,7 +108,7 @@
                 <button id="cardsView" type="button" aria-label="Ver em grade" aria-pressed="true"><span aria-hidden="true">▦</span></button>
                 <button id="listView" type="button" aria-label="Ver em lista" aria-pressed="false"><span aria-hidden="true">☷</span></button>
               </div>
-              <button class="filter-trigger" id="openFilters" type="button" aria-haspopup="dialog" aria-controls="filterPanel" aria-expanded="false">
+              <button class="filter-trigger" id="openFilters" type="button" aria-label="Abrir filtros" aria-haspopup="dialog" aria-controls="filterPanel" aria-expanded="false">
                 <span aria-hidden="true">≡</span><span>Filtros</span><b id="mobileFilterCount" hidden>0</b>
               </button>
             </div>
@@ -133,10 +133,16 @@
               <div class="filter-panel__body">
                 <fieldset class="filter-group">
                   <legend>Identidade de cor</legend>
-                  <label for="identityFilter">Cor da carta</label>
-                  <select id="identityFilter">
-                    <option value="">Todas as identidades</option><option value="W">Branco</option><option value="U">Azul</option><option value="B">Preto</option><option value="R">Vermelho</option><option value="G">Verde</option><option value="C">Incolor</option><option value="M">Multicolorida</option>
-                  </select>
+                  <p class="color-picker__intro" id="colorFilterHelp">Selecione uma ou mais cores</p>
+                  <div class="color-choice-grid" id="identityFilter" role="group" aria-describedby="colorFilterHelp">
+                    <button class="color-choice" type="button" data-color="W" aria-pressed="false" aria-label="Branco" title="Branco"><img src="https://svgs.scryfall.io/card-symbols/W.svg" alt="" aria-hidden="true" /><span class="color-choice__label">Branco</span></button>
+                    <button class="color-choice" type="button" data-color="U" aria-pressed="false" aria-label="Azul" title="Azul"><img src="https://svgs.scryfall.io/card-symbols/U.svg" alt="" aria-hidden="true" /><span class="color-choice__label">Azul</span></button>
+                    <button class="color-choice" type="button" data-color="B" aria-pressed="false" aria-label="Preto" title="Preto"><img src="https://svgs.scryfall.io/card-symbols/B.svg" alt="" aria-hidden="true" /><span class="color-choice__label">Preto</span></button>
+                    <button class="color-choice" type="button" data-color="R" aria-pressed="false" aria-label="Vermelho" title="Vermelho"><img src="https://svgs.scryfall.io/card-symbols/R.svg" alt="" aria-hidden="true" /><span class="color-choice__label">Vermelho</span></button>
+                    <button class="color-choice" type="button" data-color="G" aria-pressed="false" aria-label="Verde" title="Verde"><img src="https://svgs.scryfall.io/card-symbols/G.svg" alt="" aria-hidden="true" /><span class="color-choice__label">Verde</span></button>
+                    <button class="color-choice" type="button" data-color="C" aria-pressed="false" aria-label="Incolor" title="Incolor"><img src="https://svgs.scryfall.io/card-symbols/C.svg" alt="" aria-hidden="true" /><span class="color-choice__label">Incolor</span></button>
+                  </div>
+                  <p class="color-picker__hint">Mostra cartas que contenham qualquer cor selecionada.</p>
                 </fieldset>
                 <fieldset class="filter-group">
                   <legend>Características</legend>
@@ -270,6 +276,6 @@
     </dialog>
 
     <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
-    <script type="module" src="banlist.js?v=codex-11"></script>
+    <script type="module" src="banlist.js?v=codex-12"></script>
   </body>
 </html>

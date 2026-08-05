@@ -5,7 +5,7 @@ Web app mobile-first para consultar a banlist do Playgroup da Amizade com dados 
 ## Experiência
 
 - Busca instantânea por nome, texto, artista ou coleção, com normalização de acentos e sugestões em caso de erro de digitação.
-- Filtros por formato, identidade de cor, tipo, valor de mana, raridade e coleção.
+- Filtros por formato, identidade de cor com seleção múltipla por símbolos de mana, tipo, valor de mana, raridade e coleção.
 - Grade responsiva com imagens progressivas, dimensões reservadas, lazy loading e carregamento incremental.
 - Detalhe em tela cheia no mobile, com navegação entre cartas e retorno à posição exata da lista.
 - Informações completas devolvidas pelo Scryfall, organizadas por revelação progressiva.
@@ -27,6 +27,8 @@ Abra `http://localhost:4173`.
 A aplicação consulta as páginas de busca do Scryfall uma vez, filtra localmente e mantém um cache no dispositivo por seis horas. Se uma atualização falhar, o último arquivo disponível continua acessível; sem API e sem cache, a interface apresenta um erro real e oferece nova tentativa.
 
 As imagens da grade usam `srcset`, dimensões reservadas, decodificação assíncrona e `loading="lazy"`. Apenas 48 cartas são reveladas inicialmente; as seguintes entram sob demanda. O detalhe técnico completo de cada carta só é montado quando o usuário abre essa seção.
+
+Os valores em BRL são estimativas calculadas a partir do preço em USD fornecido pelo Scryfall e do câmbio de referência ECB consultado via Frankfurter. A área de mercado também oferece uma consulta direta da carta na LigaMagic; o site não faz scraping nem apresenta o valor convertido como se fosse uma cotação da LigaMagic.
 
 ## Configuração
 

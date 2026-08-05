@@ -19,13 +19,25 @@ const formats = [
   { key: 'pauper', label: 'Pauper', short: 'PAU', color: '#9b9b95' },
 ];
 
+const colorFilters = [
+  { key: 'W', label: 'Branco' },
+  { key: 'U', label: 'Azul' },
+  { key: 'B', label: 'Preto' },
+  { key: 'R', label: 'Vermelho' },
+  { key: 'G', label: 'Verde' },
+  { key: 'C', label: 'Incolor' },
+];
+
 const state = {
-  cards: [], filtered: [], selectedFormats: new Set(), query: '', identity: '', type: '', cmc: '', rarity: '', set: '',
+  cards: [], filtered: [], selectedFormats: new Set(), selectedColors: new Set(), query: '', type: '', cmc: '', rarity: '', set: '',
   sort: 'name-asc', view: 'cards', visible: 48, modalCard: null, modalFace: 0, lastFocus: null,
   savedScroll: 0, loadingMore: false, loadToken: 0, rawDetailsReady: false,
 };
 const cacheKey = `codex-banlist-cache:${site.scryfallQuery}`;
 const cacheTtl = 1000 * 60 * 60 * 6;
+const fxCacheKey = 'codex-banlist-fx:USD-BRL:ECB';
+const fxCacheTtl = 1000 * 60 * 60 * 12;
+let fxRatePromise;
 const $ = (id) => document.getElementById(id);
 const escapeHtml = (value = '') => String(value).replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[char]));
 const slug = (value = '') => value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
@@ -141,7 +153,9 @@ async function fetchBanlistProgressively(onPage) {
 function readUrl() {
   const params = new URLSearchParams(location.search);
   state.query = params.get('q') || '';
-  state.identity = params.get('identity') || '';
+  const legacyIdentity = params.get('identity') || '';
+  const selectedColors = (params.get('colors') || legacyIdentity).split(',');
+  state.selectedColors = new Set(selectedColors.filter((key) => colorFilters.some((color) => color.key === key)));
   state.type = params.get('type') || '';
   state.cmc = params.get('cmc') || '';
   state.rarity = params.get('rarity') || '';
@@ -150,7 +164,6 @@ function readUrl() {
   state.view = params.get('view') === 'list' ? 'list' : 'cards';
   state.selectedFormats = new Set((params.get('formats') || '').split(',').filter((key) => formats.some((format) => format.key === key)));
   $('searchInput').value = state.query;
-  $('identityFilter').value = state.identity;
   $('typeFilter').value = state.type;
   $('cmcFilter').value = state.cmc;
   $('rarityFilter').value = state.rarity;
@@ -163,7 +176,7 @@ function currentParams({ includeCard = Boolean(state.modalCard) } = {}) {
   const params = new URLSearchParams();
   if (state.query) params.set('q', state.query);
   if (state.selectedFormats.size) params.set('formats', [...state.selectedFormats].join(','));
-  if (state.identity) params.set('identity', state.identity);
+  if (state.selectedColors.size) params.set('colors', [...state.selectedColors].join(','));
   if (state.type) params.set('type', state.type);
   if (state.cmc) params.set('cmc', state.cmc);
   if (state.rarity) params.set('rarity', state.rarity);
@@ -204,7 +217,10 @@ function applyFilters() {
     const searchable = slug([card.name, card.type_line, card.oracle_text, card.artist, card.set_name].filter(Boolean).join(' '));
     const textMatch = !q || searchable.includes(q);
     const formatMatch = !state.selectedFormats.size || card.formats.some((format) => state.selectedFormats.has(format));
-    const identityMatch = !state.identity || cardIdentity(card) === state.identity;
+    const cardColors = card.color_identity || [];
+    const identityMatch = !state.selectedColors.size
+      || (state.selectedColors.has('C') && cardColors.length === 0)
+      || cardColors.some((color) => state.selectedColors.has(color));
     const typeMatch = cardTypeMatches(card, state.type);
     const cmc = Number(card.cmc || 0);
     const cmcMatch = !state.cmc || (state.cmc === '6' ? cmc >= 6 : cmc === Number(state.cmc));
@@ -243,12 +259,20 @@ function renderSeals() {
   $('formatSeals').innerHTML = html;
 }
 
+function renderColorFilters() {
+  $('identityFilter')?.querySelectorAll('[data-color]').forEach((button) => {
+    const active = state.selectedColors.has(button.dataset.color);
+    button.setAttribute('aria-pressed', String(active));
+  });
+}
+
 function renderActiveFilters() {
   const chips = [];
   if (state.query) chips.push(['q', `Busca: ${state.query}`]);
   state.selectedFormats.forEach((key) => chips.push([`format:${key}`, formats.find((format) => format.key === key)?.label || key]));
-  const selectLabels = { identity: { W: 'Branco', U: 'Azul', B: 'Preto', R: 'Vermelho', G: 'Verde', C: 'Incolor', M: 'Multicolorida' }, type: { creature: 'Criatura', instant: 'Instantâneo', sorcery: 'Feitiço', artifact: 'Artefato', enchantment: 'Encantamento', planeswalker: 'Planeswalker', land: 'Terreno', battle: 'Batalha', other: 'Outros' }, cmc: { 0: 'Mana 0', 1: 'Mana 1', 2: 'Mana 2', 3: 'Mana 3', 4: 'Mana 4', 5: 'Mana 5', 6: 'Mana 6+' }, rarity: { common: 'Comum', uncommon: 'Incomum', rare: 'Rara', mythic: 'Mítica', special: 'Especial' } };
-  [['identity', state.identity], ['type', state.type], ['cmc', state.cmc], ['rarity', state.rarity]].forEach(([key, value]) => { if (value) chips.push([key, selectLabels[key][value]]); });
+  state.selectedColors.forEach((key) => chips.push([`color:${key}`, colorFilters.find((color) => color.key === key)?.label || key]));
+  const selectLabels = { type: { creature: 'Criatura', instant: 'Instantâneo', sorcery: 'Feitiço', artifact: 'Artefato', enchantment: 'Encantamento', planeswalker: 'Planeswalker', land: 'Terreno', battle: 'Batalha', other: 'Outros' }, cmc: { 0: 'Mana 0', 1: 'Mana 1', 2: 'Mana 2', 3: 'Mana 3', 4: 'Mana 4', 5: 'Mana 5', 6: 'Mana 6+' }, rarity: { common: 'Comum', uncommon: 'Incomum', rare: 'Rara', mythic: 'Mítica', special: 'Especial' } };
+  [['type', state.type], ['cmc', state.cmc], ['rarity', state.rarity]].forEach(([key, value]) => { if (value) chips.push([key, selectLabels[key][value]]); });
   if (state.set) chips.push(['set', $('setFilter')?.selectedOptions?.[0]?.textContent || state.set.toUpperCase()]);
   $('activeFilters').innerHTML = chips.map(([key, label]) => `<span class="filter-chip">${escapeHtml(label)} <button type="button" data-remove-filter="${key}" aria-label="Remover filtro ${escapeHtml(label)}">×</button></span>`).join('');
   const mobileFilterCount = $('mobileFilterCount');
@@ -328,7 +352,7 @@ function renderEmptySuggestions() {
 }
 
 function render() {
-  renderSeals(); renderActiveFilters(); renderCards();
+  renderSeals(); renderColorFilters(); renderActiveFilters(); renderCards();
   const formatRail = document.querySelector('.format-rail');
   if (formatRail) formatRail.hidden = Boolean(state.cards.length && !state.filtered.length);
   const progressLabel = state.loadingMore ? ' · atualizando arquivo' : '';
@@ -384,7 +408,10 @@ function formatValue(value) {
 
 function formatDate(value) {
   if (!value) return '—';
-  const date = new Date(value);
+  const simpleDate = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(value));
+  const date = simpleDate
+    ? new Date(Number(simpleDate[1]), Number(simpleDate[2]) - 1, Number(simpleDate[3]))
+    : new Date(value);
   if (Number.isNaN(date.getTime())) return escapeHtml(String(value));
   return new Intl.DateTimeFormat('pt-BR', { dateStyle: 'short' }).format(date);
 }
@@ -458,11 +485,85 @@ function renderJsonTree(value, depth = 0, seen = new WeakSet()) {
   return '<span class="modal-empty">—</span>';
 }
 
-function priceMarkup(prices = {}) {
+function formatMarketPrice(value, currency) {
+  const amount = Number(value);
+  if (!Number.isFinite(amount)) return '—';
+  if (currency === 'TIX') return `${new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 2 }).format(amount)} TIX`;
+  return new Intl.NumberFormat('pt-BR', { style: 'currency', currency }).format(amount);
+}
+
+function isMarketValue(value) {
+  return value !== undefined && value !== null && value !== '' && Number.isFinite(Number(value));
+}
+
+function ligaMagicUrl(card) {
+  return `https://www.ligamagic.com.br/?view=cards/card&card=${encodeURIComponent(card?.name || '')}`;
+}
+
+function priceMarkup(prices = {}, card) {
+  const labels = { usd: ['USD', 'USD'], usd_foil: ['USD foil', 'USD'], usd_etched: ['USD etched', 'USD'], eur: ['EUR', 'EUR'], eur_foil: ['EUR foil', 'EUR'], tix: ['TIX', 'TIX'] };
   const rows = Object.entries(prices)
-    .filter(([, value]) => value !== undefined && value !== null && value !== '')
-    .map(([key, value]) => `<div class="modal-kv"><span class="modal-kv__label">${escapeHtml(prettyFieldLabel(key).replace('Usd', 'USD'))}</span><span class="modal-kv__value">${scalarValueMarkup(value)}</span></div>`);
-  return rows.length ? rows.join('') : '<span class="modal-empty">—</span>';
+    .filter(([key, value]) => labels[key] && value !== undefined && value !== null && value !== '')
+    .map(([key, value]) => `<div class="modal-kv"><span class="modal-kv__label">${labels[key][0]}</span><span class="modal-kv__value">${formatMarketPrice(value, labels[key][1])}</span></div>`)
+    .join('');
+  const hasUsdReference = ['usd', 'usd_foil', 'usd_etched'].some((key) => isMarketValue(prices[key]));
+  const brl = `<div class="market-brl" id="modalBrlPrices" aria-live="polite">${hasUsdReference
+    ? '<div class="modal-kv"><span class="modal-kv__label">BRL estimado</span><span class="modal-kv__value">Calculando…</span></div>'
+    : '<div class="modal-kv"><span class="modal-kv__label">BRL estimado</span><span class="modal-kv__value">—</span></div><p class="market-brl__note">Esta impressão não possui referência em USD para conversão.</p>'}</div>`;
+  const liga = `<a class="market-link" href="${escapeHtml(ligaMagicUrl(card))}" target="_blank" rel="noreferrer"><span>Consultar esta carta na LigaMagic</span><span aria-hidden="true">↗</span></a>`;
+  return `${brl}${rows || '<span class="modal-empty">—</span>'}${liga}`;
+}
+
+function readFxCache() {
+  try {
+    const cached = JSON.parse(localStorage.getItem(fxCacheKey) || 'null');
+    if (!cached || !Number.isFinite(cached.rate)) return null;
+    return { ...cached, stale: Date.now() - cached.savedAt > fxCacheTtl };
+  } catch { return null; }
+}
+
+async function getUsdBrlRate() {
+  const cached = readFxCache();
+  if (cached && !cached.stale) return cached;
+  if (!fxRatePromise) {
+    fxRatePromise = fetch('https://api.frankfurter.dev/v2/rate/USD/BRL?providers=ECB', { headers: { Accept: 'application/json' } })
+      .then(async (response) => {
+        if (!response.ok) throw new Error(`Câmbio ${response.status}`);
+        const payload = await response.json();
+        const rate = Number(payload.rate);
+        if (!Number.isFinite(rate)) throw new Error('Cotação inválida');
+        const result = { rate, date: payload.date || '', savedAt: Date.now(), stale: false };
+        try { localStorage.setItem(fxCacheKey, JSON.stringify(result)); } catch { /* Cache é opcional. */ }
+        return result;
+      })
+      .catch((error) => {
+        fxRatePromise = null;
+        if (cached) return cached;
+        throw error;
+      });
+  }
+  return fxRatePromise;
+}
+
+async function hydrateBrlPrices(card) {
+  const target = $('modalBrlPrices');
+  const prices = card?.prices || {};
+  const entries = [
+    ['BRL estimado', prices.usd],
+    ['BRL foil estimado', prices.usd_foil],
+    ['BRL etched estimado', prices.usd_etched],
+  ].filter(([, value]) => isMarketValue(value));
+  if (!target || !entries.length) return;
+  try {
+    const rateInfo = await getUsdBrlRate();
+    if (state.modalCard?.id !== card.id || !$('modalBrlPrices')) return;
+    const rows = entries.map(([label, value]) => `<div class="modal-kv"><span class="modal-kv__label">${label}</span><span class="modal-kv__value">${formatMarketPrice(Number(value) * rateInfo.rate, 'BRL')}</span></div>`).join('');
+    const date = rateInfo.date ? ` de ${formatDate(rateInfo.date)}` : '';
+    $('modalBrlPrices').innerHTML = `${rows}<p class="market-brl__note">Estimativa: preço Scryfall em USD × câmbio de referência ECB${date}${rateInfo.stale ? ' (último valor disponível)' : ''}. Não é uma cotação da LigaMagic.</p>`;
+  } catch {
+    if (state.modalCard?.id !== card.id || !$('modalBrlPrices')) return;
+    $('modalBrlPrices').innerHTML = '<div class="modal-kv"><span class="modal-kv__label">BRL estimado</span><span class="modal-kv__value">Indisponível</span></div><p class="market-brl__note">Não foi possível consultar o câmbio agora. Use o atalho abaixo para conferir o mercado brasileiro.</p>';
+  }
 }
 
 function legalitiesMarkup(legalities = {}) {
@@ -567,7 +668,8 @@ function renderModalDetails(card, side = 0) {
   ]);
 
   $('modalLegalities').innerHTML = legalitiesMarkup(card.legalities);
-  $('modalPrices').innerHTML = priceMarkup(card.prices || {});
+  $('modalPrices').innerHTML = priceMarkup(card.prices || {}, card);
+  hydrateBrlPrices(card);
   $('modalPrints').innerHTML = printings.length ? printings.map((item) => `<span class="modal-chip">${escapeHtml(String(item))}</span>`).join('') : '<span class="modal-empty">—</span>';
 
   $('modalRelations').innerHTML = [
@@ -713,8 +815,8 @@ async function loadBackground() {
 }
 
 function clearFilters() {
-  state.selectedFormats.clear(); state.query = ''; state.identity = ''; state.type = ''; state.cmc = ''; state.rarity = ''; state.set = ''; state.sort = 'name-asc';
-  $('searchInput').value = ''; $('identityFilter').value = ''; $('typeFilter').value = ''; $('cmcFilter').value = ''; $('rarityFilter').value = ''; $('setFilter').value = ''; $('sortFilter').value = 'name-asc';
+  state.selectedFormats.clear(); state.selectedColors.clear(); state.query = ''; state.type = ''; state.cmc = ''; state.rarity = ''; state.set = ''; state.sort = 'name-asc';
+  $('searchInput').value = ''; $('typeFilter').value = ''; $('cmcFilter').value = ''; $('rarityFilter').value = ''; $('setFilter').value = ''; $('sortFilter').value = 'name-asc';
   $('searchClear').hidden = true;
   syncUrl(); applyFilters();
 }
@@ -772,8 +874,16 @@ function bind() {
     syncUrl(); applyFilters();
   });
 
+  $('identityFilter').addEventListener('click', (event) => {
+    const button = event.target.closest('[data-color]');
+    if (!button) return;
+    const key = button.dataset.color;
+    state.selectedColors.has(key) ? state.selectedColors.delete(key) : state.selectedColors.add(key);
+    syncUrl(); applyFilters();
+  });
+
   const applySelect = (key, element) => element.addEventListener('change', () => { state[key] = element.value; syncUrl(); applyFilters(); });
-  applySelect('identity', $('identityFilter')); applySelect('type', $('typeFilter')); applySelect('cmc', $('cmcFilter')); applySelect('rarity', $('rarityFilter')); applySelect('set', $('setFilter')); applySelect('sort', $('sortFilter'));
+  applySelect('type', $('typeFilter')); applySelect('cmc', $('cmcFilter')); applySelect('rarity', $('rarityFilter')); applySelect('set', $('setFilter')); applySelect('sort', $('sortFilter'));
 
   let searchTimer;
   $('searchInput').addEventListener('input', (event) => {
@@ -806,6 +916,7 @@ function bind() {
     if (!button) return;
     const key = button.dataset.removeFilter;
     if (key.startsWith('format:')) state.selectedFormats.delete(key.slice(7));
+    else if (key.startsWith('color:')) state.selectedColors.delete(key.slice(6));
     else if (key === 'q') { state.query = ''; $('searchInput').value = ''; }
     else state[key] = '';
     syncUrl(); readUrl(); applyFilters();
