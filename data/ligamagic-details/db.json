@@ -1,0 +1,26 @@
+{
+  "dba4fd31-8931-42dd-bd86-45479c2abf74": {
+    "status": "available",
+    "name": "Tolarian Academy",
+    "price_brl": 299,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Saga de Urza",
+    "printing_code": "US",
+    "collector_number": "330",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Tolarian%20Academy",
+    "checked_at": "2026-08-05T20:14:08.833Z"
+  },
+  "dbd6a94b-62ff-4a10-9d52-bdd90b26e425": {
+    "status": "available",
+    "name": "Time Warp",
+    "price_brl": 44.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tempest Remastered",
+    "printing_code": "TPR",
+    "collector_number": "74",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Time%20Warp",
+    "checked_at": "2026-08-05T20:13:56.829Z"
+  }
+}

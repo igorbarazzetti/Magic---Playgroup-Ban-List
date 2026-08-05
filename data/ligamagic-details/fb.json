@@ -1,0 +1,26 @@
+{
+  "fb81f95c-70f8-4eb7-8d15-15d0ae23ec03": {
+    "status": "available",
+    "name": "Mystical Tutor",
+    "price_brl": 40,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "World Championship Decks",
+    "printing_code": "WCD",
+    "collector_number": "20000311",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mystical%20Tutor",
+    "checked_at": "2026-08-05T20:10:29.262Z"
+  },
+  "fbf9f8c5-849f-45d5-8129-5fc683c21a04": {
+    "status": "available",
+    "name": "Fury",
+    "price_brl": 14.89,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed Commander",
+    "printing_code": "ECC",
+    "collector_number": "50",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Fury",
+    "checked_at": "2026-08-05T20:06:37.646Z"
+  }
+}

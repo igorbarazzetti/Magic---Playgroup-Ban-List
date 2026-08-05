@@ -1,0 +1,26 @@
+{
+  "1a0770e6-b093-4439-baff-6889a50ba12e": {
+    "status": "available",
+    "name": "Mental Misstep",
+    "price_brl": 30,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nova Phyrexia",
+    "printing_code": "NPH",
+    "collector_number": "38",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mental%20Misstep",
+    "checked_at": "2026-08-05T20:09:41.098Z"
+  },
+  "1acbbf61-edf7-4f67-968b-6832c2dd54d1": {
+    "status": "available",
+    "name": "Unexpected Potential",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Conspiracy",
+    "printing_code": "CNS",
+    "collector_number": "12",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Unexpected%20Potential",
+    "checked_at": "2026-08-05T20:14:32.914Z"
+  }
+}

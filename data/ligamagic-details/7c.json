@@ -1,0 +1,26 @@
+{
+  "7c427c3d-ecd8-45ef-bebd-8f10f4a311db": {
+    "status": "available",
+    "name": "Gaea's Cradle",
+    "price_brl": 1999.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "World Championship Decks",
+    "printing_code": "WCD",
+    "collector_number": "20040590",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Gaea's%20Cradle",
+    "checked_at": "2026-08-05T20:06:40.649Z"
+  },
+  "7cafc972-a6f5-4cac-a3d3-8a3ae36ffb1e": {
+    "status": "available",
+    "name": "Upheaval",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 2",
+    "printing_code": "MH2",
+    "collector_number": "270",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Upheaval",
+    "checked_at": "2026-08-05T20:14:38.915Z"
+  }
+}

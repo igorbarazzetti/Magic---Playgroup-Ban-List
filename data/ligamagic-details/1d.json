@@ -1,0 +1,26 @@
+{
+  "1d67f5ff-1fce-45e5-b6a1-416c569351e2": {
+    "status": "available",
+    "name": "Gitaxian Probe",
+    "price_brl": 5.76,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nova Phyrexia",
+    "printing_code": "NPH",
+    "collector_number": "35",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Gitaxian%20Probe",
+    "checked_at": "2026-08-05T20:06:55.692Z"
+  },
+  "1de1b591-a73f-4974-b507-8c63e07a0868": {
+    "status": "available",
+    "name": "Thassa's Oracle",
+    "price_brl": 76.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros Além da Morte",
+    "printing_code": "THB",
+    "collector_number": "73",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Thassa's%20Oracle",
+    "checked_at": "2026-08-05T20:13:35.777Z"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "82004860-e589-4e38-8d61-8c0210e4ea39": {
+    "status": "available",
+    "name": "Demonic Tutor",
+    "price_brl": 125,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "MTGO Masters Edition IV",
+    "printing_code": "ME4",
+    "collector_number": "77",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Demonic%20Tutor",
+    "checked_at": "2026-08-05T20:05:13.449Z"
+  },
+  "824597b8-c89a-47ec-8526-7efc6e24ef0e": {
+    "status": "available",
+    "name": "Mox Pearl",
+    "price_brl": 3099.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "30th Anniversary Edition",
+    "printing_code": "30A",
+    "collector_number": "260",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mox%20Pearl",
+    "checked_at": "2026-08-05T20:10:11.194Z"
+  }
+}

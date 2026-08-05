@@ -1,0 +1,38 @@
+{
+  "50885640-cdf1-4c62-b3bc-f37db6ab38b5": {
+    "status": "available",
+    "name": "Trade Secrets",
+    "price_brl": 0.7,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander",
+    "printing_code": "CMD",
+    "collector_number": "64",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Trade%20Secrets",
+    "checked_at": "2026-08-05T20:14:11.836Z"
+  },
+  "5089ec1a-f881-4d55-af14-5d996171203b": {
+    "status": "available",
+    "name": "Black Lotus",
+    "price_brl": 26999.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "International Collectors' Edition",
+    "printing_code": "CEDI",
+    "collector_number": "234",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Black%20Lotus",
+    "checked_at": "2026-08-05T20:03:34.131Z"
+  },
+  "50aa7aff-1f01-4224-9a83-01f74d703ec2": {
+    "status": "available",
+    "name": "Earthcraft",
+    "price_brl": 437.83,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tempestade",
+    "printing_code": "TP",
+    "collector_number": "79",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Earthcraft",
+    "checked_at": "2026-08-05T20:05:34.509Z"
+  }
+}

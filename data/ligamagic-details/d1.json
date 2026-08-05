@@ -1,0 +1,38 @@
+{
+  "d17576b2-4a47-4848-8908-3152c8b4afe2": {
+    "status": "available",
+    "name": "Rebirth",
+    "price_brl": 5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quarta Edição",
+    "printing_code": "4E",
+    "collector_number": "257",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Rebirth",
+    "checked_at": "2026-08-05T20:11:47.467Z"
+  },
+  "d17d071d-dbee-4d65-8435-137f35cd89ca": {
+    "status": "available",
+    "name": "Sundering Titan",
+    "price_brl": 1.91,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Double Masters",
+    "printing_code": "2XM",
+    "collector_number": "292",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Sundering%20Titan",
+    "checked_at": "2026-08-05T20:13:14.696Z"
+  },
+  "d1b815d1-2848-40d4-a555-66822d1becbc": {
+    "status": "available",
+    "name": "Channel",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quarta Edição",
+    "printing_code": "4E",
+    "collector_number": "51",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Channel",
+    "checked_at": "2026-08-05T20:04:04.328Z"
+  }
+}

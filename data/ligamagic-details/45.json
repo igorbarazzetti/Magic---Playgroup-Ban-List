@@ -1,0 +1,26 @@
+{
+  "4514777d-0589-4631-978b-ff244167c176": {
+    "status": "available",
+    "name": "Vexing Bauble",
+    "price_brl": 9.54,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3",
+    "printing_code": "MH3",
+    "collector_number": "212",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Vexing%20Bauble",
+    "checked_at": "2026-08-05T20:14:54.487Z"
+  },
+  "457af74a-02b3-4659-846d-63e482667f34": {
+    "status": "available",
+    "name": "Deadly Dispute",
+    "price_brl": 1.72,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY Commander (Through the Ages)",
+    "printing_code": "FCA",
+    "collector_number": "33",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Deadly%20Dispute",
+    "checked_at": "2026-08-05T20:04:55.457Z"
+  }
+}

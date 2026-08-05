@@ -1,0 +1,26 @@
+{
+  "5b287dcc-f853-4df1-8ddf-5b8b2adc2873": {
+    "status": "available",
+    "name": "Limited Resources",
+    "price_brl": 7.11,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "êxodo",
+    "printing_code": "EX",
+    "collector_number": "10",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Limited%20Resources",
+    "checked_at": "2026-08-05T20:09:11.016Z"
+  },
+  "5b6bdf5a-2742-4851-92cd-a857a3852836": {
+    "status": "available",
+    "name": "Treasure Cruise",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ultimate Masters",
+    "printing_code": "UMA",
+    "collector_number": "79",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Treasure%20Cruise",
+    "checked_at": "2026-08-05T20:14:14.924Z"
+  }
+}

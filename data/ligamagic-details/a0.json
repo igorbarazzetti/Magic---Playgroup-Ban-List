@@ -1,0 +1,38 @@
+{
+  "a044474a-cd72-4e9d-bd8d-a08f2de9cdc0": {
+    "status": "available",
+    "name": "Reanimate",
+    "price_brl": 48.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Noctumbra: A Casa dos Horrores Commander",
+    "printing_code": "DSC",
+    "collector_number": "155",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Reanimate",
+    "checked_at": "2026-08-05T20:11:44.460Z"
+  },
+  "a06f8476-0a23-413a-bc28-8dc2427fdc2a": {
+    "status": "available",
+    "name": "Amulet of Quoz",
+    "price_brl": 6.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Era Glacial",
+    "printing_code": "IA",
+    "collector_number": "8",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amulet%20of%20Quoz",
+    "checked_at": "2026-08-05T20:02:52.040Z"
+  },
+  "a0a1cd2b-ed7c-4cce-8497-4873e1e5e3df": {
+    "status": "available",
+    "name": "Geological Appraiser",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "As Cavernas Perdidas de Ixalan",
+    "printing_code": "LCI",
+    "collector_number": "150",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Geological%20Appraiser",
+    "checked_at": "2026-08-05T20:06:49.723Z"
+  }
+}

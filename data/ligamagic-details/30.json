@@ -1,0 +1,26 @@
+{
+  "3015882b-4897-4d2c-8e33-6731c85a0d03": {
+    "status": "available",
+    "name": "Rofellos, Llanowar Emissary",
+    "price_brl": 139.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Destino de Urza",
+    "printing_code": "UD",
+    "collector_number": "118",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Rofellos%2C%20Llanowar%20Emissary",
+    "checked_at": "2026-08-05T20:11:56.485Z"
+  },
+  "3095f2cf-05c3-4381-929f-c526b6fc30a7": {
+    "status": "available",
+    "name": "Atog",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mirrodin",
+    "printing_code": "MI",
+    "collector_number": "86",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atog",
+    "checked_at": "2026-08-05T20:03:10.127Z"
+  }
+}

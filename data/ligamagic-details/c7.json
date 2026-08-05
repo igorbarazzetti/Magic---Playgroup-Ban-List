@@ -1,0 +1,26 @@
+{
+  "c7aecca5-2f67-4245-ab2d-e723d8b23a67": {
+    "status": "available",
+    "name": "Expressive Iteration",
+    "price_brl": 2.34,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes Commander",
+    "printing_code": "MSC",
+    "collector_number": "183",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Expressive%20Iteration",
+    "checked_at": "2026-08-05T20:05:55.600Z"
+  },
+  "c7c7bffa-442d-4ba5-b778-ad394c192f27": {
+    "status": "available",
+    "name": "Candelabra of Tawnos",
+    "price_brl": 14000,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Antiquities",
+    "printing_code": "AQ",
+    "collector_number": "16",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Candelabra%20of%20Tawnos",
+    "checked_at": "2026-08-05T20:03:55.305Z"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "f8b17b89-26ce-4208-874a-9e1d66514640": {
+    "status": "available",
+    "name": "Dig Through Time",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2021",
+    "printing_code": "C21",
+    "collector_number": "119",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Dig%20Through%20Time",
+    "checked_at": "2026-08-05T20:05:16.567Z"
+  },
+  "f8b9dd54-0837-47f4-ad14-7a0322d46d5f": {
+    "status": "available",
+    "name": "Birthing Pod",
+    "price_brl": 39.18,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nova Phyrexia",
+    "printing_code": "NPH",
+    "collector_number": "104",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Birthing%20Pod",
+    "checked_at": "2026-08-05T20:03:31.166Z"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "941350ba-30e2-4549-865f-ca1bd7626782": {
+    "status": "available",
+    "name": "Inverter of Truth",
+    "price_brl": 1.79,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Juramento das Sentinelas",
+    "printing_code": "OGW",
+    "collector_number": "72",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Inverter%20of%20Truth",
+    "checked_at": "2026-08-05T20:08:19.923Z"
+  },
+  "94a844d2-0574-45a7-b347-e0e329767c42": {
+    "status": "available",
+    "name": "Necropotence",
+    "price_brl": 56.26,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Deckmasters",
+    "printing_code": "DM",
+    "collector_number": "7",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Necropotence",
+    "checked_at": "2026-08-05T20:10:41.291Z"
+  },
+  "94fac5fe-97d5-4c12-a80c-8efff9d853ae": {
+    "status": "available",
+    "name": "Blood Moon",
+    "price_brl": 44.91,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Oitava Edição - Kit Básico",
+    "printing_code": "8E",
+    "collector_number": "178",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Moon",
+    "checked_at": "2026-08-05T20:03:40.190Z"
+  }
+}

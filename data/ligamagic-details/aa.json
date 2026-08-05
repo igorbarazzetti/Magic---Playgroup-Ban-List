@@ -1,0 +1,26 @@
+{
+  "aa77980d-0434-40f0-990f-1c8c50610174": {
+    "status": "available",
+    "name": "Rain of Filth",
+    "price_brl": 26,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Saga de Urza",
+    "printing_code": "US",
+    "collector_number": "151",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Rain%20of%20Filth",
+    "checked_at": "2026-08-05T20:11:41.439Z"
+  },
+  "aa959340-c869-4caa-92c7-572bd8d23eef": {
+    "status": "available",
+    "name": "Field of the Dead",
+    "price_brl": 97.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2020",
+    "printing_code": "M20",
+    "collector_number": "247",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Field%20of%20the%20Dead",
+    "checked_at": "2026-08-05T20:06:13.544Z"
+  }
+}

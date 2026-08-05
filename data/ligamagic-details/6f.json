@@ -1,0 +1,26 @@
+{
+  "6f14f61f-e533-4541-b861-4dbaf0d88833": {
+    "status": "available",
+    "name": "Backup Plan",
+    "price_brl": 0.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Conspiracy",
+    "printing_code": "CNS",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Backup%20Plan",
+    "checked_at": "2026-08-05T20:03:16.105Z"
+  },
+  "6f856f99-4cb4-479d-958d-964220965ed6": {
+    "status": "available",
+    "name": "Wilderness Reclamation",
+    "price_brl": 1.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lealdade em Ravnica",
+    "printing_code": "RNA",
+    "collector_number": "149",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Wilderness%20Reclamation",
+    "checked_at": "2026-08-05T20:15:17.970Z"
+  }
+}

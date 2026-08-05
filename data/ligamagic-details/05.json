@@ -1,0 +1,26 @@
+{
+  "050f5733-7c0b-4991-9a6c-7ea12ccf0ca9": {
+    "status": "available",
+    "name": "Up the Beanstalk",
+    "price_brl": 9.41,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Selvagens de Eldraine",
+    "printing_code": "WOE",
+    "collector_number": "195",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Up%20the%20Beanstalk",
+    "checked_at": "2026-08-05T20:14:35.904Z"
+  },
+  "05c2dec2-d2f7-4036-b91f-4fccba10a8bb": {
+    "status": "available",
+    "name": "Back to Basics",
+    "price_brl": 45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ultimate Masters",
+    "printing_code": "UMA",
+    "collector_number": "46",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Back%20to%20Basics",
+    "checked_at": "2026-08-05T20:03:13.125Z"
+  }
+}

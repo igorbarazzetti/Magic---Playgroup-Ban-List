@@ -1,0 +1,26 @@
+{
+  "3407eb6e-b74d-4159-a801-d7163937953c": {
+    "status": "available",
+    "name": "Phlage, Titan of Fire's Fury",
+    "price_brl": 58.28,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3",
+    "printing_code": "MH3",
+    "collector_number": "197",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Phlage%2C%20Titan%20of%20Fire's%20Fury",
+    "checked_at": "2026-08-05T20:11:02.338Z"
+  },
+  "34187c71-6033-4058-aadc-2bc266f762be": {
+    "status": "available",
+    "name": "Serra's Sanctum",
+    "price_brl": 1799.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Saga de Urza",
+    "printing_code": "US",
+    "collector_number": "325",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Serra's%20Sanctum",
+    "checked_at": "2026-08-05T20:12:29.562Z"
+  }
+}

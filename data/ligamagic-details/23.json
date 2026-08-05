@@ -1,0 +1,26 @@
+{
+  "23216e59-f147-4bb7-a698-12777c2f8584": {
+    "status": "available",
+    "name": "Jeweled Lotus",
+    "price_brl": 299,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends",
+    "printing_code": "CMR",
+    "collector_number": "319",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Jeweled%20Lotus",
+    "checked_at": "2026-08-05T20:08:40.991Z"
+  },
+  "23467047-6dba-4498-b783-1ebc4f74b8c2": {
+    "status": "available",
+    "name": "Ancient Tomb",
+    "price_brl": 349.95,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "World Championship Decks",
+    "printing_code": "WCD",
+    "collector_number": "199900",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Tomb",
+    "checked_at": "2026-08-05T20:03:01.083Z"
+  }
+}

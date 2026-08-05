@@ -1,0 +1,50 @@
+{
+  "ae120613-97d6-4393-b39d-c3e6c076f5d6": {
+    "status": "available",
+    "name": "Deflecting Swat",
+    "price_brl": 349,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2020",
+    "printing_code": "C20",
+    "collector_number": "50",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Deflecting%20Swat",
+    "checked_at": "2026-08-05T20:05:04.416Z"
+  },
+  "ae1f2ab5-c6a5-4d49-a746-3cb4668bf805": {
+    "status": "available",
+    "name": "Mycosynth Lattice",
+    "price_brl": 80,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Darksteel",
+    "printing_code": "DS",
+    "collector_number": "130",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mycosynth%20Lattice",
+    "checked_at": "2026-08-05T20:10:23.226Z"
+  },
+  "ae7604bb-4818-45a3-960c-cf3d83f15964": {
+    "status": "available",
+    "name": "Teferi, Time Raveler",
+    "price_brl": 46.74,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra da Centelha",
+    "printing_code": "WAR",
+    "collector_number": "221",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Teferi%2C%20Time%20Raveler",
+    "checked_at": "2026-08-05T20:13:23.716Z"
+  },
+  "ae83ef2c-960f-4c5b-97cc-52465c687c18": {
+    "status": "available",
+    "name": "Primeval Titan",
+    "price_brl": 28.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Masters 2015",
+    "printing_code": "MM2",
+    "collector_number": "156",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Primeval%20Titan",
+    "checked_at": "2026-08-05T20:11:20.412Z"
+  }
+}

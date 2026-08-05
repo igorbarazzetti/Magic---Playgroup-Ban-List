@@ -1,0 +1,38 @@
+{
+  "254878f0-be90-4653-a395-0c41258fceaf": {
+    "status": "available",
+    "name": "Tinker",
+    "price_brl": 7.58,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "World Championship Decks",
+    "printing_code": "WCD",
+    "collector_number": "20000111",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Tinker",
+    "checked_at": "2026-08-05T20:14:05.828Z"
+  },
+  "2550c2ae-834d-46e7-9ab4-d7bf7bfa6a78": {
+    "status": "available",
+    "name": "This Town Ain't Big Enough",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Os Fora da Lei de Encruzilhada do Trovão",
+    "printing_code": "OTJ",
+    "collector_number": "74",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=This%20Town%20Ain't%20Big%20Enough",
+    "checked_at": "2026-08-05T20:13:44.817Z"
+  },
+  "2583836d-7fd3-47b3-9b69-6814efe54a90": {
+    "status": "available",
+    "name": "Stirring Bard",
+    "price_brl": 0.16,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends: Batalha por Portal de Baldur",
+    "printing_code": "CLB",
+    "collector_number": "195",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Stirring%20Bard",
+    "checked_at": "2026-08-05T20:12:59.650Z"
+  }
+}

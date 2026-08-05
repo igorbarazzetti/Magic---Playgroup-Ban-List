@@ -33,16 +33,30 @@ const colorFilters = [
   { key: 'C', label: 'Incolor' },
 ];
 
-const state = {
-  cards: [], filtered: [], selectedFormats: new Set(), selectedColors: new Set(), query: '', type: '', cmc: '', rarity: '', set: '',
-  sort: 'name-asc', view: 'cards', visible: 48, modalCard: null, modalFace: 0, lastFocus: null,
-  savedScroll: 0, loadingMore: false, loadToken: 0, rawDetailsReady: false,
-  deckFormat: 'formatinho', deckLastFocus: null,
-};
+function createViewState(tab) {
+  return {
+    tab, cards: [], filtered: [], selectedFormats: new Set(), selectedColors: new Set(), query: '', type: '', cmc: '', rarity: '', set: '',
+    sort: 'name-asc', view: 'cards', visible: 48, modalCard: null, modalFace: 0, lastFocus: null,
+    savedScroll: 0, loadingMore: false, loadToken: 0, rawDetailsReady: false, loaded: false,
+    deckFormat: 'formatinho', deckLastFocus: null, maxPrice: 99, showBanned: false,
+    oracleMatchKey: '', oracleMatches: null, oracleSearchToken: 0,
+  };
+}
+const viewStates = { banlist: createViewState('banlist'), catalog: createViewState('catalog') };
+let state = viewStates.banlist;
 const cacheKey = `codex-banlist-cache:${site.scryfallQuery}`;
 const cacheTtl = 1000 * 60 * 60 * 6;
 const ligaMagicPriceBookUrl = 'https://raw.githubusercontent.com/igorbarazzetti/Magic---Playgroup-Ban-List/main/data/ligamagic-prices.json';
+const repositoryDataBase = 'https://raw.githubusercontent.com/igorbarazzetti/Magic---Playgroup-Ban-List/main/data';
+const localDataBase = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) ? './data' : repositoryDataBase;
+const catalogIndexUrl = `${localDataBase}/catalog/scryfall-index.json`;
+const catalogPriceIndexUrl = `${localDataBase}/ligamagic-catalog-prices.json`;
 let ligaMagicPriceBookPromise;
+let catalogIndex;
+let catalogPriceIndex;
+const catalogHydrationCache = new Map();
+const catalogHydrating = new Set();
+const catalogDetailShards = new Map();
 const deckCardCache = new Map();
 const $ = (id) => document.getElementById(id);
 const escapeHtml = (value = '') => String(value).replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[char]));
@@ -165,6 +179,8 @@ async function fetchBanlistProgressively(onPage) {
 
 function readUrl() {
   const params = new URLSearchParams(location.search);
+  const requestedTab = params.get('tab') === 'catalog' ? 'catalog' : 'banlist';
+  state = viewStates[requestedTab];
   state.query = params.get('q') || '';
   const legacyIdentity = params.get('identity') || '';
   const selectedColors = (params.get('colors') || legacyIdentity).split(',');
@@ -176,17 +192,24 @@ function readUrl() {
   state.sort = params.get('sort') || 'name-asc';
   state.view = params.get('view') === 'list' ? 'list' : 'cards';
   state.selectedFormats = new Set((params.get('formats') || '').split(',').filter((key) => formats.some((format) => format.key === key)));
+  state.maxPrice = requestedTab === 'catalog' ? Math.max(0, Math.min(99, Number(params.get('maxPrice') || 99))) : 99;
+  state.showBanned = requestedTab === 'catalog' && params.get('banned') === 'show';
   $('searchInput').value = state.query;
   $('typeFilter').value = state.type;
   $('cmcFilter').value = state.cmc;
   $('rarityFilter').value = state.rarity;
   if ($('setFilter')) $('setFilter').value = state.set;
   $('sortFilter').value = state.sort;
+  if ($('priceFilter')) $('priceFilter').value = state.maxPrice;
+  if ($('priceFilterValue')) $('priceFilterValue').textContent = `R$ ${state.maxPrice}`;
+  if ($('showBannedCatalog')) $('showBannedCatalog').checked = state.showBanned;
   if ($('searchClear')) $('searchClear').hidden = !state.query;
+  updateCollectionUi();
 }
 
 function currentParams({ includeCard = Boolean(state.modalCard) } = {}) {
   const params = new URLSearchParams();
+  if (state.tab === 'catalog') params.set('tab', 'catalog');
   if (state.query) params.set('q', state.query);
   if (state.selectedFormats.size) params.set('formats', [...state.selectedFormats].join(','));
   if (state.selectedColors.size) params.set('colors', [...state.selectedColors].join(','));
@@ -196,6 +219,8 @@ function currentParams({ includeCard = Boolean(state.modalCard) } = {}) {
   if (state.set) params.set('set', state.set);
   if (state.sort !== 'name-asc') params.set('sort', state.sort);
   if (state.view === 'list') params.set('view', 'list');
+  if (state.tab === 'catalog' && state.maxPrice !== 99) params.set('maxPrice', String(state.maxPrice));
+  if (state.tab === 'catalog' && state.showBanned) params.set('banned', 'show');
   if (includeCard && state.modalCard) params.set('card', state.modalCard.id);
   return params;
 }
@@ -203,6 +228,124 @@ function currentParams({ includeCard = Boolean(state.modalCard) } = {}) {
 function syncUrl() {
   const params = currentParams({ includeCard: false });
   history.replaceState(null, '', `${location.pathname}${params.toString() ? `?${params}` : ''}`);
+}
+
+function updateCollectionUi() {
+  const catalog = state.tab === 'catalog';
+  document.querySelectorAll('[data-collection-tab]').forEach((button) => {
+    const active = button.dataset.collectionTab === state.tab;
+    button.classList.toggle('is-active', active);
+    button.setAttribute('aria-selected', String(active));
+    button.tabIndex = active ? 0 : -1;
+  });
+  if ($('collectionWorkspace')) $('collectionWorkspace').setAttribute('aria-labelledby', catalog ? 'catalogTab' : 'banlistTab');
+  if ($('archiveEyebrow')) $('archiveEyebrow').textContent = catalog ? 'Biblioteca do Formatinho' : 'Grimório da banlist';
+  if ($('archiveTitle')) $('archiveTitle').textContent = catalog ? 'Encontre cartas para o seu deck' : 'Cartas seladas pelo conselho';
+  if ($('archiveHint')) $('archiveHint').innerHTML = catalog ? '<span aria-hidden="true">↓</span> Preços reais e estimados em reais' : '<span aria-hidden="true">↓</span> Toque em uma carta para ver os detalhes';
+  if ($('catalogPriceGroup')) $('catalogPriceGroup').hidden = !catalog;
+  document.querySelectorAll('[data-catalog-sort]').forEach((option) => { option.hidden = !catalog; });
+  const formatsOption = $('sortFilter')?.querySelector('option[value="formats-desc"]');
+  if (formatsOption) formatsOption.hidden = catalog;
+  if (catalog && state.sort === 'formats-desc') state.sort = 'name-asc';
+  if ($('sortFilter')) $('sortFilter').value = state.sort;
+  if ($('priceFilter')) $('priceFilter').value = state.maxPrice;
+  if ($('priceFilterValue')) $('priceFilterValue').textContent = `R$ ${state.maxPrice}`;
+  if ($('showBannedCatalog')) $('showBannedCatalog').checked = state.showBanned;
+  if ($('modalBackLabel')) $('modalBackLabel').textContent = catalog ? 'Lista de cartas' : 'Banlist';
+  document.body.classList.toggle('is-catalog', catalog);
+}
+
+function restoreControlsFromState() {
+  $('searchInput').value = state.query;
+  $('typeFilter').value = state.type;
+  $('cmcFilter').value = state.cmc;
+  $('rarityFilter').value = state.rarity;
+  $('sortFilter').value = state.sort;
+  $('searchClear').hidden = !state.query;
+  updateCollectionUi();
+}
+
+async function switchCollectionTab(tab, { pushHistory = true, restoreScroll = true } = {}) {
+  if (!viewStates[tab] || tab === state.tab) return;
+  state.savedScroll = scrollY;
+  state = viewStates[tab];
+  restoreControlsFromState();
+  populateSetFilter();
+  if (pushHistory) {
+    const params = currentParams({ includeCard: false });
+    history.pushState(null, '', `${location.pathname}${params.toString() ? `?${params}` : ''}`);
+  }
+  if (!state.loaded) {
+    if (tab === 'catalog') await loadCatalog(); else await loadCards();
+  } else {
+    await ensureCatalogOracleMatches();
+    applyFilters();
+  }
+  if (restoreScroll) requestAnimationFrame(() => scrollTo({ top: state.savedScroll, behavior: 'auto' }));
+}
+
+function colorsFromMask(mask = 0) {
+  return [['W', 1], ['U', 2], ['B', 4], ['R', 8], ['G', 16]].filter(([, bit]) => Number(mask) & bit).map(([color]) => color);
+}
+
+function catalogCardFromTuple(tuple) {
+  const [id, oracleId, name, mask, type, cmc, rarity, set, usd, bannedFormats] = tuple;
+  const labels = { creature: 'Creature', instant: 'Instant', sorcery: 'Sorcery', artifact: 'Artifact', enchantment: 'Enchantment', planeswalker: 'Planeswalker', land: 'Land', battle: 'Battle', other: 'Card' };
+  return {
+    id, oracle_id: oracleId, name, color_identity: colorsFromMask(mask), type_line: labels[type] || 'Card', catalog_type: type,
+    cmc, rarity, set, set_name: catalogIndex?.sets?.[set] || String(set || '').toUpperCase(), prices: { usd: Number.isFinite(Number(usd)) ? (Number(usd) / 100).toFixed(2) : null },
+    formats: bannedFormats ? String(bannedFormats).split(',').filter(Boolean) : [], isCatalogStub: true,
+  };
+}
+
+function effectiveCatalogPrice(card) {
+  const tuple = catalogPriceIndex?.prices?.[card.oracle_id || card.id];
+  if (tuple && Number.isFinite(Number(tuple[0])) && ['a', 's'].includes(tuple[1])) {
+    return { value: Number(tuple[0]) / 100, source: 'LigaMagic', estimated: false, stale: tuple[1] === 's', checkedAt: tuple[2] ? new Date(Number(tuple[2]) * 1000).toISOString() : null };
+  }
+  const usd = Number(card?.prices?.usd);
+  const rate = Number(catalogIndex?.usd_brl?.rate);
+  if (Number.isFinite(usd) && Number.isFinite(rate)) return { value: usd * rate, source: 'Scryfall + PTAX', estimated: true, stale: Boolean(catalogIndex?.usd_brl?.stale), checkedAt: catalogIndex?.usd_brl?.as_of || null };
+  return null;
+}
+
+async function fetchScryfallPages(query) {
+  const cards = [];
+  let url = `https://api.scryfall.com/cards/search?q=${encodeURIComponent(query)}&unique=cards&order=name`;
+  while (url) {
+    const response = await fetch(url, { headers: { Accept: 'application/json' } });
+    if (!response.ok) throw new Error(`Scryfall ${response.status}`);
+    const payload = await response.json();
+    cards.push(...(payload.data || []));
+    url = payload.has_more && payload.next_page ? payload.next_page : '';
+    if (url) await new Promise((resolve) => setTimeout(resolve, 120));
+  }
+  return cards;
+}
+
+async function ensureCatalogOracleMatches() {
+  if (state.tab !== 'catalog') return;
+  const phrases = parseCardSearch(state.query).exactPhrases;
+  const key = phrases.join('|');
+  if (!phrases.length) { state.oracleMatchKey = ''; state.oracleMatches = null; return; }
+  if (state.oracleMatchKey === key && state.oracleMatches) return;
+  const token = ++state.oracleSearchToken;
+  $('loadingState').hidden = false;
+  try {
+    const phraseQuery = phrases.map((phrase) => `o:"${phrase.replace(/"/g, '\\"')}"`).join(' ');
+    const cards = await fetchScryfallPages(`${catalogIndex?.query || '(game:paper) usd<20.00 prefer:best'} ${phraseQuery}`);
+    if (token !== state.oracleSearchToken || state.tab !== 'catalog') return;
+    state.oracleMatchKey = key;
+    state.oracleMatches = new Set(cards.map((card) => card.oracle_id || card.id));
+    cards.forEach((card) => catalogHydrationCache.set(card.id, card));
+  } catch {
+    if (token !== state.oracleSearchToken || state.tab !== 'catalog') return;
+    state.oracleMatchKey = key;
+    state.oracleMatches = new Set();
+    showToast('Não foi possível consultar o texto das cartas agora.');
+  } finally {
+    if (token === state.oracleSearchToken) $('loadingState').hidden = true;
+  }
 }
 
 function cardIdentity(card) {
@@ -229,8 +372,10 @@ function applyFilters() {
   state.filtered = state.cards.filter((card) => {
     const searchable = slug([card.name, card.type_line, card.oracle_text, card.artist, card.set_name].filter(Boolean).join(' '));
     const oracleText = slug([card.oracle_text, ...(card.card_faces || []).map((face) => face.oracle_text)].filter(Boolean).join(' ')).replace(/\s+/g, ' ');
-    const textMatch = (!search.freeText || searchable.includes(search.freeText))
-      && search.exactPhrases.every((phrase) => oracleText.includes(phrase));
+    const exactTextMatch = state.tab === 'catalog'
+      ? !search.exactPhrases.length || (state.oracleMatchKey === search.exactPhrases.join('|') && state.oracleMatches?.has(card.oracle_id || card.id))
+      : search.exactPhrases.every((phrase) => oracleText.includes(phrase));
+    const textMatch = (!search.freeText || searchable.includes(search.freeText)) && exactTextMatch;
     const formatMatch = !state.selectedFormats.size || card.formats.some((format) => state.selectedFormats.has(format));
     const cardColors = card.color_identity || [];
     const identityMatch = !state.selectedColors.size
@@ -241,7 +386,10 @@ function applyFilters() {
     const cmcMatch = !state.cmc || (state.cmc === '6' ? cmc >= 6 : cmc === Number(state.cmc));
     const rarityMatch = !state.rarity || (state.rarity === 'special' ? !['common', 'uncommon', 'rare', 'mythic'].includes(card.rarity) : card.rarity === state.rarity);
     const setMatch = !state.set || card.set === state.set;
-    return textMatch && formatMatch && identityMatch && typeMatch && cmcMatch && rarityMatch && setMatch;
+    const catalogPrice = state.tab === 'catalog' ? effectiveCatalogPrice(card) : null;
+    const priceMatch = state.tab !== 'catalog' || (catalogPrice && catalogPrice.value <= state.maxPrice);
+    const bannedMatch = state.tab !== 'catalog' || state.showBanned || !card.formats.length;
+    return textMatch && formatMatch && identityMatch && typeMatch && cmcMatch && rarityMatch && setMatch && priceMatch && bannedMatch;
   });
   const sorters = {
     'name-asc': compareNames,
@@ -250,6 +398,8 @@ function applyFilters() {
     'cmc-desc': (a, b) => (b.cmc || 0) - (a.cmc || 0) || compareNames(a, b),
     'formats-desc': (a, b) => b.formats.length - a.formats.length || compareNames(a, b),
     color: (a, b) => cardIdentity(a).localeCompare(cardIdentity(b)) || compareNames(a, b),
+    'price-asc': (a, b) => (effectiveCatalogPrice(a)?.value ?? Infinity) - (effectiveCatalogPrice(b)?.value ?? Infinity) || compareNames(a, b),
+    'price-desc': (a, b) => (effectiveCatalogPrice(b)?.value ?? -Infinity) - (effectiveCatalogPrice(a)?.value ?? -Infinity) || compareNames(a, b),
   };
   state.filtered.sort(sorters[state.sort] || sorters['name-asc']);
   state.visible = 48;
@@ -266,6 +416,7 @@ function populateSetFilter() {
 }
 
 function renderSeals() {
+  if (state.tab === 'catalog') { $('formatSeals').innerHTML = ''; return; }
   const html = formats.map((format) => {
     const count = state.cards.filter((card) => card.formats.includes(format.key)).length;
     const active = state.selectedFormats.has(format.key);
@@ -289,6 +440,8 @@ function renderActiveFilters() {
   const selectLabels = { type: { creature: 'Criatura', instant: 'Instantâneo', sorcery: 'Feitiço', artifact: 'Artefato', enchantment: 'Encantamento', planeswalker: 'Planeswalker', land: 'Terreno', battle: 'Batalha', other: 'Outros' }, cmc: { 0: 'Mana 0', 1: 'Mana 1', 2: 'Mana 2', 3: 'Mana 3', 4: 'Mana 4', 5: 'Mana 5', 6: 'Mana 6+' }, rarity: { common: 'Comum', uncommon: 'Incomum', rare: 'Rara', mythic: 'Mítica', special: 'Especial' } };
   [['type', state.type], ['cmc', state.cmc], ['rarity', state.rarity]].forEach(([key, value]) => { if (value) chips.push([key, selectLabels[key][value]]); });
   if (state.set) chips.push(['set', $('setFilter')?.selectedOptions?.[0]?.textContent || state.set.toUpperCase()]);
+  if (state.tab === 'catalog' && state.maxPrice !== 99) chips.push(['maxPrice', `Até R$ ${state.maxPrice}`]);
+  if (state.tab === 'catalog' && state.showBanned) chips.push(['showBanned', 'Incluindo banidas']);
   $('activeFilters').innerHTML = chips.map(([key, label]) => `<span class="filter-chip">${escapeHtml(label)} <button type="button" data-remove-filter="${key}" aria-label="Remover filtro ${escapeHtml(label)}">×</button></span>`).join('');
   const mobileFilterCount = $('mobileFilterCount');
   const controlCount = chips.filter(([key]) => key !== 'q').length;
@@ -314,7 +467,12 @@ function renderCards() {
     const image = imageFor(card, 0, 'small');
     const formatsLabel = card.formats.map((key) => formats.find((item) => item.key === key)?.label || key).join(', ');
     const imageMarkup = image ? `<img loading="lazy" decoding="async" width="488" height="680" src="${escapeHtml(image)}"${srcset ? ` srcset="${escapeHtml(srcset)}" sizes="(max-width: 559px) calc(50vw - 22px), (max-width: 959px) calc(25vw - 20px), 220px"` : ''} alt="Carta ${escapeHtml(card.name)}" />` : '';
-    return `<button class="card-tile card-tile--${frameClass} card-tile--${rarityClass}${legendaryClass}" style="--delay:${Math.min(index, 10) * 24}ms" type="button" data-card-id="${escapeHtml(card.id)}" aria-label="Ver ${escapeHtml(card.name)}. Banida em ${escapeHtml(formatsLabel)}"><div class="card-tile__art${image ? '' : ' is-error'}">${imageMarkup}</div><div class="card-tile__body"><strong class="card-tile__name">${escapeHtml(card.name)}</strong><div class="card-tile__meta"><span class="card-tile__set">${setLine}</span><span class="card-tile__identity">${identity}</span><span class="format-badges">${badges}${more}</span></div></div></button>`;
+    const price = state.tab === 'catalog' ? effectiveCatalogPrice(card) : null;
+    const priceMarkup = price ? `<span class="card-price${price.estimated ? ' is-estimated' : ''}" title="${price.estimated ? 'Estimativa pelo Scryfall convertida pela PTAX' : `Preço ${price.stale ? 'desatualizado ' : ''}da LigaMagic`}">${price.estimated ? '~ ' : ''}${escapeHtml(formatBrlPrice(price.value))}${price.estimated ? '<small>estimado</small>' : ''}</span>` : '';
+    const banWarning = state.tab === 'catalog' && card.formats.length ? '<span class="card-tile__ban-warning">Banida</span>' : '';
+    const setAndPrice = state.tab === 'catalog' ? `<div class="card-tile__catalog-row"><span class="card-tile__set">${setLine}</span>${priceMarkup}</div>` : `<span class="card-tile__set">${setLine}</span>`;
+    const ariaFormats = formatsLabel ? `. Banida em ${formatsLabel}` : '';
+    return `<button class="card-tile card-tile--${frameClass} card-tile--${rarityClass}${legendaryClass}" style="--delay:${Math.min(index, 10) * 24}ms" type="button" data-card-id="${escapeHtml(card.id)}" aria-label="Ver ${escapeHtml(card.name)}${escapeHtml(ariaFormats)}"><div class="card-tile__art${image ? '' : card.isCatalogStub ? ' is-loading' : ' is-error'}">${imageMarkup}</div><div class="card-tile__body"><strong class="card-tile__name">${escapeHtml(card.name)}</strong><div class="card-tile__meta">${setAndPrice}<span class="card-tile__identity">${identity}</span><span class="format-badges">${badges}${more}${banWarning}</span></div></div></button>`;
   }).join('');
   $('cardGrid').setAttribute('aria-busy', 'false');
   bindCardImages($('cardGrid'));
@@ -322,6 +480,38 @@ function renderCards() {
   $('loadMore').hidden = !hasMore;
   $('emptyState').hidden = Boolean(state.filtered.length) || !state.cards.length;
   renderEmptySuggestions();
+  if (state.tab === 'catalog') void hydrateCatalogCards(visibleCards);
+}
+
+async function hydrateCatalogCards(cards) {
+  const stubs = cards.filter((card) => card?.isCatalogStub && !catalogHydrating.has(card.id));
+  if (!stubs.length) return;
+  stubs.forEach((card) => catalogHydrating.add(card.id));
+  try {
+    for (let start = 0; start < stubs.length; start += 75) {
+      const batch = stubs.slice(start, start + 75);
+      const response = await fetch('https://api.scryfall.com/cards/collection', {
+        method: 'POST', headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
+        body: JSON.stringify({ identifiers: batch.map((card) => ({ id: card.id })) }),
+      });
+      if (!response.ok) throw new Error(`Scryfall ${response.status}`);
+      const payload = await response.json();
+      const byId = new Map((payload.data || []).map((card) => [card.id, card]));
+      batch.forEach((stub) => {
+        const fullCard = byId.get(stub.id);
+        if (!fullCard) return;
+        catalogHydrationCache.set(stub.id, fullCard);
+        const bannedFormats = [...stub.formats];
+        Object.assign(stub, normalizeCard(fullCard), { formats: bannedFormats, isCatalogStub: false });
+      });
+    }
+    if (state.tab === 'catalog') renderCards();
+  } catch {
+    stubs.forEach((stub) => { stub.isCatalogStub = false; });
+    if (state.tab === 'catalog') renderCards();
+  } finally {
+    stubs.forEach((card) => catalogHydrating.delete(card.id));
+  }
 }
 
 function bindCardImages(scope) {
@@ -375,10 +565,15 @@ function renderEmptySuggestions() {
 function render() {
   renderSeals(); renderColorFilters(); renderActiveFilters(); renderCards();
   const formatRail = document.querySelector('.format-rail');
-  if (formatRail) formatRail.hidden = Boolean(state.cards.length && !state.filtered.length);
+  if (formatRail) formatRail.hidden = state.tab === 'catalog' || Boolean(state.cards.length && !state.filtered.length);
   const progressLabel = state.loadingMore ? ' · atualizando arquivo' : '';
   $('resultCount').textContent = state.cards.length ? `${state.filtered.length} ${state.filtered.length === 1 ? 'carta encontrada' : 'cartas encontradas'}${progressLabel}` : 'Nenhuma carta carregada';
   $('filterCount').textContent = `${state.filtered.length} ${state.filtered.length === 1 ? 'carta' : 'cartas'}`;
+  if ($('catalogCoverage')) {
+    const coverage = catalogPriceIndex?.coverage;
+    $('catalogCoverage').hidden = state.tab !== 'catalog' || !coverage;
+    if (coverage) $('catalogCoverage').textContent = `${coverage.confirmed_count || 0} preços LigaMagic · ${coverage.percent || 0}% consultado`;
+  }
   const cardsView = $('cardsView'); const listView = $('listView');
   if (cardsView && listView) { cardsView.setAttribute('aria-pressed', String(state.view === 'cards')); listView.setAttribute('aria-pressed', String(state.view === 'list')); }
 }
@@ -539,7 +734,53 @@ async function getLigaMagicPriceBook() {
   return ligaMagicPriceBookPromise;
 }
 
+async function getCatalogPriceDetail(oracleId) {
+  const prefix = String(oracleId || 'xx').slice(0, 2).toLowerCase();
+  if (!catalogDetailShards.has(prefix)) {
+    catalogDetailShards.set(prefix, fetch(`${localDataBase}/ligamagic-details/${prefix}.json`, { headers: { Accept: 'application/json' }, cache: 'no-store' })
+      .then((response) => response.ok ? response.json() : {})
+      .catch(() => ({})));
+  }
+  const shard = await catalogDetailShards.get(prefix);
+  return shard?.[oracleId] || null;
+}
+
+async function hydrateCatalogMarketPrice(card) {
+  const target = $('modalLigaMagicPrice');
+  const inlinePrice = $('modalInlinePrice');
+  if (!target || !inlinePrice) return;
+  const price = effectiveCatalogPrice(card);
+  const link = $('modalLigaMagicLink');
+  inlinePrice.classList.remove('is-stale', 'is-estimated');
+  if (!price) {
+    inlinePrice.hidden = true;
+    target.innerHTML = '<div class="modal-kv"><span class="modal-kv__label">Preço em reais</span><span class="modal-kv__value">Indisponível</span></div><p class="market-ligamagic__note">Ainda não há preço confirmado nem estimativa para esta carta.</p>';
+    return;
+  }
+  inlinePrice.textContent = `${price.estimated ? '~ ' : ''}${formatBrlPrice(price.value)}`;
+  inlinePrice.classList.toggle('is-stale', price.stale && !price.estimated);
+  inlinePrice.classList.toggle('is-estimated', price.estimated);
+  inlinePrice.title = price.estimated ? 'Estimativa pelo Scryfall convertida pela PTAX' : `${price.stale ? 'Último ' : ''}menor preço Normal/NM na LigaMagic`;
+  inlinePrice.hidden = false;
+
+  if (price.estimated) {
+    const usd = Number(card?.prices?.usd);
+    const rate = Number(catalogIndex?.usd_brl?.rate);
+    target.classList.remove('is-stale');
+    target.innerHTML = `<div class="modal-kv"><span class="modal-kv__label">Estimativa em reais</span><strong class="market-ligamagic__price">~ ${formatBrlPrice(price.value)}</strong></div><p class="market-ligamagic__note">Estimativa: US$ ${Number.isFinite(usd) ? usd.toFixed(2) : '—'} no Scryfall × PTAX de ${Number.isFinite(rate) ? rate.toFixed(4).replace('.', ',') : '—'}. O preço real da LigaMagic ainda entrará na cobertura.</p>`;
+    return;
+  }
+
+  const detail = await getCatalogPriceDetail(card.oracle_id || card.id);
+  if (state.modalCard?.id !== card.id) return;
+  if (link) link.href = detail?.source_url || ligaMagicUrl(card);
+  const printing = [detail?.printing_name, detail?.printing_code].filter(Boolean).join(' · ');
+  target.classList.toggle('is-stale', price.stale);
+  target.innerHTML = `<div class="modal-kv"><span class="modal-kv__label">${price.stale ? 'Último menor preço normal' : 'Menor preço normal'}</span><strong class="market-ligamagic__price">${formatBrlPrice(price.value)}</strong></div><p class="market-ligamagic__note">Fonte: LigaMagic · Normal/NM${printing ? ` · ${escapeHtml(printing)}` : ''} · consultado em ${escapeHtml(formatMarketTimestamp(detail?.checked_at || price.checkedAt))}${price.stale ? ' · atualização pendente' : ''}.</p>`;
+}
+
 async function hydrateLigaMagicPrice(card) {
+  if (state.tab === 'catalog') return hydrateCatalogMarketPrice(card);
   const target = $('modalLigaMagicPrice');
   if (!target) return;
   const inlinePrice = $('modalInlinePrice');
@@ -547,7 +788,7 @@ async function hydrateLigaMagicPrice(card) {
     if (!inlinePrice) return;
     inlinePrice.hidden = true;
     inlinePrice.textContent = '';
-    inlinePrice.classList.remove('is-stale');
+    inlinePrice.classList.remove('is-stale', 'is-estimated');
   };
   const showInlinePrice = (entry, { stale = false } = {}) => {
     if (!inlinePrice) return;
@@ -776,11 +1017,12 @@ function closeCard() {
   dismissCard();
 }
 
-function navigateModal(direction) {
+async function navigateModal(direction) {
   if (!state.modalCard) return;
   const index = state.filtered.findIndex((card) => card.id === state.modalCard.id);
   const next = state.filtered[index + direction];
   if (!next) return;
+  if (next.isCatalogStub) await hydrateCatalogCards([next]);
   state.modalCard = next;
   state.modalFace = 0;
   renderModalDetails(next, 0);
@@ -838,8 +1080,11 @@ async function loadBackground() {
 }
 
 function clearFilters() {
-  state.selectedFormats.clear(); state.selectedColors.clear(); state.query = ''; state.type = ''; state.cmc = ''; state.rarity = ''; state.set = ''; state.sort = 'name-asc';
+  state.selectedFormats.clear(); state.selectedColors.clear(); state.query = ''; state.type = ''; state.cmc = ''; state.rarity = ''; state.set = ''; state.sort = 'name-asc'; state.maxPrice = 99; state.showBanned = false; state.oracleMatchKey = ''; state.oracleMatches = null;
   $('searchInput').value = ''; $('typeFilter').value = ''; $('cmcFilter').value = ''; $('rarityFilter').value = ''; $('setFilter').value = ''; $('sortFilter').value = 'name-asc';
+  if ($('priceFilter')) $('priceFilter').value = 99;
+  if ($('priceFilterValue')) $('priceFilterValue').textContent = 'R$ 99';
+  if ($('showBannedCatalog')) $('showBannedCatalog').checked = false;
   $('searchClear').hidden = true;
   syncUrl(); applyFilters();
 }
@@ -1078,6 +1323,19 @@ function closeDeckValidator() {
 function bind() {
   readUrl();
 
+  $('collectionTabs').addEventListener('click', (event) => {
+    const button = event.target.closest('[data-collection-tab]');
+    if (button) switchCollectionTab(button.dataset.collectionTab);
+  });
+  $('collectionTabs').addEventListener('keydown', (event) => {
+    if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+    event.preventDefault();
+    const order = ['banlist', 'catalog'];
+    const current = order.indexOf(state.tab);
+    const next = event.key === 'Home' ? 0 : event.key === 'End' ? order.length - 1 : (current + (event.key === 'ArrowRight' ? 1 : -1) + order.length) % order.length;
+    switchCollectionTab(order[next]).then(() => document.querySelector(`[data-collection-tab="${order[next]}"]`)?.focus());
+  });
+
   $('formatSeals').addEventListener('click', (event) => {
     const button = event.target.closest('[data-format]');
     if (!button) return;
@@ -1101,7 +1359,7 @@ function bind() {
   $('searchInput').addEventListener('input', (event) => {
     clearTimeout(searchTimer);
     $('searchClear').hidden = !event.target.value;
-    searchTimer = setTimeout(() => { state.query = event.target.value.trim(); syncUrl(); applyFilters(); }, 170);
+    searchTimer = setTimeout(async () => { state.query = event.target.value.trim(); syncUrl(); await ensureCatalogOracleMatches(); applyFilters(); }, 220);
   });
   $('searchClear').addEventListener('click', () => { clearTimeout(searchTimer); $('searchInput').value = ''; state.query = ''; $('searchClear').hidden = true; syncUrl(); applyFilters(); $('searchInput').focus(); });
 
@@ -1109,9 +1367,12 @@ function bind() {
   $('cardsView').addEventListener('click', () => setView('cards'));
   $('listView').addEventListener('click', () => setView('list'));
 
-  $('cardGrid').addEventListener('click', (event) => {
+  $('cardGrid').addEventListener('click', async (event) => {
     const tile = event.target.closest('[data-card-id]');
-    if (tile) openCard(state.cards.find((card) => card.id === tile.dataset.cardId));
+    if (!tile) return;
+    const card = state.cards.find((item) => item.id === tile.dataset.cardId);
+    if (card?.isCatalogStub) await hydrateCatalogCards([card]);
+    if (card) openCard(card);
   });
   $('loadMore').addEventListener('click', () => { state.visible += 48; renderCards(); });
   $('clearFilters').addEventListener('click', clearFilters);
@@ -1130,9 +1391,18 @@ function bind() {
     if (key.startsWith('format:')) state.selectedFormats.delete(key.slice(7));
     else if (key.startsWith('color:')) state.selectedColors.delete(key.slice(6));
     else if (key === 'q') { state.query = ''; $('searchInput').value = ''; }
+    else if (key === 'maxPrice') { state.maxPrice = 99; $('priceFilter').value = 99; $('priceFilterValue').textContent = 'R$ 99'; }
+    else if (key === 'showBanned') { state.showBanned = false; $('showBannedCatalog').checked = false; }
     else state[key] = '';
-    syncUrl(); readUrl(); applyFilters();
+    syncUrl(); restoreControlsFromState(); populateSetFilter(); applyFilters();
   });
+
+  $('priceFilter').addEventListener('input', (event) => {
+    state.maxPrice = Number(event.target.value);
+    $('priceFilterValue').textContent = `R$ ${state.maxPrice}`;
+    syncUrl(); applyFilters();
+  });
+  $('showBannedCatalog').addEventListener('change', (event) => { state.showBanned = event.target.checked; syncUrl(); applyFilters(); });
 
   $('openFilters').addEventListener('click', openFilterSheet);
   $('closeFilters').addEventListener('click', () => closeFilterSheet());
@@ -1183,12 +1453,20 @@ function bind() {
     try { await navigator.clipboard.writeText(location.href); showToast('Link desta seleção copiado'); }
     catch { window.prompt('Copie o link desta seleção:', location.href); }
   });
-  $('retryButton').addEventListener('click', loadCards);
+  $('retryButton').addEventListener('click', () => { if (state.tab === 'catalog') loadCatalog(); else loadCards(); });
 
   addEventListener('online', updateConnectionStatus);
   addEventListener('offline', updateConnectionStatus);
   matchMedia('(min-width: 960px)').addEventListener('change', () => { if ($('filterPanel').classList.contains('is-open')) closeFilterSheet({ restoreFocus: false }); });
   addEventListener('popstate', () => {
+    const requestedTab = new URLSearchParams(location.search).get('tab') === 'catalog' ? 'catalog' : 'banlist';
+    if (requestedTab !== state.tab) {
+      readUrl();
+      restoreControlsFromState();
+      if (!state.loaded) { if (state.tab === 'catalog') loadCatalog(); else loadCards(); }
+      else { populateSetFilter(); ensureCatalogOracleMatches().then(applyFilters); }
+      return;
+    }
     const cardId = new URLSearchParams(location.search).get('card');
     if (!cardId && $('cardModal').open) dismissCard();
     else if (cardId && state.cards.length && state.modalCard?.id !== cardId) openCard(state.cards.find((card) => card.id === cardId), { pushHistory: false });
@@ -1196,39 +1474,75 @@ function bind() {
   updateConnectionStatus();
 }
 
+async function loadCatalog() {
+  const view = viewStates.catalog;
+  const token = ++view.loadToken;
+  if (state === view) {
+    $('loadingState').hidden = false; $('errorState').hidden = true; $('emptyState').hidden = true;
+    $('cardGrid').setAttribute('aria-busy', 'true'); $('cardGrid').innerHTML = '';
+  }
+  try {
+    const [catalogResponse, priceResponse] = await Promise.all([
+      fetch(catalogIndexUrl, { headers: { Accept: 'application/json' }, cache: 'no-store' }),
+      fetch(catalogPriceIndexUrl, { headers: { Accept: 'application/json' }, cache: 'no-store' }),
+    ]);
+    if (!catalogResponse.ok) throw new Error(`Catálogo ${catalogResponse.status}`);
+    catalogIndex = await catalogResponse.json();
+    catalogPriceIndex = priceResponse.ok ? await priceResponse.json() : { prices: {}, coverage: null };
+    if (token !== view.loadToken || !Array.isArray(catalogIndex?.cards)) return;
+    view.cards = catalogIndex.cards.map(catalogCardFromTuple);
+    view.loaded = true; view.loadingMore = false;
+    if (state !== view) return;
+    populateSetFilter();
+    await ensureCatalogOracleMatches();
+    applyFilters();
+    const selectedId = new URLSearchParams(location.search).get('card');
+    const selected = view.cards.find((card) => card.id === selectedId);
+    if (selected) { await hydrateCatalogCards([selected]); openCard(selected, { pushHistory: false, initial: true }); }
+  } catch {
+    if (token !== view.loadToken || state !== view) return;
+    view.cards = []; view.filtered = []; view.loaded = false; render(); $('errorState').hidden = false;
+  } finally {
+    if (token === view.loadToken && state === view) {
+      $('loadingState').hidden = true; $('cardGrid').setAttribute('aria-busy', 'false');
+    }
+  }
+}
+
 async function loadCards() {
-  const token = ++state.loadToken;
+  const view = viewStates.banlist;
+  const token = ++view.loadToken;
   const cached = readCardsCache();
   const cachedCards = cached?.cards || [];
-  $('loadingState').hidden = Boolean(cachedCards.length); $('errorState').hidden = true; $('cardGrid').setAttribute('aria-busy', 'true'); $('cardGrid').innerHTML = ''; $('emptyState').hidden = true;
+  if (state === view) { $('loadingState').hidden = Boolean(cachedCards.length); $('errorState').hidden = true; $('cardGrid').setAttribute('aria-busy', 'true'); $('cardGrid').innerHTML = ''; $('emptyState').hidden = true; }
   if (cachedCards.length) {
-    state.cards = cachedCards; state.loadingMore = true;
+    view.cards = cachedCards; view.loadingMore = true;
     $('totalCards').textContent = `${cachedCards.length}+`;
-    populateSetFilter(); renderSeals(); applyFilters();
+    if (state === view) { populateSetFilter(); renderSeals(); applyFilters(); }
   }
   try {
     const fullCards = await fetchBanlistProgressively((partialCards, firstPage) => {
-      if (token !== state.loadToken) return;
-      if (firstPage || !cachedCards?.length) { $('loadingState').hidden = true; state.loadingMore = true; }
-      state.cards = partialCards; $('totalCards').textContent = `${partialCards.length}+`; renderSeals(); applyFilters();
+      if (token !== view.loadToken) return;
+      view.cards = partialCards; view.loadingMore = true; $('totalCards').textContent = `${partialCards.length}+`;
+      if (state === view) { if (firstPage || !cachedCards?.length) $('loadingState').hidden = true; renderSeals(); applyFilters(); }
     });
-    if (token !== state.loadToken || !fullCards.length) throw new Error('empty');
-    state.cards = fullCards; state.loadingMore = false; $('totalCards').textContent = fullCards.length;
-    writeCardsCache(fullCards); populateSetFilter(); renderSeals(); applyFilters();
+    if (token !== view.loadToken || !fullCards.length) throw new Error('empty');
+    view.cards = fullCards; view.loadingMore = false; view.loaded = true; $('totalCards').textContent = fullCards.length;
+    writeCardsCache(fullCards); if (state === view) { populateSetFilter(); renderSeals(); applyFilters(); }
   } catch {
-    if (token !== state.loadToken) return;
-    state.loadingMore = false;
-    if (!state.cards.length) {
-      state.cards = []; state.filtered = []; $('totalCards').textContent = '—'; renderSeals(); render(); $('errorState').hidden = false;
-    } else {
-      showToast('Não foi possível atualizar. Mantivemos o último arquivo disponível.'); render();
+    if (token !== view.loadToken) return;
+    view.loadingMore = false;
+    if (!view.cards.length) {
+      view.cards = []; view.filtered = []; $('totalCards').textContent = '—';
+      if (state === view) { renderSeals(); render(); $('errorState').hidden = false; }
+    } else if (state === view) {
+      view.loaded = true; showToast('Não foi possível atualizar. Mantivemos o último arquivo disponível.'); render();
     }
   } finally {
-    if (token !== state.loadToken) return;
-    $('loadingState').hidden = true;
-    $('cardGrid').setAttribute('aria-busy', 'false');
+    if (token !== view.loadToken || state !== view) return;
+    $('loadingState').hidden = true; $('cardGrid').setAttribute('aria-busy', 'false');
     const selectedId = new URLSearchParams(location.search).get('card');
-    const selected = state.cards.find((card) => card.id === selectedId);
+    const selected = view.cards.find((card) => card.id === selectedId);
     if (selected) openCard(selected, { pushHistory: false, initial: true });
   }
 }
@@ -1240,5 +1554,8 @@ document.addEventListener('DOMContentLoaded', () => {
   $('pageSubtitle').textContent = site.pageSubtitle;
   $('formatCount').textContent = formats.length;
   renderDeckFormats();
-  bind(); loadCards(); loadBackground();
+  bind();
+  loadCards();
+  if (state.tab === 'catalog') loadCatalog();
+  loadBackground();
 });

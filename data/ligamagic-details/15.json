@@ -1,0 +1,26 @@
+{
+  "15710c57-369a-442b-b7ea-175f3d9d164d": {
+    "status": "available",
+    "name": "Power Play",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Conspiracy",
+    "printing_code": "CNS",
+    "collector_number": "8",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Power%20Play",
+    "checked_at": "2026-08-05T20:11:11.359Z"
+  },
+  "15cef63b-903e-4f1b-a128-e59157e07c36": {
+    "status": "available",
+    "name": "Second Sunrise",
+    "price_brl": 3.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mirrodin",
+    "printing_code": "MI",
+    "collector_number": "20",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Second%20Sunrise",
+    "checked_at": "2026-08-05T20:12:08.523Z"
+  }
+}

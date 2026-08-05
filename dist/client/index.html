@@ -23,7 +23,7 @@
     <link rel="preconnect" href="https://cards.scryfall.io" />
     <link rel="preconnect" href="https://api.scryfall.com" />
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=codex-16" />
+    <link rel="stylesheet" href="styles.css?v=codex-17" />
   </head>
   <body>
     <a class="skip-link" href="#archiveTitle">Ir para as cartas</a>
@@ -75,14 +75,24 @@
       </section>
 
       <section class="archive" aria-labelledby="archiveTitle">
-        <div class="archive__heading">
-          <div>
-            <p class="eyebrow">Grimório da banlist</p>
-            <h2 id="archiveTitle">Cartas seladas pelo conselho</h2>
-          </div>
-          <span class="archive__hint"><span aria-hidden="true">↓</span> Toque em uma carta para ver os detalhes</span>
+        <div class="collection-tabs" id="collectionTabs" role="tablist" aria-label="Coleções do Formatinho">
+          <button id="banlistTab" class="collection-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="collectionWorkspace" data-collection-tab="banlist">
+            <span>Banlist</span><small>Cartas proibidas</small>
+          </button>
+          <button id="catalogTab" class="collection-tab" type="button" role="tab" aria-selected="false" aria-controls="collectionWorkspace" data-collection-tab="catalog" tabindex="-1">
+            <span>Lista de cartas</span><small>Encontre cartas para o deck</small>
+          </button>
         </div>
 
+        <div class="archive__heading">
+          <div>
+            <p class="eyebrow" id="archiveEyebrow">Grimório da banlist</p>
+            <h2 id="archiveTitle">Cartas seladas pelo conselho</h2>
+          </div>
+          <span class="archive__hint" id="archiveHint"><span aria-hidden="true">↓</span> Toque em uma carta para ver os detalhes</span>
+        </div>
+
+        <div id="collectionWorkspace" role="tabpanel" aria-labelledby="banlistTab">
         <div class="collection-toolbar" id="collectionToolbar">
           <div class="search-control" role="search">
             <span class="search-control__icon" aria-hidden="true">⌕</span>
@@ -95,6 +105,7 @@
             <div class="toolbar-result" aria-live="polite" aria-atomic="true">
               <span class="result-pulse" aria-hidden="true"></span>
               <strong id="resultCount">Abrindo o arquivo…</strong>
+              <small id="catalogCoverage" class="catalog-coverage" hidden></small>
             </div>
             <div class="toolbar-actions">
               <label class="sort-label" for="sortFilter">
@@ -106,6 +117,8 @@
                   <option value="cmc-desc">Maior mana</option>
                   <option value="formats-desc">Mais formatos</option>
                   <option value="color">Identidade de cor</option>
+                  <option value="price-asc" data-catalog-sort hidden>Menor preço</option>
+                  <option value="price-desc" data-catalog-sort hidden>Maior preço</option>
                 </select>
               </label>
               <div class="view-toggle" aria-label="Modo de visualização">
@@ -159,6 +172,17 @@
                   <label for="setFilter">Coleção</label>
                   <select id="setFilter"><option value="">Todas as coleções</option></select>
                 </fieldset>
+                <fieldset class="filter-group catalog-filter-group" id="catalogPriceGroup" hidden>
+                  <legend>Orçamento do Formatinho</legend>
+                  <label class="price-range__label" for="priceFilter"><span>Valor máximo por carta</span><output id="priceFilterValue" for="priceFilter">R$ 99</output></label>
+                  <input id="priceFilter" class="price-range" type="range" min="0" max="99" step="1" value="99" />
+                  <div class="price-range__scale" aria-hidden="true"><span>R$ 0</span><span>R$ 99</span></div>
+                  <p class="filter-help">Prioriza o preço real da LigaMagic. Enquanto ele não estiver disponível, usa uma estimativa do Scryfall convertida pela PTAX.</p>
+                  <label class="catalog-ban-toggle" for="showBannedCatalog">
+                    <input id="showBannedCatalog" type="checkbox" />
+                    <span><strong>Exibir cartas banidas</strong><small>Ocultas por padrão para facilitar a montagem do deck.</small></span>
+                  </label>
+                </fieldset>
               </div>
 
               <footer class="filter-panel__footer">
@@ -198,6 +222,7 @@
             <button id="loadMore" class="load-more" type="button" hidden>Revelar mais cartas <span aria-hidden="true">↓</span></button>
           </div>
         </div>
+        </div>
       </section>
     </main>
 
@@ -209,7 +234,7 @@
     <dialog id="cardModal" class="card-modal" aria-labelledby="modalTitle">
       <div class="modal-shell">
         <header class="modal-header">
-          <button class="modal-back" id="closeCardModal" type="button" aria-label="Voltar para a banlist"><span aria-hidden="true">←</span><span>Banlist</span></button>
+          <button class="modal-back" id="closeCardModal" type="button" aria-label="Voltar para a coleção"><span aria-hidden="true">←</span><span id="modalBackLabel">Banlist</span></button>
           <span id="modalPosition" class="modal-position" aria-live="polite">Detalhes da carta</span>
           <div class="modal-nav">
             <button id="previousCard" type="button" aria-label="Carta anterior">‹</button>
@@ -319,6 +344,6 @@
     </dialog>
 
     <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
-    <script type="module" src="banlist.js?v=codex-20"></script>
+    <script type="module" src="banlist.js?v=codex-21"></script>
   </body>
 </html>

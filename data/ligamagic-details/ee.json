@@ -1,0 +1,26 @@
+{
+  "ee302659-59ed-4eef-babe-451b9ccf7f14": {
+    "status": "available",
+    "name": "Uro, Titan of Nature's Wrath",
+    "price_brl": 28.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3 Commander",
+    "printing_code": "M3C",
+    "collector_number": "277",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Uro%2C%20Titan%20of%20Nature's%20Wrath",
+    "checked_at": "2026-08-05T20:14:41.947Z"
+  },
+  "ee6099b0-fb1f-42f1-b862-7708c6e36d05": {
+    "status": "available",
+    "name": "Lion's Eye Diamond",
+    "price_brl": 899.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Vintage Masters",
+    "printing_code": "VMA",
+    "collector_number": "271",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Lion's%20Eye%20Diamond",
+    "checked_at": "2026-08-05T20:09:14.013Z"
+  }
+}

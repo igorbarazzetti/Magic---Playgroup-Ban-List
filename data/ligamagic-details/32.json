@@ -1,0 +1,26 @@
+{
+  "322f0459-f394-44f0-977b-55fd0cbe0712": {
+    "status": "available",
+    "name": "Yawgmoth's Will",
+    "price_brl": 119.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "World Championship Decks",
+    "printing_code": "WCD",
+    "collector_number": "20040788",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Yawgmoth's%20Will",
+    "checked_at": "2026-08-05T20:15:42.023Z"
+  },
+  "32e5339e-9e4f-46f8-b305-f9d6d3ba8bb5": {
+    "status": "available",
+    "name": "Lotus Petal",
+    "price_brl": 79.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tempest Remastered",
+    "printing_code": "TPR",
+    "collector_number": "225",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Lotus%20Petal",
+    "checked_at": "2026-08-05T20:09:20.061Z"
+  }
+}

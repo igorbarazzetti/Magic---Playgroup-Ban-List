@@ -1,0 +1,26 @@
+{
+  "c823e687-6311-4c99-974b-fd77d204141a": {
+    "status": "available",
+    "name": "Timetwister",
+    "price_brl": 2249.78,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "30th Anniversary Edition",
+    "printing_code": "30A",
+    "collector_number": "84",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Timetwister",
+    "checked_at": "2026-08-05T20:13:59.801Z"
+  },
+  "c8625113-0ce4-4454-83a1-25c31b8bfb9a": {
+    "status": "available",
+    "name": "Disciple of the Vault",
+    "price_brl": 0.67,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mirrodin",
+    "printing_code": "MI",
+    "collector_number": "62",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Disciple%20of%20the%20Vault",
+    "checked_at": "2026-08-05T20:05:19.459Z"
+  }
+}

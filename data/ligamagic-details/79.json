@@ -1,0 +1,26 @@
+{
+  "79172853-240c-4924-8b20-edf469946df4": {
+    "status": "available",
+    "name": "Iterative Analysis",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "The List",
+    "printing_code": "PLIST",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Iterative%20Analysis",
+    "checked_at": "2026-08-05T20:08:31.962Z"
+  },
+  "792e1072-00bf-4f63-b956-5f20cdf09f11": {
+    "status": "available",
+    "name": "Goblin Recruiter",
+    "price_brl": 31.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Visões",
+    "printing_code": "VI",
+    "collector_number": "49",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Goblin%20Recruiter",
+    "checked_at": "2026-08-05T20:07:01.718Z"
+  }
+}

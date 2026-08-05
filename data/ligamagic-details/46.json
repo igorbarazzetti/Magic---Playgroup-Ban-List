@@ -1,0 +1,26 @@
+{
+  "4692740f-be90-459f-8d90-c4ae71771595": {
+    "status": "available",
+    "name": "Crusade",
+    "price_brl": 4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Duel Decks: Elspeth vs. Tezzeret",
+    "printing_code": "DDF",
+    "collector_number": "27",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Crusade",
+    "checked_at": "2026-08-05T20:04:40.956Z"
+  },
+  "46b1a169-bc32-47bf-b379-fa0c3d13878f": {
+    "status": "available",
+    "name": "Cori-Steel Cutter",
+    "price_brl": 50.78,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm",
+    "printing_code": "TDM",
+    "collector_number": "103",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Cori-Steel%20Cutter",
+    "checked_at": "2026-08-05T20:04:31.361Z"
+  }
+}

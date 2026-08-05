@@ -1,0 +1,26 @@
+{
+  "e958b3c5-0666-4a99-a933-e5cb8b0da9da": {
+    "status": "available",
+    "name": "Cranial Ram",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3",
+    "printing_code": "MH3",
+    "collector_number": "180",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Cranial%20Ram",
+    "checked_at": "2026-08-05T20:04:37.396Z"
+  },
+  "e9da499c-fa43-4e94-8395-5c030ff39502": {
+    "status": "available",
+    "name": "Price of Progress",
+    "price_brl": 31,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Eternal Masters",
+    "printing_code": "EMA",
+    "collector_number": "141",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Price%20of%20Progress",
+    "checked_at": "2026-08-05T20:11:17.375Z"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "d5d91377-fd66-4dbe-a092-07f2ea379ca7": {
+    "status": "available",
+    "name": "Leovold, Emissary of Trest",
+    "price_brl": 19.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mystery Booster 2",
+    "printing_code": "MB2",
+    "collector_number": "1313",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Leovold%2C%20Emissary%20of%20Trest",
+    "checked_at": "2026-08-05T20:09:02.010Z"
+  },
+  "d5ed1233-df87-4b90-8918-13922ec95249": {
+    "status": "available",
+    "name": "Mox Sapphire",
+    "price_brl": 4999.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "30th Anniversary Edition",
+    "printing_code": "30A",
+    "collector_number": "262",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mox%20Sapphire",
+    "checked_at": "2026-08-05T20:10:17.186Z"
+  }
+}

@@ -5,29 +5,41 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const defaultOutput = resolve(projectRoot, 'data', 'ligamagic-prices.json');
-const refreshIntervalMs = 48 * 60 * 60 * 1000;
-const requestDelayMs = Math.max(1500, Number(process.env.LIGAMAGIC_REQUEST_DELAY_MS || 3000));
+const dataRoot = resolve(projectRoot, 'data');
+const catalogPath = resolve(dataRoot, 'catalog', 'scryfall-index.json');
+const priceIndexPath = resolve(dataRoot, 'ligamagic-catalog-prices.json');
+const detailsRoot = resolve(dataRoot, 'ligamagic-details');
+const legacyPath = resolve(dataRoot, 'ligamagic-prices.json');
+const catalogQuery = '(game:paper) usd<20.00 prefer:best';
+const banlistQuery = '(banned:standard OR banned:pioneer OR banned:modern OR banned:legacy OR banned:commander OR banned:duel OR banned:pauper) -set:sunf -set:unf';
+const trackedFormats = ['standard', 'pioneer', 'modern', 'legacy', 'commander', 'duel', 'pauper'];
 const sourceName = 'LigaMagic';
 const sourceHomepage = 'https://www.ligamagic.com.br/';
-const scryfallQuery = '(banned:standard OR banned:pioneer OR banned:modern OR banned:legacy OR banned:commander OR banned:duel OR banned:pauper) -set:sunf -set:unf';
+const catalogRefreshMs = 24 * 60 * 60 * 1000;
+const maintenanceIntervalMs = 6 * 60 * 60 * 1000;
+const defaultDelayMs = Math.max(10_000, Number(process.env.LIGAMAGIC_REQUEST_DELAY_MS || 10_000));
 const requestHeaders = {
   Accept: 'text/html,application/xhtml+xml',
   'Accept-Language': 'pt-BR,pt;q=0.9,en;q=0.8',
-  'User-Agent': 'Playgroup-da-Amizade/1.0 (personal use; source: LigaMagic; https://codice-dos-banidos.igorbarazzetti.chatgpt.site)',
+  'User-Agent': 'Playgroup-da-Amizade/2.0 (personal use; source: LigaMagic; https://codice-dos-banidos.igorbarazzetti.chatgpt.site)',
 };
-const scryfallHeaders = {
+const jsonHeaders = {
   Accept: 'application/json',
-  'User-Agent': 'Playgroup-da-Amizade/1.0 (price cache refresh; https://github.com/igorbarazzetti/Magic---Playgroup-Ban-List)',
+  'User-Agent': 'Playgroup-da-Amizade/2.0 (catalog and price cache; https://github.com/igorbarazzetti/Magic---Playgroup-Ban-List)',
 };
 
+export const catalogTuple = Object.freeze({ id: 0, oracleId: 1, name: 2, colorMask: 3, type: 4, cmc: 5, rarity: 6, set: 7, usdCents: 8, formats: 9 });
+export const priceTuple = Object.freeze({ cents: 0, status: 1, checkedAt: 2 });
+
 function parseOptions(argv) {
-  const options = { force: false, limit: null, output: defaultOutput };
-  argv.forEach((argument) => {
+  const options = { force: false, prepareOnly: false, dryRun: false, refreshCatalog: false, limit: 100 };
+  for (const argument of argv) {
     if (argument === '--force') options.force = true;
-    if (argument.startsWith('--limit=')) options.limit = Number(argument.slice(8));
-    if (argument.startsWith('--output=')) options.output = resolve(projectRoot, argument.slice(9));
-  });
+    else if (argument === '--prepare-only') options.prepareOnly = true;
+    else if (argument === '--dry-run') options.dryRun = true;
+    else if (argument === '--refresh-catalog') options.refreshCatalog = true;
+    else if (argument.startsWith('--limit=')) options.limit = Math.max(1, Number(argument.slice(8)) || 100);
+  }
   return options;
 }
 
@@ -53,8 +65,8 @@ function parsePrice(value) {
   return Number.isFinite(amount) && amount > 0 ? amount : null;
 }
 
-function extractCheapestNormalPrinting(html) {
-  const match = html.match(/var\s+cards_editions\s*=\s*(\[[\s\S]*?\]);/i);
+export function extractCheapestNormalPrinting(html) {
+  const match = String(html).match(/var\s+cards_editions\s*=\s*(\[[\s\S]*?\]);/i);
   if (!match) throw new Error('A lista de impressões não foi encontrada na página.');
   const editions = JSON.parse(match[1]);
   const candidates = editions
@@ -69,14 +81,9 @@ function extractCheapestNormalPrinting(html) {
   return candidates[0] || null;
 }
 
-async function readPriceBook(path) {
-  try {
-    const parsed = JSON.parse(await readFile(path, 'utf8'));
-    return parsed && typeof parsed === 'object' ? parsed : { cards: {} };
-  } catch (error) {
-    if (error?.code === 'ENOENT') return { cards: {} };
-    throw error;
-  }
+async function readJson(path, fallback = null) {
+  try { return JSON.parse(await readFile(path, 'utf8')); }
+  catch (error) { if (error?.code === 'ENOENT') return fallback; throw error; }
 }
 
 async function writeJson(path, value) {
@@ -87,145 +94,333 @@ async function writeJson(path, value) {
 }
 
 async function sleep(milliseconds) {
-  await new Promise((resolve) => setTimeout(resolve, milliseconds));
+  await new Promise((resolvePromise) => setTimeout(resolvePromise, milliseconds));
 }
 
-async function fetchWithRetry(url, headers) {
+async function fetchWithRetry(url, { headers = jsonHeaders, expect = 'json' } = {}) {
   let lastError;
   for (let attempt = 0; attempt < 3; attempt += 1) {
     try {
-      const response = await fetch(url, { headers, redirect: 'follow', signal: AbortSignal.timeout(20000) });
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      return response;
+      const response = await fetch(url, { headers, redirect: 'follow', signal: AbortSignal.timeout(30_000) });
+      if (!response.ok) {
+        const error = new Error(`HTTP ${response.status}`);
+        error.status = response.status;
+        error.retryAfter = Number(response.headers.get('retry-after')) || null;
+        throw error;
+      }
+      return expect === 'text' ? response.text() : response.json();
     } catch (error) {
       lastError = error;
-      const status = Number(String(error?.message || '').match(/HTTP\s+(\d+)/)?.[1]);
-      // Uma página inexistente não se recupera com novas tentativas. Repetimos
-      // somente indisponibilidades transitórias para não alongar a coleta inteira.
+      const status = Number(error?.status || String(error?.message || '').match(/HTTP\s+(\d+)/)?.[1]);
       const retriable = !Number.isFinite(status) || status === 408 || status === 429 || status >= 500;
-      if (!retriable) break;
-      if (attempt < 2) await sleep(2000 * (attempt + 1));
+      if (!retriable || attempt === 2) break;
+      const retryAfterMs = Number(error?.retryAfter) > 0 ? Number(error.retryAfter) * 1000 : status === 429 ? 60_000 : 10_000 * (attempt + 1);
+      await sleep(retryAfterMs);
     }
   }
   throw lastError;
 }
 
-async function fetchBanlistCards() {
+async function fetchScryfallSearch(query) {
   const cards = [];
-  let nextUrl = `https://api.scryfall.com/cards/search?q=${encodeURIComponent(scryfallQuery)}&unique=cards&order=name`;
-  while (nextUrl) {
-    const response = await fetchWithRetry(nextUrl, scryfallHeaders);
-    const payload = await response.json();
+  let url = `https://api.scryfall.com/cards/search?q=${encodeURIComponent(query)}&unique=cards&order=name`;
+  let page = 0;
+  while (url) {
+    const payload = await fetchWithRetry(url);
+    page += 1;
     cards.push(...(payload.data || []));
-    nextUrl = payload.has_more && payload.next_page ? payload.next_page : '';
-    if (nextUrl) await sleep(120);
+    if (page === 1 || page % 20 === 0 || !payload.has_more) console.log(`Scryfall: ${cards.length}/${payload.total_cards || cards.length} cartas lidas.`);
+    url = payload.has_more && payload.next_page ? payload.next_page : '';
+    if (url) await sleep(150);
   }
-  const unique = new Map();
-  cards.forEach((card) => {
-    const oracleId = card.oracle_id || card.id;
-    if (!unique.has(oracleId)) unique.set(oracleId, card);
-  });
-  return [...unique.values()].sort((left, right) => normalizeName(left.name).localeCompare(normalizeName(right.name), 'pt-BR'));
+  return cards;
+}
+
+function colorMask(colors = []) {
+  const values = { W: 1, U: 2, B: 4, R: 8, G: 16 };
+  return colors.reduce((mask, color) => mask | (values[color] || 0), 0);
+}
+
+function primaryType(typeLine = '') {
+  const normalized = normalizeName(typeLine);
+  for (const type of ['creature', 'instant', 'sorcery', 'artifact', 'enchantment', 'planeswalker', 'land', 'battle']) {
+    if (normalized.includes(type)) return type;
+  }
+  return 'other';
+}
+
+function usdCents(card) {
+  const amount = Number(card?.prices?.usd);
+  return Number.isFinite(amount) && amount > 0 ? Math.round(amount * 100) : null;
+}
+
+function cardFormats(card) {
+  return trackedFormats.filter((format) => card?.legalities?.[format] === 'banned');
+}
+
+function formatPtaxDate(date) {
+  return `${String(date.getUTCMonth() + 1).padStart(2, '0')}-${String(date.getUTCDate()).padStart(2, '0')}-${date.getUTCFullYear()}`;
+}
+
+async function fetchPtax(previousRate = null) {
+  try {
+    const end = new Date();
+    const start = new Date(end.getTime() - 10 * 24 * 60 * 60 * 1000);
+    const url = new URL('https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarPeriodo(dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)');
+    url.searchParams.set('@dataInicial', `'${formatPtaxDate(start)}'`);
+    url.searchParams.set('@dataFinalCotacao', `'${formatPtaxDate(end)}'`);
+    url.searchParams.set('$format', 'json');
+    const payload = await fetchWithRetry(url.toString());
+    const values = (payload.value || []).filter((entry) => Number(entry.cotacaoVenda) > 0).sort((a, b) => Date.parse(b.dataHoraCotacao) - Date.parse(a.dataHoraCotacao));
+    const latest = values[0];
+    if (!latest) throw new Error('A PTAX não retornou uma cotação válida.');
+    return { rate: Number(latest.cotacaoVenda), as_of: latest.dataHoraCotacao, source: 'Banco Central do Brasil · PTAX' };
+  } catch (error) {
+    if (previousRate?.rate) return { ...previousRate, stale: true, last_error: error instanceof Error ? error.message : String(error) };
+    throw error;
+  }
+}
+
+async function refreshCatalog(previousCatalog, { force = false } = {}) {
+  const generatedAt = Date.parse(previousCatalog?.generated_at || '');
+  const shouldRefresh = force || !previousCatalog?.cards?.length || !Number.isFinite(generatedAt) || Date.now() - generatedAt >= catalogRefreshMs;
+  if (!shouldRefresh) return previousCatalog;
+
+  const usdBrl = await fetchPtax(previousCatalog?.usd_brl);
+
+  console.log('Atualizando o índice compacto do Scryfall.');
+  const catalogCards = await fetchScryfallSearch(catalogQuery);
+  const bannedCards = await fetchScryfallSearch(banlistQuery);
+  const bannedTargets = new Map();
+  for (const card of bannedCards) bannedTargets.set(card.oracle_id || card.id, [card.oracle_id || card.id, card.name]);
+  const sets = {};
+  const compactCards = catalogCards.map((card) => {
+    if (card.set) sets[card.set] = card.set_name || String(card.set).toUpperCase();
+    return [
+      card.id,
+      card.oracle_id || card.id,
+      card.name,
+      colorMask(card.color_identity || []),
+      primaryType(card.type_line),
+      Number(card.cmc || 0),
+      card.rarity || 'special',
+      card.set || '',
+      usdCents(card),
+      cardFormats(card).join(','),
+    ];
+  }).sort((left, right) => normalizeName(left[catalogTuple.name]).localeCompare(normalizeName(right[catalogTuple.name]), 'pt-BR'));
+
+  return {
+    schema_version: 1,
+    query: catalogQuery,
+    generated_at: new Date().toISOString(),
+    usd_brl: usdBrl,
+    sets: Object.fromEntries(Object.entries(sets).sort(([, left], [, right]) => left.localeCompare(right, 'pt-BR'))),
+    cards: compactCards,
+    banlist_targets: [...bannedTargets.values()].sort((left, right) => normalizeName(left[1]).localeCompare(normalizeName(right[1]), 'pt-BR')),
+  };
+}
+
+function emptyPriceIndex() {
+  return {
+    schema_version: 1,
+    source: { name: sourceName, homepage: sourceHomepage, attribution: 'Preços consultados na LigaMagic para uso pessoal do playgroup.' },
+    generated_at: null,
+    last_batch_at: null,
+    mode: 'bootstrap',
+    coverage: { target_count: 0, attempted_count: 0, confirmed_count: 0, unavailable_count: 0, stale_count: 0, percent: 0, estimated_completion_at: null },
+    prices: {},
+  };
+}
+
+function timestampSeconds(value) {
+  const milliseconds = Date.parse(value || '');
+  return Number.isFinite(milliseconds) ? Math.floor(milliseconds / 1000) : 0;
+}
+
+function detailPrefix(oracleId) {
+  return String(oracleId || 'xx').slice(0, 2).toLowerCase();
+}
+
+async function createShardStore() {
+  const cache = new Map();
+  const touched = new Set();
+  return {
+    async get(oracleId) {
+      const prefix = detailPrefix(oracleId);
+      if (!cache.has(prefix)) cache.set(prefix, await readJson(resolve(detailsRoot, `${prefix}.json`), {}));
+      return cache.get(prefix)?.[oracleId] || null;
+    },
+    async set(oracleId, entry) {
+      const prefix = detailPrefix(oracleId);
+      if (!cache.has(prefix)) cache.set(prefix, await readJson(resolve(detailsRoot, `${prefix}.json`), {}));
+      cache.get(prefix)[oracleId] = entry;
+      touched.add(prefix);
+    },
+    async write() {
+      for (const prefix of [...touched].sort()) {
+        const shard = cache.get(prefix) || {};
+        await writeJson(resolve(detailsRoot, `${prefix}.json`), Object.fromEntries(Object.entries(shard).sort(([left], [right]) => left.localeCompare(right))));
+      }
+    },
+  };
+}
+
+async function migrateLegacy(priceIndex, legacyBook, shards) {
+  for (const [oracleId, entry] of Object.entries(legacyBook?.cards || {})) {
+    if (priceIndex.prices[oracleId]) continue;
+    const checkedAt = entry.checked_at || entry.attempted_at || legacyBook.generated_at || new Date().toISOString();
+    const status = entry.status === 'available' ? 'a' : entry.status === 'stale' ? 's' : 'u';
+    const cents = Number.isFinite(Number(entry.price_brl)) ? Math.round(Number(entry.price_brl) * 100) : null;
+    priceIndex.prices[oracleId] = [cents, status, timestampSeconds(checkedAt)];
+    await shards.set(oracleId, entry);
+  }
+}
+
+function targetCards(catalog) {
+  const targets = new Map();
+  for (const card of catalog.cards || []) targets.set(card[catalogTuple.oracleId], { oracleId: card[catalogTuple.oracleId], name: card[catalogTuple.name] });
+  for (const [oracleId, name] of catalog.banlist_targets || []) targets.set(oracleId, { oracleId, name });
+  return [...targets.values()].sort((left, right) => normalizeName(left.name).localeCompare(normalizeName(right.name), 'pt-BR'));
+}
+
+export function selectBatch(targets, prices, limit) {
+  const missing = targets.filter((card) => !prices[card.oracleId]);
+  if (missing.length) return { mode: 'bootstrap', cards: missing.slice(0, limit), missing: missing.length };
+  const oldest = [...targets].sort((left, right) => Number(prices[left.oracleId]?.[priceTuple.checkedAt] || 0) - Number(prices[right.oracleId]?.[priceTuple.checkedAt] || 0));
+  return { mode: 'maintenance', cards: oldest.slice(0, limit), missing: 0 };
+}
+
+function coverageFor(targets, prices, mode) {
+  const values = targets.map((card) => prices[card.oracleId]).filter(Boolean);
+  const attempted = values.length;
+  const remaining = Math.max(0, targets.length - attempted);
+  const days = remaining / 1200;
+  return {
+    target_count: targets.length,
+    attempted_count: attempted,
+    confirmed_count: values.filter((entry) => entry[priceTuple.status] === 'a').length,
+    unavailable_count: values.filter((entry) => entry[priceTuple.status] === 'u').length,
+    stale_count: values.filter((entry) => entry[priceTuple.status] === 's').length,
+    percent: targets.length ? Number(((attempted / targets.length) * 100).toFixed(2)) : 0,
+    estimated_completion_at: mode === 'bootstrap' && remaining ? new Date(Date.now() + days * 24 * 60 * 60 * 1000).toISOString() : null,
+  };
 }
 
 async function collectPrice(card, previousEntry, throttle) {
   const sourceUrl = ligaMagicUrl(card.name);
   try {
     await throttle();
-    const response = await fetchWithRetry(sourceUrl, requestHeaders);
-    const cheapest = extractCheapestNormalPrinting(await response.text());
+    const html = await fetchWithRetry(sourceUrl, { headers: requestHeaders, expect: 'text' });
+    const cheapest = extractCheapestNormalPrinting(html);
     const checkedAt = new Date().toISOString();
-    if (!cheapest) {
-      return {
-        status: 'unavailable',
-        name: card.name,
-        price_brl: null,
-        finish: 'normal',
-        condition: 'NM',
-        source_url: sourceUrl,
-        checked_at: checkedAt,
-      };
-    }
+    if (!cheapest) return { entry: { status: 'unavailable', name: card.name, price_brl: null, finish: 'normal', condition: 'NM', source_url: sourceUrl, checked_at: checkedAt }, statusCode: null };
     return {
-      status: 'available',
-      name: card.name,
-      price_brl: cheapest.price,
-      finish: 'normal',
-      condition: 'NM',
-      printing_name: cheapest.printingName,
-      printing_code: cheapest.printingCode,
-      collector_number: cheapest.collectorNumber,
-      source_url: sourceUrl,
-      checked_at: checkedAt,
+      entry: {
+        status: 'available', name: card.name, price_brl: cheapest.price, finish: 'normal', condition: 'NM',
+        printing_name: cheapest.printingName, printing_code: cheapest.printingCode, collector_number: cheapest.collectorNumber,
+        source_url: sourceUrl, checked_at: checkedAt,
+      },
+      statusCode: null,
     };
   } catch (error) {
     const message = error instanceof Error ? error.message : 'Falha desconhecida';
-    if (previousEntry?.price_brl) {
-      return { ...previousEntry, status: 'stale', name: card.name, source_url: sourceUrl, attempted_at: new Date().toISOString(), last_error: message };
-    }
-    return {
-      status: 'unavailable',
-      name: card.name,
-      price_brl: null,
-      finish: 'normal',
-      condition: 'NM',
-      source_url: sourceUrl,
-      attempted_at: new Date().toISOString(),
-      last_error: message,
-    };
+    const statusCode = Number(error?.status || message.match(/HTTP\s+(\d+)/)?.[1]) || null;
+    if (previousEntry?.price_brl) return { entry: { ...previousEntry, status: 'stale', name: card.name, source_url: sourceUrl, attempted_at: new Date().toISOString(), last_error: message }, statusCode };
+    return { entry: { status: 'unavailable', name: card.name, price_brl: null, finish: 'normal', condition: 'NM', source_url: sourceUrl, attempted_at: new Date().toISOString(), last_error: message }, statusCode };
   }
 }
 
 async function main() {
   const options = parseOptions(process.argv.slice(2));
-  const previousBook = await readPriceBook(options.output);
-  const previousUpdate = Date.parse(previousBook.generated_at || '');
-  if (!options.force && !options.limit && Number.isFinite(previousUpdate) && Date.now() - previousUpdate < refreshIntervalMs) {
-    console.log('Os preços ainda estão dentro da janela de 48 horas; nada para atualizar.');
+  const previousCatalog = await readJson(catalogPath, null);
+  const catalog = await refreshCatalog(previousCatalog, { force: options.refreshCatalog });
+  const priceIndex = await readJson(priceIndexPath, emptyPriceIndex());
+  const legacyBook = await readJson(legacyPath, { cards: {} });
+  const shards = await createShardStore();
+  await migrateLegacy(priceIndex, legacyBook, shards);
+  const targets = targetCards(catalog);
+  const selection = selectBatch(targets, priceIndex.prices, options.limit);
+  const lastBatchAt = Date.parse(priceIndex.last_batch_at || '');
+  const maintenanceDue = options.force || !Number.isFinite(lastBatchAt) || Date.now() - lastBatchAt >= maintenanceIntervalMs;
+
+  if (options.dryRun) {
+    console.log(JSON.stringify({ mode: selection.mode, selected: selection.cards.length, missing: selection.missing, target_count: targets.length, maintenance_due: maintenanceDue }, null, 2));
     return;
   }
 
-  const cards = await fetchBanlistCards();
-  const selectedCards = Number.isFinite(options.limit) && options.limit > 0 ? cards.slice(0, options.limit) : cards;
-  const nextCards = options.limit ? { ...(previousBook.cards || {}) } : {};
+  if (options.prepareOnly) {
+    priceIndex.mode = selection.mode;
+    priceIndex.coverage = coverageFor(targets, priceIndex.prices, selection.mode);
+    priceIndex.generated_at = new Date().toISOString();
+    await Promise.all([writeJson(catalogPath, catalog), writeJson(priceIndexPath, priceIndex), shards.write()]);
+    console.log(`Catálogo preparado com ${catalog.cards.length} cartas e ${priceIndex.coverage.attempted_count} preços migrados.`);
+    return;
+  }
+
+  if (selection.mode === 'maintenance' && !maintenanceDue) {
+    console.log('A manutenção ainda está dentro da janela de 6 horas; nenhum lote foi iniciado.');
+    if (JSON.stringify(catalog) !== JSON.stringify(previousCatalog)) await writeJson(catalogPath, catalog);
+    return;
+  }
+
   let nextRequestAt = 0;
   const throttle = async () => {
     const wait = Math.max(0, nextRequestAt - Date.now());
     if (wait) await sleep(wait);
-    nextRequestAt = Date.now() + requestDelayMs;
+    nextRequestAt = Date.now() + defaultDelayMs;
   };
+  const banlistIds = new Set((catalog.banlist_targets || []).map(([oracleId]) => oracleId));
+  let consecutiveBlocks = 0;
+  let processed = 0;
+  console.log(`Modo ${selection.mode}: consultando até ${selection.cards.length} cartas com intervalo mínimo de ${defaultDelayMs} ms.`);
 
-  console.log(`Consultando ${selectedCards.length} carta(s) com intervalo mínimo de ${requestDelayMs} ms.`);
-  for (const [index, card] of selectedCards.entries()) {
-    const oracleId = card.oracle_id || card.id;
-    nextCards[oracleId] = await collectPrice(card, previousBook.cards?.[oracleId], throttle);
-    const result = nextCards[oracleId];
-    const amount = result.price_brl ? `R$ ${result.price_brl.toFixed(2)}` : result.status;
-    console.log(`[${index + 1}/${selectedCards.length}] ${card.name}: ${amount}`);
+  for (const card of selection.cards) {
+    const previousEntry = await shards.get(card.oracleId);
+    const { entry, statusCode } = await collectPrice(card, previousEntry, throttle);
+    const checkedAt = entry.checked_at || entry.attempted_at || new Date().toISOString();
+    const status = entry.status === 'available' ? 'a' : entry.status === 'stale' ? 's' : 'u';
+    const cents = Number.isFinite(Number(entry.price_brl)) ? Math.round(Number(entry.price_brl) * 100) : null;
+    priceIndex.prices[card.oracleId] = [cents, status, timestampSeconds(checkedAt)];
+    await shards.set(card.oracleId, entry);
+    if (banlistIds.has(card.oracleId)) legacyBook.cards[card.oracleId] = entry;
+    processed += 1;
+    const amount = cents !== null ? `R$ ${(cents / 100).toFixed(2)}` : entry.status;
+    console.log(`[${processed}/${selection.cards.length}] ${card.name}: ${amount}`);
+
+    consecutiveBlocks = [403, 429].includes(statusCode) ? consecutiveBlocks + 1 : 0;
+    if (consecutiveBlocks >= 5) {
+      console.warn('Circuito de segurança acionado após cinco bloqueios consecutivos; encerrando o lote.');
+      break;
+    }
   }
 
-  const allEntries = Object.values(nextCards);
-  const book = {
-    schema_version: 1,
-    source: {
-      name: sourceName,
-      homepage: sourceHomepage,
-      attribution: 'Preços consultados na LigaMagic para uso pessoal do playgroup.',
-    },
-    refresh_interval_hours: 48,
-    generated_at: new Date().toISOString(),
-    summary: {
-      available: allEntries.filter((entry) => entry.status === 'available').length,
-      unavailable: allEntries.filter((entry) => entry.status === 'unavailable').length,
-      stale: allEntries.filter((entry) => entry.status === 'stale').length,
-    },
-    cards: Object.fromEntries(Object.entries(nextCards).sort(([left], [right]) => left.localeCompare(right))),
+  const nextSelection = selectBatch(targets, priceIndex.prices, options.limit);
+  const now = new Date().toISOString();
+  priceIndex.mode = nextSelection.mode;
+  priceIndex.generated_at = now;
+  priceIndex.last_batch_at = now;
+  priceIndex.coverage = coverageFor(targets, priceIndex.prices, nextSelection.mode);
+  legacyBook.schema_version = legacyBook.schema_version || 1;
+  legacyBook.source = legacyBook.source || priceIndex.source;
+  legacyBook.refresh_interval_hours = 80 * 24;
+  legacyBook.generated_at = now;
+  const legacyValues = Object.values(legacyBook.cards || {});
+  legacyBook.summary = {
+    available: legacyValues.filter((entry) => entry.status === 'available').length,
+    unavailable: legacyValues.filter((entry) => entry.status === 'unavailable').length,
+    stale: legacyValues.filter((entry) => entry.status === 'stale').length,
   };
-  await writeJson(options.output, book);
-  console.log(`Arquivo de preços atualizado: ${options.output}`);
+  priceIndex.prices = Object.fromEntries(Object.entries(priceIndex.prices).sort(([left], [right]) => left.localeCompare(right)));
+  legacyBook.cards = Object.fromEntries(Object.entries(legacyBook.cards || {}).sort(([left], [right]) => left.localeCompare(right)));
+
+  await Promise.all([writeJson(catalogPath, catalog), writeJson(priceIndexPath, priceIndex), writeJson(legacyPath, legacyBook), shards.write()]);
+  console.log(`Lote concluído: ${processed} cartas. Cobertura ${priceIndex.coverage.attempted_count}/${priceIndex.coverage.target_count} (${priceIndex.coverage.percent}%).`);
 }
 
-main().catch((error) => {
-  console.error(error instanceof Error ? error.stack || error.message : error);
-  process.exitCode = 1;
-});
+if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  main().catch((error) => {
+    console.error(error instanceof Error ? error.stack || error.message : error);
+    process.exitCode = 1;
+  });
+}

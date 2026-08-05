@@ -1,0 +1,26 @@
+{
+  "cf0dcb27-f02e-4065-81dc-75fbbb09ea3f": {
+    "status": "available",
+    "name": "Oath of Druids",
+    "price_brl": 39.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2016",
+    "printing_code": "C16",
+    "collector_number": "159",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Oath%20of%20Druids",
+    "checked_at": "2026-08-05T20:10:47.310Z"
+  },
+  "cf288b0a-a343-4ef7-ba02-4f83a6dabeaf": {
+    "status": "available",
+    "name": "Hypergenesis",
+    "price_brl": 1.43,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Espiral Temporal",
+    "printing_code": "TS",
+    "collector_number": "201",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Hypergenesis",
+    "checked_at": "2026-08-05T20:08:01.862Z"
+  }
+}

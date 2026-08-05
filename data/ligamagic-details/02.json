@@ -1,0 +1,38 @@
+{
+  "02090581-61aa-4348-ad57-451be8ee91c2": {
+    "status": "available",
+    "name": "Ponder",
+    "price_brl": 12.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2010",
+    "printing_code": "M10",
+    "collector_number": "68",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ponder",
+    "checked_at": "2026-08-05T20:11:08.400Z"
+  },
+  "02598a35-1b11-4abe-89cd-fc44c8c36c15": {
+    "status": "available",
+    "name": "Winota, Joiner of Forces",
+    "price_brl": 21.72,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY Commander (Through the Ages)",
+    "printing_code": "FCA",
+    "collector_number": "19",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Winota%2C%20Joiner%20of%20Forces",
+    "checked_at": "2026-08-05T20:15:27.006Z"
+  },
+  "02f16726-f2f6-4943-b71a-93f8e26251d3": {
+    "status": "available",
+    "name": "Ancient Den",
+    "price_brl": 6,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "World Championship Decks",
+    "printing_code": "WCD",
+    "collector_number": "20041302",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Den",
+    "checked_at": "2026-08-05T20:02:58.118Z"
+  }
+}

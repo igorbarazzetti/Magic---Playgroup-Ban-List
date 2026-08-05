@@ -1,0 +1,50 @@
+{
+  "222fd9fc-7af4-4269-bbb9-cd7b8ac029bd": {
+    "status": "available",
+    "name": "Troll of Khazad-dûm",
+    "price_brl": 8.95,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Senhor dos Anéis: Contos da Terra Média",
+    "printing_code": "LTR",
+    "collector_number": "111",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Troll%20of%20Khazad-d%C3%BBm",
+    "checked_at": "2026-08-05T20:14:20.859Z"
+  },
+  "229d6627-1292-4ae1-8849-b0f956fa6540": {
+    "status": "available",
+    "name": "Grim Monolith",
+    "price_brl": 67.89,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "World Championship Decks",
+    "printing_code": "WCD",
+    "collector_number": "20000",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Grim%20Monolith",
+    "checked_at": "2026-08-05T20:07:19.711Z"
+  },
+  "22e89c6d-2304-4def-8a74-e53a6271e9b9": {
+    "status": "available",
+    "name": "Echoing Boon",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Conspiracy: Take the Crown",
+    "printing_code": "CN2",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Echoing%20Boon",
+    "checked_at": "2026-08-05T20:05:37.498Z"
+  },
+  "22f1a4a4-c423-4d1c-8775-0ed604a9fa51": {
+    "status": "available",
+    "name": "Deathrite Shaman",
+    "price_brl": 26.89,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Retorno a Ravnica",
+    "printing_code": "RTR",
+    "collector_number": "213",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Deathrite%20Shaman",
+    "checked_at": "2026-08-05T20:05:01.447Z"
+  }
+}

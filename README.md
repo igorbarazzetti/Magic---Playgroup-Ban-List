@@ -27,11 +27,15 @@ Abra `http://localhost:4173`.
 
 A aplicação consulta as páginas de busca do Scryfall uma vez, filtra localmente e mantém um cache no dispositivo por seis horas. Se uma atualização falhar, o último arquivo disponível continua acessível; sem API e sem cache, a interface apresenta um erro real e oferece nova tentativa.
 
+A aba **Lista de cartas** usa um índice compacto da consulta `(game:paper) usd<20.00 prefer:best`. Ela preserva filtros e rolagem separadamente da banlist, oculta cartas banidas por padrão e carrega imagens e detalhes do Scryfall apenas para as cartas visíveis. Pesquisas entre aspas consultam o texto Oracle exato no Scryfall.
+
 As coleções `Unfinity` (`UNF`) e `Unfinity Sticker Sheets` (`SUNF`) são excluídas da banlist por decisão do playgroup.
 
 ## Menor preço na LigaMagic
 
-O detalhe de cada carta mostra apenas o menor preço de uma cópia Normal/NM encontrado entre as impressões da carta, com link e menção à LigaMagic. O arquivo é atualizado localmente, no máximo a cada 48 horas, com intervalo mínimo de três segundos entre as consultas, e então publicado no GitHub para o site consumi-lo como cache. Quando uma coleta falha, o último preço válido permanece marcado como desatualizado; sem preço Normal/NM, a interface informa indisponibilidade.
+O detalhe de cada carta mostra apenas o menor preço de uma cópia Normal/NM encontrado entre todas as impressões, com link e menção à LigaMagic. Até a primeira consulta, o catálogo mostra uma estimativa calculada com o preço USD do Scryfall e a PTAX diária do Banco Central.
+
+O workflow `update-ligamagic-prices.yml` processa 100 cartas por vez, sem paralelismo e com intervalo mínimo de dez segundos. Durante a cobertura inicial ele roda a cada duas horas e prioriza cartas nunca consultadas. Depois de completar o catálogo, o coletor passa automaticamente à manutenção e ignora execuções até completar uma janela de seis horas. Falhas preservam o último valor como desatualizado; cartas sem oferta ficam marcadas como indisponíveis. Os índices de preço e os detalhes particionados por `oracle_id` são atualizados diretamente no GitHub, sem republicar o site.
 
 O validador consulta o endpoint de coleções do Scryfall em lotes de até 75 nomes e combina a legalidade oficial de cada carta com a banlist já carregada. Se essa consulta falhar, a interface informa que o resultado é parcial. O recurso não avalia tamanho do deck, limite geral de cópias nem identidade de cor do comandante.
 

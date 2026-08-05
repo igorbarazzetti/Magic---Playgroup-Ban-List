@@ -1,0 +1,38 @@
+{
+  "10180e2f-90c5-4d41-ba44-16b14948f923": {
+    "status": "available",
+    "name": "Protean Hulk",
+    "price_brl": 19.95,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Insurreição",
+    "printing_code": "DI",
+    "collector_number": "90",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Protean%20Hulk",
+    "checked_at": "2026-08-05T20:11:29.411Z"
+  },
+  "108ae90a-50fa-4cfd-b751-d630e41425fe": {
+    "status": "available",
+    "name": "Wrenn and Six",
+    "price_brl": 67.6,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons",
+    "printing_code": "MH1",
+    "collector_number": "217",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Wrenn%20and%20Six",
+    "checked_at": "2026-08-05T20:15:36.033Z"
+  },
+  "10d13ff6-c4d0-4753-8939-a8a90f0e92bb": {
+    "status": "available",
+    "name": "Eye of Ugin",
+    "price_brl": 149,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Masters 2015",
+    "printing_code": "MM2",
+    "collector_number": "242",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Eye%20of%20Ugin",
+    "checked_at": "2026-08-05T20:05:59.002Z"
+  }
+}

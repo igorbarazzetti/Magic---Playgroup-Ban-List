@@ -1,0 +1,26 @@
+{
+  "992d9a72-d34d-47d7-96fb-37f0efb515ef": {
+    "status": "available",
+    "name": "Hymn to Tourach",
+    "price_brl": 1.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fallen Empires",
+    "printing_code": "FE",
+    "collector_number": "54",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Hymn%20to%20Tourach",
+    "checked_at": "2026-08-05T20:07:58.879Z"
+  },
+  "99d4d99d-cf56-45aa-aa39-a250695612f2": {
+    "status": "available",
+    "name": "Time Vault",
+    "price_brl": 1790,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "30th Anniversary Edition",
+    "printing_code": "30A",
+    "collector_number": "270",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Time%20Vault",
+    "checked_at": "2026-08-05T20:13:50.788Z"
+  }
+}

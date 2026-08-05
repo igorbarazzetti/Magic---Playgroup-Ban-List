@@ -1,0 +1,50 @@
+{
+  "f309fe9f-0732-4b81-a342-a394225cbbb1": {
+    "status": "available",
+    "name": "Secrets of Paradise",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Conspiracy",
+    "printing_code": "CNS",
+    "collector_number": "10",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Secrets%20of%20Paradise",
+    "checked_at": "2026-08-05T20:12:14.542Z"
+  },
+  "f3c5978a-70fa-431f-933b-b954bd0db0ea": {
+    "status": "available",
+    "name": "Mox Diamond",
+    "price_brl": 4225,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fortaleza",
+    "printing_code": "SH",
+    "collector_number": "75",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mox%20Diamond",
+    "checked_at": "2026-08-05T20:09:59.127Z"
+  },
+  "f3c7af78-a77d-4134-82a2-a5ce84285a84": {
+    "status": "available",
+    "name": "Flooded Strand",
+    "price_brl": 50.36,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "World Championship Decks",
+    "printing_code": "WCD",
+    "collector_number": "20040",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Flooded%20Strand",
+    "checked_at": "2026-08-05T20:06:25.615Z"
+  },
+  "f3e28778-0149-4dbd-badb-ba5aeacacd76": {
+    "status": "available",
+    "name": "Kuldotha Rebirth",
+    "price_brl": 0.72,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Cicatrizes de Mirrodin",
+    "printing_code": "SOM",
+    "collector_number": "96",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Kuldotha%20Rebirth",
+    "checked_at": "2026-08-05T20:08:59.041Z"
+  }
+}

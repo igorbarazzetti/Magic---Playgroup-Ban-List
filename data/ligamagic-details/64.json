@@ -1,0 +1,26 @@
+{
+  "646a2371-54c0-4492-ac2f-20f109d6108c": {
+    "status": "available",
+    "name": "Monstrous Rage",
+    "price_brl": 0.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven: Mystical Archive",
+    "printing_code": "SOA",
+    "collector_number": "45",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Monstrous%20Rage",
+    "checked_at": "2026-08-05T20:09:53.179Z"
+  },
+  "64bf8929-f5f2-4d50-8667-13b1d007bcfc": {
+    "status": "available",
+    "name": "Seething Song",
+    "price_brl": 14.81,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "World Championship Decks",
+    "printing_code": "WCD",
+    "collector_number": "20040",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Seething%20Song",
+    "checked_at": "2026-08-05T20:12:20.569Z"
+  }
+}

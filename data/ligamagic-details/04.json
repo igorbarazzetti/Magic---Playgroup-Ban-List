@@ -1,0 +1,26 @@
+{
+  "0452be2a-e97a-4269-a9e3-b616265ecb2e": {
+    "status": "available",
+    "name": "Vivi Ornitier",
+    "price_brl": 199.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY",
+    "printing_code": "FIN",
+    "collector_number": "248",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Vivi%20Ornitier",
+    "checked_at": "2026-08-05T20:14:59.952Z"
+  },
+  "0456ec64-2c81-4763-a352-8ff64a4c3d6b": {
+    "status": "available",
+    "name": "Deadly Rollick",
+    "price_brl": 114.23,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2020",
+    "printing_code": "C20",
+    "collector_number": "42",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Deadly%20Rollick",
+    "checked_at": "2026-08-05T20:04:58.513Z"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "854ad486-0c59-4c57-9a76-ab1dff0ff37c": {
+    "status": "available",
+    "name": "Invoke Prejudice",
+    "price_brl": 841.44,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Legends",
+    "printing_code": "LG",
+    "collector_number": "135",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Invoke%20Prejudice",
+    "checked_at": "2026-08-05T20:08:25.931Z"
+  },
+  "85eefda9-4aab-467d-a08c-be026cb8ff42": {
+    "status": "available",
+    "name": "Amalia Benavides Aguirre",
+    "price_brl": 3.98,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "As Cavernas Perdidas de Ixalan",
+    "printing_code": "LCI",
+    "collector_number": "221",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amalia%20Benavides%20Aguirre",
+    "checked_at": "2026-08-05T20:02:46.057Z"
+  }
+}

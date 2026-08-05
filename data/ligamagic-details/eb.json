@@ -1,0 +1,26 @@
+{
+  "eb9c9a34-88a8-4afe-a053-806f6b29834f": {
+    "status": "available",
+    "name": "Memory Jar",
+    "price_brl": 104,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Legado de Urza",
+    "printing_code": "UL",
+    "collector_number": "129",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Memory%20Jar",
+    "checked_at": "2026-08-05T20:09:38.083Z"
+  },
+  "ebd2d760-5ad8-4027-b124-171822f3edfe": {
+    "status": "available",
+    "name": "Grapeshot",
+    "price_brl": 0.18,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Espiral Temporal",
+    "printing_code": "TS",
+    "collector_number": "160",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Grapeshot",
+    "checked_at": "2026-08-05T20:07:11.382Z"
+  }
+}

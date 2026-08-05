@@ -1,0 +1,38 @@
+{
+  "1342ee23-c3a0-4578-833a-e30a9fc9141c": {
+    "status": "available",
+    "name": "Secret Summoning",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Conspiracy",
+    "printing_code": "CNS",
+    "collector_number": "9",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Secret%20Summoning",
+    "checked_at": "2026-08-05T20:12:12.043Z"
+  },
+  "134d5b82-7940-4b33-a922-7f9d1f403e50": {
+    "status": "available",
+    "name": "Lotus Field",
+    "price_brl": 8.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven Commander",
+    "printing_code": "SOC",
+    "collector_number": "385",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Lotus%20Field",
+    "checked_at": "2026-08-05T20:09:17.059Z"
+  },
+  "13575cf9-65c1-4861-b21e-eb2155e07766": {
+    "status": "available",
+    "name": "Sensei's Divining Top",
+    "price_brl": 140.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Campeões de Kamigawa",
+    "printing_code": "CHK",
+    "collector_number": "268",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Sensei's%20Divining%20Top",
+    "checked_at": "2026-08-05T20:12:23.963Z"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "5a46ad2a-35b1-4dd5-b7c3-fec36b7c67ab": {
+    "status": "available",
+    "name": "Sinkhole",
+    "price_brl": 29,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Eternal Masters",
+    "printing_code": "EMA",
+    "collector_number": "106",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Sinkhole",
+    "checked_at": "2026-08-05T20:12:38.623Z"
+  },
+  "5a9c1c2d-d4d7-4df3-a853-f1b81c67b3e3": {
+    "status": "available",
+    "name": "Immediate Action",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Conspiracy",
+    "printing_code": "CNS",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Immediate%20Action",
+    "checked_at": "2026-08-05T20:08:04.866Z"
+  }
+}

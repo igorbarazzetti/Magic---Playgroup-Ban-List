@@ -1,0 +1,26 @@
+{
+  "ef86989d-ce80-4e55-aece-7d11710eeffa": {
+    "status": "available",
+    "name": "Polluted Delta",
+    "price_brl": 78.98,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Khans de Tarkir",
+    "printing_code": "KTK",
+    "collector_number": "239",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Polluted%20Delta",
+    "checked_at": "2026-08-05T20:11:05.367Z"
+  },
+  "efe9c3e0-7315-408e-9903-9d25a681039b": {
+    "status": "available",
+    "name": "Golos, Tireless Pilgrim",
+    "price_brl": 3.8,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2020",
+    "printing_code": "M20",
+    "collector_number": "226",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Golos%2C%20Tireless%20Pilgrim",
+    "checked_at": "2026-08-05T20:07:07.706Z"
+  }
+}

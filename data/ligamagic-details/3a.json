@@ -1,0 +1,26 @@
+{
+  "3a59c882-8bb8-49ba-862f-125020dd5bec": {
+    "status": "available",
+    "name": "Empty the Warrens",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Espiral Temporal",
+    "printing_code": "TS",
+    "collector_number": "152",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Empty%20the%20Warrens",
+    "checked_at": "2026-08-05T20:05:43.574Z"
+  },
+  "3aa83ed2-f48b-4ce6-a614-2c54ddf50538": {
+    "status": "available",
+    "name": "The One Ring",
+    "price_brl": 656.67,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Senhor dos Anéis: Contos da Terra Média (Promo)",
+    "printing_code": "PLTR",
+    "collector_number": "451",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=The%20One%20Ring",
+    "checked_at": "2026-08-05T20:13:38.785Z"
+  }
+}

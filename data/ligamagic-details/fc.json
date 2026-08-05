@@ -1,0 +1,38 @@
+{
+  "fc04f621-338b-4d4c-bf57-5e5a00d990f0": {
+    "status": "available",
+    "name": "Shahrazad",
+    "price_brl": 2999.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Arabian Nights",
+    "printing_code": "AN",
+    "collector_number": "10",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Shahrazad",
+    "checked_at": "2026-08-05T20:12:32.563Z"
+  },
+  "fc0707c7-d504-4ccf-a0d2-3eb6e26e7a57": {
+    "status": "available",
+    "name": "Bloodstained Mire",
+    "price_brl": 39.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "World Championship Decks",
+    "printing_code": "WCD",
+    "collector_number": "20041221",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodstained%20Mire",
+    "checked_at": "2026-08-05T20:03:43.191Z"
+  },
+  "fcb7c93c-46ab-49b5-a6e0-35d73f3be8f0": {
+    "status": "available",
+    "name": "Screaming Nemesis",
+    "price_brl": 64.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Noctumbra: A Casa dos Horrores",
+    "printing_code": "DSK",
+    "collector_number": "157",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Screaming%20Nemesis",
+    "checked_at": "2026-08-05T20:12:02.531Z"
+  }
+}

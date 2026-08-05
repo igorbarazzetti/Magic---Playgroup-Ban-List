@@ -1,0 +1,26 @@
+{
+  "a610c77c-fe31-4465-a1c1-392db4ce4ed1": {
+    "status": "available",
+    "name": "Cleanse",
+    "price_brl": 299,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Legends",
+    "printing_code": "LG",
+    "collector_number": "46",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Cleanse",
+    "checked_at": "2026-08-05T20:04:16.290Z"
+  },
+  "a6708b11-1bcd-4208-a967-fe91f2e3313c": {
+    "status": "available",
+    "name": "Recurring Nightmare",
+    "price_brl": 119.98,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "World Championship Decks",
+    "printing_code": "WCD",
+    "collector_number": "19980117",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Recurring%20Nightmare",
+    "checked_at": "2026-08-05T20:11:50.480Z"
+  }
+}

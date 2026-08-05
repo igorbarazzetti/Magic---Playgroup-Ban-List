@@ -1,0 +1,50 @@
+{
+  "16cd0b90-f70c-4efa-b252-8de8784ef9a3": {
+    "status": "available",
+    "name": "Imperial Seal",
+    "price_brl": 699.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Double Masters 2022",
+    "printing_code": "2X2",
+    "collector_number": "79",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Imperial%20Seal",
+    "checked_at": "2026-08-05T20:08:07.880Z"
+  },
+  "16d8ee99-8ec8-429f-9ba7-818a74b6f910": {
+    "status": "available",
+    "name": "Gush",
+    "price_brl": 11.28,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "World Championship Decks",
+    "printing_code": "WCD",
+    "collector_number": "20040929",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Gush",
+    "checked_at": "2026-08-05T20:07:25.806Z"
+  },
+  "16e015b2-f8a3-4b1a-80be-58a8f5fb5e8c": {
+    "status": "available",
+    "name": "Frantic Search",
+    "price_brl": 1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "World Championship Decks",
+    "printing_code": "WCD",
+    "collector_number": "20040848",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Frantic%20Search",
+    "checked_at": "2026-08-05T20:06:34.653Z"
+  },
+  "16f6438d-2a29-41cb-bf0c-4d02bd66112b": {
+    "status": "available",
+    "name": "Hermit Druid",
+    "price_brl": 37.82,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad Remastered",
+    "printing_code": "INR",
+    "collector_number": "202",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Hermit%20Druid",
+    "checked_at": "2026-08-05T20:07:32.226Z"
+  }
+}

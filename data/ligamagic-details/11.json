@@ -1,0 +1,26 @@
+{
+  "1197a595-3afc-4f18-b868-bbb096771922": {
+    "status": "available",
+    "name": "Leyline of Abundance",
+    "price_brl": 2.28,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2020",
+    "printing_code": "M20",
+    "collector_number": "179",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Leyline%20of%20Abundance",
+    "checked_at": "2026-08-05T20:09:05.021Z"
+  },
+  "119d719d-e965-45b4-9bc9-ac03211b10c2": {
+    "status": "available",
+    "name": "Survival of the Fittest",
+    "price_brl": 479.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "World Championship Decks",
+    "printing_code": "WCD",
+    "collector_number": "19980118",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Survival%20of%20the%20Fittest",
+    "checked_at": "2026-08-05T20:13:17.679Z"
+  }
+}

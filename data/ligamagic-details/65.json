@@ -1,0 +1,50 @@
+{
+  "652f6d90-b158-4f9b-a15e-3e677905331d": {
+    "status": "available",
+    "name": "Worldknit",
+    "price_brl": 0.39,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Conspiracy",
+    "printing_code": "CNS",
+    "collector_number": "13",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Worldknit",
+    "checked_at": "2026-08-05T20:15:33.006Z"
+  },
+  "6587a463-a108-4854-b6d1-944e89b8c8a4": {
+    "status": "available",
+    "name": "Wooded Foothills",
+    "price_brl": 88,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Khans de Tarkir",
+    "printing_code": "KTK",
+    "collector_number": "249",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Wooded%20Foothills",
+    "checked_at": "2026-08-05T20:15:30.018Z"
+  },
+  "65986c1b-8e51-4604-b685-d82fa7d1263a": {
+    "status": "available",
+    "name": "Skullclamp",
+    "price_brl": 22,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Darksteel",
+    "printing_code": "DS",
+    "collector_number": "140",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Skullclamp",
+    "checked_at": "2026-08-05T20:12:41.622Z"
+  },
+  "65a9f643-063f-406a-8d5a-5ebbe0f04c3d": {
+    "status": "available",
+    "name": "Demonic Attorney",
+    "price_brl": 5.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Revised Edition",
+    "printing_code": "RV",
+    "collector_number": "60",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Demonic%20Attorney",
+    "checked_at": "2026-08-05T20:05:07.681Z"
+  }
+}

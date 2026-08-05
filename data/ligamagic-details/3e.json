@@ -1,0 +1,26 @@
+{
+  "3e057471-e415-4105-9064-8236a0a5047d": {
+    "status": "available",
+    "name": "Flash",
+    "price_brl": 3.23,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Sexta Edição Classica",
+    "printing_code": "6E",
+    "collector_number": "67",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Flash",
+    "checked_at": "2026-08-05T20:06:19.574Z"
+  },
+  "3ed14ea7-ee62-4604-af3b-deafb00108c3": {
+    "status": "available",
+    "name": "Amped Raptor",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3",
+    "printing_code": "MH3",
+    "collector_number": "114",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amped%20Raptor",
+    "checked_at": "2026-08-05T20:02:49.078Z"
+  }
+}

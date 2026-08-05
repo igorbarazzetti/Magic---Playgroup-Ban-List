@@ -1,0 +1,26 @@
+{
+  "0f071f64-b69b-4fa0-999c-5028429e3cfb": {
+    "status": "available",
+    "name": "Bridge from Below",
+    "price_brl": 5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Visão do Futuro",
+    "printing_code": "FUT",
+    "collector_number": "81",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bridge%20from%20Below",
+    "checked_at": "2026-08-05T20:03:49.486Z"
+  },
+  "0ff11a61-6fe3-4c70-aba8-417023a5e54e": {
+    "status": "available",
+    "name": "Nadu, Winged Wisdom",
+    "price_brl": 3.74,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3",
+    "printing_code": "MH3",
+    "collector_number": "193",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Nadu%2C%20Winged%20Wisdom",
+    "checked_at": "2026-08-05T20:10:32.279Z"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "697bcfe1-ecbf-42a1-bfc7-0766d48ca56b": {
+    "status": "available",
+    "name": "Dockside Extortionist",
+    "price_brl": 63.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2019",
+    "printing_code": "C19",
+    "collector_number": "24",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Dockside%20Extortionist",
+    "checked_at": "2026-08-05T20:05:22.479Z"
+  },
+  "69b409b3-fa16-4c79-8b46-215a7036ed46": {
+    "status": "available",
+    "name": "The Tabernacle at Pendrell Vale",
+    "price_brl": 16999.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Legends",
+    "printing_code": "LG",
+    "collector_number": "265",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=The%20Tabernacle%20at%20Pendrell%20Vale",
+    "checked_at": "2026-08-05T20:13:41.758Z"
+  },
+  "69e12b1f-0fd9-43a9-b3db-fe08290442c6": {
+    "status": "available",
+    "name": "Invert Polarity",
+    "price_brl": 3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3",
+    "printing_code": "MH3",
+    "collector_number": "190",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Invert%20Polarity",
+    "checked_at": "2026-08-05T20:08:16.929Z"
+  }
+}

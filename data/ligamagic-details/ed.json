@@ -1,0 +1,50 @@
+{
+  "ed7bdb3e-5c51-4547-9266-76a791e0b2b0": {
+    "status": "available",
+    "name": "Humility",
+    "price_brl": 275,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tempestade",
+    "printing_code": "TP",
+    "collector_number": "136",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Humility",
+    "checked_at": "2026-08-05T20:07:52.820Z"
+  },
+  "ed85fa82-e4fa-434b-92a8-36b6075708d1": {
+    "status": "available",
+    "name": "Mox Ruby",
+    "price_brl": 2900,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "30th Anniversary Edition",
+    "printing_code": "30A",
+    "collector_number": "261",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mox%20Ruby",
+    "checked_at": "2026-08-05T20:10:14.182Z"
+  },
+  "edb455f4-8dc9-4b7c-b25c-cb51b7dfbb41": {
+    "status": "available",
+    "name": "Chaos Orb",
+    "price_brl": 1072.02,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Limited Edition Beta",
+    "printing_code": "BE",
+    "collector_number": "32",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Chaos%20Orb",
+    "checked_at": "2026-08-05T20:04:07.277Z"
+  },
+  "ededbdae-d9dc-4206-9335-d7158f2d7700": {
+    "status": "available",
+    "name": "Vampiric Tutor",
+    "price_brl": 149.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Vintage Masters",
+    "printing_code": "VMA",
+    "collector_number": "145",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Vampiric%20Tutor",
+    "checked_at": "2026-08-05T20:14:44.946Z"
+  }
+}

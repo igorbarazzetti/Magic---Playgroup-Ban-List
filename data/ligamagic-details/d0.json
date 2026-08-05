@@ -1,0 +1,38 @@
+{
+  "d00ade82-caab-43c6-9756-6e9e6edfc519": {
+    "status": "available",
+    "name": "Once Upon a Time",
+    "price_brl": 5.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Trono de Eldraine",
+    "printing_code": "ELD",
+    "collector_number": "169",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Once%20Upon%20a%20Time",
+    "checked_at": "2026-08-05T20:10:53.309Z"
+  },
+  "d0209d3f-3f7e-4fd5-bce5-10bce6f29c86": {
+    "status": "available",
+    "name": "Time Walk",
+    "price_brl": 3999.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "30th Anniversary Edition",
+    "printing_code": "30A",
+    "collector_number": "83",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Time%20Walk",
+    "checked_at": "2026-08-05T20:13:53.787Z"
+  },
+  "d09c9cba-fdd2-479b-ad5d-d05181c3e3f9": {
+    "status": "available",
+    "name": "Fierce Guardianship",
+    "price_brl": 329.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secret Lair Drop Series: Pixel Perfect | Extra Life 2024",
+    "printing_code": "SLD256",
+    "collector_number": "1823",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Fierce%20Guardianship",
+    "checked_at": "2026-08-05T20:06:16.555Z"
+  }
+}

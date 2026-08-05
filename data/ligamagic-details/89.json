@@ -1,0 +1,38 @@
+{
+  "89aa65d9-2502-40b0-90b6-b25a8e9f6155": {
+    "status": "available",
+    "name": "Capture of Jingzhou",
+    "price_brl": 98,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Masters",
+    "printing_code": "CMM",
+    "collector_number": "79",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Capture%20of%20Jingzhou",
+    "checked_at": "2026-08-05T20:03:58.353Z"
+  },
+  "89ca686a-7c72-4d8f-9290-e89635624a83": {
+    "status": "available",
+    "name": "Cavern of Souls",
+    "price_brl": 214,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "As Cavernas Perdidas de Ixalan",
+    "printing_code": "LCI",
+    "collector_number": "269",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Cavern%20of%20Souls",
+    "checked_at": "2026-08-05T20:04:01.352Z"
+  },
+  "89f5b21c-18da-4071-bc42-9cdc433734bf": {
+    "status": "available",
+    "name": "Jeweled Bird",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Chronicles",
+    "printing_code": "CH",
+    "collector_number": "59",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Jeweled%20Bird",
+    "checked_at": "2026-08-05T20:08:38.106Z"
+  }
+}

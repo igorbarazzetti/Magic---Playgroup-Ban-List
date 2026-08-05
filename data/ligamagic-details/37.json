@@ -1,0 +1,50 @@
+{
+  "37108cd4-bbab-4ce3-9ed6-f60e8422e703": {
+    "status": "available",
+    "name": "Ragavan, Nimble Pilferer",
+    "price_brl": 243,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 2",
+    "printing_code": "MH2",
+    "collector_number": "138",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ragavan%2C%20Nimble%20Pilferer",
+    "checked_at": "2026-08-05T20:11:38.438Z"
+  },
+  "372351fd-58f7-4cb8-8644-5fbc94ccb145": {
+    "status": "available",
+    "name": "Prophet of Kruphix",
+    "price_brl": 11.98,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros",
+    "printing_code": "THS",
+    "collector_number": "199",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Prophet%20of%20Kruphix",
+    "checked_at": "2026-08-05T20:11:26.382Z"
+  },
+  "376ee366-e082-402f-b4db-6592fcfcacd2": {
+    "status": "available",
+    "name": "Mox Emerald",
+    "price_brl": 3400,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Collector's Edition",
+    "printing_code": "CED",
+    "collector_number": "263",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mox%20Emerald",
+    "checked_at": "2026-08-05T20:10:02.154Z"
+  },
+  "37c49483-bef6-47c6-9354-ead8560d48da": {
+    "status": "available",
+    "name": "Pradesh Gypsies",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quinta Edição",
+    "printing_code": "5E",
+    "collector_number": "304",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Pradesh%20Gypsies",
+    "checked_at": "2026-08-05T20:11:14.384Z"
+  }
+}

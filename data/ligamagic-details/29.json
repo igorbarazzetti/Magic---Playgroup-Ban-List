@@ -1,0 +1,26 @@
+{
+  "29737a60-3ebd-40d9-b935-c4f54b90d45d": {
+    "status": "available",
+    "name": "Windswept Heath",
+    "price_brl": 38.81,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "World Championship Decks",
+    "printing_code": "WCD",
+    "collector_number": "20040116",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Windswept%20Heath",
+    "checked_at": "2026-08-05T20:15:24.019Z"
+  },
+  "299fc083-0834-4064-8344-f895aff68867": {
+    "status": "available",
+    "name": "Entomb",
+    "price_brl": 35,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "World Championship Decks",
+    "printing_code": "WCD",
+    "collector_number": "20030308",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Entomb",
+    "checked_at": "2026-08-05T20:05:49.553Z"
+  }
+}

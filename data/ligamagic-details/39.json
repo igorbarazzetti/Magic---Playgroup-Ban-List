@@ -1,0 +1,38 @@
+{
+  "39451b4d-cd7a-40da-b457-cb51b609173f": {
+    "status": "available",
+    "name": "Seat of the Synod",
+    "price_brl": 4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "World Championship Decks",
+    "printing_code": "WCD",
+    "collector_number": "20040571",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Seat%20of%20the%20Synod",
+    "checked_at": "2026-08-05T20:12:05.563Z"
+  },
+  "395b312b-8fe6-4c28-b91d-620b5fcb9e6d": {
+    "status": "available",
+    "name": "Brago's Favor",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Conspiracy",
+    "printing_code": "CNS",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brago's%20Favor",
+    "checked_at": "2026-08-05T20:03:46.346Z"
+  },
+  "39b4a47a-df51-4bd9-9a20-43ac80a5d352": {
+    "status": "available",
+    "name": "Balustrade Spy",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Double Masters 2022",
+    "printing_code": "2X2",
+    "collector_number": "68",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balustrade%20Spy",
+    "checked_at": "2026-08-05T20:03:22.152Z"
+  }
+}

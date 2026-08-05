@@ -1,0 +1,26 @@
+{
+  "272016e1-df1e-4376-9851-af8b1ecba2f4": {
+    "status": "available",
+    "name": "Tempest Efreet",
+    "price_brl": 4.55,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quarta Edição",
+    "printing_code": "4E",
+    "collector_number": "306",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Tempest%20Efreet",
+    "checked_at": "2026-08-05T20:13:26.715Z"
+  },
+  "27e0948b-9916-473b-8d8c-a51bdfbc7457": {
+    "status": "available",
+    "name": "Underworld Breach",
+    "price_brl": 41.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros Além da Morte",
+    "printing_code": "THB",
+    "collector_number": "161",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Underworld%20Breach",
+    "checked_at": "2026-08-05T20:14:30.027Z"
+  }
+}

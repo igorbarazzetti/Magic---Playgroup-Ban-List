@@ -1,0 +1,26 @@
+{
+  "973c684c-a396-4e40-8aaa-365bc64a6f9a": {
+    "status": "available",
+    "name": "Galvanic Relay",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 2",
+    "printing_code": "MH2",
+    "collector_number": "127",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Galvanic%20Relay",
+    "checked_at": "2026-08-05T20:06:43.693Z"
+  },
+  "97acd977-164d-49d5-b3a1-72e0d75c9016": {
+    "status": "available",
+    "name": "Hogaak, Arisen Necropolis",
+    "price_brl": 4.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons",
+    "printing_code": "MH1",
+    "collector_number": "202",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Hogaak%2C%20Arisen%20Necropolis",
+    "checked_at": "2026-08-05T20:07:40.807Z"
+  }
+}

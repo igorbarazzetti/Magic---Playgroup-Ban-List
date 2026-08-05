@@ -1,0 +1,26 @@
+{
+  "e15504a7-2b67-4185-b916-172145f10b19": {
+    "status": "available",
+    "name": "Yorion, Sky Nomad",
+    "price_brl": 1.47,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ikoria: Terra de Colossos",
+    "printing_code": "IKO",
+    "collector_number": "232",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Yorion%2C%20Sky%20Nomad",
+    "checked_at": "2026-08-05T20:15:45.042Z"
+  },
+  "e157ad1e-be35-47f3-92db-01799f8fb6a5": {
+    "status": "available",
+    "name": "Psychic Frog",
+    "price_brl": 34.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3",
+    "printing_code": "MH3",
+    "collector_number": "199",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Psychic%20Frog",
+    "checked_at": "2026-08-05T20:11:32.440Z"
+  }
+}

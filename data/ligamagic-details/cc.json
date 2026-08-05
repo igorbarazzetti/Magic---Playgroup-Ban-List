@@ -1,0 +1,26 @@
+{
+  "ccba143d-ed9b-4044-bdad-f010a0e38e47": {
+    "status": "available",
+    "name": "Blazing Shoal",
+    "price_brl": 16.18,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Traidores de Kamigawa",
+    "printing_code": "BOK",
+    "collector_number": "96",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blazing%20Shoal",
+    "checked_at": "2026-08-05T20:03:37.548Z"
+  },
+  "ccf5a0d4-69e8-4607-a76c-cfca336899e4": {
+    "status": "available",
+    "name": "Undercity Informer",
+    "price_brl": 0.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portões Violados",
+    "printing_code": "GTC",
+    "collector_number": "82",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Undercity%20Informer",
+    "checked_at": "2026-08-05T20:14:23.866Z"
+  }
+}

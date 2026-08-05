@@ -1,0 +1,26 @@
+{
+  "74d3277a-38e5-4732-afed-084a56148f20": {
+    "status": "available",
+    "name": "Mana Drain",
+    "price_brl": 199.41,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "últimas Notícias (Metalizados Texturizados)",
+    "printing_code": "TFOTP",
+    "collector_number": "67",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mana%20Drain",
+    "checked_at": "2026-08-05T20:09:32.075Z"
+  },
+  "74f10b9a-a286-49b2-bfa1-a427ff041bd4": {
+    "status": "available",
+    "name": "Darkpact",
+    "price_brl": 10.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Revised Edition",
+    "printing_code": "RV",
+    "collector_number": "56",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Darkpact",
+    "checked_at": "2026-08-05T20:04:49.355Z"
+  }
+}

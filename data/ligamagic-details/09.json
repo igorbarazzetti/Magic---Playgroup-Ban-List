@@ -1,0 +1,26 @@
+{
+  "09496421-74e4-466a-9546-56f2a0c8eef4": {
+    "status": "available",
+    "name": "Vault of Whispers",
+    "price_brl": 6,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "World Championship Decks",
+    "printing_code": "WCD",
+    "collector_number": "20041305",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Vault%20of%20Whispers",
+    "checked_at": "2026-08-05T20:14:47.946Z"
+  },
+  "09a70ae8-3859-4a09-901d-dce063fa3b5f": {
+    "status": "available",
+    "name": "Wasteland",
+    "price_brl": 99.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "World Championship Decks",
+    "printing_code": "WCD",
+    "collector_number": "20040559",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Wasteland",
+    "checked_at": "2026-08-05T20:15:05.983Z"
+  }
+}

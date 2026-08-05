@@ -1,0 +1,26 @@
+{
+  "ec3d4466-547c-4e02-b1b5-a156ec4637e9": {
+    "status": "available",
+    "name": "Chrome Mox",
+    "price_brl": 180,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "World Championship Decks",
+    "printing_code": "WCD",
+    "collector_number": "20041274",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Chrome%20Mox",
+    "checked_at": "2026-08-05T20:04:13.312Z"
+  },
+  "ec463bde-dadf-4044-8e41-71338fd4d62f": {
+    "status": "available",
+    "name": "Arcum's Astrolabe",
+    "price_brl": 0.19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons",
+    "printing_code": "MH1",
+    "collector_number": "220",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcum's%20Astrolabe",
+    "checked_at": "2026-08-05T20:03:04.103Z"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "8c1fe337-375a-4add-93b6-0ac39ed72b4f": {
+    "status": "available",
+    "name": "Natural Order",
+    "price_brl": 112.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Strixhaven: Arquivo Místico",
+    "printing_code": "STA",
+    "collector_number": "54",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Natural%20Order",
+    "checked_at": "2026-08-05T20:10:35.253Z"
+  },
+  "8c912b1f-4584-4945-9931-f6850e5ebfa4": {
+    "status": "available",
+    "name": "Assemble the Rank and Vile",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Conspiracy: Take the Crown",
+    "printing_code": "CN2",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assemble%20the%20Rank%20and%20Vile",
+    "checked_at": "2026-08-05T20:03:07.147Z"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "17b60106-a4c7-410a-8ac3-ec8e74e29a7c": {
+    "status": "available",
+    "name": "Mystic Sanctuary",
+    "price_brl": 2.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Trono de Eldraine",
+    "printing_code": "ELD",
+    "collector_number": "247",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mystic%20Sanctuary",
+    "checked_at": "2026-08-05T20:10:26.239Z"
+  },
+  "17fa98cd-ed8f-483f-9525-7e989a82ebb2": {
+    "status": "available",
+    "name": "Balance",
+    "price_brl": 5.95,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Pro Tour Decks",
+    "printing_code": "PTD",
+    "collector_number": "19960873",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balance",
+    "checked_at": "2026-08-05T20:03:19.132Z"
+  }
+}
