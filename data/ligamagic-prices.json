@@ -6,11 +6,2672 @@
     "attribution": "Preços consultados na LigaMagic para uso pessoal do playgroup."
   },
   "refresh_interval_hours": 48,
-  "generated_at": null,
+  "generated_at": "2026-08-05T20:00:41.387Z",
   "summary": {
     "available": 0,
-    "unavailable": 0,
+    "unavailable": 266,
     "stale": 0
   },
-  "cards": {}
+  "cards": {
+    "002965be-a36f-4a09-9ce0-c6535bca1703": {
+      "status": "unavailable",
+      "name": "Veil of Summer",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Veil%20of%20Summer",
+      "attempted_at": "2026-08-05T19:59:44.369Z",
+      "last_error": "HTTP 403"
+    },
+    "02090581-61aa-4348-ad57-451be8ee91c2": {
+      "status": "unavailable",
+      "name": "Ponder",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ponder",
+      "attempted_at": "2026-08-05T19:56:02.308Z",
+      "last_error": "HTTP 403"
+    },
+    "02598a35-1b11-4abe-89cd-fc44c8c36c15": {
+      "status": "unavailable",
+      "name": "Winota, Joiner of Forces",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Winota%2C%20Joiner%20of%20Forces",
+      "attempted_at": "2026-08-05T20:00:20.380Z",
+      "last_error": "HTTP 403"
+    },
+    "02f16726-f2f6-4943-b71a-93f8e26251d3": {
+      "status": "unavailable",
+      "name": "Ancient Den",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Den",
+      "attempted_at": "2026-08-05T19:47:53.153Z",
+      "last_error": "HTTP 403"
+    },
+    "0452be2a-e97a-4269-a9e3-b616265ecb2e": {
+      "status": "unavailable",
+      "name": "Vivi Ornitier",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Vivi%20Ornitier",
+      "attempted_at": "2026-08-05T19:59:53.370Z",
+      "last_error": "HTTP 403"
+    },
+    "0456ec64-2c81-4763-a352-8ff64a4c3d6b": {
+      "status": "unavailable",
+      "name": "Deadly Rollick",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Deadly%20Rollick",
+      "attempted_at": "2026-08-05T19:49:53.190Z",
+      "last_error": "HTTP 403"
+    },
+    "050f5733-7c0b-4991-9a6c-7ea12ccf0ca9": {
+      "status": "unavailable",
+      "name": "Up the Beanstalk",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Up%20the%20Beanstalk",
+      "attempted_at": "2026-08-05T19:59:29.364Z",
+      "last_error": "HTTP 403"
+    },
+    "05c2dec2-d2f7-4036-b91f-4fccba10a8bb": {
+      "status": "unavailable",
+      "name": "Back to Basics",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Back%20to%20Basics",
+      "attempted_at": "2026-08-05T19:48:08.159Z",
+      "last_error": "HTTP 403"
+    },
+    "0677f49e-f8bf-4349-af52-2ccde9287c2e": {
+      "status": "unavailable",
+      "name": "Mox Jet",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mox%20Jet",
+      "attempted_at": "2026-08-05T19:54:59.287Z",
+      "last_error": "HTTP 403"
+    },
+    "07b6326a-b73d-422b-bcb5-c508aa3fc558": {
+      "status": "unavailable",
+      "name": "Summoner's Bond",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Summoner's%20Bond",
+      "attempted_at": "2026-08-05T19:58:05.341Z",
+      "last_error": "HTTP 403"
+    },
+    "08becc07-28bc-4a2f-a6b0-28a2998d2f50": {
+      "status": "unavailable",
+      "name": "Windfall",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Windfall",
+      "attempted_at": "2026-08-05T20:00:14.378Z",
+      "last_error": "HTTP 403"
+    },
+    "09496421-74e4-466a-9546-56f2a0c8eef4": {
+      "status": "unavailable",
+      "name": "Vault of Whispers",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Vault%20of%20Whispers",
+      "attempted_at": "2026-08-05T19:59:41.369Z",
+      "last_error": "HTTP 403"
+    },
+    "09a70ae8-3859-4a09-901d-dce063fa3b5f": {
+      "status": "unavailable",
+      "name": "Wasteland",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Wasteland",
+      "attempted_at": "2026-08-05T19:59:59.373Z",
+      "last_error": "HTTP 403"
+    },
+    "0bd67481-6bd9-48d6-92bd-8933b5ea1eae": {
+      "status": "unavailable",
+      "name": "Peregrine Drake",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Peregrine%20Drake",
+      "attempted_at": "2026-08-05T19:55:53.303Z",
+      "last_error": "HTTP 403"
+    },
+    "0d6b89dc-23fb-48e9-a54b-cea2838ae7c8": {
+      "status": "unavailable",
+      "name": "Grief",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Grief",
+      "attempted_at": "2026-08-05T19:52:11.227Z",
+      "last_error": "HTTP 403"
+    },
+    "0e505699-8388-4862-93e0-059cef91cdd4": {
+      "status": "unavailable",
+      "name": "Muzzio's Preparations",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Muzzio's%20Preparations",
+      "attempted_at": "2026-08-05T19:55:14.292Z",
+      "last_error": "HTTP 403"
+    },
+    "0f071f64-b69b-4fa0-999c-5028429e3cfb": {
+      "status": "unavailable",
+      "name": "Bridge from Below",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bridge%20from%20Below",
+      "attempted_at": "2026-08-05T19:48:44.167Z",
+      "last_error": "HTTP 403"
+    },
+    "0ff11a61-6fe3-4c70-aba8-417023a5e54e": {
+      "status": "unavailable",
+      "name": "Nadu, Winged Wisdom",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Nadu%2C%20Winged%20Wisdom",
+      "attempted_at": "2026-08-05T19:55:26.293Z",
+      "last_error": "HTTP 403"
+    },
+    "10180e2f-90c5-4d41-ba44-16b14948f923": {
+      "status": "unavailable",
+      "name": "Protean Hulk",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Protean%20Hulk",
+      "attempted_at": "2026-08-05T19:56:23.314Z",
+      "last_error": "HTTP 403"
+    },
+    "108ae90a-50fa-4cfd-b751-d630e41425fe": {
+      "status": "unavailable",
+      "name": "Wrenn and Six",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Wrenn%20and%20Six",
+      "attempted_at": "2026-08-05T20:00:29.383Z",
+      "last_error": "HTTP 403"
+    },
+    "10d13ff6-c4d0-4753-8939-a8a90f0e92bb": {
+      "status": "unavailable",
+      "name": "Eye of Ugin",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Eye%20of%20Ugin",
+      "attempted_at": "2026-08-05T19:50:53.210Z",
+      "last_error": "HTTP 403"
+    },
+    "1197a595-3afc-4f18-b868-bbb096771922": {
+      "status": "unavailable",
+      "name": "Leyline of Abundance",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Leyline%20of%20Abundance",
+      "attempted_at": "2026-08-05T19:53:59.268Z",
+      "last_error": "HTTP 403"
+    },
+    "119d719d-e965-45b4-9bc9-ac03211b10c2": {
+      "status": "unavailable",
+      "name": "Survival of the Fittest",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Survival%20of%20the%20Fittest",
+      "attempted_at": "2026-08-05T19:58:11.342Z",
+      "last_error": "HTTP 403"
+    },
+    "124c8663-21f3-4cd8-a060-9d04be35c43f": {
+      "status": "unavailable",
+      "name": "Stone-Throwing Devils",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Stone-Throwing%20Devils",
+      "attempted_at": "2026-08-05T19:57:56.339Z",
+      "last_error": "HTTP 403"
+    },
+    "1342ee23-c3a0-4578-833a-e30a9fc9141c": {
+      "status": "unavailable",
+      "name": "Secret Summoning",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Secret%20Summoning",
+      "attempted_at": "2026-08-05T19:57:05.325Z",
+      "last_error": "HTTP 403"
+    },
+    "134d5b82-7940-4b33-a922-7f9d1f403e50": {
+      "status": "unavailable",
+      "name": "Lotus Field",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Lotus%20Field",
+      "attempted_at": "2026-08-05T19:54:11.269Z",
+      "last_error": "HTTP 403"
+    },
+    "13575cf9-65c1-4861-b21e-eb2155e07766": {
+      "status": "unavailable",
+      "name": "Sensei's Divining Top",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Sensei's%20Divining%20Top",
+      "attempted_at": "2026-08-05T19:57:17.330Z",
+      "last_error": "HTTP 403"
+    },
+    "15710c57-369a-442b-b7ea-175f3d9d164d": {
+      "status": "unavailable",
+      "name": "Power Play",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Power%20Play",
+      "attempted_at": "2026-08-05T19:56:05.308Z",
+      "last_error": "HTTP 403"
+    },
+    "15cef63b-903e-4f1b-a128-e59157e07c36": {
+      "status": "unavailable",
+      "name": "Second Sunrise",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Second%20Sunrise",
+      "attempted_at": "2026-08-05T19:57:02.324Z",
+      "last_error": "HTTP 403"
+    },
+    "16cd0b90-f70c-4efa-b252-8de8784ef9a3": {
+      "status": "unavailable",
+      "name": "Imperial Seal",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Imperial%20Seal",
+      "attempted_at": "2026-08-05T19:53:02.243Z",
+      "last_error": "HTTP 403"
+    },
+    "16d8ee99-8ec8-429f-9ba7-818a74b6f910": {
+      "status": "unavailable",
+      "name": "Gush",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Gush",
+      "attempted_at": "2026-08-05T19:52:20.230Z",
+      "last_error": "HTTP 403"
+    },
+    "16e015b2-f8a3-4b1a-80be-58a8f5fb5e8c": {
+      "status": "unavailable",
+      "name": "Frantic Search",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Frantic%20Search",
+      "attempted_at": "2026-08-05T19:51:29.223Z",
+      "last_error": "HTTP 403"
+    },
+    "16f6438d-2a29-41cb-bf0c-4d02bd66112b": {
+      "status": "unavailable",
+      "name": "Hermit Druid",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Hermit%20Druid",
+      "attempted_at": "2026-08-05T19:52:26.231Z",
+      "last_error": "HTTP 403"
+    },
+    "17b60106-a4c7-410a-8ac3-ec8e74e29a7c": {
+      "status": "unavailable",
+      "name": "Mystic Sanctuary",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mystic%20Sanctuary",
+      "attempted_at": "2026-08-05T19:55:20.292Z",
+      "last_error": "HTTP 403"
+    },
+    "17fa98cd-ed8f-483f-9525-7e989a82ebb2": {
+      "status": "unavailable",
+      "name": "Balance",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balance",
+      "attempted_at": "2026-08-05T19:48:14.160Z",
+      "last_error": "HTTP 403"
+    },
+    "1890ef1b-38e5-432d-b040-f33cea7814e7": {
+      "status": "unavailable",
+      "name": "Punishing Fire",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Punishing%20Fire",
+      "attempted_at": "2026-08-05T19:56:29.312Z",
+      "last_error": "HTTP 403"
+    },
+    "1a0770e6-b093-4439-baff-6889a50ba12e": {
+      "status": "unavailable",
+      "name": "Mental Misstep",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mental%20Misstep",
+      "attempted_at": "2026-08-05T19:54:35.279Z",
+      "last_error": "HTTP 403"
+    },
+    "1acbbf61-edf7-4f67-968b-6832c2dd54d1": {
+      "status": "unavailable",
+      "name": "Unexpected Potential",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Unexpected%20Potential",
+      "attempted_at": "2026-08-05T19:59:26.362Z",
+      "last_error": "HTTP 403"
+    },
+    "1bf08ba0-4235-4dea-9722-ed991a3b6044": {
+      "status": "unavailable",
+      "name": "Kethis, the Hidden Hand",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Kethis%2C%20the%20Hidden%20Hand",
+      "attempted_at": "2026-08-05T19:53:47.260Z",
+      "last_error": "HTTP 403"
+    },
+    "1cbfe1f2-776b-429d-9a60-8da32058a927": {
+      "status": "unavailable",
+      "name": "Sojourner's Companion",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Sojourner's%20Companion",
+      "attempted_at": "2026-08-05T19:57:38.333Z",
+      "last_error": "HTTP 403"
+    },
+    "1d67f5ff-1fce-45e5-b6a1-416c569351e2": {
+      "status": "unavailable",
+      "name": "Gitaxian Probe",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Gitaxian%20Probe",
+      "attempted_at": "2026-08-05T19:51:50.224Z",
+      "last_error": "HTTP 403"
+    },
+    "1de1b591-a73f-4974-b507-8c63e07a0868": {
+      "status": "unavailable",
+      "name": "Thassa's Oracle",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Thassa's%20Oracle",
+      "attempted_at": "2026-08-05T19:58:29.347Z",
+      "last_error": "HTTP 403"
+    },
+    "20f7f33d-0c49-49f7-80fa-aed86e33a528": {
+      "status": "unavailable",
+      "name": "Hold the Perimeter",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Hold%20the%20Perimeter",
+      "attempted_at": "2026-08-05T19:52:38.237Z",
+      "last_error": "HTTP 403"
+    },
+    "2111588d-9af5-4a33-989e-b074d83f0463": {
+      "status": "unavailable",
+      "name": "Library of Alexandria",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Library%20of%20Alexandria",
+      "attempted_at": "2026-08-05T19:54:02.267Z",
+      "last_error": "HTTP 403"
+    },
+    "222fd9fc-7af4-4269-bbb9-cd7b8ac029bd": {
+      "status": "unavailable",
+      "name": "Troll of Khazad-dûm",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Troll%20of%20Khazad-d%C3%BBm",
+      "attempted_at": "2026-08-05T19:59:14.361Z",
+      "last_error": "HTTP 403"
+    },
+    "229d6627-1292-4ae1-8849-b0f956fa6540": {
+      "status": "unavailable",
+      "name": "Grim Monolith",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Grim%20Monolith",
+      "attempted_at": "2026-08-05T19:52:14.230Z",
+      "last_error": "HTTP 403"
+    },
+    "22e89c6d-2304-4def-8a74-e53a6271e9b9": {
+      "status": "unavailable",
+      "name": "Echoing Boon",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Echoing%20Boon",
+      "attempted_at": "2026-08-05T19:50:32.205Z",
+      "last_error": "HTTP 403"
+    },
+    "22f1a4a4-c423-4d1c-8775-0ed604a9fa51": {
+      "status": "unavailable",
+      "name": "Deathrite Shaman",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Deathrite%20Shaman",
+      "attempted_at": "2026-08-05T19:49:56.196Z",
+      "last_error": "HTTP 403"
+    },
+    "23216e59-f147-4bb7-a698-12777c2f8584": {
+      "status": "unavailable",
+      "name": "Jeweled Lotus",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Jeweled%20Lotus",
+      "attempted_at": "2026-08-05T19:53:35.256Z",
+      "last_error": "HTTP 403"
+    },
+    "23467047-6dba-4498-b783-1ebc4f74b8c2": {
+      "status": "unavailable",
+      "name": "Ancient Tomb",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Tomb",
+      "attempted_at": "2026-08-05T19:47:56.155Z",
+      "last_error": "HTTP 403"
+    },
+    "254878f0-be90-4653-a395-0c41258fceaf": {
+      "status": "unavailable",
+      "name": "Tinker",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Tinker",
+      "attempted_at": "2026-08-05T19:58:59.355Z",
+      "last_error": "HTTP 403"
+    },
+    "2550c2ae-834d-46e7-9ab4-d7bf7bfa6a78": {
+      "status": "unavailable",
+      "name": "This Town Ain't Big Enough",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=This%20Town%20Ain't%20Big%20Enough",
+      "attempted_at": "2026-08-05T19:58:38.349Z",
+      "last_error": "HTTP 403"
+    },
+    "2583836d-7fd3-47b3-9b69-6814efe54a90": {
+      "status": "unavailable",
+      "name": "Stirring Bard",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Stirring%20Bard",
+      "attempted_at": "2026-08-05T19:57:53.337Z",
+      "last_error": "HTTP 403"
+    },
+    "272016e1-df1e-4376-9851-af8b1ecba2f4": {
+      "status": "unavailable",
+      "name": "Tempest Efreet",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Tempest%20Efreet",
+      "attempted_at": "2026-08-05T19:58:20.354Z",
+      "last_error": "HTTP 403"
+    },
+    "27e0948b-9916-473b-8d8c-a51bdfbc7457": {
+      "status": "unavailable",
+      "name": "Underworld Breach",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Underworld%20Breach",
+      "attempted_at": "2026-08-05T19:59:23.363Z",
+      "last_error": "HTTP 403"
+    },
+    "29737a60-3ebd-40d9-b935-c4f54b90d45d": {
+      "status": "unavailable",
+      "name": "Windswept Heath",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Windswept%20Heath",
+      "attempted_at": "2026-08-05T20:00:17.379Z",
+      "last_error": "HTTP 403"
+    },
+    "299fc083-0834-4064-8344-f895aff68867": {
+      "status": "unavailable",
+      "name": "Entomb",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Entomb",
+      "attempted_at": "2026-08-05T19:50:44.208Z",
+      "last_error": "HTTP 403"
+    },
+    "2b22cf44-7b03-4919-9812-6796bf193484": {
+      "status": "unavailable",
+      "name": "Abuelo's Awakening",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abuelo's%20Awakening",
+      "attempted_at": "2026-08-05T19:47:29.145Z",
+      "last_error": "HTTP 403"
+    },
+    "2c63e4e1-89d2-4bc6-a232-94e75c4b1c8a": {
+      "status": "unavailable",
+      "name": "Mana Crypt",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mana%20Crypt",
+      "attempted_at": "2026-08-05T19:54:23.273Z",
+      "last_error": "HTTP 403"
+    },
+    "2d2fab27-8793-4212-a512-c4f0c8c55eeb": {
+      "status": "unavailable",
+      "name": "Timmerian Fiends",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Timmerian%20Fiends",
+      "attempted_at": "2026-08-05T19:58:56.354Z",
+      "last_error": "HTTP 403"
+    },
+    "2f533667-e29b-4bec-897a-e7a9eee08314": {
+      "status": "unavailable",
+      "name": "Hullbreacher",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Hullbreacher",
+      "attempted_at": "2026-08-05T19:52:44.238Z",
+      "last_error": "HTTP 403"
+    },
+    "3015882b-4897-4d2c-8e33-6731c85a0d03": {
+      "status": "unavailable",
+      "name": "Rofellos, Llanowar Emissary",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Rofellos%2C%20Llanowar%20Emissary",
+      "attempted_at": "2026-08-05T19:56:50.319Z",
+      "last_error": "HTTP 403"
+    },
+    "3095f2cf-05c3-4381-929f-c526b6fc30a7": {
+      "status": "unavailable",
+      "name": "Atog",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atog",
+      "attempted_at": "2026-08-05T19:48:05.158Z",
+      "last_error": "HTTP 403"
+    },
+    "322f0459-f394-44f0-977b-55fd0cbe0712": {
+      "status": "unavailable",
+      "name": "Yawgmoth's Will",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Yawgmoth's%20Will",
+      "attempted_at": "2026-08-05T20:00:35.390Z",
+      "last_error": "HTTP 403"
+    },
+    "32e5339e-9e4f-46f8-b305-f9d6d3ba8bb5": {
+      "status": "unavailable",
+      "name": "Lotus Petal",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Lotus%20Petal",
+      "attempted_at": "2026-08-05T19:54:14.269Z",
+      "last_error": "HTTP 403"
+    },
+    "33869ba6-13e5-4e48-8963-92f7965648fb": {
+      "status": "unavailable",
+      "name": "Felidar Guardian",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Felidar%20Guardian",
+      "attempted_at": "2026-08-05T19:51:05.216Z",
+      "last_error": "HTTP 403"
+    },
+    "3407eb6e-b74d-4159-a801-d7163937953c": {
+      "status": "unavailable",
+      "name": "Phlage, Titan of Fire's Fury",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Phlage%2C%20Titan%20of%20Fire's%20Fury",
+      "attempted_at": "2026-08-05T19:55:56.304Z",
+      "last_error": "HTTP 403"
+    },
+    "34187c71-6033-4058-aadc-2bc266f762be": {
+      "status": "unavailable",
+      "name": "Serra's Sanctum",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Serra's%20Sanctum",
+      "attempted_at": "2026-08-05T19:57:23.331Z",
+      "last_error": "HTTP 403"
+    },
+    "352b64d2-2ae5-44ee-a64f-94932ef545d3": {
+      "status": "unavailable",
+      "name": "Dread Return",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Dread%20Return",
+      "attempted_at": "2026-08-05T19:50:23.207Z",
+      "last_error": "HTTP 403"
+    },
+    "37108cd4-bbab-4ce3-9ed6-f60e8422e703": {
+      "status": "unavailable",
+      "name": "Ragavan, Nimble Pilferer",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ragavan%2C%20Nimble%20Pilferer",
+      "attempted_at": "2026-08-05T19:56:32.314Z",
+      "last_error": "HTTP 403"
+    },
+    "372351fd-58f7-4cb8-8644-5fbc94ccb145": {
+      "status": "unavailable",
+      "name": "Prophet of Kruphix",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Prophet%20of%20Kruphix",
+      "attempted_at": "2026-08-05T19:56:20.312Z",
+      "last_error": "HTTP 403"
+    },
+    "376ee366-e082-402f-b4db-6592fcfcacd2": {
+      "status": "unavailable",
+      "name": "Mox Emerald",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mox%20Emerald",
+      "attempted_at": "2026-08-05T19:54:56.285Z",
+      "last_error": "HTTP 403"
+    },
+    "37c49483-bef6-47c6-9354-ead8560d48da": {
+      "status": "unavailable",
+      "name": "Pradesh Gypsies",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Pradesh%20Gypsies",
+      "attempted_at": "2026-08-05T19:56:08.308Z",
+      "last_error": "HTTP 403"
+    },
+    "39451b4d-cd7a-40da-b457-cb51b609173f": {
+      "status": "unavailable",
+      "name": "Seat of the Synod",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Seat%20of%20the%20Synod",
+      "attempted_at": "2026-08-05T19:56:59.324Z",
+      "last_error": "HTTP 403"
+    },
+    "395b312b-8fe6-4c28-b91d-620b5fcb9e6d": {
+      "status": "unavailable",
+      "name": "Brago's Favor",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brago's%20Favor",
+      "attempted_at": "2026-08-05T19:48:41.166Z",
+      "last_error": "HTTP 403"
+    },
+    "39b4a47a-df51-4bd9-9a20-43ac80a5d352": {
+      "status": "unavailable",
+      "name": "Balustrade Spy",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balustrade%20Spy",
+      "attempted_at": "2026-08-05T19:48:17.162Z",
+      "last_error": "HTTP 403"
+    },
+    "3a59c882-8bb8-49ba-862f-125020dd5bec": {
+      "status": "unavailable",
+      "name": "Empty the Warrens",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Empty%20the%20Warrens",
+      "attempted_at": "2026-08-05T19:50:38.209Z",
+      "last_error": "HTTP 403"
+    },
+    "3aa83ed2-f48b-4ce6-a614-2c54ddf50538": {
+      "status": "unavailable",
+      "name": "The One Ring",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=The%20One%20Ring",
+      "attempted_at": "2026-08-05T19:58:32.347Z",
+      "last_error": "HTTP 403"
+    },
+    "3bc757c1-3adb-4321-8832-8e1cc9e687f7": {
+      "status": "unavailable",
+      "name": "Lurrus of the Dream-Den",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Lurrus%20of%20the%20Dream-Den",
+      "attempted_at": "2026-08-05T19:54:17.272Z",
+      "last_error": "HTTP 403"
+    },
+    "3deb19f6-c1a3-4bca-a6ae-df5d0b42a66e": {
+      "status": "unavailable",
+      "name": "Natural Unity",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Natural%20Unity",
+      "attempted_at": "2026-08-05T19:55:32.295Z",
+      "last_error": "HTTP 403"
+    },
+    "3e057471-e415-4105-9064-8236a0a5047d": {
+      "status": "unavailable",
+      "name": "Flash",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Flash",
+      "attempted_at": "2026-08-05T19:51:14.219Z",
+      "last_error": "HTTP 403"
+    },
+    "3ed14ea7-ee62-4604-af3b-deafb00108c3": {
+      "status": "unavailable",
+      "name": "Amped Raptor",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amped%20Raptor",
+      "attempted_at": "2026-08-05T19:47:44.151Z",
+      "last_error": "HTTP 403"
+    },
+    "42bede0a-de6d-4de3-90ea-9d92b0fe8c64": {
+      "status": "unavailable",
+      "name": "Weight Advantage",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Weight%20Advantage",
+      "attempted_at": "2026-08-05T20:00:02.374Z",
+      "last_error": "HTTP 403"
+    },
+    "44e0ffa3-8915-4c1f-8f1a-4aeea1365f07": {
+      "status": "unavailable",
+      "name": "Simian Spirit Guide",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Simian%20Spirit%20Guide",
+      "attempted_at": "2026-08-05T19:57:29.332Z",
+      "last_error": "HTTP 403"
+    },
+    "4514777d-0589-4631-978b-ff244167c176": {
+      "status": "unavailable",
+      "name": "Vexing Bauble",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Vexing%20Bauble",
+      "attempted_at": "2026-08-05T19:59:47.370Z",
+      "last_error": "HTTP 403"
+    },
+    "457af74a-02b3-4659-846d-63e482667f34": {
+      "status": "unavailable",
+      "name": "Deadly Dispute",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Deadly%20Dispute",
+      "attempted_at": "2026-08-05T19:49:50.193Z",
+      "last_error": "HTTP 403"
+    },
+    "4692740f-be90-459f-8d90-c4ae71771595": {
+      "status": "unavailable",
+      "name": "Crusade",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Crusade",
+      "attempted_at": "2026-08-05T19:49:35.187Z",
+      "last_error": "HTTP 403"
+    },
+    "46b1a169-bc32-47bf-b379-fa0c3d13878f": {
+      "status": "unavailable",
+      "name": "Cori-Steel Cutter",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Cori-Steel%20Cutter",
+      "attempted_at": "2026-08-05T19:49:26.183Z",
+      "last_error": "HTTP 403"
+    },
+    "49e1e202-37bf-46ed-93d1-1adb13726039": {
+      "status": "unavailable",
+      "name": "Heartfire Hero",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Heartfire%20Hero",
+      "attempted_at": "2026-08-05T19:52:23.231Z",
+      "last_error": "HTTP 403"
+    },
+    "4b515bb0-f275-4400-8032-3173b799ab40": {
+      "status": "unavailable",
+      "name": "Walking Ballista",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Walking%20Ballista",
+      "attempted_at": "2026-08-05T19:59:56.371Z",
+      "last_error": "HTTP 403"
+    },
+    "4c05b382-58ab-4a2d-a81c-408ea273b6b6": {
+      "status": "unavailable",
+      "name": "Dreadhorde Arcanist",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Dreadhorde%20Arcanist",
+      "attempted_at": "2026-08-05T19:50:26.206Z",
+      "last_error": "HTTP 403"
+    },
+    "4e183439-17d2-47ff-9d99-5e22821d91e3": {
+      "status": "unavailable",
+      "name": "Flawless Maneuver",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Flawless%20Maneuver",
+      "attempted_at": "2026-08-05T19:51:17.220Z",
+      "last_error": "HTTP 403"
+    },
+    "50885640-cdf1-4c62-b3bc-f37db6ab38b5": {
+      "status": "unavailable",
+      "name": "Trade Secrets",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Trade%20Secrets",
+      "attempted_at": "2026-08-05T19:59:05.359Z",
+      "last_error": "HTTP 403"
+    },
+    "5089ec1a-f881-4d55-af14-5d996171203b": {
+      "status": "unavailable",
+      "name": "Black Lotus",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Black%20Lotus",
+      "attempted_at": "2026-08-05T19:48:29.163Z",
+      "last_error": "HTTP 403"
+    },
+    "50aa7aff-1f01-4224-9a83-01f74d703ec2": {
+      "status": "unavailable",
+      "name": "Earthcraft",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Earthcraft",
+      "attempted_at": "2026-08-05T19:50:29.205Z",
+      "last_error": "HTTP 403"
+    },
+    "512a9ab9-ddd4-4872-b4f4-dee56f9f5575": {
+      "status": "unavailable",
+      "name": "Adriana's Valor",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adriana's%20Valor",
+      "attempted_at": "2026-08-05T19:47:32.148Z",
+      "last_error": "HTTP 403"
+    },
+    "51f091a7-9b0b-4362-8e9c-c174752f369b": {
+      "status": "unavailable",
+      "name": "White Plume Adventurer",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=White%20Plume%20Adventurer",
+      "attempted_at": "2026-08-05T20:00:08.377Z",
+      "last_error": "HTTP 403"
+    },
+    "52b88034-bf0f-4d29-b776-40ce421f1107": {
+      "status": "unavailable",
+      "name": "Sylvan Primordial",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Sylvan%20Primordial",
+      "attempted_at": "2026-08-05T19:58:14.343Z",
+      "last_error": "HTTP 403"
+    },
+    "53f7c868-b03e-4fc2-8dcf-a75bbfa3272b": {
+      "status": "unavailable",
+      "name": "Dark Ritual",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Dark%20Ritual",
+      "attempted_at": "2026-08-05T19:49:41.188Z",
+      "last_error": "HTTP 403"
+    },
+    "54022a10-c9f0-458d-a0ed-228843cd9a40": {
+      "status": "unavailable",
+      "name": "Bazaar of Baghdad",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bazaar%20of%20Baghdad",
+      "attempted_at": "2026-08-05T19:48:23.163Z",
+      "last_error": "HTTP 403"
+    },
+    "550c74d4-1fcb-406a-b02a-639a760a4380": {
+      "status": "unavailable",
+      "name": "Ancestral Recall",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancestral%20Recall",
+      "attempted_at": "2026-08-05T19:47:50.153Z",
+      "last_error": "HTTP 403"
+    },
+    "58aec411-167d-4709-8560-793eaaed62c5": {
+      "status": "unavailable",
+      "name": "Gifts Ungiven",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Gifts%20Ungiven",
+      "attempted_at": "2026-08-05T19:51:47.225Z",
+      "last_error": "HTTP 403"
+    },
+    "59119143-c0fa-49dd-adf0-e2fd3029c48b": {
+      "status": "unavailable",
+      "name": "Karakas",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Karakas",
+      "attempted_at": "2026-08-05T19:53:41.259Z",
+      "last_error": "HTTP 403"
+    },
+    "5a46ad2a-35b1-4dd5-b7c3-fec36b7c67ab": {
+      "status": "unavailable",
+      "name": "Sinkhole",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Sinkhole",
+      "attempted_at": "2026-08-05T19:57:32.332Z",
+      "last_error": "HTTP 403"
+    },
+    "5a9c1c2d-d4d7-4df3-a853-f1b81c67b3e3": {
+      "status": "unavailable",
+      "name": "Immediate Action",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Immediate%20Action",
+      "attempted_at": "2026-08-05T19:52:59.245Z",
+      "last_error": "HTTP 403"
+    },
+    "5b287dcc-f853-4df1-8ddf-5b8b2adc2873": {
+      "status": "unavailable",
+      "name": "Limited Resources",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Limited%20Resources",
+      "attempted_at": "2026-08-05T19:54:05.266Z",
+      "last_error": "HTTP 403"
+    },
+    "5b6bdf5a-2742-4851-92cd-a857a3852836": {
+      "status": "unavailable",
+      "name": "Treasure Cruise",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Treasure%20Cruise",
+      "attempted_at": "2026-08-05T19:59:08.359Z",
+      "last_error": "HTTP 403"
+    },
+    "5c8e5092-962e-49ef-ab82-8434e475e4e7": {
+      "status": "unavailable",
+      "name": "Food Chain",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Food%20Chain",
+      "attempted_at": "2026-08-05T19:51:23.221Z",
+      "last_error": "HTTP 403"
+    },
+    "5d96170f-14dd-496e-a485-bd3b9eedfe02": {
+      "status": "unavailable",
+      "name": "Maddening Hex",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Maddening%20Hex",
+      "attempted_at": "2026-08-05T19:54:20.272Z",
+      "last_error": "HTTP 403"
+    },
+    "5e63b69c-d901-4a01-8dfa-88e044856239": {
+      "status": "unavailable",
+      "name": "Hopeless Nightmare",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Hopeless%20Nightmare",
+      "attempted_at": "2026-08-05T19:52:41.238Z",
+      "last_error": "HTTP 403"
+    },
+    "5e816472-561d-43d1-ad28-80a829e2a91a": {
+      "status": "unavailable",
+      "name": "Iona, Shield of Emeria",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Iona%2C%20Shield%20of%20Emeria",
+      "attempted_at": "2026-08-05T19:53:23.249Z",
+      "last_error": "HTTP 403"
+    },
+    "5fae52ed-1b84-406e-951d-b0d329dc48a7": {
+      "status": "unavailable",
+      "name": "Glimpse of Nature",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Glimpse%20of%20Nature",
+      "attempted_at": "2026-08-05T19:51:53.224Z",
+      "last_error": "HTTP 403"
+    },
+    "60c60923-ff1b-43f7-8768-731499fcffc9": {
+      "status": "unavailable",
+      "name": "Oko, Thief of Crowns",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Oko%2C%20Thief%20of%20Crowns",
+      "attempted_at": "2026-08-05T19:55:44.299Z",
+      "last_error": "HTTP 403"
+    },
+    "632de66b-2314-4299-847c-16a84bf9121f": {
+      "status": "unavailable",
+      "name": "Imprison",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Imprison",
+      "attempted_at": "2026-08-05T19:53:05.243Z",
+      "last_error": "HTTP 403"
+    },
+    "63a19c7c-49d7-4b75-aac8-d0ff36c45fb8": {
+      "status": "unavailable",
+      "name": "Sowing Mycospawn",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Sowing%20Mycospawn",
+      "attempted_at": "2026-08-05T19:57:50.336Z",
+      "last_error": "HTTP 403"
+    },
+    "646a2371-54c0-4492-ac2f-20f109d6108c": {
+      "status": "unavailable",
+      "name": "Monstrous Rage",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Monstrous%20Rage",
+      "attempted_at": "2026-08-05T19:54:47.281Z",
+      "last_error": "HTTP 403"
+    },
+    "64bf8929-f5f2-4d50-8667-13b1d007bcfc": {
+      "status": "unavailable",
+      "name": "Seething Song",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Seething%20Song",
+      "attempted_at": "2026-08-05T19:57:14.329Z",
+      "last_error": "HTTP 403"
+    },
+    "652f6d90-b158-4f9b-a15e-3e677905331d": {
+      "status": "unavailable",
+      "name": "Worldknit",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Worldknit",
+      "attempted_at": "2026-08-05T20:00:26.387Z",
+      "last_error": "HTTP 403"
+    },
+    "6587a463-a108-4854-b6d1-944e89b8c8a4": {
+      "status": "unavailable",
+      "name": "Wooded Foothills",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Wooded%20Foothills",
+      "attempted_at": "2026-08-05T20:00:23.382Z",
+      "last_error": "HTTP 403"
+    },
+    "65986c1b-8e51-4604-b685-d82fa7d1263a": {
+      "status": "unavailable",
+      "name": "Skullclamp",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Skullclamp",
+      "attempted_at": "2026-08-05T19:57:35.333Z",
+      "last_error": "HTTP 403"
+    },
+    "65a9f643-063f-406a-8d5a-5ebbe0f04c3d": {
+      "status": "unavailable",
+      "name": "Demonic Attorney",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Demonic%20Attorney",
+      "attempted_at": "2026-08-05T19:50:02.192Z",
+      "last_error": "HTTP 403"
+    },
+    "6623cb85-fb1e-4561-8b21-0977c25096c2": {
+      "status": "unavailable",
+      "name": "Tibalt's Trickery",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Tibalt's%20Trickery",
+      "attempted_at": "2026-08-05T19:58:41.351Z",
+      "last_error": "HTTP 403"
+    },
+    "686f4a37-b5e4-46d4-9e0e-11794b2d12cd": {
+      "status": "unavailable",
+      "name": "Golgari Grave-Troll",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Golgari%20Grave-Troll",
+      "attempted_at": "2026-08-05T19:51:59.226Z",
+      "last_error": "HTTP 403"
+    },
+    "68e1f7e0-a9b3-437f-8086-0c0cb85f2880": {
+      "status": "unavailable",
+      "name": "Krark-Clan Ironworks",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Krark-Clan%20Ironworks",
+      "attempted_at": "2026-08-05T19:53:50.262Z",
+      "last_error": "HTTP 403"
+    },
+    "697bcfe1-ecbf-42a1-bfc7-0766d48ca56b": {
+      "status": "unavailable",
+      "name": "Dockside Extortionist",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Dockside%20Extortionist",
+      "attempted_at": "2026-08-05T19:50:17.206Z",
+      "last_error": "HTTP 403"
+    },
+    "69b409b3-fa16-4c79-8b46-215a7036ed46": {
+      "status": "unavailable",
+      "name": "The Tabernacle at Pendrell Vale",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=The%20Tabernacle%20at%20Pendrell%20Vale",
+      "attempted_at": "2026-08-05T19:58:35.348Z",
+      "last_error": "HTTP 403"
+    },
+    "69e12b1f-0fd9-43a9-b3db-fe08290442c6": {
+      "status": "unavailable",
+      "name": "Invert Polarity",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Invert%20Polarity",
+      "attempted_at": "2026-08-05T19:53:11.248Z",
+      "last_error": "HTTP 403"
+    },
+    "6ad8011d-3471-4369-9d68-b264cc027487": {
+      "status": "unavailable",
+      "name": "Sol Ring",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Sol%20Ring",
+      "attempted_at": "2026-08-05T19:57:41.334Z",
+      "last_error": "HTTP 403"
+    },
+    "6b6ac99a-7548-4cad-9fe5-ea611618ab9e": {
+      "status": "unavailable",
+      "name": "Temporal Manipulation",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Temporal%20Manipulation",
+      "attempted_at": "2026-08-05T19:58:26.346Z",
+      "last_error": "HTTP 403"
+    },
+    "6c1d22d4-f28e-4041-a9b6-1575e8929b61": {
+      "status": "unavailable",
+      "name": "Nexus of Fate",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Nexus%20of%20Fate",
+      "attempted_at": "2026-08-05T19:55:38.297Z",
+      "last_error": "HTTP 403"
+    },
+    "6f14f61f-e533-4541-b861-4dbaf0d88833": {
+      "status": "unavailable",
+      "name": "Backup Plan",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Backup%20Plan",
+      "attempted_at": "2026-08-05T19:48:11.159Z",
+      "last_error": "HTTP 403"
+    },
+    "6f856f99-4cb4-479d-958d-964220965ed6": {
+      "status": "unavailable",
+      "name": "Wilderness Reclamation",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Wilderness%20Reclamation",
+      "attempted_at": "2026-08-05T20:00:11.377Z",
+      "last_error": "HTTP 403"
+    },
+    "704723f3-0490-4d96-930a-aacc6d19ba8d": {
+      "status": "unavailable",
+      "name": "Seeker of Skybreak",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Seeker%20of%20Skybreak",
+      "attempted_at": "2026-08-05T19:57:11.327Z",
+      "last_error": "HTTP 403"
+    },
+    "70486bee-6ee7-41ea-b834-8caf4699302b": {
+      "status": "unavailable",
+      "name": "Daze",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Daze",
+      "attempted_at": "2026-08-05T19:49:47.189Z",
+      "last_error": "HTTP 403"
+    },
+    "70caaa64-9623-4d05-9843-18460fea963b": {
+      "status": "unavailable",
+      "name": "Incendiary Dissent",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Incendiary%20Dissent",
+      "attempted_at": "2026-08-05T19:53:08.244Z",
+      "last_error": "HTTP 403"
+    },
+    "736892cb-a34b-4bb9-b56c-e26e3db207a2": {
+      "status": "unavailable",
+      "name": "Mana Vault",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mana%20Vault",
+      "attempted_at": "2026-08-05T19:54:29.275Z",
+      "last_error": "HTTP 403"
+    },
+    "74d3277a-38e5-4732-afed-084a56148f20": {
+      "status": "unavailable",
+      "name": "Mana Drain",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mana%20Drain",
+      "attempted_at": "2026-08-05T19:54:26.273Z",
+      "last_error": "HTTP 403"
+    },
+    "74f10b9a-a286-49b2-bfa1-a427ff041bd4": {
+      "status": "unavailable",
+      "name": "Darkpact",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Darkpact",
+      "attempted_at": "2026-08-05T19:49:44.187Z",
+      "last_error": "HTTP 403"
+    },
+    "75564721-e4e9-463a-b49e-f0c7cd6f53a7": {
+      "status": "unavailable",
+      "name": "Cranial Plating",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Cranial%20Plating",
+      "attempted_at": "2026-08-05T19:49:29.185Z",
+      "last_error": "HTTP 403"
+    },
+    "7647682d-d491-4cb1-add7-b4d745994e62": {
+      "status": "unavailable",
+      "name": "Underdark Explorer",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Underdark%20Explorer",
+      "attempted_at": "2026-08-05T19:59:20.361Z",
+      "last_error": "HTTP 403"
+    },
+    "78f9c223-9982-4282-a496-a6f892f0a5bf": {
+      "status": "unavailable",
+      "name": "Mind Twist",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mind%20Twist",
+      "attempted_at": "2026-08-05T19:54:38.280Z",
+      "last_error": "HTTP 403"
+    },
+    "79172853-240c-4924-8b20-edf469946df4": {
+      "status": "unavailable",
+      "name": "Iterative Analysis",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Iterative%20Analysis",
+      "attempted_at": "2026-08-05T19:53:26.251Z",
+      "last_error": "HTTP 403"
+    },
+    "792e1072-00bf-4f63-b956-5f20cdf09f11": {
+      "status": "unavailable",
+      "name": "Goblin Recruiter",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Goblin%20Recruiter",
+      "attempted_at": "2026-08-05T19:51:56.224Z",
+      "last_error": "HTTP 403"
+    },
+    "7a43bd27-fdd8-41f0-9bc4-92568f3408f1": {
+      "status": "unavailable",
+      "name": "Mox Amber",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mox%20Amber",
+      "attempted_at": "2026-08-05T19:54:50.282Z",
+      "last_error": "HTTP 403"
+    },
+    "7b515c56-7b1e-42a8-82b0-1b30201fb162": {
+      "status": "unavailable",
+      "name": "Zirda, the Dawnwaker",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Zirda%2C%20the%20Dawnwaker",
+      "attempted_at": "2026-08-05T20:00:41.387Z",
+      "last_error": "HTTP 403"
+    },
+    "7c427c3d-ecd8-45ef-bebd-8f10f4a311db": {
+      "status": "unavailable",
+      "name": "Gaea's Cradle",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Gaea's%20Cradle",
+      "attempted_at": "2026-08-05T19:51:35.224Z",
+      "last_error": "HTTP 403"
+    },
+    "7cafc972-a6f5-4cac-a3d3-8a3ae36ffb1e": {
+      "status": "unavailable",
+      "name": "Upheaval",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Upheaval",
+      "attempted_at": "2026-08-05T19:59:32.365Z",
+      "last_error": "HTTP 403"
+    },
+    "7df49476-7b6c-4b5d-bede-463a7d2e0a58": {
+      "status": "unavailable",
+      "name": "Sentinel Dispatch",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Sentinel%20Dispatch",
+      "attempted_at": "2026-08-05T19:57:20.333Z",
+      "last_error": "HTTP 403"
+    },
+    "7e6c7b57-bd6a-4ac8-bcab-c3a879f479c2": {
+      "status": "unavailable",
+      "name": "Chatterstorm",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Chatterstorm",
+      "attempted_at": "2026-08-05T19:49:05.176Z",
+      "last_error": "HTTP 403"
+    },
+    "80e72437-0c17-44c0-b0a7-eab075a64569": {
+      "status": "unavailable",
+      "name": "Genesis Storm",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Genesis%20Storm",
+      "attempted_at": "2026-08-05T19:51:41.224Z",
+      "last_error": "HTTP 403"
+    },
+    "82004860-e589-4e38-8d61-8c0210e4ea39": {
+      "status": "unavailable",
+      "name": "Demonic Tutor",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Demonic%20Tutor",
+      "attempted_at": "2026-08-05T19:50:08.197Z",
+      "last_error": "HTTP 403"
+    },
+    "824597b8-c89a-47ec-8526-7efc6e24ef0e": {
+      "status": "unavailable",
+      "name": "Mox Pearl",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mox%20Pearl",
+      "attempted_at": "2026-08-05T19:55:05.291Z",
+      "last_error": "HTTP 403"
+    },
+    "854ad486-0c59-4c57-9a76-ab1dff0ff37c": {
+      "status": "unavailable",
+      "name": "Invoke Prejudice",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Invoke%20Prejudice",
+      "attempted_at": "2026-08-05T19:53:20.250Z",
+      "last_error": "HTTP 403"
+    },
+    "85eefda9-4aab-467d-a08c-be026cb8ff42": {
+      "status": "unavailable",
+      "name": "Amalia Benavides Aguirre",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amalia%20Benavides%20Aguirre",
+      "attempted_at": "2026-08-05T19:47:41.150Z",
+      "last_error": "HTTP 403"
+    },
+    "86373537-7424-416a-8d89-cc38f6538458": {
+      "status": "unavailable",
+      "name": "Advantageous Proclamation",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Advantageous%20Proclamation",
+      "attempted_at": "2026-08-05T19:47:35.149Z",
+      "last_error": "HTTP 403"
+    },
+    "88e936c3-cab9-430f-baa1-930ff557cbf6": {
+      "status": "unavailable",
+      "name": "Emissary's Ploy",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Emissary's%20Ploy",
+      "attempted_at": "2026-08-05T19:50:35.207Z",
+      "last_error": "HTTP 403"
+    },
+    "89aa65d9-2502-40b0-90b6-b25a8e9f6155": {
+      "status": "unavailable",
+      "name": "Capture of Jingzhou",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Capture%20of%20Jingzhou",
+      "attempted_at": "2026-08-05T19:48:53.174Z",
+      "last_error": "HTTP 403"
+    },
+    "89ca686a-7c72-4d8f-9290-e89635624a83": {
+      "status": "unavailable",
+      "name": "Cavern of Souls",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Cavern%20of%20Souls",
+      "attempted_at": "2026-08-05T19:48:56.175Z",
+      "last_error": "HTTP 403"
+    },
+    "89f5b21c-18da-4071-bc42-9cdc433734bf": {
+      "status": "unavailable",
+      "name": "Jeweled Bird",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Jeweled%20Bird",
+      "attempted_at": "2026-08-05T19:53:32.253Z",
+      "last_error": "HTTP 403"
+    },
+    "8a2e53f9-8100-488f-8504-b59e9bd1cc29": {
+      "status": "unavailable",
+      "name": "Rite of Flame",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Rite%20of%20Flame",
+      "attempted_at": "2026-08-05T19:56:47.320Z",
+      "last_error": "HTTP 403"
+    },
+    "8a9525f4-74a6-44f0-a1b1-d57937d7783b": {
+      "status": "unavailable",
+      "name": "Temporal Fissure",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Temporal%20Fissure",
+      "attempted_at": "2026-08-05T19:58:23.345Z",
+      "last_error": "HTTP 403"
+    },
+    "8b4aa971-b919-4750-8388-33d4f42c9280": {
+      "status": "unavailable",
+      "name": "Tree of Tales",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Tree%20of%20Tales",
+      "attempted_at": "2026-08-05T19:59:11.359Z",
+      "last_error": "HTTP 403"
+    },
+    "8c1fe337-375a-4add-93b6-0ac39ed72b4f": {
+      "status": "unavailable",
+      "name": "Natural Order",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Natural%20Order",
+      "attempted_at": "2026-08-05T19:55:29.294Z",
+      "last_error": "HTTP 403"
+    },
+    "8c912b1f-4584-4945-9931-f6850e5ebfa4": {
+      "status": "unavailable",
+      "name": "Assemble the Rank and Vile",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assemble%20the%20Rank%20and%20Vile",
+      "attempted_at": "2026-08-05T19:48:02.160Z",
+      "last_error": "HTTP 403"
+    },
+    "900ca697-ad38-4b2b-bc74-2ff7eb6ea951": {
+      "status": "unavailable",
+      "name": "Emrakul, the Aeons Torn",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Emrakul%2C%20the%20Aeons%20Torn",
+      "attempted_at": "2026-08-05T19:50:41.210Z",
+      "last_error": "HTTP 403"
+    },
+    "9264c198-76c7-4ac0-9334-37c691de1b54": {
+      "status": "unavailable",
+      "name": "Invigorate",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Invigorate",
+      "attempted_at": "2026-08-05T19:53:17.249Z",
+      "last_error": "HTTP 403"
+    },
+    "941350ba-30e2-4549-865f-ca1bd7626782": {
+      "status": "unavailable",
+      "name": "Inverter of Truth",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Inverter%20of%20Truth",
+      "attempted_at": "2026-08-05T19:53:14.246Z",
+      "last_error": "HTTP 403"
+    },
+    "94a844d2-0574-45a7-b347-e0e329767c42": {
+      "status": "unavailable",
+      "name": "Necropotence",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Necropotence",
+      "attempted_at": "2026-08-05T19:55:35.298Z",
+      "last_error": "HTTP 403"
+    },
+    "94fac5fe-97d5-4c12-a80c-8efff9d853ae": {
+      "status": "unavailable",
+      "name": "Blood Moon",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Moon",
+      "attempted_at": "2026-08-05T19:48:35.164Z",
+      "last_error": "HTTP 403"
+    },
+    "956381ba-6d37-4a8a-846c-bad79222dbee": {
+      "status": "unavailable",
+      "name": "Force of Will",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Force%20of%20Will",
+      "attempted_at": "2026-08-05T19:51:26.222Z",
+      "last_error": "HTTP 403"
+    },
+    "973c684c-a396-4e40-8aaa-365bc64a6f9a": {
+      "status": "unavailable",
+      "name": "Galvanic Relay",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Galvanic%20Relay",
+      "attempted_at": "2026-08-05T19:51:38.223Z",
+      "last_error": "HTTP 403"
+    },
+    "97acd977-164d-49d5-b3a1-72e0d75c9016": {
+      "status": "unavailable",
+      "name": "Hogaak, Arisen Necropolis",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Hogaak%2C%20Arisen%20Necropolis",
+      "attempted_at": "2026-08-05T19:52:35.237Z",
+      "last_error": "HTTP 403"
+    },
+    "992d9a72-d34d-47d7-96fb-37f0efb515ef": {
+      "status": "unavailable",
+      "name": "Hymn to Tourach",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Hymn%20to%20Tourach",
+      "attempted_at": "2026-08-05T19:52:53.243Z",
+      "last_error": "HTTP 403"
+    },
+    "99d4d99d-cf56-45aa-aa39-a250695612f2": {
+      "status": "unavailable",
+      "name": "Time Vault",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Time%20Vault",
+      "attempted_at": "2026-08-05T19:58:44.351Z",
+      "last_error": "HTTP 403"
+    },
+    "9a1412db-45ad-46ea-8f12-a85d203113d8": {
+      "status": "unavailable",
+      "name": "Demonic Consultation",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Demonic%20Consultation",
+      "attempted_at": "2026-08-05T19:50:05.195Z",
+      "last_error": "HTTP 403"
+    },
+    "9e0ed4b0-28b5-44be-ab83-f1e8eb07138d": {
+      "status": "unavailable",
+      "name": "Contract from Below",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Contract%20from%20Below",
+      "attempted_at": "2026-08-05T19:49:23.182Z",
+      "last_error": "HTTP 403"
+    },
+    "a044474a-cd72-4e9d-bd8d-a08f2de9cdc0": {
+      "status": "unavailable",
+      "name": "Reanimate",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Reanimate",
+      "attempted_at": "2026-08-05T19:56:38.317Z",
+      "last_error": "HTTP 403"
+    },
+    "a06f8476-0a23-413a-bc28-8dc2427fdc2a": {
+      "status": "unavailable",
+      "name": "Amulet of Quoz",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amulet%20of%20Quoz",
+      "attempted_at": "2026-08-05T19:47:47.151Z",
+      "last_error": "HTTP 403"
+    },
+    "a0a1cd2b-ed7c-4cce-8497-4873e1e5e3df": {
+      "status": "unavailable",
+      "name": "Geological Appraiser",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Geological%20Appraiser",
+      "attempted_at": "2026-08-05T19:51:44.225Z",
+      "last_error": "HTTP 403"
+    },
+    "a1ab033f-9605-4ca2-a98b-c0b2e1599609": {
+      "status": "unavailable",
+      "name": "Bronze Tablet",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bronze%20Tablet",
+      "attempted_at": "2026-08-05T19:48:47.169Z",
+      "last_error": "HTTP 403"
+    },
+    "a20dd48d-d344-4db1-b0e9-a2b71c3cc9d1": {
+      "status": "unavailable",
+      "name": "Karn, the Great Creator",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Karn%2C%20the%20Great%20Creator",
+      "attempted_at": "2026-08-05T19:53:44.259Z",
+      "last_error": "HTTP 403"
+    },
+    "a4d751e0-41c1-4e90-853d-512f385acd81": {
+      "status": "unavailable",
+      "name": "All That Glitters",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=All%20That%20Glitters",
+      "attempted_at": "2026-08-05T19:47:38.148Z",
+      "last_error": "HTTP 403"
+    },
+    "a610c77c-fe31-4465-a1c1-392db4ce4ed1": {
+      "status": "unavailable",
+      "name": "Cleanse",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Cleanse",
+      "attempted_at": "2026-08-05T19:49:11.176Z",
+      "last_error": "HTTP 403"
+    },
+    "a6708b11-1bcd-4208-a967-fe91f2e3313c": {
+      "status": "unavailable",
+      "name": "Recurring Nightmare",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Recurring%20Nightmare",
+      "attempted_at": "2026-08-05T19:56:44.320Z",
+      "last_error": "HTTP 403"
+    },
+    "a7c69802-99c4-4778-934e-cc09ba58c267": {
+      "status": "unavailable",
+      "name": "Basking Broodscale",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Basking%20Broodscale",
+      "attempted_at": "2026-08-05T19:48:20.163Z",
+      "last_error": "HTTP 403"
+    },
+    "a8abd966-de7b-46a3-8ac7-8747ab35653a": {
+      "status": "unavailable",
+      "name": "Wheel of Fortune",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Wheel%20of%20Fortune",
+      "attempted_at": "2026-08-05T20:00:05.374Z",
+      "last_error": "HTTP 403"
+    },
+    "aa77980d-0434-40f0-990f-1c8c50610174": {
+      "status": "unavailable",
+      "name": "Rain of Filth",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Rain%20of%20Filth",
+      "attempted_at": "2026-08-05T19:56:35.317Z",
+      "last_error": "HTTP 403"
+    },
+    "aa959340-c869-4caa-92c7-572bd8d23eef": {
+      "status": "unavailable",
+      "name": "Field of the Dead",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Field%20of%20the%20Dead",
+      "attempted_at": "2026-08-05T19:51:08.218Z",
+      "last_error": "HTTP 403"
+    },
+    "adc1f3b4-cce7-42c9-a208-dbab1d1924f5": {
+      "status": "unavailable",
+      "name": "Cloud of Faeries",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Cloud%20of%20Faeries",
+      "attempted_at": "2026-08-05T19:49:14.181Z",
+      "last_error": "HTTP 403"
+    },
+    "ae120613-97d6-4393-b39d-c3e6c076f5d6": {
+      "status": "unavailable",
+      "name": "Deflecting Swat",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Deflecting%20Swat",
+      "attempted_at": "2026-08-05T19:49:59.193Z",
+      "last_error": "HTTP 403"
+    },
+    "ae1f2ab5-c6a5-4d49-a746-3cb4668bf805": {
+      "status": "unavailable",
+      "name": "Mycosynth Lattice",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mycosynth%20Lattice",
+      "attempted_at": "2026-08-05T19:55:17.292Z",
+      "last_error": "HTTP 403"
+    },
+    "ae7604bb-4818-45a3-960c-cf3d83f15964": {
+      "status": "unavailable",
+      "name": "Teferi, Time Raveler",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Teferi%2C%20Time%20Raveler",
+      "attempted_at": "2026-08-05T19:58:17.343Z",
+      "last_error": "HTTP 403"
+    },
+    "ae83ef2c-960f-4c5b-97cc-52465c687c18": {
+      "status": "unavailable",
+      "name": "Primeval Titan",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Primeval%20Titan",
+      "attempted_at": "2026-08-05T19:56:14.309Z",
+      "last_error": "HTTP 403"
+    },
+    "b0d84455-dc35-45d3-901e-8d28363142f4": {
+      "status": "unavailable",
+      "name": "Hired Heist",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Hired%20Heist",
+      "attempted_at": "2026-08-05T19:52:32.234Z",
+      "last_error": "HTTP 403"
+    },
+    "b18b9869-8490-4875-a5bb-484c3299f2c5": {
+      "status": "unavailable",
+      "name": "Jihad",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Jihad",
+      "attempted_at": "2026-08-05T19:53:38.256Z",
+      "last_error": "HTTP 403"
+    },
+    "b749e9e4-0f2a-4157-8cca-facd6b48157f": {
+      "status": "unavailable",
+      "name": "Proft's Eidetic Memory",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Proft's%20Eidetic%20Memory",
+      "attempted_at": "2026-08-05T19:56:17.310Z",
+      "last_error": "HTTP 403"
+    },
+    "b8942c72-16ce-4f2f-875f-97a56e85a03e": {
+      "status": "unavailable",
+      "name": "Vicious Battlerager",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Vicious%20Battlerager",
+      "attempted_at": "2026-08-05T19:59:50.370Z",
+      "last_error": "HTTP 403"
+    },
+    "ba284fe6-bb29-455c-8321-9714a0cdc05e": {
+      "status": "unavailable",
+      "name": "Mishra's Workshop",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mishra's%20Workshop",
+      "attempted_at": "2026-08-05T19:54:41.280Z",
+      "last_error": "HTTP 403"
+    },
+    "c100a597-8186-4b07-b34a-e1eca2146838": {
+      "status": "unavailable",
+      "name": "Sovereign's Realm",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Sovereign's%20Realm",
+      "attempted_at": "2026-08-05T19:57:47.336Z",
+      "last_error": "HTTP 403"
+    },
+    "c1882cb4-f69e-441e-8871-743ed636cad0": {
+      "status": "unavailable",
+      "name": "Aarakocra Sneak",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aarakocra%20Sneak",
+      "attempted_at": "2026-08-05T19:47:26.259Z",
+      "last_error": "HTTP 403"
+    },
+    "c235015e-a7a9-4f8d-bf4a-cf68b3847f83": {
+      "status": "unavailable",
+      "name": "Scapeshift",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Scapeshift",
+      "attempted_at": "2026-08-05T19:56:53.321Z",
+      "last_error": "HTTP 403"
+    },
+    "c7aecca5-2f67-4245-ab2d-e723d8b23a67": {
+      "status": "unavailable",
+      "name": "Expressive Iteration",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Expressive%20Iteration",
+      "attempted_at": "2026-08-05T19:50:50.211Z",
+      "last_error": "HTTP 403"
+    },
+    "c7c7bffa-442d-4ba5-b778-ad394c192f27": {
+      "status": "unavailable",
+      "name": "Candelabra of Tawnos",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Candelabra%20of%20Tawnos",
+      "attempted_at": "2026-08-05T19:48:50.172Z",
+      "last_error": "HTTP 403"
+    },
+    "c823e687-6311-4c99-974b-fd77d204141a": {
+      "status": "unavailable",
+      "name": "Timetwister",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Timetwister",
+      "attempted_at": "2026-08-05T19:58:53.352Z",
+      "last_error": "HTTP 403"
+    },
+    "c8625113-0ce4-4454-83a1-25c31b8bfb9a": {
+      "status": "unavailable",
+      "name": "Disciple of the Vault",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Disciple%20of%20the%20Vault",
+      "attempted_at": "2026-08-05T19:50:14.198Z",
+      "last_error": "HTTP 403"
+    },
+    "c9b82110-7dfd-4617-9399-9510be449043": {
+      "status": "unavailable",
+      "name": "Dark Depths",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Dark%20Depths",
+      "attempted_at": "2026-08-05T19:49:38.187Z",
+      "last_error": "HTTP 403"
+    },
+    "ccba143d-ed9b-4044-bdad-f010a0e38e47": {
+      "status": "unavailable",
+      "name": "Blazing Shoal",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blazing%20Shoal",
+      "attempted_at": "2026-08-05T19:48:32.162Z",
+      "last_error": "HTTP 403"
+    },
+    "ccf5a0d4-69e8-4607-a76c-cfca336899e4": {
+      "status": "unavailable",
+      "name": "Undercity Informer",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Undercity%20Informer",
+      "attempted_at": "2026-08-05T19:59:17.361Z",
+      "last_error": "HTTP 403"
+    },
+    "cf0dcb27-f02e-4065-81dc-75fbbb09ea3f": {
+      "status": "unavailable",
+      "name": "Oath of Druids",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Oath%20of%20Druids",
+      "attempted_at": "2026-08-05T19:55:41.297Z",
+      "last_error": "HTTP 403"
+    },
+    "cf288b0a-a343-4ef7-ba02-4f83a6dabeaf": {
+      "status": "unavailable",
+      "name": "Hypergenesis",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Hypergenesis",
+      "attempted_at": "2026-08-05T19:52:56.245Z",
+      "last_error": "HTTP 403"
+    },
+    "d00ade82-caab-43c6-9756-6e9e6edfc519": {
+      "status": "unavailable",
+      "name": "Once Upon a Time",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Once%20Upon%20a%20Time",
+      "attempted_at": "2026-08-05T19:55:47.299Z",
+      "last_error": "HTTP 403"
+    },
+    "d0209d3f-3f7e-4fd5-bce5-10bce6f29c86": {
+      "status": "unavailable",
+      "name": "Time Walk",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Time%20Walk",
+      "attempted_at": "2026-08-05T19:58:47.351Z",
+      "last_error": "HTTP 403"
+    },
+    "d09c9cba-fdd2-479b-ad5d-d05181c3e3f9": {
+      "status": "unavailable",
+      "name": "Fierce Guardianship",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Fierce%20Guardianship",
+      "attempted_at": "2026-08-05T19:51:11.218Z",
+      "last_error": "HTTP 403"
+    },
+    "d17576b2-4a47-4848-8908-3152c8b4afe2": {
+      "status": "unavailable",
+      "name": "Rebirth",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Rebirth",
+      "attempted_at": "2026-08-05T19:56:41.320Z",
+      "last_error": "HTTP 403"
+    },
+    "d17d071d-dbee-4d65-8435-137f35cd89ca": {
+      "status": "unavailable",
+      "name": "Sundering Titan",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Sundering%20Titan",
+      "attempted_at": "2026-08-05T19:58:08.342Z",
+      "last_error": "HTTP 403"
+    },
+    "d1b815d1-2848-40d4-a555-66822d1becbc": {
+      "status": "unavailable",
+      "name": "Channel",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Channel",
+      "attempted_at": "2026-08-05T19:48:59.175Z",
+      "last_error": "HTTP 403"
+    },
+    "d21a89eb-7c5b-459a-acc7-12b20b13bf79": {
+      "status": "unavailable",
+      "name": "Strip Mine",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Strip%20Mine",
+      "attempted_at": "2026-08-05T19:57:59.339Z",
+      "last_error": "HTTP 403"
+    },
+    "d38937a6-ab1c-4de8-a278-d81a6ce0d921": {
+      "status": "unavailable",
+      "name": "Paradox Engine",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Paradox%20Engine",
+      "attempted_at": "2026-08-05T19:55:50.300Z",
+      "last_error": "HTTP 403"
+    },
+    "d5d91377-fd66-4dbe-a092-07f2ea379ca7": {
+      "status": "unavailable",
+      "name": "Leovold, Emissary of Trest",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Leovold%2C%20Emissary%20of%20Trest",
+      "attempted_at": "2026-08-05T19:53:56.265Z",
+      "last_error": "HTTP 403"
+    },
+    "d5ed1233-df87-4b90-8918-13922ec95249": {
+      "status": "unavailable",
+      "name": "Mox Sapphire",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mox%20Sapphire",
+      "attempted_at": "2026-08-05T19:55:11.291Z",
+      "last_error": "HTTP 403"
+    },
+    "d83bb32d-f409-421a-9d93-bd7ea3240b47": {
+      "status": "unavailable",
+      "name": "Erayo, Soratami Ascendant // Erayo's Essence",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Erayo%2C%20Soratami%20Ascendant%20%2F%2F%20Erayo's%20Essence",
+      "attempted_at": "2026-08-05T19:50:47.209Z",
+      "last_error": "HTTP 403"
+    },
+    "dafd2713-d1bc-474b-b390-d2ff20b5375e": {
+      "status": "unavailable",
+      "name": "Monastery Swiftspear",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Monastery%20Swiftspear",
+      "attempted_at": "2026-08-05T19:54:44.280Z",
+      "last_error": "HTTP 403"
+    },
+    "dba4fd31-8931-42dd-bd86-45479c2abf74": {
+      "status": "unavailable",
+      "name": "Tolarian Academy",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Tolarian%20Academy",
+      "attempted_at": "2026-08-05T19:59:02.357Z",
+      "last_error": "HTTP 403"
+    },
+    "dbd6a94b-62ff-4a10-9d52-bdd90b26e425": {
+      "status": "unavailable",
+      "name": "Time Warp",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Time%20Warp",
+      "attempted_at": "2026-08-05T19:58:50.351Z",
+      "last_error": "HTTP 403"
+    },
+    "dc671205-f2fa-454f-9957-921a6069ad53": {
+      "status": "unavailable",
+      "name": "High Tide",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=High%20Tide",
+      "attempted_at": "2026-08-05T19:52:29.233Z",
+      "last_error": "HTTP 403"
+    },
+    "de2440de-e948-4811-903c-0bbe376ff64d": {
+      "status": "unavailable",
+      "name": "Mox Opal",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mox%20Opal",
+      "attempted_at": "2026-08-05T19:55:02.288Z",
+      "last_error": "HTTP 403"
+    },
+    "dfa62414-48c6-4e5c-8609-1ce507b41505": {
+      "status": "unavailable",
+      "name": "Hymn of the Wilds",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Hymn%20of%20the%20Wilds",
+      "attempted_at": "2026-08-05T19:52:50.241Z",
+      "last_error": "HTTP 403"
+    },
+    "e15504a7-2b67-4185-b916-172145f10b19": {
+      "status": "unavailable",
+      "name": "Yorion, Sky Nomad",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Yorion%2C%20Sky%20Nomad",
+      "attempted_at": "2026-08-05T20:00:38.387Z",
+      "last_error": "HTTP 403"
+    },
+    "e157ad1e-be35-47f3-92db-01799f8fb6a5": {
+      "status": "unavailable",
+      "name": "Psychic Frog",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Psychic%20Frog",
+      "attempted_at": "2026-08-05T19:56:26.313Z",
+      "last_error": "HTTP 403"
+    },
+    "e25ab152-e166-44df-8f92-668bab0e9619": {
+      "status": "unavailable",
+      "name": "Double Stroke",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Double%20Stroke",
+      "attempted_at": "2026-08-05T19:50:20.203Z",
+      "last_error": "HTTP 403"
+    },
+    "e27193b7-1a47-4555-865d-b1fd4c6d597f": {
+      "status": "unavailable",
+      "name": "Fastbond",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Fastbond",
+      "attempted_at": "2026-08-05T19:51:02.214Z",
+      "last_error": "HTTP 403"
+    },
+    "e5df4597-1647-4ac2-bdb3-a517598d1431": {
+      "status": "unavailable",
+      "name": "Summer Bloom",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Summer%20Bloom",
+      "attempted_at": "2026-08-05T19:58:02.340Z",
+      "last_error": "HTTP 403"
+    },
+    "e7c67480-1816-4071-9eab-a1d1b535a344": {
+      "status": "unavailable",
+      "name": "Comet, Stellar Pup",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Comet%2C%20Stellar%20Pup",
+      "attempted_at": "2026-08-05T19:49:20.179Z",
+      "last_error": "HTTP 403"
+    },
+    "e89e1fae-bac3-4cc0-a233-24b9e08a5290": {
+      "status": "unavailable",
+      "name": "Fall from Favor",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Fall%20from%20Favor",
+      "attempted_at": "2026-08-05T19:50:56.211Z",
+      "last_error": "HTTP 403"
+    },
+    "e958b3c5-0666-4a99-a933-e5cb8b0da9da": {
+      "status": "unavailable",
+      "name": "Cranial Ram",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Cranial%20Ram",
+      "attempted_at": "2026-08-05T19:49:32.187Z",
+      "last_error": "HTTP 403"
+    },
+    "e9da499c-fa43-4e94-8395-5c030ff39502": {
+      "status": "unavailable",
+      "name": "Price of Progress",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Price%20of%20Progress",
+      "attempted_at": "2026-08-05T19:56:11.322Z",
+      "last_error": "HTTP 403"
+    },
+    "eb9c9a34-88a8-4afe-a053-806f6b29834f": {
+      "status": "unavailable",
+      "name": "Memory Jar",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Memory%20Jar",
+      "attempted_at": "2026-08-05T19:54:32.277Z",
+      "last_error": "HTTP 403"
+    },
+    "ebd2d760-5ad8-4027-b124-171822f3edfe": {
+      "status": "unavailable",
+      "name": "Grapeshot",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Grapeshot",
+      "attempted_at": "2026-08-05T19:52:05.226Z",
+      "last_error": "HTTP 403"
+    },
+    "ec3d4466-547c-4e02-b1b5-a156ec4637e9": {
+      "status": "unavailable",
+      "name": "Chrome Mox",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Chrome%20Mox",
+      "attempted_at": "2026-08-05T19:49:08.176Z",
+      "last_error": "HTTP 403"
+    },
+    "ec463bde-dadf-4044-8e41-71338fd4d62f": {
+      "status": "unavailable",
+      "name": "Arcum's Astrolabe",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcum's%20Astrolabe",
+      "attempted_at": "2026-08-05T19:47:59.157Z",
+      "last_error": "HTTP 403"
+    },
+    "ed7bdb3e-5c51-4547-9266-76a791e0b2b0": {
+      "status": "unavailable",
+      "name": "Humility",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Humility",
+      "attempted_at": "2026-08-05T19:52:47.240Z",
+      "last_error": "HTTP 403"
+    },
+    "ed85fa82-e4fa-434b-92a8-36b6075708d1": {
+      "status": "unavailable",
+      "name": "Mox Ruby",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mox%20Ruby",
+      "attempted_at": "2026-08-05T19:55:08.290Z",
+      "last_error": "HTTP 403"
+    },
+    "edb455f4-8dc9-4b7c-b25c-cb51b7dfbb41": {
+      "status": "unavailable",
+      "name": "Chaos Orb",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Chaos%20Orb",
+      "attempted_at": "2026-08-05T19:49:02.176Z",
+      "last_error": "HTTP 403"
+    },
+    "ededbdae-d9dc-4206-9335-d7158f2d7700": {
+      "status": "unavailable",
+      "name": "Vampiric Tutor",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Vampiric%20Tutor",
+      "attempted_at": "2026-08-05T19:59:38.368Z",
+      "last_error": "HTTP 403"
+    },
+    "ee302659-59ed-4eef-babe-451b9ccf7f14": {
+      "status": "unavailable",
+      "name": "Uro, Titan of Nature's Wrath",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Uro%2C%20Titan%20of%20Nature's%20Wrath",
+      "attempted_at": "2026-08-05T19:59:35.368Z",
+      "last_error": "HTTP 403"
+    },
+    "ee6099b0-fb1f-42f1-b862-7708c6e36d05": {
+      "status": "unavailable",
+      "name": "Lion's Eye Diamond",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Lion's%20Eye%20Diamond",
+      "attempted_at": "2026-08-05T19:54:08.268Z",
+      "last_error": "HTTP 403"
+    },
+    "ef86989d-ce80-4e55-aece-7d11710eeffa": {
+      "status": "unavailable",
+      "name": "Polluted Delta",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Polluted%20Delta",
+      "attempted_at": "2026-08-05T19:55:59.306Z",
+      "last_error": "HTTP 403"
+    },
+    "efe9c3e0-7315-408e-9903-9d25a681039b": {
+      "status": "unavailable",
+      "name": "Golos, Tireless Pilgrim",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Golos%2C%20Tireless%20Pilgrim",
+      "attempted_at": "2026-08-05T19:52:02.225Z",
+      "last_error": "HTTP 403"
+    },
+    "f0587c55-06c1-4930-a62e-668f37464ce9": {
+      "status": "unavailable",
+      "name": "Jegantha, the Wellspring",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Jegantha%2C%20the%20Wellspring",
+      "attempted_at": "2026-08-05T19:53:29.252Z",
+      "last_error": "HTTP 403"
+    },
+    "f309fe9f-0732-4b81-a342-a394225cbbb1": {
+      "status": "unavailable",
+      "name": "Secrets of Paradise",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Secrets%20of%20Paradise",
+      "attempted_at": "2026-08-05T19:57:08.326Z",
+      "last_error": "HTTP 403"
+    },
+    "f3c5978a-70fa-431f-933b-b954bd0db0ea": {
+      "status": "unavailable",
+      "name": "Mox Diamond",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mox%20Diamond",
+      "attempted_at": "2026-08-05T19:54:53.283Z",
+      "last_error": "HTTP 403"
+    },
+    "f3c7af78-a77d-4134-82a2-a5ce84285a84": {
+      "status": "unavailable",
+      "name": "Flooded Strand",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Flooded%20Strand",
+      "attempted_at": "2026-08-05T19:51:20.221Z",
+      "last_error": "HTTP 403"
+    },
+    "f3e28778-0149-4dbd-badb-ba5aeacacd76": {
+      "status": "unavailable",
+      "name": "Kuldotha Rebirth",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Kuldotha%20Rebirth",
+      "attempted_at": "2026-08-05T19:53:53.266Z",
+      "last_error": "HTTP 403"
+    },
+    "f4819061-b0b5-48ab-af7b-6525c3d2eab7": {
+      "status": "unavailable",
+      "name": "Great Furnace",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Great%20Furnace",
+      "attempted_at": "2026-08-05T19:52:08.227Z",
+      "last_error": "HTTP 403"
+    },
+    "f5ca7b13-8003-4361-b827-7095c89f2750": {
+      "status": "unavailable",
+      "name": "Falling Star",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Falling%20Star",
+      "attempted_at": "2026-08-05T19:50:59.213Z",
+      "last_error": "HTTP 403"
+    },
+    "f705c0eb-9c6c-4315-a860-208ed0c5d93e": {
+      "status": "unavailable",
+      "name": "Cloudpost",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Cloudpost",
+      "attempted_at": "2026-08-05T19:49:17.180Z",
+      "last_error": "HTTP 403"
+    },
+    "f759d112-76db-4091-a22b-b9f19ab6fa5f": {
+      "status": "unavailable",
+      "name": "Griselbrand",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Griselbrand",
+      "attempted_at": "2026-08-05T19:52:17.229Z",
+      "last_error": "HTTP 403"
+    },
+    "f7f76f39-a0de-4bda-86b6-0f291892fcec": {
+      "status": "unavailable",
+      "name": "Yawgmoth's Bargain",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Yawgmoth's%20Bargain",
+      "attempted_at": "2026-08-05T20:00:32.385Z",
+      "last_error": "HTTP 403"
+    },
+    "f8b17b89-26ce-4208-874a-9e1d66514640": {
+      "status": "unavailable",
+      "name": "Dig Through Time",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Dig%20Through%20Time",
+      "attempted_at": "2026-08-05T19:50:11.197Z",
+      "last_error": "HTTP 403"
+    },
+    "f8b9dd54-0837-47f4-ad14-7a0322d46d5f": {
+      "status": "unavailable",
+      "name": "Birthing Pod",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Birthing%20Pod",
+      "attempted_at": "2026-08-05T19:48:26.163Z",
+      "last_error": "HTTP 403"
+    },
+    "fb81f95c-70f8-4eb7-8d15-15d0ae23ec03": {
+      "status": "unavailable",
+      "name": "Mystical Tutor",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mystical%20Tutor",
+      "attempted_at": "2026-08-05T19:55:23.295Z",
+      "last_error": "HTTP 403"
+    },
+    "fbf9f8c5-849f-45d5-8129-5fc683c21a04": {
+      "status": "unavailable",
+      "name": "Fury",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Fury",
+      "attempted_at": "2026-08-05T19:51:32.223Z",
+      "last_error": "HTTP 403"
+    },
+    "fc04f621-338b-4d4c-bf57-5e5a00d990f0": {
+      "status": "unavailable",
+      "name": "Shahrazad",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Shahrazad",
+      "attempted_at": "2026-08-05T19:57:26.333Z",
+      "last_error": "HTTP 403"
+    },
+    "fc0707c7-d504-4ccf-a0d2-3eb6e26e7a57": {
+      "status": "unavailable",
+      "name": "Bloodstained Mire",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodstained%20Mire",
+      "attempted_at": "2026-08-05T19:48:38.168Z",
+      "last_error": "HTTP 403"
+    },
+    "fcb7c93c-46ab-49b5-a6e0-35d73f3be8f0": {
+      "status": "unavailable",
+      "name": "Screaming Nemesis",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Screaming%20Nemesis",
+      "attempted_at": "2026-08-05T19:56:56.322Z",
+      "last_error": "HTTP 403"
+    },
+    "fee680c6-afe2-4321-9d8a-8f81a612a53b": {
+      "status": "unavailable",
+      "name": "Sorin, Imperious Bloodlord",
+      "price_brl": null,
+      "finish": "normal",
+      "condition": "NM",
+      "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Sorin%2C%20Imperious%20Bloodlord",
+      "attempted_at": "2026-08-05T19:57:44.336Z",
+      "last_error": "HTTP 403"
+    }
+  }
 }
