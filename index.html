@@ -2,95 +2,274 @@
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#100a0b" />
-    <meta name="description" content="Códice dos Banidos — a banlist oficial do nosso formato." />
-    <title>Códice dos Banidos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b0d12" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="description" content="Códice dos Banidos — a banlist oficial do Playgroup da Amizade." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="Códice dos Banidos" />
+    <meta property="og:description" content="O arquivo de cartas proibidas do Playgroup da Amizade." />
+    <meta property="og:image" content="https://codice-dos-banidos.igorbarazzetti.chatgpt.site/og.png" />
+    <meta property="og:image:width" content="1536" />
+    <meta property="og:image:height" content="1024" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Códice dos Banidos" />
+    <meta name="twitter:description" content="O arquivo de cartas proibidas do Playgroup da Amizade." />
+    <meta name="twitter:image" content="https://codice-dos-banidos.igorbarazzetti.chatgpt.site/og.png" />
+    <title>Códice dos Banidos · Playgroup da Amizade</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=IM+Fell+English+SC&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=codex-1" />
+    <link rel="preconnect" href="https://cards.scryfall.io" />
+    <link rel="preconnect" href="https://api.scryfall.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=codex-11" />
   </head>
   <body>
-    <div class="scene" aria-hidden="true">
-      <div class="scene__image scene__image--a"></div>
-      <div class="scene__image scene__image--b"></div>
-      <div class="scene__veil"></div>
-      <div class="scene__grain"></div>
-      <div class="ember ember--one"></div>
-      <div class="ember ember--two"></div>
-      <div class="ember ember--three"></div>
-      <div class="scene__caption"><span id="sceneName">Arquivo das relíquias</span><i></i><span id="sceneArtist">arte de fundo</span></div>
-    </div>
+    <a class="skip-link" href="#archiveTitle">Ir para as cartas</a>
+    <div class="atmosphere" aria-hidden="true"><i></i><i></i></div>
 
     <header class="site-header">
-      <a class="brand-lockup" href="#top" aria-label="Voltar ao topo">
-        <span class="sigil" aria-hidden="true"><span class="sigil__core">M</span><span class="sigil__ring"></span></span>
-        <span class="brand-lockup__copy"><strong id="brandName">Playgroup da Amizade</strong><small>Magic: the Gathering · arquivo de fã</small></span>
+      <a class="brand-lockup" href="#top" aria-label="Voltar ao início">
+        <span class="sigil" aria-hidden="true"><span id="brandInitials">PA</span></span>
+        <span class="brand-lockup__copy">
+          <strong id="brandName">Playgroup da Amizade</strong>
+          <small>Arquivo de cartas proibidas</small>
+        </span>
       </a>
-      <div class="header-status"><span class="status-dot"></span><span>fanmade · registro vivo</span></div>
+      <div class="header-actions">
+        <span class="fanmade-mark"><i aria-hidden="true"></i> Fanmade</span>
+        <button class="icon-button" id="shareButton" type="button" aria-label="Compartilhar esta seleção" title="Copiar link desta seleção">
+          <span aria-hidden="true">↗</span><span class="icon-button__label">Compartilhar</span>
+        </button>
+      </div>
     </header>
 
-    <main id="top" class="page-shell">
+    <div class="connection-banner" id="connectionBanner" role="status" hidden>
+      <span aria-hidden="true">◇</span> Você está sem conexão. Exibindo o último arquivo disponível.
+    </div>
+
+    <main id="top">
       <section class="hero" aria-labelledby="pageTitle">
-        <div class="mana-constellation" aria-hidden="true"><span class="mana-constellation__line"></span><span class="mana-pip mana-pip--white">W</span><span class="mana-pip mana-pip--blue">U</span><span class="mana-pip mana-pip--black">B</span><span class="mana-pip mana-pip--red">R</span><span class="mana-pip mana-pip--green">G</span><span class="mana-constellation__line"></span></div>
-        <div class="hero__ornament" aria-hidden="true"><span></span><b>✦</b><span></span></div>
-        <p class="eyebrow">Arquivo arcano do playgroup</p>
-        <h1 id="pageTitle">Códice dos Banidos</h1>
-        <p id="pageSubtitle" class="hero__subtitle">A banlist oficial do nosso formato</p>
-        <p class="hero__lede">Uma carta entra nesta banlist quando estiver banida em pelo menos um dos formatos utilizados como referência.</p>
-        <div class="hero__stats" aria-label="Resumo dos dados">
-          <div><strong id="totalCards">—</strong><span>cartas seladas</span></div>
-          <div><strong id="formatCount">7</strong><span>formatos consultados</span></div>
-          <div><strong id="lastUpdated">—</strong><span>última atualização</span></div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-art__layer hero-art__layer--a"></div>
+          <div class="hero-art__layer hero-art__layer--b"></div>
+          <div class="hero-art__veil"></div>
         </div>
-        <div class="source-mark"><span class="source-mark__rune">◈</span> Dados e imagens indexados pelo Scryfall <span class="source-mark__line"></span></div>
-        <div class="fan-disclaimer"><span>FANMADE</span><i></i><span>USO PESSOAL E ENTRE AMIGOS</span><i></i><span>NÃO OFICIAL</span></div>
+        <div class="hero__content">
+          <p class="eyebrow"><span aria-hidden="true">✦</span> Banlist oficial do playgroup</p>
+          <h1 id="pageTitle">Códice dos Banidos</h1>
+          <p id="pageSubtitle" class="hero__subtitle">A banlist oficial do nosso formato</p>
+          <p class="hero__brief">Consulte rapidamente quais cartas foram seladas pelo conselho da mesa.</p>
+          <div class="hero__stats" aria-label="Resumo da banlist">
+            <div class="hero-stat hero-stat--primary"><strong id="totalCards">—</strong><span>cartas banidas</span></div>
+            <div class="hero-stat"><strong id="formatCount">7</strong><span>formatos</span></div>
+            <div class="hero-stat"><strong id="lastUpdated">—</strong><span>atualizado</span></div>
+          </div>
+          <p class="hero-art__credit"><span id="sceneName">Arte oficial de carta</span> · <span id="sceneArtist">via Scryfall</span></p>
+        </div>
       </section>
 
-      <section class="archive-plate" aria-labelledby="archiveTitle">
-        <div class="plate-corner plate-corner--tl">⌜</div><div class="plate-corner plate-corner--tr">⌝</div><div class="plate-corner plate-corner--bl">⌞</div><div class="plate-corner plate-corner--br">⌟</div>
-        <div class="plate-rune plate-rune--left">ᛉ ᛃ ᛏ</div><div class="plate-rune plate-rune--right">ᛏ ᛃ ᛉ</div>
-        <div class="plate-inner">
-          <div class="plate-heading">
-            <div><p class="eyebrow">Catálogo de interdição</p><h2 id="archiveTitle">As cartas que não atravessam o selo</h2></div>
-            <button class="ghost-button" id="shareButton" type="button" title="Copiar URL com os filtros atuais"><span aria-hidden="true">↗</span> Compartilhar</button>
+      <section class="archive" aria-labelledby="archiveTitle">
+        <div class="archive__heading">
+          <div>
+            <p class="eyebrow">Grimório da banlist</p>
+            <h2 id="archiveTitle">Cartas seladas pelo conselho</h2>
+          </div>
+          <span class="archive__hint"><span aria-hidden="true">↓</span> Toque em uma carta para ver os detalhes</span>
+        </div>
+
+        <div class="collection-toolbar" id="collectionToolbar">
+          <div class="search-control" role="search">
+            <span class="search-control__icon" aria-hidden="true">⌕</span>
+            <label class="sr-only" for="searchInput">Buscar carta por nome, texto, artista ou coleção</label>
+            <input id="searchInput" type="search" inputmode="search" enterkeyhint="search" placeholder="Buscar uma carta…" autocomplete="off" autocapitalize="none" spellcheck="false" />
+            <button class="search-clear" id="searchClear" type="button" aria-label="Apagar busca" hidden>×</button>
           </div>
 
-          <div class="format-heading"><span class="format-heading__glyph">◈</span><span><strong>Selos de formato</strong><small>Selecione uma ou mais referências de banlist</small></span></div>
-          <div class="format-scroll" id="formatSeals" aria-label="Filtrar por formato"></div>
-
-          <div class="workspace">
-            <aside class="filter-panel" id="filterPanel" aria-label="Filtros da coleção">
-              <div class="filter-panel__header"><div><p class="eyebrow">Refinar o arquivo</p><h3>Filtros</h3></div><button class="filter-close mobile-only" id="closeFilters" type="button" aria-label="Fechar filtros">×</button></div>
-              <label class="search-field"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Buscar por nome, texto, artista…" autocomplete="off" /><kbd>/</kbd></label>
-              <div class="filter-section"><label for="identityFilter">Identidade de cor</label><select id="identityFilter"><option value="">Todas as identidades</option><option value="W">Branco</option><option value="U">Azul</option><option value="B">Preto</option><option value="R">Vermelho</option><option value="G">Verde</option><option value="C">Incolor</option><option value="M">Multicolorida</option></select></div>
-              <div class="filter-section"><label for="typeFilter">Tipo de carta</label><select id="typeFilter"><option value="">Todos os tipos</option><option value="creature">Criatura</option><option value="instant">Instantâneo</option><option value="sorcery">Feitiço</option><option value="artifact">Artefato</option><option value="enchantment">Encantamento</option><option value="planeswalker">Planeswalker</option><option value="land">Terreno</option><option value="battle">Batalha</option><option value="other">Outros</option></select></div>
-              <div class="filter-section"><label for="cmcFilter">Valor de mana</label><select id="cmcFilter"><option value="">Qualquer valor</option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6 ou mais</option></select></div>
-              <div class="filter-section"><label for="rarityFilter">Raridade</label><select id="rarityFilter"><option value="">Todas as raridades</option><option value="common">Comum</option><option value="uncommon">Incomum</option><option value="rare">Rara</option><option value="mythic">Mítica</option><option value="special">Especial</option></select></div>
-              <div class="filter-panel__footer"><button id="clearFilters" class="clear-button" type="button">Limpar filtros</button><span id="filterCount">—</span></div>
-            </aside>
-
-            <div class="collection-area">
-              <div class="collection-toolbar"><label class="mobile-search-field mobile-only" for="mobileSearchInput"><span aria-hidden="true">⌕</span><input id="mobileSearchInput" type="search" placeholder="Buscar cartas…" autocomplete="off" /><kbd>/</kbd></label><div class="toolbar-row"><div class="toolbar-result"><span class="ornament-dot"></span><strong id="resultCount">Carregando arquivo…</strong></div><div class="toolbar-actions"><div class="view-toggle mobile-only" aria-label="Modo de visualização"><button id="cardsView" type="button" aria-label="Visualização em cartas" aria-pressed="true">▦</button><button id="listView" type="button" aria-label="Visualização em lista" aria-pressed="false">☷</button></div><button class="filter-trigger mobile-only" id="openFilters" type="button"><span aria-hidden="true">☷</span> Filtros <b id="mobileFilterCount" hidden>0</b></button><label class="sort-label" for="sortFilter">Ordenar por <select id="sortFilter"><option value="name-asc">Nome A–Z</option><option value="name-desc">Nome Z–A</option><option value="cmc-asc">Menor mana</option><option value="cmc-desc">Maior mana</option><option value="formats-desc">Mais formatos</option><option value="color">Cor</option></select></label></div></div></div>
-              <div class="active-filters" id="activeFilters" aria-live="polite"></div>
-              <div id="loadingState" class="loading-state"><div class="loader-rune">✦</div><p>Consultando os registros de Scryfall</p><small>As páginas do arquivo estão sendo reunidas…</small></div>
-              <div id="errorState" class="state-card" hidden><span class="state-card__icon">!</span><h3>O selo não respondeu</h3><p>Não foi possível consultar o Scryfall agora. Tente novamente em instantes.</p><button class="primary-button" id="retryButton" type="button">Tentar novamente</button></div>
-              <div id="cardGrid" class="card-grid" aria-live="polite"></div>
-              <div id="emptyState" class="state-card" hidden><span class="state-card__icon">∅</span><h3>Nenhuma relíquia encontrada</h3><p>Os filtros atuais não correspondem a nenhuma carta do arquivo.</p><button class="primary-button" id="emptyClear" type="button">Limpar filtros</button></div>
-              <button id="loadMore" class="load-more" type="button" hidden>Carregar mais cartas <span>↓</span></button>
+          <div class="toolbar-row">
+            <div class="toolbar-result" aria-live="polite" aria-atomic="true">
+              <span class="result-pulse" aria-hidden="true"></span>
+              <strong id="resultCount">Abrindo o arquivo…</strong>
             </div>
+            <div class="toolbar-actions">
+              <label class="sort-label" for="sortFilter">
+                <span class="sr-only">Ordenar cartas</span>
+                <select id="sortFilter" aria-label="Ordenar cartas">
+                  <option value="name-asc">Nome A–Z</option>
+                  <option value="name-desc">Nome Z–A</option>
+                  <option value="cmc-asc">Menor mana</option>
+                  <option value="cmc-desc">Maior mana</option>
+                  <option value="formats-desc">Mais formatos</option>
+                  <option value="color">Identidade de cor</option>
+                </select>
+              </label>
+              <div class="view-toggle" aria-label="Modo de visualização">
+                <button id="cardsView" type="button" aria-label="Ver em grade" aria-pressed="true"><span aria-hidden="true">▦</span></button>
+                <button id="listView" type="button" aria-label="Ver em lista" aria-pressed="false"><span aria-hidden="true">☷</span></button>
+              </div>
+              <button class="filter-trigger" id="openFilters" type="button" aria-haspopup="dialog" aria-controls="filterPanel" aria-expanded="false">
+                <span aria-hidden="true">≡</span><span>Filtros</span><b id="mobileFilterCount" hidden>0</b>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="active-filters" id="activeFilters" aria-live="polite" aria-label="Filtros ativos"></div>
+
+        <div class="format-rail">
+          <div class="format-rail__label"><strong>Formato</strong><span>Arraste para ver todos</span></div>
+          <div class="format-scroll" id="formatSeals" aria-label="Filtrar por formato"></div>
+        </div>
+
+        <div class="workspace">
+          <aside class="filter-panel" id="filterPanel" aria-label="Filtros da coleção">
+            <div class="filter-panel__surface">
+              <header class="filter-panel__header">
+                <div><p class="eyebrow">Refinar o arquivo</p><h3>Filtros</h3></div>
+                <button class="filter-close" id="closeFilters" type="button" aria-label="Fechar filtros">×</button>
+              </header>
+
+              <div class="filter-panel__body">
+                <fieldset class="filter-group">
+                  <legend>Identidade de cor</legend>
+                  <label for="identityFilter">Cor da carta</label>
+                  <select id="identityFilter">
+                    <option value="">Todas as identidades</option><option value="W">Branco</option><option value="U">Azul</option><option value="B">Preto</option><option value="R">Vermelho</option><option value="G">Verde</option><option value="C">Incolor</option><option value="M">Multicolorida</option>
+                  </select>
+                </fieldset>
+                <fieldset class="filter-group">
+                  <legend>Características</legend>
+                  <label for="typeFilter">Tipo de carta</label>
+                  <select id="typeFilter"><option value="">Todos os tipos</option><option value="creature">Criatura</option><option value="instant">Instantâneo</option><option value="sorcery">Feitiço</option><option value="artifact">Artefato</option><option value="enchantment">Encantamento</option><option value="planeswalker">Planeswalker</option><option value="land">Terreno</option><option value="battle">Batalha</option><option value="other">Outros</option></select>
+                  <label for="cmcFilter">Valor de mana</label>
+                  <select id="cmcFilter"><option value="">Qualquer valor</option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6 ou mais</option></select>
+                  <label for="rarityFilter">Raridade</label>
+                  <select id="rarityFilter"><option value="">Todas as raridades</option><option value="common">Comum</option><option value="uncommon">Incomum</option><option value="rare">Rara</option><option value="mythic">Mítica</option><option value="special">Especial</option></select>
+                  <label for="setFilter">Coleção</label>
+                  <select id="setFilter"><option value="">Todas as coleções</option></select>
+                </fieldset>
+                <p class="filter-panel__note">Os resultados são atualizados enquanto você escolhe. Seus filtros continuam ativos ao abrir uma carta.</p>
+              </div>
+
+              <footer class="filter-panel__footer">
+                <button id="clearFilters" class="clear-button" type="button">Limpar tudo</button>
+                <button id="applyFilters" class="primary-button" type="button">Ver <span id="filterCount">—</span></button>
+              </footer>
+            </div>
+          </aside>
+
+          <div class="collection-area">
+            <div id="loadingState" class="loading-state" role="status">
+              <div class="loading-state__copy"><span class="loader-rune" aria-hidden="true">✦</span><p>Abrindo o arquivo arcano…</p><small>Consultando os registros do Scryfall</small></div>
+              <div class="skeleton-grid" aria-hidden="true">
+                <i></i><i></i><i></i><i></i><i></i><i></i>
+              </div>
+            </div>
+
+            <div id="errorState" class="state-card" hidden>
+              <span class="state-card__icon" aria-hidden="true">◇</span>
+              <p class="eyebrow">Conexão interrompida</p>
+              <h3>O arquivo arcano não respondeu</h3>
+              <p>Não foi possível consultar o Scryfall agora. Você pode tentar novamente sem perder seus filtros.</p>
+              <button class="primary-button" id="retryButton" type="button">Tentar novamente</button>
+            </div>
+
+            <div id="cardGrid" class="card-grid" aria-busy="true"></div>
+
+            <div id="emptyState" class="state-card" hidden>
+              <span class="state-card__icon" aria-hidden="true">∅</span>
+              <p class="eyebrow">Nenhum registro neste plano</p>
+              <h3>Nenhuma carta encontrada</h3>
+              <p id="emptyMessage">Tente outro nome ou remova um dos filtros ativos.</p>
+              <div id="emptySuggestions" class="empty-suggestions"></div>
+              <button class="primary-button" id="emptyClear" type="button">Mostrar todas as cartas</button>
+            </div>
+
+            <button id="loadMore" class="load-more" type="button" hidden>Revelar mais cartas <span aria-hidden="true">↓</span></button>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer"><div class="footer-fanmark"><span class="footer-sigil">✦</span><span><strong>FANMADE · USO PRIVADO</strong><small>Projeto de fã não oficial, não aprovado nem endossado pela Wizards of the Coast.</small></span></div><div class="footer-links"><a href="https://scryfall.com" target="_blank" rel="noreferrer">Dados e imagens via Scryfall</a><span>·</span><a href="https://company.wizards.com/en/legal/fancontentpolicy" target="_blank" rel="noreferrer">Política de conteúdo de fã</a><span>·</span><span>© arquivo da mesa</span></div><p>Magic: The Gathering e os materiais relacionados pertencem aos seus respectivos proprietários. Este arquivo é gratuito e feito apenas para organizar a mesa.</p></footer>
+    <footer class="site-footer">
+      <p><strong>Projeto de fã, sem afiliação com a Wizards of the Coast.</strong> Magic: The Gathering e as artes das cartas pertencem a seus respectivos proprietários.</p>
+      <div><a href="https://scryfall.com" target="_blank" rel="noreferrer">Dados e imagens via Scryfall ↗</a><span>·</span><span>Feito para uso da mesa</span></div>
+    </footer>
 
     <dialog id="cardModal" class="card-modal" aria-labelledby="modalTitle">
-      <div class="modal-shell"><button class="modal-close" id="closeCardModal" type="button" aria-label="Fechar detalhes">×</button><div class="modal-art"><img id="modalImage" alt="" /><button id="flipCard" class="flip-button" type="button" hidden>↻ Ver verso</button></div><div class="modal-copy"><p class="eyebrow">Relíquia selada · <span id="modalSet">—</span></p><h2 id="modalTitle">—</h2><p id="modalType" class="modal-type">—</p><div id="modalMana" class="modal-mana"></div><div class="modal-rule"><p id="modalOracle">—</p><div id="modalFlavor" class="modal-flavor"></div></div><div class="modal-meta"><div><span>Artista</span><strong id="modalArtist">—</strong></div><div><span>Raridade</span><strong id="modalRarity">—</strong></div><div><span>Valor de mana</span><strong id="modalCmc">—</strong></div></div><div id="modalFormats" class="modal-formats"></div><a id="modalScryfall" class="modal-link" target="_blank" rel="noreferrer">Ver registro no Scryfall ↗</a></div></div>
+      <div class="modal-shell">
+        <header class="modal-header">
+          <button class="modal-back" id="closeCardModal" type="button" aria-label="Voltar para a banlist"><span aria-hidden="true">←</span><span>Banlist</span></button>
+          <span id="modalPosition" class="modal-position" aria-live="polite">Detalhes da carta</span>
+          <div class="modal-nav">
+            <button id="previousCard" type="button" aria-label="Carta anterior">‹</button>
+            <button id="nextCard" type="button" aria-label="Próxima carta">›</button>
+          </div>
+        </header>
+
+        <div class="modal-scroll">
+          <div class="modal-art">
+            <div class="modal-art__aura" aria-hidden="true"></div>
+            <img id="modalImage" alt="" />
+            <button id="flipCard" class="flip-button" type="button" hidden>↻ Ver verso</button>
+          </div>
+
+          <article class="modal-copy">
+            <p class="eyebrow">Carta selada · <span id="modalSet">—</span></p>
+            <div class="modal-title-row"><h2 id="modalTitle">—</h2><div id="modalMana" class="modal-mana"></div></div>
+            <p id="modalType" class="modal-type">—</p>
+
+            <section class="ban-status" aria-labelledby="banStatusTitle">
+              <div><span aria-hidden="true">✦</span><strong id="banStatusTitle">Banida nos formatos</strong></div>
+              <div id="modalFormats" class="modal-formats"></div>
+            </section>
+
+            <div class="modal-rule">
+              <p id="modalOracle">—</p>
+              <div id="modalFlavor" class="modal-flavor"></div>
+            </div>
+
+            <div class="modal-meta">
+              <div><span>Artista</span><strong id="modalArtist">—</strong></div>
+              <div><span>Raridade</span><strong id="modalRarity">—</strong></div>
+              <div><span>Valor de mana</span><strong id="modalCmc">—</strong></div>
+            </div>
+
+            <a id="modalScryfall" class="modal-link" target="_blank" rel="noreferrer">Abrir esta carta no Scryfall <span aria-hidden="true">↗</span></a>
+
+            <div class="detail-stack">
+              <details class="modal-section" open>
+                <summary><span>Dados da carta</span><small>Coleção, idioma e identidade</small></summary>
+                <div id="modalMeta" class="modal-kv-list"></div>
+              </details>
+              <details class="modal-section">
+                <summary><span>Jogabilidade</span><small>Custo, atributos e palavras-chave</small></summary>
+                <div id="modalGameplay" class="modal-kv-list"></div>
+              </details>
+              <details class="modal-section">
+                <summary><span>Legalidade completa</span><small>Todos os formatos do Scryfall</small></summary>
+                <div id="modalLegalities" class="modal-chip-list"></div>
+              </details>
+              <details class="modal-section">
+                <summary><span>Mercado e referências</span><small>Preços, impressões e links</small></summary>
+                <div class="modal-subsection"><h3>Preços</h3><div id="modalPrices" class="modal-kv-list"></div></div>
+                <div class="modal-subsection"><h3>Impressões</h3><div id="modalPrints" class="modal-chip-list"></div></div>
+                <div class="modal-subsection"><h3>Relações</h3><div id="modalRelations" class="modal-links-block"></div></div>
+                <div class="modal-subsection"><h3>Links oficiais</h3><div id="modalUris" class="modal-links-block"></div></div>
+              </details>
+              <details class="modal-section modal-section--data">
+                <summary><span>Todos os dados do Scryfall</span><small>Registro técnico completo</small></summary>
+                <div id="modalAllScryfallData" class="modal-json-tree"></div>
+                <details class="modal-raw-details"><summary>Ver JSON bruto</summary><pre id="modalRawData" class="modal-raw" aria-label="Detalhes em JSON">—</pre></details>
+              </details>
+            </div>
+          </article>
+        </div>
+      </div>
     </dialog>
 
-    <script type="module" src="banlist.js?v=codex-1"></script>
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+    <script type="module" src="banlist.js?v=codex-11"></script>
   </body>
 </html>

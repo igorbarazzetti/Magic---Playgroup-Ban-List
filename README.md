@@ -1,37 +1,44 @@
 # Códice dos Banidos
 
-Experiência estática e não oficial para consultar a banlist do playgroup com dados reais do Scryfall.
+Web app mobile-first para consultar a banlist do Playgroup da Amizade com dados e imagens reais do Scryfall.
+
+## Experiência
+
+- Busca instantânea por nome, texto, artista ou coleção, com normalização de acentos e sugestões em caso de erro de digitação.
+- Filtros por formato, identidade de cor, tipo, valor de mana, raridade e coleção.
+- Grade responsiva com imagens progressivas, dimensões reservadas, lazy loading e carregamento incremental.
+- Detalhe em tela cheia no mobile, com navegação entre cartas e retorno à posição exata da lista.
+- Informações completas devolvidas pelo Scryfall, organizadas por revelação progressiva.
+- Estados de carregamento, erro, cache, falta de conexão e busca vazia.
+- Suporte a teclado, leitores de tela, safe areas, zoom e `prefers-reduced-motion`.
 
 ## Executar localmente
 
-Como a integração usa `fetch`, sirva esta pasta por HTTP:
+Sirva a pasta por HTTP:
 
 ```powershell
-python -m http.server 4173 -d codex-banlist
+python -m http.server 4173 --directory .
 ```
 
 Abra `http://localhost:4173`.
 
+## Dados e desempenho
+
+A aplicação consulta as páginas de busca do Scryfall uma vez, filtra localmente e mantém um cache no dispositivo por seis horas. Se uma atualização falhar, o último arquivo disponível continua acessível; sem API e sem cache, a interface apresenta um erro real e oferece nova tentativa.
+
+As imagens da grade usam `srcset`, dimensões reservadas, decodificação assíncrona e `loading="lazy"`. Apenas 48 cartas são reveladas inicialmente; as seguintes entram sob demanda. O detalhe técnico completo de cada carta só é montado quando o usuário abre essa seção.
+
 ## Configuração
 
-Os valores editáveis ficam no objeto `site` no começo de `banlist.js`:
+Os valores principais ficam no objeto `site` no início de `banlist.js`:
 
-- `playgroupName` e `playgroupInitials`: identidade do playgroup.
-- `pageTitle` e `pageSubtitle`: textos do hero.
-- `scryfallQuery`: pesquisa da banlist.
-- `backgroundCards`: nomes das cartas usadas no fundo.
-- `backgroundInterval`: intervalo do crossfade em milissegundos.
+- `playgroupName` e `playgroupInitials`: identidade do grupo.
+- `pageTitle` e `pageSubtitle`: título e explicação principal.
+- `scryfallQuery`: consulta que define a banlist.
+- `backgroundCards`: artes oficiais usadas atmosfericamente no hero.
 
-Para trocar o brasão, adicione um SVG/PNG e ajuste a marcação de `index.html` ou `logoPath`.
-
-## Dados, cache e limitações
-
-O navegador consulta todas as páginas de `https://api.scryfall.com/cards/search` uma única vez ao carregar a página; os filtros são locais e não disparam novas consultas. O fundo usa uma chamada agrupada a `/cards/collection` e pré-carrega apenas a próxima arte. Não há cache persistente implementado, então um novo carregamento consulta novamente o Scryfall.
-
-Se a API estiver indisponível, a interface mantém o visual, informa o erro e usa um pequeno conjunto local apenas para que os estados e filtros continuem demonstráveis.
-
-Este é um projeto gratuito de fã. Magic: The Gathering e os materiais das cartas pertencem a seus respectivos proprietários. Dados e imagens são fornecidos pelo [Scryfall](https://scryfall.com). Consulte também a [Fan Content Policy](https://company.wizards.com/en/legal/fancontentpolicy).
+Não altere `scryfallQuery` sem validar as regras da banlist com o playgroup.
 
 ## Fanmade e uso privado
 
-O projeto é uma página de fã gratuita, sem afiliação, patrocínio ou endosso da Wizards of the Coast, feita para uso pessoal e entre amigos. As artes das cartas e as cenas de fundo são carregadas remotamente do Scryfall; elas não são redistribuídas neste repositório. A marcação fanmade aparece na interface para deixar esse contexto visível.
+Este é um projeto de fã gratuito, sem afiliação, patrocínio ou endosso da Wizards of the Coast, feito para uso pessoal e entre amigos. Magic: The Gathering, nomes e artes das cartas pertencem a seus respectivos proprietários. Os dados e as imagens são carregados do Scryfall e não são redistribuídos pelo repositório.
