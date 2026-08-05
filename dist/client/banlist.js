@@ -47,6 +47,13 @@ const deckCardCache = new Map();
 const $ = (id) => document.getElementById(id);
 const escapeHtml = (value = '') => String(value).replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[char]));
 const slug = (value = '') => value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+function parseCardSearch(value = '') {
+  const exactPhrases = [...String(value).matchAll(/"([^"]+)"/g)]
+    .map((match) => slug(match[1]).replace(/\s+/g, ' ').trim())
+    .filter(Boolean);
+  const freeText = slug(String(value).replace(/"[^"]*"/g, ' ').replace(/"/g, ' ')).replace(/\s+/g, ' ').trim();
+  return { exactPhrases, freeText };
+}
 const nameCollator = new Intl.Collator('en', { sensitivity: 'base', numeric: true });
 const sortableName = (value = '') => slug(value).replace(/^[^a-z0-9]+/, '');
 const compareNames = (a, b) => nameCollator.compare(sortableName(a?.name), sortableName(b?.name));
@@ -218,10 +225,12 @@ function cardTypeMatches(card, type) {
 }
 
 function applyFilters() {
-  const q = slug(state.query.trim());
+  const search = parseCardSearch(state.query);
   state.filtered = state.cards.filter((card) => {
     const searchable = slug([card.name, card.type_line, card.oracle_text, card.artist, card.set_name].filter(Boolean).join(' '));
-    const textMatch = !q || searchable.includes(q);
+    const oracleText = slug([card.oracle_text, ...(card.card_faces || []).map((face) => face.oracle_text)].filter(Boolean).join(' ')).replace(/\s+/g, ' ');
+    const textMatch = (!search.freeText || searchable.includes(search.freeText))
+      && search.exactPhrases.every((phrase) => oracleText.includes(phrase));
     const formatMatch = !state.selectedFormats.size || card.formats.some((format) => state.selectedFormats.has(format));
     const cardColors = card.color_identity || [];
     const identityMatch = !state.selectedColors.size
@@ -340,7 +349,13 @@ function editDistance(left, right) {
 function renderEmptySuggestions() {
   const target = $('emptySuggestions');
   if (!target || state.filtered.length) { if (target) target.innerHTML = ''; return; }
-  const query = slug(state.query).trim();
+  const search = parseCardSearch(state.query);
+  if (search.exactPhrases.length) {
+    target.innerHTML = '';
+    $('emptyMessage').textContent = 'Nenhuma carta contém exatamente essa frase no texto. Confira a grafia ou remova as aspas para ampliar a busca.';
+    return;
+  }
+  const query = search.freeText;
   if (!query) { target.innerHTML = ''; $('emptyMessage').textContent = 'Remova um dos filtros ativos para ampliar a consulta.'; return; }
   const suggestions = state.cards
     .map((card) => {
