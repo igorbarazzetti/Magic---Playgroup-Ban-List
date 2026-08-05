@@ -710,12 +710,6 @@ function renderModalDetails(card, side = 0) {
     }),
   ].join('');
 
-  $('modalUris').innerHTML = [
-    linksMarkup('Registros', { uri: card.uri || '' }),
-    linksMarkup('Compras', card.purchase_uris || {}),
-    linksMarkup('Relacionados', card.related_uris || {}),
-  ].join('');
-
   state.rawDetailsReady = false;
   if ($('modalRawData')) $('modalRawData').textContent = 'Abra esta seção para carregar o JSON completo.';
   if ($('modalAllScryfallData')) $('modalAllScryfallData').innerHTML = '<span class="modal-empty">Os dados técnicos serão preparados quando esta seção for aberta.</span>';
