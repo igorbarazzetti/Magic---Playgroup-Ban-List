@@ -27,7 +27,7 @@ Abra `http://localhost:4173`.
 
 A aplicação consulta as páginas de busca do Scryfall uma vez, filtra localmente e mantém um cache no dispositivo por seis horas. Se uma atualização falhar, o último arquivo disponível continua acessível; sem API e sem cache, a interface apresenta um erro real e oferece nova tentativa.
 
-A coleção `Unfinity Sticker Sheets` (`SUNF`) é excluída da banlist por decisão do playgroup.
+As coleções `Unfinity` (`UNF`) e `Unfinity Sticker Sheets` (`SUNF`) são excluídas da banlist por decisão do playgroup.
 
 O validador consulta o endpoint de coleções do Scryfall em lotes de até 75 nomes e combina a legalidade oficial de cada carta com a banlist já carregada. Se essa consulta falhar, a interface informa que o resultado é parcial. O recurso não avalia tamanho do deck, limite geral de cópias nem identidade de cor do comandante.
 

@@ -4,7 +4,7 @@ const site = {
   pageTitle: 'Códice das Cartas Banidas',
   pageSubtitle: 'A banlist oficial do nosso formato',
   logoPath: './playgroup-logo.svg',
-  scryfallQuery: '(banned:standard OR banned:pioneer OR banned:modern OR banned:legacy OR banned:commander OR banned:duel OR banned:pauper) -set:sunf',
+  scryfallQuery: '(banned:standard OR banned:pioneer OR banned:modern OR banned:legacy OR banned:commander OR banned:duel OR banned:pauper) -set:sunf -set:unf',
   backgroundCards: ['Jace, the Mind Sculptor', 'Liliana of the Veil', 'Chandra, Torch of Defiance', 'Teferi, Hero of Dominaria', 'Nissa, Who Shakes the World', 'Nicol Bolas, Dragon-God', 'Karn Liberated', "Elspeth, Sun's Champion"],
   backgroundInterval: 14000,
 };
@@ -981,7 +981,7 @@ function renderDeckValidation({ entries, format, cards, partial = false }) {
     const card = apiCard || localCard;
     const legality = apiCard?.legalities?.[format];
     const bannedInFormatinho = format === 'formatinho'
-      && apiCard?.set !== 'sunf'
+      && !['sunf', 'unf'].includes(apiCard?.set)
       && formats.some(({ key }) => apiCard?.legalities?.[key] === 'banned');
     if (legality === 'banned' || bannedInFormatinho || localCard) groups.banned.push({ entry, card, reason: `Banida em ${formatInfo.label} e não pode ser usada.` });
     else if (legality === 'not_legal') groups.notLegal.push({ entry, card, reason: `Não é válida no formato ${formatInfo.label}.` });
