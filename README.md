@@ -1,4 +1,4 @@
-# Códice dos Banidos
+# Códice das Cartas Banidas
 
 Web app mobile-first para consultar a banlist do Playgroup da Amizade com dados e imagens reais do Scryfall.
 
@@ -6,7 +6,7 @@ Web app mobile-first para consultar a banlist do Playgroup da Amizade com dados 
 
 - Busca instantânea por nome, texto, artista ou coleção, com normalização de acentos e sugestões em caso de erro de digitação.
 - Filtros por formato, identidade de cor com seleção múltipla por símbolos de mana, tipo, valor de mana, raridade e coleção.
-- Validador de deck por formato, com leitura de listas do Arena, Moxfield ou texto simples e identificação das cartas banidas, fora do formato ou não reconhecidas.
+- Validador de deck por formato, incluindo o `Formatinho` do playgroup — união das banlists oficiais —, com leitura de listas do Arena, Moxfield ou texto simples e identificação das cartas banidas, fora do formato ou não reconhecidas.
 - Grade responsiva com imagens progressivas, dimensões reservadas, lazy loading e carregamento incremental.
 - Detalhe em tela cheia no mobile, com navegação entre cartas e retorno à posição exata da lista.
 - Informações completas devolvidas pelo Scryfall, organizadas por revelação progressiva.
@@ -26,6 +26,8 @@ Abra `http://localhost:4173`.
 ## Dados e desempenho
 
 A aplicação consulta as páginas de busca do Scryfall uma vez, filtra localmente e mantém um cache no dispositivo por seis horas. Se uma atualização falhar, o último arquivo disponível continua acessível; sem API e sem cache, a interface apresenta um erro real e oferece nova tentativa.
+
+A coleção `Unfinity Sticker Sheets` (`SUNF`) é excluída da banlist por decisão do playgroup.
 
 O validador consulta o endpoint de coleções do Scryfall em lotes de até 75 nomes e combina a legalidade oficial de cada carta com a banlist já carregada. Se essa consulta falhar, a interface informa que o resultado é parcial. O recurso não avalia tamanho do deck, limite geral de cópias nem identidade de cor do comandante.
 

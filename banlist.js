@@ -1,10 +1,10 @@
 const site = {
   playgroupName: 'Playgroup da Amizade',
   playgroupInitials: 'PA',
-  pageTitle: 'Códice dos Banidos',
+  pageTitle: 'Códice das Cartas Banidas',
   pageSubtitle: 'A banlist oficial do nosso formato',
   logoPath: './playgroup-logo.svg',
-  scryfallQuery: '(banned:standard OR banned:pioneer OR banned:modern OR banned:legacy OR banned:commander OR banned:duel OR banned:pauper)',
+  scryfallQuery: '(banned:standard OR banned:pioneer OR banned:modern OR banned:legacy OR banned:commander OR banned:duel OR banned:pauper) -set:sunf',
   backgroundCards: ['Jace, the Mind Sculptor', 'Liliana of the Veil', 'Chandra, Torch of Defiance', 'Teferi, Hero of Dominaria', 'Nissa, Who Shakes the World', 'Nicol Bolas, Dragon-God', 'Karn Liberated', "Elspeth, Sun's Champion"],
   backgroundInterval: 14000,
 };
@@ -17,6 +17,11 @@ const formats = [
   { key: 'commander', label: 'Commander', short: 'EDH', color: '#7db26d' },
   { key: 'duel', label: 'Duel Commander', short: 'DC', color: '#d4b15d' },
   { key: 'pauper', label: 'Pauper', short: 'PAU', color: '#9b9b95' },
+];
+
+const deckFormats = [
+  ...formats,
+  { key: 'formatinho', label: 'Formatinho', short: 'FMT', color: '#71d8d1', custom: true },
 ];
 
 const colorFilters = [
@@ -32,7 +37,7 @@ const state = {
   cards: [], filtered: [], selectedFormats: new Set(), selectedColors: new Set(), query: '', type: '', cmc: '', rarity: '', set: '',
   sort: 'name-asc', view: 'cards', visible: 48, modalCard: null, modalFace: 0, lastFocus: null,
   savedScroll: 0, loadingMore: false, loadToken: 0, rawDetailsReady: false,
-  deckFormat: 'commander', deckLastFocus: null,
+  deckFormat: 'formatinho', deckLastFocus: null,
 };
 const cacheKey = `codex-banlist-cache:${site.scryfallQuery}`;
 const cacheTtl = 1000 * 60 * 60 * 6;
@@ -866,7 +871,7 @@ function openFilterSheet() {
 }
 
 function renderDeckFormats() {
-  $('deckFormatChoices').innerHTML = formats.map((format) => `
+  $('deckFormatChoices').innerHTML = deckFormats.map((format) => `
     <button class="deck-format" type="button" role="radio" data-deck-format="${format.key}" aria-checked="${state.deckFormat === format.key}" tabindex="${state.deckFormat === format.key ? '0' : '-1'}" style="--format-color:${format.color}">
       <span class="deck-format__seal" aria-hidden="true">${format.short}</span>
       <span class="deck-format__copy"><strong>${format.label}</strong><small>${state.deckFormat === format.key ? 'Selecionado' : 'Selecionar'}</small></span>
@@ -874,7 +879,7 @@ function renderDeckFormats() {
 }
 
 function selectDeckFormat(key, { focus = false } = {}) {
-  if (!formats.some((format) => format.key === key)) return;
+  if (!deckFormats.some((format) => format.key === key)) return;
   state.deckFormat = key;
   renderDeckFormats();
   $('deckValidationResult').hidden = true;
@@ -955,7 +960,7 @@ async function fetchDeckCards(entries) {
 }
 
 function localBannedCard(entry, format) {
-  return state.cards.find((card) => cardNameKeys(card).includes(entry.key) && card.formats?.includes(format));
+  return state.cards.find((card) => cardNameKeys(card).includes(entry.key) && (format === 'formatinho' || card.formats?.includes(format)));
 }
 
 function deckIssueGroup(title, items) {
@@ -967,7 +972,7 @@ function deckIssueGroup(title, items) {
 }
 
 function renderDeckValidation({ entries, format, cards, partial = false }) {
-  const formatInfo = formats.find((item) => item.key === format);
+  const formatInfo = deckFormats.find((item) => item.key === format);
   const groups = { banned: [], notLegal: [], restricted: [], unknown: [] };
 
   entries.forEach((entry) => {
@@ -975,7 +980,10 @@ function renderDeckValidation({ entries, format, cards, partial = false }) {
     const localCard = localBannedCard(entry, format);
     const card = apiCard || localCard;
     const legality = apiCard?.legalities?.[format];
-    if (legality === 'banned' || localCard) groups.banned.push({ entry, card, reason: `Banida em ${formatInfo.label} e não pode ser usada.` });
+    const bannedInFormatinho = format === 'formatinho'
+      && apiCard?.set !== 'sunf'
+      && formats.some(({ key }) => apiCard?.legalities?.[key] === 'banned');
+    if (legality === 'banned' || bannedInFormatinho || localCard) groups.banned.push({ entry, card, reason: `Banida em ${formatInfo.label} e não pode ser usada.` });
     else if (legality === 'not_legal') groups.notLegal.push({ entry, card, reason: `Não é válida no formato ${formatInfo.label}.` });
     else if (legality === 'restricted' && entry.quantity > 1) groups.restricted.push({ entry, card, reason: `Restrita a 1 cópia; a lista contém ${entry.quantity}.` });
     else if (!partial && !apiCard) groups.unknown.push({ entry, card: null, reason: 'Nome não encontrado no Scryfall. Confira a grafia.' });
@@ -1126,9 +1134,9 @@ function bind() {
   $('deckFormatChoices').addEventListener('keydown', (event) => {
     if (!['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown'].includes(event.key)) return;
     event.preventDefault();
-    const currentIndex = formats.findIndex((format) => format.key === state.deckFormat);
+    const currentIndex = deckFormats.findIndex((format) => format.key === state.deckFormat);
     const direction = ['ArrowRight', 'ArrowDown'].includes(event.key) ? 1 : -1;
-    const next = formats[(currentIndex + direction + formats.length) % formats.length];
+    const next = deckFormats[(currentIndex + direction + deckFormats.length) % deckFormats.length];
     selectDeckFormat(next.key, { focus: true });
   });
   $('deckListInput').addEventListener('input', updateDeckListCount);
