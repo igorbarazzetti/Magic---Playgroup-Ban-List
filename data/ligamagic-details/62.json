@@ -1,0 +1,12 @@
+{
+  "629fe1be-272d-465f-b9b1-2ce177410f13": {
+    "status": "unavailable",
+    "name": "+2 Mace",
+    "price_brl": null,
+    "finish": "normal",
+    "condition": "NM",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=%2B2%20Mace",
+    "attempted_at": "2026-08-05T23:55:21.215Z",
+    "last_error": "HTTP 403"
+  }
+}

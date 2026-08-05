@@ -1,0 +1,12 @@
+{
+  "bd269d87-5f72-4559-bf2b-270e2ebe6154": {
+    "status": "unavailable",
+    "name": "A.I.M. Bot",
+    "price_brl": null,
+    "finish": "normal",
+    "condition": "NM",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=A.I.M.%20Bot",
+    "attempted_at": "2026-08-05T23:55:41.200Z",
+    "last_error": "HTTP 403"
+  }
+}
