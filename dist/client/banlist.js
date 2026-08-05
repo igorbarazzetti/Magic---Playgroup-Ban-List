@@ -41,9 +41,8 @@ const state = {
 };
 const cacheKey = `codex-banlist-cache:${site.scryfallQuery}`;
 const cacheTtl = 1000 * 60 * 60 * 6;
-const fxCacheKey = 'codex-banlist-fx:USD-BRL:ECB';
-const fxCacheTtl = 1000 * 60 * 60 * 12;
-let fxRatePromise;
+const ligaMagicPriceBookUrl = 'https://raw.githubusercontent.com/igorbarazzetti/Magic---Playgroup-Ban-List/main/data/ligamagic-prices.json';
+let ligaMagicPriceBookPromise;
 const deckCardCache = new Map();
 const $ = (id) => document.getElementById(id);
 const escapeHtml = (value = '') => String(value).replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[char]));
@@ -492,84 +491,72 @@ function renderJsonTree(value, depth = 0, seen = new WeakSet()) {
   return '<span class="modal-empty">—</span>';
 }
 
-function formatMarketPrice(value, currency) {
-  const amount = Number(value);
-  if (!Number.isFinite(amount)) return '—';
-  if (currency === 'TIX') return `${new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 2 }).format(amount)} TIX`;
-  return new Intl.NumberFormat('pt-BR', { style: 'currency', currency }).format(amount);
-}
-
-function isMarketValue(value) {
-  return value !== undefined && value !== null && value !== '' && Number.isFinite(Number(value));
-}
-
 function ligaMagicUrl(card) {
   return `https://www.ligamagic.com.br/?view=cards/card&card=${encodeURIComponent(card?.name || '')}`;
 }
 
-function priceMarkup(prices = {}, card) {
-  const labels = { usd: ['USD', 'USD'], usd_foil: ['USD foil', 'USD'], usd_etched: ['USD etched', 'USD'], eur: ['EUR', 'EUR'], eur_foil: ['EUR foil', 'EUR'], tix: ['TIX', 'TIX'] };
-  const rows = Object.entries(prices)
-    .filter(([key, value]) => labels[key] && value !== undefined && value !== null && value !== '')
-    .map(([key, value]) => `<div class="modal-kv"><span class="modal-kv__label">${labels[key][0]}</span><span class="modal-kv__value">${formatMarketPrice(value, labels[key][1])}</span></div>`)
-    .join('');
-  const hasUsdReference = ['usd', 'usd_foil', 'usd_etched'].some((key) => isMarketValue(prices[key]));
-  const brl = `<div class="market-brl" id="modalBrlPrices" aria-live="polite">${hasUsdReference
-    ? '<div class="modal-kv"><span class="modal-kv__label">BRL estimado</span><span class="modal-kv__value">Calculando…</span></div>'
-    : '<div class="modal-kv"><span class="modal-kv__label">BRL estimado</span><span class="modal-kv__value">—</span></div><p class="market-brl__note">Esta impressão não possui referência em USD para conversão.</p>'}</div>`;
-  const liga = `<a class="market-link" href="${escapeHtml(ligaMagicUrl(card))}" target="_blank" rel="noreferrer"><span>Consultar esta carta na LigaMagic</span><span aria-hidden="true">↗</span></a>`;
-  return `${brl}${rows || '<span class="modal-empty">—</span>'}${liga}`;
+function formatBrlPrice(value) {
+  return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(Number(value));
 }
 
-function readFxCache() {
-  try {
-    const cached = JSON.parse(localStorage.getItem(fxCacheKey) || 'null');
-    if (!cached || !Number.isFinite(cached.rate)) return null;
-    return { ...cached, stale: Date.now() - cached.savedAt > fxCacheTtl };
-  } catch { return null; }
+function formatMarketTimestamp(value) {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return 'data indisponível';
+  return new Intl.DateTimeFormat('pt-BR', { dateStyle: 'medium', timeStyle: 'short' }).format(date);
 }
 
-async function getUsdBrlRate() {
-  const cached = readFxCache();
-  if (cached && !cached.stale) return cached;
-  if (!fxRatePromise) {
-    fxRatePromise = fetch('https://api.frankfurter.dev/v2/rate/USD/BRL?providers=ECB', { headers: { Accept: 'application/json' } })
+function priceMarkup(card) {
+  const fallbackUrl = ligaMagicUrl(card);
+  return `<div class="market-ligamagic" id="modalLigaMagicPrice" aria-live="polite"><div class="modal-kv"><span class="modal-kv__label">Menor preço normal</span><span class="modal-kv__value">Consultando arquivo de mercado…</span></div><p class="market-ligamagic__note">Fonte: LigaMagic · cópia Normal/NM mais barata entre as impressões.</p></div><a id="modalLigaMagicLink" class="market-link" href="${escapeHtml(fallbackUrl)}" target="_blank" rel="noreferrer"><span>Ver na LigaMagic</span><span aria-hidden="true">↗</span></a>`;
+}
+
+async function getLigaMagicPriceBook() {
+  if (!ligaMagicPriceBookPromise) {
+    ligaMagicPriceBookPromise = fetch(ligaMagicPriceBookUrl, { headers: { Accept: 'application/json' }, cache: 'no-store' })
       .then(async (response) => {
-        if (!response.ok) throw new Error(`Câmbio ${response.status}`);
-        const payload = await response.json();
-        const rate = Number(payload.rate);
-        if (!Number.isFinite(rate)) throw new Error('Cotação inválida');
-        const result = { rate, date: payload.date || '', savedAt: Date.now(), stale: false };
-        try { localStorage.setItem(fxCacheKey, JSON.stringify(result)); } catch { /* Cache é opcional. */ }
-        return result;
+        if (!response.ok) throw new Error(`LigaMagic ${response.status}`);
+        const book = await response.json();
+        if (!book || typeof book.cards !== 'object') throw new Error('Arquivo de mercado inválido');
+        return book;
       })
-      .catch((error) => {
-        fxRatePromise = null;
-        if (cached) return cached;
-        throw error;
-      });
+      .catch(() => null);
   }
-  return fxRatePromise;
+  return ligaMagicPriceBookPromise;
 }
 
-async function hydrateBrlPrices(card) {
-  const target = $('modalBrlPrices');
-  const prices = card?.prices || {};
-  const entries = [
-    ['BRL estimado', prices.usd],
-    ['BRL foil estimado', prices.usd_foil],
-    ['BRL etched estimado', prices.usd_etched],
-  ].filter(([, value]) => isMarketValue(value));
-  if (!target || !entries.length) return;
+async function hydrateLigaMagicPrice(card) {
+  const target = $('modalLigaMagicPrice');
+  if (!target) return;
+  const fallbackUrl = ligaMagicUrl(card);
   try {
-    const rateInfo = await getUsdBrlRate();
-    if (state.modalCard?.id !== card.id || !$('modalBrlPrices')) return;
-    const rows = entries.map(([label, value]) => `<div class="modal-kv"><span class="modal-kv__label">${label}</span><span class="modal-kv__value">${formatMarketPrice(Number(value) * rateInfo.rate, 'BRL')}</span></div>`).join('');
-    const date = rateInfo.date ? ` de ${formatDate(rateInfo.date)}` : '';
-    $('modalBrlPrices').innerHTML = `${rows}<p class="market-brl__note">Estimativa: preço Scryfall em USD × câmbio de referência ECB${date}${rateInfo.stale ? ' (último valor disponível)' : ''}. Não é uma cotação da LigaMagic.</p>`;
+    const book = await getLigaMagicPriceBook();
+    if (state.modalCard?.id !== card.id || !$('modalLigaMagicPrice')) return;
+    const entry = book?.cards?.[card.oracle_id || card.id];
+    const link = $('modalLigaMagicLink');
+    if (link) link.href = entry?.source_url || fallbackUrl;
+    if (!book) {
+      target.innerHTML = '<div class="modal-kv"><span class="modal-kv__label">Menor preço normal</span><span class="modal-kv__value">Indisponível</span></div><p class="market-ligamagic__note">Não foi possível abrir o arquivo de preços da LigaMagic agora.</p>';
+      return;
+    }
+    if (!book.generated_at) {
+      target.innerHTML = '<div class="modal-kv"><span class="modal-kv__label">Menor preço normal</span><span class="modal-kv__value">Preparando consulta</span></div><p class="market-ligamagic__note">A primeira coleta da LigaMagic está em andamento.</p>';
+      return;
+    }
+    if (entry?.status === 'available' && Number.isFinite(Number(entry.price_brl))) {
+      const printing = [entry.printing_name, entry.printing_code].filter(Boolean).join(' · ');
+      target.classList.remove('is-stale');
+      target.innerHTML = `<div class="modal-kv"><span class="modal-kv__label">Menor preço normal</span><strong class="market-ligamagic__price">${formatBrlPrice(entry.price_brl)}</strong></div><p class="market-ligamagic__note">Fonte: LigaMagic · Normal/NM${printing ? ` · ${escapeHtml(printing)}` : ''} · consultado em ${escapeHtml(formatMarketTimestamp(entry.checked_at))}.</p>`;
+      return;
+    }
+    if (entry?.status === 'stale' && Number.isFinite(Number(entry.price_brl))) {
+      target.classList.add('is-stale');
+      target.innerHTML = `<div class="modal-kv"><span class="modal-kv__label">Último menor preço normal</span><strong class="market-ligamagic__price">${formatBrlPrice(entry.price_brl)}</strong></div><p class="market-ligamagic__note">Fonte: LigaMagic · última leitura em ${escapeHtml(formatMarketTimestamp(entry.checked_at))}. A atualização mais recente não respondeu.</p>`;
+      return;
+    }
+    target.classList.remove('is-stale');
+    target.innerHTML = '<div class="modal-kv"><span class="modal-kv__label">Menor preço normal</span><span class="modal-kv__value">Indisponível</span></div><p class="market-ligamagic__note">Ainda não há uma cópia Normal/NM registrada na LigaMagic para esta carta.</p>';
   } catch {
-    if (state.modalCard?.id !== card.id || !$('modalBrlPrices')) return;
-    $('modalBrlPrices').innerHTML = '<div class="modal-kv"><span class="modal-kv__label">BRL estimado</span><span class="modal-kv__value">Indisponível</span></div><p class="market-brl__note">Não foi possível consultar o câmbio agora. Use o atalho abaixo para conferir o mercado brasileiro.</p>';
+    if (state.modalCard?.id === card.id && $('modalLigaMagicPrice')) target.innerHTML = '<div class="modal-kv"><span class="modal-kv__label">Menor preço normal</span><span class="modal-kv__value">Indisponível</span></div><p class="market-ligamagic__note">Não foi possível abrir o arquivo de preços da LigaMagic agora.</p>';
   }
 }
 
@@ -675,8 +662,8 @@ function renderModalDetails(card, side = 0) {
   ]);
 
   $('modalLegalities').innerHTML = legalitiesMarkup(card.legalities);
-  $('modalPrices').innerHTML = priceMarkup(card.prices || {}, card);
-  hydrateBrlPrices(card);
+  $('modalPrices').innerHTML = priceMarkup(card);
+  hydrateLigaMagicPrice(card);
   $('modalPrints').innerHTML = printings.length ? printings.map((item) => `<span class="modal-chip">${escapeHtml(String(item))}</span>`).join('') : '<span class="modal-empty">—</span>';
 
   $('modalRelations').innerHTML = [

@@ -421,9 +421,12 @@ main{display:block;min-width:0}
 .modal-raw-details{margin:12px;padding:0 0 3px;color:#aaa;font-size:10px}
 .modal-raw-details summary{cursor:pointer}
 .modal-raw{max-height:360px;overflow:auto;margin:10px 0 0;padding:11px;border:1px solid rgba(255,255,255,.06);border-radius:8px;background:#07090d;color:#ccc8c0;font:9px/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere}
-.market-brl{margin-bottom:10px;padding:10px 12px;border:1px solid rgba(113,216,209,.18);border-radius:10px;background:linear-gradient(145deg,rgba(113,216,209,.075),rgba(155,134,255,.045))}
-.market-brl .modal-kv{padding:5px 0}
-.market-brl__note{margin:7px 0 0;color:#898e94;font-size:9px;line-height:1.45}
+.market-ligamagic{margin-bottom:10px;padding:10px 12px;border:1px solid rgba(113,216,209,.28);border-radius:10px;background:linear-gradient(145deg,rgba(113,216,209,.1),rgba(155,134,255,.06))}
+.market-ligamagic .modal-kv{padding:5px 0}
+.market-ligamagic__price{color:#c8f5ef;font:800 18px/1.1 var(--display);letter-spacing:.01em}
+.market-ligamagic__note{margin:7px 0 0;color:#9ba5a7;font-size:9px;line-height:1.45}
+.market-ligamagic.is-stale{border-color:rgba(231,199,127,.28);background:linear-gradient(145deg,rgba(231,199,127,.1),rgba(155,134,255,.05))}
+.market-ligamagic.is-stale .market-ligamagic__price{color:#ffe0a0}
 .market-link{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:44px;margin-top:10px;padding:0 12px;border:1px solid rgba(231,199,127,.27);border-radius:10px;background:rgba(231,199,127,.065);color:#ead9ae;font-size:10px;font-weight:800;text-decoration:none}
 .market-link:hover{border-color:rgba(231,199,127,.52);background:rgba(231,199,127,.1)}
 

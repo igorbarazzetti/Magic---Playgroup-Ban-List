@@ -29,6 +29,10 @@ A aplicação consulta as páginas de busca do Scryfall uma vez, filtra localmen
 
 As coleções `Unfinity` (`UNF`) e `Unfinity Sticker Sheets` (`SUNF`) são excluídas da banlist por decisão do playgroup.
 
+## Menor preço na LigaMagic
+
+O detalhe de cada carta mostra apenas o menor preço de uma cópia Normal/NM encontrado entre as impressões da carta, com link e menção à LigaMagic. O arquivo é atualizado por uma GitHub Action no máximo a cada 48 horas, com intervalo mínimo de três segundos entre as consultas. Quando uma coleta falha, o último preço válido permanece marcado como desatualizado; sem preço Normal/NM, a interface informa indisponibilidade.
+
 O validador consulta o endpoint de coleções do Scryfall em lotes de até 75 nomes e combina a legalidade oficial de cada carta com a banlist já carregada. Se essa consulta falhar, a interface informa que o resultado é parcial. O recurso não avalia tamanho do deck, limite geral de cópias nem identidade de cor do comandante.
 
 As imagens da grade usam `srcset`, dimensões reservadas, decodificação assíncrona e `loading="lazy"`. Apenas 48 cartas são reveladas inicialmente; as seguintes entram sob demanda. O detalhe técnico completo de cada carta só é montado quando o usuário abre essa seção.

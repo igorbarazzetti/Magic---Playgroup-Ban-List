@@ -1,0 +1,52 @@
+name: Atualizar preços da LigaMagic
+
+on:
+  schedule:
+    - cron: '17 07 * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: Atualizar mesmo que a última coleta tenha menos de 48 horas
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ligamagic-price-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Coletar menor preço normal
+        env:
+          LIGAMAGIC_REQUEST_DELAY_MS: '3000'
+        run: |
+          if [ "${{ inputs.force }}" = "true" ]; then
+            node scripts/update-ligamagic-prices.mjs --force
+          else
+            node scripts/update-ligamagic-prices.mjs
+          fi
+
+      - name: Salvar arquivo atualizado
+        run: |
+          if git diff --quiet -- data/ligamagic-prices.json; then
+            echo "Nenhuma alteração de preço para salvar."
+            exit 0
+          fi
+          git config user.name "playgroup-price-bot"
+          git config user.email "playgroup-price-bot@users.noreply.github.com"
+          git add data/ligamagic-prices.json
+          git commit -m "Atualiza preços LigaMagic"
+          git push

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "source": {
+    "name": "LigaMagic",
+    "homepage": "https://www.ligamagic.com.br/",
+    "attribution": "Preços consultados na LigaMagic para uso pessoal do playgroup."
+  },
+  "refresh_interval_hours": 48,
+  "generated_at": null,
+  "summary": {
+    "available": 0,
+    "unavailable": 0,
+    "stale": 0
+  },
+  "cards": {}
+}
