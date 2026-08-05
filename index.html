@@ -64,7 +64,11 @@
           <div class="hero__stats" aria-label="Resumo da banlist">
             <div class="hero-stat hero-stat--primary"><strong id="totalCards">—</strong><span>cartas banidas</span></div>
             <div class="hero-stat"><strong id="formatCount">7</strong><span>formatos</span></div>
-            <div class="hero-stat"><strong id="lastUpdated">—</strong><span>atualizado</span></div>
+            <button class="hero-deck-check" id="openDeckValidator" type="button" aria-haspopup="dialog" aria-controls="deckValidatorModal">
+              <span class="hero-deck-check__sigil" aria-hidden="true">✓</span>
+              <span><strong>Valide seu deck</strong><small>Conferir lista</small></span>
+              <span class="hero-deck-check__arrow" aria-hidden="true">→</span>
+            </button>
           </div>
           <p class="hero-art__credit"><span id="sceneName">Arte oficial de carta</span> · <span id="sceneArtist">via Scryfall</span></p>
         </div>
@@ -275,7 +279,48 @@
       </div>
     </dialog>
 
+    <dialog id="deckValidatorModal" class="deck-validator" aria-labelledby="deckValidatorTitle" aria-describedby="deckValidatorDescription">
+      <div class="deck-validator__shell">
+        <header class="deck-validator__header">
+          <div>
+            <p class="eyebrow">Inspeção do conselho</p>
+            <h2 id="deckValidatorTitle">Valide seu deck</h2>
+          </div>
+          <button class="deck-validator__close" id="closeDeckValidator" type="button" aria-label="Fechar o validador">×</button>
+        </header>
+
+        <div class="deck-validator__scroll">
+          <p class="deck-validator__intro" id="deckValidatorDescription">Cole sua lista, escolha o formato e descubra se alguma carta está proibida.</p>
+
+          <fieldset class="deck-validator__formats">
+            <legend>Formato do deck</legend>
+            <div id="deckFormatChoices" class="deck-validator__format-grid" role="radiogroup" aria-label="Escolha o formato"></div>
+          </fieldset>
+
+          <label class="deck-validator__label" for="deckListInput">
+            <span>Lista do deck</span>
+            <small id="deckListCount">0 cartas lidas</small>
+          </label>
+          <div class="deck-validator__input-wrap">
+            <textarea id="deckListInput" rows="10" spellcheck="false" autocapitalize="none" placeholder="1 Sol Ring&#10;1 Command Tower&#10;4 Lightning Bolt&#10;&#10;Sideboard&#10;2 Dispel"></textarea>
+            <button id="clearDeckList" class="deck-validator__clear" type="button" hidden>Limpar lista</button>
+          </div>
+          <p class="deck-validator__hint">Aceita listas do Arena, Moxfield e texto simples. Seções como comandante e sideboard são reconhecidas.</p>
+
+          <div class="deck-validator__actions">
+            <button id="validateDeck" class="deck-validator__submit" type="button">
+              <span aria-hidden="true">✦</span><span>Validar deck</span>
+            </button>
+          </div>
+
+          <section id="deckValidationResult" class="deck-result" aria-live="polite" aria-atomic="false" hidden></section>
+
+          <p class="deck-validator__scope">Esta verificação confere nomes, legalidade no formato e cartas banidas. Regras de montagem como tamanho, limite de cópias e identidade de cor do comandante não são avaliadas.</p>
+        </div>
+      </div>
+    </dialog>
+
     <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
-    <script type="module" src="banlist.js?v=codex-12"></script>
+    <script type="module" src="banlist.js?v=codex-13"></script>
   </body>
 </html>

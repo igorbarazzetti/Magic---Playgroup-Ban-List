@@ -32,12 +32,14 @@ const state = {
   cards: [], filtered: [], selectedFormats: new Set(), selectedColors: new Set(), query: '', type: '', cmc: '', rarity: '', set: '',
   sort: 'name-asc', view: 'cards', visible: 48, modalCard: null, modalFace: 0, lastFocus: null,
   savedScroll: 0, loadingMore: false, loadToken: 0, rawDetailsReady: false,
+  deckFormat: 'commander', deckLastFocus: null,
 };
 const cacheKey = `codex-banlist-cache:${site.scryfallQuery}`;
 const cacheTtl = 1000 * 60 * 60 * 6;
 const fxCacheKey = 'codex-banlist-fx:USD-BRL:ECB';
 const fxCacheTtl = 1000 * 60 * 60 * 12;
 let fxRatePromise;
+const deckCardCache = new Map();
 const $ = (id) => document.getElementById(id);
 const escapeHtml = (value = '') => String(value).replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[char]));
 const slug = (value = '') => value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
@@ -863,6 +865,192 @@ function openFilterSheet() {
   setTimeout(() => { if ($('filterPanel').classList.contains('is-open')) $('closeFilters').focus(); }, 240);
 }
 
+function renderDeckFormats() {
+  $('deckFormatChoices').innerHTML = formats.map((format) => `
+    <button class="deck-format" type="button" role="radio" data-deck-format="${format.key}" aria-checked="${state.deckFormat === format.key}" tabindex="${state.deckFormat === format.key ? '0' : '-1'}" style="--format-color:${format.color}">
+      <span class="deck-format__seal" aria-hidden="true">${format.short}</span>
+      <span class="deck-format__copy"><strong>${format.label}</strong><small>${state.deckFormat === format.key ? 'Selecionado' : 'Selecionar'}</small></span>
+    </button>`).join('');
+}
+
+function selectDeckFormat(key, { focus = false } = {}) {
+  if (!formats.some((format) => format.key === key)) return;
+  state.deckFormat = key;
+  renderDeckFormats();
+  $('deckValidationResult').hidden = true;
+  if (focus) $('deckFormatChoices').querySelector(`[data-deck-format="${key}"]`)?.focus();
+}
+
+function parseDeckList(value) {
+  const entries = new Map();
+  const sectionNames = new Set(['deck', 'mainboard', 'main deck', 'sideboard', 'commander', 'commanders', 'companion', 'maybeboard', 'lista', 'baralho', 'comandante', 'reserva']);
+
+  String(value || '').split(/\r?\n/).forEach((originalLine) => {
+    let line = originalLine.trim();
+    if (!line || /^(?:\/\/|#)/.test(line)) return;
+    const heading = slug(line.replace(/:\s*$/, '').replace(/\s*\(\d+\)\s*$/, '')).trim();
+    if (sectionNames.has(heading)) return;
+    line = line.replace(/^SB:\s*/i, '').trim();
+
+    let quantity = 1;
+    let name = line;
+    const compactQuantity = line.match(/^(\d+)\s*[xX]\s*(.+)$/);
+    const spacedQuantity = line.match(/^(\d+)\s+(.+)$/);
+    if (compactQuantity) { quantity = Number(compactQuantity[1]); name = compactQuantity[2]; }
+    else if (spacedQuantity) { quantity = Number(spacedQuantity[1]); name = spacedQuantity[2]; }
+    if (!quantity || quantity > 999) return;
+
+    name = name
+      .replace(/\s+\*[^*]+\*\s*$/g, '')
+      .replace(/\s+\([A-Z0-9]{2,8}\)\s+[A-Z0-9-]+\s*$/i, '')
+      .replace(/\s+\[[A-Z0-9]{2,8}(?::[^\]]+)?\]\s*(?:[A-Z0-9-]+)?\s*$/i, '')
+      .replace(/\s+\{[^}]+\}\s*$/g, '')
+      .trim();
+    if (!name || /^\d+$/.test(name)) return;
+
+    const key = slug(name).replace(/['’]/g, "'").replace(/\s+/g, ' ').trim();
+    if (!key) return;
+    const existing = entries.get(key);
+    if (existing) existing.quantity += quantity;
+    else entries.set(key, { key, name, quantity });
+  });
+
+  return [...entries.values()];
+}
+
+function updateDeckListCount() {
+  const entries = parseDeckList($('deckListInput').value);
+  const copies = entries.reduce((total, entry) => total + entry.quantity, 0);
+  $('deckListCount').textContent = `${copies} ${copies === 1 ? 'carta lida' : 'cartas lidas'}`;
+  $('clearDeckList').hidden = !$('deckListInput').value;
+  $('deckValidationResult').hidden = true;
+}
+
+function cardNameKeys(card) {
+  return [card?.name, card?.printed_name, ...(card?.card_faces || []).flatMap((face) => [face.name, face.printed_name])]
+    .filter(Boolean)
+    .map((name) => slug(name).replace(/['’]/g, "'").replace(/\s+/g, ' ').trim());
+}
+
+async function fetchDeckCards(entries) {
+  const missing = entries.filter((entry) => !deckCardCache.has(entry.key));
+  for (let start = 0; start < missing.length; start += 75) {
+    const batch = missing.slice(start, start + 75);
+    const response = await fetch('https://api.scryfall.com/cards/collection', {
+      method: 'POST',
+      headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
+      body: JSON.stringify({ identifiers: batch.map((entry) => ({ name: entry.name })) }),
+    });
+    if (!response.ok) throw new Error(`Scryfall ${response.status}`);
+    const payload = await response.json();
+    const cards = payload.data || [];
+    batch.forEach((entry) => {
+      const card = cards.find((candidate) => cardNameKeys(candidate).includes(entry.key)) || null;
+      deckCardCache.set(entry.key, card);
+      if (card) cardNameKeys(card).forEach((key) => deckCardCache.set(key, card));
+    });
+    if (start + 75 < missing.length) await new Promise((resolve) => setTimeout(resolve, 80));
+  }
+  return new Map(entries.map((entry) => [entry.key, deckCardCache.get(entry.key) || null]));
+}
+
+function localBannedCard(entry, format) {
+  return state.cards.find((card) => cardNameKeys(card).includes(entry.key) && card.formats?.includes(format));
+}
+
+function deckIssueGroup(title, items) {
+  if (!items.length) return '';
+  return `<div class="deck-result__group"><h4>${escapeHtml(title)} <span>${items.length}</span></h4><ul class="deck-result__list">${items.map((item) => {
+    const href = item.card?.scryfall_uri || `https://scryfall.com/search?q=${encodeURIComponent(`!\"${item.entry.name}\"`)}`;
+    return `<li class="deck-result__item"><div><strong>${item.entry.quantity}× ${escapeHtml(item.card?.name || item.entry.name)}</strong><small>${escapeHtml(item.reason)}</small></div><a href="${escapeHtml(href)}" target="_blank" rel="noreferrer" aria-label="Ver ${escapeHtml(item.card?.name || item.entry.name)} no Scryfall">↗</a></li>`;
+  }).join('')}</ul></div>`;
+}
+
+function renderDeckValidation({ entries, format, cards, partial = false }) {
+  const formatInfo = formats.find((item) => item.key === format);
+  const groups = { banned: [], notLegal: [], restricted: [], unknown: [] };
+
+  entries.forEach((entry) => {
+    const apiCard = cards.get(entry.key) || null;
+    const localCard = localBannedCard(entry, format);
+    const card = apiCard || localCard;
+    const legality = apiCard?.legalities?.[format];
+    if (legality === 'banned' || localCard) groups.banned.push({ entry, card, reason: `Banida em ${formatInfo.label} e não pode ser usada.` });
+    else if (legality === 'not_legal') groups.notLegal.push({ entry, card, reason: `Não é válida no formato ${formatInfo.label}.` });
+    else if (legality === 'restricted' && entry.quantity > 1) groups.restricted.push({ entry, card, reason: `Restrita a 1 cópia; a lista contém ${entry.quantity}.` });
+    else if (!partial && !apiCard) groups.unknown.push({ entry, card: null, reason: 'Nome não encontrado no Scryfall. Confira a grafia.' });
+  });
+
+  const issueCount = Object.values(groups).reduce((total, items) => total + items.length, 0);
+  const totalCopies = entries.reduce((total, entry) => total + entry.quantity, 0);
+  const issueCopies = Object.values(groups).flat().reduce((total, item) => total + item.entry.quantity, 0);
+  const valid = !partial && issueCount === 0;
+  const result = $('deckValidationResult');
+  const statusClass = partial ? 'partial' : valid ? 'valid' : 'invalid';
+  const icon = partial ? '!' : valid ? '✓' : '×';
+  const title = partial ? 'Verificação parcial' : valid ? `Deck válido para ${formatInfo.label}` : `Deck inválido para ${formatInfo.label}`;
+  const description = partial
+    ? 'O Scryfall não respondeu. Conferimos apenas as cartas banidas já carregadas nesta página.'
+    : valid
+      ? 'Nenhuma carta proibida ou fora do formato foi encontrada.'
+      : `${issueCount} ${issueCount === 1 ? 'carta precisa' : 'cartas precisam'} de atenção antes de jogar.`;
+
+  result.className = `deck-result deck-result--${statusClass}`;
+  result.innerHTML = `
+    <div class="deck-result__summary"><span class="deck-result__icon" aria-hidden="true">${icon}</span><div class="deck-result__copy"><h3>${escapeHtml(title)}</h3><p>${escapeHtml(description)}</p></div></div>
+    <div class="deck-result__meta"><div><strong>${entries.length}</strong><span>nomes</span></div><div><strong>${totalCopies}</strong><span>cartas</span></div><div><strong>${issueCopies}</strong><span>com problema</span></div></div>
+    ${deckIssueGroup('Cartas banidas', groups.banned)}
+    ${deckIssueGroup('Fora do formato', groups.notLegal)}
+    ${deckIssueGroup('Cópias além do permitido', groups.restricted)}
+    ${deckIssueGroup('Não reconhecidas', groups.unknown)}
+    ${partial ? '<p class="deck-result__notice">Resultado incompleto: tente novamente quando a conexão com o Scryfall estiver disponível.</p>' : ''}`;
+  result.hidden = false;
+  result.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'nearest' });
+}
+
+function renderDeckEmpty(message) {
+  const result = $('deckValidationResult');
+  result.className = 'deck-result deck-result--empty';
+  result.innerHTML = `<div class="deck-result__summary"><span class="deck-result__icon" aria-hidden="true">!</span><div class="deck-result__copy"><h3>Não encontramos uma lista</h3><p>${escapeHtml(message)}</p></div></div>`;
+  result.hidden = false;
+}
+
+async function validateDeck() {
+  const entries = parseDeckList($('deckListInput').value);
+  if (!entries.length) { renderDeckEmpty('Cole ao menos uma carta, por exemplo: 1 Sol Ring.'); $('deckListInput').focus(); return; }
+  if (entries.length > 300) { renderDeckEmpty('A lista tem mais de 300 nomes diferentes. Divida-a em partes menores para validar.'); return; }
+
+  const button = $('validateDeck');
+  button.disabled = true;
+  button.innerHTML = '<span aria-hidden="true">✦</span><span>Consultando o Scryfall…</span>';
+  try {
+    const cards = await fetchDeckCards(entries);
+    renderDeckValidation({ entries, format: state.deckFormat, cards });
+  } catch {
+    renderDeckValidation({ entries, format: state.deckFormat, cards: new Map(), partial: true });
+  } finally {
+    button.disabled = false;
+    button.innerHTML = '<span aria-hidden="true">✦</span><span>Validar novamente</span>';
+  }
+}
+
+function openDeckValidator() {
+  if (state.selectedFormats.size === 1) state.deckFormat = [...state.selectedFormats][0];
+  renderDeckFormats();
+  state.deckLastFocus = document.activeElement;
+  const modal = $('deckValidatorModal');
+  if (typeof modal.showModal === 'function') modal.showModal(); else modal.setAttribute('open', '');
+  document.body.classList.add('is-locked');
+  $('closeDeckValidator').focus();
+}
+
+function closeDeckValidator() {
+  const modal = $('deckValidatorModal');
+  if (modal.open) modal.close(); else modal.removeAttribute('open');
+  if (!$('cardModal').open && !$('filterPanel').classList.contains('is-open')) document.body.classList.remove('is-locked');
+  state.deckLastFocus?.focus?.({ preventScroll: true });
+}
+
 function bind() {
   readUrl();
 
@@ -927,6 +1115,26 @@ function bind() {
   $('applyFilters').addEventListener('click', () => closeFilterSheet());
   $('filterPanel').addEventListener('click', (event) => { if (event.target === $('filterPanel')) closeFilterSheet(); });
 
+  $('openDeckValidator').addEventListener('click', openDeckValidator);
+  $('closeDeckValidator').addEventListener('click', closeDeckValidator);
+  $('deckValidatorModal').addEventListener('cancel', (event) => { event.preventDefault(); closeDeckValidator(); });
+  $('deckValidatorModal').addEventListener('click', (event) => { if (event.target === $('deckValidatorModal')) closeDeckValidator(); });
+  $('deckFormatChoices').addEventListener('click', (event) => {
+    const button = event.target.closest('[data-deck-format]');
+    if (button) selectDeckFormat(button.dataset.deckFormat);
+  });
+  $('deckFormatChoices').addEventListener('keydown', (event) => {
+    if (!['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown'].includes(event.key)) return;
+    event.preventDefault();
+    const currentIndex = formats.findIndex((format) => format.key === state.deckFormat);
+    const direction = ['ArrowRight', 'ArrowDown'].includes(event.key) ? 1 : -1;
+    const next = formats[(currentIndex + direction + formats.length) % formats.length];
+    selectDeckFormat(next.key, { focus: true });
+  });
+  $('deckListInput').addEventListener('input', updateDeckListCount);
+  $('clearDeckList').addEventListener('click', () => { $('deckListInput').value = ''; updateDeckListCount(); $('deckListInput').focus(); });
+  $('validateDeck').addEventListener('click', validateDeck);
+
   $('closeCardModal').addEventListener('click', closeCard);
   $('flipCard').addEventListener('click', flipModalCard);
   $('previousCard').addEventListener('click', () => navigateModal(-1));
@@ -972,25 +1180,23 @@ async function loadCards() {
   if (cachedCards.length) {
     state.cards = cachedCards; state.loadingMore = true;
     $('totalCards').textContent = `${cachedCards.length}+`;
-    $('lastUpdated').textContent = cached.stale ? 'cache antigo' : 'cache';
     populateSetFilter(); renderSeals(); applyFilters();
   }
   try {
     const fullCards = await fetchBanlistProgressively((partialCards, firstPage) => {
       if (token !== state.loadToken) return;
       if (firstPage || !cachedCards?.length) { $('loadingState').hidden = true; state.loadingMore = true; }
-      state.cards = partialCards; $('totalCards').textContent = `${partialCards.length}+`; $('lastUpdated').textContent = 'buscando'; renderSeals(); applyFilters();
+      state.cards = partialCards; $('totalCards').textContent = `${partialCards.length}+`; renderSeals(); applyFilters();
     });
     if (token !== state.loadToken || !fullCards.length) throw new Error('empty');
-    state.cards = fullCards; state.loadingMore = false; $('totalCards').textContent = fullCards.length; $('lastUpdated').textContent = new Intl.DateTimeFormat('pt-BR', { hour: '2-digit', minute: '2-digit' }).format(new Date());
+    state.cards = fullCards; state.loadingMore = false; $('totalCards').textContent = fullCards.length;
     writeCardsCache(fullCards); populateSetFilter(); renderSeals(); applyFilters();
   } catch {
     if (token !== state.loadToken) return;
     state.loadingMore = false;
     if (!state.cards.length) {
-      state.cards = []; state.filtered = []; $('totalCards').textContent = '—'; $('lastUpdated').textContent = 'indisponível'; renderSeals(); render(); $('errorState').hidden = false;
+      state.cards = []; state.filtered = []; $('totalCards').textContent = '—'; renderSeals(); render(); $('errorState').hidden = false;
     } else {
-      $('lastUpdated').textContent = cached?.stale ? 'cache antigo' : 'cache';
       showToast('Não foi possível atualizar. Mantivemos o último arquivo disponível.'); render();
     }
   } finally {
@@ -1009,5 +1215,6 @@ document.addEventListener('DOMContentLoaded', () => {
   $('pageTitle').textContent = site.pageTitle;
   $('pageSubtitle').textContent = site.pageSubtitle;
   $('formatCount').textContent = formats.length;
+  renderDeckFormats();
   bind(); loadCards(); loadBackground();
 });
