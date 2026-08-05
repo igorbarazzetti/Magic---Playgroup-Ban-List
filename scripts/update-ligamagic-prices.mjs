@@ -94,12 +94,17 @@ async function fetchWithRetry(url, headers) {
   let lastError;
   for (let attempt = 0; attempt < 3; attempt += 1) {
     try {
-      const response = await fetch(url, { headers, redirect: 'follow' });
+      const response = await fetch(url, { headers, redirect: 'follow', signal: AbortSignal.timeout(20000) });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       return response;
     } catch (error) {
       lastError = error;
-      if (attempt < 2) await sleep(4000 * (attempt + 1));
+      const status = Number(String(error?.message || '').match(/HTTP\s+(\d+)/)?.[1]);
+      // Uma página inexistente não se recupera com novas tentativas. Repetimos
+      // somente indisponibilidades transitórias para não alongar a coleta inteira.
+      const retriable = !Number.isFinite(status) || status === 408 || status === 429 || status >= 500;
+      if (!retriable) break;
+      if (attempt < 2) await sleep(2000 * (attempt + 1));
     }
   }
   throw lastError;
