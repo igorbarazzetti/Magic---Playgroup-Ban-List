@@ -542,6 +542,21 @@ async function getLigaMagicPriceBook() {
 async function hydrateLigaMagicPrice(card) {
   const target = $('modalLigaMagicPrice');
   if (!target) return;
+  const inlinePrice = $('modalInlinePrice');
+  const hideInlinePrice = () => {
+    if (!inlinePrice) return;
+    inlinePrice.hidden = true;
+    inlinePrice.textContent = '';
+    inlinePrice.classList.remove('is-stale');
+  };
+  const showInlinePrice = (entry, { stale = false } = {}) => {
+    if (!inlinePrice) return;
+    inlinePrice.textContent = formatBrlPrice(entry.price_brl);
+    inlinePrice.title = `${stale ? 'Último ' : ''}menor preço Normal/NM na LigaMagic`;
+    inlinePrice.classList.toggle('is-stale', stale);
+    inlinePrice.hidden = false;
+  };
+  hideInlinePrice();
   const fallbackUrl = ligaMagicUrl(card);
   try {
     const book = await getLigaMagicPriceBook();
@@ -560,17 +575,20 @@ async function hydrateLigaMagicPrice(card) {
     if (entry?.status === 'available' && Number.isFinite(Number(entry.price_brl))) {
       const printing = [entry.printing_name, entry.printing_code].filter(Boolean).join(' · ');
       target.classList.remove('is-stale');
+      showInlinePrice(entry);
       target.innerHTML = `<div class="modal-kv"><span class="modal-kv__label">Menor preço normal</span><strong class="market-ligamagic__price">${formatBrlPrice(entry.price_brl)}</strong></div><p class="market-ligamagic__note">Fonte: LigaMagic · Normal/NM${printing ? ` · ${escapeHtml(printing)}` : ''} · consultado em ${escapeHtml(formatMarketTimestamp(entry.checked_at))}.</p>`;
       return;
     }
     if (entry?.status === 'stale' && Number.isFinite(Number(entry.price_brl))) {
       target.classList.add('is-stale');
+      showInlinePrice(entry, { stale: true });
       target.innerHTML = `<div class="modal-kv"><span class="modal-kv__label">Último menor preço normal</span><strong class="market-ligamagic__price">${formatBrlPrice(entry.price_brl)}</strong></div><p class="market-ligamagic__note">Fonte: LigaMagic · última leitura em ${escapeHtml(formatMarketTimestamp(entry.checked_at))}. A atualização mais recente não respondeu.</p>`;
       return;
     }
     target.classList.remove('is-stale');
     target.innerHTML = '<div class="modal-kv"><span class="modal-kv__label">Menor preço normal</span><span class="modal-kv__value">Indisponível</span></div><p class="market-ligamagic__note">Ainda não há uma cópia Normal/NM registrada na LigaMagic para esta carta.</p>';
   } catch {
+    hideInlinePrice();
     if (state.modalCard?.id === card.id && $('modalLigaMagicPrice')) target.innerHTML = '<div class="modal-kv"><span class="modal-kv__label">Menor preço normal</span><span class="modal-kv__value">Indisponível</span></div><p class="market-ligamagic__note">Não foi possível abrir o arquivo de preços da LigaMagic agora.</p>';
   }
 }
@@ -630,6 +648,8 @@ function renderModalDetails(card, side = 0) {
 
   $('modalTitle').textContent = faceValue(card, face, 'name');
   $('modalType').textContent = faceValue(card, face, 'type_line');
+  $('modalInlinePrice').hidden = true;
+  $('modalInlinePrice').textContent = '';
   $('modalOracle').innerHTML = formatRuleText(faceValue(card, face, 'oracle_text'));
   $('modalFlavor').innerHTML = faceValue(card, face, 'flavor_text') === '—' ? '' : formatRuleText(faceValue(card, face, 'flavor_text'));
   $('modalSet').innerHTML = setLineMarkup(card);

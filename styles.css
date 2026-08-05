@@ -366,7 +366,11 @@ main{display:block;min-width:0}
 #modalSet .set-code::before{content:"·";color:#706c68}
 .modal-title-row{display:flex;align-items:start;justify-content:space-between;gap:12px}
 .modal-copy h2{margin:0;min-width:0;font:700 clamp(25px,7.5vw,38px)/1.06 var(--display);letter-spacing:-.02em;text-wrap:balance;color:#fff7e8}
-.modal-type{margin:8px 0 0;color:#b7b7b1;font-size:13px}
+.modal-type-row{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 10px;margin-top:8px}
+.modal-type{margin:0;color:#b7b7b1;font-size:13px}
+.modal-inline-price{color:var(--gold);font-size:13px;font-weight:800;white-space:nowrap;text-shadow:0 0 12px rgba(231,199,127,.18)}
+.modal-inline-price::before{content:"·";margin-right:10px;color:rgba(231,199,127,.48)}
+.modal-inline-price.is-stale{color:#d2bb87}
 .modal-mana{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:3px;flex:0 0 auto;padding-top:3px}
 .mana-symbol{display:inline-grid;place-items:center;vertical-align:middle}
 .mana-symbol--icon{width:19px;height:19px;border-radius:50%;box-shadow:0 2px 6px rgba(0,0,0,.35)}

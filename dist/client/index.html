@@ -23,7 +23,7 @@
     <link rel="preconnect" href="https://cards.scryfall.io" />
     <link rel="preconnect" href="https://api.scryfall.com" />
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=codex-14" />
+    <link rel="stylesheet" href="styles.css?v=codex-15" />
   </head>
   <body>
     <a class="skip-link" href="#archiveTitle">Ir para as cartas</a>
@@ -227,7 +227,7 @@
           <article class="modal-copy">
             <p class="eyebrow">Carta selada · <span id="modalSet">—</span></p>
             <div class="modal-title-row"><h2 id="modalTitle">—</h2><div id="modalMana" class="modal-mana"></div></div>
-            <p id="modalType" class="modal-type">—</p>
+            <div class="modal-type-row"><p id="modalType" class="modal-type">—</p><strong id="modalInlinePrice" class="modal-inline-price" aria-live="polite" hidden></strong></div>
 
             <section class="ban-status" aria-labelledby="banStatusTitle">
               <div><span aria-hidden="true">✦</span><strong id="banStatusTitle">Banida nos formatos</strong></div>
@@ -320,6 +320,6 @@
     </dialog>
 
     <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
-    <script type="module" src="banlist.js?v=codex-17"></script>
+    <script type="module" src="banlist.js?v=codex-18"></script>
   </body>
 </html>
