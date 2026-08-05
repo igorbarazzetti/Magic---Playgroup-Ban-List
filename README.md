@@ -1,4 +1,4 @@
-# Códice das Cartas Banidas
+# Códice do Formatinho
 
 Web app mobile-first para consultar a banlist do Playgroup da Amizade com dados e imagens reais do Scryfall.
 

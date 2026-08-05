@@ -1,7 +1,7 @@
 const site = {
   playgroupName: 'Playgroup da Amizade',
   playgroupInitials: 'PA',
-  pageTitle: 'Códice das Cartas Banidas',
+  pageTitle: 'Códice do Formatinho',
   pageSubtitle: 'A banlist oficial do nosso formato',
   logoPath: './playgroup-logo.svg',
   scryfallQuery: '(banned:standard OR banned:pioneer OR banned:modern OR banned:legacy OR banned:commander OR banned:duel OR banned:pauper) -set:sunf -set:unf',
