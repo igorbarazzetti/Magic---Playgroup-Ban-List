@@ -7,6 +7,13 @@ const site = {
   scryfallQuery: '(banned:standard OR banned:pioneer OR banned:modern OR banned:legacy OR banned:commander OR banned:duel OR banned:pauper) -set:sunf -set:unf',
   catalogQuery: '(game:paper) usd<20.00 prefer:best',
   backgroundCards: ['Teferi, Hero of Dominaria', "Elspeth, Sun's Champion", 'Chandra, Torch of Defiance', 'Nissa, Who Shakes the World'],
+  desktopBackgrounds: [
+    { name: 'Ajani', image: './hero-desktop/ajani-1920.jpg', credit: 'ilustração de personagem · uso pessoal' },
+    { name: 'Chandra Nalaar', image: './hero-desktop/chandra-nalaar-1920.jpg', credit: 'ilustração de personagem · uso pessoal' },
+    { name: 'Garruk', image: './hero-desktop/garruk-1920.jpg', credit: 'ilustração de personagem · uso pessoal' },
+    { name: 'Jace Beleren', image: './hero-desktop/jace-beleren-1920.jpg', credit: 'ilustração de personagem · uso pessoal' },
+    { name: 'Liliana Vess', image: './hero-desktop/liliana-vess-1920.jpg', credit: 'ilustração de personagem · uso pessoal' },
+  ],
   backgroundInterval: 14000,
 };
 
@@ -1161,9 +1168,13 @@ async function loadBackground() {
   if (!sceneLayerA || !sceneLayerB || !sceneName || !sceneArtist) return;
   const scenesLayers = { a: sceneLayerA, b: sceneLayerB };
   try {
-    const response = await fetch('https://api.scryfall.com/cards/collection', { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify({ identifiers: site.backgroundCards.map((name) => ({ name })) }) });
-    if (!response.ok) return;
-    const payload = await response.json(); const scenes = (payload.data || []).filter((card) => card.image_uris?.art_crop).map((card) => ({ name: card.name, artist: card.artist, image: card.image_uris.art_crop }));
+    let scenes = site.desktopBackgrounds;
+    if (!matchMedia('(min-width: 960px)').matches) {
+      const response = await fetch('https://api.scryfall.com/cards/collection', { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify({ identifiers: site.backgroundCards.map((name) => ({ name })) }) });
+      if (!response.ok) return;
+      const payload = await response.json();
+      scenes = (payload.data || []).filter((card) => card.image_uris?.art_crop).map((card) => ({ name: card.name, artist: card.artist, image: card.image_uris.art_crop }));
+    }
     if (!scenes.length) return;
     let current = 0;
     let active = 'a';
@@ -1172,7 +1183,7 @@ async function loadBackground() {
       element.style.backgroundImage = `url("${scenes[index].image}")`;
       element.classList.add('is-active');
       sceneName.textContent = scenes[index].name;
-      sceneArtist.textContent = `arte de ${scenes[index].artist || 'artista não informado'} · via Scryfall`;
+      sceneArtist.textContent = scenes[index].credit || `arte de ${scenes[index].artist || 'artista não informado'} · via Scryfall`;
       return element;
     };
     show(0, active);
@@ -1571,17 +1582,40 @@ async function openSavedDeck(id) {
     $('savedDeckTitle').textContent = deck.name;
     $('savedDeckEyebrow').textContent = `Deck aprovado · ${validatedDeckFormatLabel(deck.format)}`;
     $('savedDeckPilot').textContent = deck.pilot ? `Pilotado por ${deck.pilot}` : 'Piloto não informado';
-    $('savedDeckCover').src = deck.cover_image || '';
-    $('savedDeckCover').alt = deck.cover_name ? `Arte de ${deck.cover_name}` : '';
-    $('savedDeckCover').hidden = !deck.cover_image;
     $('savedDeckStats').innerHTML = `<div><strong>${Number(deck.card_count) || 0}</strong><span>cartas</span></div><div><strong>${Number(deck.unique_count) || 0}</strong><span>nomes</span></div><div><strong>${validatedDeckDate(deck.created_at)}</strong><span>validado</span></div>`;
-    const entries = Array.isArray(deck.entries) ? deck.entries : [];
-    $('savedDeckList').innerHTML = `<div class="saved-deck-list__heading"><strong>Lista completa</strong><span>${entries.length} nomes</span></div><ul>${entries.map((entry) => `<li><span>${Number(entry.quantity) || 1}×</span><strong>${escapeHtml(entry.name)}</strong></li>`).join('')}</ul>`;
+    const entries = Array.isArray(deck.entries) ? deck.entries.map((entry) => ({
+      ...entry,
+      key: entry.key || slug(entry.name).replace(/['’]/g, "'").replace(/\s+/g, ' ').trim(),
+    })) : [];
+    renderSavedDeckList(entries);
     if (typeof modal.showModal === 'function') modal.showModal(); else modal.setAttribute('open', '');
     document.body.classList.add('is-locked');
     $('closeSavedDeck').focus();
+    void hydrateSavedDeckPreviews(entries, deck.id);
   } catch {
     showToast('Não foi possível abrir este deck agora.');
+  }
+}
+
+function savedDeckEntryImage(entry) {
+  const card = deckCardCache.get(entry.key);
+  const src = card ? imageFor(card, 0, 'small') : '';
+  return src
+    ? `<img src="${escapeHtml(src)}" alt="" loading="lazy" decoding="async" />`
+    : '<span aria-hidden="true">✦</span>';
+}
+
+function renderSavedDeckList(entries) {
+  $('savedDeckList').innerHTML = `<div class="saved-deck-list__heading"><strong>Lista completa</strong><span>${entries.length} nomes</span></div><ul>${entries.map((entry) => `<li><span class="saved-deck-entry__art">${savedDeckEntryImage(entry)}</span><span class="saved-deck-entry__quantity">${Number(entry.quantity) || 1}×</span><strong>${escapeHtml(entry.name)}</strong></li>`).join('')}</ul>`;
+}
+
+async function hydrateSavedDeckPreviews(entries, deckId) {
+  try {
+    await fetchDeckCards(entries);
+    if (currentSavedDeck?.id !== deckId || !$('savedDeckModal').open) return;
+    renderSavedDeckList(entries);
+  } catch {
+    // The text list remains fully usable if Scryfall artwork is temporarily unavailable.
   }
 }
 
