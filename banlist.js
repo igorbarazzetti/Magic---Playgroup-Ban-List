@@ -1,5 +1,5 @@
 const site = {
-  playgroupName: 'Playgroup da Amizade',
+  playgroupName: 'Formatinho',
   playgroupInitials: 'PA',
   pageTitle: 'Códice do Formatinho',
   pageSubtitle: 'A banlist oficial do nosso formato',
