@@ -39,20 +39,25 @@ jobs:
           node-version: 22
 
       - name: Consultar lote de preços
-        shell: bash
+        shell: pwsh
         env:
           LIGAMAGIC_REQUEST_DELAY_MS: "10000"
           BATCH_SIZE: ${{ inputs.batch_size || 100 }}
           FORCE_ARG: ${{ inputs.force && '--force' || '' }}
-        run: node scripts/update-ligamagic-prices.mjs --limit="$BATCH_SIZE" $FORCE_ARG
+        run: |
+          $collectorArgs = @("scripts/update-ligamagic-prices.mjs", "--limit=$env:BATCH_SIZE")
+          if ($env:FORCE_ARG) { $collectorArgs += $env:FORCE_ARG }
+          & node @collectorArgs
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
       - name: Publicar dados atualizados
-        shell: bash
+        shell: pwsh
         run: |
-          if git diff --quiet -- data; then
-            echo "Nenhuma alteração de dados para publicar."
+          $dataChanges = git status --porcelain -- data | Out-String
+          if ([string]::IsNullOrWhiteSpace($dataChanges)) {
+            Write-Output "Nenhuma alteração de dados para publicar."
             exit 0
-          fi
+          }
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data
