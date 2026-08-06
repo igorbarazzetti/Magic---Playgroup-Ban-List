@@ -6,7 +6,7 @@ const site = {
   logoPath: './playgroup-logo.svg',
   scryfallQuery: '(banned:standard OR banned:pioneer OR banned:modern OR banned:legacy OR banned:commander OR banned:duel OR banned:pauper) -set:sunf -set:unf',
   catalogQuery: '(game:paper) usd<20.00 prefer:best',
-  backgroundCards: ['Jace, the Mind Sculptor', 'Liliana of the Veil', 'Chandra, Torch of Defiance', 'Teferi, Hero of Dominaria', 'Nissa, Who Shakes the World', 'Nicol Bolas, Dragon-God', 'Karn Liberated', "Elspeth, Sun's Champion"],
+  backgroundCards: ['Teferi, Hero of Dominaria', "Elspeth, Sun's Champion", 'Chandra, Torch of Defiance', 'Nissa, Who Shakes the World'],
   backgroundInterval: 14000,
 };
 

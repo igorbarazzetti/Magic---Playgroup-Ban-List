@@ -635,8 +635,8 @@ main{display:block;min-width:0}
   .hero{width:100%;max-width:none;min-height:0;margin:0 0 30px;border-right:0;border-left:0;border-radius:0}
   .hero::before{right:clamp(14px,2vw,30px);left:clamp(14px,2vw,30px)}
   .hero-art__layer{background-position:88% 42%;background-size:auto clamp(430px,42vw,620px);background-repeat:no-repeat;transform:none;filter:saturate(1.03) contrast(1.05);-webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.18) 16%,#000 43%,#000 100%);mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.18) 16%,#000 43%,#000 100%)}
-  .hero-art__layer.is-active{opacity:.78;transform:none}
-  .hero-art__veil{background:linear-gradient(90deg,rgba(9,11,16,.99) 0%,rgba(9,11,16,.94) 36%,rgba(9,11,16,.56) 57%,rgba(9,11,16,.18) 84%,rgba(9,11,16,.36) 100%),linear-gradient(0deg,rgba(10,13,19,.86) 0%,transparent 55%)}
+  .hero-art__layer.is-active{opacity:.88;transform:none}
+  .hero-art__veil{background:linear-gradient(90deg,rgba(9,11,16,.99) 0%,rgba(9,11,16,.94) 36%,rgba(9,11,16,.54) 57%,rgba(9,11,16,.12) 84%,rgba(9,11,16,.28) 100%),linear-gradient(0deg,rgba(10,13,19,.82) 0%,transparent 55%)}
   .hero__content{width:min(100%,calc(680px + max(38px,calc((100vw - 1180px)/2 + 38px))));padding-top:34px;padding-bottom:18px;padding-left:max(38px,calc((100vw - 1180px)/2 + 38px))}
   .workspace{display:grid;grid-template-columns:228px minmax(0,1fr);gap:22px;align-items:start}
   .filter-panel{position:sticky;z-index:20;top:calc(var(--header-h) + 112px);display:block;visibility:visible;opacity:1;background:transparent}
