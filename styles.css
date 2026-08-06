@@ -632,10 +632,10 @@ main{display:block;min-width:0}
 
 @media (min-width:960px){
   .site-header{padding-left:max(22px,env(safe-area-inset-left));padding-right:max(22px,env(safe-area-inset-right))}
-  .hero{width:100%;max-width:none;min-height:clamp(350px,27vw,480px);margin:18px 0 30px;border-right:0;border-left:0;border-radius:0}
+  .hero{width:100%;max-width:none;min-height:0;margin:18px 0 30px;border-right:0;border-left:0;border-radius:0}
   .hero::before{right:clamp(14px,2vw,30px);left:clamp(14px,2vw,30px)}
   .hero-art__layer{background-position:center 30%}
-  .hero__content{width:min(100%,calc(680px + max(38px,calc((100vw - 1180px)/2 + 38px))));padding-top:clamp(48px,5vw,72px);padding-left:max(38px,calc((100vw - 1180px)/2 + 38px))}
+  .hero__content{width:min(100%,calc(680px + max(38px,calc((100vw - 1180px)/2 + 38px))));padding-top:34px;padding-bottom:18px;padding-left:max(38px,calc((100vw - 1180px)/2 + 38px))}
   .workspace{display:grid;grid-template-columns:228px minmax(0,1fr);gap:22px;align-items:start}
   .filter-panel{position:sticky;z-index:20;top:calc(var(--header-h) + 112px);display:block;visibility:visible;opacity:1;background:transparent}
   .filter-panel__surface{display:block;max-height:calc(100dvh - 190px);overflow:auto;border-radius:14px;transform:none;box-shadow:none}
