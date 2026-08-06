@@ -34,5 +34,17 @@
     "collector_number": "199",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Psychic%20Frog",
     "checked_at": "2026-08-05T20:11:32.440Z"
+  },
+  "e1a2bd31-b800-47cd-8866-1b849a601b09": {
+    "status": "available",
+    "name": "Agate Instigator",
+    "price_brl": 56.89,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Bloomburrow Commander",
+    "printing_code": "BLC",
+    "collector_number": "21",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agate%20Instigator",
+    "checked_at": "2026-08-06T11:08:54.074Z"
   }
 }

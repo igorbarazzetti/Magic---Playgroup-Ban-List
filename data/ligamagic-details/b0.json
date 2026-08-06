@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerial%20Formation",
     "checked_at": "2026-08-06T07:17:15.034Z"
   },
+  "b07ef53e-46db-457e-a5a2-846bb9805b70": {
+    "status": "available",
+    "name": "Aether Theorist",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaladesh",
+    "printing_code": "KLD",
+    "collector_number": "37",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Theorist",
+    "checked_at": "2026-08-06T11:00:53.679Z"
+  },
   "b0d84455-dc35-45d3-901e-8d28363142f4": {
     "status": "available",
     "name": "Hired Heist",

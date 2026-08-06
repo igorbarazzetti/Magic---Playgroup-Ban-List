@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Dreadhorde%20Arcanist",
     "checked_at": "2026-08-05T20:05:31.514Z"
   },
+  "4c13e2b5-961a-4031-84b1-15bd19b94286": {
+    "status": "available",
+    "name": "Afterlife",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Máscaras de Mercádia",
+    "printing_code": "MM",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Afterlife",
+    "checked_at": "2026-08-06T11:07:24.012Z"
+  },
   "4c445455-5b91-4c22-8b3b-8cff4e97f00a": {
     "status": "available",
     "name": "Aardwolf's Advantage",
@@ -34,5 +46,17 @@
     "collector_number": "172",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acidic%20Soil",
     "checked_at": "2026-08-06T03:53:51.900Z"
+  },
+  "4cd82c7a-86df-4d29-b578-c009208c0d4b": {
+    "status": "available",
+    "name": "Agent of Treachery",
+    "price_brl": 18.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2020",
+    "printing_code": "M20",
+    "collector_number": "43",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agent%20of%20Treachery",
+    "checked_at": "2026-08-06T11:12:54.181Z"
   }
 }

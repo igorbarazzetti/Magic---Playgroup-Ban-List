@@ -1,0 +1,26 @@
+{
+  "ff4297d3-3d96-4bd6-a606-1bdc20a6df2b": {
+    "status": "available",
+    "name": "Aether Storm",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Natais",
+    "printing_code": "HL",
+    "collector_number": "21",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Storm",
+    "checked_at": "2026-08-06T11:00:24.210Z"
+  },
+  "ff6427f6-d2b1-4e33-984d-c06bd15d7c2c": {
+    "status": "available",
+    "name": "Aetherborn Marauder",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaladesh",
+    "printing_code": "KLD",
+    "collector_number": "71",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aetherborn%20Marauder",
+    "checked_at": "2026-08-06T11:02:04.168Z"
+  }
+}

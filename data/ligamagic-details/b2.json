@@ -1,4 +1,16 @@
 {
+  "b2142d8b-ea53-443e-bd60-9e70d9da9bd7": {
+    "status": "available",
+    "name": "Agent of the Shadow Thieves",
+    "price_brl": 0.19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends: Batalha por Portal de Baldur",
+    "printing_code": "CLB",
+    "collector_number": "108",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agent%20of%20the%20Shadow%20Thieves",
+    "checked_at": "2026-08-06T11:12:44.423Z"
+  },
   "b21d6482-1b3a-47e6-98a5-3067f5f3818b": {
     "status": "available",
     "name": "Aether Gale",

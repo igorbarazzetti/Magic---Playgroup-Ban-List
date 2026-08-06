@@ -22,5 +22,17 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abu%20Ja'far",
     "checked_at": "2026-08-06T00:15:27.270Z"
+  },
+  "a2d90efe-80f2-4069-b135-a8bd00ccd2b0": {
+    "status": "available",
+    "name": "Agent Maria Hill",
+    "price_brl": 0.19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes",
+    "printing_code": "MSH",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agent%20Maria%20Hill",
+    "checked_at": "2026-08-06T11:10:54.112Z"
   }
 }

@@ -1,4 +1,16 @@
 {
+  "31816924-1430-4581-86e8-325e2ca16217": {
+    "status": "available",
+    "name": "Agents of HYDRA",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes",
+    "printing_code": "MSH",
+    "collector_number": "85",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agents%20of%20HYDRA",
+    "checked_at": "2026-08-06T11:13:34.191Z"
+  },
   "31b4e85d-89fc-4712-8f05-7ec097b1d3b6": {
     "status": "available",
     "name": "Acererak the Archlich",

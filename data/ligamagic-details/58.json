@@ -1,4 +1,16 @@
 {
+  "584fe1e4-029d-43fe-8c9e-6995dd392d65": {
+    "status": "available",
+    "name": "Agent of Kotis",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm",
+    "printing_code": "TDM",
+    "collector_number": "36",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agent%20of%20Kotis",
+    "checked_at": "2026-08-06T11:11:44.166Z"
+  },
   "58aec411-167d-4709-8560-793eaaed62c5": {
     "status": "available",
     "name": "Gifts Ungiven",

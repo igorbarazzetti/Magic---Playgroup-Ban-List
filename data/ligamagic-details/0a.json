@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adaptive%20Snapjaw",
     "checked_at": "2026-08-06T04:00:02.846Z"
   },
+  "0a90d1fb-7a76-4b62-b001-4a539a8e5df1": {
+    "status": "available",
+    "name": "Aether Tunnel",
+    "price_brl": 0.37,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2019",
+    "printing_code": "M19",
+    "collector_number": "43",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Tunnel",
+    "checked_at": "2026-08-06T11:01:23.714Z"
+  },
   "0a9276fc-387c-4bde-a6d6-b0dd7abee94b": {
     "status": "available",
     "name": "Abzan Runemark",

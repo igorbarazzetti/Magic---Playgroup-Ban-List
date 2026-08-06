@@ -1,4 +1,16 @@
 {
+  "151c867f-cc77-42de-9ae5-5fd2233ccdab": {
+    "status": "available",
+    "name": "Afterlife from the Loam",
+    "price_brl": 7.7,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm Commander",
+    "printing_code": "TDC",
+    "collector_number": "25",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Afterlife%20from%20the%20Loam",
+    "checked_at": "2026-08-06T11:07:34.060Z"
+  },
   "153292f9-e0d1-43a7-a083-275c49d0554a": {
     "status": "available",
     "name": "Aeronaut Cavalry",
@@ -10,6 +22,18 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aeronaut%20Cavalry",
     "checked_at": "2026-08-06T07:20:45.164Z"
+  },
+  "15692698-ef57-4672-bf76-5fe4a00c693a": {
+    "status": "available",
+    "name": "Aethermage's Touch",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Double Masters 2022",
+    "printing_code": "2X2",
+    "collector_number": "167",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aethermage's%20Touch",
+    "checked_at": "2026-08-06T11:03:23.854Z"
   },
   "15710c57-369a-442b-b7ea-175f3d9d164d": {
     "status": "available",

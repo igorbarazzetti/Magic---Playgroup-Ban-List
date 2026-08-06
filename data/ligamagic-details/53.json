@@ -1,4 +1,16 @@
 {
+  "53b2c8f2-db9a-4ab0-a4e8-17385b2fa3bd": {
+    "status": "available",
+    "name": "Aethertide Whale",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Aetherdrift Commander",
+    "printing_code": "DRC",
+    "collector_number": "69",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aethertide%20Whale",
+    "checked_at": "2026-08-06T11:05:03.912Z"
+  },
   "53c730c6-2f8c-4af8-b400-b9d573a71e60": {
     "status": "available",
     "name": "Adaptive Automaton",

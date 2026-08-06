@@ -34,5 +34,17 @@
     "collector_number": "141",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Price%20of%20Progress",
     "checked_at": "2026-08-05T20:11:17.375Z"
+  },
+  "e9db79fd-a5b6-4d59-9176-e713e2e9c708": {
+    "status": "available",
+    "name": "Aether Shockwave",
+    "price_brl": 0.38,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Salvadores Kamigawa",
+    "printing_code": "SOK",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Shockwave",
+    "checked_at": "2026-08-06T10:59:33.605Z"
   }
 }

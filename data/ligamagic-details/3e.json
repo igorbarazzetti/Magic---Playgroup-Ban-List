@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Flash",
     "checked_at": "2026-08-05T20:06:19.574Z"
   },
+  "3e0be003-4f42-4917-b85d-46baf2afd734": {
+    "status": "available",
+    "name": "Aethersnipe",
+    "price_brl": 0.02,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Duel Decks Anthology: Jace vs. Chandra",
+    "printing_code": "DDAJVC",
+    "collector_number": "17",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aethersnipe",
+    "checked_at": "2026-08-06T11:04:03.855Z"
+  },
   "3e0e3676-e634-4e64-bdfd-4aaa5885461f": {
     "status": "available",
     "name": "Abstract Performance",

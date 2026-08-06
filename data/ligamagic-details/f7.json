@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Griselbrand",
     "checked_at": "2026-08-05T20:07:22.774Z"
   },
+  "f7ed301a-dce7-49d0-a68a-d3a099201f65": {
+    "status": "available",
+    "name": "Aether Swooper",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Revolta do éter",
+    "printing_code": "AER",
+    "collector_number": "26",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Swooper",
+    "checked_at": "2026-08-06T11:00:33.702Z"
+  },
   "f7f76f39-a0de-4bda-86b6-0f291892fcec": {
     "status": "available",
     "name": "Yawgmoth's Bargain",

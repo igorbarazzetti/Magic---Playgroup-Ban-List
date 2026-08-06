@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Gaea's%20Cradle",
     "checked_at": "2026-08-05T20:06:40.649Z"
   },
+  "7c779721-cd1b-4696-9ae9-68ccc284ed2a": {
+    "status": "available",
+    "name": "Aetherize",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portões Violados",
+    "printing_code": "GTC",
+    "collector_number": "29",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aetherize",
+    "checked_at": "2026-08-06T11:02:53.757Z"
+  },
   "7cafc972-a6f5-4cac-a3d3-8a3ae36ffb1e": {
     "status": "available",
     "name": "Upheaval",

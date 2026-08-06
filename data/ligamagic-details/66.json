@@ -10,5 +10,29 @@
     "collector_number": "153",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Tibalt's%20Trickery",
     "checked_at": "2026-08-05T20:13:47.775Z"
+  },
+  "668a6a9d-80fc-437b-99b8-6807e92eabca": {
+    "status": "available",
+    "name": "Agent of Horizons",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros",
+    "printing_code": "THS",
+    "collector_number": "148",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agent%20of%20Horizons",
+    "checked_at": "2026-08-06T11:11:34.159Z"
+  },
+  "6697fe5b-90ac-4321-aa2f-cdc6ec283cb4": {
+    "status": "available",
+    "name": "Aether Mutation",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Apocalipse",
+    "printing_code": "AP",
+    "collector_number": "91",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Mutation",
+    "checked_at": "2026-08-06T10:58:33.596Z"
   }
 }

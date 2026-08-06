@@ -1,4 +1,16 @@
 {
+  "88aa032d-dc11-4cae-81f3-ce66353963e0": {
+    "status": "available",
+    "name": "Affectionate Indrik",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Guildas de Ravnica",
+    "printing_code": "GRN",
+    "collector_number": "121",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Affectionate%20Indrik",
+    "checked_at": "2026-08-06T11:06:33.963Z"
+  },
   "88e936c3-cab9-430f-baa1-930ff557cbf6": {
     "status": "available",
     "name": "Emissary's Ploy",

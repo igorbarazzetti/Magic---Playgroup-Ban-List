@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Limited%20Resources",
     "checked_at": "2026-08-05T20:09:11.016Z"
   },
+  "5b38a1e4-a6af-4094-9392-70a87759e20d": {
+    "status": "available",
+    "name": "Affa Protector",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Juramento das Sentinelas",
+    "printing_code": "OGW",
+    "collector_number": "14",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Affa%20Protector",
+    "checked_at": "2026-08-06T11:06:23.945Z"
+  },
   "5b6bdf5a-2742-4851-92cd-a857a3852836": {
     "status": "available",
     "name": "Treasure Cruise",

@@ -11,6 +11,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Up%20the%20Beanstalk",
     "checked_at": "2026-08-05T20:14:35.904Z"
   },
+  "05501e88-d4c3-4474-92a9-c02ab15b107b": {
+    "status": "available",
+    "name": "Afterlife Insurance",
+    "price_brl": 29.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ravnica: Clue Edition",
+    "printing_code": "CLU",
+    "collector_number": "23",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Afterlife%20Insurance",
+    "checked_at": "2026-08-06T11:07:44.011Z"
+  },
+  "056a98aa-f3f7-4ac9-9755-3e8a60a59abb": {
+    "status": "available",
+    "name": "Afiya Grove",
+    "price_brl": 4.56,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Miragem",
+    "printing_code": "MR",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Afiya%20Grove",
+    "checked_at": "2026-08-06T11:07:04.000Z"
+  },
   "05c2dec2-d2f7-4036-b91f-4fccba10a8bb": {
     "status": "available",
     "name": "Back to Basics",

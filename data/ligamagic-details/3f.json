@@ -10,5 +10,17 @@
     "collector_number": "170",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ace's%20Baseball%20Bat",
     "checked_at": "2026-08-06T03:52:21.850Z"
+  },
+  "3fa5e109-4a67-4523-8183-90e48a906400": {
+    "status": "available",
+    "name": "Agent of Erebos",
+    "price_brl": 0.48,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Viagem para Nyx",
+    "printing_code": "JOU",
+    "collector_number": "59",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agent%20of%20Erebos",
+    "checked_at": "2026-08-06T11:11:24.226Z"
   }
 }

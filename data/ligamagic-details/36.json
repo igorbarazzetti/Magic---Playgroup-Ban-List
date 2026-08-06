@@ -10,5 +10,17 @@
     "collector_number": "329",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abundant%20Maw",
     "checked_at": "2026-08-06T00:16:47.304Z"
+  },
+  "3686fd97-49ff-4a92-9cb2-7d8e9438d945": {
+    "status": "available",
+    "name": "Agency Coroner",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassinato na Mansão Karlov",
+    "printing_code": "MKM",
+    "collector_number": "75",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agency%20Coroner",
+    "checked_at": "2026-08-06T11:10:04.202Z"
   }
 }

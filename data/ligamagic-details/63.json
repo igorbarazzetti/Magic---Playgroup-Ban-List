@@ -1,4 +1,16 @@
 {
+  "632ccf7e-eaf4-42a6-9069-6ad915d03a5b": {
+    "status": "available",
+    "name": "Agent of Masks",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Masters 2017",
+    "printing_code": "MM3",
+    "collector_number": "149",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agent%20of%20Masks",
+    "checked_at": "2026-08-06T11:11:54.676Z"
+  },
   "632de66b-2314-4299-847c-16a84bf9121f": {
     "status": "available",
     "name": "Imprison",

@@ -1,4 +1,16 @@
 {
+  "7b3e74ad-0179-480b-871c-9e3bc30a43ff": {
+    "status": "available",
+    "name": "Aethersphere Harvester",
+    "price_brl": 0.12,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Revolta do éter",
+    "printing_code": "AER",
+    "collector_number": "142",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aethersphere%20Harvester",
+    "checked_at": "2026-08-06T11:04:13.823Z"
+  },
   "7b515c56-7b1e-42a8-82b0-1b30201fb162": {
     "status": "available",
     "name": "Zirda, the Dawnwaker",
@@ -10,5 +22,17 @@
     "collector_number": "233",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Zirda%2C%20the%20Dawnwaker",
     "checked_at": "2026-08-05T20:15:48.034Z"
+  },
+  "7b89b7d2-c724-4d5d-9f0b-7d3302ad1168": {
+    "status": "available",
+    "name": "Agate Assault",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Bloomburrow",
+    "printing_code": "BLB",
+    "collector_number": "122",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agate%20Assault",
+    "checked_at": "2026-08-06T11:08:34.061Z"
   }
 }

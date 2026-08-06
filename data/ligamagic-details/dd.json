@@ -1,4 +1,16 @@
 {
+  "dd0cac88-0a78-408f-8eb0-080f79150180": {
+    "status": "available",
+    "name": "Aethertow",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Masters 2017",
+    "printing_code": "MM3",
+    "collector_number": "205",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aethertow",
+    "checked_at": "2026-08-06T11:05:23.893Z"
+  },
   "dd66b8ab-14a9-455b-98f6-5356df72a522": {
     "status": "available",
     "name": "Adarkar Windform",
@@ -58,5 +70,17 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aang's%20Journey",
     "checked_at": "2026-08-06T00:04:06.710Z"
+  },
+  "ddf7201a-6672-416d-be6b-202dafbeccab": {
+    "status": "available",
+    "name": "Agent 13, Sharon Carter",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes",
+    "printing_code": "MSH",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agent%2013%2C%20Sharon%20Carter",
+    "checked_at": "2026-08-06T11:10:24.678Z"
   }
 }

@@ -10,5 +10,17 @@
     "collector_number": "203",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mana%20Vault",
     "checked_at": "2026-08-05T20:09:35.096Z"
+  },
+  "73757d44-7889-416b-94d2-e730e601ace3": {
+    "status": "available",
+    "name": "Aether Poisoner",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Revolta do éter",
+    "printing_code": "AER",
+    "collector_number": "51",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Poisoner",
+    "checked_at": "2026-08-06T10:58:43.587Z"
   }
 }

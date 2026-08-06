@@ -22,5 +22,17 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abyssal%20Hunter",
     "checked_at": "2026-08-06T00:40:52.296Z"
+  },
+  "b980bf11-9e12-4ee9-83c1-45706d9ae344": {
+    "status": "available",
+    "name": "Aetherling",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Labirinto do Dragão",
+    "printing_code": "DGM",
+    "collector_number": "11",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aetherling",
+    "checked_at": "2026-08-06T11:03:13.801Z"
   }
 }

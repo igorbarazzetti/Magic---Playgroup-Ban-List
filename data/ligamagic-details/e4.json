@@ -10,5 +10,17 @@
     "collector_number": "210",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aang%2C%20Air%20Nomad",
     "checked_at": "2026-08-06T00:03:06.706Z"
+  },
+  "e4a85647-0b8c-40b2-a5d5-43c78877ce36": {
+    "status": "available",
+    "name": "Aether Spike",
+    "price_brl": 0.06,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3",
+    "printing_code": "MH3",
+    "collector_number": "50",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Spike",
+    "checked_at": "2026-08-06T11:00:03.690Z"
   }
 }

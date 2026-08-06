@@ -10,5 +10,17 @@
     "collector_number": "41",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Academy%20Journeymage",
     "checked_at": "2026-08-06T03:47:41.673Z"
+  },
+  "b4d19e3a-c2f8-4503-bcfa-1b46bde972e5": {
+    "status": "available",
+    "name": "Afterburner Expert",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Aetherdrift",
+    "printing_code": "DFT",
+    "collector_number": "150",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Afterburner%20Expert",
+    "checked_at": "2026-08-06T11:07:14.071Z"
   }
 }

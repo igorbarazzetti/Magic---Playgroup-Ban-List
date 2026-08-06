@@ -22,5 +22,29 @@
     "collector_number": "33",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Deadly%20Dispute",
     "checked_at": "2026-08-05T20:04:55.457Z"
+  },
+  "45892ec2-8996-444f-a61c-5151926baa0b": {
+    "status": "available",
+    "name": "Aethersnatch",
+    "price_brl": 2.79,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2015",
+    "printing_code": "C15",
+    "collector_number": "9",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aethersnatch",
+    "checked_at": "2026-08-06T11:03:53.797Z"
+  },
+  "45f88a6a-ac8a-4a53-a96b-f09ca33c79ba": {
+    "status": "available",
+    "name": "Agent of the Fates",
+    "price_brl": 0.26,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros",
+    "printing_code": "THS",
+    "collector_number": "76",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agent%20of%20the%20Fates",
+    "checked_at": "2026-08-06T11:12:24.135Z"
   }
 }

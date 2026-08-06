@@ -1,4 +1,16 @@
 {
+  "19047c4b-0106-455d-ab71-68cabfae7404": {
+    "status": "available",
+    "name": "Agent of Acquisitions",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Conspiracy",
+    "printing_code": "CNS",
+    "collector_number": "54",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agent%20of%20Acquisitions",
+    "checked_at": "2026-08-06T11:11:04.132Z"
+  },
   "19ad338a-c89f-406d-ad1a-222c22044e1b": {
     "status": "available",
     "name": "Act on Impulse",
@@ -10,5 +22,17 @@
     "collector_number": "126",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Act%20on%20Impulse",
     "checked_at": "2026-08-06T03:57:52.092Z"
+  },
+  "19d8937e-23fb-4758-a306-0e7af9bb44c4": {
+    "status": "available",
+    "name": "Aettir and Priwen",
+    "price_brl": 28.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY",
+    "printing_code": "FIN",
+    "collector_number": "253",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aettir%20and%20Priwen",
+    "checked_at": "2026-08-06T11:05:53.868Z"
   }
 }

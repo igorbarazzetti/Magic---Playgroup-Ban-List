@@ -10,5 +10,29 @@
     "collector_number": "298",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Strip%20Mine",
     "checked_at": "2026-08-05T20:13:05.711Z"
+  },
+  "d2575513-72fa-49c7-be6b-9f6f85950f88": {
+    "status": "available",
+    "name": "Aethershield Artificer",
+    "price_brl": 0.06,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2019",
+    "printing_code": "M19",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aethershield%20Artificer",
+    "checked_at": "2026-08-06T11:03:43.838Z"
+  },
+  "d2e0d739-b441-4173-a8f1-b831a19ea98e": {
+    "status": "available",
+    "name": "Agent of Shauku",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Profecia",
+    "printing_code": "PR",
+    "collector_number": "55",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agent%20of%20Shauku",
+    "checked_at": "2026-08-06T11:12:04.184Z"
   }
 }

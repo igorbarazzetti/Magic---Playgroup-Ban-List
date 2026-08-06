@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acolyte%20of%20Aclazotz",
     "checked_at": "2026-08-06T03:54:21.942Z"
   },
+  "325032d5-c452-4454-8976-82f86fee5ab8": {
+    "status": "available",
+    "name": "Agent of the Iron Throne",
+    "price_brl": 0.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends: Batalha por Portal de Baldur",
+    "printing_code": "CLB",
+    "collector_number": "107",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agent%20of%20the%20Iron%20Throne",
+    "checked_at": "2026-08-06T11:12:34.169Z"
+  },
   "32e5339e-9e4f-46f8-b305-f9d6d3ba8bb5": {
     "status": "available",
     "name": "Lotus Petal",

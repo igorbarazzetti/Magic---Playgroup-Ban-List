@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=This%20Town%20Ain't%20Big%20Enough",
     "checked_at": "2026-08-05T20:13:44.817Z"
   },
+  "2577ef8e-d85e-47af-ac34-629f31992751": {
+    "status": "available",
+    "name": "Aether Rift",
+    "price_brl": 1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Invasão",
+    "printing_code": "IN",
+    "collector_number": "227",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Rift",
+    "checked_at": "2026-08-06T10:59:13.746Z"
+  },
   "2583836d-7fd3-47b3-9b69-6814efe54a90": {
     "status": "available",
     "name": "Stirring Bard",

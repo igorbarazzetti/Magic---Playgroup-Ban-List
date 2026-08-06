@@ -1,4 +1,16 @@
 {
+  "062c8e40-dea7-4df7-bcaa-f1d696fe61c3": {
+    "status": "available",
+    "name": "Aetherjacket",
+    "price_brl": 0.06,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Aetherdrift",
+    "printing_code": "DFT",
+    "collector_number": "230",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aetherjacket",
+    "checked_at": "2026-08-06T11:03:03.869Z"
+  },
   "0677f49e-f8bf-4349-af52-2ccde9287c2e": {
     "status": "available",
     "name": "Mox Jet",
@@ -10,5 +22,17 @@
     "collector_number": "264",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mox%20Jet",
     "checked_at": "2026-08-05T20:10:05.148Z"
+  },
+  "06f09e5a-5cfb-437f-9dd1-1682d71f4e7f": {
+    "status": "available",
+    "name": "Aetherstorm Roc",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaladesh",
+    "printing_code": "KLD",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aetherstorm%20Roc",
+    "checked_at": "2026-08-06T11:04:43.851Z"
   }
 }

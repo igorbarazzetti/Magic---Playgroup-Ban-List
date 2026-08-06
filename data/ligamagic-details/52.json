@@ -1,4 +1,16 @@
 {
+  "52adc761-1a0a-43d1-a706-41a92bb7880c": {
+    "status": "available",
+    "name": "Afflicted Deserter // Werewolf Ransacker",
+    "price_brl": 0.23,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ascensão das Trevas",
+    "printing_code": "DKA",
+    "collector_number": "81",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Afflicted%20Deserter",
+    "checked_at": "2026-08-06T11:06:54.062Z"
+  },
   "52b88034-bf0f-4d29-b776-40ce421f1107": {
     "status": "available",
     "name": "Sylvan Primordial",

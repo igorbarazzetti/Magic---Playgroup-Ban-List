@@ -1,4 +1,16 @@
 {
+  "61105cb5-d7a1-4021-a006-dd1b947dfa68": {
+    "status": "available",
+    "name": "Aether Sting",
+    "price_brl": 1.29,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Destino de Urza",
+    "printing_code": "UD",
+    "collector_number": "76",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Sting",
+    "checked_at": "2026-08-06T11:00:13.629Z"
+  },
   "61a23402-3244-4b5e-9134-98e1f82eda65": {
     "status": "available",
     "name": "Abstruse Appropriation",
@@ -10,5 +22,17 @@
     "collector_number": "177",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abstruse%20Appropriation",
     "checked_at": "2026-08-06T00:14:58.041Z"
+  },
+  "61c89b11-65c9-4fda-bbcd-d84de25df801": {
+    "status": "available",
+    "name": "Aether Hub",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaladesh",
+    "printing_code": "KLD",
+    "collector_number": "242",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Hub",
+    "checked_at": "2026-08-06T10:57:53.635Z"
   }
 }

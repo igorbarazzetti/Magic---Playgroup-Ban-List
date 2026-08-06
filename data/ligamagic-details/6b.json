@@ -34,5 +34,17 @@
     "collector_number": "113",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerial%20Predation",
     "checked_at": "2026-08-06T07:17:55.187Z"
+  },
+  "6bb24767-687e-4ff6-b7ac-3bf969f4dfeb": {
+    "status": "available",
+    "name": "Aetherflame Wall",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Espiral Temporal",
+    "printing_code": "TS",
+    "collector_number": "142",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aetherflame%20Wall",
+    "checked_at": "2026-08-06T11:02:13.799Z"
   }
 }

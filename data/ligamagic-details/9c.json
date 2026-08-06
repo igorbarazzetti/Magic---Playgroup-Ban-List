@@ -1,0 +1,26 @@
+{
+  "9c462cd8-36f9-4e39-adf3-310ad4d76051": {
+    "status": "available",
+    "name": "Agadeem Occultist",
+    "price_brl": 0.94,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Despertar do Mundo",
+    "printing_code": "WWK",
+    "collector_number": "48",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agadeem%20Occultist",
+    "checked_at": "2026-08-06T11:08:14.035Z"
+  },
+  "9c83979a-b354-4e20-9638-85e8f354da81": {
+    "status": "available",
+    "name": "Aether Helix",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Strixhaven: Escola de Magos",
+    "printing_code": "STX",
+    "collector_number": "162",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Helix",
+    "checked_at": "2026-08-06T10:57:33.544Z"
+  }
+}

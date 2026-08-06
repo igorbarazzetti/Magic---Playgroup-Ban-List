@@ -46,5 +46,29 @@
     "collector_number": "30",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Genesis%20Storm",
     "checked_at": "2026-08-05T20:06:46.953Z"
+  },
+  "80ea63fd-691a-45ba-a4bf-862e5ec2922d": {
+    "status": "available",
+    "name": "Aether Searcher",
+    "price_brl": 0.18,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Conspiracy",
+    "printing_code": "CNS",
+    "collector_number": "53",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Searcher",
+    "checked_at": "2026-08-06T10:59:23.594Z"
+  },
+  "80ecb069-36e2-490d-9f6c-ef553c00e997": {
+    "status": "available",
+    "name": "Aetherblade Agent // Gitaxian Mindstinger",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marcha das Máquinas",
+    "printing_code": "MOM",
+    "collector_number": "88",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aetherblade%20Agent",
+    "checked_at": "2026-08-06T11:01:54.326Z"
   }
 }

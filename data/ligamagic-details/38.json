@@ -1,4 +1,28 @@
 {
+  "3819daab-fe35-4f99-9282-47bd05c7fcd6": {
+    "status": "available",
+    "name": "Affa Guard Hound",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Conspiracy: Take the Crown",
+    "printing_code": "CN2",
+    "collector_number": "81",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Affa%20Guard%20Hound",
+    "checked_at": "2026-08-06T11:06:13.929Z"
+  },
+  "381a3e8e-71dd-48e4-ab62-53478bde4a14": {
+    "status": "available",
+    "name": "Agate-Blade Assassin",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Bloomburrow",
+    "printing_code": "BLB",
+    "collector_number": "82",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agate-Blade%20Assassin",
+    "checked_at": "2026-08-06T11:08:44.035Z"
+  },
   "38477748-bc57-449c-afe1-c5f34caf8eff": {
     "status": "available",
     "name": "Acolyte of Bahamut",

@@ -1,4 +1,16 @@
 {
+  "433a2880-d989-4c40-99fa-0896de341b88": {
+    "status": "available",
+    "name": "Aether Meltdown",
+    "price_brl": 0.06,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaladesh",
+    "printing_code": "KLD",
+    "collector_number": "36",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Meltdown",
+    "checked_at": "2026-08-06T10:58:13.574Z"
+  },
   "43ace4d5-9006-4bad-bd17-3d368c20564d": {
     "status": "available",
     "name": "Aerie Bowmasters",

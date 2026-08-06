@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adamant%20Will",
     "checked_at": "2026-08-06T03:58:52.154Z"
   },
+  "468658bc-19d8-464a-ab8e-d36281680273": {
+    "status": "available",
+    "name": "Ageless Guardian",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Strixhaven: Escola de Magos",
+    "printing_code": "STX",
+    "collector_number": "8",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ageless%20Guardian",
+    "checked_at": "2026-08-06T11:09:44.100Z"
+  },
   "4692740f-be90-459f-8d90-c4ae71771595": {
     "status": "available",
     "name": "Crusade",

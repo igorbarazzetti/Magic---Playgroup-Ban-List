@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Vault%20of%20Whispers",
     "checked_at": "2026-08-05T20:14:47.946Z"
   },
+  "099fd4b3-92fd-4b5f-bb4f-eefa6f09700c": {
+    "status": "available",
+    "name": "Agent of Stromgald",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alianças",
+    "printing_code": "AI",
+    "collector_number": "94",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agent%20of%20Stromgald",
+    "checked_at": "2026-08-06T11:12:14.214Z"
+  },
   "09a70ae8-3859-4a09-901d-dce063fa3b5f": {
     "status": "available",
     "name": "Wasteland",

@@ -10,5 +10,17 @@
     "collector_number": "4",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Emrakul%2C%20the%20Aeons%20Torn",
     "checked_at": "2026-08-05T20:05:46.528Z"
+  },
+  "9023c530-f329-4301-8b24-4cf676194265": {
+    "status": "available",
+    "name": "Ageless Sentinels",
+    "price_brl": 0.17,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Flagelo",
+    "printing_code": "SC",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ageless%20Sentinels",
+    "checked_at": "2026-08-06T11:09:54.114Z"
   }
 }

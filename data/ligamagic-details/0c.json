@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Academy%20Wall",
     "checked_at": "2026-08-06T03:48:41.701Z"
   },
+  "0cd99210-8d34-4112-8e41-7e8c5d2a95b9": {
+    "status": "available",
+    "name": "Aetherplasm",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Pacto das Guildas",
+    "printing_code": "GP",
+    "collector_number": "22",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aetherplasm",
+    "checked_at": "2026-08-06T11:03:34.360Z"
+  },
   "0cf78877-bf08-413c-8ecb-8c3265ac1c4a": {
     "status": "available",
     "name": "Aegis of the Meek",

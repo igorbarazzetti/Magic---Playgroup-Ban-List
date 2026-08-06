@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acquisition%20Octopus",
     "checked_at": "2026-08-06T03:56:12.096Z"
   },
+  "23b2de61-a29c-4a32-b38c-408c723727ce": {
+    "status": "available",
+    "name": "Agency Outfitter",
+    "price_brl": 0.06,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassinato na Mansão Karlov",
+    "printing_code": "MKM",
+    "collector_number": "38",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agency%20Outfitter",
+    "checked_at": "2026-08-06T11:10:14.659Z"
+  },
   "23d4f436-a417-4a26-b5b8-c698f11a186b": {
     "status": "available",
     "name": "Acid Web Spider",

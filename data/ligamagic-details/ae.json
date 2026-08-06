@@ -58,5 +58,17 @@
     "collector_number": "156",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Primeval%20Titan",
     "checked_at": "2026-08-05T20:11:20.412Z"
+  },
+  "aedcde3b-3ed5-443c-a81c-03d785153e55": {
+    "status": "available",
+    "name": "Agent Frank Horrigan",
+    "price_brl": 59.59,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fallout",
+    "printing_code": "PIP",
+    "collector_number": "89",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agent%20Frank%20Horrigan",
+    "checked_at": "2026-08-06T11:10:44.256Z"
   }
 }

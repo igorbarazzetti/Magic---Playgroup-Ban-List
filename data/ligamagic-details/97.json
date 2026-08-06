@@ -34,5 +34,17 @@
     "collector_number": "119",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Accomplished%20Alchemist",
     "checked_at": "2026-08-06T03:50:11.790Z"
+  },
+  "97e7778f-971c-4425-8f6d-f4ff3fae000f": {
+    "status": "available",
+    "name": "Aether Web",
+    "price_brl": 0.02,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Espiral Temporal",
+    "printing_code": "TS",
+    "collector_number": "189",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Web",
+    "checked_at": "2026-08-06T11:01:43.685Z"
   }
 }

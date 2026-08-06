@@ -1,4 +1,16 @@
 {
+  "4b033a0a-c1ae-44d7-9662-72cbbfda024b": {
+    "status": "available",
+    "name": "Aether Spellbomb",
+    "price_brl": 0.43,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mirrodin",
+    "printing_code": "MI",
+    "collector_number": "141",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Spellbomb",
+    "checked_at": "2026-08-06T10:59:53.740Z"
+  },
   "4b515bb0-f275-4400-8032-3173b799ab40": {
     "status": "available",
     "name": "Walking Ballista",

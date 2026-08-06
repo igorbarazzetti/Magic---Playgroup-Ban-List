@@ -1,4 +1,16 @@
 {
+  "14c356aa-178d-4c14-a88e-fbe92ee6d89f": {
+    "status": "available",
+    "name": "Agent Venom",
+    "price_brl": 1.89,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel's Spider-Man",
+    "printing_code": "SPM",
+    "collector_number": "49",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agent%20Venom",
+    "checked_at": "2026-08-06T11:13:24.249Z"
+  },
   "14c3e48b-4c4e-4787-8c50-0e3aee19aa23": {
     "status": "available",
     "name": "Aerith Rescue Mission",

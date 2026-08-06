@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerialephant",
     "checked_at": "2026-08-06T07:18:45.043Z"
   },
+  "203b72d2-a273-49cc-bd10-2fbc07ed2fc8": {
+    "status": "available",
+    "name": "Agents of S.H.I.E.L.D.",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes",
+    "printing_code": "MSH",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agents%20of%20S.H.I.E.L.D.",
+    "checked_at": "2026-08-06T11:13:44.226Z"
+  },
   "205ffa76-ff8e-4405-b21a-42358a9883c2": {
     "status": "available",
     "name": "Active Volcano",
