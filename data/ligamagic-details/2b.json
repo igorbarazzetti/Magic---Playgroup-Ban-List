@@ -34,5 +34,29 @@
     "collector_number": "172",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acceptable%20Losses",
     "checked_at": "2026-08-06T03:49:21.726Z"
+  },
+  "2b80faaf-92fd-4fa0-a3f6-8bb263e7ff1d": {
+    "status": "available",
+    "name": "Akroma, Angel of Fury",
+    "price_brl": 1.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassinato na Mansão Karlov Commander",
+    "printing_code": "MKC",
+    "collector_number": "146",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akroma%2C%20Angel%20of%20Fury",
+    "checked_at": "2026-08-06T18:07:47.339Z"
+  },
+  "2b8ef83b-1a1d-4299-ab69-e9e296bb224d": {
+    "status": "available",
+    "name": "Akrasan Squire",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fragmentos de Alara",
+    "printing_code": "ALA",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akrasan%20Squire",
+    "checked_at": "2026-08-06T18:05:57.233Z"
   }
 }

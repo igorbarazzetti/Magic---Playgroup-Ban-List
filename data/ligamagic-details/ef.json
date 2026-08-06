@@ -1,4 +1,16 @@
 {
+  "ef3fdfea-330d-4948-94ec-67e344b48086": {
+    "status": "available",
+    "name": "Ali Baba",
+    "price_brl": 0.23,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quarta Edição",
+    "printing_code": "4E",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ali%20Baba",
+    "checked_at": "2026-08-06T18:18:57.833Z"
+  },
   "ef86989d-ce80-4e55-aece-7d11710eeffa": {
     "status": "available",
     "name": "Polluted Delta",
@@ -10,6 +22,18 @@
     "collector_number": "239",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Polluted%20Delta",
     "checked_at": "2026-08-05T20:11:05.367Z"
+  },
+  "efae637f-3232-46f2-9839-f3386e2f447d": {
+    "status": "available",
+    "name": "Akoum Flameseeker",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Juramento das Sentinelas",
+    "printing_code": "OGW",
+    "collector_number": "101",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akoum%20Flameseeker",
+    "checked_at": "2026-08-06T18:04:57.195Z"
   },
   "efe9c3e0-7315-408e-9903-9d25a681039b": {
     "status": "available",

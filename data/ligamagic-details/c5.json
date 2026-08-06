@@ -10,5 +10,17 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aegis%20of%20the%20Gods",
     "checked_at": "2026-08-06T07:14:34.853Z"
+  },
+  "c5f50a78-9dc4-4f3c-aa11-b41c8278bc16": {
+    "status": "available",
+    "name": "Akron Legionnaire",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quinta Edição",
+    "printing_code": "5E",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akron%20Legionnaire",
+    "checked_at": "2026-08-06T18:08:57.393Z"
   }
 }

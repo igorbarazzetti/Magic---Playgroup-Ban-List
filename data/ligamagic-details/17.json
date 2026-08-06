@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adventuring%20Gear",
     "checked_at": "2026-08-06T07:12:54.821Z"
   },
+  "17969b71-9612-45ff-b789-1c033f832154": {
+    "status": "available",
+    "name": "Alaborn Trooper",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portal Segunda Era",
+    "printing_code": "PO2",
+    "collector_number": "124",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alaborn%20Trooper",
+    "checked_at": "2026-08-06T18:11:37.490Z"
+  },
   "17b60106-a4c7-410a-8ac3-ec8e74e29a7c": {
     "status": "available",
     "name": "Mystic Sanctuary",
@@ -34,6 +46,18 @@
     "collector_number": "4",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani's%20Last%20Stand",
     "checked_at": "2026-08-06T14:51:12.110Z"
+  },
+  "17ce2c17-b69b-4ebf-9c3c-c64e771af101": {
+    "status": "available",
+    "name": "Alesha, Who Laughs at Fate",
+    "price_brl": 13.39,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Foundations",
+    "printing_code": "FDN",
+    "collector_number": "115",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alesha%2C%20Who%20Laughs%20at%20Fate",
+    "checked_at": "2026-08-06T18:17:07.706Z"
   },
   "17fa98cd-ed8f-483f-9525-7e989a82ebb2": {
     "status": "available",

@@ -1,4 +1,16 @@
 {
+  "05074b68-6b31-4f9f-b3ec-bffe3e7eab47": {
+    "status": "available",
+    "name": "Akoum Hellhound",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Renascer de Zendikar",
+    "printing_code": "ZNR",
+    "collector_number": "133",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akoum%20Hellhound",
+    "checked_at": "2026-08-06T18:05:07.227Z"
+  },
   "050f5733-7c0b-4991-9a6c-7ea12ccf0ca9": {
     "status": "available",
     "name": "Up the Beanstalk",
@@ -34,6 +46,18 @@
     "collector_number": "3",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Afiya%20Grove",
     "checked_at": "2026-08-06T11:07:04.000Z"
+  },
+  "05b6f9e3-9acd-43a6-acff-caa811aaf0a1": {
+    "status": "available",
+    "name": "Akoum Hellkite",
+    "price_brl": 0.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Batalha por Zendikar",
+    "printing_code": "BFZ",
+    "collector_number": "139",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akoum%20Hellkite",
+    "checked_at": "2026-08-06T18:05:17.198Z"
   },
   "05c2dec2-d2f7-4036-b91f-4fccba10a8bb": {
     "status": "available",

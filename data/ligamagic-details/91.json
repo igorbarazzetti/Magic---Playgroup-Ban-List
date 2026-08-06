@@ -10,5 +10,17 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adanto%20Vanguard",
     "checked_at": "2026-08-06T03:59:12.181Z"
+  },
+  "91f95d83-3637-4cf8-af6c-56bc4e4b2591": {
+    "status": "available",
+    "name": "Akki Underling",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Salvadores Kamigawa",
+    "printing_code": "SOK",
+    "collector_number": "93",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akki%20Underling",
+    "checked_at": "2026-08-06T18:03:57.147Z"
   }
 }

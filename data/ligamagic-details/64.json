@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Accelerated%20Evolution",
     "checked_at": "2026-08-06T03:49:01.687Z"
   },
+  "640fa591-ba79-4148-86a6-9de994a9e67c": {
+    "status": "available",
+    "name": "Alabaster Kirin",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Khans de Tarkir",
+    "printing_code": "KTK",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alabaster%20Kirin",
+    "checked_at": "2026-08-06T18:10:17.646Z"
+  },
   "646a2371-54c0-4492-ac2f-20f109d6108c": {
     "status": "available",
     "name": "Monstrous Rage",

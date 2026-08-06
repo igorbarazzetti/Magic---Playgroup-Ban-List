@@ -1,4 +1,16 @@
 {
+  "d981d85c-e97b-4fe7-b415-6e73a3e7e35c": {
+    "status": "available",
+    "name": "Akroan Crusader",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros",
+    "printing_code": "THS",
+    "collector_number": "111",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akroan%20Crusader",
+    "checked_at": "2026-08-06T18:06:17.245Z"
+  },
   "d9ec9a4f-0644-47c5-bc09-1201d5251bde": {
     "status": "available",
     "name": "Aetherwind Basker",

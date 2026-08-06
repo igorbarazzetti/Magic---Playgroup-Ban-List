@@ -1,4 +1,16 @@
 {
+  "8a206c6f-4f6f-4c31-9dab-d73a57db989c": {
+    "status": "available",
+    "name": "Akroan Sergeant",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic Origens",
+    "printing_code": "ORI",
+    "collector_number": "130",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akroan%20Sergeant",
+    "checked_at": "2026-08-06T18:07:27.292Z"
+  },
   "8a2e53f9-8100-488f-8504-b59e9bd1cc29": {
     "status": "available",
     "name": "Rite of Flame",
@@ -46,6 +58,18 @@
     "collector_number": "73",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=About%20Face",
     "checked_at": "2026-08-06T00:11:57.100Z"
+  },
+  "8a8b032e-90b7-4782-b854-b575f316d641": {
+    "status": "available",
+    "name": "Alabaster Leech",
+    "price_brl": 0.45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Invasão",
+    "printing_code": "IN",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alabaster%20Leech",
+    "checked_at": "2026-08-06T18:10:27.404Z"
   },
   "8a9525f4-74a6-44f0-a1b1-d57937d7783b": {
     "status": "available",

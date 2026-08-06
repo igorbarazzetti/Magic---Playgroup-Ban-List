@@ -1,4 +1,16 @@
 {
+  "be662217-41c2-4caa-89da-ae7f6f817c34": {
+    "status": "available",
+    "name": "Alesha's Vanguard",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Destino Reescrito",
+    "printing_code": "FRF",
+    "collector_number": "60",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alesha's%20Vanguard",
+    "checked_at": "2026-08-06T18:16:58.395Z"
+  },
   "be89a032-8ade-4048-b95d-76e958dca330": {
     "status": "available",
     "name": "Aether Herder",

@@ -1,4 +1,16 @@
 {
+  "0f019387-4684-493f-80c4-de6023096306": {
+    "status": "available",
+    "name": "Alert Shu Infantry",
+    "price_brl": 22,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portal Three Kingdoms",
+    "printing_code": "P3K",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alert%20Shu%20Infantry",
+    "checked_at": "2026-08-06T18:16:37.718Z"
+  },
   "0f071f64-b69b-4fa0-999c-5028429e3cfb": {
     "status": "available",
     "name": "Bridge from Below",

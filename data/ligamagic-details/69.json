@@ -1,4 +1,16 @@
 {
+  "6969a7e2-6866-4001-a139-24b3be13deae": {
+    "status": "available",
+    "name": "Alesha, Who Smiles at Death",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominária Unida Commander",
+    "printing_code": "DMC",
+    "collector_number": "118",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alesha%2C%20Who%20Smiles%20at%20Death",
+    "checked_at": "2026-08-06T18:17:18.104Z"
+  },
   "697bcfe1-ecbf-42a1-bfc7-0766d48ca56b": {
     "status": "available",
     "name": "Dockside Extortionist",
@@ -34,6 +46,18 @@
     "collector_number": "265",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=The%20Tabernacle%20at%20Pendrell%20Vale",
     "checked_at": "2026-08-05T20:13:41.758Z"
+  },
+  "69c4429e-a8a4-49c3-bb43-9dce4cc6b90a": {
+    "status": "available",
+    "name": "Alaborn Grenadier",
+    "price_brl": 1.62,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portal Segunda Era",
+    "printing_code": "PO2",
+    "collector_number": "122",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alaborn%20Grenadier",
+    "checked_at": "2026-08-06T18:11:17.449Z"
   },
   "69e12b1f-0fd9-43a9-b3db-fe08290442c6": {
     "status": "available",

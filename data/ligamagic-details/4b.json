@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Spellbomb",
     "checked_at": "2026-08-06T10:59:53.740Z"
   },
+  "4b4c76e1-c480-4d10-93d4-483ef2debc4b": {
+    "status": "available",
+    "name": "Akki Ronin",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kamigawa: Dinastia Neon",
+    "printing_code": "NEO",
+    "collector_number": "131",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akki%20Ronin",
+    "checked_at": "2026-08-06T18:03:37.134Z"
+  },
   "4b515bb0-f275-4400-8032-3173b799ab40": {
     "status": "available",
     "name": "Walking Ballista",

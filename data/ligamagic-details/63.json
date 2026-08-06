@@ -34,5 +34,17 @@
     "collector_number": "170",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Sowing%20Mycospawn",
     "checked_at": "2026-08-05T20:12:57.145Z"
+  },
+  "63d50d5e-56de-44c4-b906-b2a21a56e3f3": {
+    "status": "available",
+    "name": "Alania, Divergent Storm",
+    "price_brl": 0.39,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Bloomburrow",
+    "printing_code": "BLB",
+    "collector_number": "204",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alania%2C%20Divergent%20Storm",
+    "checked_at": "2026-08-06T18:13:07.589Z"
   }
 }

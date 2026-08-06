@@ -1,4 +1,16 @@
 {
+  "ea7a8acb-f01f-4a69-9b3c-954d8f0d3155": {
+    "status": "available",
+    "name": "Alabaster Mage",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Double Masters",
+    "printing_code": "2XM",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alabaster%20Mage",
+    "checked_at": "2026-08-06T18:10:37.444Z"
+  },
   "ea93acc8-0c1f-42a2-bed3-f385d210d58f": {
     "status": "available",
     "name": "Aegis of Honor",

@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Air%20Response%20Unit",
     "checked_at": "2026-08-06T14:46:51.909Z"
   },
+  "18e96674-6fd8-4046-a3fe-7ba80138d85d": {
+    "status": "available",
+    "name": "Alarum",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Miragem",
+    "printing_code": "MR",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alarum",
+    "checked_at": "2026-08-06T18:13:27.579Z"
+  },
   "18f34bfd-7675-49df-91ea-695c510cd3c3": {
     "status": "available",
     "name": "Adamaro, First to Desire",

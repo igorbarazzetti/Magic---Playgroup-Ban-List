@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=A%20Tale%20for%20the%20Ages",
     "checked_at": "2026-08-06T00:02:46.713Z"
   },
+  "683a06b6-af77-440f-81b9-8958597a7324": {
+    "status": "available",
+    "name": "Alert Heedbonder",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ikoria: Terra de Colossos",
+    "printing_code": "IKO",
+    "collector_number": "218",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alert%20Heedbonder",
+    "checked_at": "2026-08-06T18:16:27.703Z"
+  },
   "686f4a37-b5e4-46d4-9e0e-11794b2d12cd": {
     "status": "available",
     "name": "Golgari Grave-Troll",

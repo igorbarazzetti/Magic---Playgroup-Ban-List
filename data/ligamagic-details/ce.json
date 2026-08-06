@@ -10,5 +10,17 @@
     "collector_number": "139",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Additive%20Evolution",
     "checked_at": "2026-08-06T07:07:34.491Z"
+  },
+  "ce36a450-68a6-4519-a9f0-0e3b772054eb": {
+    "status": "available",
+    "name": "Alania's Pathmaker",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Bloomburrow",
+    "printing_code": "BLB",
+    "collector_number": "123",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alania's%20Pathmaker",
+    "checked_at": "2026-08-06T18:13:18.291Z"
   }
 }

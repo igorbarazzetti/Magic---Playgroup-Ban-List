@@ -11,6 +11,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adept%20Watershaper",
     "checked_at": "2026-08-06T07:08:24.579Z"
   },
+  "6039b9b7-e49a-4ea3-887c-a17dd502d63f": {
+    "status": "available",
+    "name": "Akroan Mastiff",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Viagem para Nyx",
+    "printing_code": "JOU",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akroan%20Mastiff",
+    "checked_at": "2026-08-06T18:07:07.266Z"
+  },
+  "60875e8e-fc71-4eb3-8c2d-70f2fd1f11ae": {
+    "status": "available",
+    "name": "Alexander Clamilton",
+    "price_brl": 0.71,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unsanctioned",
+    "printing_code": "UND",
+    "collector_number": "16",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alexander%20Clamilton",
+    "checked_at": "2026-08-06T18:17:38.234Z"
+  },
   "60c60923-ff1b-43f7-8768-731499fcffc9": {
     "status": "available",
     "name": "Oko, Thief of Crowns",

@@ -23,6 +23,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Access%20Denied",
     "checked_at": "2026-08-06T03:49:31.679Z"
   },
+  "354fecd1-2371-49e3-81c6-7e47728dbb1f": {
+    "status": "available",
+    "name": "Akoum Refuge",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Anthology",
+    "printing_code": "CMA2",
+    "collector_number": "238",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akoum%20Refuge",
+    "checked_at": "2026-08-06T18:05:27.219Z"
+  },
+  "357ed28b-899f-404b-94ff-6fb2ef81d87b": {
+    "status": "available",
+    "name": "Alchemist's Refuge",
+    "price_brl": 5.69,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven Commander",
+    "printing_code": "SOC",
+    "collector_number": "360",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alchemist's%20Refuge",
+    "checked_at": "2026-08-06T18:14:57.653Z"
+  },
   "35bf67e0-8141-4664-b762-2c613353e1eb": {
     "status": "available",
     "name": "Acolyte of the Inferno",

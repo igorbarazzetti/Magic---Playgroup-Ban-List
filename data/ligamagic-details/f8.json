@@ -1,4 +1,16 @@
 {
+  "f8273146-f2e5-40ec-ba96-c0a4192caec8": {
+    "status": "available",
+    "name": "Alaborn Cavalier",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Duel Decks: Knights vs. Dragons",
+    "printing_code": "DDG",
+    "collector_number": "18",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alaborn%20Cavalier",
+    "checked_at": "2026-08-06T18:11:07.447Z"
+  },
   "f84c30e7-2ea8-43ff-9356-1f907558cfd9": {
     "status": "available",
     "name": "Aegis Turtle",

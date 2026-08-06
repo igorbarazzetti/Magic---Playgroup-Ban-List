@@ -1,4 +1,16 @@
 {
+  "ca349ba9-b5ea-48e6-a617-c9b7f2708853": {
+    "status": "available",
+    "name": "Alena, Kessig Trapper",
+    "price_brl": 0.27,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends",
+    "printing_code": "CMR",
+    "collector_number": "160",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alena%2C%20Kessig%20Trapper",
+    "checked_at": "2026-08-06T18:16:17.711Z"
+  },
   "ca7d093c-0533-493f-9ad3-8af30118fbfc": {
     "status": "available",
     "name": "Abraded Bluffs",
@@ -22,5 +34,17 @@
     "collector_number": "2",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abdel%20Adrian%2C%20Gorion's%20Ward",
     "checked_at": "2026-08-06T00:07:36.887Z"
+  },
+  "caeb4ec1-a8ba-4ac4-ad32-edbc671e5a39": {
+    "status": "available",
+    "name": "Alacrian Jaguar",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Aetherdrift",
+    "printing_code": "DFT",
+    "collector_number": "152",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alacrian%20Jaguar",
+    "checked_at": "2026-08-06T18:12:17.517Z"
   }
 }

@@ -34,5 +34,17 @@
     "collector_number": "58",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Academy%20Ruins",
     "checked_at": "2026-08-06T03:48:31.675Z"
+  },
+  "a3fc6888-0a4b-4e1d-b709-042b8b6b1a04": {
+    "status": "available",
+    "name": "Akroma's Blessing",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Investida",
+    "printing_code": "ON",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akroma's%20Blessing",
+    "checked_at": "2026-08-06T18:08:07.304Z"
   }
 }

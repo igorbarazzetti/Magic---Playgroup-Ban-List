@@ -10,5 +10,29 @@
     "collector_number": "70",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Demonic%20Consultation",
     "checked_at": "2026-08-05T20:05:10.431Z"
+  },
+  "9a410f83-ed92-4b55-834a-c7cec8f5d1e2": {
+    "status": "available",
+    "name": "Aladdin",
+    "price_brl": 1.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Chronicles",
+    "printing_code": "CH",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aladdin",
+    "checked_at": "2026-08-06T18:12:27.545Z"
+  },
+  "9aaf0df7-5e2d-4f49-a8cb-66523be15ad6": {
+    "status": "available",
+    "name": "Alchemist's Greeting",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad Remastered",
+    "printing_code": "INR",
+    "collector_number": "140",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alchemist's%20Greeting",
+    "checked_at": "2026-08-06T18:14:47.678Z"
   }
 }

@@ -1,4 +1,16 @@
 {
+  "271d8db6-8606-46d7-9812-75aa22fcfd8e": {
+    "status": "available",
+    "name": "Alchemist's Gambit",
+    "price_brl": 1.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Voto Carmesim",
+    "printing_code": "VOW",
+    "collector_number": "140",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alchemist's%20Gambit",
+    "checked_at": "2026-08-06T18:14:27.593Z"
+  },
   "272016e1-df1e-4376-9851-af8b1ecba2f4": {
     "status": "available",
     "name": "Tempest Efreet",

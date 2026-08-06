@@ -22,5 +22,17 @@
     "collector_number": "23",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=_____",
     "checked_at": "2026-08-06T00:00:56.825Z"
+  },
+  "4e698713-6203-44f2-b438-1b26b951536d": {
+    "status": "available",
+    "name": "Alchemist's Gift",
+    "price_brl": 0.06,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2021",
+    "printing_code": "M21",
+    "collector_number": "87",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alchemist's%20Gift",
+    "checked_at": "2026-08-06T18:14:37.641Z"
   }
 }

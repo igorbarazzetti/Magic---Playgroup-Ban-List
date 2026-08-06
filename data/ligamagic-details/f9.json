@@ -22,5 +22,17 @@
     "collector_number": "203",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abrade",
     "checked_at": "2026-08-06T00:12:07.222Z"
+  },
+  "f9f52651-cc64-48c5-bc18-cd5f646dfb1f": {
+    "status": "available",
+    "name": "Alabaster Wall",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Máscaras de Mercádia",
+    "printing_code": "MM",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alabaster%20Wall",
+    "checked_at": "2026-08-06T18:10:57.441Z"
   }
 }

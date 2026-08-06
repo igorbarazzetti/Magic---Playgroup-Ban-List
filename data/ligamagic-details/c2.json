@@ -22,5 +22,17 @@
     "collector_number": "136",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Scapeshift",
     "checked_at": "2026-08-05T20:11:59.534Z"
+  },
+  "c2531360-61f8-4edc-886b-408811a0639d": {
+    "status": "available",
+    "name": "Alhammarret, High Arbiter",
+    "price_brl": 0.23,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic Origens",
+    "printing_code": "ORI",
+    "collector_number": "43",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alhammarret%2C%20High%20Arbiter",
+    "checked_at": "2026-08-06T18:18:27.943Z"
   }
 }

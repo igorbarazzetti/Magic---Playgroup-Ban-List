@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Sting",
     "checked_at": "2026-08-06T11:00:13.629Z"
   },
+  "61473d8e-45f1-4753-918d-04918a466031": {
+    "status": "available",
+    "name": "Alchor's Tomb",
+    "price_brl": 74.24,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Legends",
+    "printing_code": "LG",
+    "collector_number": "11",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alchor's%20Tomb",
+    "checked_at": "2026-08-06T18:15:37.666Z"
+  },
   "61a23402-3244-4b5e-9134-98e1f82eda65": {
     "status": "available",
     "name": "Abstruse Appropriation",
@@ -34,5 +46,17 @@
     "collector_number": "242",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Hub",
     "checked_at": "2026-08-06T10:57:53.635Z"
+  },
+  "61daa88d-fca4-4019-97f3-568346157ba6": {
+    "status": "available",
+    "name": "Alaborn Musketeer",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portal Segunda Era",
+    "printing_code": "PO2",
+    "collector_number": "123",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alaborn%20Musketeer",
+    "checked_at": "2026-08-06T18:11:28.005Z"
   }
 }

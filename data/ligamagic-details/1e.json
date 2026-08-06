@@ -1,4 +1,16 @@
 {
+  "1e048c15-50d6-4313-880a-e04348952a51": {
+    "status": "available",
+    "name": "Alaundo the Seer",
+    "price_brl": 0.18,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends: Batalha por Portal de Baldur",
+    "printing_code": "CLB",
+    "collector_number": "264",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alaundo%20the%20Seer",
+    "checked_at": "2026-08-06T18:13:37.632Z"
+  },
   "1e21e57e-3bc9-41a8-9746-57b583a5ad63": {
     "status": "available",
     "name": "Adipose Offspring",

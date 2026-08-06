@@ -58,5 +58,17 @@
     "collector_number": "623",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aggressive%20Instinct",
     "checked_at": "2026-08-06T14:40:01.627Z"
+  },
+  "d1d719e9-9c02-40cf-8849-91a5c120a516": {
+    "status": "available",
+    "name": "Alabaster Host Intercessor",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marcha das Máquinas",
+    "printing_code": "MOM",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alabaster%20Host%20Intercessor",
+    "checked_at": "2026-08-06T18:09:57.393Z"
   }
 }

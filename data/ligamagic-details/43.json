@@ -46,5 +46,17 @@
     "collector_number": "122",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aggressive%20Urge",
     "checked_at": "2026-08-06T14:40:51.686Z"
+  },
+  "43f81514-e812-4e17-9b1a-704c136d8ffd": {
+    "status": "available",
+    "name": "Al Bhed Salvagers",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY",
+    "printing_code": "FIN",
+    "collector_number": "88",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Al%20Bhed%20Salvagers",
+    "checked_at": "2026-08-06T18:09:37.939Z"
   }
 }

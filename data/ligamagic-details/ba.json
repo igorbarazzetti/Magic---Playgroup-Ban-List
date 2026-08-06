@@ -22,5 +22,17 @@
     "collector_number": "81",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Academy%20Elite",
     "checked_at": "2026-08-06T03:47:31.660Z"
+  },
+  "baea7cc5-15ec-4229-ad8b-d4b34c2e21e8": {
+    "status": "available",
+    "name": "Akki Scrapchomper",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marcha das Máquinas",
+    "printing_code": "MOM",
+    "collector_number": "130",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akki%20Scrapchomper",
+    "checked_at": "2026-08-06T18:03:47.401Z"
   }
 }

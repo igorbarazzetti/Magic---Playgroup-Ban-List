@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Tide",
     "checked_at": "2026-08-06T11:01:03.688Z"
   },
+  "2fcca686-03c8-4407-9f9f-2b7462470044": {
+    "status": "available",
+    "name": "Alabaster Potion",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quinta Edição",
+    "printing_code": "5E",
+    "collector_number": "7",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alabaster%20Potion",
+    "checked_at": "2026-08-06T18:10:48.190Z"
+  },
   "2fdc0d15-ecb4-4a6d-be77-7a3fca188c9c": {
     "status": "available",
     "name": "Adaptive Gemguard",

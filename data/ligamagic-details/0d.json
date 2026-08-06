@@ -1,4 +1,16 @@
 {
+  "0d0d97dd-2653-4d37-b475-ac3b50c5ee53": {
+    "status": "available",
+    "name": "Alaborn Zealot",
+    "price_brl": 5.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portal Segunda Era",
+    "printing_code": "PO2",
+    "collector_number": "126",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alaborn%20Zealot",
+    "checked_at": "2026-08-06T18:11:57.750Z"
+  },
   "0d6b89dc-23fb-48e9-a54b-cea2838ae7c8": {
     "status": "available",
     "name": "Grief",

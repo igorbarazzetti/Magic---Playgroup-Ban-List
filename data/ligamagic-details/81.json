@@ -10,5 +10,17 @@
     "collector_number": "134",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ainok%20Wayfarer",
     "checked_at": "2026-08-06T14:45:41.878Z"
+  },
+  "81c6c4f0-81ad-463c-a42b-60a73e6d70f3": {
+    "status": "available",
+    "name": "Alexios, Deimos of Kosmos",
+    "price_brl": 1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassin's Creed",
+    "printing_code": "ACR",
+    "collector_number": "33",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alexios%2C%20Deimos%20of%20Kosmos",
+    "checked_at": "2026-08-06T18:18:07.790Z"
   }
 }

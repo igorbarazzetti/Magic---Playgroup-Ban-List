@@ -58,5 +58,17 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abiding%20Grace",
     "checked_at": "2026-08-06T00:09:06.960Z"
+  },
+  "f4e8be6f-2a1f-47b2-a4d8-7e576e25ab60": {
+    "status": "available",
+    "name": "Akroan Skyguard",
+    "price_brl": 0.24,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nascidos dos Deuses",
+    "printing_code": "BNG",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akroan%20Skyguard",
+    "checked_at": "2026-08-06T18:07:37.300Z"
   }
 }

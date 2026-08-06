@@ -1,4 +1,16 @@
 {
+  "8d0213d7-9e25-49d2-93fa-1d346cb2e869": {
+    "status": "available",
+    "name": "Akroan Horse",
+    "price_brl": 0.18,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2016",
+    "printing_code": "C16",
+    "collector_number": "241",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akroan%20Horse",
+    "checked_at": "2026-08-06T18:06:37.264Z"
+  },
   "8dedb9a7-0afa-4dff-b124-2344c170f11a": {
     "status": "available",
     "name": "Abaddon the Despoiler",

@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Advantageous%20Proclamation",
     "checked_at": "2026-08-05T20:02:40.025Z"
   },
+  "8651da8e-9b2c-4530-a521-aea490ad88d4": {
+    "status": "available",
+    "name": "Alchemist's Retrieval",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Voto Carmesim",
+    "printing_code": "VOW",
+    "collector_number": "47",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alchemist's%20Retrieval",
+    "checked_at": "2026-08-06T18:15:08.369Z"
+  },
   "866fc4b9-f661-444b-b7fd-929814dbc69d": {
     "status": "available",
     "name": "Abzan Skycaptain",

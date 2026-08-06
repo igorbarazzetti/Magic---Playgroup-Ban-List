@@ -22,5 +22,17 @@
     "collector_number": "62",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Disciple%20of%20the%20Vault",
     "checked_at": "2026-08-05T20:05:19.459Z"
+  },
+  "c8deef08-fcf2-41e1-8aeb-aa4e0af147ca": {
+    "status": "available",
+    "name": "Alharu, Solemn Ritualist",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends",
+    "printing_code": "CMR",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alharu%2C%20Solemn%20Ritualist",
+    "checked_at": "2026-08-06T18:18:47.892Z"
   }
 }

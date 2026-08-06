@@ -11,6 +11,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ace's%20Baseball%20Bat",
     "checked_at": "2026-08-06T03:52:21.850Z"
   },
+  "3f60de36-ed63-4d08-a012-fc16e91da46d": {
+    "status": "available",
+    "name": "Alexi, Zephyr Mage",
+    "price_brl": 0.85,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Profecia",
+    "printing_code": "PR",
+    "collector_number": "28",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alexi%2C%20Zephyr%20Mage",
+    "checked_at": "2026-08-06T18:17:57.814Z"
+  },
+  "3fa2d51c-d549-4287-ac3b-76bc72bcd8bc": {
+    "status": "available",
+    "name": "Alacrian Armory",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Aetherdrift",
+    "printing_code": "DFT",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alacrian%20Armory",
+    "checked_at": "2026-08-06T18:12:07.535Z"
+  },
   "3fa5e109-4a67-4523-8183-90e48a906400": {
     "status": "available",
     "name": "Agent of Erebos",

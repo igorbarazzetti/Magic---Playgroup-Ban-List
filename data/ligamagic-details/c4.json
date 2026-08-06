@@ -1,4 +1,16 @@
 {
+  "c4229cc8-11e5-4221-b00d-86969701e21b": {
+    "status": "available",
+    "name": "Alesha's Legacy",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm",
+    "printing_code": "TDM",
+    "collector_number": "72",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alesha's%20Legacy",
+    "checked_at": "2026-08-06T18:16:47.805Z"
+  },
   "c469133e-174d-476b-b135-bbf15e415e72": {
     "status": "available",
     "name": "Aggressive Negotiations",

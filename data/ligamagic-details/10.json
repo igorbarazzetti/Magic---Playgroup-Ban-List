@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abyssal%20Nightstalker",
     "checked_at": "2026-08-06T03:44:12.255Z"
   },
+  "107f204c-9fd3-490d-8887-be63d14fc6a4": {
+    "status": "available",
+    "name": "Akroma, Angel of Wrath",
+    "price_brl": 21.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mystery Booster 2",
+    "printing_code": "MB2",
+    "collector_number": "10",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akroma%2C%20Angel%20of%20Wrath",
+    "checked_at": "2026-08-06T18:07:57.353Z"
+  },
   "108ae90a-50fa-4cfd-b751-d630e41425fe": {
     "status": "available",
     "name": "Wrenn and Six",
@@ -46,6 +58,18 @@
     "collector_number": "242",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=A.I.M.%20Synthoids",
     "checked_at": "2026-08-06T00:01:56.991Z"
+  },
+  "10ab3102-43a3-4c60-8641-2c5a7c1e29c2": {
+    "status": "available",
+    "name": "Akoum Firebird",
+    "price_brl": 0.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Batalha por Zendikar",
+    "printing_code": "BFZ",
+    "collector_number": "138",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akoum%20Firebird",
+    "checked_at": "2026-08-06T18:04:47.519Z"
   },
   "10d13ff6-c4d0-4753-8939-a8a90f0e92bb": {
     "status": "available",

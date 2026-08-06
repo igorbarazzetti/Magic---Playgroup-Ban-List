@@ -1,4 +1,16 @@
 {
+  "5a2dfff5-9dba-42f5-bcca-918c16f23807": {
+    "status": "available",
+    "name": "Alchemist's Talent",
+    "price_brl": 35.88,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Bloomburrow Commander",
+    "printing_code": "BLC",
+    "collector_number": "22",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alchemist's%20Talent",
+    "checked_at": "2026-08-06T18:15:18.206Z"
+  },
   "5a46ad2a-35b1-4dd5-b7c3-fec36b7c67ab": {
     "status": "available",
     "name": "Sinkhole",

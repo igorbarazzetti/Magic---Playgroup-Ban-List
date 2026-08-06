@@ -1,4 +1,16 @@
 {
+  "eb448589-28e1-49d4-ba3e-7ddb4341fdc5": {
+    "status": "available",
+    "name": "Akoum Battlesinger",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Despertar do Mundo",
+    "printing_code": "WWK",
+    "collector_number": "71",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akoum%20Battlesinger",
+    "checked_at": "2026-08-06T18:04:27.150Z"
+  },
   "eb62aa4b-c11b-4195-ae85-cff8f78ce17b": {
     "status": "available",
     "name": "Advent of the Wurm",

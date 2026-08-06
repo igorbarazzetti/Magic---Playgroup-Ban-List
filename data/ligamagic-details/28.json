@@ -1,4 +1,16 @@
 {
+  "2844d274-cb60-46c1-a73b-e763c633e496": {
+    "status": "available",
+    "name": "Alchemist's Assistant",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm",
+    "printing_code": "TDM",
+    "collector_number": "71",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alchemist's%20Assistant",
+    "checked_at": "2026-08-06T18:14:17.909Z"
+  },
   "287cd5e8-51e2-42a4-a139-c112ff89706d": {
     "status": "available",
     "name": "Adarkar Unicorn",

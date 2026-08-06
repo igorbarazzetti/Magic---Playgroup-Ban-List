@@ -22,5 +22,17 @@
     "collector_number": "75",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agency%20Coroner",
     "checked_at": "2026-08-06T11:10:04.202Z"
+  },
+  "36d1a46e-44ac-4a65-a93c-8d6ab5c31cbf": {
+    "status": "available",
+    "name": "Akoum Stonewaker",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Batalha por Zendikar",
+    "printing_code": "BFZ",
+    "collector_number": "140",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akoum%20Stonewaker",
+    "checked_at": "2026-08-06T18:05:37.192Z"
   }
 }

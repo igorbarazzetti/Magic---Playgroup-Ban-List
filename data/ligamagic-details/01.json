@@ -1,4 +1,28 @@
 {
+  "01443d75-3f86-45c0-81fa-fbf1b3175d4f": {
+    "status": "available",
+    "name": "Akroan Line Breaker",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Viagem para Nyx",
+    "printing_code": "JOU",
+    "collector_number": "88",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akroan%20Line%20Breaker",
+    "checked_at": "2026-08-06T18:06:57.314Z"
+  },
+  "01cd52f9-7fac-4396-bec7-d06bf683e011": {
+    "status": "available",
+    "name": "Akki Rockspeaker",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Campeões de Kamigawa",
+    "printing_code": "CHK",
+    "collector_number": "154",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akki%20Rockspeaker",
+    "checked_at": "2026-08-06T18:03:27.153Z"
+  },
   "01ed9139-293d-4477-a145-3c6fe59266c7": {
     "status": "available",
     "name": "Airship Engine Room",

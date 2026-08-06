@@ -1,4 +1,16 @@
 {
+  "7810915f-df4d-445a-8ba8-fe6ed3abf1ae": {
+    "status": "available",
+    "name": "Aladdin's Ring",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nona Edição - Kit Básico",
+    "printing_code": "9E",
+    "collector_number": "286",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aladdin's%20Ring",
+    "checked_at": "2026-08-06T18:12:47.611Z"
+  },
   "78a7bb30-fc60-410c-b086-862b5521c1aa": {
     "status": "available",
     "name": "Admonition Angel",

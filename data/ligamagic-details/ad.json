@@ -1,4 +1,16 @@
 {
+  "ad172d4e-febf-4844-9544-861d03e27ab5": {
+    "status": "available",
+    "name": "Alabaster Host Sanctifier",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marcha das Máquinas",
+    "printing_code": "MOM",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alabaster%20Host%20Sanctifier",
+    "checked_at": "2026-08-06T18:10:07.427Z"
+  },
   "adc1f3b4-cce7-42c9-a208-dbab1d1924f5": {
     "status": "available",
     "name": "Cloud of Faeries",

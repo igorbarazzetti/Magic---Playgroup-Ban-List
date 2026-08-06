@@ -1,4 +1,16 @@
 {
+  "02079e18-ac14-4255-95c4-741eb76c4799": {
+    "status": "available",
+    "name": "Albino Troll",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Duel Decks Anthology: Garruk vs. Liliana",
+    "printing_code": "DDAGVL",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Albino%20Troll",
+    "checked_at": "2026-08-06T18:13:47.629Z"
+  },
   "02090581-61aa-4348-ad57-451be8ee91c2": {
     "status": "available",
     "name": "Ponder",

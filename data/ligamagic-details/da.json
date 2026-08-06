@@ -1,4 +1,16 @@
 {
+  "da4cab2d-0068-440f-ba7c-f2d4e5fa976e": {
+    "status": "available",
+    "name": "Aleatory",
+    "price_brl": 0.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Miragem",
+    "printing_code": "MR",
+    "collector_number": "7",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aleatory",
+    "checked_at": "2026-08-06T18:15:47.685Z"
+  },
   "dae20bcd-dc24-4f9d-9400-a6f013b49f14": {
     "status": "available",
     "name": "Agent Phil Coulson",

@@ -1,4 +1,16 @@
 {
+  "7020dc51-8271-40a3-9c4c-ebd40c0b08b2": {
+    "status": "available",
+    "name": "Algae Gharial",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fragmentos de Alara",
+    "printing_code": "ALA",
+    "collector_number": "123",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Algae%20Gharial",
+    "checked_at": "2026-08-06T18:18:17.813Z"
+  },
   "70235727-e330-46fa-b057-ddbb55cd1ac3": {
     "status": "available",
     "name": "Adventure Awaits",

@@ -1,4 +1,16 @@
 {
+  "f574bd9f-4246-42cb-bf4e-d2888daa44c9": {
+    "status": "available",
+    "name": "Alchemist's Vial",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic Origens",
+    "printing_code": "ORI",
+    "collector_number": "220",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alchemist's%20Vial",
+    "checked_at": "2026-08-06T18:15:27.667Z"
+  },
   "f5af0d1b-531e-4053-848a-5e0fa1022f9a": {
     "status": "available",
     "name": "Accomplished Automaton",

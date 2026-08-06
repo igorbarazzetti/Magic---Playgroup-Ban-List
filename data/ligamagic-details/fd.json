@@ -10,5 +10,17 @@
     "collector_number": "196",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=A%20Realm%20Reborn",
     "checked_at": "2026-08-06T00:02:36.690Z"
+  },
+  "fd949f82-fc10-4e37-8aa9-6c7569fe3c55": {
+    "status": "available",
+    "name": "Akroma's Will",
+    "price_brl": 74.81,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven: Mystical Archive",
+    "printing_code": "SOA",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akroma's%20Will",
+    "checked_at": "2026-08-06T18:08:37.330Z"
   }
 }

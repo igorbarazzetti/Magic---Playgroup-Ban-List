@@ -1,4 +1,16 @@
 {
+  "e52eb1a6-fff1-4a47-b434-31a74d76231c": {
+    "status": "available",
+    "name": "Alexi's Cloak",
+    "price_brl": 0.29,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Profecia",
+    "printing_code": "PR",
+    "collector_number": "29",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alexi's%20Cloak",
+    "checked_at": "2026-08-06T18:17:47.770Z"
+  },
   "e5df4597-1647-4ac2-bdb3-a517598d1431": {
     "status": "available",
     "name": "Summer Bloom",
@@ -10,6 +22,18 @@
     "collector_number": "133",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Summer%20Bloom",
     "checked_at": "2026-08-05T20:13:08.661Z"
+  },
+  "e5e8e116-10fe-48b0-b3d8-6edb39bd5f90": {
+    "status": "available",
+    "name": "Alibou, Ancient Witness",
+    "price_brl": 5.64,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Edge of Eternities Commander",
+    "printing_code": "EOC",
+    "collector_number": "113",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alibou%2C%20Ancient%20Witness",
+    "checked_at": "2026-08-06T18:19:18.424Z"
   },
   "e5f96482-4bae-4d1b-97b2-dcc09676eb6e": {
     "status": "available",
