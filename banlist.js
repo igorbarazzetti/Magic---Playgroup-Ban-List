@@ -1032,7 +1032,9 @@ function renderModalDetails(card, side = 0) {
   const markModalLoaded = () => modalImage.classList.add('is-loaded');
   if (modalImage.complete && modalImage.naturalWidth) markModalLoaded(); else modalImage.addEventListener('load', markModalLoaded, { once: true });
   $('modalMana').innerHTML = formatRuleText(manaCost).replace(/\{([^}]+)\}/g, (_match, symbol) => manaSymbolImage(symbol));
-  $('modalFormats').innerHTML = card.formats.map((key) => `<span class="format-badge">${escapeHtml(formats.find((format) => format.key === key)?.label || key)}</span>`).join('');
+  const bannedFormats = Array.isArray(card.formats) ? card.formats : [];
+  $('modalBanStatus').hidden = bannedFormats.length === 0;
+  $('modalFormats').innerHTML = bannedFormats.map((key) => `<span class="format-badge">${escapeHtml(formats.find((format) => format.key === key)?.label || key)}</span>`).join('');
   $('modalScryfall').href = card.scryfall_uri || `https://scryfall.com/search?q=${encodeURIComponent(card.name)}`;
 
   renderKvRows('modalMeta', [
