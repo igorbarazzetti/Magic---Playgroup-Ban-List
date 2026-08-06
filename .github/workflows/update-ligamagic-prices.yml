@@ -25,7 +25,7 @@ concurrency:
 
 jobs:
   collect:
-    runs-on: windows-latest
+    runs-on: macos-latest
     timeout-minutes: 45
     steps:
       - name: Baixar o repositório
