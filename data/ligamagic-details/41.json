@@ -1,4 +1,16 @@
 {
+  "4137a22c-f793-4e27-a9b2-72740a6e2121": {
+    "status": "available",
+    "name": "Abzan Charm",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Khans de Tarkir",
+    "printing_code": "KTK",
+    "collector_number": "161",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abzan%20Charm",
+    "checked_at": "2026-08-06T03:45:41.646Z"
+  },
   "41785f7b-3d02-4b7f-86ff-b381f626142e": {
     "status": "available",
     "name": "Absolute Grace",

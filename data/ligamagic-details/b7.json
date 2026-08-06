@@ -10,5 +10,17 @@
     "collector_number": "67",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Proft's%20Eidetic%20Memory",
     "checked_at": "2026-08-05T20:11:23.412Z"
+  },
+  "b79c4066-66a9-4a53-8716-23f7a340a85f": {
+    "status": "available",
+    "name": "Abyssal Nocturnus",
+    "price_brl": 1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Pacto das Guildas",
+    "printing_code": "GP",
+    "collector_number": "43",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abyssal%20Nocturnus",
+    "checked_at": "2026-08-06T03:44:21.490Z"
   }
 }

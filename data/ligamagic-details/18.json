@@ -10,5 +10,17 @@
     "collector_number": "142",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Punishing%20Fire",
     "checked_at": "2026-08-05T20:11:35.433Z"
+  },
+  "18f34bfd-7675-49df-91ea-695c510cd3c3": {
+    "status": "available",
+    "name": "Adamaro, First to Desire",
+    "price_brl": 1.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Salvadores Kamigawa",
+    "printing_code": "SOK",
+    "collector_number": "91",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adamaro%2C%20First%20to%20Desire",
+    "checked_at": "2026-08-06T03:59:02.122Z"
   }
 }

@@ -22,5 +22,17 @@
     "collector_number": "11",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Summoner's%20Bond",
     "checked_at": "2026-08-05T20:13:11.699Z"
+  },
+  "07e5f59e-3a98-4e01-a368-0be60e0463ba": {
+    "status": "available",
+    "name": "Acquisitions Expert",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Renascer de Zendikar",
+    "printing_code": "ZNR",
+    "collector_number": "89",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acquisitions%20Expert",
+    "checked_at": "2026-08-06T03:56:22.028Z"
   }
 }

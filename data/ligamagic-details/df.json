@@ -1,4 +1,16 @@
 {
+  "df2d2c52-475b-4057-9cf8-7886700f0fae": {
+    "status": "available",
+    "name": "Academy Researchers",
+    "price_brl": 0.18,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Décima Edição",
+    "printing_code": "10E",
+    "collector_number": "63",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Academy%20Researchers",
+    "checked_at": "2026-08-06T03:48:21.646Z"
+  },
   "dfa62414-48c6-4e5c-8609-1ce507b41505": {
     "status": "available",
     "name": "Hymn of the Wilds",

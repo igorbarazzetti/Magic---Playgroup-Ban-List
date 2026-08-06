@@ -1,4 +1,16 @@
 {
+  "3d02ee2f-b7bd-40b0-b9be-2420991b2be0": {
+    "status": "available",
+    "name": "Abzan Devotee",
+    "price_brl": 0.11,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm",
+    "printing_code": "TDM",
+    "collector_number": "68",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abzan%20Devotee",
+    "checked_at": "2026-08-06T03:45:51.628Z"
+  },
   "3d98af5f-7a0b-4a5a-b3e4-f3c9d150c993": {
     "status": "available",
     "name": "Abomination of Gudul",

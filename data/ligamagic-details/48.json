@@ -22,5 +22,17 @@
     "collector_number": "204",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abigale%2C%20Eloquent%20First-Year",
     "checked_at": "2026-08-06T00:09:16.960Z"
+  },
+  "48edc348-93f6-4dce-9cc4-7244d76b6f4a": {
+    "status": "available",
+    "name": "Accursed Duneyard",
+    "price_brl": 7.45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Aetherdrift Commander",
+    "printing_code": "DRC",
+    "collector_number": "20",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Accursed%20Duneyard",
+    "checked_at": "2026-08-06T03:51:21.766Z"
   }
 }

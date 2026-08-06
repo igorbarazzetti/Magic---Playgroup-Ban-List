@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=%2B2%20Mace",
     "checked_at": "2026-08-06T00:01:06.656Z"
   },
+  "62dca41b-58b0-45eb-ada7-568e80a2abec": {
+    "status": "available",
+    "name": "Acolyte of Xathrid",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2010",
+    "printing_code": "M10",
+    "collector_number": "83",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acolyte%20of%20Xathrid",
+    "checked_at": "2026-08-06T03:55:01.969Z"
+  },
   "62e3f285-886c-414e-b4ff-403a7c01c23a": {
     "status": "available",
     "name": "Abbey Matron",

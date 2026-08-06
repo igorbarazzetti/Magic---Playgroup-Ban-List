@@ -34,5 +34,17 @@
     "collector_number": "157",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Screaming%20Nemesis",
     "checked_at": "2026-08-05T20:12:02.531Z"
+  },
+  "fcdfe9d5-2743-4d3e-ab57-bf0f96beaa15": {
+    "status": "available",
+    "name": "Aclazotz, Deepest Betrayal // Temple of the Dead",
+    "price_brl": 46.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "As Cavernas Perdidas de Ixalan",
+    "printing_code": "LCI",
+    "collector_number": "88",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aclazotz%2C%20Deepest%20Betrayal",
+    "checked_at": "2026-08-06T03:54:01.900Z"
   }
 }

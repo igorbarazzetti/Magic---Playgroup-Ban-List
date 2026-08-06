@@ -1,4 +1,16 @@
 {
+  "400b2e17-ee48-4e22-a8a6-a607c215d1a2": {
+    "status": "available",
+    "name": "Academic Probation",
+    "price_brl": 0.19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Strixhaven: Escola de Magos",
+    "printing_code": "STX",
+    "collector_number": "7",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Academic%20Probation",
+    "checked_at": "2026-08-06T03:47:12.191Z"
+  },
   "405c4a7b-dbb3-48a1-9205-7dbe6e2ad363": {
     "status": "available",
     "name": "Aatchik, Emerald Radian",

@@ -10,5 +10,17 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Advantageous%20Proclamation",
     "checked_at": "2026-08-05T20:02:40.025Z"
+  },
+  "866fc4b9-f661-444b-b7fd-929814dbc69d": {
+    "status": "available",
+    "name": "Abzan Skycaptain",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Destino Reescrito",
+    "printing_code": "FRF",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abzan%20Skycaptain",
+    "checked_at": "2026-08-06T03:46:51.628Z"
   }
 }

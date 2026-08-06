@@ -1,4 +1,28 @@
 {
+  "8003ca2d-0c1d-47c1-bcd1-4609615c7a82": {
+    "status": "available",
+    "name": "Adaptive Shimmerer",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ikoria: Terra de Colossos",
+    "printing_code": "IKO",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adaptive%20Shimmerer",
+    "checked_at": "2026-08-06T03:59:52.201Z"
+  },
+  "80b07882-e144-4815-8b6f-04b3ab343d97": {
+    "status": "available",
+    "name": "Accursed Witch // Infectious Curse",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Sombras em Innistrad",
+    "printing_code": "SOI",
+    "collector_number": "97",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Accursed%20Witch",
+    "checked_at": "2026-08-06T03:52:01.807Z"
+  },
   "80e72437-0c17-44c0-b0a7-eab075a64569": {
     "status": "available",
     "name": "Genesis Storm",

@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abomination%20of%20Llanowar",
     "checked_at": "2026-08-06T00:10:57.010Z"
   },
+  "51833cff-6519-4806-8d91-0040e9a02189": {
+    "status": "available",
+    "name": "Abyssal Specter",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Masters 2017",
+    "printing_code": "MM3",
+    "collector_number": "59",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abyssal%20Specter",
+    "checked_at": "2026-08-06T03:44:41.588Z"
+  },
   "51f091a7-9b0b-4362-8e9c-c174752f369b": {
     "status": "available",
     "name": "White Plume Adventurer",

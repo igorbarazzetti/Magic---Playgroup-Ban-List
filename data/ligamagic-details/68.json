@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Golgari%20Grave-Troll",
     "checked_at": "2026-08-05T20:07:04.726Z"
   },
+  "6891c8b7-7112-40dc-8b94-b84ad1885e5e": {
+    "status": "available",
+    "name": "Accorder Paladin",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mirrodin Sitiada",
+    "printing_code": "MBS",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Accorder%20Paladin",
+    "checked_at": "2026-08-06T03:50:31.789Z"
+  },
   "68cc5065-0514-4adf-885f-da554e1db00a": {
     "status": "available",
     "name": "Abyssal Harvester",

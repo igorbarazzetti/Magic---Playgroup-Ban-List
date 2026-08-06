@@ -22,5 +22,17 @@
     "collector_number": "49",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aberrant%20Researcher",
     "checked_at": "2026-08-06T00:18:05.426Z"
+  },
+  "7282f643-191b-41be-9f6f-82360c915d6d": {
+    "status": "available",
+    "name": "Abyssal Persecutor",
+    "price_brl": 6.27,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2014",
+    "printing_code": "C14",
+    "collector_number": "132",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abyssal%20Persecutor",
+    "checked_at": "2026-08-06T03:44:31.510Z"
   }
 }

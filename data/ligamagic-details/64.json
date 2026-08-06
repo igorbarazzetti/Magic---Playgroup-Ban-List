@@ -1,4 +1,16 @@
 {
+  "6401d0ae-4635-497d-91ef-ce2eabefb893": {
+    "status": "available",
+    "name": "Accelerated Evolution",
+    "price_brl": 0.74,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes Commander",
+    "printing_code": "MSC",
+    "collector_number": "711",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Accelerated%20Evolution",
+    "checked_at": "2026-08-06T03:49:01.687Z"
+  },
   "646a2371-54c0-4492-ac2f-20f109d6108c": {
     "status": "available",
     "name": "Monstrous Rage",

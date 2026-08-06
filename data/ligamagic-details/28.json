@@ -1,4 +1,16 @@
 {
+  "287cd5e8-51e2-42a4-a139-c112ff89706d": {
+    "status": "available",
+    "name": "Adarkar Unicorn",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Era Glacial",
+    "printing_code": "IA",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adarkar%20Unicorn",
+    "checked_at": "2026-08-06T04:00:42.238Z"
+  },
   "28f70f86-19a9-4811-bc10-423a05842d39": {
     "status": "available",
     "name": "Aboroth",

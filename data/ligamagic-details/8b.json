@@ -10,5 +10,17 @@
     "collector_number": "285",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Tree%20of%20Tales",
     "checked_at": "2026-08-05T20:14:17.850Z"
+  },
+  "8b972819-507a-40a9-ab1f-1a674ea56083": {
+    "status": "available",
+    "name": "Abzan Falconer",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mystery Booster",
+    "printing_code": "MB1",
+    "collector_number": "7",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abzan%20Falconer",
+    "checked_at": "2026-08-06T03:46:01.598Z"
   }
 }

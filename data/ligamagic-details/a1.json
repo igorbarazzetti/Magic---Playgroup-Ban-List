@@ -1,4 +1,16 @@
 {
+  "a149eeb1-007c-435d-9d55-34af205090e0": {
+    "status": "available",
+    "name": "Acidic Sliver",
+    "price_brl": 0.45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fortaleza",
+    "printing_code": "SH",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acidic%20Sliver",
+    "checked_at": "2026-08-06T03:53:41.922Z"
+  },
   "a1ab033f-9605-4ca2-a98b-c0b2e1599609": {
     "status": "available",
     "name": "Bronze Tablet",

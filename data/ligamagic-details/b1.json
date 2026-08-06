@@ -22,5 +22,17 @@
     "collector_number": "42",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abhorrent%20Oculus",
     "checked_at": "2026-08-06T00:08:46.945Z"
+  },
+  "b1e6921e-e460-4e58-82b0-d98ee31c279d": {
+    "status": "available",
+    "name": "Accursed Centaur",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Investida",
+    "printing_code": "ON",
+    "collector_number": "123",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Accursed%20Centaur",
+    "checked_at": "2026-08-06T03:51:11.832Z"
   }
 }

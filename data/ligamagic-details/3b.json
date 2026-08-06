@@ -1,4 +1,16 @@
 {
+  "3b7d4206-0d88-407b-ace5-d5d28881bf95": {
+    "status": "available",
+    "name": "Abzan Ascendancy",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Khans de Tarkir",
+    "printing_code": "KTK",
+    "collector_number": "160",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abzan%20Ascendancy",
+    "checked_at": "2026-08-06T03:45:01.572Z"
+  },
   "3bc757c1-3adb-4321-8832-8e1cc9e687f7": {
     "status": "available",
     "name": "Lurrus of the Dream-Den",

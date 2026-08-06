@@ -1,4 +1,16 @@
 {
+  "f4378682-359f-48b0-adb7-b996b8d972db": {
+    "status": "available",
+    "name": "Acid-Spewer Dragon",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dragões de Tarkir",
+    "printing_code": "DTK",
+    "collector_number": "86",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acid-Spewer%20Dragon",
+    "checked_at": "2026-08-06T03:53:01.872Z"
+  },
   "f4819061-b0b5-48ab-af7b-6525c3d2eab7": {
     "status": "available",
     "name": "Great Furnace",

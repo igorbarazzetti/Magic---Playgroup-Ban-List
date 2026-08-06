@@ -1,4 +1,16 @@
 {
+  "46535f8e-1bcd-4588-ac6c-a4bc89c379c8": {
+    "status": "available",
+    "name": "Abzan Banner",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Khans de Tarkir",
+    "printing_code": "KTK",
+    "collector_number": "215",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abzan%20Banner",
+    "checked_at": "2026-08-06T03:45:11.612Z"
+  },
   "465cda20-c8f3-4a7c-a250-875877bce21d": {
     "status": "available",
     "name": "Abyssal Gorestalker",
@@ -10,6 +22,18 @@
     "collector_number": "87",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abyssal%20Gorestalker",
     "checked_at": "2026-08-06T00:17:07.512Z"
+  },
+  "467e22c3-6107-40ff-afc7-5960710c970b": {
+    "status": "available",
+    "name": "Adamant Will",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominaria",
+    "printing_code": "DOM",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adamant%20Will",
+    "checked_at": "2026-08-06T03:58:52.154Z"
   },
   "4692740f-be90-459f-8d90-c4ae71771595": {
     "status": "available",

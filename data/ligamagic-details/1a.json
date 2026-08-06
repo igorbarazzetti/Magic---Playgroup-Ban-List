@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mental%20Misstep",
     "checked_at": "2026-08-05T20:09:41.098Z"
   },
+  "1aa1cf50-ee79-4bef-826b-5f1a9e1aa1a5": {
+    "status": "available",
+    "name": "Acrobatic Maneuver",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaladesh",
+    "printing_code": "KLD",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acrobatic%20Maneuver",
+    "checked_at": "2026-08-06T03:57:02.267Z"
+  },
   "1acbbf61-edf7-4f67-968b-6832c2dd54d1": {
     "status": "available",
     "name": "Unexpected Potential",

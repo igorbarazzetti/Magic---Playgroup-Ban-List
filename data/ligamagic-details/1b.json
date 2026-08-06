@@ -1,4 +1,16 @@
 {
+  "1b44fe0a-4a99-4166-b0b3-102b36b54ffa": {
+    "status": "available",
+    "name": "Abzan Battle Priest",
+    "price_brl": 0.14,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Khans de Tarkir",
+    "printing_code": "KTK",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abzan%20Battle%20Priest",
+    "checked_at": "2026-08-06T03:45:21.565Z"
+  },
   "1bf08ba0-4235-4dea-9722-ed991a3b6044": {
     "status": "available",
     "name": "Kethis, the Hidden Hand",

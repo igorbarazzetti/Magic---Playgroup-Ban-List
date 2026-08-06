@@ -1,4 +1,16 @@
 {
+  "f5af0d1b-531e-4053-848a-5e0fa1022f9a": {
+    "status": "available",
+    "name": "Accomplished Automaton",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Double Masters",
+    "printing_code": "2XM",
+    "collector_number": "230",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Accomplished%20Automaton",
+    "checked_at": "2026-08-06T03:50:22.457Z"
+  },
   "f5ca7b13-8003-4361-b827-7095c89f2750": {
     "status": "available",
     "name": "Falling Star",

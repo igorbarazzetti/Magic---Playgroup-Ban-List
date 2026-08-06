@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abomination%2C%20Irradiated%20Brute",
     "checked_at": "2026-08-06T00:10:36.997Z"
   },
+  "e7b2f844-2ba2-4465-bb80-358a4d915f36": {
+    "status": "available",
+    "name": "Abzan Advantage",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Destino Reescrito",
+    "printing_code": "FRF",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abzan%20Advantage",
+    "checked_at": "2026-08-06T03:44:52.354Z"
+  },
   "e7c67480-1816-4071-9eab-a1d1b535a344": {
     "status": "available",
     "name": "Comet, Stellar Pup",

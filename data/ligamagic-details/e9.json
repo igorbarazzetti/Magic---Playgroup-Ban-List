@@ -1,4 +1,16 @@
 {
+  "e91240bc-4a13-4131-9379-5ddac6555f4a": {
+    "status": "available",
+    "name": "Adaptive Omnitool",
+    "price_brl": 16.79,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Aetherdrift Commander",
+    "printing_code": "DRC",
+    "collector_number": "16",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adaptive%20Omnitool",
+    "checked_at": "2026-08-06T03:59:42.192Z"
+  },
   "e958b3c5-0666-4a99-a933-e5cb8b0da9da": {
     "status": "available",
     "name": "Cranial Ram",

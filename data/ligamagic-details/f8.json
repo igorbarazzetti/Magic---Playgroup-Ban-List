@@ -1,4 +1,16 @@
 {
+  "f8a9c279-0f11-4a22-8651-f9caf013ca3c": {
+    "status": "available",
+    "name": "Accelerated Mutation",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Flagelo",
+    "printing_code": "SC",
+    "collector_number": "109",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Accelerated%20Mutation",
+    "checked_at": "2026-08-06T03:49:11.746Z"
+  },
   "f8b17b89-26ce-4208-874a-9e1d66514640": {
     "status": "available",
     "name": "Dig Through Time",

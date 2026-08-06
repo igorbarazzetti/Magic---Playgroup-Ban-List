@@ -10,5 +10,17 @@
     "collector_number": "43",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Contract%20from%20Below",
     "checked_at": "2026-08-05T20:04:28.364Z"
+  },
+  "9ecd53b0-4551-4505-b5d2-02ae49d4cbdb": {
+    "status": "available",
+    "name": "Acquired Mutation",
+    "price_brl": 1.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fallout",
+    "printing_code": "PIP",
+    "collector_number": "53",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acquired%20Mutation",
+    "checked_at": "2026-08-06T03:56:01.987Z"
   }
 }

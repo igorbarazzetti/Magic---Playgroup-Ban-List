@@ -1,4 +1,16 @@
 {
+  "53c730c6-2f8c-4af8-b400-b9d573a71e60": {
+    "status": "available",
+    "name": "Adaptive Automaton",
+    "price_brl": 3.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Foundations (Starter Collection)",
+    "printing_code": "SCFDN",
+    "collector_number": "723",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adaptive%20Automaton",
+    "checked_at": "2026-08-06T03:59:22.157Z"
+  },
   "53f7c868-b03e-4fc2-8dcf-a75bbfa3272b": {
     "status": "available",
     "name": "Dark Ritual",

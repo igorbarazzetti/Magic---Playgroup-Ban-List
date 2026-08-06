@@ -1,4 +1,16 @@
 {
+  "7d540860-ae94-4773-a526-aaffca3eb057": {
+    "status": "available",
+    "name": "Academy Loremaster",
+    "price_brl": 0.27,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominária Unida",
+    "printing_code": "DMU",
+    "collector_number": "40",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Academy%20Loremaster",
+    "checked_at": "2026-08-06T03:47:52.306Z"
+  },
   "7df49476-7b6c-4b5d-bede-463a7d2e0a58": {
     "status": "available",
     "name": "Sentinel Dispatch",

@@ -1,0 +1,26 @@
+{
+  "b22de128-6dad-4e15-a547-1c9ca08df5ff": {
+    "status": "available",
+    "name": "Academic Dispute",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Strixhaven: Escola de Magos",
+    "printing_code": "STX",
+    "collector_number": "91",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Academic%20Dispute",
+    "checked_at": "2026-08-06T03:47:01.638Z"
+  },
+  "b292d183-1ba9-40b4-9cba-bd70bf1380ef": {
+    "status": "available",
+    "name": "Abzan Kin-Guard",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Destino Reescrito",
+    "printing_code": "FRF",
+    "collector_number": "120",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abzan%20Kin-Guard",
+    "checked_at": "2026-08-06T03:46:21.618Z"
+  }
+}

@@ -10,5 +10,17 @@
     "collector_number": "51",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mishra's%20Workshop",
     "checked_at": "2026-08-05T20:09:47.136Z"
+  },
+  "ba6c3c72-c014-45c6-a0b4-59eb9a65303e": {
+    "status": "available",
+    "name": "Academy Elite",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2016",
+    "printing_code": "C16",
+    "collector_number": "81",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Academy%20Elite",
+    "checked_at": "2026-08-06T03:47:31.660Z"
   }
 }

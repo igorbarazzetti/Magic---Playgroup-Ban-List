@@ -1,4 +1,16 @@
 {
+  "dd70d439-bd60-43d1-ac26-13b744cc4a37": {
+    "status": "available",
+    "name": "Accorder's Shield",
+    "price_brl": 0.14,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2014",
+    "printing_code": "M14",
+    "collector_number": "204",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Accorder's%20Shield",
+    "checked_at": "2026-08-06T03:50:42.341Z"
+  },
   "dd97e457-07eb-4918-b780-ae7ff42a37e7": {
     "status": "available",
     "name": "Abjure",

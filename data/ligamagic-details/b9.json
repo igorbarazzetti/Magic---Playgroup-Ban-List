@@ -1,4 +1,16 @@
 {
+  "b921a672-721e-4bd8-a10b-a6de8c13c7d8": {
+    "status": "available",
+    "name": "Achilles Davenport",
+    "price_brl": 34.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassin's Creed (Starter Kit)",
+    "printing_code": "SKACR",
+    "collector_number": "294",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Achilles%20Davenport",
+    "checked_at": "2026-08-06T03:52:51.849Z"
+  },
   "b96ccc2f-88e5-4522-924e-76fc76dc3b39": {
     "status": "available",
     "name": "Abyssal Hunter",

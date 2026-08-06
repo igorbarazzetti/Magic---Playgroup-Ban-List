@@ -11,6 +11,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Cleanse",
     "checked_at": "2026-08-05T20:04:16.290Z"
   },
+  "a63eb744-71c4-447d-9372-c3a734f022c5": {
+    "status": "available",
+    "name": "Accumulate Wisdom",
+    "price_brl": 0.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Avatar: The Last Airbender",
+    "printing_code": "TLA",
+    "collector_number": "44",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Accumulate%20Wisdom",
+    "checked_at": "2026-08-06T03:50:52.434Z"
+  },
+  "a6657fcf-f08c-4b03-8ec8-cb0b194eb553": {
+    "status": "available",
+    "name": "Adaptive Training Post",
+    "price_brl": 2.55,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm Commander",
+    "printing_code": "TDC",
+    "collector_number": "18",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adaptive%20Training%20Post",
+    "checked_at": "2026-08-06T04:00:22.668Z"
+  },
   "a6708b11-1bcd-4208-a967-fe91f2e3313c": {
     "status": "available",
     "name": "Recurring Nightmare",

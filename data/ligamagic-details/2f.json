@@ -22,5 +22,17 @@
     "collector_number": "170",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abigale%2C%20Poet%20Laureate%20%2F%2F%20Heroic%20Stanza",
     "checked_at": "2026-08-06T00:09:26.960Z"
+  },
+  "2fdc0d15-ecb4-4a6d-be77-7a3fca188c9c": {
+    "status": "available",
+    "name": "Adaptive Gemguard",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "As Cavernas Perdidas de Ixalan",
+    "printing_code": "LCI",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adaptive%20Gemguard",
+    "checked_at": "2026-08-06T03:59:32.165Z"
   }
 }

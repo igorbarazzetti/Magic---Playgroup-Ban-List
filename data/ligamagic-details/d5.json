@@ -1,4 +1,16 @@
 {
+  "d57c246f-18e5-4523-898c-1509db738363": {
+    "status": "available",
+    "name": "Acolyte of Affliction",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros Além da Morte",
+    "printing_code": "THB",
+    "collector_number": "206",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acolyte%20of%20Affliction",
+    "checked_at": "2026-08-06T03:54:31.958Z"
+  },
   "d5d91377-fd66-4dbe-a092-07f2ea379ca7": {
     "status": "available",
     "name": "Leovold, Emissary of Trest",

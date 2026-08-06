@@ -1,4 +1,16 @@
 {
+  "75131d75-0703-44d0-b503-35190be8e66f": {
+    "status": "available",
+    "name": "Academy Raider",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2014",
+    "printing_code": "M14",
+    "collector_number": "124",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Academy%20Raider",
+    "checked_at": "2026-08-06T03:48:11.647Z"
+  },
   "753ead8c-f3f8-42fe-931d-79f5ee3ece54": {
     "status": "available",
     "name": "Aberrant Mind Sorcerer",

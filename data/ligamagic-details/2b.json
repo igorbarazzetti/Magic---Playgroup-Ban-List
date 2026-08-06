@@ -22,5 +22,17 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abuelo's%20Awakening",
     "checked_at": "2026-08-05T20:02:34.011Z"
+  },
+  "2b6d95b5-0680-43ae-9ff3-8e287a9eb837": {
+    "status": "available",
+    "name": "Acceptable Losses",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Odisséia",
+    "printing_code": "OD",
+    "collector_number": "172",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acceptable%20Losses",
+    "checked_at": "2026-08-06T03:49:21.726Z"
   }
 }

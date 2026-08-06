@@ -22,5 +22,29 @@
     "collector_number": "199900",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Tomb",
     "checked_at": "2026-08-05T20:03:01.083Z"
+  },
+  "234ff22f-2ff1-4a73-a7c5-e9c53557c4c6": {
+    "status": "available",
+    "name": "Acquisition Octopus",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kamigawa: Dinastia Neon",
+    "printing_code": "NEO",
+    "collector_number": "44",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acquisition%20Octopus",
+    "checked_at": "2026-08-06T03:56:12.096Z"
+  },
+  "23d4f436-a417-4a26-b5b8-c698f11a186b": {
+    "status": "available",
+    "name": "Acid Web Spider",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Cicatrizes de Mirrodin",
+    "printing_code": "SOM",
+    "collector_number": "108",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acid%20Web%20Spider",
+    "checked_at": "2026-08-06T03:53:11.884Z"
   }
 }

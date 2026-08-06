@@ -34,5 +34,17 @@
     "collector_number": "79",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Earthcraft",
     "checked_at": "2026-08-05T20:05:34.509Z"
+  },
+  "50d0d870-fe3d-44a2-ad6e-93307a1fb468": {
+    "status": "available",
+    "name": "Ace, Fearless Rebel",
+    "price_brl": 0.74,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Doctor Who",
+    "printing_code": "WHO",
+    "collector_number": "98",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ace%2C%20Fearless%20Rebel",
+    "checked_at": "2026-08-06T03:52:11.840Z"
   }
 }

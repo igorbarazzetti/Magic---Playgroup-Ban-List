@@ -10,5 +10,17 @@
     "collector_number": "223",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Sol%20Ring",
     "checked_at": "2026-08-05T20:12:48.658Z"
+  },
+  "6aeba615-2d37-4eb8-a377-41a517e95aa3": {
+    "status": "available",
+    "name": "Acorn Harvest",
+    "price_brl": 5.7,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tormento",
+    "printing_code": "TR",
+    "collector_number": "118",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acorn%20Harvest",
+    "checked_at": "2026-08-06T03:55:31.994Z"
   }
 }

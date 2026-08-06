@@ -10,5 +10,17 @@
     "collector_number": "76",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Library%20of%20Alexandria",
     "checked_at": "2026-08-05T20:09:08.000Z"
+  },
+  "21f45043-5419-4019-8b6c-e5294bd5f549": {
+    "status": "available",
+    "name": "Acidic Slime",
+    "price_brl": 0.17,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2013",
+    "printing_code": "M13",
+    "collector_number": "159",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acidic%20Slime",
+    "checked_at": "2026-08-06T03:53:32.891Z"
   }
 }

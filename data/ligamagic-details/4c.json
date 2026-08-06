@@ -22,5 +22,17 @@
     "collector_number": "97",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aardwolf's%20Advantage",
     "checked_at": "2026-08-06T00:04:46.797Z"
+  },
+  "4ccc1ac5-db90-4fc9-9795-7afaf7466c3e": {
+    "status": "available",
+    "name": "Acidic Soil",
+    "price_brl": 4.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Saga de Urza",
+    "printing_code": "US",
+    "collector_number": "172",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acidic%20Soil",
+    "checked_at": "2026-08-06T03:53:51.900Z"
   }
 }

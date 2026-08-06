@@ -1,4 +1,16 @@
 {
+  "fe6726a1-2aa9-492d-82f8-9e9b3125a991": {
+    "status": "available",
+    "name": "Accessories to Murder",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unstable",
+    "printing_code": "UST",
+    "collector_number": "167",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Accessories%20to%20Murder",
+    "checked_at": "2026-08-06T03:49:51.705Z"
+  },
   "fee680c6-afe2-4321-9d8a-8f81a612a53b": {
     "status": "available",
     "name": "Sorin, Imperious Bloodlord",

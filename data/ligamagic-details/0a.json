@@ -1,0 +1,26 @@
+{
+  "0a56e2ad-684d-45a7-9145-479d1505bba2": {
+    "status": "available",
+    "name": "Adaptive Snapjaw",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portões Violados",
+    "printing_code": "GTC",
+    "collector_number": "113",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adaptive%20Snapjaw",
+    "checked_at": "2026-08-06T04:00:02.846Z"
+  },
+  "0a9276fc-387c-4bde-a6d6-b0dd7abee94b": {
+    "status": "available",
+    "name": "Abzan Runemark",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Destino Reescrito",
+    "printing_code": "FRF",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abzan%20Runemark",
+    "checked_at": "2026-08-06T03:46:41.619Z"
+  }
+}

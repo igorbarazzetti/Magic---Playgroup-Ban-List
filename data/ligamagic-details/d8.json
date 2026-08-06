@@ -10,5 +10,29 @@
     "collector_number": "35",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Erayo%2C%20Soratami%20Ascendant%20%2F%2F%20Erayo's%20Essence",
     "checked_at": "2026-08-05T20:05:52.520Z"
+  },
+  "d8ad23a1-0b43-48ea-9fbe-d89b29194509": {
+    "status": "available",
+    "name": "Accursed Marauder",
+    "price_brl": 1.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3",
+    "printing_code": "MH3",
+    "collector_number": "80",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Accursed%20Marauder",
+    "checked_at": "2026-08-06T03:51:41.807Z"
+  },
+  "d8ce3f18-26fe-47e8-be8b-0d89d7de7038": {
+    "status": "available",
+    "name": "Acrobatic Cheerleader",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Noctumbra: A Casa dos Horrores",
+    "printing_code": "DSK",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acrobatic%20Cheerleader",
+    "checked_at": "2026-08-06T03:56:42.408Z"
   }
 }

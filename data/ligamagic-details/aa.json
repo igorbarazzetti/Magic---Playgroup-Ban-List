@@ -22,5 +22,17 @@
     "collector_number": "247",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Field%20of%20the%20Dead",
     "checked_at": "2026-08-05T20:06:13.544Z"
+  },
+  "aab463bb-e790-403b-a88d-06ef81c7302b": {
+    "status": "available",
+    "name": "Abzan Beastmaster",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Destino Reescrito",
+    "printing_code": "FRF",
+    "collector_number": "119",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abzan%20Beastmaster",
+    "checked_at": "2026-08-06T03:45:31.622Z"
   }
 }

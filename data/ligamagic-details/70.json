@@ -46,5 +46,17 @@
     "collector_number": "8",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Incendiary%20Dissent",
     "checked_at": "2026-08-05T20:08:14.308Z"
+  },
+  "70d35dbd-1d91-4a2a-a643-6870d168f4f5": {
+    "status": "available",
+    "name": "Adagia, Windswept Bastion",
+    "price_brl": 18,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Edge of Eternities",
+    "printing_code": "EOE",
+    "collector_number": "250",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adagia%2C%20Windswept%20Bastion",
+    "checked_at": "2026-08-06T03:58:42.116Z"
   }
 }

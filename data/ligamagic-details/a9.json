@@ -10,5 +10,17 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Absolver%20Thrull",
     "checked_at": "2026-08-06T00:13:07.157Z"
+  },
+  "a9d68cf5-3055-4ec9-9893-244bfd7046be": {
+    "status": "available",
+    "name": "Action News Crew",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Teenage Mutant Ninja Turtles",
+    "printing_code": "TMT",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Action%20News%20Crew",
+    "checked_at": "2026-08-06T03:58:02.099Z"
   }
 }

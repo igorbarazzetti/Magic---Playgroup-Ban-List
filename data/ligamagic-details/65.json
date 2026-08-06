@@ -46,5 +46,17 @@
     "collector_number": "60",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Demonic%20Attorney",
     "checked_at": "2026-08-05T20:05:07.681Z"
+  },
+  "65f3ebeb-1ca5-4923-b681-032579991c8a": {
+    "status": "available",
+    "name": "Academy Drake",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominaria",
+    "printing_code": "DOM",
+    "collector_number": "40",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Academy%20Drake",
+    "checked_at": "2026-08-06T03:47:21.629Z"
   }
 }

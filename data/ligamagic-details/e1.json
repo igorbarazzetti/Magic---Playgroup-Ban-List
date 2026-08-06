@@ -1,4 +1,16 @@
 {
+  "e12da2a1-e390-4487-b154-69e439cb7b05": {
+    "status": "available",
+    "name": "Activated Sleeper",
+    "price_brl": 8,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominária Unida Commander",
+    "printing_code": "DMC",
+    "collector_number": "24",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Activated%20Sleeper",
+    "checked_at": "2026-08-06T03:58:12.069Z"
+  },
   "e15504a7-2b67-4185-b916-172145f10b19": {
     "status": "available",
     "name": "Yorion, Sky Nomad",
