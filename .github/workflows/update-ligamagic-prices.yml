@@ -10,6 +10,11 @@ on:
         required: false
         default: false
         type: boolean
+      batch_size:
+        description: "Quantidade de cartas no lote"
+        required: false
+        default: 100
+        type: number
 
 permissions:
   contents: write
@@ -20,7 +25,7 @@ concurrency:
 
 jobs:
   collect:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     timeout-minutes: 45
     steps:
       - name: Baixar o repositório
@@ -34,9 +39,12 @@ jobs:
           node-version: 22
 
       - name: Consultar lote de preços
+        shell: bash
         env:
           LIGAMAGIC_REQUEST_DELAY_MS: "10000"
-        run: node scripts/update-ligamagic-prices.mjs --limit=100 ${{ inputs.force && '--force' || '' }}
+          BATCH_SIZE: ${{ inputs.batch_size || 100 }}
+          FORCE_ARG: ${{ inputs.force && '--force' || '' }}
+        run: node scripts/update-ligamagic-prices.mjs --limit="$BATCH_SIZE" $FORCE_ARG
 
       - name: Publicar dados atualizados
         shell: bash
