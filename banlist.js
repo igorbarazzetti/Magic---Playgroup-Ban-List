@@ -5,6 +5,7 @@ const site = {
   pageSubtitle: 'A banlist oficial do nosso formato',
   logoPath: './playgroup-logo.svg',
   scryfallQuery: '(banned:standard OR banned:pioneer OR banned:modern OR banned:legacy OR banned:commander OR banned:duel OR banned:pauper) -set:sunf -set:unf',
+  catalogQuery: '(game:paper) usd<20.00 prefer:best',
   backgroundCards: ['Jace, the Mind Sculptor', 'Liliana of the Veil', 'Chandra, Torch of Defiance', 'Teferi, Hero of Dominaria', 'Nissa, Who Shakes the World', 'Nicol Bolas, Dragon-God', 'Karn Liberated', "Elspeth, Sun's Champion"],
   backgroundInterval: 14000,
 };
@@ -35,11 +36,12 @@ const colorFilters = [
 
 function createViewState(tab) {
   return {
-    tab, cards: [], filtered: [], selectedFormats: new Set(), selectedColors: new Set(), query: '', type: '', cmc: '', rarity: '', set: '',
+    tab, cards: [], filtered: [], selectedFormats: new Set(), selectedColors: new Set(), colorMatch: 'exact', query: '', type: '', cmc: '', rarity: '', set: '',
     sort: 'name-asc', view: 'cards', visible: 48, modalCard: null, modalFace: 0, lastFocus: null,
     savedScroll: 0, loadingMore: false, loadToken: 0, rawDetailsReady: false, loaded: false,
     deckFormat: 'formatinho', deckLastFocus: null, maxPrice: 99, showBanned: false,
     oracleMatchKey: '', oracleMatches: null, oracleSearchToken: 0,
+    scryfallSearchCards: null, scryfallSearchKey: '', scryfallSearchToken: 0, scryfallSearchAbort: null,
   };
 }
 const viewStates = { banlist: createViewState('banlist'), catalog: createViewState('catalog') };
@@ -67,6 +69,34 @@ function parseCardSearch(value = '') {
     .filter(Boolean);
   const freeText = slug(String(value).replace(/"[^"]*"/g, ' ').replace(/"/g, ' ')).replace(/\s+/g, ' ').trim();
   return { exactPhrases, freeText };
+}
+function isScryfallSyntaxSearch(value = '') {
+  const query = String(value).trim();
+  return /(?:^|\s)-?[a-z][\w-]*:|(?:^|\s)[a-z][\w-]*(?:<=|>=|!=|=|<|>)/i.test(query);
+}
+function sourceCards() { return state.scryfallSearchCards || state.cards; }
+function colorMatchHint(mode = state.colorMatch) {
+  return {
+    exact: 'Mostra apenas cartas cuja identidade é exatamente as cores selecionadas.',
+    includes: 'Mostra cartas que incluam pelo menos uma das cores selecionadas.',
+    minimum: 'Mostra cartas que tenham todas as cores selecionadas, mesmo que tenham outras cores.',
+  }[mode] || 'Escolha como comparar as cores selecionadas.';
+}
+function colorIdentityMatches(cardColors = []) {
+  if (!state.selectedColors.size) return true;
+  const selected = [...state.selectedColors];
+  const selectedColorless = selected.includes('C');
+  const selectedColored = selected.filter((color) => color !== 'C');
+  const isColorless = cardColors.length === 0;
+  if (state.colorMatch === 'exact') {
+    if (selectedColorless) return selected.length === 1 && isColorless;
+    return !isColorless && cardColors.length === selectedColored.length && selectedColored.every((color) => cardColors.includes(color));
+  }
+  if (state.colorMatch === 'minimum') {
+    if (selectedColorless) return selected.length === 1 && isColorless;
+    return selectedColored.every((color) => cardColors.includes(color));
+  }
+  return (selectedColorless && isColorless) || selectedColored.some((color) => cardColors.includes(color));
 }
 const nameCollator = new Intl.Collator('en', { sensitivity: 'base', numeric: true });
 const sortableName = (value = '') => slug(value).replace(/^[^a-z0-9]+/, '');
@@ -147,6 +177,11 @@ function dedupeCards(cards) {
   cards.forEach((card) => { const normalized = normalizeCard(card); if (!byOracle.has(normalized.oracle_id)) byOracle.set(normalized.oracle_id, normalized); });
   return [...byOracle.values()].filter((card) => card.formats.length || card.id.startsWith('fallback-'));
 }
+function dedupeSearchCards(cards) {
+  const byOracle = new Map();
+  cards.forEach((card) => { const normalized = normalizeCard(card); if (!byOracle.has(normalized.oracle_id)) byOracle.set(normalized.oracle_id, normalized); });
+  return [...byOracle.values()];
+}
 
 function readCardsCache() {
   try {
@@ -185,6 +220,7 @@ function readUrl() {
   const legacyIdentity = params.get('identity') || '';
   const selectedColors = (params.get('colors') || legacyIdentity).split(',');
   state.selectedColors = new Set(selectedColors.filter((key) => colorFilters.some((color) => color.key === key)));
+  state.colorMatch = ['exact', 'includes', 'minimum'].includes(params.get('colorMatch')) ? params.get('colorMatch') : 'exact';
   state.type = params.get('type') || '';
   state.cmc = params.get('cmc') || '';
   state.rarity = params.get('rarity') || '';
@@ -203,6 +239,8 @@ function readUrl() {
   if ($('priceFilter')) $('priceFilter').value = state.maxPrice;
   if ($('priceFilterValue')) $('priceFilterValue').textContent = `R$ ${state.maxPrice}`;
   if ($('showBannedCatalog')) $('showBannedCatalog').checked = state.showBanned;
+  if ($('colorMatchMode')) $('colorMatchMode').value = state.colorMatch;
+  if ($('colorMatchHint')) $('colorMatchHint').textContent = colorMatchHint();
   if ($('searchClear')) $('searchClear').hidden = !state.query;
   updateCollectionUi();
 }
@@ -213,6 +251,7 @@ function currentParams({ includeCard = Boolean(state.modalCard) } = {}) {
   if (state.query) params.set('q', state.query);
   if (state.selectedFormats.size) params.set('formats', [...state.selectedFormats].join(','));
   if (state.selectedColors.size) params.set('colors', [...state.selectedColors].join(','));
+  if (state.selectedColors.size && state.colorMatch !== 'exact') params.set('colorMatch', state.colorMatch);
   if (state.type) params.set('type', state.type);
   if (state.cmc) params.set('cmc', state.cmc);
   if (state.rarity) params.set('rarity', state.rarity);
@@ -262,6 +301,8 @@ function restoreControlsFromState() {
   $('rarityFilter').value = state.rarity;
   $('sortFilter').value = state.sort;
   $('searchClear').hidden = !state.query;
+  if ($('colorMatchMode')) $('colorMatchMode').value = state.colorMatch;
+  if ($('colorMatchHint')) $('colorMatchHint').textContent = colorMatchHint();
   updateCollectionUi();
 }
 
@@ -278,8 +319,10 @@ async function switchCollectionTab(tab, { pushHistory = true, restoreScroll = tr
   if (!state.loaded) {
     if (tab === 'catalog') await loadCatalog(); else await loadCards();
   } else {
-    await ensureCatalogOracleMatches();
-    applyFilters();
+    if (!await ensureScryfallSyntaxSearch()) {
+      await ensureCatalogOracleMatches();
+      applyFilters();
+    }
   }
   if (restoreScroll) requestAnimationFrame(() => scrollTo({ top: state.savedScroll, behavior: 'auto' }));
 }
@@ -312,18 +355,69 @@ function effectiveCatalogPrice(card) {
   return null;
 }
 
-async function fetchScryfallPages(query) {
+async function fetchScryfallPages(query, { signal, onPage } = {}) {
   const cards = [];
   let url = `https://api.scryfall.com/cards/search?q=${encodeURIComponent(query)}&unique=cards&order=name`;
   while (url) {
-    const response = await fetch(url, { headers: { Accept: 'application/json' } });
+    const response = await fetch(url, { headers: { Accept: 'application/json;q=0.9,*/*;q=0.8' }, signal });
+    if (response.status === 404) return [];
     if (!response.ok) throw new Error(`Scryfall ${response.status}`);
     const payload = await response.json();
     cards.push(...(payload.data || []));
+    onPage?.(cards);
     url = payload.has_more && payload.next_page ? payload.next_page : '';
     if (url) await new Promise((resolve) => setTimeout(resolve, 120));
   }
   return cards;
+}
+
+function clearScryfallSyntaxSearch() {
+  state.scryfallSearchAbort?.abort();
+  state.scryfallSearchAbort = null;
+  state.scryfallSearchCards = null;
+  state.scryfallSearchKey = '';
+}
+
+async function ensureScryfallSyntaxSearch() {
+  if (!isScryfallSyntaxSearch(state.query)) {
+    clearScryfallSyntaxSearch();
+    return false;
+  }
+  const key = `${state.tab}:${state.query}`;
+  if (state.scryfallSearchKey === key && state.scryfallSearchCards) return true;
+  clearScryfallSyntaxSearch();
+  const controller = new AbortController();
+  const token = ++state.scryfallSearchToken;
+  state.scryfallSearchAbort = controller;
+  state.scryfallSearchKey = key;
+  state.scryfallSearchCards = [];
+  state.loadingMore = true;
+  $('loadingState').hidden = false;
+  applyFilters();
+  const scope = state.tab === 'catalog' ? (catalogIndex?.query || site.catalogQuery) : site.scryfallQuery;
+  try {
+    const cards = await fetchScryfallPages(`(${scope}) (${state.query})`, {
+      signal: controller.signal,
+      onPage: (partialCards) => {
+        if (token !== state.scryfallSearchToken || state.scryfallSearchKey !== key) return;
+        state.scryfallSearchCards = state.tab === 'catalog' ? dedupeSearchCards(partialCards) : dedupeCards(partialCards);
+        applyFilters();
+      },
+    });
+    if (token !== state.scryfallSearchToken || state.scryfallSearchKey !== key) return true;
+    state.scryfallSearchCards = state.tab === 'catalog' ? dedupeSearchCards(cards) : dedupeCards(cards);
+  } catch (error) {
+    if (error?.name === 'AbortError' || token !== state.scryfallSearchToken) return true;
+    state.scryfallSearchCards = [];
+    showToast('A sintaxe não retornou cartas. Confira a consulta do Scryfall.');
+  } finally {
+    if (token === state.scryfallSearchToken && state.scryfallSearchKey === key) {
+      state.loadingMore = false;
+      $('loadingState').hidden = true;
+      applyFilters();
+    }
+  }
+  return true;
 }
 
 async function ensureCatalogOracleMatches() {
@@ -372,18 +466,17 @@ function cardTypeMatches(card, type) {
 
 function applyFilters() {
   const search = parseCardSearch(state.query);
-  state.filtered = state.cards.filter((card) => {
+  const syntaxSearchActive = Boolean(state.scryfallSearchKey);
+  state.filtered = sourceCards().filter((card) => {
     const searchable = slug([card.name, card.type_line, card.oracle_text, card.artist, card.set_name].filter(Boolean).join(' '));
     const oracleText = slug([card.oracle_text, ...(card.card_faces || []).map((face) => face.oracle_text)].filter(Boolean).join(' ')).replace(/\s+/g, ' ');
-    const exactTextMatch = state.tab === 'catalog'
+    const exactTextMatch = syntaxSearchActive ? true : state.tab === 'catalog'
       ? !search.exactPhrases.length || (state.oracleMatchKey === search.exactPhrases.join('|') && state.oracleMatches?.has(card.oracle_id || card.id))
       : search.exactPhrases.every((phrase) => oracleText.includes(phrase));
-    const textMatch = (!search.freeText || searchable.includes(search.freeText)) && exactTextMatch;
+    const textMatch = syntaxSearchActive || ((!search.freeText || searchable.includes(search.freeText)) && exactTextMatch);
     const formatMatch = !state.selectedFormats.size || card.formats.some((format) => state.selectedFormats.has(format));
     const cardColors = card.color_identity || [];
-    const identityMatch = !state.selectedColors.size
-      || (state.selectedColors.has('C') && cardColors.length === 0)
-      || cardColors.some((color) => state.selectedColors.has(color));
+    const identityMatch = colorIdentityMatches(cardColors);
     const typeMatch = cardTypeMatches(card, state.type);
     const cmc = Number(card.cmc || 0);
     const cmcMatch = !state.cmc || (state.cmc === '6' ? cmc >= 6 : cmc === Number(state.cmc));
@@ -421,7 +514,7 @@ function populateSetFilter() {
 function renderSeals() {
   if (state.tab === 'catalog') { $('formatSeals').innerHTML = ''; return; }
   const html = formats.map((format) => {
-    const count = state.cards.filter((card) => card.formats.includes(format.key)).length;
+    const count = sourceCards().filter((card) => card.formats.includes(format.key)).length;
     const active = state.selectedFormats.has(format.key);
     return `<button class="format-seal${active ? ' is-active' : ''}" type="button" data-format="${format.key}" aria-pressed="${active}" style="--format-color:${format.color}" title="Mostrar cartas banidas em ${format.label}"><span class="format-seal__bar"></span><span class="format-seal__crest">${format.short}</span><span class="format-seal__copy"><strong>${format.label}</strong><small>${count} ${count === 1 ? 'carta' : 'cartas'} banidas</small></span></button>`;
   }).join('');
@@ -433,12 +526,15 @@ function renderColorFilters() {
     const active = state.selectedColors.has(button.dataset.color);
     button.setAttribute('aria-pressed', String(active));
   });
+  if ($('colorMatchMode')) $('colorMatchMode').value = state.colorMatch;
+  if ($('colorMatchHint')) $('colorMatchHint').textContent = colorMatchHint();
 }
 
 function renderActiveFilters() {
   const chips = [];
   if (state.query) chips.push(['q', `Busca: ${state.query}`]);
   state.selectedFormats.forEach((key) => chips.push([`format:${key}`, formats.find((format) => format.key === key)?.label || key]));
+  if (state.selectedColors.size) chips.push(['colorMatch', { exact: 'Cores exatas', includes: 'Incluindo cores', minimum: 'Todas as cores' }[state.colorMatch]]);
   state.selectedColors.forEach((key) => chips.push([`color:${key}`, colorFilters.find((color) => color.key === key)?.label || key]));
   const selectLabels = { type: { creature: 'Criatura', instant: 'Instantâneo', sorcery: 'Feitiço', artifact: 'Artefato', enchantment: 'Encantamento', planeswalker: 'Planeswalker', land: 'Terreno', battle: 'Batalha', other: 'Outros' }, cmc: { 0: 'Mana 0', 1: 'Mana 1', 2: 'Mana 2', 3: 'Mana 3', 4: 'Mana 4', 5: 'Mana 5', 6: 'Mana 6+' }, rarity: { common: 'Comum', uncommon: 'Incomum', rare: 'Rara', mythic: 'Mítica', special: 'Especial' } };
   [['type', state.type], ['cmc', state.cmc], ['rarity', state.rarity]].forEach(([key, value]) => { if (value) chips.push([key, selectLabels[key][value]]); });
@@ -481,7 +577,7 @@ function renderCards() {
   bindCardImages($('cardGrid'));
   const hasMore = state.visible < state.filtered.length;
   $('loadMore').hidden = !hasMore;
-  $('emptyState').hidden = Boolean(state.filtered.length) || !state.cards.length;
+  $('emptyState').hidden = Boolean(state.filtered.length) || !sourceCards().length;
   renderEmptySuggestions();
   if (state.tab === 'catalog') void hydrateCatalogCards(visibleCards);
 }
@@ -548,6 +644,11 @@ function editDistance(left, right) {
 function renderEmptySuggestions() {
   const target = $('emptySuggestions');
   if (!target || state.filtered.length) { if (target) target.innerHTML = ''; return; }
+  if (isScryfallSyntaxSearch(state.query)) {
+    target.innerHTML = '';
+    $('emptyMessage').textContent = 'Nenhuma carta corresponde a essa consulta do Scryfall. Revise a sintaxe ou remova um filtro.';
+    return;
+  }
   const search = parseCardSearch(state.query);
   if (search.exactPhrases.length) {
     target.innerHTML = '';
@@ -574,9 +675,9 @@ function renderEmptySuggestions() {
 function render() {
   renderSeals(); renderColorFilters(); renderActiveFilters(); renderCards();
   const formatRail = document.querySelector('.format-rail');
-  if (formatRail) formatRail.hidden = state.tab === 'catalog' || Boolean(state.cards.length && !state.filtered.length);
+  if (formatRail) formatRail.hidden = state.tab === 'catalog' || Boolean(sourceCards().length && !state.filtered.length);
   const progressLabel = state.loadingMore ? ' · atualizando arquivo' : '';
-  $('resultCount').textContent = state.cards.length ? `${state.filtered.length} ${state.filtered.length === 1 ? 'carta encontrada' : 'cartas encontradas'}${progressLabel}` : 'Nenhuma carta carregada';
+  $('resultCount').textContent = sourceCards().length || state.loadingMore ? `${state.filtered.length} ${state.filtered.length === 1 ? 'carta encontrada' : 'cartas encontradas'}${progressLabel}` : 'Nenhuma carta carregada';
   $('filterCount').textContent = `${state.filtered.length} ${state.filtered.length === 1 ? 'carta' : 'cartas'}`;
   if ($('catalogCoverage')) {
     const coverage = catalogPriceIndex?.coverage;
@@ -1089,11 +1190,14 @@ async function loadBackground() {
 }
 
 function clearFilters() {
-  state.selectedFormats.clear(); state.selectedColors.clear(); state.query = ''; state.type = ''; state.cmc = ''; state.rarity = ''; state.set = ''; state.sort = 'name-asc'; state.maxPrice = 99; state.showBanned = false; state.oracleMatchKey = ''; state.oracleMatches = null;
+  clearScryfallSyntaxSearch();
+  state.selectedFormats.clear(); state.selectedColors.clear(); state.colorMatch = 'exact'; state.query = ''; state.type = ''; state.cmc = ''; state.rarity = ''; state.set = ''; state.sort = 'name-asc'; state.maxPrice = 99; state.showBanned = false; state.oracleMatchKey = ''; state.oracleMatches = null;
   $('searchInput').value = ''; $('typeFilter').value = ''; $('cmcFilter').value = ''; $('rarityFilter').value = ''; $('setFilter').value = ''; $('sortFilter').value = 'name-asc';
   if ($('priceFilter')) $('priceFilter').value = 99;
   if ($('priceFilterValue')) $('priceFilterValue').textContent = 'R$ 99';
   if ($('showBannedCatalog')) $('showBannedCatalog').checked = false;
+  if ($('colorMatchMode')) $('colorMatchMode').value = 'exact';
+  if ($('colorMatchHint')) $('colorMatchHint').textContent = colorMatchHint();
   $('searchClear').hidden = true;
   syncUrl(); applyFilters();
 }
@@ -1361,6 +1465,11 @@ function bind() {
     syncUrl(); applyFilters();
   });
 
+  $('colorMatchMode').addEventListener('change', (event) => {
+    state.colorMatch = event.target.value;
+    syncUrl(); applyFilters();
+  });
+
   const applySelect = (key, element) => element.addEventListener('change', () => { state[key] = element.value; syncUrl(); applyFilters(); });
   applySelect('type', $('typeFilter')); applySelect('cmc', $('cmcFilter')); applySelect('rarity', $('rarityFilter')); applySelect('set', $('setFilter')); applySelect('sort', $('sortFilter'));
 
@@ -1368,9 +1477,15 @@ function bind() {
   $('searchInput').addEventListener('input', (event) => {
     clearTimeout(searchTimer);
     $('searchClear').hidden = !event.target.value;
-    searchTimer = setTimeout(async () => { state.query = event.target.value.trim(); syncUrl(); await ensureCatalogOracleMatches(); applyFilters(); }, 220);
+    searchTimer = setTimeout(async () => {
+      state.query = event.target.value.trim();
+      syncUrl();
+      if (await ensureScryfallSyntaxSearch()) return;
+      await ensureCatalogOracleMatches();
+      applyFilters();
+    }, 220);
   });
-  $('searchClear').addEventListener('click', () => { clearTimeout(searchTimer); $('searchInput').value = ''; state.query = ''; $('searchClear').hidden = true; syncUrl(); applyFilters(); $('searchInput').focus(); });
+  $('searchClear').addEventListener('click', () => { clearTimeout(searchTimer); $('searchInput').value = ''; state.query = ''; clearScryfallSyntaxSearch(); $('searchClear').hidden = true; syncUrl(); applyFilters(); $('searchInput').focus(); });
 
   const setView = (view) => { state.view = view; syncUrl(); render(); };
   $('cardsView').addEventListener('click', () => setView('cards'));
@@ -1379,7 +1494,7 @@ function bind() {
   $('cardGrid').addEventListener('click', async (event) => {
     const tile = event.target.closest('[data-card-id]');
     if (!tile) return;
-    const card = state.cards.find((item) => item.id === tile.dataset.cardId);
+    const card = sourceCards().find((item) => item.id === tile.dataset.cardId);
     if (card?.isCatalogStub) await hydrateCatalogCards([card]);
     if (card) openCard(card);
   });
@@ -1399,7 +1514,8 @@ function bind() {
     const key = button.dataset.removeFilter;
     if (key.startsWith('format:')) state.selectedFormats.delete(key.slice(7));
     else if (key.startsWith('color:')) state.selectedColors.delete(key.slice(6));
-    else if (key === 'q') { state.query = ''; $('searchInput').value = ''; }
+    else if (key === 'colorMatch') state.colorMatch = 'exact';
+    else if (key === 'q') { state.query = ''; $('searchInput').value = ''; clearScryfallSyntaxSearch(); }
     else if (key === 'maxPrice') { state.maxPrice = 99; $('priceFilter').value = 99; $('priceFilterValue').textContent = 'R$ 99'; }
     else if (key === 'showBanned') { state.showBanned = false; $('showBannedCatalog').checked = false; }
     else state[key] = '';
@@ -1473,7 +1589,12 @@ function bind() {
       readUrl();
       restoreControlsFromState();
       if (!state.loaded) { if (state.tab === 'catalog') loadCatalog(); else loadCards(); }
-      else { populateSetFilter(); ensureCatalogOracleMatches().then(applyFilters); }
+      else {
+        populateSetFilter();
+        ensureScryfallSyntaxSearch().then((syntaxSearch) => {
+          if (!syntaxSearch) ensureCatalogOracleMatches().then(applyFilters);
+        });
+      }
       return;
     }
     const cardId = new URLSearchParams(location.search).get('card');
@@ -1503,7 +1624,9 @@ async function loadCatalog() {
     view.loaded = true; view.loadingMore = false;
     if (state !== view) return;
     populateSetFilter();
-    await ensureCatalogOracleMatches();
+    if (!await ensureScryfallSyntaxSearch()) {
+      await ensureCatalogOracleMatches();
+    }
     applyFilters();
     const selectedId = new URLSearchParams(location.search).get('card');
     const selected = view.cards.find((card) => card.id === selectedId);
@@ -1566,5 +1689,6 @@ document.addEventListener('DOMContentLoaded', () => {
   bind();
   loadCards();
   if (state.tab === 'catalog') loadCatalog();
+  if (isScryfallSyntaxSearch(state.query)) void ensureScryfallSyntaxSearch();
   loadBackground();
 });

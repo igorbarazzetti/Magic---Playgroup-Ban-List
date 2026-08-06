@@ -96,8 +96,8 @@
         <div class="collection-toolbar" id="collectionToolbar">
           <div class="search-control" role="search">
             <span class="search-control__icon" aria-hidden="true">⌕</span>
-            <label class="sr-only" for="searchInput">Buscar por nome ou usar aspas para procurar uma frase exata no texto da carta</label>
-            <input id="searchInput" type="search" inputmode="search" enterkeyhint="search" placeholder='Nome ou "texto exato" da carta…' autocomplete="off" autocapitalize="none" spellcheck="false" />
+            <label class="sr-only" for="searchInput">Buscar por nome, texto entre aspas ou sintaxe do Scryfall, como type:creature ou cmc&gt;=3</label>
+            <input id="searchInput" type="search" inputmode="search" enterkeyhint="search" placeholder='Nome, "texto exato" ou type:creature…' autocomplete="off" autocapitalize="none" spellcheck="false" />
             <button class="search-clear" id="searchClear" type="button" aria-label="Apagar busca" hidden>×</button>
           </div>
 
@@ -159,7 +159,13 @@
                     <button class="color-choice" type="button" data-color="G" aria-pressed="false" aria-label="Verde" title="Verde"><img src="https://svgs.scryfall.io/card-symbols/G.svg" alt="" aria-hidden="true" /></button>
                     <button class="color-choice" type="button" data-color="C" aria-pressed="false" aria-label="Incolor" title="Incolor"><img src="https://svgs.scryfall.io/card-symbols/C.svg" alt="" aria-hidden="true" /></button>
                   </div>
-                  <p class="color-picker__hint">Mostra cartas que contenham qualquer cor selecionada.</p>
+                  <label class="color-match-label" for="colorMatchMode">Correspondência de cores</label>
+                  <select id="colorMatchMode" aria-describedby="colorFilterHelp colorMatchHint">
+                    <option value="exact">Exatamente essas cores</option>
+                    <option value="includes">Incluindo essas cores</option>
+                    <option value="minimum">Pelo menos essas cores</option>
+                  </select>
+                  <p class="color-picker__hint" id="colorMatchHint">Mostra apenas cartas cuja identidade é exatamente as cores selecionadas.</p>
                 </fieldset>
                 <fieldset class="filter-group">
                   <legend>Características</legend>
