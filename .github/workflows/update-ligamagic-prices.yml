@@ -39,7 +39,7 @@ jobs:
           node-version: 22
 
       - name: Consultar lote de preços
-        shell: pwsh
+        shell: powershell
         env:
           LIGAMAGIC_REQUEST_DELAY_MS: "10000"
           BATCH_SIZE: ${{ inputs.batch_size || 100 }}
@@ -51,7 +51,7 @@ jobs:
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
       - name: Publicar dados atualizados
-        shell: pwsh
+        shell: powershell
         run: |
           $dataChanges = git status --porcelain -- data | Out-String
           if ([string]::IsNullOrWhiteSpace($dataChanges)) {
