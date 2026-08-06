@@ -259,6 +259,7 @@ function readUrl() {
 
 function currentParams({ includeCard = Boolean(state.modalCard) } = {}) {
   const params = new URLSearchParams();
+  if (new URLSearchParams(location.search).get('page') === 'decks') params.set('page', 'decks');
   if (state.tab === 'catalog') params.set('tab', 'catalog');
   if (state.query) params.set('q', state.query);
   if (state.selectedFormats.size) params.set('formats', [...state.selectedFormats].join(','));
@@ -1606,7 +1607,7 @@ function savedDeckEntryImage(entry) {
 }
 
 function renderSavedDeckList(entries) {
-  $('savedDeckList').innerHTML = `<div class="saved-deck-list__heading"><strong>Lista completa</strong><span>${entries.length} nomes</span></div><ul>${entries.map((entry) => `<li><span class="saved-deck-entry__art">${savedDeckEntryImage(entry)}</span><span class="saved-deck-entry__quantity">${Number(entry.quantity) || 1}×</span><strong>${escapeHtml(entry.name)}</strong></li>`).join('')}</ul>`;
+  $('savedDeckList').innerHTML = `<div class="saved-deck-list__heading"><strong>Lista completa</strong><span>${entries.length} nomes</span></div><ul>${entries.map((entry) => `<li><button class="saved-deck-entry" type="button" data-saved-deck-entry="${escapeHtml(entry.key)}" aria-label="Abrir detalhes de ${escapeHtml(entry.name)}"><span class="saved-deck-entry__art">${savedDeckEntryImage(entry)}</span><span class="saved-deck-entry__quantity">${Number(entry.quantity) || 1}×</span><strong>${escapeHtml(entry.name)}</strong><span class="saved-deck-entry__open" aria-hidden="true">↗</span></button></li>`).join('')}</ul>`;
 }
 
 async function hydrateSavedDeckPreviews(entries, deckId) {
@@ -1784,6 +1785,13 @@ function bind() {
     if (card) openSavedDeck(card.dataset.savedDeckId);
   });
   $('closeSavedDeck').addEventListener('click', closeSavedDeck);
+  $('savedDeckList').addEventListener('click', (event) => {
+    const item = event.target.closest('[data-saved-deck-entry]');
+    if (!item) return;
+    const card = deckCardCache.get(item.dataset.savedDeckEntry);
+    if (!card) { showToast('A carta ainda está sendo preparada. Tente novamente em instantes.'); return; }
+    openCard(normalizeCard(card));
+  });
   $('copySavedDeck').addEventListener('click', copySavedDeck);
   $('savedDeckModal').addEventListener('cancel', (event) => { event.preventDefault(); closeSavedDeck(); });
   $('savedDeckModal').addEventListener('click', (event) => { if (event.target === $('savedDeckModal')) closeSavedDeck(); });
