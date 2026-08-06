@@ -26,4 +26,11 @@ foreach ($file in $clientFiles) {
 
 Copy-Item -LiteralPath (Join-Path $projectRoot ".openai\hosting.json") -Destination (Join-Path $hostingOutput "hosting.json") -Force
 
+$drizzleSource = Join-Path $projectRoot "drizzle"
+$drizzleOutput = Join-Path $hostingOutput "drizzle"
+if (Test-Path -LiteralPath $drizzleSource) {
+  New-Item -ItemType Directory -Force -Path $drizzleOutput | Out-Null
+  Copy-Item -Path (Join-Path $drizzleSource "*") -Destination $drizzleOutput -Recurse -Force
+}
+
 Write-Host "Build concluído em dist/."

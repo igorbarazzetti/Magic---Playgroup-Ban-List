@@ -60,6 +60,11 @@ const catalogHydrationCache = new Map();
 const catalogHydrating = new Set();
 const catalogDetailShards = new Map();
 const deckCardCache = new Map();
+const savedDeckCache = new Map();
+let pendingValidatedDeck = null;
+let validatedDecks = [];
+let validatedDecksLoaded = false;
+let currentSavedDeck = null;
 const $ = (id) => document.getElementById(id);
 const escapeHtml = (value = '') => String(value).replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[char]));
 const slug = (value = '') => value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
@@ -1303,6 +1308,7 @@ function updateDeckListCount() {
   $('deckListCount').textContent = `${copies} ${copies === 1 ? 'carta lida' : 'cartas lidas'}`;
   $('clearDeckList').hidden = !$('deckListInput').value;
   $('deckValidationResult').hidden = true;
+  pendingValidatedDeck = null;
 }
 
 function cardNameKeys(card) {
@@ -1367,6 +1373,15 @@ function renderDeckValidation({ entries, format, cards, partial = false }) {
   const totalCopies = entries.reduce((total, entry) => total + entry.quantity, 0);
   const issueCopies = Object.values(groups).flat().reduce((total, item) => total + item.entry.quantity, 0);
   const valid = !partial && issueCount === 0;
+  const coverCard = entries.map((entry) => cards.get(entry.key) || localBannedCard(entry, format)).find(Boolean) || null;
+  pendingValidatedDeck = valid ? {
+    entries: entries.map(({ name, quantity }) => ({ name, quantity })),
+    format,
+    totalCopies,
+    uniqueCount: entries.length,
+    coverName: coverCard?.name || entries[0]?.name || '',
+    coverImage: coverCard?.image_uris?.art_crop || coverCard?.image_uris?.normal || coverCard?.card_faces?.[0]?.image_uris?.art_crop || '',
+  } : null;
   const result = $('deckValidationResult');
   const statusClass = partial ? 'partial' : valid ? 'valid' : 'invalid';
   const icon = partial ? '!' : valid ? '✓' : '×';
@@ -1385,7 +1400,8 @@ function renderDeckValidation({ entries, format, cards, partial = false }) {
     ${deckIssueGroup('Fora do formato', groups.notLegal)}
     ${deckIssueGroup('Cópias além do permitido', groups.restricted)}
     ${deckIssueGroup('Não reconhecidas', groups.unknown)}
-    ${partial ? '<p class="deck-result__notice">Resultado incompleto: tente novamente quando a conexão com o Scryfall estiver disponível.</p>' : ''}`;
+    ${partial ? '<p class="deck-result__notice">Resultado incompleto: tente novamente quando a conexão com o Scryfall estiver disponível.</p>' : ''}
+    ${valid ? '<div class="deck-save-prompt"><div class="deck-save-prompt__copy"><strong>Quer selar este deck no arquivo?</strong><span>Ele ficará visível na página de decks validados para inspirar o playgroup.</span></div><div class="deck-save-prompt__actions"><button type="button" data-save-deck-accept>Sim, salvar deck</button><button type="button" data-save-deck-decline>Agora não</button></div></div>' : ''}`;
   result.hidden = false;
   result.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'nearest' });
 }
@@ -1431,6 +1447,170 @@ function closeDeckValidator() {
   if (modal.open) modal.close(); else modal.removeAttribute('open');
   if (!$('cardModal').open && !$('filterPanel').classList.contains('is-open')) document.body.classList.remove('is-locked');
   state.deckLastFocus?.focus?.({ preventScroll: true });
+}
+
+function renderDeckSaveForm() {
+  if (!pendingValidatedDeck) return;
+  const prompt = $('deckValidationResult').querySelector('.deck-save-prompt');
+  if (!prompt) return;
+  prompt.outerHTML = `
+    <form class="deck-save-form" id="deckSaveForm">
+      <div class="deck-save-form__heading"><strong>Como este deck será conhecido?</strong><span>O nome ficará público no arquivo do playgroup. O piloto é opcional.</span></div>
+      <label for="deckSaveName">Nome do deck<input id="deckSaveName" name="name" maxlength="80" required placeholder="Ex.: Elfos da Lathril" autocomplete="off" /></label>
+      <label for="deckSavePilot">Piloto<input id="deckSavePilot" name="pilot" maxlength="60" placeholder="Seu nome ou apelido" autocomplete="name" /></label>
+      <div class="deck-save-form__actions"><button type="submit">Selar no arquivo</button><button type="button" data-save-deck-cancel>Cancelar</button></div>
+    </form>`;
+  $('deckSaveName')?.focus();
+}
+
+async function saveValidatedDeck(event) {
+  event.preventDefault();
+  if (!pendingValidatedDeck) return;
+  const form = event.target;
+  const submit = form.querySelector('button[type="submit"]');
+  const name = String(new FormData(form).get('name') || '').trim();
+  const pilot = String(new FormData(form).get('pilot') || '').trim();
+  if (!name) { $('deckSaveName')?.focus(); return; }
+  submit.disabled = true;
+  submit.textContent = 'Conferindo e salvando…';
+  try {
+    const response = await fetch('/api/decks', {
+      method: 'POST',
+      headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, pilot, format: pendingValidatedDeck.format, entries: pendingValidatedDeck.entries }),
+    });
+    const payload = await response.json().catch(() => ({}));
+    if (!response.ok) throw new Error(payload.error || 'Não foi possível salvar o deck.');
+    const saved = { ...payload.deck, entries: pendingValidatedDeck.entries };
+    savedDeckCache.set(saved.id, saved);
+    validatedDecks = [saved, ...validatedDecks.filter((deck) => deck.id !== saved.id)];
+    validatedDecksLoaded = true;
+    renderValidatedDecks();
+    pendingValidatedDeck = null;
+    form.outerHTML = '<div class="deck-save-success"><span aria-hidden="true">✓</span><div><strong>Deck selado no arquivo.</strong><a href="/decks">Ver em Decks validados →</a></div></div>';
+    showToast('Deck salvo no arquivo do playgroup');
+  } catch (error) {
+    submit.disabled = false;
+    submit.textContent = 'Tentar salvar novamente';
+    showToast(error.message || 'Não foi possível salvar o deck agora.');
+  }
+}
+
+function validatedDeckFormatLabel(key) {
+  return deckFormats.find((format) => format.key === key)?.label || key || 'Formatinho';
+}
+
+function validatedDeckDate(value) {
+  if (!value) return '—';
+  const normalized = /T|Z/.test(value) ? value : `${String(value).replace(' ', 'T')}Z`;
+  return formatDate(normalized);
+}
+
+function renderValidatedDecks() {
+  if (!$('validatedDecksGrid')) return;
+  const query = slug($('validatedDeckSearch')?.value || '').trim();
+  const format = $('validatedDeckFormat')?.value || '';
+  const filtered = validatedDecks.filter((deck) => (!query || slug(`${deck.name} ${deck.pilot || ''}`).includes(query)) && (!format || deck.format === format));
+  $('validatedDeckCount').textContent = validatedDecks.length;
+  $('validatedDeckResultCount').textContent = `${filtered.length} ${filtered.length === 1 ? 'deck' : 'decks'}`;
+  $('validatedDecksGrid').innerHTML = filtered.map((deck) => {
+    const image = deck.cover_image ? `<img src="${escapeHtml(deck.cover_image)}" alt="" loading="lazy" decoding="async" />` : '';
+    const pilot = deck.pilot ? `Pilotado por ${escapeHtml(deck.pilot)}` : 'Piloto não informado';
+    return `<button class="validated-deck-card" type="button" data-saved-deck-id="${escapeHtml(deck.id)}" aria-label="Abrir deck ${escapeHtml(deck.name)}">
+      <span class="validated-deck-card__art">${image}<span class="validated-deck-card__seal"><span aria-hidden="true">✓</span> Validado</span></span>
+      <span class="validated-deck-card__body"><span class="validated-deck-card__format">${escapeHtml(validatedDeckFormatLabel(deck.format))}</span><h3>${escapeHtml(deck.name)}</h3><span class="validated-deck-card__pilot">${pilot}</span><span class="validated-deck-card__meta"><span>${Number(deck.card_count) || 0} cartas</span><span>${validatedDeckDate(deck.created_at)}</span></span><span class="validated-deck-card__open" aria-hidden="true">→</span></span>
+    </button>`;
+  }).join('');
+  $('validatedDecksGrid').setAttribute('aria-busy', 'false');
+  $('validatedDecksLoading').hidden = true;
+  $('validatedDecksError').hidden = true;
+  const empty = !filtered.length;
+  $('validatedDecksEmpty').hidden = !empty;
+  if (empty && validatedDecks.length) {
+    $('validatedDecksEmpty').querySelector('h2').textContent = 'Nenhum deck com esses filtros';
+    $('validatedDecksEmpty').querySelector('p').textContent = 'Tente outro nome ou selecione todos os formatos.';
+  } else if (empty) {
+    $('validatedDecksEmpty').querySelector('h2').textContent = 'Nenhum deck selado ainda';
+    $('validatedDecksEmpty').querySelector('p').textContent = 'Valide a primeira lista e inaugure o arquivo do playgroup.';
+  }
+  $('validatedDecksEmpty').querySelector('[data-open-deck-validator]').hidden = empty && validatedDecks.length > 0;
+}
+
+async function loadValidatedDecks({ force = false } = {}) {
+  if (validatedDecksLoaded && !force) { renderValidatedDecks(); return; }
+  $('validatedDecksLoading').hidden = false;
+  $('validatedDecksError').hidden = true;
+  $('validatedDecksEmpty').hidden = true;
+  $('validatedDecksGrid').setAttribute('aria-busy', 'true');
+  try {
+    const response = await fetch('/api/decks', { headers: { Accept: 'application/json' }, cache: 'no-store' });
+    if (!response.ok) throw new Error(`Decks ${response.status}`);
+    const payload = await response.json();
+    validatedDecks = Array.isArray(payload.decks) ? payload.decks : [];
+    validatedDecks.forEach((deck) => savedDeckCache.set(deck.id, deck));
+    validatedDecksLoaded = true;
+    renderValidatedDecks();
+  } catch {
+    $('validatedDecksLoading').hidden = true;
+    $('validatedDecksGrid').setAttribute('aria-busy', 'false');
+    $('validatedDecksError').hidden = false;
+  }
+}
+
+async function openSavedDeck(id) {
+  const modal = $('savedDeckModal');
+  let deck = savedDeckCache.get(id);
+  try {
+    if (!deck?.entries) {
+      const response = await fetch(`/api/decks/${encodeURIComponent(id)}`, { headers: { Accept: 'application/json' }, cache: 'no-store' });
+      if (!response.ok) throw new Error('Deck não encontrado');
+      deck = (await response.json()).deck;
+      savedDeckCache.set(id, deck);
+    }
+    currentSavedDeck = deck;
+    $('savedDeckTitle').textContent = deck.name;
+    $('savedDeckEyebrow').textContent = `Deck aprovado · ${validatedDeckFormatLabel(deck.format)}`;
+    $('savedDeckPilot').textContent = deck.pilot ? `Pilotado por ${deck.pilot}` : 'Piloto não informado';
+    $('savedDeckCover').src = deck.cover_image || '';
+    $('savedDeckCover').alt = deck.cover_name ? `Arte de ${deck.cover_name}` : '';
+    $('savedDeckCover').hidden = !deck.cover_image;
+    $('savedDeckStats').innerHTML = `<div><strong>${Number(deck.card_count) || 0}</strong><span>cartas</span></div><div><strong>${Number(deck.unique_count) || 0}</strong><span>nomes</span></div><div><strong>${validatedDeckDate(deck.created_at)}</strong><span>validado</span></div>`;
+    const entries = Array.isArray(deck.entries) ? deck.entries : [];
+    $('savedDeckList').innerHTML = `<div class="saved-deck-list__heading"><strong>Lista completa</strong><span>${entries.length} nomes</span></div><ul>${entries.map((entry) => `<li><span>${Number(entry.quantity) || 1}×</span><strong>${escapeHtml(entry.name)}</strong></li>`).join('')}</ul>`;
+    if (typeof modal.showModal === 'function') modal.showModal(); else modal.setAttribute('open', '');
+    document.body.classList.add('is-locked');
+    $('closeSavedDeck').focus();
+  } catch {
+    showToast('Não foi possível abrir este deck agora.');
+  }
+}
+
+function closeSavedDeck() {
+  const modal = $('savedDeckModal');
+  if (modal.open) modal.close(); else modal.removeAttribute('open');
+  currentSavedDeck = null;
+  if (!$('deckValidatorModal').open && !$('cardModal').open) document.body.classList.remove('is-locked');
+}
+
+async function copySavedDeck() {
+  if (!currentSavedDeck?.entries) return;
+  const text = currentSavedDeck.entries.map((entry) => `${entry.quantity} ${entry.name}`).join('\n');
+  try { await navigator.clipboard.writeText(text); showToast('Lista do deck copiada'); }
+  catch { window.prompt('Copie a lista do deck:', text); }
+}
+
+function configurePageMode() {
+  const decksPage = location.pathname.replace(/\/+$/, '') === '/decks';
+  $('homeHero').hidden = decksPage;
+  $('archiveSection').hidden = decksPage;
+  $('validatedDecksPage').hidden = !decksPage;
+  document.body.classList.toggle('is-decks-page', decksPage);
+  document.querySelector('.brand-lockup').href = decksPage ? '/' : '#top';
+  if (decksPage) {
+    document.title = 'Decks validados · Códice do Formatinho';
+    document.querySelector('.skip-link').href = '#validatedDecksTitle';
+    loadValidatedDecks();
+  }
 }
 
 function bind() {
@@ -1553,6 +1733,26 @@ function bind() {
   $('deckListInput').addEventListener('input', updateDeckListCount);
   $('clearDeckList').addEventListener('click', () => { $('deckListInput').value = ''; updateDeckListCount(); $('deckListInput').focus(); });
   $('validateDeck').addEventListener('click', validateDeck);
+  $('deckValidationResult').addEventListener('click', (event) => {
+    if (event.target.closest('[data-save-deck-accept]')) renderDeckSaveForm();
+    if (event.target.closest('[data-save-deck-decline]')) { event.target.closest('.deck-save-prompt')?.remove(); pendingValidatedDeck = null; }
+    if (event.target.closest('[data-save-deck-cancel]')) { event.target.closest('.deck-save-form')?.remove(); pendingValidatedDeck = null; }
+  });
+  $('deckValidationResult').addEventListener('submit', (event) => { if (event.target.matches('#deckSaveForm')) saveValidatedDeck(event); });
+
+  $('openValidatorFromDecks').addEventListener('click', openDeckValidator);
+  $('validatedDecksPage').addEventListener('click', (event) => { if (event.target.closest('[data-open-deck-validator]')) openDeckValidator(); });
+  $('validatedDeckSearch').addEventListener('input', renderValidatedDecks);
+  $('validatedDeckFormat').addEventListener('change', renderValidatedDecks);
+  $('retryValidatedDecks').addEventListener('click', () => loadValidatedDecks({ force: true }));
+  $('validatedDecksGrid').addEventListener('click', (event) => {
+    const card = event.target.closest('[data-saved-deck-id]');
+    if (card) openSavedDeck(card.dataset.savedDeckId);
+  });
+  $('closeSavedDeck').addEventListener('click', closeSavedDeck);
+  $('copySavedDeck').addEventListener('click', copySavedDeck);
+  $('savedDeckModal').addEventListener('cancel', (event) => { event.preventDefault(); closeSavedDeck(); });
+  $('savedDeckModal').addEventListener('click', (event) => { if (event.target === $('savedDeckModal')) closeSavedDeck(); });
 
   $('closeCardModal').addEventListener('click', closeCard);
   $('flipCard').addEventListener('click', flipModalCard);
@@ -1562,7 +1762,7 @@ function bind() {
   document.querySelector('.modal-section--data').addEventListener('toggle', (event) => { if (event.target.open) hydrateRawDetails(); });
 
   document.addEventListener('keydown', (event) => {
-    if (event.key === '/' && !/INPUT|SELECT|TEXTAREA/.test(document.activeElement?.tagName || '')) { event.preventDefault(); $('searchInput').focus(); }
+    if (event.key === '/' && !/INPUT|SELECT|TEXTAREA/.test(document.activeElement?.tagName || '')) { event.preventDefault(); (document.body.classList.contains('is-decks-page') ? $('validatedDeckSearch') : $('searchInput')).focus(); }
     if (event.key === 'Escape' && $('filterPanel').classList.contains('is-open')) { event.preventDefault(); closeFilterSheet(); }
     if (event.key === 'Tab' && $('filterPanel').classList.contains('is-open') && innerWidth < 960) {
       const focusable = [...$('filterPanel').querySelectorAll('button,select,input,[href]')].filter((item) => !item.hidden && !item.disabled);
@@ -1686,7 +1886,9 @@ document.addEventListener('DOMContentLoaded', () => {
   $('pageSubtitle').textContent = site.pageSubtitle;
   $('formatCount').textContent = formats.length;
   renderDeckFormats();
+  $('validatedDeckFormat').innerHTML = `<option value="">Todos os formatos</option>${deckFormats.map((format) => `<option value="${format.key}">${format.label}</option>`).join('')}`;
   bind();
+  configurePageMode();
   loadCards();
   if (state.tab === 'catalog') loadCatalog();
   if (isScryfallSyntaxSearch(state.query)) void ensureScryfallSyntaxSearch();

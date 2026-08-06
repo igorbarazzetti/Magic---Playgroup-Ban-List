@@ -38,6 +38,7 @@
         </span>
       </a>
       <div class="header-actions">
+        <a class="header-decks-link" href="/decks" aria-label="Abrir decks validados"><span aria-hidden="true">◇</span><span>Decks validados</span></a>
         <span class="fanmade-mark"><i aria-hidden="true"></i> Fanmade</span>
         <button class="icon-button" id="shareButton" type="button" aria-label="Compartilhar esta seleção" title="Copiar link desta seleção">
           <span aria-hidden="true">↗</span><span class="icon-button__label">Compartilhar</span>
@@ -50,7 +51,7 @@
     </div>
 
     <main id="top">
-      <section class="hero" aria-labelledby="pageTitle">
+      <section class="hero" id="homeHero" aria-labelledby="pageTitle">
         <div class="hero-art" aria-hidden="true">
           <div class="hero-art__layer hero-art__layer--a"></div>
           <div class="hero-art__layer hero-art__layer--b"></div>
@@ -74,7 +75,33 @@
         </div>
       </section>
 
-      <section class="archive" aria-labelledby="archiveTitle">
+      <section class="decks-page" id="validatedDecksPage" aria-labelledby="validatedDecksTitle" hidden>
+        <header class="decks-hero">
+          <div class="decks-hero__glow" aria-hidden="true"></div>
+          <div class="decks-hero__copy">
+            <p class="eyebrow"><span aria-hidden="true">✦</span> Arquivo aprovado pelo conselho</p>
+            <h1 id="validatedDecksTitle">Decks validados</h1>
+            <p>Listas conferidas para o Formatinho e demais formatos, preservadas para inspirar a próxima mesa.</p>
+          </div>
+          <div class="decks-hero__actions">
+            <div class="decks-stat"><strong id="validatedDeckCount">—</strong><span>decks no arquivo</span></div>
+            <button class="decks-primary-action" id="openValidatorFromDecks" type="button"><span aria-hidden="true">✓</span><span>Validar meu deck</span></button>
+          </div>
+        </header>
+
+        <div class="decks-toolbar">
+          <label class="decks-search" for="validatedDeckSearch"><span aria-hidden="true">⌕</span><span class="sr-only">Buscar decks por nome ou piloto</span><input id="validatedDeckSearch" type="search" inputmode="search" placeholder="Buscar deck ou piloto…" autocomplete="off" /></label>
+          <label class="decks-format-filter" for="validatedDeckFormat"><span class="sr-only">Filtrar decks por formato</span><select id="validatedDeckFormat"><option value="">Todos os formatos</option></select></label>
+        </div>
+
+        <div class="decks-page__heading"><div><p class="eyebrow">Grimório de estratégias</p><h2>Listas prontas para a mesa</h2></div><span id="validatedDeckResultCount" aria-live="polite"></span></div>
+        <div class="validated-decks-grid" id="validatedDecksGrid" aria-live="polite" aria-busy="true"></div>
+        <section class="decks-state decks-state--loading" id="validatedDecksLoading"><span aria-hidden="true">✦</span><h2>Abrindo o arquivo…</h2><p>Consultando os decks aprovados pelo conselho.</p></section>
+        <section class="decks-state" id="validatedDecksEmpty" hidden><span aria-hidden="true">◇</span><h2>Nenhum deck selado ainda</h2><p>Valide a primeira lista e inaugure o arquivo do playgroup.</p><button type="button" data-open-deck-validator>Validar primeiro deck</button></section>
+        <section class="decks-state decks-state--error" id="validatedDecksError" hidden><span aria-hidden="true">!</span><h2>O arquivo não respondeu</h2><p>Seus decks continuam preservados. Tente abrir novamente.</p><button type="button" id="retryValidatedDecks">Tentar novamente</button></section>
+      </section>
+
+      <section class="archive" id="archiveSection" aria-labelledby="archiveTitle">
         <div class="collection-tabs" id="collectionTabs" role="tablist" aria-label="Coleções do Formatinho">
           <button id="banlistTab" class="collection-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="collectionWorkspace" data-collection-tab="banlist">
             <span>Banlist</span><small>Cartas proibidas</small>
@@ -345,6 +372,26 @@
           <section id="deckValidationResult" class="deck-result" aria-live="polite" aria-atomic="false" hidden></section>
 
           <p class="deck-validator__scope">Esta verificação confere nomes, legalidade no formato e cartas banidas. Regras de montagem como tamanho, limite de cópias e identidade de cor do comandante não são avaliadas.</p>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog id="savedDeckModal" class="saved-deck-modal" aria-labelledby="savedDeckTitle">
+      <div class="saved-deck-modal__shell">
+        <header class="saved-deck-modal__header">
+          <button id="closeSavedDeck" type="button" aria-label="Voltar aos decks"><span aria-hidden="true">←</span><span>Decks validados</span></button>
+          <span class="saved-deck-modal__seal"><span aria-hidden="true">✓</span> Validado</span>
+        </header>
+        <div class="saved-deck-modal__scroll">
+          <div class="saved-deck-modal__art"><img id="savedDeckCover" alt="" /><div aria-hidden="true"></div></div>
+          <article class="saved-deck-modal__content">
+            <p class="eyebrow" id="savedDeckEyebrow">Deck aprovado</p>
+            <h2 id="savedDeckTitle">Deck validado</h2>
+            <p class="saved-deck-modal__pilot" id="savedDeckPilot"></p>
+            <div class="saved-deck-modal__stats" id="savedDeckStats"></div>
+            <div class="saved-deck-modal__actions"><button id="copySavedDeck" type="button"><span aria-hidden="true">⧉</span> Copiar lista</button></div>
+            <div class="saved-deck-list" id="savedDeckList"></div>
+          </article>
         </div>
       </div>
     </dialog>
