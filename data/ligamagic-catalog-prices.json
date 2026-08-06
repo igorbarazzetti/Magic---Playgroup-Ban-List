@@ -5,17 +5,17 @@
     "homepage": "https://www.ligamagic.com.br/",
     "attribution": "Preços consultados na LigaMagic para uso pessoal do playgroup."
   },
-  "generated_at": "2026-08-06T00:18:05.429Z",
-  "last_batch_at": "2026-08-06T00:18:05.429Z",
+  "generated_at": "2026-08-06T00:40:52.303Z",
+  "last_batch_at": "2026-08-06T00:40:52.303Z",
   "mode": "bootstrap",
   "coverage": {
     "target_count": 31983,
-    "attempted_count": 366,
-    "confirmed_count": 366,
+    "attempted_count": 367,
+    "confirmed_count": 367,
     "unavailable_count": 0,
     "stale_count": 0,
-    "percent": 1.14,
-    "estimated_completion_at": "2026-09-01T08:38:29.433Z"
+    "percent": 1.15,
+    "estimated_completion_at": "2026-09-01T09:00:04.308Z"
   },
   "prices": {
     "002965be-a36f-4a09-9ce0-c6535bca1703": [
@@ -1337,6 +1337,11 @@
       10,
       "a",
       1785960896
+    ],
+    "b96ccc2f-88e5-4522-924e-76fc76dc3b39": [
+      75,
+      "a",
+      1785976852
     ],
     "ba284fe6-bb29-455c-8321-9714a0cdc05e": [
       1799999,
