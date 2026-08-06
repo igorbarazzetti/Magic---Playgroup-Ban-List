@@ -65,6 +65,12 @@ function parsePrice(value) {
   return Number.isFinite(amount) && amount > 0 ? amount : null;
 }
 
+function priceToCents(value) {
+  if (value === null || value === undefined || value === '') return null;
+  const amount = Number(value);
+  return Number.isFinite(amount) && amount > 0 ? Math.round(amount * 100) : null;
+}
+
 export function extractCheapestNormalPrinting(html) {
   const match = String(html).match(/var\s+cards_editions\s*=\s*(\[[\s\S]*?\]);/i);
   if (!match) throw new Error('A lista de impressões não foi encontrada na página.');
@@ -257,6 +263,12 @@ async function createShardStore() {
       cache.get(prefix)[oracleId] = entry;
       touched.add(prefix);
     },
+    async delete(oracleId) {
+      const prefix = detailPrefix(oracleId);
+      if (!cache.has(prefix)) cache.set(prefix, await readJson(resolve(detailsRoot, `${prefix}.json`), {}));
+      delete cache.get(prefix)[oracleId];
+      touched.add(prefix);
+    },
     async write() {
       for (const prefix of [...touched].sort()) {
         const shard = cache.get(prefix) || {};
@@ -271,10 +283,24 @@ async function migrateLegacy(priceIndex, legacyBook, shards) {
     if (priceIndex.prices[oracleId]) continue;
     const checkedAt = entry.checked_at || entry.attempted_at || legacyBook.generated_at || new Date().toISOString();
     const status = entry.status === 'available' ? 'a' : entry.status === 'stale' ? 's' : 'u';
-    const cents = Number.isFinite(Number(entry.price_brl)) ? Math.round(Number(entry.price_brl) * 100) : null;
+    const cents = priceToCents(entry.price_brl);
     priceIndex.prices[oracleId] = [cents, status, timestampSeconds(checkedAt)];
     await shards.set(oracleId, entry);
   }
+}
+
+async function removeBlockedPlaceholders(priceIndex, legacyBook, shards) {
+  let removed = 0;
+  for (const [oracleId, tuple] of Object.entries(priceIndex.prices || {})) {
+    if (tuple?.[priceTuple.status] !== 'u') continue;
+    const detail = await shards.get(oracleId);
+    if (!/^HTTP\s+(403|429)\b/.test(String(detail?.last_error || ''))) continue;
+    delete priceIndex.prices[oracleId];
+    delete legacyBook.cards?.[oracleId];
+    await shards.delete(oracleId);
+    removed += 1;
+  }
+  if (removed) console.log(`${removed} bloqueios antigos foram removidos da cobertura para nova tentativa.`);
 }
 
 function targetCards(catalog) {
@@ -327,7 +353,7 @@ async function collectPrice(card, previousEntry, throttle) {
     const message = error instanceof Error ? error.message : 'Falha desconhecida';
     const statusCode = Number(error?.status || message.match(/HTTP\s+(\d+)/)?.[1]) || null;
     if (previousEntry?.price_brl) return { entry: { ...previousEntry, status: 'stale', name: card.name, source_url: sourceUrl, attempted_at: new Date().toISOString(), last_error: message }, statusCode };
-    return { entry: { status: 'unavailable', name: card.name, price_brl: null, finish: 'normal', condition: 'NM', source_url: sourceUrl, attempted_at: new Date().toISOString(), last_error: message }, statusCode };
+    return { entry: null, statusCode, error: message };
   }
 }
 
@@ -339,6 +365,7 @@ async function main() {
   const legacyBook = await readJson(legacyPath, { cards: {} });
   const shards = await createShardStore();
   await migrateLegacy(priceIndex, legacyBook, shards);
+  await removeBlockedPlaceholders(priceIndex, legacyBook, shards);
   const targets = targetCards(catalog);
   const selection = selectBatch(targets, priceIndex.prices, options.limit);
   const lastBatchAt = Date.parse(priceIndex.last_batch_at || '');
@@ -373,26 +400,37 @@ async function main() {
   const banlistIds = new Set((catalog.banlist_targets || []).map(([oracleId]) => oracleId));
   let consecutiveBlocks = 0;
   let processed = 0;
+  let requested = 0;
   console.log(`Modo ${selection.mode}: consultando até ${selection.cards.length} cartas com intervalo mínimo de ${defaultDelayMs} ms.`);
 
   for (const card of selection.cards) {
     const previousEntry = await shards.get(card.oracleId);
-    const { entry, statusCode } = await collectPrice(card, previousEntry, throttle);
-    const checkedAt = entry.checked_at || entry.attempted_at || new Date().toISOString();
-    const status = entry.status === 'available' ? 'a' : entry.status === 'stale' ? 's' : 'u';
-    const cents = Number.isFinite(Number(entry.price_brl)) ? Math.round(Number(entry.price_brl) * 100) : null;
-    priceIndex.prices[card.oracleId] = [cents, status, timestampSeconds(checkedAt)];
-    await shards.set(card.oracleId, entry);
-    if (banlistIds.has(card.oracleId)) legacyBook.cards[card.oracleId] = entry;
-    processed += 1;
-    const amount = cents !== null ? `R$ ${(cents / 100).toFixed(2)}` : entry.status;
-    console.log(`[${processed}/${selection.cards.length}] ${card.name}: ${amount}`);
+    const { entry, statusCode, error } = await collectPrice(card, previousEntry, throttle);
+    requested += 1;
+    if (entry) {
+      const checkedAt = entry.checked_at || entry.attempted_at || new Date().toISOString();
+      const status = entry.status === 'available' ? 'a' : entry.status === 'stale' ? 's' : 'u';
+      const cents = priceToCents(entry.price_brl);
+      priceIndex.prices[card.oracleId] = [cents, status, timestampSeconds(checkedAt)];
+      await shards.set(card.oracleId, entry);
+      if (banlistIds.has(card.oracleId)) legacyBook.cards[card.oracleId] = entry;
+      processed += 1;
+      const amount = cents !== null ? `R$ ${(cents / 100).toFixed(2)}` : entry.status;
+      console.log(`[${requested}/${selection.cards.length}] ${card.name}: ${amount}`);
+    } else {
+      console.warn(`[${requested}/${selection.cards.length}] ${card.name}: consulta não registrada (${error || 'falha temporária'}).`);
+    }
 
     consecutiveBlocks = [403, 429].includes(statusCode) ? consecutiveBlocks + 1 : 0;
     if (consecutiveBlocks >= 5) {
       console.warn('Circuito de segurança acionado após cinco bloqueios consecutivos; encerrando o lote.');
       break;
     }
+  }
+
+  if (!processed) {
+    console.warn('Nenhum preço foi registrado; os dados de cobertura permanecem inalterados.');
+    return;
   }
 
   const nextSelection = selectBatch(targets, priceIndex.prices, options.limit);

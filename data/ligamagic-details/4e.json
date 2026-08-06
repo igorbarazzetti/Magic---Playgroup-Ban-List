@@ -10,15 +10,5 @@
     "collector_number": "26",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Flawless%20Maneuver",
     "checked_at": "2026-08-05T20:06:22.586Z"
-  },
-  "4e536142-4ebe-4062-887b-5dd123c41d39": {
-    "status": "unavailable",
-    "name": "_____",
-    "price_brl": null,
-    "finish": "normal",
-    "condition": "NM",
-    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=_____",
-    "attempted_at": "2026-08-05T23:55:11.347Z",
-    "last_error": "HTTP 403"
   }
 }

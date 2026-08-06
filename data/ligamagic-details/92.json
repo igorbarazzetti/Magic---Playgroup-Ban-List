@@ -10,15 +10,5 @@
     "collector_number": "254",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Invigorate",
     "checked_at": "2026-08-05T20:08:22.980Z"
-  },
-  "92de7cf0-ac3e-46ae-86b2-7d8ebb0276e4": {
-    "status": "unavailable",
-    "name": "A Good Day to Pie",
-    "price_brl": null,
-    "finish": "normal",
-    "condition": "NM",
-    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=A%20Good%20Day%20to%20Pie",
-    "attempted_at": "2026-08-05T23:55:31.194Z",
-    "last_error": "HTTP 403"
   }
 }
