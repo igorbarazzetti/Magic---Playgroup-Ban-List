@@ -10,5 +10,17 @@
     "collector_number": "87",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Grief",
     "checked_at": "2026-08-05T20:07:16.725Z"
+  },
+  "0daefecb-7189-44bb-9ca0-96a9572cd240": {
+    "status": "available",
+    "name": "Ajani Fells the Godsire",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3",
+    "printing_code": "MH3",
+    "collector_number": "19",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani%20Fells%20the%20Godsire",
+    "checked_at": "2026-08-06T14:49:32.146Z"
   }
 }

@@ -10,5 +10,17 @@
     "collector_number": "171",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abaddon%20the%20Despoiler",
     "checked_at": "2026-08-06T00:05:06.790Z"
+  },
+  "8df42f4a-022c-4fcb-a953-fb165fdbfc13": {
+    "status": "available",
+    "name": "Akki Ember-Keeper",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kamigawa: Dinastia Neon",
+    "printing_code": "NEO",
+    "collector_number": "130",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akki%20Ember-Keeper",
+    "checked_at": "2026-08-06T14:55:22.249Z"
   }
 }

@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bridge%20from%20Below",
     "checked_at": "2026-08-05T20:03:49.486Z"
   },
+  "0f5f8b47-d104-4e29-b052-02d730d76ec0": {
+    "status": "available",
+    "name": "Agility",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Miragem",
+    "printing_code": "MR",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agility",
+    "checked_at": "2026-08-06T14:41:02.240Z"
+  },
   "0fe602b7-9f88-4d3d-af24-7790df867ed5": {
     "status": "available",
     "name": "Aether Barrier",

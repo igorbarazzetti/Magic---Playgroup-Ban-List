@@ -46,5 +46,17 @@
     "collector_number": "51",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Channel",
     "checked_at": "2026-08-05T20:04:04.328Z"
+  },
+  "d1c8f14b-7977-488a-8bd9-cefd6687f017": {
+    "status": "available",
+    "name": "Aggressive Instinct",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Foundations Jumpstart 2025",
+    "printing_code": "J25",
+    "collector_number": "623",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aggressive%20Instinct",
+    "checked_at": "2026-08-06T14:40:01.627Z"
   }
 }

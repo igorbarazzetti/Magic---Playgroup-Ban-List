@@ -11,6 +11,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Rite%20of%20Flame",
     "checked_at": "2026-08-05T20:11:53.939Z"
   },
+  "8a4028cd-6004-4fb0-a044-0bee662a78e1": {
+    "status": "available",
+    "name": "Ainok Bond-Kin",
+    "price_brl": 0.06,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Khans de Tarkir",
+    "printing_code": "KTK",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ainok%20Bond-Kin",
+    "checked_at": "2026-08-06T14:44:51.889Z"
+  },
+  "8a70ddc5-bb51-45eb-96f2-8ecaecac0cc2": {
+    "status": "available",
+    "name": "Ajani Unyielding",
+    "price_brl": 0.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Revolta do éter",
+    "printing_code": "AER",
+    "collector_number": "127",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani%20Unyielding",
+    "checked_at": "2026-08-06T14:53:02.183Z"
+  },
   "8a810017-06ac-4824-bc2f-a7d303d58ad7": {
     "status": "available",
     "name": "About Face",

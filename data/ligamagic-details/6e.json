@@ -10,5 +10,17 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abbey%20Griffin",
     "checked_at": "2026-08-06T00:06:56.876Z"
+  },
+  "6ec2d957-c6d9-469f-8190-8b621c490238": {
+    "status": "available",
+    "name": "Air-Cult Elemental",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Adventures in the Forgotten Realms",
+    "printing_code": "AFR",
+    "collector_number": "45",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Air-Cult%20Elemental",
+    "checked_at": "2026-08-06T14:46:02.450Z"
   }
 }

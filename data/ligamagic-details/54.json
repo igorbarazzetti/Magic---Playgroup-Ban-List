@@ -22,5 +22,29 @@
     "collector_number": "127",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abandon%20the%20Post",
     "checked_at": "2026-08-06T00:05:46.877Z"
+  },
+  "542423cb-fbfb-4a2f-9f6d-87b273a95e96": {
+    "status": "available",
+    "name": "Ajani, Valiant Protector",
+    "price_brl": 14.27,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Revolta do éter",
+    "printing_code": "AER",
+    "collector_number": "185",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani%2C%20Valiant%20Protector",
+    "checked_at": "2026-08-06T14:53:12.143Z"
+  },
+  "5456f00c-0bef-4c14-902f-f5c14475f284": {
+    "status": "available",
+    "name": "Aisling Leprechaun",
+    "price_brl": 2.36,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Legends",
+    "printing_code": "LG",
+    "collector_number": "7",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aisling%20Leprechaun",
+    "checked_at": "2026-08-06T14:49:01.961Z"
   }
 }

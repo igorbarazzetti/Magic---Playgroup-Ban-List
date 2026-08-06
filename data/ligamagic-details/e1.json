@@ -1,4 +1,16 @@
 {
+  "e101b744-9175-4aa5-bf80-d6944359e538": {
+    "status": "available",
+    "name": "Airbending Lesson",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Avatar: The Last Airbender",
+    "printing_code": "TLA",
+    "collector_number": "8",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Airbending%20Lesson",
+    "checked_at": "2026-08-06T14:47:31.921Z"
+  },
   "e12da2a1-e390-4487-b154-69e439cb7b05": {
     "status": "available",
     "name": "Activated Sleeper",

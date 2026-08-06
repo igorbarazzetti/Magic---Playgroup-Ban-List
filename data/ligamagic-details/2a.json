@@ -1,4 +1,28 @@
 {
+  "2a20530b-d1d6-4dac-8d08-f583bea55e6e": {
+    "status": "available",
+    "name": "Akim, the Soaring Wind",
+    "price_brl": 3.74,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2020",
+    "printing_code": "C20",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akim%2C%20the%20Soaring%20Wind",
+    "checked_at": "2026-08-06T14:54:02.190Z"
+  },
+  "2a3e3f3b-1f74-4ac7-b5ac-7c3cb9cc38a6": {
+    "status": "available",
+    "name": "Ajani's Influence",
+    "price_brl": 0.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2019",
+    "printing_code": "M19",
+    "collector_number": "282",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani's%20Influence",
+    "checked_at": "2026-08-06T14:51:02.100Z"
+  },
   "2a93236d-f182-4826-8112-4048bb3cbaf9": {
     "status": "available",
     "name": "Ageless Entity",
@@ -10,5 +34,17 @@
     "collector_number": "73",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ageless%20Entity",
     "checked_at": "2026-08-06T11:09:34.104Z"
+  },
+  "2ac9d397-10ca-43ce-bff9-45d631553486": {
+    "status": "available",
+    "name": "Agonizing Memories",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Décima Edição",
+    "printing_code": "10E",
+    "collector_number": "126",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agonizing%20Memories",
+    "checked_at": "2026-08-06T14:42:01.709Z"
   }
 }

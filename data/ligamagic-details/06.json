@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mox%20Jet",
     "checked_at": "2026-08-05T20:10:05.148Z"
   },
+  "0679dcef-e1c3-4739-a769-18a4ffdcfde7": {
+    "status": "available",
+    "name": "Akawalli, the Seething Tower",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "As Cavernas Perdidas de Ixalan",
+    "printing_code": "LCI",
+    "collector_number": "220",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akawalli%2C%20the%20Seething%20Tower",
+    "checked_at": "2026-08-06T14:53:52.221Z"
+  },
   "06f09e5a-5cfb-437f-9dd1-1682d71f4e7f": {
     "status": "available",
     "name": "Aetherstorm Roc",

@@ -1,0 +1,26 @@
+{
+  "c03ae426-2536-4c20-a73a-a24e816f76b0": {
+    "status": "available",
+    "name": "Akiri, Fearless Voyager",
+    "price_brl": 2.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Renascer de Zendikar",
+    "printing_code": "ZNR",
+    "collector_number": "220",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akiri%2C%20Fearless%20Voyager",
+    "checked_at": "2026-08-06T14:54:12.243Z"
+  },
+  "c03d073e-ea59-4873-952a-bcf2730f1115": {
+    "status": "available",
+    "name": "Ahn-Crop Champion",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Amonkhet",
+    "printing_code": "AKH",
+    "collector_number": "194",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ahn-Crop%20Champion",
+    "checked_at": "2026-08-06T14:43:21.793Z"
+  }
+}

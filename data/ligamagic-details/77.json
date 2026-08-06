@@ -1,4 +1,16 @@
 {
+  "7744bae4-a8b7-44a5-9b4c-0048ad4cc448": {
+    "status": "available",
+    "name": "Air Elemental",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ixalan",
+    "printing_code": "XLN",
+    "collector_number": "45",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Air%20Elemental",
+    "checked_at": "2026-08-06T14:46:11.943Z"
+  },
   "775617cd-7264-4365-94c4-ffae4eb9ec8b": {
     "status": "available",
     "name": "Aetherflux Conduit",

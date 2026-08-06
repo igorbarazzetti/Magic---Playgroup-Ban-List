@@ -10,5 +10,17 @@
     "collector_number": "168",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerial%20Volley",
     "checked_at": "2026-08-06T07:18:35.597Z"
+  },
+  "abe377f8-35f0-4dea-a681-91d31a36815c": {
+    "status": "available",
+    "name": "Agitator Ant",
+    "price_brl": 0.45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2020",
+    "printing_code": "C20",
+    "collector_number": "49",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agitator%20Ant",
+    "checked_at": "2026-08-06T14:41:21.712Z"
   }
 }

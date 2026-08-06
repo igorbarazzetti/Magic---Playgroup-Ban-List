@@ -1,4 +1,28 @@
 {
+  "c469133e-174d-476b-b135-bbf15e415e72": {
+    "status": "available",
+    "name": "Aggressive Negotiations",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm",
+    "printing_code": "TDM",
+    "collector_number": "70",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aggressive%20Negotiations",
+    "checked_at": "2026-08-06T14:40:31.694Z"
+  },
+  "c4d2fdf9-637d-4e97-ae33-45f2d27bf8cd": {
+    "status": "available",
+    "name": "Airbender Ascension",
+    "price_brl": 7.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Avatar: The Last Airbender",
+    "printing_code": "TLA",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Airbender%20Ascension",
+    "checked_at": "2026-08-06T14:47:11.900Z"
+  },
   "c4edcdc0-91de-410c-95dd-219efcef692a": {
     "status": "available",
     "name": "Acornelia, Fashionable Filcher",

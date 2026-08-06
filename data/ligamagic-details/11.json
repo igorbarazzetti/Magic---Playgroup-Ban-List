@@ -1,4 +1,16 @@
 {
+  "11669fe5-9298-4e1a-a4f7-6a4598dbc8dd": {
+    "status": "available",
+    "name": "Agonizing Syphon",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2020",
+    "printing_code": "M20",
+    "collector_number": "83",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agonizing%20Syphon",
+    "checked_at": "2026-08-06T14:42:21.710Z"
+  },
   "1167fe30-32b8-4381-8067-a05cd345977b": {
     "status": "available",
     "name": "A Little Chat",
@@ -34,5 +46,17 @@
     "collector_number": "19980118",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Survival%20of%20the%20Fittest",
     "checked_at": "2026-08-05T20:13:17.679Z"
+  },
+  "11b7ee78-fca6-4b34-93e4-e60492583d50": {
+    "status": "available",
+    "name": "Agrus Kos, Spirit of Justice",
+    "price_brl": 0.6,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassinato na Mansão Karlov",
+    "printing_code": "MKM",
+    "collector_number": "184",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agrus%20Kos%2C%20Spirit%20of%20Justice",
+    "checked_at": "2026-08-06T14:43:01.753Z"
   }
 }

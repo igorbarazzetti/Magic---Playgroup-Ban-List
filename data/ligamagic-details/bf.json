@@ -22,5 +22,41 @@
     "collector_number": "5",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adventurers'%20Guildhouse",
     "checked_at": "2026-08-06T07:12:44.765Z"
+  },
+  "bf7ec320-64bb-46ca-aac0-ca3d4224b69e": {
+    "status": "available",
+    "name": "Ajani's Response",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven",
+    "printing_code": "SOS",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani's%20Response",
+    "checked_at": "2026-08-06T14:51:52.177Z"
+  },
+  "bf84a598-12d3-406d-8eeb-40592e782b87": {
+    "status": "available",
+    "name": "Ainok Tracker",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Khans de Tarkir",
+    "printing_code": "KTK",
+    "collector_number": "96",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ainok%20Tracker",
+    "checked_at": "2026-08-06T14:45:31.877Z"
+  },
+  "bf9c5c0d-86a5-467a-863c-653279f2e6e7": {
+    "status": "available",
+    "name": "Akki Raider",
+    "price_brl": 0.17,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Traidores de Kamigawa",
+    "printing_code": "BOK",
+    "collector_number": "92",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akki%20Raider",
+    "checked_at": "2026-08-06T14:55:42.292Z"
   }
 }

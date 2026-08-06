@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aethertide%20Whale",
     "checked_at": "2026-08-06T11:05:03.912Z"
   },
+  "53bfe54e-9b97-4113-97d9-3c5dbc85e7cf": {
+    "status": "available",
+    "name": "Akal Pakal, First Among Equals",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "As Cavernas Perdidas de Ixalan",
+    "printing_code": "LCI",
+    "collector_number": "44",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akal%20Pakal%2C%20First%20Among%20Equals",
+    "checked_at": "2026-08-06T14:53:42.202Z"
+  },
   "53c730c6-2f8c-4af8-b400-b9d573a71e60": {
     "status": "available",
     "name": "Adaptive Automaton",

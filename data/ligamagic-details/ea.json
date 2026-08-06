@@ -22,5 +22,17 @@
     "collector_number": "219",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abuelo%2C%20Ancestral%20Echo",
     "checked_at": "2026-08-06T00:15:37.282Z"
+  },
+  "eae3e762-dacd-4bd2-923c-3abb5ceb729a": {
+    "status": "available",
+    "name": "Aisha of Sparks and Smoke",
+    "price_brl": 3.58,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secret Lair Exclusives: Universes Within",
+    "printing_code": "SLX",
+    "collector_number": "12",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aisha%20of%20Sparks%20and%20Smoke",
+    "checked_at": "2026-08-06T14:48:51.966Z"
   }
 }

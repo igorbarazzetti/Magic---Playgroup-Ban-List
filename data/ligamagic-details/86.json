@@ -1,4 +1,16 @@
 {
+  "860d0449-8032-458b-8335-30be238d6689": {
+    "status": "available",
+    "name": "Ainok Artillerist",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dragões de Tarkir",
+    "printing_code": "DTK",
+    "collector_number": "171",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ainok%20Artillerist",
+    "checked_at": "2026-08-06T14:44:41.847Z"
+  },
   "86373537-7424-416a-8d89-cc38f6538458": {
     "status": "available",
     "name": "Advantageous Proclamation",

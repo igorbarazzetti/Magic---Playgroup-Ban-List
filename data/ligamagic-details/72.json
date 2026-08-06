@@ -46,5 +46,17 @@
     "collector_number": "132",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abyssal%20Persecutor",
     "checked_at": "2026-08-06T03:44:31.510Z"
+  },
+  "72a0e0f1-e8be-441a-bcaf-029fb1bd1fd2": {
+    "status": "available",
+    "name": "Airship Crash",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY",
+    "printing_code": "FIN",
+    "collector_number": "171",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Airship%20Crash",
+    "checked_at": "2026-08-06T14:48:22.269Z"
   }
 }

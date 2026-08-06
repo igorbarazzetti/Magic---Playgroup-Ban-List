@@ -1,4 +1,16 @@
 {
+  "ff321c13-03ae-4cb9-b371-1242290f8433": {
+    "status": "available",
+    "name": "Aggressive Mining",
+    "price_brl": 0.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2015",
+    "printing_code": "M15",
+    "collector_number": "127",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aggressive%20Mining",
+    "checked_at": "2026-08-06T14:40:21.716Z"
+  },
   "ff4297d3-3d96-4bd6-a606-1bdc20a6df2b": {
     "status": "available",
     "name": "Aether Storm",

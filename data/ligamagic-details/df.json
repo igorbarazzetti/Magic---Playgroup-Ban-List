@@ -22,5 +22,17 @@
     "collector_number": "7",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Hymn%20of%20the%20Wilds",
     "checked_at": "2026-08-05T20:07:55.847Z"
+  },
+  "dfb5f660-fd8b-4b7b-934c-6a71cd182f15": {
+    "status": "available",
+    "name": "Ajani Goldmane",
+    "price_brl": 2.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2011",
+    "printing_code": "M11",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani%20Goldmane",
+    "checked_at": "2026-08-06T14:49:42.022Z"
   }
 }

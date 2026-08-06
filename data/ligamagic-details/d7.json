@@ -1,4 +1,16 @@
 {
+  "d7d163a7-6f3f-40ab-a47c-ed497df92244": {
+    "status": "available",
+    "name": "Ahn-Crop Invader",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra da Centelha",
+    "printing_code": "WAR",
+    "collector_number": "113",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ahn-Crop%20Invader",
+    "checked_at": "2026-08-06T14:43:41.834Z"
+  },
   "d7fa5c42-7cd5-42e7-a42e-724c1a3df96a": {
     "status": "available",
     "name": "Aerial Boost",

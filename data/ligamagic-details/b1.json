@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Jihad",
     "checked_at": "2026-08-05T20:08:43.973Z"
   },
+  "b191ae0c-7d54-459f-abe3-aab5d792e514": {
+    "status": "available",
+    "name": "Aim for the Head",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Voto Carmesim",
+    "printing_code": "VOW",
+    "collector_number": "92",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aim%20for%20the%20Head",
+    "checked_at": "2026-08-06T14:44:22.421Z"
+  },
   "b1a0e129-27f0-4a09-b00d-497e18777306": {
     "status": "available",
     "name": "Abhorrent Oculus",

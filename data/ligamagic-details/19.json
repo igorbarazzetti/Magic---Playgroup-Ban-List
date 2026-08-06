@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agent%20of%20Acquisitions",
     "checked_at": "2026-08-06T11:11:04.132Z"
   },
+  "192aa7b2-a819-4ffd-bfbf-a270271898e6": {
+    "status": "available",
+    "name": "Aggravate",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Retorno de Avacyn",
+    "printing_code": "AVR",
+    "collector_number": "125",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aggravate",
+    "checked_at": "2026-08-06T14:39:31.620Z"
+  },
   "19ad338a-c89f-406d-ad1a-222c22044e1b": {
     "status": "available",
     "name": "Act on Impulse",

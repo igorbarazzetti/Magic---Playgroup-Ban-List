@@ -46,5 +46,17 @@
     "collector_number": "202",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Hermit%20Druid",
     "checked_at": "2026-08-05T20:07:32.226Z"
+  },
+  "16fe1f04-9bbf-43a3-ab14-395fdf4a3a43": {
+    "status": "available",
+    "name": "Akki Blizzard-Herder",
+    "price_brl": 0.94,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Traidores de Kamigawa",
+    "printing_code": "BOK",
+    "collector_number": "91",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akki%20Blizzard-Herder",
+    "checked_at": "2026-08-06T14:54:52.240Z"
   }
 }

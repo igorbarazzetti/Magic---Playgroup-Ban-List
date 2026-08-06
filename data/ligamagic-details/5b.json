@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Affa%20Protector",
     "checked_at": "2026-08-06T11:06:23.945Z"
   },
+  "5b3ef91a-5804-43cc-a947-f25f33b7b88c": {
+    "status": "available",
+    "name": "Ahn-Crop Crasher",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Amonkhet",
+    "printing_code": "AKH",
+    "collector_number": "117",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ahn-Crop%20Crasher",
+    "checked_at": "2026-08-06T14:43:31.757Z"
+  },
   "5b6bdf5a-2742-4851-92cd-a857a3852836": {
     "status": "available",
     "name": "Treasure Cruise",
@@ -34,6 +46,18 @@
     "collector_number": "79",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Treasure%20Cruise",
     "checked_at": "2026-08-05T20:14:14.924Z"
+  },
+  "5bd81d2f-46a1-4536-92e7-28c7e1892735": {
+    "status": "available",
+    "name": "Akki Battle Squad",
+    "price_brl": 24.95,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kamigawa: Dinastia Neon (Commander)",
+    "printing_code": "NEC",
+    "collector_number": "18",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akki%20Battle%20Squad",
+    "checked_at": "2026-08-06T14:54:42.250Z"
   },
   "5bf49f39-b3d5-4148-8dc2-b5b5011769d2": {
     "status": "available",

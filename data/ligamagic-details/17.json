@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mystic%20Sanctuary",
     "checked_at": "2026-08-05T20:10:26.239Z"
   },
+  "17c4807c-158e-4a86-90f1-d8fb2ebe892a": {
+    "status": "available",
+    "name": "Ajani's Last Stand",
+    "price_brl": 0.19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2019",
+    "printing_code": "M19",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani's%20Last%20Stand",
+    "checked_at": "2026-08-06T14:51:12.110Z"
+  },
   "17fa98cd-ed8f-483f-9525-7e989a82ebb2": {
     "status": "available",
     "name": "Balance",

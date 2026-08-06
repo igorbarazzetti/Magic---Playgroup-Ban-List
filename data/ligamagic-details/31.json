@@ -1,4 +1,16 @@
 {
+  "31009c45-afba-45f4-a6ca-9dfdb9990e72": {
+    "status": "available",
+    "name": "Ajani's Sunstriker",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2013",
+    "printing_code": "M13",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani's%20Sunstriker",
+    "checked_at": "2026-08-06T14:52:02.392Z"
+  },
   "31816924-1430-4581-86e8-325e2ca16217": {
     "status": "available",
     "name": "Agents of HYDRA",

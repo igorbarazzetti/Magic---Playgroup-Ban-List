@@ -22,5 +22,17 @@
     "collector_number": "82",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Falling%20Star",
     "checked_at": "2026-08-05T20:06:04.528Z"
+  },
+  "f5d9be71-91d0-4166-ba58-cbbf5d490c40": {
+    "status": "available",
+    "name": "Ajani, the Greathearted",
+    "price_brl": 0.39,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra da Centelha",
+    "printing_code": "WAR",
+    "collector_number": "184",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani%2C%20the%20Greathearted",
+    "checked_at": "2026-08-06T14:52:52.127Z"
   }
 }

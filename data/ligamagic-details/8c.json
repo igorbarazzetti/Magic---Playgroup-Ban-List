@@ -1,4 +1,16 @@
 {
+  "8c1fda45-09f1-4b58-a487-e11c868e1357": {
+    "status": "available",
+    "name": "Ainok Strike Leader",
+    "price_brl": 24.7,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm Commander",
+    "printing_code": "TDC",
+    "collector_number": "11",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ainok%20Strike%20Leader",
+    "checked_at": "2026-08-06T14:45:11.860Z"
+  },
   "8c1fe337-375a-4add-93b6-0ac39ed72b4f": {
     "status": "available",
     "name": "Natural Order",

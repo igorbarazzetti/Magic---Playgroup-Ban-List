@@ -10,5 +10,17 @@
     "collector_number": "133",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Summer%20Bloom",
     "checked_at": "2026-08-05T20:13:08.661Z"
+  },
+  "e5f96482-4bae-4d1b-97b2-dcc09676eb6e": {
+    "status": "available",
+    "name": "Ainok Guide",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Destino Reescrito",
+    "printing_code": "FRF",
+    "collector_number": "121",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ainok%20Guide",
+    "checked_at": "2026-08-06T14:45:01.850Z"
   }
 }

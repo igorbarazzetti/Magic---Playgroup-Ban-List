@@ -22,5 +22,29 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ageless%20Sentinels",
     "checked_at": "2026-08-06T11:09:54.114Z"
+  },
+  "90249526-1875-450a-882d-bf6f6bfd37a6": {
+    "status": "available",
+    "name": "Ajani Steadfast",
+    "price_brl": 5.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Masters",
+    "printing_code": "CMM",
+    "collector_number": "813",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani%20Steadfast",
+    "checked_at": "2026-08-06T14:52:32.098Z"
+  },
+  "9080a7bb-2b8b-42af-9f5b-a9f374ecb801": {
+    "status": "available",
+    "name": "Aggressive Biomancy",
+    "price_brl": 1.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3 Commander",
+    "printing_code": "M3C",
+    "collector_number": "121",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aggressive%20Biomancy",
+    "checked_at": "2026-08-06T14:39:51.607Z"
   }
 }

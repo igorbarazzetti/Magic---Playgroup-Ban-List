@@ -10,5 +10,17 @@
     "collector_number": "2",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Advance%20Scout",
     "checked_at": "2026-08-06T07:11:14.690Z"
+  },
+  "83a3897c-c245-4fad-b253-3f8bbe6445fb": {
+    "status": "available",
+    "name": "Agility Bobblehead",
+    "price_brl": 4.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fallout",
+    "printing_code": "PIP",
+    "collector_number": "126",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agility%20Bobblehead",
+    "checked_at": "2026-08-06T14:41:11.706Z"
   }
 }

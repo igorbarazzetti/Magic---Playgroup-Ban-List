@@ -1,4 +1,16 @@
 {
+  "1d5ff280-7f4d-4801-aefd-9b6e6b1f2818": {
+    "status": "available",
+    "name": "Ajani, Caller of the Pride",
+    "price_brl": 2.98,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2014",
+    "printing_code": "M14",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani%2C%20Caller%20of%20the%20Pride",
+    "checked_at": "2026-08-06T14:49:22.558Z"
+  },
   "1d67f5ff-1fce-45e5-b6a1-416c569351e2": {
     "status": "available",
     "name": "Gitaxian Probe",

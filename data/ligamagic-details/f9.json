@@ -1,4 +1,16 @@
 {
+  "f953afdf-96f7-4851-994c-1617e8f5e5c9": {
+    "status": "available",
+    "name": "Ajani Vengeant",
+    "price_brl": 2.19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Prerelease Events",
+    "printing_code": "PTC",
+    "collector_number": "38",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani%20Vengeant",
+    "checked_at": "2026-08-06T14:53:22.691Z"
+  },
   "f9db72dc-9a5b-48a4-a86e-7464d9a2166a": {
     "status": "available",
     "name": "Abrade",

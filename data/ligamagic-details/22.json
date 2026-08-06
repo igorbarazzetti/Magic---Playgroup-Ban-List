@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Grim%20Monolith",
     "checked_at": "2026-08-05T20:07:19.711Z"
   },
+  "22d0a848-2126-48f0-9050-38daaf93b1d0": {
+    "status": "available",
+    "name": "Agna Qel'a",
+    "price_brl": 7.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Avatar: The Last Airbender",
+    "printing_code": "TLA",
+    "collector_number": "264",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agna%20Qel'a",
+    "checked_at": "2026-08-06T14:41:31.675Z"
+  },
   "22e89c6d-2304-4def-8a74-e53a6271e9b9": {
     "status": "available",
     "name": "Echoing Boon",

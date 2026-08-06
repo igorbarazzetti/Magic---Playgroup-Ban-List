@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aethergeode%20Miner",
     "checked_at": "2026-08-06T11:02:33.741Z"
   },
+  "925a0b9b-a1fa-4aad-89d9-e2698ac3582f": {
+    "status": "available",
+    "name": "Ajani's Presence",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Viagem para Nyx",
+    "printing_code": "JOU",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani's%20Presence",
+    "checked_at": "2026-08-06T14:51:32.094Z"
+  },
   "9264c198-76c7-4ac0-9334-37c691de1b54": {
     "status": "available",
     "name": "Invigorate",

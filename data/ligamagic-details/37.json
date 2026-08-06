@@ -59,6 +59,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mox%20Emerald",
     "checked_at": "2026-08-05T20:10:02.154Z"
   },
+  "37714eb9-a39d-4534-a2d3-27908c418f8a": {
+    "status": "available",
+    "name": "Ajani, Sleeper Agent",
+    "price_brl": 9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominária Unida",
+    "printing_code": "DMU",
+    "collector_number": "192",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani%2C%20Sleeper%20Agent",
+    "checked_at": "2026-08-06T14:52:22.088Z"
+  },
+  "377c217b-ddad-4e1a-9122-f347113d3dfa": {
+    "status": "available",
+    "name": "Agony Warp",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fragmentos de Alara",
+    "printing_code": "ALA",
+    "collector_number": "153",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agony%20Warp",
+    "checked_at": "2026-08-06T14:42:31.743Z"
+  },
   "37c49483-bef6-47c6-9354-ead8560d48da": {
     "status": "available",
     "name": "Pradesh Gypsies",
@@ -70,5 +94,17 @@
     "collector_number": "304",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Pradesh%20Gypsies",
     "checked_at": "2026-08-05T20:11:14.384Z"
+  },
+  "37d1d507-25dc-4cd0-b51e-2f1e9b24832c": {
+    "status": "available",
+    "name": "Ahriman",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY",
+    "printing_code": "FIN",
+    "collector_number": "87",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ahriman",
+    "checked_at": "2026-08-06T14:43:51.802Z"
   }
 }

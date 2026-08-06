@@ -46,5 +46,17 @@
     "collector_number": "12",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Unexpected%20Potential",
     "checked_at": "2026-08-05T20:14:32.914Z"
+  },
+  "1ad5766b-9ae3-437b-bd91-c4c988a8b095": {
+    "status": "available",
+    "name": "Agonasaur Rex",
+    "price_brl": 2.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Aetherdrift",
+    "printing_code": "DFT",
+    "collector_number": "151",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agonasaur%20Rex",
+    "checked_at": "2026-08-06T14:41:41.715Z"
   }
 }

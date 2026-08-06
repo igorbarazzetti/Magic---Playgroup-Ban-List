@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Contract%20from%20Below",
     "checked_at": "2026-08-05T20:04:28.364Z"
   },
+  "9e830359-ab92-4bfd-82b3-d9c67ac80cf7": {
+    "status": "available",
+    "name": "Air Nomad Legacy",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Avatar: The Last Airbender",
+    "printing_code": "TLA",
+    "collector_number": "206",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Air%20Nomad%20Legacy",
+    "checked_at": "2026-08-06T14:46:31.923Z"
+  },
   "9e9cde32-0568-44bc-a00a-9709f15c1350": {
     "status": "available",
     "name": "Aether Refinery",

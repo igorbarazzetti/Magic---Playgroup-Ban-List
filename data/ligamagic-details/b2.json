@@ -35,6 +35,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Academic%20Dispute",
     "checked_at": "2026-08-06T03:47:01.638Z"
   },
+  "b25bea73-7444-4ee2-8022-611461506117": {
+    "status": "available",
+    "name": "Ajani, Adversary of Tyrants",
+    "price_brl": 7.51,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2019",
+    "printing_code": "M19",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani%2C%20Adversary%20of%20Tyrants",
+    "checked_at": "2026-08-06T14:49:12.060Z"
+  },
+  "b268fe15-2860-4730-865e-eed7f308fc45": {
+    "status": "available",
+    "name": "Agoraphobia",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portões Violados",
+    "printing_code": "GTC",
+    "collector_number": "30",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agoraphobia",
+    "checked_at": "2026-08-06T14:42:41.724Z"
+  },
   "b292d183-1ba9-40b4-9cba-bd70bf1380ef": {
     "status": "available",
     "name": "Abzan Kin-Guard",

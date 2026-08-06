@@ -1,4 +1,16 @@
 {
+  "cb666ea8-55e3-4e27-ae6d-806677dfc17a": {
+    "status": "available",
+    "name": "Airtight Alibi",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassinato na Mansão Karlov",
+    "printing_code": "MKM",
+    "collector_number": "149",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Airtight%20Alibi",
+    "checked_at": "2026-08-06T14:48:42.017Z"
+  },
   "cbf09050-39d0-463b-96db-9e22011ae0d8": {
     "status": "available",
     "name": "Aang, Swift Savior // Aang and La, Ocean's Fury",

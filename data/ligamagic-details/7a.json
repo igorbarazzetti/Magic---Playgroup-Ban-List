@@ -22,5 +22,17 @@
     "collector_number": "54",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adverse%20Conditions",
     "checked_at": "2026-08-06T07:13:24.875Z"
+  },
+  "7a5dae5f-29ab-4996-b236-c754de8769bc": {
+    "status": "available",
+    "name": "Ainok Survivalist",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassinato na Mansão Karlov Commander",
+    "printing_code": "MKC",
+    "collector_number": "165",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ainok%20Survivalist",
+    "checked_at": "2026-08-06T14:45:21.883Z"
   }
 }

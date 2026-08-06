@@ -34,5 +34,17 @@
     "collector_number": "731",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Admiral%20Beckett%20Brass",
     "checked_at": "2026-08-06T07:09:04.586Z"
+  },
+  "43f5a93b-0f8d-48d2-ab9d-275d44cf88b5": {
+    "status": "available",
+    "name": "Aggressive Urge",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Rivais de Ixalan",
+    "printing_code": "RIX",
+    "collector_number": "122",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aggressive%20Urge",
+    "checked_at": "2026-08-06T14:40:51.686Z"
   }
 }

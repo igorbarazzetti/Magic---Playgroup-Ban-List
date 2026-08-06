@@ -10,5 +10,17 @@
     "collector_number": "198",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Veil%20of%20Summer",
     "checked_at": "2026-08-05T20:14:50.946Z"
+  },
+  "009a399b-c78e-475b-8bc3-7db2afc9d676": {
+    "status": "available",
+    "name": "Airdrop Aeronauts",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Revolta do éter",
+    "printing_code": "AER",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Airdrop%20Aeronauts",
+    "checked_at": "2026-08-06T14:47:51.907Z"
   }
 }

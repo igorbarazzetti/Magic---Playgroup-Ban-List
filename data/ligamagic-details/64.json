@@ -46,5 +46,17 @@
     "collector_number": "20040",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Seething%20Song",
     "checked_at": "2026-08-05T20:12:20.569Z"
+  },
+  "64e3791b-de99-4eed-af49-cbec218c28aa": {
+    "status": "available",
+    "name": "Airbender's Reversal",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Avatar: The Last Airbender",
+    "printing_code": "TLA",
+    "collector_number": "7",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Airbender's%20Reversal",
+    "checked_at": "2026-08-06T14:47:21.911Z"
   }
 }
