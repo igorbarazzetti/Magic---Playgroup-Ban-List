@@ -37,6 +37,8 @@ O detalhe de cada carta mostra apenas o menor preço de uma cópia Normal/NM enc
 
 O workflow `update-ligamagic-prices.yml` processa 100 cartas por vez, sem paralelismo e com intervalo mínimo de dez segundos. Durante a cobertura inicial ele roda a cada duas horas e prioriza cartas nunca consultadas. Depois de completar o catálogo, o coletor passa automaticamente à manutenção e ignora execuções até completar uma janela de seis horas. Falhas preservam o último valor como desatualizado; cartas sem oferta ficam marcadas como indisponíveis. Os índices de preço e os detalhes particionados por `oracle_id` são atualizados diretamente no GitHub, sem republicar o site.
 
+Como a LigaMagic bloqueia os endereços dos runners hospedados do GitHub, esse workflow usa o runner Windows exclusivo `magic-banlist`, registrado nesta máquina e iniciado por uma tarefa agendada no login. A máquina precisa permanecer ligada, conectada e com a sessão do usuário ativa durante os lotes; quando estiver offline, o GitHub mantém o job na fila até o runner voltar.
+
 O validador consulta o endpoint de coleções do Scryfall em lotes de até 75 nomes e combina a legalidade oficial de cada carta com a banlist já carregada. Se essa consulta falhar, a interface informa que o resultado é parcial. O recurso não avalia tamanho do deck, limite geral de cópias nem identidade de cor do comandante.
 
 As imagens da grade usam `srcset`, dimensões reservadas, decodificação assíncrona e `loading="lazy"`. Apenas 48 cartas são reveladas inicialmente; as seguintes entram sob demanda. O detalhe técnico completo de cada carta só é montado quando o usuário abre essa seção.
