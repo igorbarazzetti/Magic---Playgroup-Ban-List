@@ -11,6 +11,7 @@ const priceIndexPath = resolve(dataRoot, 'ligamagic-catalog-prices.json');
 const detailsRoot = resolve(dataRoot, 'ligamagic-details');
 const legacyPath = resolve(dataRoot, 'ligamagic-prices.json');
 const catalogQuery = '(game:paper) usd<20.00 prefer:best';
+const catalogPriceQuery = '(game:paper) usd<20.00 prefer:usd-low';
 const banlistQuery = '(banned:standard OR banned:pioneer OR banned:modern OR banned:legacy OR banned:commander OR banned:duel OR banned:pauper) -set:sunf -set:unf';
 const trackedFormats = ['standard', 'pioneer', 'modern', 'legacy', 'commander', 'duel', 'pauper'];
 const sourceName = 'LigaMagic';
@@ -32,12 +33,13 @@ export const catalogTuple = Object.freeze({ id: 0, oracleId: 1, name: 2, colorMa
 export const priceTuple = Object.freeze({ cents: 0, status: 1, checkedAt: 2 });
 
 function parseOptions(argv) {
-  const options = { force: false, prepareOnly: false, dryRun: false, refreshCatalog: false, limit: 100 };
+  const options = { force: false, prepareOnly: false, dryRun: false, refreshCatalog: false, repairCatalogPrices: false, limit: 100 };
   for (const argument of argv) {
     if (argument === '--force') options.force = true;
     else if (argument === '--prepare-only') options.prepareOnly = true;
     else if (argument === '--dry-run') options.dryRun = true;
     else if (argument === '--refresh-catalog') options.refreshCatalog = true;
+    else if (argument === '--repair-catalog-prices') options.repairCatalogPrices = true;
     else if (argument.startsWith('--limit=')) options.limit = Math.max(1, Number(argument.slice(8)) || 100);
   }
   return options;
@@ -128,9 +130,14 @@ async function fetchWithRetry(url, { headers = jsonHeaders, expect = 'json' } = 
   throw lastError;
 }
 
-async function fetchScryfallSearch(query) {
+async function fetchScryfallSearch(query, { order = 'name', dir = null } = {}) {
   const cards = [];
-  let url = `https://api.scryfall.com/cards/search?q=${encodeURIComponent(query)}&unique=cards&order=name`;
+  const searchUrl = new URL('https://api.scryfall.com/cards/search');
+  searchUrl.searchParams.set('q', query);
+  searchUrl.searchParams.set('unique', 'cards');
+  searchUrl.searchParams.set('order', order);
+  if (dir) searchUrl.searchParams.set('dir', dir);
+  let url = searchUrl.toString();
   let page = 0;
   while (url) {
     const payload = await fetchWithRetry(url);
@@ -156,9 +163,38 @@ function primaryType(typeLine = '') {
   return 'other';
 }
 
-function usdCents(card) {
+export function usdCents(card) {
   const amount = Number(card?.prices?.usd);
   return Number.isFinite(amount) && amount > 0 ? Math.round(amount * 100) : null;
+}
+
+export function scryfallPriceCents(card) {
+  const prices = [card?.prices?.usd, card?.prices?.usd_foil, card?.prices?.usd_etched]
+    .map(priceToCents)
+    .filter((amount) => amount !== null);
+  return prices.length ? Math.min(...prices) : null;
+}
+
+async function fetchMissingScryfallUsd(cards) {
+  const missing = cards.filter((card) => usdCents(card) === null);
+  const prices = new Map();
+  if (!missing.length) return prices;
+
+  console.log(`Scryfall: completando o preço USD de ${missing.length} cartas com a impressão mais barata.`);
+  const chunkSize = 20;
+  for (let start = 0; start < missing.length; start += chunkSize) {
+    const chunk = missing.slice(start, start + chunkSize);
+    const oracleFilter = chunk.map((card) => `oracleid:${card.oracle_id || card.id}`).join(' OR ');
+    const query = `(${oracleFilter}) ${catalogPriceQuery}`;
+    const pricedCards = await fetchScryfallSearch(query, { order: 'usd', dir: 'asc' });
+    for (const card of pricedCards) {
+      const cents = scryfallPriceCents(card);
+      if (cents !== null) prices.set(card.oracle_id || card.id, cents);
+    }
+    if (start + chunkSize < missing.length) await sleep(150);
+  }
+  console.log(`Scryfall: ${prices.size}/${missing.length} preços USD ausentes foram recuperados.`);
+  return prices;
 }
 
 function cardFormats(card) {
@@ -197,6 +233,7 @@ async function refreshCatalog(previousCatalog, { force = false } = {}) {
 
   console.log('Atualizando o índice compacto do Scryfall.');
   const catalogCards = await fetchScryfallSearch(catalogQuery);
+  const fallbackUsd = await fetchMissingScryfallUsd(catalogCards);
   const bannedCards = await fetchScryfallSearch(banlistQuery);
   const bannedTargets = new Map();
   for (const card of bannedCards) bannedTargets.set(card.oracle_id || card.id, [card.oracle_id || card.id, card.name]);
@@ -212,7 +249,7 @@ async function refreshCatalog(previousCatalog, { force = false } = {}) {
       Number(card.cmc || 0),
       card.rarity || 'special',
       card.set || '',
-      usdCents(card),
+      usdCents(card) ?? fallbackUsd.get(card.oracle_id || card.id) ?? null,
       cardFormats(card).join(','),
     ];
   }).sort((left, right) => normalizeName(left[catalogTuple.name]).localeCompare(normalizeName(right[catalogTuple.name]), 'pt-BR'));
@@ -220,12 +257,29 @@ async function refreshCatalog(previousCatalog, { force = false } = {}) {
   return {
     schema_version: 1,
     query: catalogQuery,
+    price_query: catalogPriceQuery,
     generated_at: new Date().toISOString(),
     usd_brl: usdBrl,
     sets: Object.fromEntries(Object.entries(sets).sort(([, left], [, right]) => left.localeCompare(right, 'pt-BR'))),
     cards: compactCards,
     banlist_targets: [...bannedTargets.values()].sort((left, right) => normalizeName(left[1]).localeCompare(normalizeName(right[1]), 'pt-BR')),
   };
+}
+
+async function repairCatalogPrices(catalog) {
+  if (!catalog?.cards?.length) throw new Error('O catálogo precisa existir antes de reparar os preços do Scryfall.');
+  const missingCards = catalog.cards
+    .filter((tuple) => tuple[catalogTuple.usdCents] === null || tuple[catalogTuple.usdCents] === undefined)
+    .map((tuple) => ({ id: tuple[catalogTuple.id], oracle_id: tuple[catalogTuple.oracleId], prices: { usd: null } }));
+  const fallbackUsd = await fetchMissingScryfallUsd(missingCards);
+  const cards = catalog.cards.map((tuple) => {
+    const cents = fallbackUsd.get(tuple[catalogTuple.oracleId]);
+    if (cents === undefined || tuple[catalogTuple.usdCents] !== null) return tuple;
+    const repaired = [...tuple];
+    repaired[catalogTuple.usdCents] = cents;
+    return repaired;
+  });
+  return { ...catalog, price_query: catalogPriceQuery, price_generated_at: new Date().toISOString(), cards };
 }
 
 function emptyPriceIndex() {
@@ -361,7 +415,9 @@ async function collectPrice(card, previousEntry, throttle) {
 async function main() {
   const options = parseOptions(process.argv.slice(2));
   const previousCatalog = await readJson(catalogPath, null);
-  const catalog = await refreshCatalog(previousCatalog, { force: options.refreshCatalog });
+  const catalog = options.repairCatalogPrices
+    ? await repairCatalogPrices(previousCatalog)
+    : await refreshCatalog(previousCatalog, { force: options.refreshCatalog });
   const priceIndex = await readJson(priceIndexPath, emptyPriceIndex());
   const legacyBook = await readJson(legacyPath, { cards: {} });
   const shards = await createShardStore();

@@ -4,8 +4,21 @@ import assert from 'node:assert/strict';
 import {
   extractCheapestNormalPrinting,
   priceTuple,
+  scryfallPriceCents,
   selectBatch,
+  usdCents,
 } from '../scripts/update-ligamagic-prices.mjs';
+
+test('não converte preço USD ausente em zero', () => {
+  assert.equal(usdCents({ prices: { usd: null } }), null);
+  assert.equal(usdCents({ prices: { usd: '' } }), null);
+  assert.equal(usdCents({ prices: { usd: '0.35' } }), 35);
+});
+
+test('usa outro acabamento do Scryfall quando a impressão não possui preço normal', () => {
+  assert.equal(scryfallPriceCents({ prices: { usd: null, usd_foil: '0.42', usd_etched: null } }), 42);
+  assert.equal(scryfallPriceCents({ prices: { usd: '1.05', usd_foil: '0.39', usd_etched: null } }), 39);
+});
 
 test('seleciona o menor preço normal entre todas as impressões', () => {
   const html = `<script>var cards_editions = ${JSON.stringify([
@@ -54,4 +67,3 @@ test('após a cobertura atualiza primeiro os registros mais antigos', () => {
   assert.deepEqual(selection.cards.map((card) => card.oracleId), ['b', 'c']);
   assert.equal(prices.c[priceTuple.status], 's');
 });
-

@@ -291,21 +291,24 @@ function colorsFromMask(mask = 0) {
 function catalogCardFromTuple(tuple) {
   const [id, oracleId, name, mask, type, cmc, rarity, set, usd, bannedFormats] = tuple;
   const labels = { creature: 'Creature', instant: 'Instant', sorcery: 'Sorcery', artifact: 'Artifact', enchantment: 'Enchantment', planeswalker: 'Planeswalker', land: 'Land', battle: 'Battle', other: 'Card' };
+  const usdAmount = usd === null || usd === undefined || usd === '' ? null : Number(usd);
   return {
     id, oracle_id: oracleId, name, color_identity: colorsFromMask(mask), type_line: labels[type] || 'Card', catalog_type: type,
-    cmc, rarity, set, set_name: catalogIndex?.sets?.[set] || String(set || '').toUpperCase(), prices: { usd: Number.isFinite(Number(usd)) ? (Number(usd) / 100).toFixed(2) : null },
+    cmc, rarity, set, set_name: catalogIndex?.sets?.[set] || String(set || '').toUpperCase(), prices: { usd: Number.isFinite(usdAmount) && usdAmount > 0 ? (usdAmount / 100).toFixed(2) : null },
     formats: bannedFormats ? String(bannedFormats).split(',').filter(Boolean) : [], isCatalogStub: true,
   };
 }
 
 function effectiveCatalogPrice(card) {
   const tuple = catalogPriceIndex?.prices?.[card.oracle_id || card.id];
-  if (tuple && Number.isFinite(Number(tuple[0])) && ['a', 's'].includes(tuple[1])) {
-    return { value: Number(tuple[0]) / 100, source: 'LigaMagic', estimated: false, stale: tuple[1] === 's', checkedAt: tuple[2] ? new Date(Number(tuple[2]) * 1000).toISOString() : null };
+  const ligaCents = tuple?.[0] === null || tuple?.[0] === undefined || tuple?.[0] === '' ? null : Number(tuple[0]);
+  if (Number.isFinite(ligaCents) && ligaCents > 0 && ['a', 's'].includes(tuple[1])) {
+    return { value: ligaCents / 100, source: 'LigaMagic', estimated: false, stale: tuple[1] === 's', checkedAt: tuple[2] ? new Date(Number(tuple[2]) * 1000).toISOString() : null };
   }
-  const usd = Number(card?.prices?.usd);
+  const rawUsd = card?.prices?.usd;
+  const usd = rawUsd === null || rawUsd === undefined || rawUsd === '' ? null : Number(rawUsd);
   const rate = Number(catalogIndex?.usd_brl?.rate);
-  if (Number.isFinite(usd) && Number.isFinite(rate)) return { value: usd * rate, source: 'Scryfall + PTAX', estimated: true, stale: Boolean(catalogIndex?.usd_brl?.stale), checkedAt: catalogIndex?.usd_brl?.as_of || null };
+  if (Number.isFinite(usd) && usd > 0 && Number.isFinite(rate) && rate > 0) return { value: usd * rate, source: 'Scryfall + PTAX', estimated: true, stale: Boolean(catalogIndex?.usd_brl?.stale), checkedAt: catalogIndex?.usd_brl?.as_of || null };
   return null;
 }
 
@@ -502,7 +505,13 @@ async function hydrateCatalogCards(cards) {
         if (!fullCard) return;
         catalogHydrationCache.set(stub.id, fullCard);
         const bannedFormats = [...stub.formats];
-        Object.assign(stub, normalizeCard(fullCard), { formats: bannedFormats, isCatalogStub: false });
+        const fallbackUsd = stub.prices?.usd || null;
+        const hydratedCard = normalizeCard(fullCard);
+        const hydratedUsd = hydratedCard.prices?.usd;
+        if ((hydratedUsd === null || hydratedUsd === undefined || hydratedUsd === '') && fallbackUsd) {
+          hydratedCard.prices = { ...hydratedCard.prices, usd: fallbackUsd };
+        }
+        Object.assign(stub, hydratedCard, { formats: bannedFormats, isCatalogStub: false });
       });
     }
     if (state.tab === 'catalog') renderCards();
