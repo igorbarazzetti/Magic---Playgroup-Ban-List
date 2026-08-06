@@ -1487,7 +1487,7 @@ async function saveValidatedDeck(event) {
     validatedDecksLoaded = true;
     renderValidatedDecks();
     pendingValidatedDeck = null;
-    form.outerHTML = '<div class="deck-save-success"><span aria-hidden="true">✓</span><div><strong>Deck selado no arquivo.</strong><a href="?page=decks">Ver em Decks validados →</a></div></div>';
+    form.outerHTML = '<div class="deck-save-success"><span aria-hidden="true">✓</span><div><strong>Deck selado no arquivo.</strong><a href="?page=decks&rev=28">Ver em Decks validados →</a></div></div>';
     showToast('Deck salvo no arquivo do playgroup');
   } catch (error) {
     submit.disabled = false;

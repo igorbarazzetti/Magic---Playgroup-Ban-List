@@ -285,7 +285,11 @@ const worker = {
 
     const isFileRequest = url.pathname.includes(".");
     if (!isFileRequest) url.pathname = "/index.html";
-    return env.ASSETS.fetch(new Request(url, request));
+    const response = await env.ASSETS.fetch(new Request(url, request));
+    if (isFileRequest) return response;
+    const headers = new Headers(response.headers);
+    headers.set("cache-control", "no-store, max-age=0");
+    return new Response(response.body, { status: response.status, statusText: response.statusText, headers });
   },
 };
 
