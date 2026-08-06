@@ -17,7 +17,10 @@ $clientFiles = @(
   "styles.css",
   "banlist.js",
   "README.md",
-  "og.png"
+  "og.png",
+  "favicon.png",
+  "favicon-512.png",
+  "apple-touch-icon.png"
 )
 
 foreach ($file in $clientFiles) {

@@ -1340,7 +1340,7 @@ async function fetchDeckCards(entries) {
 }
 
 function localBannedCard(entry, format) {
-  return state.cards.find((card) => cardNameKeys(card).includes(entry.key) && (format === 'formatinho' || card.formats?.includes(format)));
+  return viewStates.banlist.cards.find((card) => cardNameKeys(card).includes(entry.key) && (format === 'formatinho' || card.formats?.includes(format)));
 }
 
 function deckIssueGroup(title, items) {
