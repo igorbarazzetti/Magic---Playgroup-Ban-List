@@ -57,7 +57,8 @@ function decodeHtml(value = '') {
 }
 
 function ligaMagicUrl(cardName) {
-  return `https://www.ligamagic.com.br/?view=cards/card&card=${encodeURIComponent(cardName)}`;
+  const lookupName = String(cardName || '').split(' // ')[0].trim();
+  return `https://www.ligamagic.com.br/?view=cards/card&card=${encodeURIComponent(lookupName)}`;
 }
 
 function parsePrice(value) {

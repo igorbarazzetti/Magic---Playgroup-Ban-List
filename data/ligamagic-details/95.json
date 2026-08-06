@@ -10,5 +10,29 @@
     "collector_number": "20040500",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Force%20of%20Will",
     "checked_at": "2026-08-05T20:06:31.649Z"
+  },
+  "9575d7ce-f26d-4b90-87a3-6329e9799572": {
+    "status": "available",
+    "name": "Abandoned Air Temple",
+    "price_brl": 39.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Avatar: The Last Airbender",
+    "printing_code": "TLA",
+    "collector_number": "263",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abandoned%20Air%20Temple",
+    "checked_at": "2026-08-06T00:05:56.811Z"
+  },
+  "95db05eb-2c25-43f2-8e18-dfc64f490634": {
+    "status": "available",
+    "name": "Aboshan's Desire",
+    "price_brl": 0.24,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Odisséia",
+    "printing_code": "OD",
+    "collector_number": "59",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aboshan's%20Desire",
+    "checked_at": "2026-08-06T00:11:47.082Z"
   }
 }

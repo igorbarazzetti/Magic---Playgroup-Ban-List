@@ -1,0 +1,26 @@
+{
+  "481c3e14-b670-4fab-aa9f-6ce5b514096d": {
+    "status": "available",
+    "name": "Aang and Katara",
+    "price_brl": 41.47,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Avatar: The Last Airbender Eternal (Scene Cards)",
+    "printing_code": "SCTLE",
+    "collector_number": "69",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aang%20and%20Katara",
+    "checked_at": "2026-08-06T00:03:26.685Z"
+  },
+  "48a773d0-c433-4463-b50f-b6d4604a042c": {
+    "status": "available",
+    "name": "Abigale, Eloquent First-Year",
+    "price_brl": 2.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed",
+    "printing_code": "ECL",
+    "collector_number": "204",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abigale%2C%20Eloquent%20First-Year",
+    "checked_at": "2026-08-06T00:09:16.960Z"
+  }
+}

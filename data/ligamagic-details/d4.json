@@ -1,0 +1,26 @@
+{
+  "d4d44264-b276-4bd7-8fbe-6af292b08773": {
+    "status": "available",
+    "name": "Aboshan, Cephalid Emperor",
+    "price_brl": 2.69,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Odisséia",
+    "printing_code": "OD",
+    "collector_number": "58",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aboshan%2C%20Cephalid%20Emperor",
+    "checked_at": "2026-08-06T00:11:37.061Z"
+  },
+  "d4fddf20-6b3a-42c3-a245-002dacbb4725": {
+    "status": "available",
+    "name": "Absolute Virtue",
+    "price_brl": 9.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY",
+    "printing_code": "FIN",
+    "collector_number": "212",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Absolute%20Virtue",
+    "checked_at": "2026-08-06T00:12:57.227Z"
+  }
+}

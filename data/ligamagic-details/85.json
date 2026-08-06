@@ -1,4 +1,16 @@
 {
+  "854278bc-2bcf-45dd-abd5-6aca7a1e5fc9": {
+    "status": "available",
+    "name": "Aang, A Lot to Learn",
+    "price_brl": 0.81,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Avatar: The Last Airbender Eternal",
+    "printing_code": "TLE",
+    "collector_number": "146",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aang%2C%20A%20Lot%20to%20Learn",
+    "checked_at": "2026-08-06T00:02:56.799Z"
+  },
   "854ad486-0c59-4c57-9a76-ab1dff0ff37c": {
     "status": "available",
     "name": "Invoke Prejudice",

@@ -1,4 +1,16 @@
 {
+  "4489f362-9b7e-4dc0-a459-a990a487454e": {
+    "status": "available",
+    "name": "Absorb Identity",
+    "price_brl": 0.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaldheim",
+    "printing_code": "KHM",
+    "collector_number": "383",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Absorb%20Identity",
+    "checked_at": "2026-08-06T00:13:37.739Z"
+  },
   "44e0ffa3-8915-4c1f-8f1a-4aeea1365f07": {
     "status": "available",
     "name": "Simian Spirit Guide",

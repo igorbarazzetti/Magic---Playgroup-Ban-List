@@ -1,4 +1,16 @@
 {
+  "132ca99a-a3c7-4ed6-b4d0-0edcd7140ca2": {
+    "status": "available",
+    "name": "Absorb",
+    "price_brl": 1.53,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lealdade em Ravnica",
+    "printing_code": "RNA",
+    "collector_number": "151",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Absorb",
+    "checked_at": "2026-08-06T00:13:27.906Z"
+  },
   "1342ee23-c3a0-4578-833a-e30a9fc9141c": {
     "status": "available",
     "name": "Secret Summoning",
@@ -34,5 +46,17 @@
     "collector_number": "268",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Sensei's%20Divining%20Top",
     "checked_at": "2026-08-05T20:12:23.963Z"
+  },
+  "13f63240-a6bb-4333-a3dd-818725c6fb73": {
+    "status": "available",
+    "name": "Abhorrent Overlord",
+    "price_brl": 0.53,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros",
+    "printing_code": "THS",
+    "collector_number": "75",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abhorrent%20Overlord",
+    "checked_at": "2026-08-06T00:08:57.045Z"
   }
 }

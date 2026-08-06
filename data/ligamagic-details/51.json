@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adriana's%20Valor",
     "checked_at": "2026-08-05T20:02:37.026Z"
   },
+  "5146ba3f-2c5f-4a86-95d7-a34ce1e842b0": {
+    "status": "available",
+    "name": "Abomination of Llanowar",
+    "price_brl": 0.35,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends",
+    "printing_code": "CMR",
+    "collector_number": "265",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abomination%20of%20Llanowar",
+    "checked_at": "2026-08-06T00:10:57.010Z"
+  },
   "51f091a7-9b0b-4362-8e9c-c174752f369b": {
     "status": "available",
     "name": "White Plume Adventurer",

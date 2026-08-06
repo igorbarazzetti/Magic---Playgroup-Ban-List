@@ -10,5 +10,17 @@
     "collector_number": "68",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Fall%20from%20Favor",
     "checked_at": "2026-08-05T20:06:01.568Z"
+  },
+  "e8ebf5cb-3a26-4bbd-812b-414c129e4bb7": {
+    "status": "available",
+    "name": "Abstruse Interference",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Juramento das Sentinelas",
+    "printing_code": "OGW",
+    "collector_number": "40",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abstruse%20Interference",
+    "checked_at": "2026-08-06T00:15:17.248Z"
   }
 }

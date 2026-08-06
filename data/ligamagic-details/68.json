@@ -1,4 +1,16 @@
 {
+  "682a0770-8fe0-4142-aa0c-b60af3628a33": {
+    "status": "available",
+    "name": "A Tale for the Ages",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Selvagens de Eldraine",
+    "printing_code": "WOE",
+    "collector_number": "34",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=A%20Tale%20for%20the%20Ages",
+    "checked_at": "2026-08-06T00:02:46.713Z"
+  },
   "686f4a37-b5e4-46d4-9e0e-11794b2d12cd": {
     "status": "available",
     "name": "Golgari Grave-Troll",
@@ -10,6 +22,18 @@
     "collector_number": "348",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Golgari%20Grave-Troll",
     "checked_at": "2026-08-05T20:07:04.726Z"
+  },
+  "68cc5065-0514-4adf-885f-da554e1db00a": {
+    "status": "available",
+    "name": "Abyssal Harvester",
+    "price_brl": 2.77,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Foundations",
+    "printing_code": "FDN",
+    "collector_number": "54",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abyssal%20Harvester",
+    "checked_at": "2026-08-06T00:17:17.343Z"
   },
   "68e1f7e0-a9b3-437f-8086-0c0cb85f2880": {
     "status": "available",

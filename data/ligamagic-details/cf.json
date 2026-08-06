@@ -1,4 +1,16 @@
 {
+  "cf082161-47ff-46b9-926d-3fa5e5727861": {
+    "status": "available",
+    "name": "Abuna Acolyte",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Cicatrizes de Mirrodin",
+    "printing_code": "SOM",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abuna%20Acolyte",
+    "checked_at": "2026-08-06T00:15:47.264Z"
+  },
   "cf0dcb27-f02e-4065-81dc-75fbbb09ea3f": {
     "status": "available",
     "name": "Oath of Druids",

@@ -1,0 +1,26 @@
+{
+  "629fe1be-272d-465f-b9b1-2ce177410f13": {
+    "status": "available",
+    "name": "+2 Mace",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Adventures in the Forgotten Realms",
+    "printing_code": "AFR",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=%2B2%20Mace",
+    "checked_at": "2026-08-06T00:01:06.656Z"
+  },
+  "62e3f285-886c-414e-b4ff-403a7c01c23a": {
+    "status": "available",
+    "name": "Abbey Matron",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Natais",
+    "printing_code": "HL",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abbey%20Matron",
+    "checked_at": "2026-08-06T00:07:07.214Z"
+  }
+}

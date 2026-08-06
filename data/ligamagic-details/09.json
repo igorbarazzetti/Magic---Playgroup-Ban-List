@@ -22,5 +22,17 @@
     "collector_number": "20040559",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Wasteland",
     "checked_at": "2026-08-05T20:15:05.983Z"
+  },
+  "09be0f69-9c7f-491f-964d-bfbbc2d4251f": {
+    "status": "available",
+    "name": "Abbot of Keral Keep",
+    "price_brl": 0.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic Origens",
+    "printing_code": "ORI",
+    "collector_number": "127",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abbot%20of%20Keral%20Keep",
+    "checked_at": "2026-08-06T00:07:16.886Z"
   }
 }

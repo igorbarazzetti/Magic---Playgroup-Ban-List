@@ -10,5 +10,17 @@
     "collector_number": "70",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bazaar%20of%20Baghdad",
     "checked_at": "2026-08-05T20:03:28.139Z"
+  },
+  "5404c6a5-399d-4237-b03c-41b6a1b79050": {
+    "status": "available",
+    "name": "Abandon the Post",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Caçada à Meia-noite",
+    "printing_code": "MID",
+    "collector_number": "127",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abandon%20the%20Post",
+    "checked_at": "2026-08-06T00:05:46.877Z"
   }
 }

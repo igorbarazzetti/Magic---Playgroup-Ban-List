@@ -1,4 +1,16 @@
 {
+  "465cda20-c8f3-4a7c-a250-875877bce21d": {
+    "status": "available",
+    "name": "Abyssal Gorestalker",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "As Cavernas Perdidas de Ixalan",
+    "printing_code": "LCI",
+    "collector_number": "87",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abyssal%20Gorestalker",
+    "checked_at": "2026-08-06T00:17:07.512Z"
+  },
   "4692740f-be90-459f-8d90-c4ae71771595": {
     "status": "available",
     "name": "Crusade",
@@ -22,5 +34,17 @@
     "collector_number": "103",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Cori-Steel%20Cutter",
     "checked_at": "2026-08-05T20:04:31.361Z"
+  },
+  "46b5f12e-9fe5-44f6-b895-ee8c33205521": {
+    "status": "available",
+    "name": "Aberrant",
+    "price_brl": 12.74,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Warhammer 40.000",
+    "printing_code": "40K",
+    "collector_number": "86",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aberrant",
+    "checked_at": "2026-08-06T00:07:56.985Z"
   }
 }

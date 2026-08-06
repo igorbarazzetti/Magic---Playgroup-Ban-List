@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Sinkhole",
     "checked_at": "2026-08-05T20:12:38.623Z"
   },
+  "5a70ccfa-d12d-4e62-a1a4-f05cda2fd442": {
+    "status": "available",
+    "name": "Abandoned Outpost",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Odisséia",
+    "printing_code": "OD",
+    "collector_number": "312",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abandoned%20Outpost",
+    "checked_at": "2026-08-06T00:06:16.880Z"
+  },
   "5a9c1c2d-d4d7-4df3-a853-f1b81c67b3e3": {
     "status": "available",
     "name": "Immediate Action",

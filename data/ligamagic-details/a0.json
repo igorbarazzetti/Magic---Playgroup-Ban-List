@@ -11,6 +11,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Reanimate",
     "checked_at": "2026-08-05T20:11:44.460Z"
   },
+  "a051dee0-60c8-4f58-84cb-55460c097115": {
+    "status": "available",
+    "name": "Abandoned Sarcophagus",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2020",
+    "printing_code": "C20",
+    "collector_number": "236",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abandoned%20Sarcophagus",
+    "checked_at": "2026-08-06T00:06:26.875Z"
+  },
+  "a0657586-0404-4bb0-a92d-25f040d560c1": {
+    "status": "available",
+    "name": "Aberrant Manawurm",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven",
+    "printing_code": "SOS",
+    "collector_number": "138",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aberrant%20Manawurm",
+    "checked_at": "2026-08-06T00:08:06.915Z"
+  },
   "a06f8476-0a23-413a-bc28-8dc2427fdc2a": {
     "status": "available",
     "name": "Amulet of Quoz",

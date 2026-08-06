@@ -1,0 +1,26 @@
+{
+  "fa43793d-a215-4a64-a09c-ed9799f745a4": {
+    "status": "available",
+    "name": "Abandon Reason",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lua Arcana",
+    "printing_code": "EMN",
+    "collector_number": "115",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abandon%20Reason",
+    "checked_at": "2026-08-06T00:05:36.809Z"
+  },
+  "fa732888-5b7d-4087-a6e5-1db1c98fbd4c": {
+    "status": "available",
+    "name": "A.I.M. Scientists",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes",
+    "printing_code": "MSH",
+    "collector_number": "44",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=A.I.M.%20Scientists",
+    "checked_at": "2026-08-06T00:01:46.643Z"
+  }
+}

@@ -10,5 +10,17 @@
     "collector_number": "7",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Muzzio's%20Preparations",
     "checked_at": "2026-08-05T20:10:20.214Z"
+  },
+  "0eec9984-cd11-4a52-9234-469c6a5fb9aa": {
+    "status": "available",
+    "name": "Abandoned Campground",
+    "price_brl": 0.24,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Noctumbra: A Casa dos Horrores",
+    "printing_code": "DSK",
+    "collector_number": "255",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abandoned%20Campground",
+    "checked_at": "2026-08-06T00:06:06.882Z"
   }
 }

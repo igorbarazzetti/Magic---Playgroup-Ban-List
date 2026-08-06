@@ -1,4 +1,16 @@
 {
+  "3d98af5f-7a0b-4a5a-b3e4-f3c9d150c993": {
+    "status": "available",
+    "name": "Abomination of Gudul",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Khans de Tarkir",
+    "printing_code": "KTK",
+    "collector_number": "159",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abomination%20of%20Gudul",
+    "checked_at": "2026-08-06T00:10:47.017Z"
+  },
   "3deb19f6-c1a3-4bca-a6ae-df5d0b42a66e": {
     "status": "available",
     "name": "Natural Unity",

@@ -10,5 +10,17 @@
     "collector_number": "43",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bronze%20Tablet",
     "checked_at": "2026-08-05T20:03:52.292Z"
+  },
+  "a1afb796-1b0b-4f41-9c8f-5320c9af5989": {
+    "status": "available",
+    "name": "Absorbing Man and Titania",
+    "price_brl": 22.7,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes Commander (Scene Card)",
+    "printing_code": "SCMSC",
+    "collector_number": "510",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Absorbing%20Man%20and%20Titania",
+    "checked_at": "2026-08-06T00:14:07.169Z"
   }
 }

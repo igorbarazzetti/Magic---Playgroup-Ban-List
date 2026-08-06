@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Rite%20of%20Flame",
     "checked_at": "2026-08-05T20:11:53.939Z"
   },
+  "8a810017-06ac-4824-bc2f-a7d303d58ad7": {
+    "status": "available",
+    "name": "About Face",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Legado de Urza",
+    "printing_code": "UL",
+    "collector_number": "73",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=About%20Face",
+    "checked_at": "2026-08-06T00:11:57.100Z"
+  },
   "8a9525f4-74a6-44f0-a1b1-d57937d7783b": {
     "status": "available",
     "name": "Temporal Fissure",
@@ -22,5 +34,17 @@
     "collector_number": "53",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Temporal%20Fissure",
     "checked_at": "2026-08-05T20:13:29.743Z"
+  },
+  "8adbba6e-03ef-4278-aec5-8a4496b377a8": {
+    "status": "available",
+    "name": "Abandon Hope",
+    "price_brl": 0.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tempestade",
+    "printing_code": "TP",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abandon%20Hope",
+    "checked_at": "2026-08-06T00:05:26.790Z"
   }
 }

@@ -1,4 +1,16 @@
 {
+  "c208b959-d0e4-4a9a-8255-2c7cc7596767": {
+    "status": "available",
+    "name": "Abbey Gargoyles",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quinta Edição",
+    "printing_code": "5E",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abbey%20Gargoyles",
+    "checked_at": "2026-08-06T00:06:46.872Z"
+  },
   "c235015e-a7a9-4f8d-bf4a-cf68b3847f83": {
     "status": "available",
     "name": "Scapeshift",

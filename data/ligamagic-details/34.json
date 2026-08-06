@@ -22,5 +22,17 @@
     "collector_number": "325",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Serra's%20Sanctum",
     "checked_at": "2026-08-05T20:12:29.562Z"
+  },
+  "34841228-31ac-48ac-b6d6-486b5e1e07dd": {
+    "status": "available",
+    "name": "Abundant Harvest",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 2 (Sketch)",
+    "printing_code": "SKMH2",
+    "collector_number": "354",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abundant%20Harvest",
+    "checked_at": "2026-08-06T00:16:37.343Z"
   }
 }

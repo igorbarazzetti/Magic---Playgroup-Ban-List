@@ -1,0 +1,26 @@
+{
+  "72101185-4336-480a-b4d7-f8ceb0007a51": {
+    "status": "available",
+    "name": "Abomination, Terrifying Titan",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes",
+    "printing_code": "MSH",
+    "collector_number": "198",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abomination%2C%20Terrifying%20Titan",
+    "checked_at": "2026-08-06T00:11:07.041Z"
+  },
+  "722ee05f-6815-41b7-9813-5ec3902c1e9f": {
+    "status": "available",
+    "name": "Aberrant Researcher // Perfected Form",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Sombras em Innistrad",
+    "printing_code": "SOI",
+    "collector_number": "49",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aberrant%20Researcher",
+    "checked_at": "2026-08-06T00:18:05.426Z"
+  }
+}

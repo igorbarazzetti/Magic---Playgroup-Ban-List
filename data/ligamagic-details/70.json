@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Daze",
     "checked_at": "2026-08-05T20:04:52.434Z"
   },
+  "70564c3a-858f-498e-8b92-acb3ca54ae7e": {
+    "status": "available",
+    "name": "Aang, the Last Airbender",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Avatar: The Last Airbender",
+    "printing_code": "TLA",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aang%2C%20the%20Last%20Airbender",
+    "checked_at": "2026-08-06T00:04:26.809Z"
+  },
   "70caaa64-9623-4d05-9843-18460fea963b": {
     "status": "available",
     "name": "Incendiary Dissent",

@@ -1,4 +1,16 @@
 {
+  "2b211adb-de44-4468-b65d-907a09aa7e9d": {
+    "status": "available",
+    "name": "Abattoir Ghoul",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad",
+    "printing_code": "ISD",
+    "collector_number": "85",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abattoir%20Ghoul",
+    "checked_at": "2026-08-06T00:06:36.879Z"
+  },
   "2b22cf44-7b03-4919-9812-6796bf193484": {
     "status": "available",
     "name": "Abuelo's Awakening",

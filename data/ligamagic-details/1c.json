@@ -1,4 +1,28 @@
 {
+  "1c385880-3eea-45c8-8e89-330ad8ad92b1": {
+    "status": "available",
+    "name": "Aardvark Sloth",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Avatar: The Last Airbender Eternal",
+    "printing_code": "TLE",
+    "collector_number": "212",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aardvark%20Sloth",
+    "checked_at": "2026-08-06T00:04:36.730Z"
+  },
+  "1c747fe2-289e-492a-a846-aa77707e2dc3": {
+    "status": "available",
+    "name": "Abrupt Decay",
+    "price_brl": 4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Retorno a Ravnica",
+    "printing_code": "RTR",
+    "collector_number": "141",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abrupt%20Decay",
+    "checked_at": "2026-08-06T00:12:27.125Z"
+  },
   "1cbfe1f2-776b-429d-9a60-8da32058a927": {
     "status": "available",
     "name": "Sojourner's Companion",

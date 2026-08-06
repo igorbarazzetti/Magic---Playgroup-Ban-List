@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Time%20Walk",
     "checked_at": "2026-08-05T20:13:53.787Z"
   },
+  "d06a8026-1657-4404-8dff-64e44f1a14f8": {
+    "status": "available",
+    "name": "Abstergo Entertainment",
+    "price_brl": 12.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassin's Creed (Extended Art)",
+    "printing_code": "EAACR",
+    "collector_number": "171",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abstergo%20Entertainment",
+    "checked_at": "2026-08-06T00:14:17.174Z"
+  },
   "d09c9cba-fdd2-479b-ad5d-d05181c3e3f9": {
     "status": "available",
     "name": "Fierce Guardianship",
@@ -34,5 +46,17 @@
     "collector_number": "1823",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Fierce%20Guardianship",
     "checked_at": "2026-08-05T20:06:16.555Z"
+  },
+  "d0e1904e-1a37-41f6-8582-b9ea794bb886": {
+    "status": "available",
+    "name": "Abduction",
+    "price_brl": 1.62,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alisios",
+    "printing_code": "WL",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abduction",
+    "checked_at": "2026-08-06T00:07:46.901Z"
   }
 }

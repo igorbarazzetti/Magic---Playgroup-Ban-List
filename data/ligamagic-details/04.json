@@ -22,5 +22,17 @@
     "collector_number": "42",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Deadly%20Rollick",
     "checked_at": "2026-08-05T20:04:58.513Z"
+  },
+  "04ea7e88-7ea5-4b4c-9a7c-2a6ac0bc0682": {
+    "status": "available",
+    "name": "Absorb Vis",
+    "price_brl": 0.02,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Conspiracy: Take the Crown",
+    "printing_code": "CN2",
+    "collector_number": "126",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Absorb%20Vis",
+    "checked_at": "2026-08-06T00:13:47.174Z"
   }
 }

@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Inverter%20of%20Truth",
     "checked_at": "2026-08-05T20:08:19.923Z"
   },
+  "947a2665-2f4d-4193-8768-118f85334549": {
+    "status": "available",
+    "name": "Abundant Growth",
+    "price_brl": 0.34,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed Commander",
+    "printing_code": "ECC",
+    "collector_number": "97",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abundant%20Growth",
+    "checked_at": "2026-08-06T00:16:27.319Z"
+  },
   "94a844d2-0574-45a7-b347-e0e329767c42": {
     "status": "available",
     "name": "Necropotence",
@@ -22,6 +34,18 @@
     "collector_number": "7",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Necropotence",
     "checked_at": "2026-08-05T20:10:41.291Z"
+  },
+  "94e675d9-f426-4c36-aade-698967e1ed78": {
+    "status": "available",
+    "name": "A Real Handful",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unfinity",
+    "printing_code": "UNF",
+    "collector_number": "87",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=A%20Real%20Handful",
+    "checked_at": "2026-08-06T00:02:26.691Z"
   },
   "94fac5fe-97d5-4c12-a80c-8efff9d853ae": {
     "status": "available",

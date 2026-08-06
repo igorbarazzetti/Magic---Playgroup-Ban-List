@@ -10,5 +10,17 @@
     "collector_number": "125",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Dreadhorde%20Arcanist",
     "checked_at": "2026-08-05T20:05:31.514Z"
+  },
+  "4c445455-5b91-4c22-8b3b-8cff4e97f00a": {
+    "status": "available",
+    "name": "Aardwolf's Advantage",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unfinity",
+    "printing_code": "UNF",
+    "collector_number": "97",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aardwolf's%20Advantage",
+    "checked_at": "2026-08-06T00:04:46.797Z"
   }
 }

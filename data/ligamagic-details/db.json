@@ -22,5 +22,17 @@
     "collector_number": "74",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Time%20Warp",
     "checked_at": "2026-08-05T20:13:56.829Z"
+  },
+  "dbedd45e-f76c-4be7-ad89-ff57bed6626f": {
+    "status": "available",
+    "name": "Absolving Lammasu",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassinato na Mansão Karlov",
+    "printing_code": "MKM",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Absolving%20Lammasu",
+    "checked_at": "2026-08-06T00:13:17.158Z"
   }
 }

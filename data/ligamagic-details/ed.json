@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Chaos%20Orb",
     "checked_at": "2026-08-05T20:04:07.277Z"
   },
+  "edbf1b87-2d1e-47e6-a04e-a2b1646af7d9": {
+    "status": "available",
+    "name": "Abnormal Endurance",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2019",
+    "printing_code": "M19",
+    "collector_number": "85",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abnormal%20Endurance",
+    "checked_at": "2026-08-06T00:09:46.969Z"
+  },
   "ededbdae-d9dc-4206-9335-d7158f2d7700": {
     "status": "available",
     "name": "Vampiric Tutor",

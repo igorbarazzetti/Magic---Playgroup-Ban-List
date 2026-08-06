@@ -1,4 +1,16 @@
 {
+  "6b60422a-765b-4168-a37b-68109103385a": {
+    "status": "available",
+    "name": "Abyssal Horror",
+    "price_brl": 0.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Sétima Edição",
+    "printing_code": "7E",
+    "collector_number": "115",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abyssal%20Horror",
+    "checked_at": "2026-08-06T00:17:27.348Z"
+  },
   "6b6ac99a-7548-4cad-9fe5-ea611618ab9e": {
     "status": "available",
     "name": "Temporal Manipulation",

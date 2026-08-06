@@ -10,5 +10,17 @@
     "collector_number": "74",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Hullbreacher",
     "checked_at": "2026-08-05T20:07:49.835Z"
+  },
+  "2f5f46ed-b8aa-4864-bd20-17281d4632bf": {
+    "status": "available",
+    "name": "Abigale, Poet Laureate // Heroic Stanza",
+    "price_brl": 0.14,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven",
+    "printing_code": "SOS",
+    "collector_number": "170",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abigale%2C%20Poet%20Laureate%20%2F%2F%20Heroic%20Stanza",
+    "checked_at": "2026-08-06T00:09:26.960Z"
   }
 }

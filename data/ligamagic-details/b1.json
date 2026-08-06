@@ -10,5 +10,17 @@
     "collector_number": "5",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Jihad",
     "checked_at": "2026-08-05T20:08:43.973Z"
+  },
+  "b1a0e129-27f0-4a09-b00d-497e18777306": {
+    "status": "available",
+    "name": "Abhorrent Oculus",
+    "price_brl": 100,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Noctumbra: A Casa dos Horrores",
+    "printing_code": "DSK",
+    "collector_number": "42",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abhorrent%20Oculus",
+    "checked_at": "2026-08-06T00:08:46.945Z"
   }
 }

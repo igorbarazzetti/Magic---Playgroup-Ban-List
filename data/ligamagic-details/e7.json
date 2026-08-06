@@ -1,4 +1,16 @@
 {
+  "e7436d37-c331-4524-b5d4-861e9d25bfc5": {
+    "status": "available",
+    "name": "Abomination, Irradiated Brute",
+    "price_brl": 22.69,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes Commander (Scene Card)",
+    "printing_code": "SCMSC",
+    "collector_number": "511",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abomination%2C%20Irradiated%20Brute",
+    "checked_at": "2026-08-06T00:10:36.997Z"
+  },
   "e7c67480-1816-4071-9eab-a1d1b535a344": {
     "status": "available",
     "name": "Comet, Stellar Pup",

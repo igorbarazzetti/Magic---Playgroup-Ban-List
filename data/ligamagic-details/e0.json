@@ -1,0 +1,26 @@
+{
+  "e05efd01-0202-4bd6-bac6-c6210819d463": {
+    "status": "available",
+    "name": "Abby, Merciless Soldier",
+    "price_brl": 31.28,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secret Lair Drop Series: Secret Lair x The Last of Us Part II",
+    "printing_code": "SLD327",
+    "collector_number": "2202",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abby%2C%20Merciless%20Soldier",
+    "checked_at": "2026-08-06T00:07:27.037Z"
+  },
+  "e0b12c48-7234-40b5-a84c-6901d2b4e5b0": {
+    "status": "available",
+    "name": "Abomination, World Ravager",
+    "price_brl": 2.14,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes Commander",
+    "printing_code": "MSC",
+    "collector_number": "47",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abomination%2C%20World%20Ravager",
+    "checked_at": "2026-08-06T00:11:17.078Z"
+  }
+}

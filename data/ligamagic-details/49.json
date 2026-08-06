@@ -1,4 +1,16 @@
 {
+  "4954181c-cb46-4cac-adc3-2c8b7693a211": {
+    "status": "available",
+    "name": "Abyssal Gatekeeper",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alisios",
+    "printing_code": "WL",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abyssal%20Gatekeeper",
+    "checked_at": "2026-08-06T00:16:57.827Z"
+  },
   "49e1e202-37bf-46ed-93d1-1adb13726039": {
     "status": "available",
     "name": "Heartfire Hero",

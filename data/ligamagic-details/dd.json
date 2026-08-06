@@ -1,0 +1,26 @@
+{
+  "dd97e457-07eb-4918-b780-ae7ff42a37e7": {
+    "status": "available",
+    "name": "Abjure",
+    "price_brl": 18.66,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alisios",
+    "printing_code": "WL",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abjure",
+    "checked_at": "2026-08-06T00:09:36.977Z"
+  },
+  "ddf461b9-a205-4dc7-a9c3-c047b1ff709f": {
+    "status": "available",
+    "name": "Aang's Journey",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Avatar: The Last Airbender",
+    "printing_code": "TLA",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aang's%20Journey",
+    "checked_at": "2026-08-06T00:04:06.710Z"
+  }
+}

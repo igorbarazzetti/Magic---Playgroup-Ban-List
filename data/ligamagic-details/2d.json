@@ -10,5 +10,17 @@
     "collector_number": "58",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Timmerian%20Fiends",
     "checked_at": "2026-08-05T20:14:02.825Z"
+  },
+  "2d4721f1-1a49-45aa-99d5-ab8c6f3f3ab6": {
+    "status": "available",
+    "name": "Abuna's Chant",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Quinta Aurora",
+    "printing_code": "5DN",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abuna's%20Chant",
+    "checked_at": "2026-08-06T00:15:57.283Z"
   }
 }

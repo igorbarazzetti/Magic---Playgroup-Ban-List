@@ -10,5 +10,17 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Karn%2C%20the%20Great%20Creator",
     "checked_at": "2026-08-05T20:08:50.534Z"
+  },
+  "a2404d88-0621-49ae-9908-052c23a96ac6": {
+    "status": "available",
+    "name": "Abu Ja'far",
+    "price_brl": 0.29,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Chronicles",
+    "printing_code": "CH",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abu%20Ja'far",
+    "checked_at": "2026-08-06T00:15:27.270Z"
   }
 }

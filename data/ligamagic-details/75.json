@@ -1,4 +1,16 @@
 {
+  "753ead8c-f3f8-42fe-931d-79f5ee3ece54": {
+    "status": "available",
+    "name": "Aberrant Mind Sorcerer",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Adventures in the Forgotten Realms",
+    "printing_code": "AFR",
+    "collector_number": "44",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aberrant%20Mind%20Sorcerer",
+    "checked_at": "2026-08-06T00:08:16.939Z"
+  },
   "75564721-e4e9-463a-b49e-f0c7cd6f53a7": {
     "status": "available",
     "name": "Cranial Plating",

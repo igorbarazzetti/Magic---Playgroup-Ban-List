@@ -1,0 +1,26 @@
+{
+  "ca7d093c-0533-493f-9ad3-8af30118fbfc": {
+    "status": "available",
+    "name": "Abraded Bluffs",
+    "price_brl": 0.19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Os Fora da Lei de Encruzilhada do Trovão",
+    "printing_code": "OTJ",
+    "collector_number": "251",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abraded%20Bluffs",
+    "checked_at": "2026-08-06T00:12:17.125Z"
+  },
+  "cab092f9-b7ff-43b9-935f-310869a4daf8": {
+    "status": "available",
+    "name": "Abdel Adrian, Gorion's Ward",
+    "price_brl": 0.24,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends: Batalha por Portal de Baldur",
+    "printing_code": "CLB",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abdel%20Adrian%2C%20Gorion's%20Ward",
+    "checked_at": "2026-08-06T00:07:36.887Z"
+  }
+}

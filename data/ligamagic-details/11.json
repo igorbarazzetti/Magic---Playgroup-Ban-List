@@ -1,4 +1,16 @@
 {
+  "1167fe30-32b8-4381-8067-a05cd345977b": {
+    "status": "available",
+    "name": "A Little Chat",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ruas de Nova Capenna",
+    "printing_code": "SNC",
+    "collector_number": "47",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=A%20Little%20Chat",
+    "checked_at": "2026-08-06T00:02:16.674Z"
+  },
   "1197a595-3afc-4f18-b868-bbb096771922": {
     "status": "available",
     "name": "Leyline of Abundance",

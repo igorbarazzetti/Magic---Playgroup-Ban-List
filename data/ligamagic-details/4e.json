@@ -10,5 +10,17 @@
     "collector_number": "26",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Flawless%20Maneuver",
     "checked_at": "2026-08-05T20:06:22.586Z"
+  },
+  "4e536142-4ebe-4062-887b-5dd123c41d39": {
+    "status": "available",
+    "name": "_____",
+    "price_brl": 3.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unhinged",
+    "printing_code": "UH",
+    "collector_number": "23",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=_____",
+    "checked_at": "2026-08-06T00:00:56.825Z"
   }
 }
