@@ -10,5 +10,17 @@
     "collector_number": "35",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=High%20Tide",
     "checked_at": "2026-08-05T20:07:34.851Z"
+  },
+  "dcde1a62-33a5-4454-a389-9bf7a3521a4c": {
+    "status": "available",
+    "name": "Aeronaut Admiral",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Revolta do éter",
+    "printing_code": "AER",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aeronaut%20Admiral",
+    "checked_at": "2026-08-06T07:20:35.113Z"
   }
 }

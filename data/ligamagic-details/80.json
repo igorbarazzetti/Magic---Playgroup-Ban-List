@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Accursed%20Witch",
     "checked_at": "2026-08-06T03:52:01.807Z"
   },
+  "80b8ee3d-4174-4f47-a533-a3db1e703382": {
+    "status": "available",
+    "name": "Adorned Pouncer",
+    "price_brl": 0.45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Hora da Devastação",
+    "printing_code": "HOU",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adorned%20Pouncer",
+    "checked_at": "2026-08-06T07:10:04.646Z"
+  },
   "80e72437-0c17-44c0-b0a7-eab075a64569": {
     "status": "available",
     "name": "Genesis Storm",

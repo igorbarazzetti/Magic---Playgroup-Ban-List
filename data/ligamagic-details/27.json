@@ -22,5 +22,17 @@
     "collector_number": "161",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Underworld%20Breach",
     "checked_at": "2026-08-05T20:14:30.027Z"
+  },
+  "27f5969e-d613-4cbc-87af-98899bb5c58a": {
+    "status": "available",
+    "name": "Aerial Engineer",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2019",
+    "printing_code": "M19",
+    "collector_number": "211",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerial%20Engineer",
+    "checked_at": "2026-08-06T07:16:54.962Z"
   }
 }

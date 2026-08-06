@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mycosynth%20Lattice",
     "checked_at": "2026-08-05T20:10:23.226Z"
   },
+  "ae4fe5e0-408d-4398-84d7-a901b836df2a": {
+    "status": "available",
+    "name": "Admiral's Order",
+    "price_brl": 0.47,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Rivais de Ixalan",
+    "printing_code": "RIX",
+    "collector_number": "31",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Admiral's%20Order",
+    "checked_at": "2026-08-06T07:09:24.606Z"
+  },
   "ae7604bb-4818-45a3-960c-cf3d83f15964": {
     "status": "available",
     "name": "Teferi, Time Raveler",

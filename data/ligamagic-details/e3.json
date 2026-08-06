@@ -1,4 +1,40 @@
 {
+  "e3016295-00f7-4daf-91b0-57653733b103": {
+    "status": "available",
+    "name": "Adventurer's Airship",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY",
+    "printing_code": "FIN",
+    "collector_number": "252",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adventurer's%20Airship",
+    "checked_at": "2026-08-06T07:12:25.335Z"
+  },
+  "e30d9e08-cf88-4e2d-95e1-7144d8fea5c7": {
+    "status": "available",
+    "name": "Adéwalé, Breaker of Chains",
+    "price_brl": 0.35,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassin's Creed (Memory Corridor)",
+    "printing_code": "MCACR",
+    "collector_number": "136",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ad%C3%A9wal%C3%A9%2C%20Breaker%20of%20Chains",
+    "checked_at": "2026-08-06T07:08:34.557Z"
+  },
+  "e3bad2e2-1024-4261-b3d7-82a6998416fd": {
+    "status": "available",
+    "name": "Aeronaut's Wings",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra dos Irmãos",
+    "printing_code": "BRO",
+    "collector_number": "231",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aeronaut's%20Wings",
+    "checked_at": "2026-08-06T07:20:55.174Z"
+  },
   "e3eb6f90-ccfc-41e7-bff6-0b378226bc7e": {
     "status": "available",
     "name": "Abundant Countryside",

@@ -10,5 +10,17 @@
     "collector_number": "246",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Food%20Chain",
     "checked_at": "2026-08-05T20:06:28.611Z"
+  },
+  "5cb495a2-c683-4066-b6ee-d0b7d8843cb9": {
+    "status": "available",
+    "name": "Aerathi Berserker",
+    "price_brl": 14.26,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Legends",
+    "printing_code": "LG",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerathi%20Berserker",
+    "checked_at": "2026-08-06T07:16:04.966Z"
   }
 }

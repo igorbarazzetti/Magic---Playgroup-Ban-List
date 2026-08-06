@@ -1,4 +1,28 @@
 {
+  "c95e75fb-2bf2-431c-b7ca-d84236bffe5c": {
+    "status": "available",
+    "name": "Adder-Staff Boggart",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn",
+    "printing_code": "LW",
+    "collector_number": "148",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adder-Staff%20Boggart",
+    "checked_at": "2026-08-06T07:07:24.471Z"
+  },
+  "c9949a5a-13d4-41ca-80fe-902b0ae71204": {
+    "status": "available",
+    "name": "Advancing the Spirit",
+    "price_brl": 1.95,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes Commander",
+    "printing_code": "MSC",
+    "collector_number": "712",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Advancing%20the%20Spirit",
+    "checked_at": "2026-08-06T07:11:54.727Z"
+  },
   "c9b82110-7dfd-4617-9399-9510be449043": {
     "status": "available",
     "name": "Dark Depths",

@@ -1,4 +1,16 @@
 {
+  "8789d5fa-101c-457a-90ec-5cf067f5289b": {
+    "status": "available",
+    "name": "Aesthetic Consultation",
+    "price_brl": 3.98,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unhinged",
+    "printing_code": "UH",
+    "collector_number": "48",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aesthetic%20Consultation",
+    "checked_at": "2026-08-06T07:21:25.159Z"
+  },
   "87a4806e-8d5e-473b-8d6d-665e45a5e042": {
     "status": "available",
     "name": "Abstract Iguanart",

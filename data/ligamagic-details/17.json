@@ -1,4 +1,16 @@
 {
+  "17042684-7af4-43a6-88c7-885032cfb27c": {
+    "status": "available",
+    "name": "Adventuring Gear",
+    "price_brl": 0.12,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Zendikar",
+    "printing_code": "ZEN",
+    "collector_number": "195",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adventuring%20Gear",
+    "checked_at": "2026-08-06T07:12:54.821Z"
+  },
   "17b60106-a4c7-410a-8ac3-ec8e74e29a7c": {
     "status": "available",
     "name": "Mystic Sanctuary",

@@ -1,4 +1,16 @@
 {
+  "153292f9-e0d1-43a7-a083-275c49d0554a": {
+    "status": "available",
+    "name": "Aeronaut Cavalry",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra dos Irmãos",
+    "printing_code": "BRO",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aeronaut%20Cavalry",
+    "checked_at": "2026-08-06T07:20:45.164Z"
+  },
   "15710c57-369a-442b-b7ea-175f3d9d164d": {
     "status": "available",
     "name": "Power Play",
@@ -22,5 +34,29 @@
     "collector_number": "20",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Second%20Sunrise",
     "checked_at": "2026-08-05T20:12:08.523Z"
+  },
+  "15e83068-6253-4c65-8679-7295f3dc2075": {
+    "status": "available",
+    "name": "Aether Charge",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Investida",
+    "printing_code": "ON",
+    "collector_number": "184",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Charge",
+    "checked_at": "2026-08-06T07:22:25.263Z"
+  },
+  "15fee0bd-ede2-4f65-a9a1-2da4623679d5": {
+    "status": "available",
+    "name": "Aether Figment",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Zendikar",
+    "printing_code": "ZEN",
+    "collector_number": "40",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Figment",
+    "checked_at": "2026-08-06T07:22:45.226Z"
   }
 }

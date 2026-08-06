@@ -1,4 +1,16 @@
 {
+  "f84c30e7-2ea8-43ff-9356-1f907558cfd9": {
+    "status": "available",
+    "name": "Aegis Turtle",
+    "price_brl": 0.02,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Foundations",
+    "printing_code": "FDN",
+    "collector_number": "150",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aegis%20Turtle",
+    "checked_at": "2026-08-06T07:15:24.927Z"
+  },
   "f8a9c279-0f11-4a22-8651-f9caf013ca3c": {
     "status": "available",
     "name": "Accelerated Mutation",
@@ -34,5 +46,17 @@
     "collector_number": "104",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Birthing%20Pod",
     "checked_at": "2026-08-05T20:03:31.166Z"
+  },
+  "f8e1b38a-2a77-4cf1-8bef-31acb61ede10": {
+    "status": "available",
+    "name": "Aegis of the Heavens",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2019",
+    "printing_code": "M19",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aegis%20of%20the%20Heavens",
+    "checked_at": "2026-08-06T07:14:44.927Z"
   }
 }

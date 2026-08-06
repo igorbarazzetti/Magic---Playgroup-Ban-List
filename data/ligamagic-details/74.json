@@ -1,4 +1,16 @@
 {
+  "748d5353-b66c-4d7a-8c55-0d28fefb1e2a": {
+    "status": "available",
+    "name": "Adorable Kitten",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unstable",
+    "printing_code": "UST",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adorable%20Kitten",
+    "checked_at": "2026-08-06T07:09:44.654Z"
+  },
   "74d3277a-38e5-4732-afed-084a56148f20": {
     "status": "available",
     "name": "Mana Drain",

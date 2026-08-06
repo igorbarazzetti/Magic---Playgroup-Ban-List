@@ -10,5 +10,17 @@
     "collector_number": "2",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acidic%20Dagger",
     "checked_at": "2026-08-06T03:53:22.437Z"
+  },
+  "bf29b215-d4f5-4641-97ef-b65d4c463e72": {
+    "status": "available",
+    "name": "Adventurers' Guildhouse",
+    "price_brl": 14.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Legends",
+    "printing_code": "LG",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adventurers'%20Guildhouse",
+    "checked_at": "2026-08-06T07:12:44.765Z"
   }
 }

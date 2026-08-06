@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acolyte%20of%20Affliction",
     "checked_at": "2026-08-06T03:54:31.958Z"
   },
+  "d5ad26cc-2bdb-46b7-b8bf-dd099d5fa09b": {
+    "status": "available",
+    "name": "Adarkar Wastes",
+    "price_brl": 8.79,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm Commander",
+    "printing_code": "TDC",
+    "collector_number": "338",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adarkar%20Wastes",
+    "checked_at": "2026-08-06T07:07:04.556Z"
+  },
   "d5d91377-fd66-4dbe-a092-07f2ea379ca7": {
     "status": "available",
     "name": "Leovold, Emissary of Trest",

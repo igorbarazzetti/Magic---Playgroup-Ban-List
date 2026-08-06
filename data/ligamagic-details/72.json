@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aberrant%20Researcher",
     "checked_at": "2026-08-06T00:18:05.426Z"
   },
+  "727f4734-53cc-4279-ba51-dfa26c4ceb1d": {
+    "status": "available",
+    "name": "Aegis Automaton",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Revolta do éter",
+    "printing_code": "AER",
+    "collector_number": "141",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aegis%20Automaton",
+    "checked_at": "2026-08-06T07:14:14.886Z"
+  },
   "7282f643-191b-41be-9f6f-82360c915d6d": {
     "status": "available",
     "name": "Abyssal Persecutor",

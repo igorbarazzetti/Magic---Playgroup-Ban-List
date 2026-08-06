@@ -1,4 +1,16 @@
 {
+  "850eb3c3-029b-49b0-91a9-6daeb1b3a9e8": {
+    "status": "available",
+    "name": "Adeliz, the Cinder Wind",
+    "price_brl": 0.18,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominaria",
+    "printing_code": "DOM",
+    "collector_number": "190",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adeliz%2C%20the%20Cinder%20Wind",
+    "checked_at": "2026-08-06T07:08:14.526Z"
+  },
   "854278bc-2bcf-45dd-abd5-6aca7a1e5fc9": {
     "status": "available",
     "name": "Aang, A Lot to Learn",

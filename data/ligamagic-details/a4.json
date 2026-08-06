@@ -10,5 +10,17 @@
     "collector_number": "2",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=All%20That%20Glitters",
     "checked_at": "2026-08-05T20:02:43.673Z"
+  },
+  "a4eb06ca-16d8-41c2-8fc6-22e73872b5b0": {
+    "status": "available",
+    "name": "Aerial Assault",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2020",
+    "printing_code": "M20",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerial%20Assault",
+    "checked_at": "2026-08-06T07:16:14.926Z"
   }
 }

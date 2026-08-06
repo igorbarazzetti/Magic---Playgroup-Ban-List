@@ -1,0 +1,38 @@
+{
+  "1e21e57e-3bc9-41a8-9746-57b583a5ad63": {
+    "status": "available",
+    "name": "Adipose Offspring",
+    "price_brl": 1.29,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Doctor Who",
+    "printing_code": "WHO",
+    "collector_number": "10",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adipose%20Offspring",
+    "checked_at": "2026-08-06T07:08:54.550Z"
+  },
+  "1e276998-9c54-4d68-a901-657853312d06": {
+    "status": "available",
+    "name": "Aeromoeba",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 2 (Moldura Antiga)",
+    "printing_code": "OFMH2",
+    "collector_number": "389",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aeromoeba",
+    "checked_at": "2026-08-06T07:20:15.154Z"
+  },
+  "1e33f39b-a61a-4a09-a541-16cc1bd53d02": {
+    "status": "available",
+    "name": "Aether Burst",
+    "price_brl": 0.35,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Odisséia",
+    "printing_code": "OD",
+    "collector_number": "60",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Burst",
+    "checked_at": "2026-08-06T07:22:05.277Z"
+  }
+}

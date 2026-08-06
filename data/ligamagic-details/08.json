@@ -1,4 +1,28 @@
 {
+  "0812efc4-ae7b-474c-b385-55b5b73a811e": {
+    "status": "available",
+    "name": "Aerial Toastmaster",
+    "price_brl": 0.14,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unstable",
+    "printing_code": "UST",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerial%20Toastmaster",
+    "checked_at": "2026-08-06T07:18:25.027Z"
+  },
+  "0897adea-2759-40e8-a05a-c722473e1cf3": {
+    "status": "available",
+    "name": "Aeolipile",
+    "price_brl": 5.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Pro Tour Decks",
+    "printing_code": "PTD",
+    "collector_number": "19961078",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aeolipile",
+    "checked_at": "2026-08-06T07:15:34.904Z"
+  },
   "08becc07-28bc-4a2f-a6b0-28a2998d2f50": {
     "status": "available",
     "name": "Windfall",

@@ -1,4 +1,16 @@
 {
+  "b0168b7e-a8b8-4ce3-af12-a43f3818b6a1": {
+    "status": "available",
+    "name": "Aerial Formation",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Viagem para Nyx",
+    "printing_code": "JOU",
+    "collector_number": "30",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerial%20Formation",
+    "checked_at": "2026-08-06T07:17:15.034Z"
+  },
   "b0d84455-dc35-45d3-901e-8d28363142f4": {
     "status": "available",
     "name": "Hired Heist",

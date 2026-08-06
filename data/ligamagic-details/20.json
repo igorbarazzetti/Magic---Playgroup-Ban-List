@@ -1,4 +1,16 @@
 {
+  "20046568-b067-49fb-93b4-2ee86421f14b": {
+    "status": "available",
+    "name": "Aerialephant",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unfinity",
+    "printing_code": "UNF",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerialephant",
+    "checked_at": "2026-08-06T07:18:45.043Z"
+  },
   "205ffa76-ff8e-4405-b21a-42358a9883c2": {
     "status": "available",
     "name": "Active Volcano",

@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acolyte's%20Reward",
     "checked_at": "2026-08-06T03:55:12.021Z"
   },
+  "94779ca4-c202-4163-9c77-1036921a34bc": {
+    "status": "available",
+    "name": "Adrestia",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassin's Creed",
+    "printing_code": "ACR",
+    "collector_number": "68",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adrestia",
+    "checked_at": "2026-08-06T07:10:24.648Z"
+  },
   "947a2665-2f4d-4193-8768-118f85334549": {
     "status": "available",
     "name": "Abundant Growth",

@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bridge%20from%20Below",
     "checked_at": "2026-08-05T20:03:49.486Z"
   },
+  "0fe602b7-9f88-4d3d-af24-7790df867ed5": {
+    "status": "available",
+    "name": "Aether Barrier",
+    "price_brl": 10.44,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nêmesis",
+    "printing_code": "NE",
+    "collector_number": "27",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Barrier",
+    "checked_at": "2026-08-06T07:21:55.166Z"
+  },
   "0ff11a61-6fe3-4c70-aba8-417023a5e54e": {
     "status": "available",
     "name": "Nadu, Winged Wisdom",

@@ -1,4 +1,28 @@
 {
+  "1208cb6e-34b4-4a23-9a5b-a01229113e38": {
+    "status": "available",
+    "name": "Advocate of the Beast",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2014",
+    "printing_code": "M14",
+    "collector_number": "164",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Advocate%20of%20the%20Beast",
+    "checked_at": "2026-08-06T07:13:44.849Z"
+  },
+  "12134f7d-433a-416a-b668-c1a21984c94b": {
+    "status": "available",
+    "name": "Aerie Mystics",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Anthology",
+    "printing_code": "CMA2",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerie%20Mystics",
+    "checked_at": "2026-08-06T07:19:15.155Z"
+  },
   "124c8663-21f3-4cd8-a060-9d04be35c43f": {
     "status": "available",
     "name": "Stone-Throwing Devils",
@@ -10,5 +34,17 @@
     "collector_number": "33",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Stone-Throwing%20Devils",
     "checked_at": "2026-08-05T20:13:02.625Z"
+  },
+  "12a6cad9-eb42-43bd-9e68-aaf862cd83db": {
+    "status": "available",
+    "name": "Adrix and Nev, Twincasters",
+    "price_brl": 34.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Special Guests",
+    "printing_code": "SPG",
+    "collector_number": "156",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adrix%20and%20Nev%2C%20Twincasters",
+    "checked_at": "2026-08-06T07:10:54.793Z"
   }
 }

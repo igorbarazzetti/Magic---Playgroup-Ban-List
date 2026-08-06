@@ -1,4 +1,16 @@
 {
+  "70235727-e330-46fa-b057-ddbb55cd1ac3": {
+    "status": "available",
+    "name": "Adventure Awaits",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Renascer de Zendikar",
+    "printing_code": "ZNR",
+    "collector_number": "177",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adventure%20Awaits",
+    "checked_at": "2026-08-06T07:12:14.775Z"
+  },
   "704723f3-0490-4d96-930a-aacc6d19ba8d": {
     "status": "available",
     "name": "Seeker of Skybreak",
@@ -46,6 +58,18 @@
     "collector_number": "8",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Incendiary%20Dissent",
     "checked_at": "2026-08-05T20:08:14.308Z"
+  },
+  "70cdd24a-8dc5-47b5-8729-9ebf486f4821": {
+    "status": "available",
+    "name": "Aerie Ouphes",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Entardecer",
+    "printing_code": "EVE",
+    "collector_number": "65",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerie%20Ouphes",
+    "checked_at": "2026-08-06T07:19:25.079Z"
   },
   "70d35dbd-1d91-4a2a-a643-6870d168f4f5": {
     "status": "available",

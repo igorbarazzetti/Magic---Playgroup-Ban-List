@@ -34,5 +34,29 @@
     "collector_number": "270",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Time%20Vault",
     "checked_at": "2026-08-05T20:13:50.788Z"
+  },
+  "99dcde0b-4f4d-4d7a-89aa-8a89c256e38f": {
+    "status": "available",
+    "name": "Aesthir Glider",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominaria",
+    "printing_code": "DOM",
+    "collector_number": "209",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aesthir%20Glider",
+    "checked_at": "2026-08-06T07:21:35.187Z"
+  },
+  "99eb05eb-11ef-456f-9132-166a0691dd04": {
+    "status": "available",
+    "name": "Aegis of the Legion",
+    "price_brl": 7.65,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ravnica: Clue Edition",
+    "printing_code": "CLU",
+    "collector_number": "22",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aegis%20of%20the%20Legion",
+    "checked_at": "2026-08-06T07:14:54.914Z"
   }
 }

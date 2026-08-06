@@ -1,4 +1,16 @@
 {
+  "7e5d2801-873f-4318-9c23-9a73e00e31a4": {
+    "status": "available",
+    "name": "Advanced Stitchwing",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lua Arcana",
+    "printing_code": "EMN",
+    "collector_number": "49",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Advanced%20Stitchwing",
+    "checked_at": "2026-08-06T07:11:45.018Z"
+  },
   "7e6c7b57-bd6a-4ac8-bcab-c3a879f479c2": {
     "status": "available",
     "name": "Chatterstorm",
@@ -10,5 +22,17 @@
     "collector_number": "210",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Chatterstorm",
     "checked_at": "2026-08-05T20:04:10.362Z"
+  },
+  "7e7d7f4d-2c22-4803-ba5e-5eb653c25b5e": {
+    "status": "available",
+    "name": "Aerial Extortionist",
+    "price_brl": 16.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassinato na Mansão Karlov Commander",
+    "printing_code": "MKC",
+    "collector_number": "54",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerial%20Extortionist",
+    "checked_at": "2026-08-06T07:17:04.966Z"
   }
 }

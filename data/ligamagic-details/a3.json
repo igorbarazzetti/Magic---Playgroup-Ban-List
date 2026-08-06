@@ -1,4 +1,28 @@
 {
+  "a361fdd1-7f97-4aed-8e24-ab2a03387f73": {
+    "status": "available",
+    "name": "Adult Gold Dragon",
+    "price_brl": 0.59,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Adventures in the Forgotten Realms",
+    "printing_code": "AFR",
+    "collector_number": "216",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adult%20Gold%20Dragon",
+    "checked_at": "2026-08-06T07:11:04.672Z"
+  },
+  "a3c35742-e306-49b6-b042-db4f685c6f86": {
+    "status": "available",
+    "name": "Aether Flash",
+    "price_brl": 4.37,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Sétima Edição",
+    "printing_code": "7E",
+    "collector_number": "172",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Flash",
+    "checked_at": "2026-08-06T07:22:55.636Z"
+  },
   "a3da7d5b-2c2b-45fe-b9c5-413b8c8fc0a2": {
     "status": "available",
     "name": "Academy Ruins",

@@ -46,5 +46,17 @@
     "collector_number": "58",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abundance",
     "checked_at": "2026-08-06T00:16:07.292Z"
+  },
+  "ecf1e378-d6bc-4ee0-800e-eb8a955d781f": {
+    "status": "available",
+    "name": "Aether Gust",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2020",
+    "printing_code": "M20",
+    "collector_number": "42",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Gust",
+    "checked_at": "2026-08-06T07:23:15.763Z"
   }
 }

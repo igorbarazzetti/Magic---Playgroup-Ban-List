@@ -1,4 +1,16 @@
 {
+  "d13aff7c-f0ee-44e2-ae1c-62cd86ad46a6": {
+    "status": "available",
+    "name": "Aerial Caravan",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Máscaras de Mercádia",
+    "printing_code": "MM",
+    "collector_number": "58",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerial%20Caravan",
+    "checked_at": "2026-08-06T07:16:34.932Z"
+  },
   "d17576b2-4a47-4848-8908-3152c8b4afe2": {
     "status": "available",
     "name": "Rebirth",

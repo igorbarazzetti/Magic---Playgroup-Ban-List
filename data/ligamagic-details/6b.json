@@ -22,5 +22,17 @@
     "collector_number": "77",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Temporal%20Manipulation",
     "checked_at": "2026-08-05T20:13:32.767Z"
+  },
+  "6bac1495-16cf-4e1e-9126-482f85322c78": {
+    "status": "available",
+    "name": "Aerial Predation",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Retorno a Ravnica",
+    "printing_code": "RTR",
+    "collector_number": "113",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerial%20Predation",
+    "checked_at": "2026-08-06T07:17:55.187Z"
   }
 }

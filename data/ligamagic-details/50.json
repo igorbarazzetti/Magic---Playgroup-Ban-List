@@ -1,4 +1,16 @@
 {
+  "5063f015-bd1c-4e14-9888-63e202be2ac8": {
+    "status": "available",
+    "name": "Advice from the Fae",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Pântano Sombrio",
+    "printing_code": "SHM",
+    "collector_number": "28",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Advice%20from%20the%20Fae",
+    "checked_at": "2026-08-06T07:13:34.892Z"
+  },
   "50885640-cdf1-4c62-b3bc-f37db6ab38b5": {
     "status": "available",
     "name": "Trade Secrets",

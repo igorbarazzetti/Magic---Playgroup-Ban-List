@@ -1,0 +1,26 @@
+{
+  "43ace4d5-9006-4bad-bd17-3d368c20564d": {
+    "status": "available",
+    "name": "Aerie Bowmasters",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dragões de Tarkir",
+    "printing_code": "DTK",
+    "collector_number": "170",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerie%20Bowmasters",
+    "checked_at": "2026-08-06T07:19:05.101Z"
+  },
+  "43b5e462-d860-473d-828f-6c513fc7768a": {
+    "status": "available",
+    "name": "Admiral Beckett Brass",
+    "price_brl": 0.21,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "The List",
+    "printing_code": "PLIST",
+    "collector_number": "731",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Admiral%20Beckett%20Brass",
+    "checked_at": "2026-08-06T07:09:04.586Z"
+  }
+}

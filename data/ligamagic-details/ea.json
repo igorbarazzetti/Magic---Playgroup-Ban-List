@@ -1,4 +1,16 @@
 {
+  "ea93acc8-0c1f-42a2-bed3-f385d210d58f": {
+    "status": "available",
+    "name": "Aegis of Honor",
+    "price_brl": 3.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Odisséia",
+    "printing_code": "OD",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aegis%20of%20Honor",
+    "checked_at": "2026-08-06T07:14:24.872Z"
+  },
   "eaa9baac-72f2-4bde-9146-860878d9860b": {
     "status": "available",
     "name": "Abuelo, Ancestral Echo",

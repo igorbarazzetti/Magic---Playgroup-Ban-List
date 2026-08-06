@@ -58,5 +58,17 @@
     "collector_number": "150",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Geological%20Appraiser",
     "checked_at": "2026-08-05T20:06:49.723Z"
+  },
+  "a0cd19c1-9125-4627-83ba-d42c489b4e7d": {
+    "status": "available",
+    "name": "Aeromunculus",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lealdade em Ravnica",
+    "printing_code": "RNA",
+    "collector_number": "152",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aeromunculus",
+    "checked_at": "2026-08-06T07:20:25.125Z"
   }
 }

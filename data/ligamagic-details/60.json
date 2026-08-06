@@ -1,4 +1,16 @@
 {
+  "602cce3e-7033-47d6-aec1-d755f234f270": {
+    "status": "available",
+    "name": "Adept Watershaper",
+    "price_brl": 2.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed",
+    "printing_code": "ECL",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adept%20Watershaper",
+    "checked_at": "2026-08-06T07:08:24.579Z"
+  },
   "60c60923-ff1b-43f7-8768-731499fcffc9": {
     "status": "available",
     "name": "Oko, Thief of Crowns",

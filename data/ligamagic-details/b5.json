@@ -1,0 +1,26 @@
+{
+  "b56c0846-e465-4251-93ea-2e3e7be8dffc": {
+    "status": "available",
+    "name": "Aerial Guide",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Hora da Devastação",
+    "printing_code": "HOU",
+    "collector_number": "29",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerial%20Guide",
+    "checked_at": "2026-08-06T07:17:25.058Z"
+  },
+  "b5f5400e-f341-40e3-b935-36d9cf983a20": {
+    "status": "available",
+    "name": "Adherent of Hope",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2021",
+    "printing_code": "M21",
+    "collector_number": "321",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adherent%20of%20Hope",
+    "checked_at": "2026-08-06T07:08:44.538Z"
+  }
+}

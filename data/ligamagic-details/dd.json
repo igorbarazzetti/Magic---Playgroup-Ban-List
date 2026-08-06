@@ -1,4 +1,16 @@
 {
+  "dd66b8ab-14a9-455b-98f6-5356df72a522": {
+    "status": "available",
+    "name": "Adarkar Windform",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Frente Fria",
+    "printing_code": "CS",
+    "collector_number": "26",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adarkar%20Windform",
+    "checked_at": "2026-08-06T07:07:14.462Z"
+  },
   "dd70d439-bd60-43d1-ac26-13b744cc4a37": {
     "status": "available",
     "name": "Accorder's Shield",
@@ -22,6 +34,18 @@
     "collector_number": "3",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abjure",
     "checked_at": "2026-08-06T00:09:36.977Z"
+  },
+  "dd9a6f6b-f9b7-4292-bc80-b7da326de032": {
+    "status": "available",
+    "name": "Aerith Gainsborough",
+    "price_brl": 8.85,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY",
+    "printing_code": "FIN",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerith%20Gainsborough",
+    "checked_at": "2026-08-06T07:19:45.091Z"
   },
   "ddf461b9-a205-4dc7-a9c3-c047b1ff709f": {
     "status": "available",

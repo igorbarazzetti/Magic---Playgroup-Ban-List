@@ -1,4 +1,16 @@
 {
+  "eb62aa4b-c11b-4195-ae85-cff8f78ce17b": {
+    "status": "available",
+    "name": "Advent of the Wurm",
+    "price_brl": 0.19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Labirinto do Dragão",
+    "printing_code": "DGM",
+    "collector_number": "51",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Advent%20of%20the%20Wurm",
+    "checked_at": "2026-08-06T07:12:04.752Z"
+  },
   "eb9c9a34-88a8-4afe-a053-806f6b29834f": {
     "status": "available",
     "name": "Memory Jar",

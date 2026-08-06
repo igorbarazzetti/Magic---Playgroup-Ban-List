@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Empty%20the%20Warrens",
     "checked_at": "2026-08-05T20:05:43.574Z"
   },
+  "3a75c56a-bdf7-490d-aa41-51d5eb8be46c": {
+    "status": "available",
+    "name": "Aegis Sculptor",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm",
+    "printing_code": "TDM",
+    "collector_number": "35",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aegis%20Sculptor",
+    "checked_at": "2026-08-06T07:15:14.930Z"
+  },
   "3a92b235-196b-4f46-9d20-06f4d3653d36": {
     "status": "available",
     "name": "Aberrant Return",

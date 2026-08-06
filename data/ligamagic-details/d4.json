@@ -1,4 +1,16 @@
 {
+  "d4ccc319-db23-4ef4-8129-317426f3a794": {
+    "status": "available",
+    "name": "Aerial Maneuver",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portões Violados",
+    "printing_code": "GTC",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerial%20Maneuver",
+    "checked_at": "2026-08-06T07:17:34.965Z"
+  },
   "d4d44264-b276-4bd7-8fbe-6af292b08773": {
     "status": "available",
     "name": "Aboshan, Cephalid Emperor",

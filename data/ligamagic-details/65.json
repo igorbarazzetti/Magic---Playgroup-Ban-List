@@ -1,4 +1,16 @@
 {
+  "6511f317-bd38-46d0-b800-7125a3f420da": {
+    "status": "available",
+    "name": "Aesi, Tyrant of Gyre Strait",
+    "price_brl": 71.39,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mystery Booster 2",
+    "printing_code": "MB2",
+    "collector_number": "1264",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aesi%2C%20Tyrant%20of%20Gyre%20Strait",
+    "checked_at": "2026-08-06T07:21:15.144Z"
+  },
   "652f6d90-b158-4f9b-a15e-3e677905331d": {
     "status": "available",
     "name": "Worldknit",
@@ -10,6 +22,18 @@
     "collector_number": "13",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Worldknit",
     "checked_at": "2026-08-05T20:15:33.006Z"
+  },
+  "657a4500-4b47-4c78-945b-a7791af7d10e": {
+    "status": "available",
+    "name": "Adelbert Steiner",
+    "price_brl": 0.12,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY",
+    "printing_code": "FIN",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adelbert%20Steiner",
+    "checked_at": "2026-08-06T07:07:54.499Z"
   },
   "6587a463-a108-4854-b6d1-944e89b8c8a4": {
     "status": "available",
@@ -46,6 +70,18 @@
     "collector_number": "60",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Demonic%20Attorney",
     "checked_at": "2026-08-05T20:05:07.681Z"
+  },
+  "65dc61a4-9052-49d4-bce8-9c16f0339382": {
+    "status": "available",
+    "name": "Advanced Hoverguard",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Quinta Aurora",
+    "printing_code": "5DN",
+    "collector_number": "22",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Advanced%20Hoverguard",
+    "checked_at": "2026-08-06T07:11:24.703Z"
   },
   "65f3ebeb-1ca5-4923-b681-032579991c8a": {
     "status": "available",

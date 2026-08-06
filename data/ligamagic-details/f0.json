@@ -1,4 +1,16 @@
 {
+  "f00bc101-8082-4459-b987-f0c4b7a12344": {
+    "status": "available",
+    "name": "Advanced Reconstruction",
+    "price_brl": 16.6,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven Commander",
+    "printing_code": "SOC",
+    "collector_number": "30",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Advanced%20Reconstruction",
+    "checked_at": "2026-08-06T07:11:34.757Z"
+  },
   "f0587c55-06c1-4930-a62e-668f37464ce9": {
     "status": "available",
     "name": "Jegantha, the Wellspring",

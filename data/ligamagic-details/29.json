@@ -1,4 +1,28 @@
 {
+  "290cd0b1-55d6-4b30-962d-075a6f75d562": {
+    "status": "available",
+    "name": "Aerial Modification",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Revolta do éter",
+    "printing_code": "AER",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerial%20Modification",
+    "checked_at": "2026-08-06T07:17:44.992Z"
+  },
+  "2932baae-bdf1-455a-9ac4-23ba1f83e7e1": {
+    "status": "available",
+    "name": "Adarkar Valkyrie",
+    "price_brl": 1.28,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2018",
+    "printing_code": "C18",
+    "collector_number": "60",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adarkar%20Valkyrie",
+    "checked_at": "2026-08-06T07:06:54.588Z"
+  },
   "29737a60-3ebd-40d9-b935-c4f54b90d45d": {
     "status": "available",
     "name": "Windswept Heath",

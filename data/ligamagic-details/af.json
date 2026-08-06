@@ -1,0 +1,26 @@
+{
+  "af471455-6b9f-4c14-bb90-a74a44ecd247": {
+    "status": "available",
+    "name": "Aeon Engine",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2019",
+    "printing_code": "C19",
+    "collector_number": "52",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aeon%20Engine",
+    "checked_at": "2026-08-06T07:15:55.455Z"
+  },
+  "af566158-23b2-4f91-8d59-a58342a9f576": {
+    "status": "available",
+    "name": "Adric, Mathematical Genius",
+    "price_brl": 4.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Doctor Who",
+    "printing_code": "WHO",
+    "collector_number": "33",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adric%2C%20Mathematical%20Genius",
+    "checked_at": "2026-08-06T07:10:44.662Z"
+  }
+}

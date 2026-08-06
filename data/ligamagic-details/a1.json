@@ -1,4 +1,16 @@
 {
+  "a1399cb8-f22a-487e-b539-2db47b09a790": {
+    "status": "available",
+    "name": "Aeon Chronicler",
+    "price_brl": 0.17,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Caos Planar",
+    "printing_code": "PC",
+    "collector_number": "32",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aeon%20Chronicler",
+    "checked_at": "2026-08-06T07:15:44.953Z"
+  },
   "a149eeb1-007c-435d-9d55-34af205090e0": {
     "status": "available",
     "name": "Acidic Sliver",
@@ -10,6 +22,18 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acidic%20Sliver",
     "checked_at": "2026-08-06T03:53:41.922Z"
+  },
+  "a15bb807-ea31-4bff-b573-c249c4c78dd6": {
+    "status": "available",
+    "name": "Aeronaut Tinkerer",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2015",
+    "printing_code": "M15",
+    "collector_number": "43",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aeronaut%20Tinkerer",
+    "checked_at": "2026-08-06T07:21:05.202Z"
   },
   "a1ab033f-9605-4ca2-a98b-c0b2e1599609": {
     "status": "available",

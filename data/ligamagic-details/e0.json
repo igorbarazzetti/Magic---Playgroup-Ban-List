@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abby%2C%20Merciless%20Soldier",
     "checked_at": "2026-08-06T00:07:27.037Z"
   },
+  "e076067c-77b7-4a37-a62d-51434392dd53": {
+    "status": "available",
+    "name": "Aether Adept",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2012",
+    "printing_code": "M12",
+    "collector_number": "41",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Adept",
+    "checked_at": "2026-08-06T07:21:45.299Z"
+  },
   "e0b12c48-7234-40b5-a84c-6901d2b4e5b0": {
     "status": "available",
     "name": "Abomination, World Ravager",
