@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Hellkite",
     "checked_at": "2026-08-07T07:49:56.023Z"
   },
+  "de691eed-d90b-48f9-bae4-f982767f2bfd": {
+    "status": "available",
+    "name": "Arcum's Whistle",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Era Glacial",
+    "printing_code": "IA",
+    "collector_number": "13",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcum's%20Whistle",
+    "checked_at": "2026-08-07T17:25:14.863Z"
+  },
   "de8c0e2d-3207-4bc6-83ef-91e33b26a981": {
     "status": "available",
     "name": "All-Out Assault",

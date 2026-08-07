@@ -82,5 +82,17 @@
     "collector_number": "92",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akki%20Raider",
     "checked_at": "2026-08-06T14:55:42.292Z"
+  },
+  "bfa20bc7-4626-4a52-87f4-6e2763cb8ed5": {
+    "status": "available",
+    "name": "Archway of Innovation",
+    "price_brl": 2.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3",
+    "printing_code": "MH3",
+    "collector_number": "214",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archway%20of%20Innovation",
+    "checked_at": "2026-08-07T17:22:44.569Z"
   }
 }

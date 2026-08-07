@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Altar%20Golem",
     "checked_at": "2026-08-07T00:44:05.175Z"
   },
+  "acab4fa9-d9ab-4a89-a50f-0cee9d7ca0c3": {
+    "status": "available",
+    "name": "Archery Training",
+    "price_brl": 0.23,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Destino de Urza",
+    "printing_code": "UD",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archery%20Training",
+    "checked_at": "2026-08-07T17:15:24.187Z"
+  },
   "acb0084d-3b09-4d2a-a4c1-848c92588845": {
     "status": "available",
     "name": "Aid the Fallen",

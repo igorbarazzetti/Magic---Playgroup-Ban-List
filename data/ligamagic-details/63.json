@@ -70,5 +70,17 @@
     "collector_number": "204",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alania%2C%20Divergent%20Storm",
     "checked_at": "2026-08-06T18:13:07.589Z"
+  },
+  "63dfe794-5f56-41ec-9883-5523b41cc3e0": {
+    "status": "available",
+    "name": "Arena of Glory",
+    "price_brl": 72.74,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3",
+    "printing_code": "MH3",
+    "collector_number": "215",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arena%20of%20Glory",
+    "checked_at": "2026-08-07T17:28:14.754Z"
   }
 }

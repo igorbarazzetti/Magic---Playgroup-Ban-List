@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambush%20Viper",
     "checked_at": "2026-08-07T04:38:31.162Z"
   },
+  "898f0824-cf4c-4e34-8407-9a32fdae6dcb": {
+    "status": "available",
+    "name": "Arctic Foxes",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Era Glacial",
+    "printing_code": "IA",
+    "collector_number": "10",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arctic%20Foxes",
+    "checked_at": "2026-08-07T17:23:54.507Z"
+  },
   "89aa65d9-2502-40b0-90b6-b25a8e9f6155": {
     "status": "available",
     "name": "Capture of Jingzhou",

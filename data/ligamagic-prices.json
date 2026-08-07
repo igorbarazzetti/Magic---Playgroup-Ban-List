@@ -7,11 +7,11 @@
   },
   "refresh_interval_hours": 1920,
   "usd_brl": {
-    "rate": 5.1154,
-    "as_of": "2026-08-05 13:06:43.148328",
+    "rate": 5.1017,
+    "as_of": "2026-08-06 13:04:47.461993",
     "source": "Banco Central do Brasil · PTAX"
   },
-  "generated_at": "2026-08-07T13:59:54.223Z",
+  "generated_at": "2026-08-07T17:28:14.759Z",
   "summary": {
     "available": 266,
     "unavailable": 0,

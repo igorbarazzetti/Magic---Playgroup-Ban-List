@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amulet%20of%20Quoz",
     "checked_at": "2026-08-05T20:02:52.040Z"
   },
+  "a086f7a5-1319-4c5d-b23f-41bec2f81027": {
+    "status": "available",
+    "name": "Archivist of Gondor",
+    "price_brl": 2.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Contos da Terra Média Commander",
+    "printing_code": "LTC",
+    "collector_number": "18",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archivist%20of%20Gondor",
+    "checked_at": "2026-08-07T17:18:34.293Z"
+  },
   "a09da13e-f8a3-410e-941a-9912d2cfe7de": {
     "status": "available",
     "name": "Angler Turtle",
@@ -70,6 +82,18 @@
     "collector_number": "150",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Geological%20Appraiser",
     "checked_at": "2026-08-05T20:06:49.723Z"
+  },
+  "a0a706b2-b237-4183-82fa-2140a23b89e3": {
+    "status": "available",
+    "name": "Archwing Dragon",
+    "price_brl": 0.55,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Retorno de Avacyn",
+    "printing_code": "AVR",
+    "collector_number": "126",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archwing%20Dragon",
+    "checked_at": "2026-08-07T17:23:04.872Z"
   },
   "a0cd19c1-9125-4627-83ba-d42c489b4e7d": {
     "status": "available",

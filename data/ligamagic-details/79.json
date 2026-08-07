@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Accelerate",
     "checked_at": "2026-08-06T03:48:51.647Z"
   },
+  "79254223-3fa6-4b7c-8163-1e48bf5cb708": {
+    "status": "available",
+    "name": "Archetype of Endurance",
+    "price_brl": 3.45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nascidos dos Deuses",
+    "printing_code": "BNG",
+    "collector_number": "116",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archetype%20of%20Endurance",
+    "checked_at": "2026-08-07T17:15:54.206Z"
+  },
   "792e1072-00bf-4f63-b956-5f20cdf09f11": {
     "status": "available",
     "name": "Goblin Recruiter",
@@ -58,6 +70,30 @@
     "collector_number": "7",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amrou%20Kithkin",
     "checked_at": "2026-08-07T04:41:51.354Z"
+  },
+  "79b48704-480d-4905-b87a-40b127894670": {
+    "status": "available",
+    "name": "Archetype of Courage",
+    "price_brl": 0.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nascidos dos Deuses",
+    "printing_code": "BNG",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archetype%20of%20Courage",
+    "checked_at": "2026-08-07T17:15:44.192Z"
+  },
+  "79d290ea-c095-4135-9711-f3ce089dae43": {
+    "status": "available",
+    "name": "Architects of Will",
+    "price_brl": 0.43,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alara Reunida",
+    "printing_code": "ARB",
+    "collector_number": "17",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Architects%20of%20Will",
+    "checked_at": "2026-08-07T17:17:54.253Z"
   },
   "79d577a8-53c0-4220-bc0e-70764d72d5fd": {
     "status": "available",

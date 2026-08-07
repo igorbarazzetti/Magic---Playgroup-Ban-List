@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arbiter%20of%20Knollridge",
     "checked_at": "2026-08-07T13:46:33.597Z"
   },
+  "628f2deb-519e-4810-a7e5-e31316e9a4e0": {
+    "status": "available",
+    "name": "Arcus Acolyte",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 2",
+    "printing_code": "MH2",
+    "collector_number": "185",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcus%20Acolyte",
+    "checked_at": "2026-08-07T17:25:25.164Z"
+  },
   "629fe1be-272d-465f-b9b1-2ce177410f13": {
     "status": "available",
     "name": "+2 Mace",
@@ -34,6 +46,18 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=%2B2%20Mace",
     "checked_at": "2026-08-06T00:01:06.656Z"
+  },
+  "62c240ac-f2dd-4e39-9e82-50307efa833e": {
+    "status": "available",
+    "name": "Archfiend's Vessel",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2021",
+    "printing_code": "M21",
+    "collector_number": "88",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archfiend's%20Vessel",
+    "checked_at": "2026-08-07T17:17:14.239Z"
   },
   "62dca41b-58b0-45eb-ada7-568e80a2abec": {
     "status": "available",

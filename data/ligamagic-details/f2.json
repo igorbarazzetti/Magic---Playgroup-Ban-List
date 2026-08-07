@@ -10,5 +10,17 @@
     "collector_number": "43",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerial%20Doombot",
     "checked_at": "2026-08-06T07:16:45.629Z"
+  },
+  "f2cf087a-d89a-4145-9394-945ce41c8cca": {
+    "status": "available",
+    "name": "Archway Angel",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lealdade em Ravnica",
+    "printing_code": "RNA",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archway%20Angel",
+    "checked_at": "2026-08-07T17:22:24.568Z"
   }
 }

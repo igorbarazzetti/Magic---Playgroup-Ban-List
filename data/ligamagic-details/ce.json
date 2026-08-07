@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Allied%20Teamwork",
     "checked_at": "2026-08-07T00:36:34.697Z"
   },
+  "ceef2d5a-77ea-4e56-9806-fd1a2d5be400": {
+    "status": "available",
+    "name": "Archon of Emeria",
+    "price_brl": 12.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Renascer de Zendikar",
+    "printing_code": "ZNR",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archon%20of%20Emeria",
+    "checked_at": "2026-08-07T17:20:35.143Z"
+  },
   "cef5361a-a189-4e05-a8b8-fc764aed73b9": {
     "status": "available",
     "name": "All-Fates Scroll",

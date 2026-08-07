@@ -1,4 +1,16 @@
 {
+  "575ffeb4-6d12-4f69-bcc9-15db325daac1": {
+    "status": "available",
+    "name": "Archghoul of Thraben",
+    "price_brl": 0.17,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Voto Carmesim",
+    "printing_code": "VOW",
+    "collector_number": "93",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archghoul%20of%20Thraben",
+    "checked_at": "2026-08-07T17:17:24.392Z"
+  },
   "57eba48e-87bd-4b54-8635-7348020f2ba4": {
     "status": "available",
     "name": "Alley Assailant",

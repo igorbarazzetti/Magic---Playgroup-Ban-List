@@ -46,5 +46,17 @@
     "collector_number": "104",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anurid%20Barkripper",
     "checked_at": "2026-08-07T11:12:36.544Z"
+  },
+  "2ceb76e2-1692-48fc-ab20-9587d1374172": {
+    "status": "available",
+    "name": "Archweaver",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Retorno a Ravnica",
+    "printing_code": "RTR",
+    "collector_number": "114",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archweaver",
+    "checked_at": "2026-08-07T17:22:54.493Z"
   }
 }

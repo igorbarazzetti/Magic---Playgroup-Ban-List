@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Storm",
     "checked_at": "2026-08-06T11:00:24.210Z"
   },
+  "ff5caed4-0276-476d-8fae-edae2536df7f": {
+    "status": "available",
+    "name": "Archangel of Tithes",
+    "price_brl": 4.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic Origens",
+    "printing_code": "ORI",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archangel%20of%20Tithes",
+    "checked_at": "2026-08-07T17:13:44.144Z"
+  },
   "ff6427f6-d2b1-4e33-984d-c06bd15d7c2c": {
     "status": "available",
     "name": "Aetherborn Marauder",

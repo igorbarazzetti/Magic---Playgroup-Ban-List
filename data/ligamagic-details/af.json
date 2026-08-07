@@ -1,4 +1,16 @@
 {
+  "af247e2f-b271-4f5b-ab98-4579d2c17c21": {
+    "status": "available",
+    "name": "Archfiend of Depravity",
+    "price_brl": 4.45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY Commander",
+    "printing_code": "FIC",
+    "collector_number": "273",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archfiend%20of%20Depravity",
+    "checked_at": "2026-08-07T17:16:24.238Z"
+  },
   "af42079b-a3c0-448c-9bb2-b915252e87a9": {
     "status": "available",
     "name": "Animation Module",

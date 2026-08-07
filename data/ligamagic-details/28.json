@@ -1,4 +1,16 @@
 {
+  "28045b32-4c1a-40e5-a15d-524d0f8fe6ec": {
+    "status": "available",
+    "name": "Archmage of Runes",
+    "price_brl": 26.38,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Foundations",
+    "printing_code": "FDN",
+    "collector_number": "30",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archmage%20of%20Runes",
+    "checked_at": "2026-08-07T17:19:24.397Z"
+  },
   "2844d274-cb60-46c1-a73b-e763c633e496": {
     "status": "available",
     "name": "Alchemist's Assistant",

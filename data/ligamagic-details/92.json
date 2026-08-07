@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Invigorate",
     "checked_at": "2026-08-05T20:08:22.980Z"
   },
+  "9275108c-7eaf-4edd-aa6d-e5263d5ac7fd": {
+    "status": "available",
+    "name": "Ardent Recruit",
+    "price_brl": 0.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Duel Decks: Mirrodin Pure vs. New Phyrexia",
+    "printing_code": "TD2",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ardent%20Recruit",
+    "checked_at": "2026-08-07T17:26:54.657Z"
+  },
   "9277b680-a146-4d4f-9649-39cddafdb585": {
     "status": "available",
     "name": "Arashi, the Sky Asunder",

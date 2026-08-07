@@ -1,4 +1,16 @@
 {
+  "370974e7-d242-4f24-a031-cba71c935306": {
+    "status": "available",
+    "name": "Ardent Dustspeaker",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Strixhaven: Escola de Magos",
+    "printing_code": "STX",
+    "collector_number": "92",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ardent%20Dustspeaker",
+    "checked_at": "2026-08-07T17:26:04.643Z"
+  },
   "37108cd4-bbab-4ce3-9ed6-f60e8422e703": {
     "status": "available",
     "name": "Ragavan, Nimble Pilferer",

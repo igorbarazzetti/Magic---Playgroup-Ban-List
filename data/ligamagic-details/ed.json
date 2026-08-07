@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abnormal%20Endurance",
     "checked_at": "2026-08-06T00:09:46.969Z"
   },
+  "edcb0248-e7c9-4df9-8dba-982048654fd2": {
+    "status": "available",
+    "name": "Archenemy's Charm",
+    "price_brl": 3.74,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Edge of Eternities",
+    "printing_code": "EOE",
+    "collector_number": "88",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archenemy's%20Charm",
+    "checked_at": "2026-08-07T17:14:54.173Z"
+  },
   "ededbdae-d9dc-4206-9335-d7158f2d7700": {
     "status": "available",
     "name": "Vampiric Tutor",

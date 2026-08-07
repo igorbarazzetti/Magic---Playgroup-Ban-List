@@ -46,5 +46,17 @@
     "collector_number": "56",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Dark%20Depths",
     "checked_at": "2026-08-05T20:04:43.402Z"
+  },
+  "c9e7218f-07f2-46f3-bc63-eb5c0d32538b": {
+    "status": "available",
+    "name": "Arctic Wolves",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alisios",
+    "printing_code": "WL",
+    "collector_number": "13",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arctic%20Wolves",
+    "checked_at": "2026-08-07T17:24:35.143Z"
   }
 }

@@ -34,5 +34,17 @@
     "collector_number": "130",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akki%20Scrapchomper",
     "checked_at": "2026-08-06T18:03:47.401Z"
+  },
+  "baff00b8-b109-4e31-942b-38aeb1e45ab2": {
+    "status": "available",
+    "name": "Archon of Valor's Reach",
+    "price_brl": 2.34,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2020",
+    "printing_code": "C20",
+    "collector_number": "202",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archon%20of%20Valor's%20Reach",
+    "checked_at": "2026-08-07T17:21:44.501Z"
   }
 }

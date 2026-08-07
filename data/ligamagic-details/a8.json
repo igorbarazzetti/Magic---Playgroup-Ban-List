@@ -1,4 +1,16 @@
 {
+  "a80ea391-54d1-4b61-95a3-f8deb4cbe842": {
+    "status": "available",
+    "name": "Arclight Phoenix",
+    "price_brl": 3.42,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Guildas de Ravnica",
+    "printing_code": "GRN",
+    "collector_number": "91",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arclight%20Phoenix",
+    "checked_at": "2026-08-07T17:23:14.479Z"
+  },
   "a8135179-51ef-454e-98ff-69137440339f": {
     "status": "available",
     "name": "Annoyed Altisaur",
@@ -10,6 +22,18 @@
     "collector_number": "134",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Annoyed%20Altisaur",
     "checked_at": "2026-08-07T09:28:56.322Z"
+  },
+  "a8730922-3f47-4c07-bdd5-4a0f557a3d3d": {
+    "status": "available",
+    "name": "Archpriest of Iona",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends: Batalha por Portal de Baldur",
+    "printing_code": "CLB",
+    "collector_number": "686",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archpriest%20of%20Iona",
+    "checked_at": "2026-08-07T17:22:04.563Z"
   },
   "a87abe7a-fee9-45fd-b3d8-896e43ed6b3c": {
     "status": "available",

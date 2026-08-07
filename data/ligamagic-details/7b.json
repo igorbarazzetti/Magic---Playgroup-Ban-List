@@ -1,4 +1,16 @@
 {
+  "7b03910a-2ca7-40cb-9c71-1c2cc856a287": {
+    "status": "available",
+    "name": "Archpriest of Shadows",
+    "price_brl": 4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marcha das Máquinas",
+    "printing_code": "MOM",
+    "collector_number": "89",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archpriest%20of%20Shadows",
+    "checked_at": "2026-08-07T17:22:14.450Z"
+  },
   "7b238254-51b4-4e68-a8c6-93ab1180012e": {
     "status": "available",
     "name": "Answered Prayers",

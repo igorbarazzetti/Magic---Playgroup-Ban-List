@@ -1,4 +1,16 @@
 {
+  "3c1ef404-e2c6-486d-a5a2-d5779c71d498": {
+    "status": "available",
+    "name": "Archdruid's Charm",
+    "price_brl": 29,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassinato na Mansão Karlov",
+    "printing_code": "MKM",
+    "collector_number": "151",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archdruid's%20Charm",
+    "checked_at": "2026-08-07T17:14:34.169Z"
+  },
   "3c49e98d-d33b-47fa-8b07-b38b367de2c7": {
     "status": "available",
     "name": "Angel of Sanctions",

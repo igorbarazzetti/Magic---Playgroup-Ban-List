@@ -1,4 +1,16 @@
 {
+  "8305d576-21d8-4ce7-8eda-a7cd9793aca5": {
+    "status": "available",
+    "name": "Archmage Emeritus",
+    "price_brl": 9.86,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven Commander",
+    "printing_code": "SOC",
+    "collector_number": "188",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archmage%20Emeritus",
+    "checked_at": "2026-08-07T17:19:04.836Z"
+  },
   "831e2185-0bb2-45bb-99cd-d2091bad86f0": {
     "status": "available",
     "name": "Advance Scout",

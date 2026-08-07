@@ -1,4 +1,16 @@
 {
+  "aa1a6646-c1e6-4bff-9092-43ee3e137914": {
+    "status": "available",
+    "name": "Archon of Cruelty",
+    "price_brl": 59.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3 Commander",
+    "printing_code": "M3C",
+    "collector_number": "197",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archon%20of%20Cruelty",
+    "checked_at": "2026-08-07T17:20:24.717Z"
+  },
   "aa228a01-7de3-4539-9ebb-b3c546f72b41": {
     "status": "available",
     "name": "Akki Drillmaster",

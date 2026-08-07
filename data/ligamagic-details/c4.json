@@ -1,4 +1,16 @@
 {
+  "c408717c-e07b-484f-9c81-5666595adf81": {
+    "status": "available",
+    "name": "Archnemesis",
+    "price_brl": 3.94,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes Commander",
+    "printing_code": "MSC",
+    "collector_number": "74",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archnemesis",
+    "checked_at": "2026-08-07T17:19:54.369Z"
+  },
   "c4229cc8-11e5-4221-b00d-86969701e21b": {
     "status": "available",
     "name": "Alesha's Legacy",

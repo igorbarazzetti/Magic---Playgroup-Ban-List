@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abigale%2C%20Eloquent%20First-Year",
     "checked_at": "2026-08-06T00:09:16.960Z"
   },
+  "48a99dce-0aa9-4aac-81df-cec5f94c639d": {
+    "status": "available",
+    "name": "Archon of Sun's Grace",
+    "price_brl": 1.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven Commander",
+    "printing_code": "SOC",
+    "collector_number": "137",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archon%20of%20Sun's%20Grace",
+    "checked_at": "2026-08-07T17:21:14.427Z"
+  },
   "48d14b5c-711a-4f8a-9de5-55415cb7a79a": {
     "status": "available",
     "name": "Angel of Finality",

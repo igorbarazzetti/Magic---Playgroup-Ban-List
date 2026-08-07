@@ -1,4 +1,28 @@
 {
+  "a5458de0-0f61-49a3-a013-d90f92559809": {
+    "status": "available",
+    "name": "Archetype of Imagination",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nascidos dos Deuses",
+    "printing_code": "BNG",
+    "collector_number": "32",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archetype%20of%20Imagination",
+    "checked_at": "2026-08-07T17:16:14.219Z"
+  },
+  "a56d301b-8f4c-4f12-8ee0-34c6b66faee0": {
+    "status": "available",
+    "name": "Ardent Soldier",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Invasão",
+    "printing_code": "IN",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ardent%20Soldier",
+    "checked_at": "2026-08-07T17:27:04.650Z"
+  },
   "a59ff932-f758-476e-ba31-0623bd748231": {
     "status": "available",
     "name": "Anara, Wolvid Familiar",

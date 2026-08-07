@@ -1,4 +1,16 @@
 {
+  "180efbd4-0f77-41cc-8ae2-2e6ccf853d10": {
+    "status": "available",
+    "name": "Archon of the Wild Rose",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Selvagens de Eldraine",
+    "printing_code": "WOE",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archon%20of%20the%20Wild%20Rose",
+    "checked_at": "2026-08-07T17:21:34.460Z"
+  },
   "1829f1dc-1fa9-4361-b318-d4dee280e6fd": {
     "status": "available",
     "name": "Anje, Maid of Dishonor",

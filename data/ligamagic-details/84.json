@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=A.I.M.%20Labs",
     "checked_at": "2026-08-06T00:01:36.672Z"
   },
+  "841f0a1d-6f84-45fb-81cc-f2d99fa9e9a2": {
+    "status": "available",
+    "name": "Arctic Flats",
+    "price_brl": 1.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Frente Fria",
+    "printing_code": "CS",
+    "collector_number": "143",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arctic%20Flats",
+    "checked_at": "2026-08-07T17:23:44.521Z"
+  },
   "84de4fec-2f38-4293-93d3-b3882c5aac14": {
     "status": "available",
     "name": "Ambition's Cost",

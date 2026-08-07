@@ -82,5 +82,17 @@
     "collector_number": "253",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aettir%20and%20Priwen",
     "checked_at": "2026-08-06T11:05:53.868Z"
+  },
+  "19e302f8-6ddb-4a43-98bc-ee71a456ac5a": {
+    "status": "available",
+    "name": "Archangel of Strife",
+    "price_brl": 0.79,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander",
+    "printing_code": "CMD",
+    "collector_number": "7",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archangel%20of%20Strife",
+    "checked_at": "2026-08-07T17:13:24.112Z"
   }
 }

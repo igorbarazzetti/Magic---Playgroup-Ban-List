@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alchor's%20Tomb",
     "checked_at": "2026-08-06T18:15:37.666Z"
   },
+  "616cb1be-074a-46c2-b8f1-6b9f15b7bc23": {
+    "status": "available",
+    "name": "Arctic Aven",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2013",
+    "printing_code": "M13",
+    "collector_number": "42",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arctic%20Aven",
+    "checked_at": "2026-08-07T17:23:34.517Z"
+  },
   "617eae63-b5f8-4014-8269-7c66f4388ac7": {
     "status": "available",
     "name": "Almost Perfect",
@@ -94,5 +106,17 @@
     "collector_number": "204",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angrath's%20Fury",
     "checked_at": "2026-08-07T09:22:15.985Z"
+  },
+  "61f55e39-4028-4c91-910e-16b88c73beb5": {
+    "status": "available",
+    "name": "Archon of Coronation",
+    "price_brl": 2.02,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends",
+    "printing_code": "CMR",
+    "collector_number": "9",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archon%20of%20Coronation",
+    "checked_at": "2026-08-07T17:20:14.777Z"
   }
 }

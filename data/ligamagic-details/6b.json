@@ -94,5 +94,17 @@
     "collector_number": "142",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aetherflame%20Wall",
     "checked_at": "2026-08-06T11:02:13.799Z"
+  },
+  "6beec974-891f-4354-8621-ac403c07509a": {
+    "status": "available",
+    "name": "Archfiend of Spite",
+    "price_brl": 3.38,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2019",
+    "printing_code": "C19",
+    "collector_number": "14",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archfiend%20of%20Spite",
+    "checked_at": "2026-08-07T17:16:54.323Z"
   }
 }

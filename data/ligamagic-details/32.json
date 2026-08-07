@@ -94,5 +94,17 @@
     "collector_number": "225",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Lotus%20Petal",
     "checked_at": "2026-08-05T20:09:20.061Z"
+  },
+  "32fb0096-546c-4633-b6e3-ba3f2d9fa49c": {
+    "status": "available",
+    "name": "Arctic Treeline",
+    "price_brl": 1.89,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaldheim",
+    "printing_code": "KHM",
+    "collector_number": "249",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arctic%20Treeline",
+    "checked_at": "2026-08-07T17:24:24.593Z"
   }
 }

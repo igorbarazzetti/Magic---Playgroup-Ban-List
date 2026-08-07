@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Underworld%20Breach",
     "checked_at": "2026-08-05T20:14:30.027Z"
   },
+  "27ecb717-6251-4066-b57e-7070e9e44bbf": {
+    "status": "available",
+    "name": "Archon of the Triumvirate",
+    "price_brl": 0.17,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Retorno a Ravnica",
+    "printing_code": "RTR",
+    "collector_number": "142",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archon%20of%20the%20Triumvirate",
+    "checked_at": "2026-08-07T17:21:24.605Z"
+  },
   "27f5969e-d613-4cbc-87af-98899bb5c58a": {
     "status": "available",
     "name": "Aerial Engineer",

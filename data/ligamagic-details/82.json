@@ -71,6 +71,15 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apocalypse",
     "checked_at": "2026-08-07T11:16:46.612Z"
   },
+  "82d51c8a-d42b-48b3-a726-3a8d28d057e5": {
+    "status": "unavailable",
+    "name": "Arden Angel",
+    "price_brl": null,
+    "finish": "normal",
+    "condition": "NM",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arden%20Angel",
+    "checked_at": "2026-08-07T17:25:44.627Z"
+  },
   "82f18e7d-5c42-47c4-8e74-3fccc9b7b1f0": {
     "status": "available",
     "name": "Ancient Stirrings",

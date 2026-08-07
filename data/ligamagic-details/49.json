@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Air%20Servant",
     "checked_at": "2026-08-06T14:47:01.948Z"
   },
+  "49a8ca54-30d3-42d3-b122-334d24805e1b": {
+    "status": "available",
+    "name": "Ardent Plea",
+    "price_brl": 6.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alara Reunida",
+    "printing_code": "ARB",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ardent%20Plea",
+    "checked_at": "2026-08-07T17:26:44.675Z"
+  },
   "49e1e202-37bf-46ed-93d1-1adb13726039": {
     "status": "available",
     "name": "Heartfire Hero",

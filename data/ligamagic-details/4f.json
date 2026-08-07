@@ -1,4 +1,16 @@
 {
+  "4f2d4538-dc1d-4c09-964b-b0d7c240fb7d": {
+    "status": "available",
+    "name": "Archangel of Thune",
+    "price_brl": 132.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes (Source Material)",
+    "printing_code": "SHMAR",
+    "collector_number": "41",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archangel%20of%20Thune",
+    "checked_at": "2026-08-07T17:13:34.078Z"
+  },
   "4f57a320-b6b5-49de-af0a-f2e2649758a7": {
     "status": "available",
     "name": "Angel of Indemnity",

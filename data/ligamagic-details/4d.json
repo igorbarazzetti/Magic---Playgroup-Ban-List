@@ -22,5 +22,17 @@
     "collector_number": "17",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Admiral%20Brass%2C%20Unsinkable",
     "checked_at": "2026-08-06T07:09:14.583Z"
+  },
+  "4dfea3bf-dfd1-4abd-a17e-f3a07488a069": {
+    "status": "available",
+    "name": "Arena Athlete",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ultimate Masters",
+    "printing_code": "UMA",
+    "collector_number": "123",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arena%20Athlete",
+    "checked_at": "2026-08-07T17:28:05.270Z"
   }
 }

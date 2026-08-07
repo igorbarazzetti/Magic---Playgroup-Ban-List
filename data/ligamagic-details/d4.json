@@ -1,4 +1,16 @@
 {
+  "d412b175-2365-4b2c-a8f5-3e4e9d06280d": {
+    "status": "available",
+    "name": "Archive Trap",
+    "price_brl": 5.71,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Zendikar",
+    "printing_code": "ZEN",
+    "collector_number": "41",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archive%20Trap",
+    "checked_at": "2026-08-07T17:18:14.314Z"
+  },
   "d484be42-5dd4-49e0-afcd-2d3c1a2c3037": {
     "status": "available",
     "name": "Arcbound Condor",

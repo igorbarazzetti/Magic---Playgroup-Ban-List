@@ -58,5 +58,17 @@
     "collector_number": "141",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Act%20of%20Aggression",
     "checked_at": "2026-08-06T03:57:12.053Z"
+  },
+  "9df1c48b-52a8-47d7-8315-272fecf1a8a0": {
+    "status": "available",
+    "name": "Archers' Parapet",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Khans de Tarkir",
+    "printing_code": "KTK",
+    "collector_number": "128",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archers'%20Parapet",
+    "checked_at": "2026-08-07T17:15:14.213Z"
   }
 }

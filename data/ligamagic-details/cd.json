@@ -34,5 +34,17 @@
     "collector_number": "5",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alchemax%20Slayer-Bots",
     "checked_at": "2026-08-06T18:13:57.591Z"
+  },
+  "cddbd819-4895-4712-b44b-d6b51f3d8646": {
+    "status": "available",
+    "name": "Archive Dragon",
+    "price_brl": 0.06,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Selvagens de Eldraine",
+    "printing_code": "WOE",
+    "collector_number": "41",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archive%20Dragon",
+    "checked_at": "2026-08-07T17:18:04.311Z"
   }
 }

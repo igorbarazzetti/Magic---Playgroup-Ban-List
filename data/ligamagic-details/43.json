@@ -23,6 +23,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Meltdown",
     "checked_at": "2026-08-06T10:58:13.574Z"
   },
+  "434e58f4-4237-454f-a2d0-61885c9aafaa": {
+    "status": "available",
+    "name": "Archon of Redemption",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Despertar do Mundo",
+    "printing_code": "WWK",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archon%20of%20Redemption",
+    "checked_at": "2026-08-07T17:21:04.422Z"
+  },
+  "43827acb-70cf-44a3-8560-e9f7330c835e": {
+    "status": "available",
+    "name": "Ardent Electromancer",
+    "price_brl": 0.06,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Renascer de Zendikar",
+    "printing_code": "ZNR",
+    "collector_number": "135",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ardent%20Electromancer",
+    "checked_at": "2026-08-07T17:26:14.651Z"
+  },
   "43ace4d5-9006-4bad-bd17-3d368c20564d": {
     "status": "available",
     "name": "Aerie Bowmasters",

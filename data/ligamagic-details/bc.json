@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anaba%20Shaman",
     "checked_at": "2026-08-07T04:45:41.514Z"
   },
+  "bc5631ae-494e-4987-8d17-57674bfbdb9f": {
+    "status": "available",
+    "name": "Archon's Glory",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Selvagens de Eldraine",
+    "printing_code": "WOE",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archon's%20Glory",
+    "checked_at": "2026-08-07T17:21:54.439Z"
+  },
   "bc842838-1993-4480-b8fe-f9d9f2dee7a4": {
     "status": "available",
     "name": "Alrund's Epiphany",
@@ -34,6 +46,18 @@
     "collector_number": "171",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abstract%20Paintmage",
     "checked_at": "2026-08-06T00:14:37.244Z"
+  },
+  "bcd5e175-2ef0-48f4-b9bd-14383dd234e0": {
+    "status": "available",
+    "name": "Ardoz, Cobbler of War",
+    "price_brl": 29.43,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Jumpstart 2022",
+    "printing_code": "J22",
+    "collector_number": "29",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ardoz%2C%20Cobbler%20of%20War",
+    "checked_at": "2026-08-07T17:27:34.686Z"
   },
   "bcf5a931-6ce8-4721-98ab-8bd295f26a13": {
     "status": "available",

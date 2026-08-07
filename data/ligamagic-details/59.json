@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aegar%2C%20the%20Freezing%20Flame",
     "checked_at": "2026-08-06T07:13:54.902Z"
   },
+  "5966c464-5f63-4c71-9317-e2ca79da5aba": {
+    "status": "available",
+    "name": "Archmage Ascension",
+    "price_brl": 4.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Zendikar",
+    "printing_code": "ZEN",
+    "collector_number": "42",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archmage%20Ascension",
+    "checked_at": "2026-08-07T17:18:54.324Z"
+  },
   "598a7347-b772-4839-a02f-b930076c1354": {
     "status": "available",
     "name": "Ancient Kavu",

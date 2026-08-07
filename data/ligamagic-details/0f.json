@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amass%20the%20Components",
     "checked_at": "2026-08-07T00:47:05.200Z"
   },
+  "0fdfe986-0216-468b-aac8-bbcf588fd894": {
+    "status": "available",
+    "name": "Arcum Dagsson",
+    "price_brl": 45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Frente Fria",
+    "printing_code": "CS",
+    "collector_number": "27",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcum%20Dagsson",
+    "checked_at": "2026-08-07T17:24:44.611Z"
+  },
   "0fe602b7-9f88-4d3d-af24-7790df867ed5": {
     "status": "available",
     "name": "Aether Barrier",

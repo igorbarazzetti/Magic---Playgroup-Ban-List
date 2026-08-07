@@ -46,5 +46,17 @@
     "collector_number": "140",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alchemist's%20Greeting",
     "checked_at": "2026-08-06T18:14:47.678Z"
+  },
+  "9ae13026-960a-4d31-b775-d47209a1e313": {
+    "status": "available",
+    "name": "Ardyn, the Usurper",
+    "price_brl": 6.6,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY",
+    "printing_code": "FIN",
+    "collector_number": "89",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ardyn%2C%20the%20Usurper",
+    "checked_at": "2026-08-07T17:27:44.669Z"
   }
 }

@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Rofellos%2C%20Llanowar%20Emissary",
     "checked_at": "2026-08-05T20:11:56.485Z"
   },
+  "30393cb0-f461-4899-8aae-609bc8378f36": {
+    "status": "available",
+    "name": "Ardenvale Paladin",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Trono de Eldraine",
+    "printing_code": "ELD",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ardenvale%20Paladin",
+    "checked_at": "2026-08-07T17:27:14.841Z"
+  },
   "30572dd1-c982-4872-9f35-a91ed8b238f7": {
     "status": "available",
     "name": "Antler Skulkin",

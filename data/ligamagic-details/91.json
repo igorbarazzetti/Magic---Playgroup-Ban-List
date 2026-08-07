@@ -1,4 +1,16 @@
 {
+  "9188031e-1c24-4981-a3d2-461a2bf917b6": {
+    "status": "available",
+    "name": "Archfiend of the Dross",
+    "price_brl": 2.39,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Phyrexia: Tudo será um",
+    "printing_code": "ONE",
+    "collector_number": "82",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archfiend%20of%20the%20Dross",
+    "checked_at": "2026-08-07T17:17:04.308Z"
+  },
   "91c380f6-2c41-48b7-9f07-104e8659e397": {
     "status": "available",
     "name": "Adanto Vanguard",
