@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Spring",
     "checked_at": "2026-08-07T07:51:26.132Z"
   },
+  "2188c03f-11b6-4651-914a-b4fdd59127e3": {
+    "status": "available",
+    "name": "Arcane Adaptation",
+    "price_brl": 9.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ixalan",
+    "printing_code": "XLN",
+    "collector_number": "46",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcane%20Adaptation",
+    "checked_at": "2026-08-07T13:50:43.767Z"
+  },
   "21f45043-5419-4019-8b6c-e5294bd5f549": {
     "status": "available",
     "name": "Acidic Slime",

@@ -1,4 +1,16 @@
 {
+  "e001d7e6-71c9-42fa-9d5c-9455da66e4ec": {
+    "status": "available",
+    "name": "Arcade Gannon",
+    "price_brl": 0.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fallout",
+    "printing_code": "PIP",
+    "collector_number": "92",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcade%20Gannon",
+    "checked_at": "2026-08-07T13:50:13.741Z"
+  },
   "e01ab6d8-8419-436e-a8fb-10aa46ca3d05": {
     "status": "available",
     "name": "Akki War Paint",

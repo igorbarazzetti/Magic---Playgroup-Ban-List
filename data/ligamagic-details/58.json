@@ -1,4 +1,16 @@
 {
+  "581c2fb6-fcce-42c1-b198-1f8d62e862b1": {
+    "status": "available",
+    "name": "Arashin Foremost",
+    "price_brl": 0.18,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dragões de Tarkir",
+    "printing_code": "DTK",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arashin%20Foremost",
+    "checked_at": "2026-08-07T13:45:03.535Z"
+  },
   "584fe1e4-029d-43fe-8c9e-6995dd392d65": {
     "status": "available",
     "name": "Agent of Kotis",

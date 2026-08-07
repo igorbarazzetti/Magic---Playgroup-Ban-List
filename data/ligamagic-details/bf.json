@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ainok%20Tracker",
     "checked_at": "2026-08-06T14:45:31.877Z"
   },
+  "bf86376d-474d-4658-8cf3-d0e2a01cdfff": {
+    "status": "available",
+    "name": "Arcbound Slasher",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 2",
+    "printing_code": "MH2",
+    "collector_number": "111",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcbound%20Slasher",
+    "checked_at": "2026-08-07T13:57:14.045Z"
+  },
   "bf9c5c0d-86a5-467a-863c-653279f2e6e7": {
     "status": "available",
     "name": "Akki Raider",

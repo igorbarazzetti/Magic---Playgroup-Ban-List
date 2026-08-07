@@ -10,5 +10,17 @@
     "collector_number": "83",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Appendage%20Amalgam",
     "checked_at": "2026-08-07T11:19:46.748Z"
+  },
+  "9fba3097-d53f-4ea4-b5d2-8adddaa09524": {
+    "status": "available",
+    "name": "Arcee, Sharpshooter // Arcee, Acrobatic Coupe",
+    "price_brl": 1.7,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Transformers",
+    "printing_code": "BOT",
+    "collector_number": "7",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcee%2C%20Sharpshooter",
+    "checked_at": "2026-08-07T13:58:24.168Z"
   }
 }

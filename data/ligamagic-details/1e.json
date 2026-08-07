@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Burst",
     "checked_at": "2026-08-06T07:22:05.277Z"
   },
+  "1e36a42f-58e2-49bc-8c14-7f75e1d8ef98": {
+    "status": "available",
+    "name": "Arcane Bombardment",
+    "price_brl": 13.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ruas de Nova Capenna",
+    "printing_code": "SNC",
+    "collector_number": "101",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcane%20Bombardment",
+    "checked_at": "2026-08-07T13:51:03.798Z"
+  },
   "1e4cf4a4-50a4-4856-bf7e-20899e8affd1": {
     "status": "available",
     "name": "Ant-Man, Scott Lang",

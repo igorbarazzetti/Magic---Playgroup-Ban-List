@@ -46,5 +46,17 @@
     "collector_number": "86",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atog",
     "checked_at": "2026-08-05T20:03:10.127Z"
+  },
+  "30ac68e6-160a-41f9-9f0f-0e0eef383150": {
+    "status": "available",
+    "name": "Arcane Lighthouse",
+    "price_brl": 5.48,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven Commander",
+    "printing_code": "SOC",
+    "collector_number": "361",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcane%20Lighthouse",
+    "checked_at": "2026-08-07T13:52:44.357Z"
   }
 }

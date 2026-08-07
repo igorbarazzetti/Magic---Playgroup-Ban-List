@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Walking%20Ballista",
     "checked_at": "2026-08-05T20:15:03.011Z"
   },
+  "4b5806fa-430f-4b78-b874-63d01a8a9de5": {
+    "status": "available",
+    "name": "Arcane Subtraction",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Strixhaven: Escola de Magos",
+    "printing_code": "STX",
+    "collector_number": "36",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcane%20Subtraction",
+    "checked_at": "2026-08-07T13:54:03.974Z"
+  },
   "4bd1d079-314e-4fb5-9b43-c9c83e5528bc": {
     "status": "available",
     "name": "Alisaie Leveilleur",
@@ -58,5 +70,29 @@
     "collector_number": "9",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alisaie%20Leveilleur",
     "checked_at": "2026-08-07T00:33:14.526Z"
+  },
+  "4bd38337-fb79-4809-848a-308c682825d1": {
+    "status": "available",
+    "name": "Arcanist's Owl",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kamigawa: Dinastia Neon (Commander)",
+    "printing_code": "NEC",
+    "collector_number": "135",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcanist's%20Owl",
+    "checked_at": "2026-08-07T13:54:33.973Z"
+  },
+  "4bd7b380-ed4b-46a1-8211-1c4b651a52c6": {
+    "status": "available",
+    "name": "Arcbound Hybrid",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Darksteel",
+    "printing_code": "DS",
+    "collector_number": "97",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcbound%20Hybrid",
+    "checked_at": "2026-08-07T13:55:44.011Z"
   }
 }

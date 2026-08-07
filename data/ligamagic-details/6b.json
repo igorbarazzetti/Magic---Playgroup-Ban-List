@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Temporal%20Manipulation",
     "checked_at": "2026-08-05T20:13:32.767Z"
   },
+  "6b8c69ac-1856-4070-9489-798a6b224268": {
+    "status": "available",
+    "name": "Arcane Savant",
+    "price_brl": 0.39,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Conspiracy: Take the Crown",
+    "printing_code": "CN2",
+    "collector_number": "27",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcane%20Savant",
+    "checked_at": "2026-08-07T13:53:33.914Z"
+  },
   "6bab6d0a-cd06-45e3-b780-d5354ee2a032": {
     "status": "available",
     "name": "Ancient Crab",

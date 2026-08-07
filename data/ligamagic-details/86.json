@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Advantageous%20Proclamation",
     "checked_at": "2026-08-05T20:02:40.025Z"
   },
+  "863cbd12-da20-456e-8698-06fba4d9bd5c": {
+    "status": "available",
+    "name": "Arcane Omens",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven",
+    "printing_code": "SOS",
+    "collector_number": "73",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcane%20Omens",
+    "checked_at": "2026-08-07T13:53:03.908Z"
+  },
   "8651da8e-9b2c-4530-a521-aea490ad88d4": {
     "status": "available",
     "name": "Alchemist's Retrieval",

@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambush%20Party",
     "checked_at": "2026-08-07T04:38:21.601Z"
   },
+  "4567a528-75f0-4ea6-b927-3a500caf76ac": {
+    "status": "available",
+    "name": "Arbor Elf",
+    "price_brl": 2.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2013",
+    "printing_code": "M13",
+    "collector_number": "160",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arbor%20Elf",
+    "checked_at": "2026-08-07T13:47:33.661Z"
+  },
   "457af74a-02b3-4659-846d-63e482667f34": {
     "status": "available",
     "name": "Deadly Dispute",

@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adventuring%20Gear",
     "checked_at": "2026-08-06T07:12:54.821Z"
   },
+  "1708d60d-30af-4184-bc95-2f7a7aed4a6e": {
+    "status": "available",
+    "name": "Arboretum Elemental",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Guildas de Ravnica",
+    "printing_code": "GRN",
+    "collector_number": "122",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arboretum%20Elemental",
+    "checked_at": "2026-08-07T13:48:23.873Z"
+  },
   "171a3ac4-0c9c-46ac-b273-089d566cca05": {
     "status": "available",
     "name": "Altar of the Lost",

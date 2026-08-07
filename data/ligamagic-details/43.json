@@ -1,4 +1,16 @@
 {
+  "432b37a5-d32a-4b78-91ab-860aa026b7cc": {
+    "status": "available",
+    "name": "Archangel Avacyn // Avacyn, the Purifier",
+    "price_brl": 7.06,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Sombras em Innistrad",
+    "printing_code": "SOI",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archangel%20Avacyn",
+    "checked_at": "2026-08-07T13:59:44.201Z"
+  },
   "433a2880-d989-4c40-99fa-0896de341b88": {
     "status": "available",
     "name": "Aether Meltdown",

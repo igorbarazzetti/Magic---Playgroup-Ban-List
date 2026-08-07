@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aligned%20Hedron%20Network",
     "checked_at": "2026-08-07T00:32:54.520Z"
   },
+  "5a4553fc-f945-4094-b231-2d378ed6609e": {
+    "status": "available",
+    "name": "Archaeomender",
+    "price_brl": 0.17,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Jumpstart",
+    "printing_code": "JMP",
+    "collector_number": "9",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archaeomender",
+    "checked_at": "2026-08-07T13:59:14.149Z"
+  },
   "5a46ad2a-35b1-4dd5-b7c3-fec36b7c67ab": {
     "status": "available",
     "name": "Sinkhole",
@@ -94,5 +106,17 @@
     "collector_number": "5",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Immediate%20Action",
     "checked_at": "2026-08-05T20:08:04.866Z"
+  },
+  "5acc8b39-3c3e-4012-8cfd-ac3c2c4ca982": {
+    "status": "available",
+    "name": "Arc Lightning",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Khans de Tarkir",
+    "printing_code": "KTK",
+    "collector_number": "97",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arc%20Lightning",
+    "checked_at": "2026-08-07T13:48:53.687Z"
   }
 }

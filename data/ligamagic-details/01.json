@@ -1,4 +1,16 @@
 {
+  "011bb6cc-f1a1-4790-befc-373acabf63b8": {
+    "status": "available",
+    "name": "Arc Mage",
+    "price_brl": 0.17,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nêmesis",
+    "printing_code": "NE",
+    "collector_number": "77",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arc%20Mage",
+    "checked_at": "2026-08-07T13:49:03.702Z"
+  },
   "01443d75-3f86-45c0-81fa-fbf1b3175d4f": {
     "status": "available",
     "name": "Akroan Line Breaker",
@@ -10,6 +22,18 @@
     "collector_number": "88",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akroan%20Line%20Breaker",
     "checked_at": "2026-08-06T18:06:57.314Z"
+  },
+  "01790829-cc03-430f-a899-2f274b7dbf62": {
+    "status": "available",
+    "name": "Arcbond",
+    "price_brl": 0.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Destino Reescrito",
+    "printing_code": "FRF",
+    "collector_number": "91",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcbond",
+    "checked_at": "2026-08-07T13:54:54.130Z"
   },
   "01cd52f9-7fac-4396-bec7-d06bf683e011": {
     "status": "available",

@@ -1,4 +1,16 @@
 {
+  "d91ea728-2d69-42cb-bb5d-e2b058f0d7b1": {
+    "status": "available",
+    "name": "Arcane Encyclopedia",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends: Batalha por Portal de Baldur",
+    "printing_code": "CLB",
+    "collector_number": "297",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcane%20Encyclopedia",
+    "checked_at": "2026-08-07T13:51:23.844Z"
+  },
   "d981d85c-e97b-4fe7-b415-6e73a3e7e35c": {
     "status": "available",
     "name": "Akroan Crusader",

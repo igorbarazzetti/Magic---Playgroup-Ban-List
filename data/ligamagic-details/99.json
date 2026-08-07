@@ -35,6 +35,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apocalypse%20Chime",
     "checked_at": "2026-08-07T11:16:56.624Z"
   },
+  "9967b292-1239-4aed-b871-72e40d1f3e26": {
+    "status": "available",
+    "name": "Arcane Melee",
+    "price_brl": 0.85,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Retorno de Avacyn",
+    "printing_code": "AVR",
+    "collector_number": "44",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcane%20Melee",
+    "checked_at": "2026-08-07T13:52:53.853Z"
+  },
+  "9971697b-2acc-4bc2-a44e-074d03a51df7": {
+    "status": "available",
+    "name": "Archangel",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Retorno de Avacyn",
+    "printing_code": "AVR",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archangel",
+    "checked_at": "2026-08-07T13:59:34.217Z"
+  },
   "998daf11-c0ed-4801-b013-d8b3136f16d1": {
     "status": "available",
     "name": "Acolyte Hybrid",

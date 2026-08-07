@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agency%20Coroner",
     "checked_at": "2026-08-06T11:10:04.202Z"
   },
+  "36875030-8094-4e2c-860d-c0820825a24e": {
+    "status": "available",
+    "name": "Arcbound Whelp",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 2",
+    "printing_code": "MH2",
+    "collector_number": "113",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcbound%20Whelp",
+    "checked_at": "2026-08-07T13:58:04.162Z"
+  },
   "36c2fc4c-7d8b-47c2-91c3-e356df60b219": {
     "status": "available",
     "name": "Angel of Jubilation",

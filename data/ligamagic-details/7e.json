@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Chatterstorm",
     "checked_at": "2026-08-05T20:04:10.362Z"
   },
+  "7e6e2c37-3a06-456a-ae0f-37b7dc1a3e2b": {
+    "status": "available",
+    "name": "Arcbound Stinger",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Darksteel",
+    "printing_code": "DS",
+    "collector_number": "103",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcbound%20Stinger",
+    "checked_at": "2026-08-07T13:57:34.264Z"
+  },
   "7e7d7f4d-2c22-4803-ba5e-5eb653c25b5e": {
     "status": "available",
     "name": "Aerial Extortionist",

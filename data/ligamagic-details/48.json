@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Finality",
     "checked_at": "2026-08-07T07:53:46.253Z"
   },
+  "48e3f6dd-68ab-420a-ad4d-fe7ee39486d3": {
+    "status": "available",
+    "name": "Arcbound Javelineer",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 2",
+    "printing_code": "MH2",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcbound%20Javelineer",
+    "checked_at": "2026-08-07T13:55:54.175Z"
+  },
   "48edc348-93f6-4dce-9cc4-7244d76b6f4a": {
     "status": "available",
     "name": "Accursed Duneyard",

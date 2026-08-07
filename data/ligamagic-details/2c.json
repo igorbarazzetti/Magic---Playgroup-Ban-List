@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mana%20Crypt",
     "checked_at": "2026-08-05T20:09:29.087Z"
   },
+  "2c7c42e1-b097-4443-aa02-1f1dfcbb9732": {
+    "status": "available",
+    "name": "Arc Blade",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Espiral Temporal Remasterizada",
+    "printing_code": "TSR",
+    "collector_number": "152",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arc%20Blade",
+    "checked_at": "2026-08-07T13:48:43.674Z"
+  },
   "2cdd85c8-fa60-44ca-bc96-d38f029d2184": {
     "status": "available",
     "name": "Anurid Barkripper",

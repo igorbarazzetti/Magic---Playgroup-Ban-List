@@ -1,4 +1,16 @@
 {
+  "ab1cc360-b9de-48d9-9983-4dfe4a7d2a37": {
+    "status": "available",
+    "name": "Arcane Denial",
+    "price_brl": 10,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alianças",
+    "printing_code": "AI",
+    "collector_number": "31",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcane%20Denial",
+    "checked_at": "2026-08-07T13:51:13.828Z"
+  },
   "ab28a801-6ab1-4db2-8ae2-c24bb4c10ebb": {
     "status": "available",
     "name": "Ancestral Blade",

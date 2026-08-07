@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alpine%20Guide",
     "checked_at": "2026-08-07T00:42:05.630Z"
   },
+  "55d1a788-fe9a-4e19-a524-6709f728ea28": {
+    "status": "available",
+    "name": "Archaic's Agony",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven",
+    "printing_code": "SOS",
+    "collector_number": "107",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archaic's%20Agony",
+    "checked_at": "2026-08-07T13:59:25.109Z"
+  },
   "55de434c-0fb9-4127-81b6-47c1c0b088fe": {
     "status": "available",
     "name": "Aquamoeba",
@@ -34,5 +46,17 @@
     "collector_number": "38",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aquamoeba",
     "checked_at": "2026-08-07T11:22:37.399Z"
+  },
+  "55f7b005-31ea-4865-a8f3-460d15bed795": {
+    "status": "available",
+    "name": "Arc Reactor",
+    "price_brl": 4.53,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes",
+    "printing_code": "MSH",
+    "collector_number": "243",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arc%20Reactor",
+    "checked_at": "2026-08-07T13:49:13.730Z"
   }
 }

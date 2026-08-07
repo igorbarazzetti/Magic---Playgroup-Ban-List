@@ -94,5 +94,17 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anowon%2C%20the%20Ruin%20Thief",
     "checked_at": "2026-08-07T09:31:16.351Z"
+  },
+  "e7fc5ad6-f2f0-4b06-a61b-05022db9d93b": {
+    "status": "available",
+    "name": "Arcades, the Strategist",
+    "price_brl": 21.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mystery Booster 2",
+    "printing_code": "MB2",
+    "collector_number": "1271",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcades%2C%20the%20Strategist",
+    "checked_at": "2026-08-07T13:50:33.751Z"
   }
 }

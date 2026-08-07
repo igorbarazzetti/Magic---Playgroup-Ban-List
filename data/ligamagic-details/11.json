@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=A%20Little%20Chat",
     "checked_at": "2026-08-06T00:02:16.674Z"
   },
+  "1175d482-d8a2-467f-bc50-2f4b241966bb": {
+    "status": "available",
+    "name": "Arashin Sunshield",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm",
+    "printing_code": "TDM",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arashin%20Sunshield",
+    "checked_at": "2026-08-07T13:45:23.623Z"
+  },
   "1197a595-3afc-4f18-b868-bbb096771922": {
     "status": "available",
     "name": "Leyline of Abundance",

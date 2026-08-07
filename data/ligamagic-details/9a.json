@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Demonic%20Consultation",
     "checked_at": "2026-08-05T20:05:10.431Z"
   },
+  "9a17452d-3adb-42ec-99f8-0083740cefa0": {
+    "status": "available",
+    "name": "Arborea Pegasus",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Adventures in the Forgotten Realms",
+    "printing_code": "AFR",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arborea%20Pegasus",
+    "checked_at": "2026-08-07T13:47:53.692Z"
+  },
   "9a410f83-ed92-4b55-834a-c7cec8f5d1e2": {
     "status": "available",
     "name": "Aladdin",

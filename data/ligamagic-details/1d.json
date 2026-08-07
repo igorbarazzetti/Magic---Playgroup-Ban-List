@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Gitaxian%20Probe",
     "checked_at": "2026-08-05T20:06:55.692Z"
   },
+  "1d79b7a8-2b4c-4893-afdb-879c74957288": {
+    "status": "available",
+    "name": "Arbalest Elite",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2012",
+    "printing_code": "M12",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arbalest%20Elite",
+    "checked_at": "2026-08-07T13:46:13.578Z"
+  },
   "1de1b591-a73f-4974-b507-8c63e07a0868": {
     "status": "available",
     "name": "Thassa's Oracle",

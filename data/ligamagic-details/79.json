@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Goblin%20Recruiter",
     "checked_at": "2026-08-05T20:07:01.718Z"
   },
+  "792f8235-f23b-4858-bdd4-c7a186b7a470": {
+    "status": "available",
+    "name": "Arcane Proxy",
+    "price_brl": 2.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra dos Irmãos",
+    "printing_code": "BRO",
+    "collector_number": "75",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcane%20Proxy",
+    "checked_at": "2026-08-07T13:53:13.860Z"
+  },
   "79644192-8f99-4d04-b151-6f74a4dbda0a": {
     "status": "available",
     "name": "Amrou Kithkin",

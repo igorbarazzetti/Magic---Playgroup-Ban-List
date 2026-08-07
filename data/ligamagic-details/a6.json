@@ -70,5 +70,17 @@
     "collector_number": "2",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anointed%20Peacekeeper",
     "checked_at": "2026-08-07T09:30:06.360Z"
+  },
+  "a6cefecd-459e-439a-a62c-689c2919b689": {
+    "status": "available",
+    "name": "Arbiter of the Ideal",
+    "price_brl": 0.23,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nascidos dos Deuses",
+    "printing_code": "BNG",
+    "collector_number": "31",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arbiter%20of%20the%20Ideal",
+    "checked_at": "2026-08-07T13:46:43.623Z"
   }
 }

@@ -70,5 +70,17 @@
     "collector_number": "5",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aragorn%2C%20King%20of%20Gondor",
     "checked_at": "2026-08-07T11:26:27.045Z"
+  },
+  "bec585af-0c59-46a7-838f-d747c80a9e97": {
+    "status": "available",
+    "name": "Arbor Colossus",
+    "price_brl": 0.17,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros",
+    "printing_code": "THS",
+    "collector_number": "150",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arbor%20Colossus",
+    "checked_at": "2026-08-07T13:47:24.186Z"
   }
 }

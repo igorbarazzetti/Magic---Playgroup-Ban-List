@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ali%20Baba",
     "checked_at": "2026-08-06T18:18:57.833Z"
   },
+  "ef833546-f755-4ac5-867a-3926984e68a0": {
+    "status": "available",
+    "name": "Archaeomancer's Map",
+    "price_brl": 6.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven Commander",
+    "printing_code": "SOC",
+    "collector_number": "136",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archaeomancer's%20Map",
+    "checked_at": "2026-08-07T13:59:04.146Z"
+  },
   "ef86989d-ce80-4e55-aece-7d11710eeffa": {
     "status": "available",
     "name": "Polluted Delta",

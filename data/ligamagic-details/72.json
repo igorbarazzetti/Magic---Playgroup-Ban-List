@@ -82,5 +82,17 @@
     "collector_number": "171",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Airship%20Crash",
     "checked_at": "2026-08-06T14:48:22.269Z"
+  },
+  "72e6cc74-0574-4421-a6b8-97d180484950": {
+    "status": "available",
+    "name": "Arcbound Fiend",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Darksteel",
+    "printing_code": "DS",
+    "collector_number": "96",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcbound%20Fiend",
+    "checked_at": "2026-08-07T13:55:33.965Z"
   }
 }

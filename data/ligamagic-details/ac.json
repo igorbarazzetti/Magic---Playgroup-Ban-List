@@ -1,4 +1,16 @@
 {
+  "ac1003b4-1f7c-4801-9dd3-5cb7d9881af8": {
+    "status": "available",
+    "name": "Arcbound Prototype",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 2",
+    "printing_code": "MH2",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcbound%20Prototype",
+    "checked_at": "2026-08-07T13:56:34.473Z"
+  },
   "ac143b8e-f993-4989-8833-e26dc9faffa4": {
     "status": "available",
     "name": "Altar Golem",
@@ -22,6 +34,30 @@
     "collector_number": "76",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aid%20the%20Fallen",
     "checked_at": "2026-08-06T14:44:11.867Z"
+  },
+  "acb3e93c-a1d3-458f-b8c3-c426cd359fa4": {
+    "status": "available",
+    "name": "Arboria",
+    "price_brl": 1.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominaria Remastered",
+    "printing_code": "DMR",
+    "collector_number": "149",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arboria",
+    "checked_at": "2026-08-07T13:48:33.696Z"
+  },
+  "acb8d6a0-4bbd-4a42-bcac-3656367cc051": {
+    "status": "available",
+    "name": "Arcbound Shikari",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 2 (Sketch)",
+    "printing_code": "SKMH2",
+    "collector_number": "360",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcbound%20Shikari",
+    "checked_at": "2026-08-07T13:57:04.048Z"
   },
   "aceea999-90ab-472c-86a7-48af1542cbcf": {
     "status": "available",

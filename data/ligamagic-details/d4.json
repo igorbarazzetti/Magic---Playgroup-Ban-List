@@ -1,4 +1,16 @@
 {
+  "d484be42-5dd4-49e0-afcd-2d3c1a2c3037": {
+    "status": "available",
+    "name": "Arcbound Condor",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3",
+    "printing_code": "MH3",
+    "collector_number": "81",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcbound%20Condor",
+    "checked_at": "2026-08-07T13:55:14.141Z"
+  },
   "d4ccc319-db23-4ef4-8129-317426f3a794": {
     "status": "available",
     "name": "Aerial Maneuver",

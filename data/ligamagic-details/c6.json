@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Renewal",
     "checked_at": "2026-08-07T07:55:26.331Z"
   },
+  "c6424a3e-dbc7-403f-867f-a81cccd17ab8": {
+    "status": "available",
+    "name": "Arcbound Reclaimer",
+    "price_brl": 0.85,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Darksteel",
+    "printing_code": "DS",
+    "collector_number": "101",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcbound%20Reclaimer",
+    "checked_at": "2026-08-07T13:56:54.014Z"
+  },
   "c6861c50-d336-4352-a76d-ec22a86ec09e": {
     "status": "available",
     "name": "Amplifire",

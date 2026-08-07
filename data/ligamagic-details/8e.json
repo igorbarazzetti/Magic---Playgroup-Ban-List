@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Hydra",
     "checked_at": "2026-08-07T07:50:06.037Z"
   },
+  "8ead94c5-8447-4f20-87ec-efdccde689fc": {
+    "status": "available",
+    "name": "Arcades Sabboth",
+    "price_brl": 0.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominaria Remastered",
+    "printing_code": "DMR",
+    "collector_number": "187",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcades%20Sabboth",
+    "checked_at": "2026-08-07T13:50:23.756Z"
+  },
   "8eca999e-f7f8-4354-b419-2df4249c4361": {
     "status": "available",
     "name": "Amulet of Kroog",

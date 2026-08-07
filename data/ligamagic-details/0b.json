@@ -1,4 +1,16 @@
 {
+  "0b2481d6-97a0-4f92-b7e5-3451863fd7fb": {
+    "status": "available",
+    "name": "Archangel Elspeth",
+    "price_brl": 17.88,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marcha das Máquinas",
+    "printing_code": "MOM",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archangel%20Elspeth",
+    "checked_at": "2026-08-07T13:59:54.216Z"
+  },
   "0b49dbdc-4f1d-4895-b263-a48c7b7e6b44": {
     "status": "available",
     "name": "Apostle of Purifying Light",
@@ -11,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apostle%20of%20Purifying%20Light",
     "checked_at": "2026-08-07T11:17:46.683Z"
   },
+  "0b633017-bfdf-47cd-a60f-c93816b47e9c": {
+    "status": "available",
+    "name": "Arcane Teachings",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Julgamento",
+    "printing_code": "JU",
+    "collector_number": "78",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcane%20Teachings",
+    "checked_at": "2026-08-07T13:54:13.926Z"
+  },
   "0baabe39-72ae-47bd-a095-cbf7eb8a6361": {
     "status": "available",
     "name": "Ancient Ziggurat",
@@ -22,6 +46,18 @@
     "collector_number": "144",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Ziggurat",
     "checked_at": "2026-08-07T07:52:06.713Z"
+  },
+  "0bc7f093-bef0-4f1a-852c-4b75ebf54838": {
+    "status": "available",
+    "name": "Arcane Signet",
+    "price_brl": 3.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Forgotten Realms Commander",
+    "printing_code": "AFC",
+    "collector_number": "197",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcane%20Signet",
+    "checked_at": "2026-08-07T13:53:44.043Z"
   },
   "0bd67481-6bd9-48d6-92bd-8933b5ea1eae": {
     "status": "available",

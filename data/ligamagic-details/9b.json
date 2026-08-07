@@ -10,5 +10,17 @@
     "collector_number": "2",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Flight%20Alabaster",
     "checked_at": "2026-08-07T07:53:56.251Z"
+  },
+  "9bbee1a5-2eb0-4fad-9524-4ad9cc5ca998": {
+    "status": "available",
+    "name": "Arc Runner",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2011",
+    "printing_code": "M11",
+    "collector_number": "123",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arc%20Runner",
+    "checked_at": "2026-08-07T13:49:23.737Z"
   }
 }

@@ -34,5 +34,17 @@
     "collector_number": "185",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Wheel%20of%20Fortune",
     "checked_at": "2026-08-05T20:15:11.978Z"
+  },
+  "a8e55287-f0df-46f2-a41d-27bea90216cc": {
+    "status": "available",
+    "name": "Arcade Cabinet",
+    "price_brl": 3.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Teenage Mutant Ninja Turtles Commander",
+    "printing_code": "TMC",
+    "collector_number": "36",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcade%20Cabinet",
+    "checked_at": "2026-08-07T13:50:03.755Z"
   }
 }

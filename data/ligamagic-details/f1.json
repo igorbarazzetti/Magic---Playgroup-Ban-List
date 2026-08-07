@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alpha%20Kavu",
     "checked_at": "2026-08-07T00:40:44.870Z"
   },
+  "f1c26b25-371e-4fbf-a43d-7fd59a364d3a": {
+    "status": "available",
+    "name": "Arc Trail",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Cicatrizes de Mirrodin",
+    "printing_code": "SOM",
+    "collector_number": "81",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arc%20Trail",
+    "checked_at": "2026-08-07T13:49:53.779Z"
+  },
   "f1c3d749-5cdb-4af2-967f-6413d6cb04fe": {
     "status": "available",
     "name": "Acquire",

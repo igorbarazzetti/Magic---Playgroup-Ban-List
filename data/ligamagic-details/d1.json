@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Sundering%20Titan",
     "checked_at": "2026-08-05T20:13:14.696Z"
   },
+  "d18a0815-59d3-4667-b52b-9acda741215e": {
+    "status": "available",
+    "name": "Arboreal Grazer",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm Commander",
+    "printing_code": "TDC",
+    "collector_number": "245",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arboreal%20Grazer",
+    "checked_at": "2026-08-07T13:48:13.715Z"
+  },
   "d1a6aa5f-2ad6-4bc7-82f0-4262f66af730": {
     "status": "available",
     "name": "Apprentice Necromancer",

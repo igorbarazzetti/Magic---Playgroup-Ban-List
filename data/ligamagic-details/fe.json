@@ -1,4 +1,16 @@
 {
+  "fe1556cc-32d0-4e51-bb15-f3fce669a5e1": {
+    "status": "available",
+    "name": "Arcane Epiphany",
+    "price_brl": 0.12,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Foundations",
+    "printing_code": "FDN",
+    "collector_number": "29",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcane%20Epiphany",
+    "checked_at": "2026-08-07T13:51:43.860Z"
+  },
   "fe174586-d36b-40f6-babd-1f98e76eec22": {
     "status": "available",
     "name": "Amonkhet Raceway",

@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adult%20Gold%20Dragon",
     "checked_at": "2026-08-06T07:11:04.672Z"
   },
+  "a383ef16-1af8-4b3a-956c-c10a93768617": {
+    "status": "available",
+    "name": "Arbaaz Mir",
+    "price_brl": 0.45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassin's Creed (Memory Corridor)",
+    "printing_code": "MCACR",
+    "collector_number": "138",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arbaaz%20Mir",
+    "checked_at": "2026-08-07T13:46:03.570Z"
+  },
   "a3bf5d18-77d5-4881-916c-cc125e621b6e": {
     "status": "available",
     "name": "Aphetto Exterminator",
@@ -46,6 +58,18 @@
     "collector_number": "58",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Academy%20Ruins",
     "checked_at": "2026-08-06T03:48:31.675Z"
+  },
+  "a3f35e0f-bf7a-42bf-b612-ac3af3a33727": {
+    "status": "available",
+    "name": "Arborback Stomper",
+    "price_brl": 0.06,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaladesh",
+    "printing_code": "KLD",
+    "collector_number": "142",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arborback%20Stomper",
+    "checked_at": "2026-08-07T13:47:43.640Z"
   },
   "a3fc6888-0a4b-4e1d-b709-042b8b6b1a04": {
     "status": "available",

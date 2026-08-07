@@ -1,4 +1,16 @@
 {
+  "cb58055f-8190-4bc7-ad32-844ca66fd2b0": {
+    "status": "available",
+    "name": "Arashin Sovereign",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dragões de Tarkir",
+    "printing_code": "DTK",
+    "collector_number": "212",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arashin%20Sovereign",
+    "checked_at": "2026-08-07T13:45:13.557Z"
+  },
   "cb666ea8-55e3-4e27-ae6d-806677dfc17a": {
     "status": "available",
     "name": "Airtight Alibi",

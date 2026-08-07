@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Academy%20Loremaster",
     "checked_at": "2026-08-06T03:47:52.306Z"
   },
+  "7d7cf15c-06b9-4062-a1eb-32614c458a3b": {
+    "status": "available",
+    "name": "Arcane Sanctum",
+    "price_brl": 0.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2018",
+    "printing_code": "C18",
+    "collector_number": "232",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcane%20Sanctum",
+    "checked_at": "2026-08-07T13:53:24.005Z"
+  },
   "7d9e905b-5f5c-4dbb-95cb-ccba0a5cbf8d": {
     "status": "available",
     "name": "Alaborn Veteran",
@@ -34,6 +46,18 @@
     "collector_number": "106",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aethertorch%20Renegade",
     "checked_at": "2026-08-06T11:05:13.858Z"
+  },
+  "7dbf5f59-1246-4156-bb21-090cfddd9111": {
+    "status": "available",
+    "name": "Arcane Artisan",
+    "price_brl": 0.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaldheim Commander",
+    "printing_code": "KHC",
+    "collector_number": "36",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcane%20Artisan",
+    "checked_at": "2026-08-07T13:50:53.792Z"
   },
   "7dbf9e96-e61f-43db-8767-63a351cf4ef8": {
     "status": "available",

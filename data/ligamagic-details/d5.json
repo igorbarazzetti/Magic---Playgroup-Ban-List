@@ -1,4 +1,16 @@
 {
+  "d5251d47-11de-41f7-9965-1f921e12d927": {
+    "status": "available",
+    "name": "Arcane Infusion",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Caçada à Meia-noite",
+    "printing_code": "MID",
+    "collector_number": "210",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcane%20Infusion",
+    "checked_at": "2026-08-07T13:52:13.840Z"
+  },
   "d56f1543-2b2d-4ce3-bcfe-41224a0cece4": {
     "status": "available",
     "name": "Apostle of Invasion",
@@ -22,6 +34,18 @@
     "collector_number": "206",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acolyte%20of%20Affliction",
     "checked_at": "2026-08-06T03:54:31.958Z"
+  },
+  "d57eb294-9707-4f93-82ad-b22d5f68c6c9": {
+    "status": "available",
+    "name": "Arcbound Overseer",
+    "price_brl": 3.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Darksteel",
+    "printing_code": "DS",
+    "collector_number": "99",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcbound%20Overseer",
+    "checked_at": "2026-08-07T13:56:23.992Z"
   },
   "d5ad26cc-2bdb-46b7-b8bf-dd099d5fa09b": {
     "status": "available",

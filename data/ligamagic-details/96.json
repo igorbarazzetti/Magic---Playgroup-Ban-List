@@ -1,4 +1,16 @@
 {
+  "9640225a-8f31-495f-b9de-53ed348ff24b": {
+    "status": "available",
+    "name": "Arbor Adherent",
+    "price_brl": 6.88,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm Commander",
+    "printing_code": "TDC",
+    "collector_number": "42",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arbor%20Adherent",
+    "checked_at": "2026-08-07T13:47:03.612Z"
+  },
   "967c2c79-7e49-448d-8d30-b2eb08b21d0a": {
     "status": "available",
     "name": "Angry Mob",

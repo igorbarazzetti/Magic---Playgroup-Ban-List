@@ -46,5 +46,17 @@
     "collector_number": "287",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aragorn%20and%20Arwen%2C%20Wed",
     "checked_at": "2026-08-07T11:25:57.014Z"
+  },
+  "b8cc7a78-a627-4e56-b1fc-0b2bd844ef68": {
+    "status": "available",
+    "name": "Arcanum Wings",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Visão do Futuro",
+    "printing_code": "FUT",
+    "collector_number": "48",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcanum%20Wings",
+    "checked_at": "2026-08-07T13:54:43.964Z"
   }
 }

@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abomination%20of%20Llanowar",
     "checked_at": "2026-08-06T00:10:57.010Z"
   },
+  "51577a8b-28d6-4f9e-8d3f-6a1380270fab": {
+    "status": "available",
+    "name": "Arcbound Bruiser",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Darksteel",
+    "printing_code": "DS",
+    "collector_number": "94",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcbound%20Bruiser",
+    "checked_at": "2026-08-07T13:55:03.974Z"
+  },
   "51833cff-6519-4806-8d91-0040e9a02189": {
     "status": "available",
     "name": "Abyssal Specter",
