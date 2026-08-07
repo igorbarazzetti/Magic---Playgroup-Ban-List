@@ -1,4 +1,16 @@
 {
+  "84122d1e-7657-42fa-8724-c4a3a19729a6": {
+    "status": "available",
+    "name": "Ancient Carp",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dragões de Tarkir",
+    "printing_code": "DTK",
+    "collector_number": "44",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Carp",
+    "checked_at": "2026-08-07T07:48:36.001Z"
+  },
   "8417f2d5-93c9-474a-a143-5c4e17097a88": {
     "status": "available",
     "name": "A.I.M. Labs",

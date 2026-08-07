@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Swooper",
     "checked_at": "2026-08-06T11:00:33.702Z"
   },
+  "f7f76abc-8656-4e97-9b7f-7f89ca3e6d93": {
+    "status": "available",
+    "name": "Angelic Page",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Jumpstart",
+    "printing_code": "JMP",
+    "collector_number": "88",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Page",
+    "checked_at": "2026-08-07T08:02:36.655Z"
+  },
   "f7f76f39-a0de-4bda-86b6-0f291892fcec": {
     "status": "available",
     "name": "Yawgmoth's Bargain",

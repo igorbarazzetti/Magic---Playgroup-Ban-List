@@ -46,5 +46,17 @@
     "collector_number": "127",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abbot%20of%20Keral%20Keep",
     "checked_at": "2026-08-06T00:07:16.886Z"
+  },
+  "09bfc3b1-cc40-4cb9-87e4-86b0018caa75": {
+    "status": "available",
+    "name": "Andradite Leech",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Invasão",
+    "printing_code": "IN",
+    "collector_number": "93",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Andradite%20Leech",
+    "checked_at": "2026-08-07T07:52:26.167Z"
   }
 }

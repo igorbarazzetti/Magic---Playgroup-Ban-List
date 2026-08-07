@@ -1,4 +1,40 @@
 {
+  "e6521404-8474-4727-b2d0-537d15d8a63f": {
+    "status": "available",
+    "name": "Andúril, Flame of the West",
+    "price_brl": 23.66,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Senhor dos Anéis: Contos da Terra Média",
+    "printing_code": "LTR",
+    "collector_number": "236",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=And%C3%BAril%2C%20Flame%20of%20the%20West",
+    "checked_at": "2026-08-07T07:52:36.195Z"
+  },
+  "e66b12ff-45da-46dc-9148-bd8ea9b7fde0": {
+    "status": "available",
+    "name": "Angelic Chorus",
+    "price_brl": 14.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Saga de Urza",
+    "printing_code": "US",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Chorus",
+    "checked_at": "2026-08-07T08:00:16.526Z"
+  },
+  "e6873252-653a-47a8-99b7-b2ef70aa1f7f": {
+    "status": "available",
+    "name": "Ancient Adamantoise",
+    "price_brl": 17.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY",
+    "printing_code": "FIN",
+    "collector_number": "172",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Adamantoise",
+    "checked_at": "2026-08-07T07:47:45.952Z"
+  },
   "e6bef0c4-3dfc-49a8-8fec-22b2570b704b": {
     "status": "available",
     "name": "Aftershock",

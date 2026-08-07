@@ -46,5 +46,17 @@
     "collector_number": "82",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alpha%20Brawl",
     "checked_at": "2026-08-07T00:40:14.889Z"
+  },
+  "cff434e1-e567-4a80-8dc5-593d70b0f348": {
+    "status": "available",
+    "name": "Angelic Protector",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Duel Decks: Divine vs. Demonic",
+    "printing_code": "DVD",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Protector",
+    "checked_at": "2026-08-07T08:02:46.630Z"
   }
 }

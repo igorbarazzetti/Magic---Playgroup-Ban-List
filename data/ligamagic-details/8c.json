@@ -70,5 +70,17 @@
     "collector_number": "266",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amareth%2C%20the%20Lustrous",
     "checked_at": "2026-08-07T00:46:55.801Z"
+  },
+  "8ce74097-97b1-493d-9585-bd1336f95927": {
+    "status": "available",
+    "name": "Ancient Bronze Dragon",
+    "price_brl": 43.8,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alchemy Horizons: Portal de Baldur",
+    "printing_code": "YCLB",
+    "collector_number": "24",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Bronze%20Dragon",
+    "checked_at": "2026-08-07T07:48:25.979Z"
   }
 }

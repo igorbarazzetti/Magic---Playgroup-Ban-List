@@ -1,4 +1,16 @@
 {
+  "2317a33f-665e-4cbc-bb5c-16b912ac2eef": {
+    "status": "available",
+    "name": "Angel of Condemnation",
+    "price_brl": 0.56,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Hora da Devastação",
+    "printing_code": "HOU",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Condemnation",
+    "checked_at": "2026-08-07T07:53:06.197Z"
+  },
   "23216e59-f147-4bb7-a698-12777c2f8584": {
     "status": "available",
     "name": "Jeweled Lotus",

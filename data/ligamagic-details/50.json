@@ -1,4 +1,16 @@
 {
+  "502575f4-7c56-44bc-a77f-ae28d66c8e1f": {
+    "status": "available",
+    "name": "Angelic Field Marshal",
+    "price_brl": 11.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2014",
+    "printing_code": "C14",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Field%20Marshal",
+    "checked_at": "2026-08-07T08:01:27.118Z"
+  },
   "5063f015-bd1c-4e14-9888-63e202be2ac8": {
     "status": "available",
     "name": "Advice from the Fae",
@@ -10,6 +22,18 @@
     "collector_number": "28",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Advice%20from%20the%20Fae",
     "checked_at": "2026-08-06T07:13:34.892Z"
+  },
+  "507d2f27-08a9-4938-b191-5734cda42ef2": {
+    "status": "available",
+    "name": "Angelic Exaltation",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lealdade em Ravnica",
+    "printing_code": "RNA",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Exaltation",
+    "checked_at": "2026-08-07T08:01:06.578Z"
   },
   "50885640-cdf1-4c62-b3bc-f37db6ab38b5": {
     "status": "available",

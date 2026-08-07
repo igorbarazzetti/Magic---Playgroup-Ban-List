@@ -1,4 +1,16 @@
 {
+  "701912d5-9995-4ac7-9858-188f78b2b8a3": {
+    "status": "available",
+    "name": "Angel of the God-Pharaoh",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Hora da Devastação",
+    "printing_code": "HOU",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20the%20God-Pharaoh",
+    "checked_at": "2026-08-07T07:56:46.369Z"
+  },
   "7020dc51-8271-40a3-9c4c-ebd40c0b08b2": {
     "status": "available",
     "name": "Algae Gharial",

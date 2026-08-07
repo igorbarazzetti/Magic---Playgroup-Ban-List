@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alchemist's%20Assistant",
     "checked_at": "2026-08-06T18:14:17.909Z"
   },
+  "28537019-3061-4efc-8e87-9bb805bf520f": {
+    "status": "available",
+    "name": "Ancient Spider",
+    "price_brl": 0.7,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Conjunção",
+    "printing_code": "PS",
+    "collector_number": "96",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Spider",
+    "checked_at": "2026-08-07T07:51:16.184Z"
+  },
   "287cd5e8-51e2-42a4-a139-c112ff89706d": {
     "status": "available",
     "name": "Adarkar Unicorn",
@@ -22,6 +34,18 @@
     "collector_number": "3",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adarkar%20Unicorn",
     "checked_at": "2026-08-06T04:00:42.238Z"
+  },
+  "28c7f2b6-ba67-4ccf-9e1b-99c89a9d1f72": {
+    "status": "available",
+    "name": "Angel of Invention",
+    "price_brl": 1.74,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm Commander",
+    "printing_code": "TDC",
+    "collector_number": "109",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Invention",
+    "checked_at": "2026-08-07T07:54:46.276Z"
   },
   "28f70f86-19a9-4811-bc10-423a05842d39": {
     "status": "available",

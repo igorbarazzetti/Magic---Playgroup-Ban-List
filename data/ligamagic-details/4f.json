@@ -1,4 +1,16 @@
 {
+  "4f57a320-b6b5-49de-af0a-f2e2649758a7": {
+    "status": "available",
+    "name": "Angel of Indemnity",
+    "price_brl": 7.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven Commander",
+    "printing_code": "SOC",
+    "collector_number": "133",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Indemnity",
+    "checked_at": "2026-08-07T07:54:36.293Z"
+  },
   "4faf62c3-3ba7-4540-be26-777305ef184e": {
     "status": "available",
     "name": "Ambush Gigapede",
@@ -10,5 +22,17 @@
     "collector_number": "77",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambush%20Gigapede",
     "checked_at": "2026-08-07T04:37:51.157Z"
+  },
+  "4fed8066-4597-4ebb-ac88-6622cf007d81": {
+    "status": "available",
+    "name": "Angelic Harold",
+    "price_brl": 0.16,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unfinity",
+    "printing_code": "UNF",
+    "collector_number": "162",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Harold",
+    "checked_at": "2026-08-07T08:01:56.647Z"
   }
 }

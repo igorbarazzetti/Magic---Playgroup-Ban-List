@@ -35,6 +35,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mox%20Opal",
     "checked_at": "2026-08-05T20:10:08.194Z"
   },
+  "de3ed52e-7cc2-49ea-96d9-4254aac46168": {
+    "status": "available",
+    "name": "Angel's Tomb",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic Origens",
+    "printing_code": "ORI",
+    "collector_number": "222",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel's%20Tomb",
+    "checked_at": "2026-08-07T07:57:56.439Z"
+  },
+  "de672a4b-07eb-4be8-a03f-23dfbb7ac0fa": {
+    "status": "available",
+    "name": "Ancient Hellkite",
+    "price_brl": 0.58,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2011",
+    "printing_code": "M11",
+    "collector_number": "122",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Hellkite",
+    "checked_at": "2026-08-07T07:49:56.023Z"
+  },
   "de8c0e2d-3207-4bc6-83ef-91e33b26a981": {
     "status": "available",
     "name": "All-Out Assault",

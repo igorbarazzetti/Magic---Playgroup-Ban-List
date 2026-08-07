@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aegar%2C%20the%20Freezing%20Flame",
     "checked_at": "2026-08-06T07:13:54.902Z"
   },
+  "598a7347-b772-4839-a02f-b930076c1354": {
+    "status": "available",
+    "name": "Ancient Kavu",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Invasão",
+    "printing_code": "IN",
+    "collector_number": "136",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Kavu",
+    "checked_at": "2026-08-07T07:50:26.053Z"
+  },
   "59b2edf0-00e4-4cd4-88ac-6dd74e9b1b14": {
     "status": "available",
     "name": "Air Marshal",

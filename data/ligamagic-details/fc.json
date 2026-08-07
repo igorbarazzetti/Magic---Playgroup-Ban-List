@@ -82,5 +82,17 @@
     "collector_number": "88",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aclazotz%2C%20Deepest%20Betrayal",
     "checked_at": "2026-08-06T03:54:01.900Z"
+  },
+  "fcfcac6b-6d26-4ffe-ae9e-b0ee7fa49787": {
+    "status": "available",
+    "name": "Angel of Grace",
+    "price_brl": 1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lealdade em Ravnica",
+    "printing_code": "RNA",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Grace",
+    "checked_at": "2026-08-07T07:54:26.257Z"
   }
 }

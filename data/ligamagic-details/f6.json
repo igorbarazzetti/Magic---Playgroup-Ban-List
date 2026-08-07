@@ -10,5 +10,17 @@
     "collector_number": "157",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adaptive%20Sporesinger",
     "checked_at": "2026-08-06T04:00:12.234Z"
+  },
+  "f63ea0e5-7769-4a22-bbb3-658281141d8c": {
+    "status": "available",
+    "name": "Angel of the Dawn",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Double Masters",
+    "printing_code": "2XM",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20the%20Dawn",
+    "checked_at": "2026-08-07T07:56:26.356Z"
   }
 }

@@ -1,4 +1,28 @@
 {
+  "6b19377c-f178-49cb-95f8-fd3451acc7cf": {
+    "status": "available",
+    "name": "Angelic Benediction",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Duel Decks Anthology: Divine vs. Demonic",
+    "printing_code": "DDADVD",
+    "collector_number": "19",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Benediction",
+    "checked_at": "2026-08-07T07:59:47.575Z"
+  },
+  "6b232bb7-d372-4174-a049-5f8d620810e6": {
+    "status": "available",
+    "name": "Angel's Mercy",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2013",
+    "printing_code": "M13",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel's%20Mercy",
+    "checked_at": "2026-08-07T07:57:46.454Z"
+  },
   "6b60422a-765b-4168-a37b-68109103385a": {
     "status": "available",
     "name": "Abyssal Horror",
@@ -22,6 +46,18 @@
     "collector_number": "77",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Temporal%20Manipulation",
     "checked_at": "2026-08-05T20:13:32.767Z"
+  },
+  "6bab6d0a-cd06-45e3-b780-d5354ee2a032": {
+    "status": "available",
+    "name": "Ancient Crab",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Amonkhet",
+    "printing_code": "AKH",
+    "collector_number": "40",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Crab",
+    "checked_at": "2026-08-07T07:49:05.982Z"
   },
   "6bac1495-16cf-4e1e-9126-482f85322c78": {
     "status": "available",

@@ -46,5 +46,17 @@
     "collector_number": "91",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Mutation",
     "checked_at": "2026-08-06T10:58:33.596Z"
+  },
+  "66ca8a60-e028-4a5f-8177-860b888cb9d1": {
+    "status": "available",
+    "name": "Angel's Grace",
+    "price_brl": 15.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Espiral Temporal",
+    "printing_code": "TS",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel's%20Grace",
+    "checked_at": "2026-08-07T07:57:26.416Z"
   }
 }

@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Contract%20from%20Below",
     "checked_at": "2026-08-05T20:04:28.364Z"
   },
+  "9e4db334-4698-4986-820f-1daf1bffda83": {
+    "status": "available",
+    "name": "Angel's Herald",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fragmentos de Alara",
+    "printing_code": "ALA",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel's%20Herald",
+    "checked_at": "2026-08-07T07:57:36.861Z"
+  },
   "9e830359-ab92-4bfd-82b3-d9c67ac80cf7": {
     "status": "available",
     "name": "Air Nomad Legacy",

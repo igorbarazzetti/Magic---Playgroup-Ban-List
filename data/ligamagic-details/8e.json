@@ -1,4 +1,16 @@
 {
+  "8e1d3722-9bd1-4ab7-b4a5-9265fca3aba9": {
+    "status": "available",
+    "name": "Ancient Hydra",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nêmesis",
+    "printing_code": "NE",
+    "collector_number": "76",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Hydra",
+    "checked_at": "2026-08-07T07:50:06.037Z"
+  },
   "8eca999e-f7f8-4354-b419-2df4249c4361": {
     "status": "available",
     "name": "Amulet of Kroog",

@@ -34,5 +34,17 @@
     "collector_number": "226",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Lurrus%20of%20the%20Dream-Den",
     "checked_at": "2026-08-05T20:09:23.077Z"
+  },
+  "3bcf090c-e890-4a9f-a8aa-6079e4ec9947": {
+    "status": "available",
+    "name": "Ancient Greenwarden",
+    "price_brl": 39.83,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Renascer de Zendikar",
+    "printing_code": "ZNR",
+    "collector_number": "178",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Greenwarden",
+    "checked_at": "2026-08-07T07:49:36.037Z"
   }
 }

@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Library%20of%20Alexandria",
     "checked_at": "2026-08-05T20:09:08.000Z"
   },
+  "2160849a-184f-4a49-8931-fd021e16f7cb": {
+    "status": "available",
+    "name": "Ancient Spring",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Invasão",
+    "printing_code": "IN",
+    "collector_number": "319",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Spring",
+    "checked_at": "2026-08-07T07:51:26.132Z"
+  },
   "21f45043-5419-4019-8b6c-e5294bd5f549": {
     "status": "available",
     "name": "Acidic Slime",

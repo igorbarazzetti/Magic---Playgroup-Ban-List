@@ -1,4 +1,16 @@
 {
+  "0baabe39-72ae-47bd-a095-cbf7eb8a6361": {
+    "status": "available",
+    "name": "Ancient Ziggurat",
+    "price_brl": 2.79,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed Commander",
+    "printing_code": "ECC",
+    "collector_number": "144",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Ziggurat",
+    "checked_at": "2026-08-07T07:52:06.713Z"
+  },
   "0bd67481-6bd9-48d6-92bd-8933b5ea1eae": {
     "status": "available",
     "name": "Peregrine Drake",

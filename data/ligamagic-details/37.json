@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ragavan%2C%20Nimble%20Pilferer",
     "checked_at": "2026-08-05T20:11:38.438Z"
   },
+  "37162c6e-ac31-4386-9d1e-76aa66070b35": {
+    "status": "available",
+    "name": "Angelic Favor",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nêmesis",
+    "printing_code": "NE",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Favor",
+    "checked_at": "2026-08-07T08:01:16.671Z"
+  },
   "372351fd-58f7-4cb8-8644-5fbc94ccb145": {
     "status": "available",
     "name": "Prophet of Kruphix",

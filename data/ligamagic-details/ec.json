@@ -1,4 +1,16 @@
 {
+  "ec22386d-42fd-40f9-b800-a043e80faabe": {
+    "status": "available",
+    "name": "Angelic Overseer",
+    "price_brl": 2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad",
+    "printing_code": "ISD",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Overseer",
+    "checked_at": "2026-08-07T08:02:26.645Z"
+  },
   "ec3d4466-547c-4e02-b1b5-a156ec4637e9": {
     "status": "available",
     "name": "Chrome Mox",

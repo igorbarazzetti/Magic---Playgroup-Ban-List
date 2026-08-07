@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Summer%20Bloom",
     "checked_at": "2026-08-05T20:13:08.661Z"
   },
+  "e5e04968-d9b7-4bd5-b826-be9502360cd3": {
+    "status": "available",
+    "name": "Angelic Gift",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Battlebond",
+    "printing_code": "BBD",
+    "collector_number": "88",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Gift",
+    "checked_at": "2026-08-07T08:01:36.657Z"
+  },
   "e5e8e116-10fe-48b0-b3d8-6edb39bd5f90": {
     "status": "available",
     "name": "Alibou, Ancient Witness",

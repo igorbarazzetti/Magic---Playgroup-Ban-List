@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aethergeode%20Miner",
     "checked_at": "2026-08-06T11:02:33.741Z"
   },
+  "92380c57-0a92-48eb-b562-2be149b5792a": {
+    "status": "available",
+    "name": "Angel of Suffering",
+    "price_brl": 6.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ruas de Nova Capenna",
+    "printing_code": "SNC",
+    "collector_number": "67",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Suffering",
+    "checked_at": "2026-08-07T07:56:16.394Z"
+  },
   "925a0b9b-a1fa-4aad-89d9-e2698ac3582f": {
     "status": "available",
     "name": "Ajani's Presence",

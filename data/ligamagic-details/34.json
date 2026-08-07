@@ -46,5 +46,17 @@
     "collector_number": "354",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abundant%20Harvest",
     "checked_at": "2026-08-06T00:16:37.343Z"
+  },
+  "34dd789c-4d80-4ccc-a4f7-2e5388a9689d": {
+    "status": "available",
+    "name": "Angelic Arbiter",
+    "price_brl": 6.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander",
+    "printing_code": "CMD",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Arbiter",
+    "checked_at": "2026-08-07T07:59:16.478Z"
   }
 }

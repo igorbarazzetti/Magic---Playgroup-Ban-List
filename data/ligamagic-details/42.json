@@ -1,4 +1,16 @@
 {
+  "42aa599f-de2f-411a-8cf3-f5cfb40568b3": {
+    "status": "available",
+    "name": "Angelheart Protector",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Renascer de Zendikar",
+    "printing_code": "ZNR",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelheart%20Protector",
+    "checked_at": "2026-08-07T07:58:36.478Z"
+  },
   "42bede0a-de6d-4de3-90ea-9d92b0fe8c64": {
     "status": "available",
     "name": "Weight Advantage",

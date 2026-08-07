@@ -1,4 +1,16 @@
 {
+  "d714f1f6-539e-4a2a-b738-226854d7ff09": {
+    "status": "available",
+    "name": "Ancient Lumberknot",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Double Feature",
+    "printing_code": "DBL",
+    "collector_number": "497",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Lumberknot",
+    "checked_at": "2026-08-07T07:50:36.091Z"
+  },
   "d7d163a7-6f3f-40ab-a47c-ed497df92244": {
     "status": "available",
     "name": "Ahn-Crop Invader",

@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Imprison",
     "checked_at": "2026-08-05T20:08:10.882Z"
   },
+  "635fe908-6f58-4c9e-ac55-0775a7c6f278": {
+    "status": "available",
+    "name": "Angel of Vitality",
+    "price_brl": 1.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2020",
+    "printing_code": "M20",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Vitality",
+    "checked_at": "2026-08-07T07:57:06.401Z"
+  },
   "63a19c7c-49d7-4b75-aac8-d0ff36c45fb8": {
     "status": "available",
     "name": "Sowing Mycospawn",

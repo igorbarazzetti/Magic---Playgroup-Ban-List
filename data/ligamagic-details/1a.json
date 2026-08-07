@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mental%20Misstep",
     "checked_at": "2026-08-05T20:09:41.098Z"
   },
+  "1a128c02-febf-4ce6-b4d1-28274b5c4ff0": {
+    "status": "available",
+    "name": "Ancient Runes",
+    "price_brl": 4.35,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tempestade",
+    "printing_code": "TP",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Runes",
+    "checked_at": "2026-08-07T07:50:56.710Z"
+  },
   "1a1a16e5-ce4f-42b8-a1c6-05dd635d83cc": {
     "status": "available",
     "name": "Aether Snap",
@@ -22,6 +34,18 @@
     "collector_number": "133",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Snap",
     "checked_at": "2026-08-06T10:59:43.644Z"
+  },
+  "1a587b8d-fcb4-47ca-9689-610897117166": {
+    "status": "available",
+    "name": "Angelfire Crusader",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Apocalipse",
+    "printing_code": "AP",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelfire%20Crusader",
+    "checked_at": "2026-08-07T07:58:16.443Z"
   },
   "1aa1cf50-ee79-4bef-826b-5f1a9e1aa1a5": {
     "status": "available",

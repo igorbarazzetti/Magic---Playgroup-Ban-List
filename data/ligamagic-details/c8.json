@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Disciple%20of%20the%20Vault",
     "checked_at": "2026-08-05T20:05:19.459Z"
   },
+  "c8c110db-4d98-4087-a3b0-c7fe88b5e38a": {
+    "status": "available",
+    "name": "Angelic Cub",
+    "price_brl": 0.8,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Jumpstart 2022",
+    "printing_code": "J22",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Cub",
+    "checked_at": "2026-08-07T08:00:26.516Z"
+  },
   "c8deef08-fcf2-41e1-8aeb-aa4e0af147ca": {
     "status": "available",
     "name": "Alharu, Solemn Ritualist",

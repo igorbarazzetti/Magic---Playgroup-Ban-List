@@ -1,4 +1,16 @@
 {
+  "d12cf640-ff60-4935-a2c7-28ab788de42c": {
+    "status": "available",
+    "name": "Angel of Light",
+    "price_brl": 37.85,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mystery Booster 2",
+    "printing_code": "MB2",
+    "collector_number": "16",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Light",
+    "checked_at": "2026-08-07T07:55:06.276Z"
+  },
   "d13aff7c-f0ee-44e2-ae1c-62cd86ad46a6": {
     "status": "available",
     "name": "Aerial Caravan",

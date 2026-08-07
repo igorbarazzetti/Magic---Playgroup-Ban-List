@@ -46,5 +46,17 @@
     "collector_number": "173",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anarchist",
     "checked_at": "2026-08-07T04:47:01.547Z"
+  },
+  "82f18e7d-5c42-47c4-8e74-3fccc9b7b1f0": {
+    "status": "available",
+    "name": "Ancient Stirrings",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Double Masters",
+    "printing_code": "2XM",
+    "collector_number": "151",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Stirrings",
+    "checked_at": "2026-08-07T07:51:36.409Z"
   }
 }

@@ -1,4 +1,16 @@
 {
+  "6f053f0d-c9c7-4fcd-b218-a29d1d080104": {
+    "status": "available",
+    "name": "Ancient Vendetta",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Aetherdrift",
+    "printing_code": "DFT",
+    "collector_number": "75",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Vendetta",
+    "checked_at": "2026-08-07T07:51:56.872Z"
+  },
   "6f14f61f-e533-4541-b861-4dbaf0d88833": {
     "status": "available",
     "name": "Backup Plan",

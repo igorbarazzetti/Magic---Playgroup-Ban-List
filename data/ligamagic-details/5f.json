@@ -1,4 +1,16 @@
 {
+  "5f12134c-d626-4a5e-8653-700681a491fc": {
+    "status": "available",
+    "name": "Ancient Silverback",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2015",
+    "printing_code": "M15",
+    "collector_number": "168",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Silverback",
+    "checked_at": "2026-08-07T07:51:06.126Z"
+  },
   "5f358544-7319-4f8e-9d60-a410c4feb774": {
     "status": "available",
     "name": "Alluring Siren",
@@ -10,6 +22,30 @@
     "collector_number": "42",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alluring%20Siren",
     "checked_at": "2026-08-07T00:37:54.780Z"
+  },
+  "5f4834c7-cd63-420b-8492-ef127ffd4f45": {
+    "status": "available",
+    "name": "Anchovy & Banana Pizza",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Teenage Mutant Ninja Turtles",
+    "printing_code": "TMT",
+    "collector_number": "57",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anchovy%20%26%20Banana%20Pizza",
+    "checked_at": "2026-08-07T07:47:35.927Z"
+  },
+  "5f981cca-5cd9-49e4-ab1a-bbbf6fc7e737": {
+    "status": "available",
+    "name": "Ancient Stone Idol",
+    "price_brl": 2.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Masters",
+    "printing_code": "CMM",
+    "collector_number": "940",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Stone%20Idol",
+    "checked_at": "2026-08-07T07:51:46.145Z"
   },
   "5fae52ed-1b84-406e-951d-b0d329dc48a7": {
     "status": "available",

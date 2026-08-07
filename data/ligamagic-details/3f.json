@@ -58,5 +58,17 @@
     "collector_number": "133",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambitious%20Assault",
     "checked_at": "2026-08-07T04:36:01.049Z"
+  },
+  "3fe95820-cd7f-4f28-82bf-eb4350ea4179": {
+    "status": "available",
+    "name": "Ancient Imperiosaur",
+    "price_brl": 1.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marcha das Máquinas",
+    "printing_code": "MOM",
+    "collector_number": "174",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Imperiosaur",
+    "checked_at": "2026-08-07T07:50:16.085Z"
   }
 }

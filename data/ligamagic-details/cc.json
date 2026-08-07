@@ -1,4 +1,16 @@
 {
+  "cca29a9b-794f-4712-8e6c-36ce3da9cb8b": {
+    "status": "available",
+    "name": "Angelic Curator",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Legado de Urza",
+    "printing_code": "UL",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Curator",
+    "checked_at": "2026-08-07T08:00:36.573Z"
+  },
   "ccba143d-ed9b-4044-bdad-f010a0e38e47": {
     "status": "available",
     "name": "Blazing Shoal",

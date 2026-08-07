@@ -1,4 +1,16 @@
 {
+  "745be03c-69dc-4239-a5e7-38587b56eac0": {
+    "status": "available",
+    "name": "Ancient Brontodon",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ixalan",
+    "printing_code": "XLN",
+    "collector_number": "175",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Brontodon",
+    "checked_at": "2026-08-07T07:48:15.980Z"
+  },
   "748d5353-b66c-4d7a-8c55-0d28fefb1e2a": {
     "status": "available",
     "name": "Adorable Kitten",

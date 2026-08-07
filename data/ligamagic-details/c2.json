@@ -1,4 +1,16 @@
 {
+  "c2042b38-1f06-44d4-b56f-2cb4d9197712": {
+    "status": "available",
+    "name": "Angelic Armaments",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Retorno de Avacyn",
+    "printing_code": "AVR",
+    "collector_number": "212",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Armaments",
+    "checked_at": "2026-08-07T07:59:26.535Z"
+  },
   "c208b959-d0e4-4a9a-8255-2c7cc7596767": {
     "status": "available",
     "name": "Abbey Gargoyles",

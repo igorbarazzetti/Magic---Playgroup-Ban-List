@@ -34,5 +34,17 @@
     "collector_number": "89",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acquisitions%20Expert",
     "checked_at": "2026-08-06T03:56:22.028Z"
+  },
+  "07eb70cf-e6af-4924-a00d-bdf2c6ba78e1": {
+    "status": "available",
+    "name": "Angel of Fury",
+    "price_brl": 66.01,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portal Segunda Era",
+    "printing_code": "PO2",
+    "collector_number": "127",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Fury",
+    "checked_at": "2026-08-07T07:54:06.259Z"
   }
 }

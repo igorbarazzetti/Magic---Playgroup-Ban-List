@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alloy%20Myr",
     "checked_at": "2026-08-07T00:37:24.735Z"
   },
+  "efbc9b9c-2b8c-4121-b232-350c80f12a2a": {
+    "status": "available",
+    "name": "Angelheart Vial",
+    "price_brl": 0.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ascensão dos Eldrazi",
+    "printing_code": "ROE",
+    "collector_number": "215",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelheart%20Vial",
+    "checked_at": "2026-08-07T07:58:46.443Z"
+  },
   "efd46a6e-a901-4224-8a29-d53a4dc7750c": {
     "status": "available",
     "name": "Alms",

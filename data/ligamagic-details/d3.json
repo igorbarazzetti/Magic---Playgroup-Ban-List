@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alseid%20of%20Life's%20Bounty",
     "checked_at": "2026-08-07T00:43:25.627Z"
   },
+  "d3758fca-0522-4b5a-a1cc-3b2b3ab299ba": {
+    "status": "available",
+    "name": "Angelic Blessing",
+    "price_brl": 0.02,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "êxodo",
+    "printing_code": "EX",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Blessing",
+    "checked_at": "2026-08-07T07:59:56.537Z"
+  },
   "d38937a6-ab1c-4de8-a278-d81a6ce0d921": {
     "status": "available",
     "name": "Paradox Engine",

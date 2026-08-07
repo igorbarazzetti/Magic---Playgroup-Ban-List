@@ -1,4 +1,16 @@
 {
+  "c604fda4-164c-4966-94f8-1e3a96d5ef9d": {
+    "status": "available",
+    "name": "Angel of Renewal",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Batalha por Zendikar",
+    "printing_code": "BFZ",
+    "collector_number": "18",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Renewal",
+    "checked_at": "2026-08-07T07:55:26.331Z"
+  },
   "c6861c50-d336-4352-a76d-ec22a86ec09e": {
     "status": "available",
     "name": "Amplifire",
@@ -10,6 +22,18 @@
     "collector_number": "92",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amplifire",
     "checked_at": "2026-08-07T04:41:31.339Z"
+  },
+  "c6a606af-ea08-4cd9-bfd9-60d76e232e85": {
+    "status": "available",
+    "name": "Angel of Glory's Rise",
+    "price_brl": 1.29,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Caçada à Meia-noite (Commander)",
+    "printing_code": "MIC",
+    "collector_number": "79",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Glory's%20Rise",
+    "checked_at": "2026-08-07T07:54:16.246Z"
   },
   "c6d0f1bc-b82a-4e64-a4bc-11ad3f54c71a": {
     "status": "available",

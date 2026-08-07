@@ -1,4 +1,16 @@
 {
+  "b8510b34-0e5f-4639-9db1-1ba40d84b800": {
+    "status": "available",
+    "name": "Ancient Cellarspawn",
+    "price_brl": 35.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Noctumbra: A Casa dos Horrores Commander (Extended Art)",
+    "printing_code": "EADSC",
+    "collector_number": "47",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Cellarspawn",
+    "checked_at": "2026-08-07T07:48:45.962Z"
+  },
   "b85e7ab2-6f57-4b65-8c16-034b342996f0": {
     "status": "available",
     "name": "Ambitious Farmhand // Seasoned Cathar",

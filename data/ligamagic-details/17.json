@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Altar%20of%20the%20Pantheon",
     "checked_at": "2026-08-07T00:45:25.131Z"
   },
+  "17df0fda-d726-4c9d-bf44-6f2e3a347117": {
+    "status": "available",
+    "name": "Angelic Observer",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ruas de Nova Capenna",
+    "printing_code": "SNC",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Observer",
+    "checked_at": "2026-08-07T08:02:16.657Z"
+  },
   "17fa98cd-ed8f-483f-9525-7e989a82ebb2": {
     "status": "available",
     "name": "Balance",

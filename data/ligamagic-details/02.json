@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ponder",
     "checked_at": "2026-08-05T20:11:08.400Z"
   },
+  "02520741-d7f0-46e6-acbe-010b65fc24c0": {
+    "status": "available",
+    "name": "Angel of Despair",
+    "price_brl": 1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Pacto das Guildas",
+    "printing_code": "GP",
+    "collector_number": "101",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Despair",
+    "checked_at": "2026-08-07T07:53:26.222Z"
+  },
   "02598a35-1b11-4abe-89cd-fc44c8c36c15": {
     "status": "available",
     "name": "Winota, Joiner of Forces",
@@ -46,5 +58,17 @@
     "collector_number": "20041302",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Den",
     "checked_at": "2026-08-05T20:02:58.118Z"
+  },
+  "02f46271-c90d-4318-9004-74e7bee64a89": {
+    "status": "available",
+    "name": "Angel of Destiny",
+    "price_brl": 29.59,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Renascer de Zendikar",
+    "printing_code": "ZNR",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Destiny",
+    "checked_at": "2026-08-07T07:53:36.216Z"
   }
 }

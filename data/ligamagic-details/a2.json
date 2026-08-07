@@ -46,5 +46,17 @@
     "collector_number": "2",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agent%20Maria%20Hill",
     "checked_at": "2026-08-06T11:10:54.112Z"
+  },
+  "a2daaf32-dbfe-4618-892e-0da24f63a44a": {
+    "status": "available",
+    "name": "Angel of Mercy",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Iconic Masters",
+    "printing_code": "IMA",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Mercy",
+    "checked_at": "2026-08-07T07:55:16.946Z"
   }
 }

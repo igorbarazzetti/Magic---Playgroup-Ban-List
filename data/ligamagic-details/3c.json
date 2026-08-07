@@ -1,4 +1,16 @@
 {
+  "3c49e98d-d33b-47fa-8b07-b38b367de2c7": {
+    "status": "available",
+    "name": "Angel of Sanctions",
+    "price_brl": 0.42,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Amonkhet",
+    "printing_code": "AKH",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Sanctions",
+    "checked_at": "2026-08-07T07:55:56.308Z"
+  },
   "3c9fcda6-3ebc-4f9d-9f73-2bb4252d9420": {
     "status": "available",
     "name": "Amaranthine Wall",

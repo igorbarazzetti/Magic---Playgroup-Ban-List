@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amazing%20Alliance",
     "checked_at": "2026-08-07T00:47:45.225Z"
   },
+  "5a898412-5b1e-4217-ac78-5b4099ed8e16": {
+    "status": "available",
+    "name": "Angelic Ascension",
+    "price_brl": 0.14,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2021",
+    "printing_code": "M21",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Ascension",
+    "checked_at": "2026-08-07T07:59:36.481Z"
+  },
   "5a98decb-30ba-4c34-a88a-424b7f4e03bc": {
     "status": "available",
     "name": "Akki Avalanchers",

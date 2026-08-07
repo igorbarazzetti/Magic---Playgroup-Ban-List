@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Active%20Volcano",
     "checked_at": "2026-08-06T03:58:22.155Z"
   },
+  "2076b2a7-6e07-4b6d-ae17-c1cfd0961022": {
+    "status": "available",
+    "name": "Ancient Ooze",
+    "price_brl": 0.68,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Flagelo",
+    "printing_code": "SC",
+    "collector_number": "112",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Ooze",
+    "checked_at": "2026-08-07T07:50:46.503Z"
+  },
   "20f7f33d-0c49-49f7-80fa-aed86e33a528": {
     "status": "available",
     "name": "Hold the Perimeter",

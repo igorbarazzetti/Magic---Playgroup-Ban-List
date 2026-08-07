@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alms%20Collector",
     "checked_at": "2026-08-07T00:39:04.844Z"
   },
+  "27b945ad-92a9-4615-87ec-790682e8c3e7": {
+    "status": "available",
+    "name": "Angel of Salvation",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Visão do Futuro",
+    "printing_code": "FUT",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Salvation",
+    "checked_at": "2026-08-07T07:55:46.328Z"
+  },
   "27e0948b-9916-473b-8d8c-a51bdfbc7457": {
     "status": "available",
     "name": "Underworld Breach",

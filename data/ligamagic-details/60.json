@@ -70,5 +70,17 @@
     "collector_number": "197",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Oko%2C%20Thief%20of%20Crowns",
     "checked_at": "2026-08-05T20:10:50.295Z"
+  },
+  "60d0c941-39f6-4144-abef-02b0a84d602e": {
+    "status": "available",
+    "name": "Angelic Aberration",
+    "price_brl": 5.45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3 Commander",
+    "printing_code": "M3C",
+    "collector_number": "39",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Aberration",
+    "checked_at": "2026-08-07T07:58:56.471Z"
   }
 }

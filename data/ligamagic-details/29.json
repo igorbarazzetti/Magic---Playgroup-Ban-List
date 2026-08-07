@@ -70,5 +70,17 @@
     "collector_number": "20030308",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Entomb",
     "checked_at": "2026-08-05T20:05:49.553Z"
+  },
+  "29e1c6e3-d76e-4388-b4e9-f732fdec4338": {
+    "status": "available",
+    "name": "Angelfire Ignition",
+    "price_brl": 1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Caçada à Meia-noite",
+    "printing_code": "MID",
+    "collector_number": "209",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelfire%20Ignition",
+    "checked_at": "2026-08-07T07:58:26.472Z"
   }
 }

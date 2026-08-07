@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Absolute%20Law",
     "checked_at": "2026-08-06T00:12:47.153Z"
   },
+  "f4ce6078-8c7b-4f68-b324-13130c63a983": {
+    "status": "available",
+    "name": "Angel of Serenity",
+    "price_brl": 0.98,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Retorno a Ravnica",
+    "printing_code": "RTR",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Serenity",
+    "checked_at": "2026-08-07T07:56:06.334Z"
+  },
   "f4e7bc58-336d-4670-84cb-a46ca1f48671": {
     "status": "available",
     "name": "Abiding Grace",
