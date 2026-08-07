@@ -58,5 +58,17 @@
     "collector_number": "111",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=An-Havva%20Township",
     "checked_at": "2026-08-07T04:43:51.381Z"
+  },
+  "40d6e1ff-995b-42fc-8146-8d5e5f1adcd9": {
+    "status": "available",
+    "name": "Apprentice Sharpshooter",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Voto Carmesim",
+    "printing_code": "VOW",
+    "collector_number": "185",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apprentice%20Sharpshooter",
+    "checked_at": "2026-08-07T11:21:07.332Z"
   }
 }

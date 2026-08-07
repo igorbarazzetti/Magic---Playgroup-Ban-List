@@ -1,4 +1,28 @@
 {
+  "3f166376-2739-411c-8f42-96f2ef28ef86": {
+    "status": "available",
+    "name": "April O'Neil, Kunoichi Trainee",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Teenage Mutant Ninja Turtles",
+    "printing_code": "TMT",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=April%20O'Neil%2C%20Kunoichi%20Trainee",
+    "checked_at": "2026-08-07T11:22:06.876Z"
+  },
+  "3f31c423-d45c-4c3e-b7d4-ca125be0f92c": {
+    "status": "available",
+    "name": "Aragorn, the Uniter",
+    "price_brl": 29,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Senhor dos Anéis: Contos da Terra Média",
+    "printing_code": "LTR",
+    "collector_number": "192",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aragorn%2C%20the%20Uniter",
+    "checked_at": "2026-08-07T11:26:37.037Z"
+  },
   "3f47ec32-4ee9-4bc0-96f2-310a939cb973": {
     "status": "available",
     "name": "Ace's Baseball Bat",

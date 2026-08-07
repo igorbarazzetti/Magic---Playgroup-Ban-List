@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Comet%2C%20Stellar%20Pup",
     "checked_at": "2026-08-05T20:04:25.335Z"
   },
+  "e7dc3d8b-2c79-463d-b862-9f01ccea05fd": {
+    "status": "available",
+    "name": "Anurid Murkdiver",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Investida",
+    "printing_code": "ON",
+    "collector_number": "124",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anurid%20Murkdiver",
+    "checked_at": "2026-08-07T11:12:56.903Z"
+  },
   "e7e69583-8326-417e-8a9a-6b917c8ba4b6": {
     "status": "available",
     "name": "Anowon, the Ruin Thief",

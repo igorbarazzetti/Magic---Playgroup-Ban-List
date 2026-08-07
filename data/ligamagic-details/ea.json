@@ -1,4 +1,16 @@
 {
+  "ea393815-0202-4edc-aa1e-6885fe9b20ab": {
+    "status": "available",
+    "name": "Apostle's Blessing",
+    "price_brl": 1.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nova Phyrexia",
+    "printing_code": "NPH",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apostle's%20Blessing",
+    "checked_at": "2026-08-07T11:17:56.694Z"
+  },
   "ea7a8acb-f01f-4a69-9b3c-954d8f0d3155": {
     "status": "available",
     "name": "Alabaster Mage",

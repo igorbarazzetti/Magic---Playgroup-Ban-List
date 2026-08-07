@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Treasure%20Cruise",
     "checked_at": "2026-08-05T20:14:14.924Z"
   },
+  "5b8084b2-0c3c-4a54-86dc-41f4fe513e99": {
+    "status": "available",
+    "name": "Apocalypse Demon",
+    "price_brl": 0.35,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Hora da Devastação",
+    "printing_code": "HOU",
+    "collector_number": "58",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apocalypse%20Demon",
+    "checked_at": "2026-08-07T11:17:07.183Z"
+  },
   "5bd81d2f-46a1-4536-92e7-28c7e1892735": {
     "status": "available",
     "name": "Akki Battle Squad",

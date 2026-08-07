@@ -10,5 +10,17 @@
     "collector_number": "391",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Nexus%20of%20Fate",
     "checked_at": "2026-08-05T20:10:44.303Z"
+  },
+  "6cb8c627-6b2f-48a7-b2d9-8772defea560": {
+    "status": "available",
+    "name": "Aphetto Dredging",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Investida",
+    "printing_code": "ON",
+    "collector_number": "125",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aphetto%20Dredging",
+    "checked_at": "2026-08-07T11:15:46.640Z"
   }
 }

@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alesha%2C%20Who%20Smiles%20at%20Death",
     "checked_at": "2026-08-06T18:17:18.104Z"
   },
+  "697ac261-263b-4879-bf45-6d10d23312ae": {
+    "status": "available",
+    "name": "Ao, the Dawn Sky",
+    "price_brl": 3.29,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven Commander",
+    "printing_code": "SOC",
+    "collector_number": "135",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ao%2C%20the%20Dawn%20Sky",
+    "checked_at": "2026-08-07T11:14:06.494Z"
+  },
   "697bcfe1-ecbf-42a1-bfc7-0766d48ca56b": {
     "status": "available",
     "name": "Dockside Extortionist",
@@ -46,6 +58,18 @@
     "collector_number": "265",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=The%20Tabernacle%20at%20Pendrell%20Vale",
     "checked_at": "2026-08-05T20:13:41.758Z"
+  },
+  "69bcdb42-c170-4848-b95b-f4621867d084": {
+    "status": "available",
+    "name": "Arashin Cleric",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Destino Reescrito",
+    "printing_code": "FRF",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arashin%20Cleric",
+    "checked_at": "2026-08-07T11:27:17.087Z"
   },
   "69c4429e-a8a4-49c3-bb43-9dce4cc6b90a": {
     "status": "available",

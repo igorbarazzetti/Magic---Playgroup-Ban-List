@@ -1,4 +1,16 @@
 {
+  "b655bee5-52d3-467e-b16c-cfc2edf2b1a1": {
+    "status": "available",
+    "name": "Arachnogenesis",
+    "price_brl": 18,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Masters",
+    "printing_code": "CMM",
+    "collector_number": "272",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arachnogenesis",
+    "checked_at": "2026-08-07T11:24:47.051Z"
+  },
   "b6c38a2b-2fe8-4080-80ce-cfa12aaf57f0": {
     "status": "available",
     "name": "Aggression",

@@ -22,5 +22,17 @@
     "collector_number": "2",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adarkar%20Sentinel",
     "checked_at": "2026-08-06T04:00:32.190Z"
+  },
+  "bdecf59c-f8bd-4003-9058-685b70c08837": {
+    "status": "available",
+    "name": "Anurid Brushhopper",
+    "price_brl": 6.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "World Championship Decks",
+    "printing_code": "WCD",
+    "collector_number": "20040453",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anurid%20Brushhopper",
+    "checked_at": "2026-08-07T11:12:46.453Z"
   }
 }

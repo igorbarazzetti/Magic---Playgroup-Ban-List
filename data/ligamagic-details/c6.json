@@ -46,5 +46,17 @@
     "collector_number": "230",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acridian",
     "checked_at": "2026-08-06T03:56:32.577Z"
+  },
+  "c6e28cf0-81c7-4f52-a29b-988cc6fd31ee": {
+    "status": "available",
+    "name": "Appa, Loyal Sky Bison",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Avatar: The Last Airbender",
+    "printing_code": "TLA",
+    "collector_number": "9",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Appa%2C%20Loyal%20Sky%20Bison",
+    "checked_at": "2026-08-07T11:18:56.703Z"
   }
 }

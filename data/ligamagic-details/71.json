@@ -1,4 +1,16 @@
 {
+  "7116db6d-82ea-4675-a0cd-73aaf94be43f": {
+    "status": "available",
+    "name": "Arachnoid",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Quinta Aurora",
+    "printing_code": "5DN",
+    "collector_number": "102",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arachnoid",
+    "checked_at": "2026-08-07T11:24:56.984Z"
+  },
   "7131cdb6-15d0-407e-a7e2-b2a0deef9363": {
     "status": "available",
     "name": "An-Havva Constable",

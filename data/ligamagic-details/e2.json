@@ -1,4 +1,16 @@
 {
+  "e2266f74-56cc-469f-893b-6aedd63873bd": {
+    "status": "available",
+    "name": "Applied Aeronautics",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unstable",
+    "printing_code": "UST",
+    "collector_number": "168",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Applied%20Aeronautics",
+    "checked_at": "2026-08-07T11:20:27.151Z"
+  },
   "e23cd06d-1360-4e5d-aecc-adf902bede69": {
     "status": "available",
     "name": "Anax, Hardened in the Forge",
@@ -22,6 +34,18 @@
     "collector_number": "4",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Double%20Stroke",
     "checked_at": "2026-08-05T20:05:25.486Z"
+  },
+  "e26bf39f-2d1a-4bc1-aed2-d6d4505f1018": {
+    "status": "available",
+    "name": "Apprentice Sorcerer",
+    "price_brl": 2.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portal Segunda Era",
+    "printing_code": "PO2",
+    "collector_number": "32",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apprentice%20Sorcerer",
+    "checked_at": "2026-08-07T11:21:16.836Z"
   },
   "e27193b7-1a47-4555-865d-b1fd4c6d597f": {
     "status": "available",

@@ -1,4 +1,16 @@
 {
+  "d56f1543-2b2d-4ce3-bcfe-41224a0cece4": {
+    "status": "available",
+    "name": "Apostle of Invasion",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Phyrexia: Tudo será um",
+    "printing_code": "ONE",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apostle%20of%20Invasion",
+    "checked_at": "2026-08-07T11:17:36.657Z"
+  },
   "d57c246f-18e5-4523-898c-1509db738363": {
     "status": "available",
     "name": "Acolyte of Affliction",

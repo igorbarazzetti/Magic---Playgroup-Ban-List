@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelfire%20Crusader",
     "checked_at": "2026-08-07T07:58:16.443Z"
   },
+  "1a840210-204d-41cd-afc0-46abf7ea5f87": {
+    "status": "available",
+    "name": "Apocalypse Hydra",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Masters 2015",
+    "printing_code": "MM2",
+    "collector_number": "171",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apocalypse%20Hydra",
+    "checked_at": "2026-08-07T11:17:16.630Z"
+  },
   "1aa1cf50-ee79-4bef-826b-5f1a9e1aa1a5": {
     "status": "available",
     "name": "Acrobatic Maneuver",

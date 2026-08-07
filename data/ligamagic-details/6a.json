@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Altar's%20Reap",
     "checked_at": "2026-08-07T00:45:55.180Z"
   },
+  "6a381121-9134-489c-8c7e-44be1936b0e2": {
+    "status": "available",
+    "name": "Apothecary Stomper",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Foundations",
+    "printing_code": "FDN",
+    "collector_number": "99",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apothecary%20Stomper",
+    "checked_at": "2026-08-07T11:18:26.691Z"
+  },
   "6ad8011d-3471-4369-9d68-b264cc027487": {
     "status": "available",
     "name": "Sol Ring",

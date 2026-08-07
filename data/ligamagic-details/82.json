@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Demonic%20Tutor",
     "checked_at": "2026-08-05T20:05:13.449Z"
   },
+  "820dab0f-3b6b-437c-ba4b-2311437709c3": {
+    "status": "available",
+    "name": "Aphemia, the Cacophony",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros Além da Morte",
+    "printing_code": "THB",
+    "collector_number": "84",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aphemia%2C%20the%20Cacophony",
+    "checked_at": "2026-08-07T11:15:26.558Z"
+  },
   "82333385-631f-4abf-b159-bb367f1c6fd9": {
     "status": "available",
     "name": "Abandon Attachments",
@@ -46,6 +58,18 @@
     "collector_number": "173",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anarchist",
     "checked_at": "2026-08-07T04:47:01.547Z"
+  },
+  "82c8f5dd-563d-4fd0-bd43-7ee2001d3777": {
+    "status": "available",
+    "name": "Apocalypse",
+    "price_brl": 17.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tempestade",
+    "printing_code": "TP",
+    "collector_number": "11",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apocalypse",
+    "checked_at": "2026-08-07T11:16:46.612Z"
   },
   "82f18e7d-5c42-47c4-8e74-3fccc9b7b1f0": {
     "status": "available",

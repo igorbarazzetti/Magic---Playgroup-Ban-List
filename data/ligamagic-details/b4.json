@@ -34,5 +34,17 @@
     "collector_number": "150",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Afterburner%20Expert",
     "checked_at": "2026-08-06T11:07:14.071Z"
+  },
+  "b4d6747c-3516-4e71-be30-af007c6b1dc4": {
+    "status": "available",
+    "name": "Apex Devastator",
+    "price_brl": 38,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3 Commander",
+    "printing_code": "M3C",
+    "collector_number": "220",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apex%20Devastator",
+    "checked_at": "2026-08-07T11:14:46.662Z"
   }
 }

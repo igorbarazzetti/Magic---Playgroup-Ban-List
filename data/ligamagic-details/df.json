@@ -46,5 +46,17 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani%20Goldmane",
     "checked_at": "2026-08-06T14:49:42.022Z"
+  },
+  "dfec65a0-6fb6-463d-aa62-e84a427db217": {
+    "status": "available",
+    "name": "Arahbo, the First Fang",
+    "price_brl": 3.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Foundations",
+    "printing_code": "FDN",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arahbo%2C%20the%20First%20Fang",
+    "checked_at": "2026-08-07T11:26:47.074Z"
   }
 }

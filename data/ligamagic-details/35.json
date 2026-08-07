@@ -1,4 +1,16 @@
 {
+  "3517abe3-eb18-49af-9f1c-b372d2039d99": {
+    "status": "available",
+    "name": "Aquus Steed",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Retorno a Ravnica",
+    "printing_code": "RTR",
+    "collector_number": "29",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aquus%20Steed",
+    "checked_at": "2026-08-07T11:23:56.926Z"
+  },
   "352b64d2-2ae5-44ee-a64f-94932ef545d3": {
     "status": "available",
     "name": "Dread Return",

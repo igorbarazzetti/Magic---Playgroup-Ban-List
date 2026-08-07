@@ -1,4 +1,28 @@
 {
+  "e4125377-34c0-4b54-bdf8-4e88f5d24565": {
+    "status": "available",
+    "name": "Approach of the Second Sun",
+    "price_brl": 8.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Amonkhet",
+    "printing_code": "AKH",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Approach%20of%20the%20Second%20Sun",
+    "checked_at": "2026-08-07T11:21:37.232Z"
+  },
+  "e4212b05-d397-49fb-af8b-9e52a60e6d1e": {
+    "status": "available",
+    "name": "Aquatic Incursion",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Rivais de Ixalan",
+    "printing_code": "RIX",
+    "collector_number": "32",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aquatic%20Incursion",
+    "checked_at": "2026-08-07T11:23:17.406Z"
+  },
   "e46b2ac6-97d6-48f2-aba3-cd92f8e092c6": {
     "status": "available",
     "name": "Aang, Air Nomad",

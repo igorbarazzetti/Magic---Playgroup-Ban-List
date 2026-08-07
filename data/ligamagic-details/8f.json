@@ -22,5 +22,17 @@
     "collector_number": "56",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Accursed%20Horde",
     "checked_at": "2026-08-06T03:51:31.789Z"
+  },
+  "8fea91ee-5849-4c46-8198-fd383d9a55e8": {
+    "status": "available",
+    "name": "Arachnus Spinner",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Masters 2017",
+    "printing_code": "MM3",
+    "collector_number": "117",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arachnus%20Spinner",
+    "checked_at": "2026-08-07T11:25:17.032Z"
   }
 }

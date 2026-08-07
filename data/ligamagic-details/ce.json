@@ -23,6 +23,42 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alania's%20Pathmaker",
     "checked_at": "2026-08-06T18:13:18.291Z"
   },
+  "ce690a21-8117-420e-be00-cd6d9923a812": {
+    "status": "available",
+    "name": "Anzrag's Rampage",
+    "price_brl": 0.27,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassinato na Mansão Karlov",
+    "printing_code": "MKM",
+    "collector_number": "111",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anzrag's%20Rampage",
+    "checked_at": "2026-08-07T11:13:46.497Z"
+  },
+  "cea09261-41a2-43e5-bf43-c4097e6615c6": {
+    "status": "available",
+    "name": "Appeal to Eirdu",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed",
+    "printing_code": "ECL",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Appeal%20to%20Eirdu",
+    "checked_at": "2026-08-07T11:19:36.744Z"
+  },
+  "cea79fa0-2a76-41f3-846f-4d1a6ff5f629": {
+    "status": "available",
+    "name": "Aquastrand Spider",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Masters 2015",
+    "printing_code": "MM2",
+    "collector_number": "140",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aquastrand%20Spider",
+    "checked_at": "2026-08-07T11:22:56.962Z"
+  },
   "ceddea59-de47-4ddd-b424-6e1dcb13ab79": {
     "status": "available",
     "name": "Allied Teamwork",

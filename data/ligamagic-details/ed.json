@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alpharael%2C%20Stonechosen",
     "checked_at": "2026-08-07T00:41:35.731Z"
   },
+  "ed47dd31-f7cd-4ecb-960f-470cb8f4ed3c": {
+    "status": "available",
+    "name": "Aquamorph Entity",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Duel Decks: Speed vs. Cunning",
+    "printing_code": "DDN",
+    "collector_number": "54",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aquamorph%20Entity",
+    "checked_at": "2026-08-07T11:22:46.906Z"
+  },
   "ed7bdb3e-5c51-4547-9266-76a791e0b2b0": {
     "status": "available",
     "name": "Humility",

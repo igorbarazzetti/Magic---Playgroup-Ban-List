@@ -22,5 +22,17 @@
     "collector_number": "1603",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mana%20Crypt",
     "checked_at": "2026-08-05T20:09:29.087Z"
+  },
+  "2cdd85c8-fa60-44ca-bc96-d38f029d2184": {
+    "status": "available",
+    "name": "Anurid Barkripper",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Julgamento",
+    "printing_code": "JU",
+    "collector_number": "104",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anurid%20Barkripper",
+    "checked_at": "2026-08-07T11:12:36.544Z"
   }
 }

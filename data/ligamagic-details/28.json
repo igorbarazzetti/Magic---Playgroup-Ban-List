@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Invention",
     "checked_at": "2026-08-07T07:54:46.276Z"
   },
+  "28d500ea-720f-4332-891e-404fb03acb5c": {
+    "status": "available",
+    "name": "Arachne, Psionic Weaver",
+    "price_brl": 2.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel's Spider-Man",
+    "printing_code": "SPM",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arachne%2C%20Psionic%20Weaver",
+    "checked_at": "2026-08-07T11:24:26.961Z"
+  },
   "28f55673-7aa0-497e-8434-aa70df1b5e04": {
     "status": "available",
     "name": "Annihilate",

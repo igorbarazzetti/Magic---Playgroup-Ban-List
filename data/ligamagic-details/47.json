@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Afflict",
     "checked_at": "2026-08-06T11:06:43.936Z"
   },
+  "4728e320-d29b-4019-8ab5-e45319c77c40": {
+    "status": "available",
+    "name": "Anticognition",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Renascer de Zendikar",
+    "printing_code": "ZNR",
+    "collector_number": "45",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anticognition",
+    "checked_at": "2026-08-07T11:12:06.457Z"
+  },
   "477374dc-042c-48f7-9ebe-99c15d8ae04f": {
     "status": "available",
     "name": "All Will Be One",

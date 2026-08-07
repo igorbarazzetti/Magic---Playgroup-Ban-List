@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani%2C%20Wise%20Counselor",
     "checked_at": "2026-08-06T14:53:32.171Z"
   },
+  "3420da71-0af4-46b4-a994-91a82332d0fb": {
+    "status": "available",
+    "name": "Apothecary Geist",
+    "price_brl": 0.02,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad Remastered",
+    "printing_code": "INR",
+    "collector_number": "10",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apothecary%20Geist",
+    "checked_at": "2026-08-07T11:18:06.684Z"
+  },
   "34841228-31ac-48ac-b6d6-486b5e1e07dd": {
     "status": "available",
     "name": "Abundant Harvest",

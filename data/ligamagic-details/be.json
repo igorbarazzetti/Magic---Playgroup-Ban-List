@@ -46,5 +46,29 @@
     "collector_number": "102",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Herder",
     "checked_at": "2026-08-06T10:57:43.602Z"
+  },
+  "be96b9e1-10ef-4955-8d23-c39384def86d": {
+    "status": "available",
+    "name": "Aradara Express",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaladesh",
+    "printing_code": "KLD",
+    "collector_number": "195",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aradara%20Express",
+    "checked_at": "2026-08-07T11:25:36.987Z"
+  },
+  "be97c400-c690-426d-a39e-4082080a3823": {
+    "status": "available",
+    "name": "Aragorn, King of Gondor",
+    "price_brl": 8.39,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Contos da Terra Média Commander",
+    "printing_code": "LTC",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aragorn%2C%20King%20of%20Gondor",
+    "checked_at": "2026-08-07T11:26:27.045Z"
   }
 }

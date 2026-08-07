@@ -1,4 +1,16 @@
 {
+  "c025d558-aae8-4146-923b-a98035025a42": {
+    "status": "available",
+    "name": "Apex Hawks",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Conspiracy",
+    "printing_code": "CNS",
+    "collector_number": "67",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apex%20Hawks",
+    "checked_at": "2026-08-07T11:14:56.573Z"
+  },
   "c03ae426-2536-4c20-a73a-a24e816f76b0": {
     "status": "available",
     "name": "Akiri, Fearless Voyager",

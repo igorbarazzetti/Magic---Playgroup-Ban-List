@@ -1,4 +1,16 @@
 {
+  "042cc9d9-ad13-401f-b2f5-c2f1558d7e44": {
+    "status": "available",
+    "name": "Arachnoid Adaptation",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marcha das Máquinas",
+    "printing_code": "MOM",
+    "collector_number": "175",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arachnoid%20Adaptation",
+    "checked_at": "2026-08-07T11:25:06.979Z"
+  },
   "0452be2a-e97a-4269-a9e3-b616265ecb2e": {
     "status": "available",
     "name": "Vivi Ornitier",

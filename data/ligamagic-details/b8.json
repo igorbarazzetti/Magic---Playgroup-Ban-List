@@ -34,5 +34,17 @@
     "collector_number": "155",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Vicious%20Battlerager",
     "checked_at": "2026-08-05T20:14:56.968Z"
+  },
+  "b8a3440a-03c5-444c-a1de-252524c3db82": {
+    "status": "available",
+    "name": "Aragorn and Arwen, Wed",
+    "price_brl": 44.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Senhor dos Anéis: Contos da Terra Média",
+    "printing_code": "LTR",
+    "collector_number": "287",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aragorn%20and%20Arwen%2C%20Wed",
+    "checked_at": "2026-08-07T11:25:57.014Z"
   }
 }

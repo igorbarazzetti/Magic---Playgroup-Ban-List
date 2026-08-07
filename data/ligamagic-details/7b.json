@@ -46,5 +46,17 @@
     "collector_number": "122",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agate%20Assault",
     "checked_at": "2026-08-06T11:08:34.061Z"
+  },
+  "7bf8bb41-6f46-492c-b6cf-5cfb29f973a4": {
+    "status": "available",
+    "name": "Apothecary White",
+    "price_brl": 18.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ravnica: Clue Edition",
+    "printing_code": "CLU",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apothecary%20White",
+    "checked_at": "2026-08-07T11:18:36.694Z"
   }
 }

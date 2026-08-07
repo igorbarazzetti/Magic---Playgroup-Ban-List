@@ -1,4 +1,16 @@
 {
+  "0b49dbdc-4f1d-4895-b263-a48c7b7e6b44": {
+    "status": "available",
+    "name": "Apostle of Purifying Light",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2020",
+    "printing_code": "M20",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apostle%20of%20Purifying%20Light",
+    "checked_at": "2026-08-07T11:17:46.683Z"
+  },
   "0baabe39-72ae-47bd-a095-cbf7eb8a6361": {
     "status": "available",
     "name": "Ancient Ziggurat",

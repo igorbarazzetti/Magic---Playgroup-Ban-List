@@ -1,4 +1,16 @@
 {
+  "a74d80ec-9f42-418d-ab98-897acc23c319": {
+    "status": "available",
+    "name": "Apothecary Initiate",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Pântano Sombrio",
+    "printing_code": "SHM",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apothecary%20Initiate",
+    "checked_at": "2026-08-07T11:18:16.676Z"
+  },
   "a75087aa-41bd-4e0f-a118-61b5209356f5": {
     "status": "available",
     "name": "Annihilating Glare",

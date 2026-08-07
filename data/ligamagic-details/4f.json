@@ -34,5 +34,17 @@
     "collector_number": "162",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Harold",
     "checked_at": "2026-08-07T08:01:56.647Z"
+  },
+  "4ffc16e0-1778-4aba-ade3-58146c800f5f": {
+    "status": "available",
+    "name": "Appetite for Brains",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ultimate Masters",
+    "printing_code": "UMA",
+    "collector_number": "83",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Appetite%20for%20Brains",
+    "checked_at": "2026-08-07T11:19:56.769Z"
   }
 }

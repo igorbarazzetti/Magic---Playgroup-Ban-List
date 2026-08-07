@@ -1,4 +1,16 @@
 {
+  "1c371003-e4f0-4d7c-b021-273176772f97": {
+    "status": "available",
+    "name": "April, Reporter of the Weird",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Teenage Mutant Ninja Turtles",
+    "printing_code": "TMT",
+    "collector_number": "30",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=April%2C%20Reporter%20of%20the%20Weird",
+    "checked_at": "2026-08-07T11:22:26.889Z"
+  },
   "1c385880-3eea-45c8-8e89-330ad8ad92b1": {
     "status": "available",
     "name": "Aardvark Sloth",

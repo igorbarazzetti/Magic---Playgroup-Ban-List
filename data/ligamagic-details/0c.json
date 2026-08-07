@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerie%20Auxiliary",
     "checked_at": "2026-08-06T07:18:55.074Z"
   },
+  "0ca1f76d-ae77-490a-8b32-d30ad33afc2d": {
+    "status": "available",
+    "name": "Apocalypse Runner",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Aetherdrift",
+    "printing_code": "DFT",
+    "collector_number": "188",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apocalypse%20Runner",
+    "checked_at": "2026-08-07T11:17:26.651Z"
+  },
   "0cd77ee1-408c-4c51-ac87-24f4fc50083d": {
     "status": "available",
     "name": "Academy Wall",

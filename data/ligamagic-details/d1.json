@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alphinaud%20Leveilleur",
     "checked_at": "2026-08-07T00:41:44.970Z"
   },
+  "d16d2451-1c21-4a6b-8a4a-40ac8cd9fe08": {
+    "status": "available",
+    "name": "Apprentice Wizard",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quarta Edição",
+    "printing_code": "4E",
+    "collector_number": "14",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apprentice%20Wizard",
+    "checked_at": "2026-08-07T11:21:26.808Z"
+  },
   "d17576b2-4a47-4848-8908-3152c8b4afe2": {
     "status": "available",
     "name": "Rebirth",
@@ -70,6 +82,18 @@
     "collector_number": "292",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Sundering%20Titan",
     "checked_at": "2026-08-05T20:13:14.696Z"
+  },
+  "d1a6aa5f-2ad6-4bc7-82f0-4262f66af730": {
+    "status": "available",
+    "name": "Apprentice Necromancer",
+    "price_brl": 6.8,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2017",
+    "printing_code": "C17",
+    "collector_number": "97",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apprentice%20Necromancer",
+    "checked_at": "2026-08-07T11:20:57.247Z"
   },
   "d1b815d1-2848-40d4-a555-66822d1becbc": {
     "status": "available",

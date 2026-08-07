@@ -1,4 +1,16 @@
 {
+  "b52f5850-f1aa-412a-bae9-2ce76c287188": {
+    "status": "available",
+    "name": "Apes of Rath",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tempestade",
+    "printing_code": "TP",
+    "collector_number": "10",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apes%20of%20Rath",
+    "checked_at": "2026-08-07T11:14:26.516Z"
+  },
   "b56c0846-e465-4251-93ea-2e3e7be8dffc": {
     "status": "available",
     "name": "Aerial Guide",

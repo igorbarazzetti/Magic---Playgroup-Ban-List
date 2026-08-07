@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancestral%20Mask",
     "checked_at": "2026-08-07T04:49:41.612Z"
   },
+  "db951ec2-d751-479d-af1f-885d3cf50027": {
+    "status": "available",
+    "name": "Aphotic Wisps",
+    "price_brl": 0.6,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Pântano Sombrio",
+    "printing_code": "SHM",
+    "collector_number": "55",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aphotic%20Wisps",
+    "checked_at": "2026-08-07T11:16:36.635Z"
+  },
   "dba4fd31-8931-42dd-bd86-45479c2abf74": {
     "status": "available",
     "name": "Tolarian Academy",

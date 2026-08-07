@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Wasteland",
     "checked_at": "2026-08-05T20:15:05.983Z"
   },
+  "09ac5adf-f722-417e-b0fc-7ed0d8c9abd6": {
+    "status": "available",
+    "name": "Apathy",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alisios",
+    "printing_code": "WL",
+    "collector_number": "12",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apathy",
+    "checked_at": "2026-08-07T11:14:16.520Z"
+  },
   "09be0f69-9c7f-491f-964d-bfbbc2d4251f": {
     "status": "available",
     "name": "Abbot of Keral Keep",

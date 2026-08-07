@@ -1,4 +1,16 @@
 {
+  "3378fef3-4d8c-4d9e-a338-4abb6f70d410": {
+    "status": "available",
+    "name": "Aqueous Form",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros",
+    "printing_code": "THS",
+    "collector_number": "39",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aqueous%20Form",
+    "checked_at": "2026-08-07T11:23:26.959Z"
+  },
   "33869ba6-13e5-4e48-8963-92f7965648fb": {
     "status": "available",
     "name": "Felidar Guardian",

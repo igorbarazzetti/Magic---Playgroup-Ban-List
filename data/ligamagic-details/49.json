@@ -1,4 +1,16 @@
 {
+  "4900c157-8d9f-4f92-aaca-5246b6e2832e": {
+    "status": "available",
+    "name": "April O'Neil, Live on the Scene",
+    "price_brl": 3.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Teenage Mutant Ninja Turtles Commander",
+    "printing_code": "TMC",
+    "collector_number": "9",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=April%20O'Neil%2C%20Live%20on%20the%20Scene",
+    "checked_at": "2026-08-07T11:22:16.882Z"
+  },
   "4940783f-2534-41c1-b614-5dabb0dff405": {
     "status": "available",
     "name": "Animist's Might",

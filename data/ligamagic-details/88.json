@@ -34,5 +34,17 @@
     "collector_number": "4",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Emissary's%20Ploy",
     "checked_at": "2026-08-05T20:05:40.496Z"
+  },
+  "88fc179c-055b-47c2-b830-1fd2b1377147": {
+    "status": "available",
+    "name": "Applied Geometry",
+    "price_brl": 0.69,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven",
+    "printing_code": "SOS",
+    "collector_number": "172",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Applied%20Geometry",
+    "checked_at": "2026-08-07T11:20:46.891Z"
   }
 }

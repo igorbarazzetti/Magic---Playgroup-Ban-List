@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Invigorate",
     "checked_at": "2026-08-05T20:08:22.980Z"
   },
+  "9277b680-a146-4d4f-9649-39cddafdb585": {
+    "status": "available",
+    "name": "Arashi, the Sky Asunder",
+    "price_brl": 0.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Salvadores Kamigawa",
+    "printing_code": "SOK",
+    "collector_number": "121",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arashi%2C%20the%20Sky%20Asunder",
+    "checked_at": "2026-08-07T11:27:07.101Z"
+  },
   "92b617f9-6e6b-42a0-9c45-6ff5f6193051": {
     "status": "available",
     "name": "Aang's Defense",

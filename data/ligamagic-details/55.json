@@ -22,5 +22,17 @@
     "collector_number": "117",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alpine%20Guide",
     "checked_at": "2026-08-07T00:42:05.630Z"
+  },
+  "55de434c-0fb9-4127-81b6-47c1c0b088fe": {
+    "status": "available",
+    "name": "Aquamoeba",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominaria Remastered",
+    "printing_code": "DMR",
+    "collector_number": "38",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aquamoeba",
+    "checked_at": "2026-08-07T11:22:37.399Z"
   }
 }
