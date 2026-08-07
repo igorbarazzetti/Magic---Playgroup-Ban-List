@@ -23,6 +23,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ad%C3%A9wal%C3%A9%2C%20Breaker%20of%20Chains",
     "checked_at": "2026-08-06T07:08:34.557Z"
   },
+  "e32c0de7-132d-4a39-85fb-da0ed1132878": {
+    "status": "available",
+    "name": "Ascendant Evincar",
+    "price_brl": 3.12,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Décima Edição",
+    "printing_code": "10E",
+    "collector_number": "127",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ascendant%20Evincar",
+    "checked_at": "2026-08-07T21:13:59.115Z"
+  },
+  "e3614df6-ce84-4180-ade1-a1751e8e3c9a": {
+    "status": "available",
+    "name": "Asgardian Citadel",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes",
+    "printing_code": "MSH",
+    "collector_number": "258",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Asgardian%20Citadel",
+    "checked_at": "2026-08-07T21:15:09.197Z"
+  },
   "e3ad2c77-2a41-4a4a-a6bf-e542d0162b88": {
     "status": "available",
     "name": "Akroan Jailer",

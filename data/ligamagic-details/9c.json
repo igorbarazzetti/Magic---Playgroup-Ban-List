@@ -70,5 +70,29 @@
     "collector_number": "78",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amphibious%20Kavu",
     "checked_at": "2026-08-07T04:40:51.325Z"
+  },
+  "9cc69ea5-42a2-4306-ac6d-cff5adb20bcb": {
+    "status": "available",
+    "name": "Ashcoat of the Shadow Swarm",
+    "price_brl": 40.29,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Teenage Mutant Ninja Turtles Source Material",
+    "printing_code": "PZA",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashcoat%20of%20the%20Shadow%20Swarm",
+    "checked_at": "2026-08-07T21:16:49.224Z"
+  },
+  "9ccdb6ca-4d7d-4312-9e4d-5e8644884cbe": {
+    "status": "available",
+    "name": "As Luck Would Have It",
+    "price_brl": 0.68,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unstable",
+    "printing_code": "UST",
+    "collector_number": "102",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=As%20Luck%20Would%20Have%20It",
+    "checked_at": "2026-08-07T21:13:09.088Z"
   }
 }

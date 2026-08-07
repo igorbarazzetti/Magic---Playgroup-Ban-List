@@ -1,4 +1,16 @@
 {
+  "d906965a-0f33-4d75-8abe-66f2cf4817b8": {
+    "status": "available",
+    "name": "Ashen Powder",
+    "price_brl": 1.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Sexta Edição Classica",
+    "printing_code": "6E",
+    "collector_number": "112",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashen%20Powder",
+    "checked_at": "2026-08-07T21:17:39.259Z"
+  },
   "d91ea728-2d69-42cb-bb5d-e2b058f0d7b1": {
     "status": "available",
     "name": "Arcane Encyclopedia",

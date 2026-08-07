@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Memory%20Jar",
     "checked_at": "2026-08-05T20:09:38.083Z"
   },
+  "ebc9ff52-c914-4c48-9d35-0e4cd07741cb": {
+    "status": "available",
+    "name": "Ashiok, Nightmare Muse",
+    "price_brl": 5.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros Além da Morte",
+    "printing_code": "THB",
+    "collector_number": "208",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashiok%2C%20Nightmare%20Muse",
+    "checked_at": "2026-08-07T21:19:19.362Z"
+  },
   "ebd2d760-5ad8-4027-b124-171822f3edfe": {
     "status": "available",
     "name": "Grapeshot",

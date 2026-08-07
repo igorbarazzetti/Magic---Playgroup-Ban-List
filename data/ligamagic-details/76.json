@@ -22,5 +22,17 @@
     "collector_number": "154",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Underdark%20Explorer",
     "checked_at": "2026-08-05T20:14:26.937Z"
+  },
+  "76bdc626-f51b-420a-ac5c-5ab33772fabe": {
+    "status": "available",
+    "name": "Arsenal Thresher",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alara Reunida",
+    "printing_code": "ARB",
+    "collector_number": "131",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arsenal%20Thresher",
+    "checked_at": "2026-08-07T21:07:08.862Z"
   }
 }

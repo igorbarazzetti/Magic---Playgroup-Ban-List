@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amphin%20Cutthroat",
     "checked_at": "2026-08-07T04:41:01.282Z"
   },
+  "e77e8768-3ea8-44f9-aba6-1e023e006946": {
+    "status": "available",
+    "name": "Artifact Mutation",
+    "price_brl": 2.21,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2016",
+    "printing_code": "C16",
+    "collector_number": "179",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Artifact%20Mutation",
+    "checked_at": "2026-08-07T21:08:49.445Z"
+  },
   "e7b2f844-2ba2-4465-bb80-358a4d915f36": {
     "status": "available",
     "name": "Abzan Advantage",

@@ -1,4 +1,16 @@
 {
+  "131dc114-cd48-43d9-93b3-88df85640e09": {
+    "status": "available",
+    "name": "Arrow Volley Trap",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Zendikar",
+    "printing_code": "ZEN",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arrow%20Volley%20Trap",
+    "checked_at": "2026-08-07T21:06:48.958Z"
+  },
   "132ca99a-a3c7-4ed6-b4d0-0edcd7140ca2": {
     "status": "available",
     "name": "Absorb",
@@ -82,6 +94,18 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancestral%20Katana",
     "checked_at": "2026-08-07T04:49:21.694Z"
+  },
+  "13ac12db-d04b-4211-90df-886e1c597e8f": {
+    "status": "available",
+    "name": "Arwen's Gift",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Senhor dos Anéis: Contos da Terra Média",
+    "printing_code": "LTR",
+    "collector_number": "39",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arwen's%20Gift",
+    "checked_at": "2026-08-07T21:12:19.078Z"
   },
   "13f63240-a6bb-4333-a3dd-818725c6fb73": {
     "status": "available",

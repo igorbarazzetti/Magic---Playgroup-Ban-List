@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ainok%20Wayfarer",
     "checked_at": "2026-08-06T14:45:41.878Z"
   },
+  "81728b98-8cf9-4734-a318-69184bb4d15c": {
+    "status": "available",
+    "name": "Arrest",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Masters 2015",
+    "printing_code": "MM2",
+    "collector_number": "9",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arrest",
+    "checked_at": "2026-08-07T21:05:18.762Z"
+  },
   "81c6c4f0-81ad-463c-a42b-60a73e6d70f3": {
     "status": "available",
     "name": "Alexios, Deimos of Kosmos",

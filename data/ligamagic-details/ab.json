@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerial%20Volley",
     "checked_at": "2026-08-06T07:18:35.597Z"
   },
+  "ab9f03b4-eb67-4709-904d-abf4d491f0ee": {
+    "status": "available",
+    "name": "Ash Zealot",
+    "price_brl": 0.26,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Retorno a Ravnica",
+    "printing_code": "RTR",
+    "collector_number": "86",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ash%20Zealot",
+    "checked_at": "2026-08-07T21:15:49.213Z"
+  },
   "aba0f637-2d8d-43df-9002-08541ab42944": {
     "status": "available",
     "name": "Anthem of Rakdos",

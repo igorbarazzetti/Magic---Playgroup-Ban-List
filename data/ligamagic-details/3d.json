@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abomination%20of%20Gudul",
     "checked_at": "2026-08-06T00:10:47.017Z"
   },
+  "3dce6c6c-599f-4e35-ae15-728c5e78dee1": {
+    "status": "available",
+    "name": "Arni Brokenbrow",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaldheim",
+    "printing_code": "KHM",
+    "collector_number": "120",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arni%20Brokenbrow",
+    "checked_at": "2026-08-07T21:03:58.708Z"
+  },
   "3deb19f6-c1a3-4bca-a6ae-df5d0b42a66e": {
     "status": "available",
     "name": "Natural Unity",
@@ -94,5 +106,17 @@
     "collector_number": "9",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Natural%20Unity",
     "checked_at": "2026-08-05T20:10:38.265Z"
+  },
+  "3debd5c7-da3c-4130-8ed9-e156e10034b6": {
+    "status": "available",
+    "name": "Arnyn, Deathbloom Botanist",
+    "price_brl": 0.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven",
+    "printing_code": "SOS",
+    "collector_number": "74",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arnyn%2C%20Deathbloom%20Botanist",
+    "checked_at": "2026-08-07T21:04:59.338Z"
   }
 }

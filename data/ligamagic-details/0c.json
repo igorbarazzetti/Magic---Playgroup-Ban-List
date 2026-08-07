@@ -1,4 +1,16 @@
 {
+  "0c061a1b-206a-4fcc-92e5-30c8ed9d65c1": {
+    "status": "available",
+    "name": "Artistic Process",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven",
+    "printing_code": "SOS",
+    "collector_number": "108",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Artistic%20Process",
+    "checked_at": "2026-08-07T21:11:28.994Z"
+  },
   "0c201f79-9eca-48c8-88ba-a20fa6918a07": {
     "status": "available",
     "name": "Anowon, the Ruin Sage",

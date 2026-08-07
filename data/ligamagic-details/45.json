@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Vexing%20Bauble",
     "checked_at": "2026-08-05T20:14:54.487Z"
   },
+  "451e8ece-7389-4d52-8bc9-450cb5e53e6a": {
+    "status": "available",
+    "name": "Ascend from Avernus",
+    "price_brl": 15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends: Batalha por Portal de Baldur (Extended Art)",
+    "printing_code": "EXCLB",
+    "collector_number": "554",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ascend%20from%20Avernus",
+    "checked_at": "2026-08-07T21:13:29.071Z"
+  },
   "452d98ae-0fa2-4cff-9e18-eecd76ddb20b": {
     "status": "available",
     "name": "Anthropede",
@@ -46,6 +58,18 @@
     "collector_number": "9",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambush%20Party",
     "checked_at": "2026-08-07T04:38:21.601Z"
+  },
+  "455f66eb-3e33-4b51-9ec1-32288bdd3a68": {
+    "status": "available",
+    "name": "Ashen Rider",
+    "price_brl": 0.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros",
+    "printing_code": "THS",
+    "collector_number": "187",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashen%20Rider",
+    "checked_at": "2026-08-07T21:17:49.290Z"
   },
   "4567a528-75f0-4ea6-b927-3a500caf76ac": {
     "status": "available",

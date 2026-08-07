@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Primeval%20Titan",
     "checked_at": "2026-08-05T20:11:20.412Z"
   },
+  "ae90daea-6644-4235-bca6-b94ee9925f63": {
+    "status": "available",
+    "name": "Arno Dorian",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassin's Creed (Memory Corridor)",
+    "printing_code": "MCACR",
+    "collector_number": "139",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arno%20Dorian",
+    "checked_at": "2026-08-07T21:04:48.761Z"
+  },
   "aeba5c63-aa80-4f31-90fb-f404c9a3057d": {
     "status": "available",
     "name": "Aphetto Vulture",

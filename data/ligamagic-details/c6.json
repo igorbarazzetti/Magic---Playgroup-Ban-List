@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Renewal",
     "checked_at": "2026-08-07T07:55:26.331Z"
   },
+  "c627f1a8-9a57-4eb9-a8a5-2c285446fe97": {
+    "status": "available",
+    "name": "Ashenmoor Cohort",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Pântano Sombrio",
+    "printing_code": "SHM",
+    "collector_number": "56",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashenmoor%20Cohort",
+    "checked_at": "2026-08-07T21:18:09.411Z"
+  },
   "c6424a3e-dbc7-403f-867f-a81cccd17ab8": {
     "status": "available",
     "name": "Arcbound Reclaimer",

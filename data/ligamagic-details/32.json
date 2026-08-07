@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Lotus%20Petal",
     "checked_at": "2026-08-05T20:09:20.061Z"
   },
+  "32e7385e-525e-4925-8cfd-bfea21fcd1bf": {
+    "status": "available",
+    "name": "Asari Captain",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kamigawa: Dinastia Neon (Variantes)",
+    "printing_code": "VNEO",
+    "collector_number": "327",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Asari%20Captain",
+    "checked_at": "2026-08-07T21:13:19.089Z"
+  },
   "32fb0096-546c-4633-b6e3-ba3f2d9fa49c": {
     "status": "available",
     "name": "Arctic Treeline",

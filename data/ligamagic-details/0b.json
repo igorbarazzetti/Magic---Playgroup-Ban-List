@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archangel%20Elspeth",
     "checked_at": "2026-08-07T13:59:54.216Z"
   },
+  "0b2e9571-0c28-4a8f-9ba7-0147b40290a7": {
+    "status": "available",
+    "name": "Arrogant Poet",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Strixhaven: Escola de Magos",
+    "printing_code": "STX",
+    "collector_number": "63",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arrogant%20Poet",
+    "checked_at": "2026-08-07T21:06:08.864Z"
+  },
   "0b49dbdc-4f1d-4895-b263-a48c7b7e6b44": {
     "status": "available",
     "name": "Apostle of Purifying Light",

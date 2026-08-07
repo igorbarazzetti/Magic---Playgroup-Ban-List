@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcbond",
     "checked_at": "2026-08-07T13:54:54.130Z"
   },
+  "01906aae-fc53-40b0-a386-dae43e4f437f": {
+    "status": "available",
+    "name": "Ashen Monstrosity",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Traidores de Kamigawa",
+    "printing_code": "BOK",
+    "collector_number": "93",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashen%20Monstrosity",
+    "checked_at": "2026-08-07T21:17:29.266Z"
+  },
   "01cd52f9-7fac-4396-bec7-d06bf683e011": {
     "status": "available",
     "name": "Akki Rockspeaker",

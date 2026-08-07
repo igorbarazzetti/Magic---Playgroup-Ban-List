@@ -1,4 +1,16 @@
 {
+  "68097fd5-b2c4-4542-a07e-4e51bcfccdc6": {
+    "status": "available",
+    "name": "Artful Looter",
+    "price_brl": 0.12,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unhinged",
+    "printing_code": "UH",
+    "collector_number": "25",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Artful%20Looter",
+    "checked_at": "2026-08-07T21:07:58.870Z"
+  },
   "682a0770-8fe0-4142-aa0c-b60af3628a33": {
     "status": "available",
     "name": "A Tale for the Ages",

@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani%20Goldmane",
     "checked_at": "2026-08-06T14:49:42.022Z"
   },
+  "dfc982a2-9ae8-4206-a2d7-4dcfcde02451": {
+    "status": "available",
+    "name": "Arterial Alchemy",
+    "price_brl": 1.29,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Voto Carmesim (Commander)",
+    "printing_code": "VOC",
+    "collector_number": "23",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arterial%20Alchemy",
+    "checked_at": "2026-08-07T21:07:28.930Z"
+  },
   "dfec65a0-6fb6-463d-aa62-e84a427db217": {
     "status": "available",
     "name": "Arahbo, the First Fang",

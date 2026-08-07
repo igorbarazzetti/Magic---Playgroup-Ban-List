@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arashin%20War%20Beast",
     "checked_at": "2026-08-07T13:45:33.541Z"
   },
+  "75d667ec-86f4-4850-a3b6-e7a9fc7053b0": {
+    "status": "available",
+    "name": "Army of the Damned",
+    "price_brl": 1.44,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad",
+    "printing_code": "ISD",
+    "collector_number": "87",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Army%20of%20the%20Damned",
+    "checked_at": "2026-08-07T21:03:38.668Z"
+  },
   "75ffebc4-8db9-4de6-a330-e3f41cdccecc": {
     "status": "available",
     "name": "Archmage's Newt",

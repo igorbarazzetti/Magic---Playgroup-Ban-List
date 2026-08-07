@@ -1,4 +1,16 @@
 {
+  "e801c5bd-68e6-4a74-bed3-addd18db3b2b": {
+    "status": "available",
+    "name": "Arms Race",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra dos Irmãos",
+    "printing_code": "BRO",
+    "collector_number": "126",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arms%20Race",
+    "checked_at": "2026-08-07T21:03:19.335Z"
+  },
   "e89e1fae-bac3-4cc0-a233-24b9e08a5290": {
     "status": "available",
     "name": "Fall from Favor",

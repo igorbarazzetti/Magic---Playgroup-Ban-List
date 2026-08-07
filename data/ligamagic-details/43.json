@@ -1,4 +1,16 @@
 {
+  "4317f4f1-d339-4940-b46e-659641035595": {
+    "status": "available",
+    "name": "Ascended Lawmage",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Conspiracy: Take the Crown",
+    "printing_code": "CN2",
+    "collector_number": "198",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ascended%20Lawmage",
+    "checked_at": "2026-08-07T21:14:29.222Z"
+  },
   "432b37a5-d32a-4b78-91ab-860aa026b7cc": {
     "status": "available",
     "name": "Archangel Avacyn // Avacyn, the Purifier",
@@ -34,6 +46,18 @@
     "collector_number": "3",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archon%20of%20Redemption",
     "checked_at": "2026-08-07T17:21:04.422Z"
+  },
+  "436e7548-f8d5-43af-947d-b382da0d19b3": {
+    "status": "available",
+    "name": "Arna Kennerüd, Skycaptain",
+    "price_brl": 1.39,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3",
+    "printing_code": "MH3",
+    "collector_number": "178",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arna%20Kenner%C3%BCd%2C%20Skycaptain",
+    "checked_at": "2026-08-07T21:03:48.677Z"
   },
   "43827acb-70cf-44a3-8560-e9f7330c835e": {
     "status": "available",

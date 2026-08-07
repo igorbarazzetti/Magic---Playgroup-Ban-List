@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alela%2C%20Artful%20Provocateur",
     "checked_at": "2026-08-06T18:15:57.688Z"
   },
+  "93723b12-db34-4047-885e-8606415b1553": {
+    "status": "available",
+    "name": "Ashiok, Dream Render",
+    "price_brl": 4.95,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra da Centelha",
+    "printing_code": "WAR",
+    "collector_number": "228",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashiok%2C%20Dream%20Render",
+    "checked_at": "2026-08-07T21:19:09.345Z"
+  },
   "9373a176-a5e9-4fdc-906b-bc6aef657e5b": {
     "status": "available",
     "name": "Aether Inspector",
@@ -58,6 +70,18 @@
     "collector_number": "233",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arc%20Spitter",
     "checked_at": "2026-08-07T13:49:43.735Z"
+  },
+  "9396546c-d067-4ce3-9c3d-b62cca970b4f": {
+    "status": "available",
+    "name": "Asceticism",
+    "price_brl": 31.26,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Cicatrizes de Mirrodin",
+    "printing_code": "SOM",
+    "collector_number": "110",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Asceticism",
+    "checked_at": "2026-08-07T21:14:59.129Z"
   },
   "93ee2ea1-4f9b-47dd-b7d4-b0ed5a26d719": {
     "status": "available",

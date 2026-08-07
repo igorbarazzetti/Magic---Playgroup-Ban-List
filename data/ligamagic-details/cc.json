@@ -46,5 +46,17 @@
     "collector_number": "82",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Undercity%20Informer",
     "checked_at": "2026-08-05T20:14:23.866Z"
+  },
+  "ccfb612a-762d-41a7-bc3d-268c6abf8e85": {
+    "status": "available",
+    "name": "Arrester's Admonition",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lealdade em Ravnica",
+    "printing_code": "RNA",
+    "collector_number": "31",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arrester's%20Admonition",
+    "checked_at": "2026-08-07T21:05:29.193Z"
   }
 }

@@ -10,5 +10,17 @@
     "collector_number": "104",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcbound%20Worker",
     "checked_at": "2026-08-07T13:58:14.126Z"
+  },
+  "6dccf583-1045-4058-86cc-ebbcc8de080e": {
+    "status": "available",
+    "name": "Artificer Class",
+    "price_brl": 29.89,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends: Batalha por Portal de Baldur",
+    "printing_code": "CLB",
+    "collector_number": "663",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Artificer%20Class",
+    "checked_at": "2026-08-07T21:09:18.923Z"
   }
 }

@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alchemist's%20Greeting",
     "checked_at": "2026-08-06T18:14:47.678Z"
   },
+  "9abecd23-a2d9-43c7-8d01-f8afdc53026e": {
+    "status": "available",
+    "name": "Arvinox, the Mind Flail",
+    "price_brl": 2.28,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Noctumbra: A Casa dos Horrores Commander",
+    "printing_code": "DSC",
+    "collector_number": "130",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arvinox%2C%20the%20Mind%20Flail",
+    "checked_at": "2026-08-07T21:11:59.038Z"
+  },
   "9ae13026-960a-4d31-b775-d47209a1e313": {
     "status": "available",
     "name": "Ardyn, the Usurper",

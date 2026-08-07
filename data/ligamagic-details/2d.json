@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angrath's%20Marauders",
     "checked_at": "2026-08-07T09:22:25.996Z"
   },
+  "2d4aedc5-31c5-4281-98e1-b0c2233c3c8a": {
+    "status": "available",
+    "name": "Artifact Blast",
+    "price_brl": 13.28,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Antiquities",
+    "printing_code": "AQ",
+    "collector_number": "7",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Artifact%20Blast",
+    "checked_at": "2026-08-07T21:08:38.913Z"
+  },
   "2dd7a4dc-902a-4e85-8a3b-c96a898fba86": {
     "status": "available",
     "name": "Animate Artifact",

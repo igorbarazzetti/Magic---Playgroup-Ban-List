@@ -58,5 +58,17 @@
     "collector_number": "3",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aftershock",
     "checked_at": "2026-08-06T11:08:04.573Z"
+  },
+  "e6d13c0d-23ed-41f5-a726-f18d4bb44c9a": {
+    "status": "available",
+    "name": "Ashcoat Bear",
+    "price_brl": 0.12,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Espiral Temporal",
+    "printing_code": "TS",
+    "collector_number": "190",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashcoat%20Bear",
+    "checked_at": "2026-08-07T21:16:39.231Z"
   }
 }

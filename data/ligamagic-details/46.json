@@ -118,5 +118,29 @@
     "collector_number": "27",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Excavation",
     "checked_at": "2026-08-07T07:49:26.006Z"
+  },
+  "46e311ef-c86e-4aad-8b42-ef0d68a90c2e": {
+    "status": "available",
+    "name": "Arrows of Justice",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portões Violados",
+    "printing_code": "GTC",
+    "collector_number": "211",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arrows%20of%20Justice",
+    "checked_at": "2026-08-07T21:06:58.847Z"
+  },
+  "46fbcbdf-73d0-4fa2-8db7-3b19bfc7ac22": {
+    "status": "available",
+    "name": "Ashen Ghoul",
+    "price_brl": 0.85,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Era Glacial",
+    "printing_code": "IA",
+    "collector_number": "17",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashen%20Ghoul",
+    "checked_at": "2026-08-07T21:17:19.242Z"
   }
 }

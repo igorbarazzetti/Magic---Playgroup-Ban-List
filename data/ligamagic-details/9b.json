@@ -22,5 +22,17 @@
     "collector_number": "123",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arc%20Runner",
     "checked_at": "2026-08-07T13:49:23.737Z"
+  },
+  "9bd3a4bb-cc12-4e5f-a33f-77ab0c7788db": {
+    "status": "available",
+    "name": "Artifact Ward",
+    "price_brl": 8.46,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Antiquities",
+    "printing_code": "AQ",
+    "collector_number": "9",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Artifact%20Ward",
+    "checked_at": "2026-08-07T21:09:08.920Z"
   }
 }

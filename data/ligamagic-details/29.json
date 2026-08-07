@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aetheric%20Amplifier",
     "checked_at": "2026-08-06T11:02:43.746Z"
   },
+  "295f8b8d-102a-47af-93c2-f8182c5f11ca": {
+    "status": "available",
+    "name": "Ascendant Dustspeaker",
+    "price_brl": 0.02,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven",
+    "printing_code": "SOS",
+    "collector_number": "8",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ascendant%20Dustspeaker",
+    "checked_at": "2026-08-07T21:13:49.226Z"
+  },
   "29737a60-3ebd-40d9-b935-c4f54b90d45d": {
     "status": "available",
     "name": "Windswept Heath",

@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Griselbrand",
     "checked_at": "2026-08-05T20:07:22.774Z"
   },
+  "f779754a-3de9-4621-b190-cf32949da0e8": {
+    "status": "available",
+    "name": "Ashenmoor Liege",
+    "price_brl": 0.65,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Double Masters 2022",
+    "printing_code": "2X2",
+    "collector_number": "174",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashenmoor%20Liege",
+    "checked_at": "2026-08-07T21:18:29.309Z"
+  },
   "f785133a-636a-487d-8d56-e07012e5d732": {
     "status": "available",
     "name": "Animate Library",

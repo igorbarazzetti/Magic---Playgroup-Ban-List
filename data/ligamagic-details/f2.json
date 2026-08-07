@@ -1,4 +1,16 @@
 {
+  "f202712d-7cd1-47aa-9664-526a884a1be2": {
+    "status": "available",
+    "name": "Arrogant Outlaw",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Caçada à Meia-noite",
+    "printing_code": "MID",
+    "collector_number": "84",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arrogant%20Outlaw",
+    "checked_at": "2026-08-07T21:05:58.779Z"
+  },
   "f227ce07-7e96-4a36-ab7c-9be6e777d649": {
     "status": "available",
     "name": "Arlinn, the Pack's Hope // Arlinn, the Moon's Fury",
@@ -22,6 +34,18 @@
     "collector_number": "43",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerial%20Doombot",
     "checked_at": "2026-08-06T07:16:45.629Z"
+  },
+  "f2cedb38-12b0-4489-a62b-9b6a3776d695": {
+    "status": "available",
+    "name": "Arnjlot's Ascent",
+    "price_brl": 0.02,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Era Glacial",
+    "printing_code": "IA",
+    "collector_number": "16",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arnjlot's%20Ascent",
+    "checked_at": "2026-08-07T21:04:38.746Z"
   },
   "f2cf087a-d89a-4145-9394-945ce41c8cca": {
     "status": "available",

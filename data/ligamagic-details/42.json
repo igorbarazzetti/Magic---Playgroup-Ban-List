@@ -1,4 +1,16 @@
 {
+  "4284ff9f-4085-4874-abc7-95467cb759a5": {
+    "status": "available",
+    "name": "Artificer's Dragon",
+    "price_brl": 0.8,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra dos Irmãos",
+    "printing_code": "BRO",
+    "collector_number": "291",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Artificer's%20Dragon",
+    "checked_at": "2026-08-07T21:09:38.936Z"
+  },
   "42aa599f-de2f-411a-8cf3-f5cfb40568b3": {
     "status": "available",
     "name": "Angelheart Protector",

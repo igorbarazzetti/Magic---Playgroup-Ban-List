@@ -94,5 +94,17 @@
     "collector_number": "98",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amped%20Up",
     "checked_at": "2026-08-07T04:40:31.241Z"
+  },
+  "97e7ada6-dee1-4bb3-a42d-38a61d946bd4": {
+    "status": "available",
+    "name": "Asha's Favor",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Confluência",
+    "printing_code": "CON",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Asha's%20Favor",
+    "checked_at": "2026-08-07T21:15:59.169Z"
   }
 }

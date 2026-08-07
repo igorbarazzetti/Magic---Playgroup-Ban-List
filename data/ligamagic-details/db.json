@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Animating%20Faerie%20%2F%2F%20Bring%20to%20Life",
     "checked_at": "2026-08-07T19:53:47.762Z"
   },
+  "db75577d-1001-4088-999f-40684218a07f": {
+    "status": "available",
+    "name": "Ashe, Princess of Dalmasca",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY",
+    "printing_code": "FIN",
+    "collector_number": "7",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashe%2C%20Princess%20of%20Dalmasca",
+    "checked_at": "2026-08-07T21:16:59.229Z"
+  },
   "db951ec2-d751-479d-af1f-885d3cf50027": {
     "status": "available",
     "name": "Aphotic Wisps",

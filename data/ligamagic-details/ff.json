@@ -1,4 +1,16 @@
 {
+  "ff192482-3808-4291-a31e-3dfaeb49cda2": {
+    "status": "available",
+    "name": "Artistic Refusal",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marcha das Máquinas",
+    "printing_code": "MOM",
+    "collector_number": "46",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Artistic%20Refusal",
+    "checked_at": "2026-08-07T21:11:39.008Z"
+  },
   "ff321c13-03ae-4cb9-b371-1242290f8433": {
     "status": "available",
     "name": "Aggressive Mining",

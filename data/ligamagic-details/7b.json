@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Zirda%2C%20the%20Dawnwaker",
     "checked_at": "2026-08-05T20:15:48.034Z"
   },
+  "7b58920e-3e90-44ed-a0e9-4cb1b7359a5b": {
+    "status": "available",
+    "name": "Artful Maneuver",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dragões de Tarkir",
+    "printing_code": "DTK",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Artful%20Maneuver",
+    "checked_at": "2026-08-07T21:08:09.030Z"
+  },
   "7b75b74c-6003-4b34-bae3-2c9e2f880042": {
     "status": "available",
     "name": "Armorer Guildmage",

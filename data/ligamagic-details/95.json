@@ -1,4 +1,28 @@
 {
+  "95161e23-e4c4-411f-bce5-58a02abc0958": {
+    "status": "available",
+    "name": "Arnim Zola, Bio-Fanatic",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes",
+    "printing_code": "MSH",
+    "collector_number": "86",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arnim%20Zola%2C%20Bio-Fanatic",
+    "checked_at": "2026-08-07T21:04:28.726Z"
+  },
+  "9519a4ea-c4a0-4127-b06a-aac9ffaf7a32": {
+    "status": "available",
+    "name": "Arwen, Mortal Queen",
+    "price_brl": 47.19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Senhor dos Anéis: Contos da Terra Média",
+    "printing_code": "LTR",
+    "collector_number": "193",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arwen%2C%20Mortal%20Queen",
+    "checked_at": "2026-08-07T21:12:09.024Z"
+  },
   "9527d2dc-d2e2-4259-aefe-2342ea07bc63": {
     "status": "available",
     "name": "An Unearthly Child",

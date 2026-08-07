@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Annex",
     "checked_at": "2026-08-07T09:27:46.247Z"
   },
+  "5f2961e8-83b0-4b76-8654-11b5e17aaa3b": {
+    "status": "available",
+    "name": "Art Appreciation",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unfinity",
+    "printing_code": "UNF",
+    "collector_number": "99",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Art%20Appreciation",
+    "checked_at": "2026-08-07T21:07:18.850Z"
+  },
   "5f358544-7319-4f8e-9d60-a410c4feb774": {
     "status": "available",
     "name": "Alluring Siren",
@@ -70,5 +82,17 @@
     "collector_number": "53",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Glimpse%20of%20Nature",
     "checked_at": "2026-08-05T20:06:58.713Z"
+  },
+  "5ffbbce1-fe38-40dc-a7c3-2055ae86c6c5": {
+    "status": "available",
+    "name": "Arwen Undómiel",
+    "price_brl": 0.28,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Senhor dos Anéis: Contos da Terra Média",
+    "printing_code": "LTR",
+    "collector_number": "194",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arwen%20Und%C3%B3miel",
+    "checked_at": "2026-08-07T21:12:29.035Z"
   }
 }

@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Spike",
     "checked_at": "2026-08-06T11:00:03.690Z"
   },
+  "e4b3e0af-5caa-47c1-b5be-c56a875cbb15": {
+    "status": "available",
+    "name": "As Foretold",
+    "price_brl": 1.79,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Amonkhet",
+    "printing_code": "AKH",
+    "collector_number": "42",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=As%20Foretold",
+    "checked_at": "2026-08-07T21:12:59.068Z"
+  },
   "e4be4071-7910-460f-90f3-6c4d8cc9db65": {
     "status": "available",
     "name": "Alpharael, Dreaming Acolyte",

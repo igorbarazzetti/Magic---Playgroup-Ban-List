@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abstract%20Performance",
     "checked_at": "2026-08-06T00:14:47.196Z"
   },
+  "3e8abec7-1e18-460a-9d88-30969755ebd2": {
+    "status": "available",
+    "name": "Artisan of Forms",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros",
+    "printing_code": "THS",
+    "collector_number": "40",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Artisan%20of%20Forms",
+    "checked_at": "2026-08-07T21:10:48.989Z"
+  },
   "3ecc4b57-3e0c-48b8-9952-e4b63b6bc45d": {
     "status": "available",
     "name": "Appeal // Authority",

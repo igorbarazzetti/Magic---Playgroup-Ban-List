@@ -118,5 +118,17 @@
     "collector_number": "152",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aeromunculus",
     "checked_at": "2026-08-06T07:20:25.125Z"
+  },
+  "a0ce2f5a-9c0b-4801-9105-72f84d8a4a1f": {
+    "status": "available",
+    "name": "Arrow Storm",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Khans de Tarkir",
+    "printing_code": "KTK",
+    "collector_number": "98",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arrow%20Storm",
+    "checked_at": "2026-08-07T21:06:39.589Z"
   }
 }

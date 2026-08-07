@@ -82,5 +82,17 @@
     "collector_number": "270",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Upheaval",
     "checked_at": "2026-08-05T20:14:38.915Z"
+  },
+  "7cb47a7e-fe60-45a2-9c07-bd5c6ddca82d": {
+    "status": "available",
+    "name": "Arni Slays the Troll",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaldheim",
+    "printing_code": "KHM",
+    "collector_number": "201",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arni%20Slays%20the%20Troll",
+    "checked_at": "2026-08-07T21:04:18.689Z"
   }
 }

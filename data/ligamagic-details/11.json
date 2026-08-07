@@ -1,4 +1,16 @@
 {
+  "115fd5ac-460b-49a3-83ed-9d56a7aecb14": {
+    "status": "available",
+    "name": "Artisan's Sorrow",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros",
+    "printing_code": "THS",
+    "collector_number": "151",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Artisan's%20Sorrow",
+    "checked_at": "2026-08-07T21:11:09.002Z"
+  },
   "11669fe5-9298-4e1a-a4f7-6a4598dbc8dd": {
     "status": "available",
     "name": "Agonizing Syphon",

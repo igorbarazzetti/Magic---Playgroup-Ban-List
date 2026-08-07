@@ -34,5 +34,17 @@
     "collector_number": "45",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anchor%20to%20Reality",
     "checked_at": "2026-08-07T04:50:51.675Z"
+  },
+  "67b4a4bc-0b02-4cef-b5c8-41c839eaf0cd": {
+    "status": "available",
+    "name": "Ascending Aven",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Investida",
+    "printing_code": "ON",
+    "collector_number": "68",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ascending%20Aven",
+    "checked_at": "2026-08-07T21:14:39.127Z"
   }
 }

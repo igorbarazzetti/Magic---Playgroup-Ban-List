@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=High%20Tide",
     "checked_at": "2026-08-05T20:07:34.851Z"
   },
+  "dc7f0c33-80ea-453e-a237-473f077f038e": {
+    "status": "available",
+    "name": "Arrogant Wurm",
+    "price_brl": 23.51,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "World Championship Decks",
+    "printing_code": "WCD",
+    "collector_number": "20041181",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arrogant%20Wurm",
+    "checked_at": "2026-08-07T21:06:28.818Z"
+  },
   "dca25245-523a-4587-a059-a14ee2ef908d": {
     "status": "available",
     "name": "Armored Armadillo",

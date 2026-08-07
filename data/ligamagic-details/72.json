@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aberrant%20Researcher",
     "checked_at": "2026-08-06T00:18:05.426Z"
   },
+  "7246e3a0-f8b7-4c1b-ae75-a1eb8990a728": {
+    "status": "available",
+    "name": "Ashen Firebeast",
+    "price_brl": 0.39,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Odisséia",
+    "printing_code": "OD",
+    "collector_number": "174",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashen%20Firebeast",
+    "checked_at": "2026-08-07T21:17:09.244Z"
+  },
   "727f4734-53cc-4279-ba51-dfa26c4ceb1d": {
     "status": "available",
     "name": "Aegis Automaton",

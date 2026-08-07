@@ -47,6 +47,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amber%20Gristle%20O'Maul",
     "checked_at": "2026-08-07T04:35:11.009Z"
   },
+  "d14a8d90-13c0-4eb0-ab7b-86edb2c7fb96": {
+    "status": "available",
+    "name": "Artillerize",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nova Phyrexia",
+    "printing_code": "NPH",
+    "collector_number": "79",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Artillerize",
+    "checked_at": "2026-08-07T21:10:28.960Z"
+  },
+  "d14d9f44-9cff-4a11-be86-0cea5fe9b551": {
+    "status": "available",
+    "name": "Artificer's Hex",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2014",
+    "printing_code": "M14",
+    "collector_number": "85",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Artificer's%20Hex",
+    "checked_at": "2026-08-07T21:09:59.008Z"
+  },
   "d16783a4-9980-451b-9af0-33866980bc8d": {
     "status": "available",
     "name": "Alphinaud Leveilleur",

@@ -1,4 +1,16 @@
 {
+  "a35e1882-b878-49cf-a06c-be12a06d4977": {
+    "status": "available",
+    "name": "Arrogant Bloodlord",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ascensão dos Eldrazi",
+    "printing_code": "ROE",
+    "collector_number": "94",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arrogant%20Bloodlord",
+    "checked_at": "2026-08-07T21:05:48.769Z"
+  },
   "a361fdd1-7f97-4aed-8e24-ab2a03387f73": {
     "status": "available",
     "name": "Adult Gold Dragon",

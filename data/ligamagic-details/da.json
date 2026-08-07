@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=All-Fates%20Stalker",
     "checked_at": "2026-08-07T00:33:55.188Z"
   },
+  "dad0b69f-ef33-475b-aebc-3a3ca880feb1": {
+    "status": "available",
+    "name": "Artillery Blast",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominária Unida",
+    "printing_code": "DMU",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Artillery%20Blast",
+    "checked_at": "2026-08-07T21:10:39.047Z"
+  },
   "dae20bcd-dc24-4f9d-9400-a6f013b49f14": {
     "status": "available",
     "name": "Agent Phil Coulson",

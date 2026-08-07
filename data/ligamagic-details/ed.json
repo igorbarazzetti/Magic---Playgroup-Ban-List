@@ -1,4 +1,16 @@
 {
+  "ed10bb4c-f7ef-4046-8dde-465041b55078": {
+    "status": "available",
+    "name": "Artificer's Epiphany",
+    "price_brl": 0.02,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Duel Decks: Elves vs. Inventors",
+    "printing_code": "DDU",
+    "collector_number": "36",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Artificer's%20Epiphany",
+    "checked_at": "2026-08-07T21:09:48.953Z"
+  },
   "ed43f1f9-ef96-47bc-8a54-e59154319f9d": {
     "status": "available",
     "name": "Alpharael, Stonechosen",
@@ -82,6 +94,18 @@
     "collector_number": "85",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abnormal%20Endurance",
     "checked_at": "2026-08-06T00:09:46.969Z"
+  },
+  "edc193bf-2987-4c7b-9cf3-69089ff13764": {
+    "status": "available",
+    "name": "Artful Takedown",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Guildas de Ravnica",
+    "printing_code": "GRN",
+    "collector_number": "151",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Artful%20Takedown",
+    "checked_at": "2026-08-07T21:08:18.903Z"
   },
   "edcb0248-e7c9-4df9-8dba-982048654fd2": {
     "status": "available",

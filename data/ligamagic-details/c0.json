@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arms%20Depot",
     "checked_at": "2026-08-07T19:37:14.111Z"
   },
+  "c0891157-f3dd-4866-866f-fd13e9be9633": {
+    "status": "available",
+    "name": "Arwen, Weaver of Hope",
+    "price_brl": 40.28,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Contos da Terra Média Commander",
+    "printing_code": "LTC",
+    "collector_number": "35",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arwen%2C%20Weaver%20of%20Hope",
+    "checked_at": "2026-08-07T21:12:39.097Z"
+  },
   "c0d8fef4-65f4-4769-982d-b397d2b7e977": {
     "status": "available",
     "name": "Animate Dead",

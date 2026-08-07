@@ -1,4 +1,16 @@
 {
+  "be14b10a-7cac-47fc-a954-685091990291": {
+    "status": "available",
+    "name": "Artificer's Intuition",
+    "price_brl": 17.59,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Quinta Aurora",
+    "printing_code": "5DN",
+    "collector_number": "23",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Artificer's%20Intuition",
+    "checked_at": "2026-08-07T21:10:08.929Z"
+  },
   "be2a4595-4378-4af8-8368-e3b2bb3cb5bb": {
     "status": "available",
     "name": "Alliance of Arms",

@@ -46,5 +46,17 @@
     "collector_number": "54",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerial%20Extortionist",
     "checked_at": "2026-08-06T07:17:04.966Z"
+  },
+  "7e81853c-d0c0-40bc-80fc-13a5964878b2": {
+    "status": "available",
+    "name": "Ascendant Packleader",
+    "price_brl": 0.43,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Voto Carmesim",
+    "printing_code": "VOW",
+    "collector_number": "186",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ascendant%20Packleader",
+    "checked_at": "2026-08-07T21:14:09.121Z"
   }
 }

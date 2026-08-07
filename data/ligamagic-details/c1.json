@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Act%20of%20Authority",
     "checked_at": "2026-08-06T03:57:22.064Z"
   },
+  "c15e5cb8-b94c-4157-9327-410e66606b82": {
+    "status": "available",
+    "name": "Arms of Hadar",
+    "price_brl": 6.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends: Batalha por Portal de Baldur",
+    "printing_code": "CLB",
+    "collector_number": "113",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arms%20of%20Hadar",
+    "checked_at": "2026-08-07T21:03:08.881Z"
+  },
   "c15e5e93-2eff-407d-ae75-437e36ef85ba": {
     "status": "available",
     "name": "Allies at Last",
@@ -58,6 +70,18 @@
     "collector_number": "189",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aim%20High",
     "checked_at": "2026-08-06T14:44:31.996Z"
+  },
+  "c174dcbb-03a0-439c-b3d8-ed61bd46dc67": {
+    "status": "available",
+    "name": "Artful Dodge",
+    "price_brl": 0.8,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ascensão das Trevas",
+    "printing_code": "DKA",
+    "collector_number": "27",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Artful%20Dodge",
+    "checked_at": "2026-08-07T21:07:49.026Z"
   },
   "c1882cb4-f69e-441e-8871-743ed636cad0": {
     "status": "available",

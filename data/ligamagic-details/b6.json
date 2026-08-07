@@ -22,5 +22,17 @@
     "collector_number": "6",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aggression",
     "checked_at": "2026-08-06T14:39:41.595Z"
+  },
+  "b6f52260-9ad5-4024-acf9-d77f3c08c872": {
+    "status": "available",
+    "name": "Ashiok, Nightmare Weaver",
+    "price_brl": 4.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros",
+    "printing_code": "THS",
+    "collector_number": "188",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashiok%2C%20Nightmare%20Weaver",
+    "checked_at": "2026-08-07T21:19:29.385Z"
   }
 }

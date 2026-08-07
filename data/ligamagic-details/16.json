@@ -1,4 +1,16 @@
 {
+  "162572f2-1757-42e9-bd97-e6bd9a762c0e": {
+    "status": "available",
+    "name": "Ashaya, Soul of the Wild",
+    "price_brl": 111.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Renascer de Zendikar",
+    "printing_code": "ZNR",
+    "collector_number": "179",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashaya%2C%20Soul%20of%20the%20Wild",
+    "checked_at": "2026-08-07T21:16:19.233Z"
+  },
   "16cd0b90-f70c-4efa-b252-8de8784ef9a3": {
     "status": "available",
     "name": "Imperial Seal",

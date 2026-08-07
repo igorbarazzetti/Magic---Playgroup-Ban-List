@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archon%20of%20Justice",
     "checked_at": "2026-08-07T17:20:54.446Z"
   },
+  "d561dcff-0a19-46ac-9dee-f374c840d532": {
+    "status": "available",
+    "name": "Arvad the Cursed",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominaria",
+    "printing_code": "DOM",
+    "collector_number": "191",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arvad%20the%20Cursed",
+    "checked_at": "2026-08-07T21:11:48.974Z"
+  },
   "d56f1543-2b2d-4ce3-bcfe-41224a0cece4": {
     "status": "available",
     "name": "Apostle of Invasion",
