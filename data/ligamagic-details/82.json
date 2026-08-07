@@ -34,5 +34,17 @@
     "collector_number": "260",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mox%20Pearl",
     "checked_at": "2026-08-05T20:10:11.194Z"
+  },
+  "82b9ad93-df75-4417-9746-798db8fe6ba0": {
+    "status": "available",
+    "name": "Anarchist",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Odisséia",
+    "printing_code": "OD",
+    "collector_number": "173",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anarchist",
+    "checked_at": "2026-08-07T04:47:01.547Z"
   }
 }

@@ -46,5 +46,17 @@
     "collector_number": "160",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Grapeshot",
     "checked_at": "2026-08-05T20:07:11.382Z"
+  },
+  "ebfafabc-5255-4024-be59-7403bdb16ee4": {
+    "status": "available",
+    "name": "Anafenza, the Foremost",
+    "price_brl": 0.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Khans de Tarkir",
+    "printing_code": "KTK",
+    "collector_number": "163",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anafenza%2C%20the%20Foremost",
+    "checked_at": "2026-08-07T04:46:21.924Z"
   }
 }

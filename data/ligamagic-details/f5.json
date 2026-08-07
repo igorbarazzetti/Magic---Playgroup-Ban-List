@@ -1,4 +1,16 @@
 {
+  "f543dfcd-015e-48bc-851d-08002d0241fa": {
+    "status": "available",
+    "name": "Ana Disciple",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Apocalipse",
+    "printing_code": "AP",
+    "collector_number": "73",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ana%20Disciple",
+    "checked_at": "2026-08-07T04:45:01.445Z"
+  },
   "f574bd9f-4246-42cb-bf4e-d2888daa44c9": {
     "status": "available",
     "name": "Alchemist's Vial",
@@ -10,6 +22,18 @@
     "collector_number": "220",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alchemist's%20Vial",
     "checked_at": "2026-08-06T18:15:27.667Z"
+  },
+  "f5872c45-e5a0-4200-95e6-4cf36d36ed4b": {
+    "status": "available",
+    "name": "Ambiguity",
+    "price_brl": 2.55,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unhinged",
+    "printing_code": "UH",
+    "collector_number": "24",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambiguity",
+    "checked_at": "2026-08-07T04:35:30.994Z"
   },
   "f5af0d1b-531e-4053-848a-5e0fa1022f9a": {
     "status": "available",

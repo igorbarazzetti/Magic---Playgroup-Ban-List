@@ -1,4 +1,16 @@
 {
+  "c37537ae-616a-41e4-890c-f4b9475dbf31": {
+    "status": "available",
+    "name": "Ana Battlemage",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Caos Planar",
+    "printing_code": "PC",
+    "collector_number": "124",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ana%20Battlemage",
+    "checked_at": "2026-08-07T04:44:51.410Z"
+  },
   "c3974ec7-7af0-4b65-baf6-4c1c4fe8a5c4": {
     "status": "available",
     "name": "Ajani, Strength of the Pride",

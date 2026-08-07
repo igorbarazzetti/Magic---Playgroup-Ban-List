@@ -82,5 +82,17 @@
     "collector_number": "120",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abzan%20Kin-Guard",
     "checked_at": "2026-08-06T03:46:21.618Z"
+  },
+  "b2d597b4-f9ba-44b0-a947-0c2ecda2d308": {
+    "status": "available",
+    "name": "Amy Rose",
+    "price_brl": 14.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secret Lair Drop Series: Secret Lair x Sonic: Friends & Foes",
+    "printing_code": "SLD306",
+    "collector_number": "2083",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amy%20Rose",
+    "checked_at": "2026-08-07T04:43:11.364Z"
   }
 }

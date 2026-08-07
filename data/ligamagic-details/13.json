@@ -59,6 +59,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Sensei's%20Divining%20Top",
     "checked_at": "2026-08-05T20:12:23.963Z"
   },
+  "137b5708-50a9-4f4c-84e6-9043be9f1989": {
+    "status": "available",
+    "name": "Anathemancer",
+    "price_brl": 0.29,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alara Reunida",
+    "printing_code": "ARB",
+    "collector_number": "33",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anathemancer",
+    "checked_at": "2026-08-07T04:47:21.534Z"
+  },
+  "13a9b9fd-20fa-4734-9d95-3ab41ab9c7a0": {
+    "status": "available",
+    "name": "Ancestral Katana",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kamigawa: Dinastia Neon",
+    "printing_code": "NEO",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancestral%20Katana",
+    "checked_at": "2026-08-07T04:49:21.694Z"
+  },
   "13f63240-a6bb-4333-a3dd-818725c6fb73": {
     "status": "available",
     "name": "Abhorrent Overlord",

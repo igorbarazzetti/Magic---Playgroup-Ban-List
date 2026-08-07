@@ -1,4 +1,16 @@
 {
+  "9c4219db-1a7a-4d61-bb8b-7998cfed1faf": {
+    "status": "available",
+    "name": "Anax and Cymede",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros",
+    "printing_code": "THS",
+    "collector_number": "186",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anax%20and%20Cymede",
+    "checked_at": "2026-08-07T04:47:41.629Z"
+  },
   "9c462cd8-36f9-4e39-adf3-310ad4d76051": {
     "status": "available",
     "name": "Agadeem Occultist",
@@ -34,5 +46,17 @@
     "collector_number": "162",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Helix",
     "checked_at": "2026-08-06T10:57:33.544Z"
+  },
+  "9c9b1871-e776-4373-ba89-e009131cb6f7": {
+    "status": "available",
+    "name": "Amphibious Kavu",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Conjunção",
+    "printing_code": "PS",
+    "collector_number": "78",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amphibious%20Kavu",
+    "checked_at": "2026-08-07T04:40:51.325Z"
   }
 }

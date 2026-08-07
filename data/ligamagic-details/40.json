@@ -34,5 +34,17 @@
     "collector_number": "187",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aatchik%2C%20Emerald%20Radian",
     "checked_at": "2026-08-06T00:04:57.353Z"
+  },
+  "40ae17be-9998-4ee4-9d95-82a08895405f": {
+    "status": "available",
+    "name": "An-Havva Township",
+    "price_brl": 0.14,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Natais",
+    "printing_code": "HL",
+    "collector_number": "111",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=An-Havva%20Township",
+    "checked_at": "2026-08-07T04:43:51.381Z"
   }
 }

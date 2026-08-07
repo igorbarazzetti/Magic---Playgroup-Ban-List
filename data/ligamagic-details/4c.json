@@ -35,6 +35,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aardwolf's%20Advantage",
     "checked_at": "2026-08-06T00:04:46.797Z"
   },
+  "4c48de92-e053-4af7-b936-d7ec0875e0d3": {
+    "status": "available",
+    "name": "Ambush Wolf",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Foundations",
+    "printing_code": "FDN",
+    "collector_number": "98",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambush%20Wolf",
+    "checked_at": "2026-08-07T04:38:41.182Z"
+  },
+  "4c80112a-8ff5-4ca4-8737-b8d499d78982": {
+    "status": "available",
+    "name": "Amrou Scout",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Espiral Temporal",
+    "printing_code": "TS",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amrou%20Scout",
+    "checked_at": "2026-08-07T04:42:01.350Z"
+  },
   "4caa8e68-e599-416f-b839-3d009569ff29": {
     "status": "available",
     "name": "Alpha Myr",

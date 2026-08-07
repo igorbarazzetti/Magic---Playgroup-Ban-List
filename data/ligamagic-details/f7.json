@@ -46,5 +46,17 @@
     "collector_number": "20000414",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Yawgmoth's%20Bargain",
     "checked_at": "2026-08-05T20:15:39.015Z"
+  },
+  "f7fa6ac0-70db-4586-b881-5a19db644dfb": {
+    "status": "available",
+    "name": "Anafenza, Kin-Tree Spirit",
+    "price_brl": 0.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dragões de Tarkir",
+    "printing_code": "DTK",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anafenza%2C%20Kin-Tree%20Spirit",
+    "checked_at": "2026-08-07T04:46:11.492Z"
   }
 }

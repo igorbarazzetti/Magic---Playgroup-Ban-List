@@ -1,4 +1,16 @@
 {
+  "f805b100-49b8-4d23-a768-e8de8bb0daa3": {
+    "status": "available",
+    "name": "An-Zerrin Ruins",
+    "price_brl": 5.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Natais",
+    "printing_code": "HL",
+    "collector_number": "64",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=An-Zerrin%20Ruins",
+    "checked_at": "2026-08-07T04:44:41.418Z"
+  },
   "f8273146-f2e5-40ec-ba96-c0a4192caec8": {
     "status": "available",
     "name": "Alaborn Cavalier",

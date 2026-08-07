@@ -1,4 +1,16 @@
 {
+  "ab28a801-6ab1-4db2-8ae2-c24bb4c10ebb": {
+    "status": "available",
+    "name": "Ancestral Blade",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Double Masters",
+    "printing_code": "2XM",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancestral%20Blade",
+    "checked_at": "2026-08-07T04:48:51.625Z"
+  },
   "ab855992-34da-42a2-b7c7-dec4db849159": {
     "status": "available",
     "name": "Aerial Volley",

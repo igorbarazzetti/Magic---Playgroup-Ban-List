@@ -46,5 +46,17 @@
     "collector_number": "43",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alhammarret%2C%20High%20Arbiter",
     "checked_at": "2026-08-06T18:18:27.943Z"
+  },
+  "c2f6ddc2-86bc-43da-9bdd-0c2af79c62fd": {
+    "status": "available",
+    "name": "Ammit Eternal",
+    "price_brl": 0.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Hora da Devastação",
+    "printing_code": "HOU",
+    "collector_number": "57",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ammit%20Eternal",
+    "checked_at": "2026-08-07T04:39:31.166Z"
   }
 }

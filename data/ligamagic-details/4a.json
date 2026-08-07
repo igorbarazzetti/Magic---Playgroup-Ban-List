@@ -22,5 +22,17 @@
     "collector_number": "166",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alloy%20Animist",
     "checked_at": "2026-08-07T00:37:04.865Z"
+  },
+  "4ae19803-23a7-4724-a4cd-dc6f3c16fb24": {
+    "status": "available",
+    "name": "Ampryn Tactician",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic Origens",
+    "printing_code": "ORI",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ampryn%20Tactician",
+    "checked_at": "2026-08-07T04:41:41.322Z"
   }
 }

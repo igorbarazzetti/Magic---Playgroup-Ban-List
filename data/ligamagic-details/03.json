@@ -10,5 +10,17 @@
     "collector_number": "302",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aggressive%20Mammoth",
     "checked_at": "2026-08-06T14:40:11.655Z"
+  },
+  "03a4cbe2-cf35-4c2c-b035-666f994ffd09": {
+    "status": "available",
+    "name": "Anavolver",
+    "price_brl": 0.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Apocalipse",
+    "printing_code": "AP",
+    "collector_number": "75",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anavolver",
+    "checked_at": "2026-08-07T04:47:31.514Z"
   }
 }

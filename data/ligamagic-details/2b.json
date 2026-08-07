@@ -70,5 +70,17 @@
     "collector_number": "15",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Allied%20Reinforcements",
     "checked_at": "2026-08-07T00:36:14.716Z"
+  },
+  "2bcc9f11-5b12-433e-9680-0f4b18aa521c": {
+    "status": "available",
+    "name": "Ambrosia Whiteheart",
+    "price_brl": 0.19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY",
+    "printing_code": "FIN",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambrosia%20Whiteheart",
+    "checked_at": "2026-08-07T04:36:51.109Z"
   }
 }

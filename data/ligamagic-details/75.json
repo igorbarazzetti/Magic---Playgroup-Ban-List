@@ -1,4 +1,16 @@
 {
+  "75070eaf-c931-46e5-9aa1-b849e33580c6": {
+    "status": "available",
+    "name": "Ambling Stormshell",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm",
+    "printing_code": "TDM",
+    "collector_number": "37",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambling%20Stormshell",
+    "checked_at": "2026-08-07T04:36:41.097Z"
+  },
   "75131d75-0703-44d0-b503-35190be8e66f": {
     "status": "available",
     "name": "Academy Raider",

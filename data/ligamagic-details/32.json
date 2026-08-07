@@ -1,4 +1,16 @@
 {
+  "321c4586-d27e-45ae-ba1f-3efea334a697": {
+    "status": "available",
+    "name": "Ancestral Vengeance",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mystery Booster",
+    "printing_code": "MB1",
+    "collector_number": "565",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancestral%20Vengeance",
+    "checked_at": "2026-08-07T04:50:31.715Z"
+  },
   "322d2407-fa9f-48d0-bdf0-88f6d24cf865": {
     "status": "available",
     "name": "Amarant Coral",

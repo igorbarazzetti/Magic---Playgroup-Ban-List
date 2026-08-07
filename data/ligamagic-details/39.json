@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brago's%20Favor",
     "checked_at": "2026-08-05T20:03:46.346Z"
   },
+  "396efb56-7a54-4d91-b2ce-7f3c62c3238b": {
+    "status": "available",
+    "name": "Amrou Seekers",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Espiral Temporal Remasterizada",
+    "printing_code": "TSR",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amrou%20Seekers",
+    "checked_at": "2026-08-07T04:42:11.380Z"
+  },
   "399af8ea-7a6f-4f43-bd39-dc29a6e75e06": {
     "status": "available",
     "name": "Alley Grifters",

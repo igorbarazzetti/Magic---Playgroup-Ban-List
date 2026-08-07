@@ -1,4 +1,16 @@
 {
+  "b91ed762-9232-4b77-abf4-97f66637f49c": {
+    "status": "available",
+    "name": "Anarchy",
+    "price_brl": 15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "MTGO Masters Edition II",
+    "printing_code": "ME2",
+    "collector_number": "116",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anarchy",
+    "checked_at": "2026-08-07T04:47:11.543Z"
+  },
   "b921a672-721e-4bd8-a10b-a6de8c13c7d8": {
     "status": "available",
     "name": "Achilles Davenport",

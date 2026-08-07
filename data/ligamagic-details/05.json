@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Afiya%20Grove",
     "checked_at": "2026-08-06T11:07:04.000Z"
   },
+  "05828c1e-9185-4b70-94fe-753eacdf45a1": {
+    "status": "available",
+    "name": "Ambush",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Natais",
+    "printing_code": "HL",
+    "collector_number": "62",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambush",
+    "checked_at": "2026-08-07T04:37:31.115Z"
+  },
   "05b6f9e3-9acd-43a6-acff-caa811aaf0a1": {
     "status": "available",
     "name": "Akoum Hellkite",

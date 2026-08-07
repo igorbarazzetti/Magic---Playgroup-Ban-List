@@ -1,4 +1,28 @@
 {
+  "8910f79a-66c9-41b3-b55a-e3e651ae6f26": {
+    "status": "available",
+    "name": "Amphin Mutineer",
+    "price_brl": 0.39,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm Commander",
+    "printing_code": "TDC",
+    "collector_number": "143",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amphin%20Mutineer",
+    "checked_at": "2026-08-07T04:41:11.295Z"
+  },
+  "8957f7c2-040c-4048-9f21-efa7c97682b7": {
+    "status": "available",
+    "name": "Ambush Viper",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad Remastered",
+    "printing_code": "INR",
+    "collector_number": "186",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambush%20Viper",
+    "checked_at": "2026-08-07T04:38:31.162Z"
+  },
   "89aa65d9-2502-40b0-90b6-b25a8e9f6155": {
     "status": "available",
     "name": "Capture of Jingzhou",

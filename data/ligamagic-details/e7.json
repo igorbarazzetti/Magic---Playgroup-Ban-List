@@ -23,6 +23,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agrus%20Kos%2C%20Wojek%20Veteran",
     "checked_at": "2026-08-06T14:43:11.755Z"
   },
+  "e75b2a97-b28d-43fe-8b1e-ba87a09f339c": {
+    "status": "available",
+    "name": "Ambush Commander",
+    "price_brl": 1.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Flagelo",
+    "printing_code": "SC",
+    "collector_number": "111",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambush%20Commander",
+    "checked_at": "2026-08-07T04:37:41.149Z"
+  },
+  "e766a5eb-684b-4939-b164-6093d15600c9": {
+    "status": "available",
+    "name": "Amphin Cutthroat",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2012",
+    "printing_code": "M12",
+    "collector_number": "43",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amphin%20Cutthroat",
+    "checked_at": "2026-08-07T04:41:01.282Z"
+  },
   "e7b2f844-2ba2-4465-bb80-358a4d915f36": {
     "status": "available",
     "name": "Abzan Advantage",

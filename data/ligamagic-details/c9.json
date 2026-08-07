@@ -1,4 +1,16 @@
 {
+  "c9160997-0305-47f5-9a2f-77588d167da0": {
+    "status": "available",
+    "name": "Aminatou's Augury",
+    "price_brl": 1.95,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Noctumbra: A Casa dos Horrores Commander",
+    "printing_code": "DSC",
+    "collector_number": "71",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aminatou's%20Augury",
+    "checked_at": "2026-08-07T04:39:01.172Z"
+  },
   "c95e75fb-2bf2-431c-b7ca-d84236bffe5c": {
     "status": "available",
     "name": "Adder-Staff Boggart",

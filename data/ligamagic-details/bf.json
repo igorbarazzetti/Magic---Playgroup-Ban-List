@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adventurers'%20Guildhouse",
     "checked_at": "2026-08-06T07:12:44.765Z"
   },
+  "bf45f5ee-4d5f-4920-b612-b5492c2f035d": {
+    "status": "available",
+    "name": "Aminatou, Veil Piercer",
+    "price_brl": 6.98,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Noctumbra: A Casa dos Horrores Commander (Borderless)",
+    "printing_code": "BLDSC",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aminatou%2C%20Veil%20Piercer",
+    "checked_at": "2026-08-07T04:39:21.216Z"
+  },
   "bf7ec320-64bb-46ca-aac0-ca3d4224b69e": {
     "status": "available",
     "name": "Ajani's Response",

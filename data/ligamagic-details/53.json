@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adaptive%20Automaton",
     "checked_at": "2026-08-06T03:59:22.157Z"
   },
+  "53e4273c-3292-47a0-90d1-8a0eb0eaf381": {
+    "status": "available",
+    "name": "Amphin Pathmage",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2015",
+    "printing_code": "M15",
+    "collector_number": "45",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amphin%20Pathmage",
+    "checked_at": "2026-08-07T04:41:21.290Z"
+  },
   "53f7c868-b03e-4fc2-8dcf-a75bbfa3272b": {
     "status": "available",
     "name": "Dark Ritual",

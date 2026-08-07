@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alexander%20Clamilton",
     "checked_at": "2026-08-06T18:17:38.234Z"
   },
+  "60b03a44-a7bd-48fa-8c8f-1704aed02cd7": {
+    "status": "available",
+    "name": "Ancestor Dragon",
+    "price_brl": 5.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mystery Booster 2",
+    "printing_code": "MB2",
+    "collector_number": "14",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancestor%20Dragon",
+    "checked_at": "2026-08-07T04:48:02.086Z"
+  },
   "60c60923-ff1b-43f7-8768-731499fcffc9": {
     "status": "available",
     "name": "Oko, Thief of Crowns",

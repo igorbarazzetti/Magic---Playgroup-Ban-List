@@ -1,4 +1,16 @@
 {
+  "bc416c17-e1f0-4344-8c21-6184cac10205": {
+    "status": "available",
+    "name": "Anaba Shaman",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Natais",
+    "printing_code": "HL",
+    "collector_number": "67b",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anaba%20Shaman",
+    "checked_at": "2026-08-07T04:45:41.514Z"
+  },
   "bc842838-1993-4480-b8fe-f9d9f2dee7a4": {
     "status": "available",
     "name": "Alrund's Epiphany",
@@ -22,5 +34,17 @@
     "collector_number": "171",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abstract%20Paintmage",
     "checked_at": "2026-08-06T00:14:37.244Z"
+  },
+  "bcf5a931-6ce8-4721-98ab-8bd295f26a13": {
+    "status": "available",
+    "name": "An Incident Has Occurred",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unfinity",
+    "printing_code": "UNF",
+    "collector_number": "143",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=An%20Incident%20Has%20Occurred",
+    "checked_at": "2026-08-07T04:44:01.388Z"
   }
 }

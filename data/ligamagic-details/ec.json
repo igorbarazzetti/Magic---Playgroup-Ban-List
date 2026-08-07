@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcum's%20Astrolabe",
     "checked_at": "2026-08-05T20:03:04.103Z"
   },
+  "ec7d550b-9e13-4249-89c7-6ad43f71ea11": {
+    "status": "available",
+    "name": "Analyze the Pollen",
+    "price_brl": 2.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassinato na Mansão Karlov",
+    "printing_code": "MKM",
+    "collector_number": "150",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Analyze%20the%20Pollen",
+    "checked_at": "2026-08-07T04:46:41.569Z"
+  },
   "ec8e310f-e871-498f-8d80-c3617c5e1433": {
     "status": "available",
     "name": "Absorbing Man",

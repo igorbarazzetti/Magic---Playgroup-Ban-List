@@ -58,5 +58,17 @@
     "collector_number": "114",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amped%20Raptor",
     "checked_at": "2026-08-05T20:02:49.078Z"
+  },
+  "3eff03f1-2c5f-4c59-b465-a8c4cd05e1ba": {
+    "status": "available",
+    "name": "Anaconda",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Saga de Urza",
+    "printing_code": "US",
+    "collector_number": "232",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anaconda",
+    "checked_at": "2026-08-07T04:46:02.274Z"
   }
 }

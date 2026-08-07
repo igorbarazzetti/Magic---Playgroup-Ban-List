@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Skullclamp",
     "checked_at": "2026-08-05T20:12:41.622Z"
   },
+  "659bc01c-fa60-4d00-bdad-5bca1d2a978f": {
+    "status": "available",
+    "name": "Anafenza, Unyielding Lineage",
+    "price_brl": 0.57,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm",
+    "printing_code": "TDM",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anafenza%2C%20Unyielding%20Lineage",
+    "checked_at": "2026-08-07T04:46:31.506Z"
+  },
   "65a9f643-063f-406a-8d5a-5ebbe0f04c3d": {
     "status": "available",
     "name": "Demonic Attorney",

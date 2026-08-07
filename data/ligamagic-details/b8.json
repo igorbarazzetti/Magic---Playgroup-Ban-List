@@ -1,4 +1,16 @@
 {
+  "b85e7ab2-6f57-4b65-8c16-034b342996f0": {
+    "status": "available",
+    "name": "Ambitious Farmhand // Seasoned Cathar",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad Remastered",
+    "printing_code": "INR",
+    "collector_number": "8",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambitious%20Farmhand",
+    "checked_at": "2026-08-07T04:36:31.066Z"
+  },
   "b8942c72-16ce-4f2f-875f-97a56e85a03e": {
     "status": "available",
     "name": "Vicious Battlerager",

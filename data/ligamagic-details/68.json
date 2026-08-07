@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Golgari%20Grave-Troll",
     "checked_at": "2026-08-05T20:07:04.726Z"
   },
+  "68865793-daeb-4c55-80cb-12853f9f96c4": {
+    "status": "available",
+    "name": "Amoeboid Changeling",
+    "price_brl": 1.12,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn",
+    "printing_code": "LW",
+    "collector_number": "51",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amoeboid%20Changeling",
+    "checked_at": "2026-08-07T04:39:51.204Z"
+  },
   "6891c8b7-7112-40dc-8b94-b84ad1885e5e": {
     "status": "available",
     "name": "Accorder Paladin",

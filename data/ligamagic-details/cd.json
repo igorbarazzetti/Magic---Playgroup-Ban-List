@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agent%20of%20Atlas",
     "checked_at": "2026-08-06T11:11:14.151Z"
   },
+  "cd583365-27cc-4170-b138-4b3dd0d842b6": {
+    "status": "available",
+    "name": "Ambush Paratrooper",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra dos Irmãos",
+    "printing_code": "BRO",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambush%20Paratrooper",
+    "checked_at": "2026-08-07T04:38:11.135Z"
+  },
   "cdc7356c-9621-4420-9fda-c8b91df0ec7c": {
     "status": "available",
     "name": "Alchemax Slayer-Bots",

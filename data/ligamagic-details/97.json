@@ -1,4 +1,16 @@
 {
+  "9728dec9-d482-4c7a-8cdc-44d010dc878d": {
+    "status": "available",
+    "name": "Ancestral Vision",
+    "price_brl": 4.89,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm Commander",
+    "printing_code": "TDC",
+    "collector_number": "144",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancestral%20Vision",
+    "checked_at": "2026-08-07T04:50:41.648Z"
+  },
   "973c684c-a396-4e40-8aaa-365bc64a6f9a": {
     "status": "available",
     "name": "Galvanic Relay",
@@ -70,5 +82,17 @@
     "collector_number": "189",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Web",
     "checked_at": "2026-08-06T11:01:43.685Z"
+  },
+  "97e77cbf-1461-4137-b92f-4ad363b2b473": {
+    "status": "available",
+    "name": "Amped Up",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unfinity",
+    "printing_code": "UNF",
+    "collector_number": "98",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amped%20Up",
+    "checked_at": "2026-08-07T04:40:31.241Z"
   }
 }

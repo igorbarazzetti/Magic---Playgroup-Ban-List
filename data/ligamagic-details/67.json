@@ -10,5 +10,29 @@
     "collector_number": "30",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerie%20Worshippers",
     "checked_at": "2026-08-06T07:19:35.098Z"
+  },
+  "6777863c-e52c-4a7c-b8d2-a16b1438b3d2": {
+    "status": "available",
+    "name": "Amzu, Swarm's Hunger",
+    "price_brl": 109.98,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ravnica: Clue Edition",
+    "printing_code": "CLU",
+    "collector_number": "24",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amzu%2C%20Swarm's%20Hunger",
+    "checked_at": "2026-08-07T04:43:21.414Z"
+  },
+  "6783f559-33d7-4b13-9a91-02b821e97163": {
+    "status": "available",
+    "name": "Anchor to Reality",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kamigawa: Dinastia Neon",
+    "printing_code": "NEO",
+    "collector_number": "45",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anchor%20to%20Reality",
+    "checked_at": "2026-08-07T04:50:51.675Z"
   }
 }

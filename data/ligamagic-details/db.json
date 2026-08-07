@@ -1,4 +1,16 @@
 {
+  "db5380ed-ba28-4ea2-abc3-4998e2022903": {
+    "status": "available",
+    "name": "Ancestral Mask",
+    "price_brl": 13.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Máscaras de Mercádia",
+    "printing_code": "MM",
+    "collector_number": "229",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancestral%20Mask",
+    "checked_at": "2026-08-07T04:49:41.612Z"
+  },
   "dba4fd31-8931-42dd-bd86-45479c2abf74": {
     "status": "available",
     "name": "Tolarian Academy",
@@ -34,5 +46,17 @@
     "collector_number": "2",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Absolving%20Lammasu",
     "checked_at": "2026-08-06T00:13:17.158Z"
+  },
+  "dbfa2743-34ff-40e3-81f7-740fc08cd18a": {
+    "status": "available",
+    "name": "Ancestral Reminiscence",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "As Cavernas Perdidas de Ixalan",
+    "printing_code": "LCI",
+    "collector_number": "45",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancestral%20Reminiscence",
+    "checked_at": "2026-08-07T04:50:01.644Z"
   }
 }

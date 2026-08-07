@@ -1,4 +1,28 @@
 {
+  "a4280cea-386b-450d-a7e9-29c7aa58ce5a": {
+    "status": "available",
+    "name": "Amphibian Downpour",
+    "price_brl": 12,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3",
+    "printing_code": "MH3",
+    "collector_number": "51",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amphibian%20Downpour",
+    "checked_at": "2026-08-07T04:40:41.253Z"
+  },
+  "a45bb088-16fd-4d91-8fd6-3c52f1c24748": {
+    "status": "available",
+    "name": "Ancestral Communion",
+    "price_brl": 2.28,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes Commander",
+    "printing_code": "MSC",
+    "collector_number": "64",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancestral%20Communion",
+    "checked_at": "2026-08-07T04:49:01.620Z"
+  },
   "a468f6ab-c0a8-4295-8b01-7147d3f889b4": {
     "status": "available",
     "name": "Air Nomad Student",

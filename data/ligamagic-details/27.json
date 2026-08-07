@@ -23,6 +23,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Tempest%20Efreet",
     "checked_at": "2026-08-05T20:13:26.715Z"
   },
+  "274ce6b0-af29-4afc-873b-b4126a67bd81": {
+    "status": "available",
+    "name": "Ancestor's Prophet",
+    "price_brl": 1.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Investida",
+    "printing_code": "ON",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancestor's%20Prophet",
+    "checked_at": "2026-08-07T04:48:22.192Z"
+  },
+  "2786f210-ec64-46ea-9a7f-b03759fb1dae": {
+    "status": "available",
+    "name": "Ancestral Knowledge",
+    "price_brl": 12.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alisios",
+    "printing_code": "WL",
+    "collector_number": "10",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancestral%20Knowledge",
+    "checked_at": "2026-08-07T04:49:32.155Z"
+  },
   "278e51fe-3cd9-4c82-bd81-2164771f8611": {
     "status": "available",
     "name": "Alms Collector",

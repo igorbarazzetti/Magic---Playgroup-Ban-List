@@ -70,5 +70,17 @@
     "collector_number": "49",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=White%20Plume%20Adventurer",
     "checked_at": "2026-08-05T20:15:14.974Z"
+  },
+  "51f17fe1-1cf7-4362-b9a2-8ec225d41b03": {
+    "status": "available",
+    "name": "Ana Sanctuary",
+    "price_brl": 0.23,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mystery Booster",
+    "printing_code": "MB1",
+    "collector_number": "1118",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ana%20Sanctuary",
+    "checked_at": "2026-08-07T04:45:11.432Z"
   }
 }

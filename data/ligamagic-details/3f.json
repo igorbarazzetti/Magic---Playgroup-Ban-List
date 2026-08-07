@@ -46,5 +46,17 @@
     "collector_number": "59",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agent%20of%20Erebos",
     "checked_at": "2026-08-06T11:11:24.226Z"
+  },
+  "3fb399fa-123f-448e-a473-573a1fab2c78": {
+    "status": "available",
+    "name": "Ambitious Assault",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kamigawa: Dinastia Neon",
+    "printing_code": "NEO",
+    "collector_number": "133",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambitious%20Assault",
+    "checked_at": "2026-08-07T04:36:01.049Z"
   }
 }

@@ -1,4 +1,16 @@
 {
+  "5e419975-e054-4c35-8845-a08589ebb08f": {
+    "status": "available",
+    "name": "Ambuscade",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Hora da Devastação",
+    "printing_code": "HOU",
+    "collector_number": "110",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambuscade",
+    "checked_at": "2026-08-07T04:37:11.094Z"
+  },
   "5e63b69c-d901-4a01-8dfa-88e044856239": {
     "status": "available",
     "name": "Hopeless Nightmare",

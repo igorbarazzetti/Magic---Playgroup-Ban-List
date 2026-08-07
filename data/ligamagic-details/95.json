@@ -1,4 +1,16 @@
 {
+  "9527d2dc-d2e2-4259-aefe-2342ea07bc63": {
+    "status": "available",
+    "name": "An Unearthly Child",
+    "price_brl": 1.29,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Doctor Who",
+    "printing_code": "WHO",
+    "collector_number": "35",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=An%20Unearthly%20Child",
+    "checked_at": "2026-08-07T04:44:21.490Z"
+  },
   "956381ba-6d37-4a8a-846c-bad79222dbee": {
     "status": "available",
     "name": "Force of Will",
@@ -34,6 +46,18 @@
     "collector_number": "105",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aid%20from%20the%20Cowl",
     "checked_at": "2026-08-06T14:44:01.823Z"
+  },
+  "95a2802a-2621-40c3-84f8-51e8aad7b6f0": {
+    "status": "available",
+    "name": "Ancestral Memories",
+    "price_brl": 0.18,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Sétima Edição",
+    "printing_code": "7E",
+    "collector_number": "59",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancestral%20Memories",
+    "checked_at": "2026-08-07T04:49:51.746Z"
   },
   "95db05eb-2c25-43f2-8e18-dfc64f490634": {
     "status": "available",

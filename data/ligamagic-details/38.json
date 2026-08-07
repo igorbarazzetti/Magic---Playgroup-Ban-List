@@ -1,4 +1,16 @@
 {
+  "380ea3b6-8eb4-466a-8680-ce5cfed9b8c4": {
+    "status": "available",
+    "name": "Ancestral Tribute",
+    "price_brl": 0.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Odisséia",
+    "printing_code": "OD",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancestral%20Tribute",
+    "checked_at": "2026-08-07T04:50:21.638Z"
+  },
   "3819daab-fe35-4f99-9282-47bd05c7fcd6": {
     "status": "available",
     "name": "Affa Guard Hound",

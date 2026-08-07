@@ -10,5 +10,17 @@
     "collector_number": "63",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ad%20Nauseam",
     "checked_at": "2026-08-06T03:58:32.705Z"
+  },
+  "98709d61-4da4-4d3a-a654-bb2a7a0edb6b": {
+    "status": "available",
+    "name": "Amulet of Safekeeping",
+    "price_brl": 0.35,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2019",
+    "printing_code": "M19",
+    "collector_number": "226",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amulet%20of%20Safekeeping",
+    "checked_at": "2026-08-07T04:42:41.336Z"
   }
 }
