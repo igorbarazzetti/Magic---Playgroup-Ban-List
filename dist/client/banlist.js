@@ -3,7 +3,7 @@ const site = {
   playgroupInitials: 'PA',
   pageTitle: 'Códice do Formatinho',
   pageSubtitle: 'A banlist oficial do nosso formato',
-  logoPath: './playgroup-logo.svg',
+  logoPath: './formatinho-logo.png?v=2',
   scryfallQuery: '(banned:standard OR banned:pioneer OR banned:modern OR banned:legacy OR banned:commander OR banned:duel OR banned:pauper) -set:sunf -set:unf',
   catalogQuery: '(game:paper) usd<20.00 prefer:best',
   backgroundCards: ['Teferi, Hero of Dominaria', "Elspeth, Sun's Champion", 'Chandra, Torch of Defiance', 'Nissa, Who Shakes the World'],
@@ -1996,7 +1996,7 @@ async function loadCards() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  $('brandInitials').textContent = site.playgroupInitials;
+  $('brandLogo').src = site.logoPath;
   $('brandName').textContent = site.playgroupName;
   $('pageTitle').textContent = site.pageTitle;
   $('pageSubtitle').textContent = site.pageSubtitle;

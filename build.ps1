@@ -18,6 +18,7 @@ $clientFiles = @(
   "banlist.js",
   "README.md",
   "og.png",
+  "formatinho-logo.png",
   "favicon.png",
   "favicon-512.png",
   "apple-touch-icon.png"
