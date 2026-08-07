@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=April%20O'Neil%2C%20Human%20Element",
     "checked_at": "2026-08-07T11:21:56.833Z"
   },
+  "02125db4-4507-467a-ac0c-406de2c7d533": {
+    "status": "available",
+    "name": "Adventurous Eater // Have a Bite",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven",
+    "printing_code": "SOS",
+    "collector_number": "72",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adventurous%20Eater%20%2F%2F%20Have%20a%20Bite",
+    "checked_at": "2026-08-07T19:52:47.762Z"
+  },
   "022e97af-2a3a-4e13-9b6b-d34fcc8cf168": {
     "status": "available",
     "name": "Archangel of Wrath",

@@ -1,4 +1,16 @@
 {
+  "0a364b66-95df-480b-a733-e90f6d5c4d2b": {
+    "status": "available",
+    "name": "Altar of Bhaal // Bone Offering",
+    "price_brl": 1.61,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends: Batalha por Portal de Baldur",
+    "printing_code": "CLB",
+    "collector_number": "109",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Altar%20of%20Bhaal%20%2F%2F%20Bone%20Offering",
+    "checked_at": "2026-08-07T19:53:17.695Z"
+  },
   "0a56e2ad-684d-45a7-9145-479d1505bba2": {
     "status": "available",
     "name": "Adaptive Snapjaw",

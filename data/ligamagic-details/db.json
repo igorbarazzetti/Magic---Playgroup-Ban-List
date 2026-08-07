@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancestral%20Mask",
     "checked_at": "2026-08-07T04:49:41.612Z"
   },
+  "db6fbdc9-1c45-416f-a08e-2082f65adb65": {
+    "status": "available",
+    "name": "Animating Faerie // Bring to Life",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Trono de Eldraine",
+    "printing_code": "ELD",
+    "collector_number": "38",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Animating%20Faerie%20%2F%2F%20Bring%20to%20Life",
+    "checked_at": "2026-08-07T19:53:47.762Z"
+  },
   "db951ec2-d751-479d-af1f-885d3cf50027": {
     "status": "available",
     "name": "Aphotic Wisps",

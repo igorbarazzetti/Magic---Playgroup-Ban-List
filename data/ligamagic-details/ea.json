@@ -1,4 +1,16 @@
 {
+  "ea27c8bf-33c5-443f-b8b2-51235efc2491": {
+    "status": "available",
+    "name": "Ardenvale Tactician // Dizzying Swoop",
+    "price_brl": 0.06,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Trono de Eldraine",
+    "printing_code": "ELD",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ardenvale%20Tactician%20%2F%2F%20Dizzying%20Swoop",
+    "checked_at": "2026-08-07T19:54:17.792Z"
+  },
   "ea393815-0202-4edc-aa1e-6885fe9b20ab": {
     "status": "available",
     "name": "Apostle's Blessing",
