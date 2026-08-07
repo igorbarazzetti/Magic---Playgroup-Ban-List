@@ -920,6 +920,21 @@ async function hydrateLigaMagicPrice(card) {
     inlinePrice.classList.toggle('is-stale', stale);
     inlinePrice.hidden = false;
   };
+  const showScryfallEstimate = (book) => {
+    const usd = Number(card?.prices?.usd);
+    const rate = Number(book?.usd_brl?.rate);
+    if (!Number.isFinite(usd) || usd <= 0 || !Number.isFinite(rate) || rate <= 0) return false;
+    const value = usd * rate;
+    if (inlinePrice) {
+      inlinePrice.textContent = `~ ${formatBrlPrice(value)}`;
+      inlinePrice.title = 'Estimativa pelo Scryfall convertida pela PTAX';
+      inlinePrice.classList.add('is-estimated');
+      inlinePrice.hidden = false;
+    }
+    target.classList.remove('is-stale');
+    target.innerHTML = `<div class="modal-kv"><span class="modal-kv__label">Estimativa em reais</span><strong class="market-ligamagic__price">~ ${formatBrlPrice(value)}</strong></div><p class="market-ligamagic__note">Estimativa: US$ ${usd.toFixed(2)} no Scryfall × PTAX de ${rate.toFixed(4).replace('.', ',')}. O preço real da LigaMagic ainda entrará na cobertura.</p>`;
+    return true;
+  };
   hideInlinePrice();
   const fallbackUrl = ligaMagicUrl(card);
   try {
@@ -949,6 +964,7 @@ async function hydrateLigaMagicPrice(card) {
       target.innerHTML = `<div class="modal-kv"><span class="modal-kv__label">Último menor preço normal</span><strong class="market-ligamagic__price">${formatBrlPrice(entry.price_brl)}</strong></div><p class="market-ligamagic__note">Fonte: LigaMagic · última leitura em ${escapeHtml(formatMarketTimestamp(entry.checked_at))}. A atualização mais recente não respondeu.</p>`;
       return;
     }
+    if (showScryfallEstimate(book)) return;
     target.classList.remove('is-stale');
     target.innerHTML = '<div class="modal-kv"><span class="modal-kv__label">Menor preço normal</span><span class="modal-kv__value">Indisponível</span></div><p class="market-ligamagic__note">Ainda não há uma cópia Normal/NM registrada na LigaMagic para esta carta.</p>';
   } catch {
@@ -1331,8 +1347,18 @@ function cardNameKeys(card) {
     .map((name) => slug(name).replace(/['’]/g, "'").replace(/\s+/g, ' ').trim());
 }
 
+function deckEntryKeys(entry) {
+  const normalize = (name) => slug(name).replace(/[^a-z0-9/]+/g, ' ').replace(/\s+/g, ' ').trim();
+  const name = String(entry?.name || '');
+  return [...new Set([entry?.key, name, ...name.split(/\s*\/\/\s*/)].map(normalize).filter(Boolean))];
+}
+
+function deckCardForEntry(entry) {
+  return deckEntryKeys(entry).map((key) => deckCardCache.get(key)).find(Boolean) || null;
+}
+
 async function fetchDeckCards(entries) {
-  const missing = entries.filter((entry) => !deckCardCache.has(entry.key));
+  const missing = entries.filter((entry) => !deckCardForEntry(entry));
   for (let start = 0; start < missing.length; start += 75) {
     const batch = missing.slice(start, start + 75);
     const response = await fetch('https://api.scryfall.com/cards/collection', {
@@ -1344,13 +1370,14 @@ async function fetchDeckCards(entries) {
     const payload = await response.json();
     const cards = payload.data || [];
     batch.forEach((entry) => {
-      const card = cards.find((candidate) => cardNameKeys(candidate).includes(entry.key)) || null;
-      deckCardCache.set(entry.key, card);
+      const keys = deckEntryKeys(entry);
+      const card = cards.find((candidate) => keys.some((key) => cardNameKeys(candidate).includes(key))) || null;
+      keys.forEach((key) => deckCardCache.set(key, card));
       if (card) cardNameKeys(card).forEach((key) => deckCardCache.set(key, card));
     });
     if (start + 75 < missing.length) await new Promise((resolve) => setTimeout(resolve, 80));
   }
-  return new Map(entries.map((entry) => [entry.key, deckCardCache.get(entry.key) || null]));
+  return new Map(entries.map((entry) => [entry.key, deckCardForEntry(entry)]));
 }
 
 function localBannedCard(entry, format) {
@@ -1601,7 +1628,7 @@ async function openSavedDeck(id) {
 }
 
 function savedDeckEntryImage(entry) {
-  const card = deckCardCache.get(entry.key);
+  const card = deckCardForEntry(entry);
   const src = card ? imageFor(card, 0, 'small') : '';
   return src
     ? `<img src="${escapeHtml(src)}" alt="" loading="lazy" decoding="async" />`
@@ -1790,7 +1817,7 @@ function bind() {
   $('savedDeckList').addEventListener('click', (event) => {
     const item = event.target.closest('[data-saved-deck-entry]');
     if (!item) return;
-    const card = deckCardCache.get(item.dataset.savedDeckEntry);
+    const card = deckCardForEntry({ key: item.dataset.savedDeckEntry });
     if (!card) { showToast('A carta ainda está sendo preparada. Tente novamente em instantes.'); return; }
     openCard(normalizeCard(card));
   });

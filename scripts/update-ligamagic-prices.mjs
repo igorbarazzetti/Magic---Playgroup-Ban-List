@@ -437,7 +437,8 @@ async function main() {
     priceIndex.mode = selection.mode;
     priceIndex.coverage = coverageFor(targets, priceIndex.prices, selection.mode);
     priceIndex.generated_at = new Date().toISOString();
-    await Promise.all([writeJson(catalogPath, catalog), writeJson(priceIndexPath, priceIndex), shards.write()]);
+    legacyBook.usd_brl = catalog.usd_brl || legacyBook.usd_brl || null;
+    await Promise.all([writeJson(catalogPath, catalog), writeJson(priceIndexPath, priceIndex), writeJson(legacyPath, legacyBook), shards.write()]);
     console.log(`Catálogo preparado com ${catalog.cards.length} cartas e ${priceIndex.coverage.attempted_count} preços migrados.`);
     return;
   }
@@ -500,6 +501,7 @@ async function main() {
   legacyBook.source = legacyBook.source || priceIndex.source;
   legacyBook.refresh_interval_hours = 80 * 24;
   legacyBook.generated_at = now;
+  legacyBook.usd_brl = catalog.usd_brl || legacyBook.usd_brl || null;
   const legacyValues = Object.values(legacyBook.cards || {});
   legacyBook.summary = {
     available: legacyValues.filter((entry) => entry.status === 'available').length,
