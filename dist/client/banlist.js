@@ -72,6 +72,7 @@ let pendingValidatedDeck = null;
 let validatedDecks = [];
 let validatedDecksLoaded = false;
 let currentSavedDeck = null;
+let savedDeckPriceBook = null;
 const $ = (id) => document.getElementById(id);
 const escapeHtml = (value = '') => String(value).replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[char]));
 const slug = (value = '') => value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
@@ -1612,11 +1613,11 @@ async function openSavedDeck(id) {
     $('savedDeckTitle').textContent = deck.name;
     $('savedDeckEyebrow').textContent = `Deck aprovado · ${validatedDeckFormatLabel(deck.format)}`;
     $('savedDeckPilot').textContent = deck.pilot ? `Pilotado por ${deck.pilot}` : 'Piloto não informado';
-    $('savedDeckStats').innerHTML = `<div><strong>${Number(deck.card_count) || 0}</strong><span>cartas</span></div><div><strong>${Number(deck.unique_count) || 0}</strong><span>nomes</span></div><div><strong>${validatedDeckDate(deck.created_at)}</strong><span>validado</span></div>`;
     const entries = Array.isArray(deck.entries) ? deck.entries.map((entry) => ({
       ...entry,
       key: entry.key || slug(entry.name).replace(/['’]/g, "'").replace(/\s+/g, ' ').trim(),
     })) : [];
+    renderSavedDeckStats(deck, entries);
     renderSavedDeckList(entries);
     if (typeof modal.showModal === 'function') modal.showModal(); else modal.setAttribute('open', '');
     document.body.classList.add('is-locked');
@@ -1635,14 +1636,53 @@ function savedDeckEntryImage(entry) {
     : '<span aria-hidden="true">✦</span>';
 }
 
+function savedDeckEntryPrice(entry) {
+  const card = deckCardForEntry(entry);
+  const ligaEntry = savedDeckPriceBook?.cards?.[card?.oracle_id || card?.id];
+  const ligaPrice = Number(ligaEntry?.price_brl);
+  if (['available', 'stale'].includes(ligaEntry?.status) && Number.isFinite(ligaPrice) && ligaPrice > 0) {
+    return { value: ligaPrice, estimated: false, stale: ligaEntry.status === 'stale' };
+  }
+  const usd = Number(card?.prices?.usd);
+  const rate = Number(savedDeckPriceBook?.usd_brl?.rate);
+  if (Number.isFinite(usd) && usd > 0 && Number.isFinite(rate) && rate > 0) return { value: usd * rate, estimated: true };
+  return null;
+}
+
+function savedDeckPricing(entries) {
+  return entries.reduce((summary, entry) => {
+    const price = savedDeckEntryPrice(entry);
+    if (!price) { summary.missing += Number(entry.quantity) || 1; return summary; }
+    summary.value += price.value * (Number(entry.quantity) || 1);
+    summary.estimated ||= price.estimated;
+    summary.quoted += Number(entry.quantity) || 1;
+    return summary;
+  }, { value: 0, quoted: 0, missing: 0, estimated: false });
+}
+
+function renderSavedDeckStats(deck, entries) {
+  const pricing = savedDeckPricing(entries);
+  const value = pricing.quoted ? `${pricing.estimated || pricing.missing ? '~ ' : ''}${formatBrlPrice(pricing.value)}${pricing.missing ? '+' : ''}` : '—';
+  const label = pricing.missing ? 'valor parcial' : pricing.estimated ? 'valor estimado' : 'valor do deck';
+  $('savedDeckStats').innerHTML = `<div><strong>${Number(deck.card_count) || 0}</strong><span>cartas</span></div><div><strong>${Number(deck.unique_count) || 0}</strong><span>nomes</span></div><div class="saved-deck-modal__value"><strong>${value}</strong><span>${label}</span></div><div><strong>${validatedDeckDate(deck.created_at)}</strong><span>validado</span></div>`;
+}
+
 function renderSavedDeckList(entries) {
-  $('savedDeckList').innerHTML = `<div class="saved-deck-list__heading"><strong>Lista completa</strong><span>${entries.length} nomes</span></div><ul>${entries.map((entry) => `<li><button class="saved-deck-entry" type="button" data-saved-deck-entry="${escapeHtml(entry.key)}" aria-label="Abrir detalhes de ${escapeHtml(entry.name)}"><span class="saved-deck-entry__art">${savedDeckEntryImage(entry)}</span><span class="saved-deck-entry__quantity">${Number(entry.quantity) || 1}×</span><strong>${escapeHtml(entry.name)}</strong><span class="saved-deck-entry__open" aria-hidden="true">↗</span></button></li>`).join('')}</ul>`;
+  $('savedDeckList').innerHTML = `<div class="saved-deck-list__heading"><strong>Lista completa</strong><span>${entries.length} nomes</span></div><ul>${entries.map((entry) => {
+    const price = savedDeckEntryPrice(entry);
+    const quantity = Number(entry.quantity) || 1;
+    const subtotal = price ? price.value * quantity : null;
+    const priceMarkup = price ? `<span class="saved-deck-entry__price${price.estimated ? ' is-estimated' : ''}"><small>${price.estimated ? '~ ' : ''}${formatBrlPrice(price.value)} × ${quantity}</small><strong>${price.estimated ? '~ ' : ''}${formatBrlPrice(subtotal)}</strong></span>` : '<span class="saved-deck-entry__price is-pending"><small>Preço</small><strong>pendente</strong></span>';
+    return `<li><button class="saved-deck-entry" type="button" data-saved-deck-entry="${escapeHtml(entry.key)}" aria-label="Abrir detalhes de ${escapeHtml(entry.name)}"><span class="saved-deck-entry__art">${savedDeckEntryImage(entry)}</span><span class="saved-deck-entry__quantity">${quantity}×</span><strong>${escapeHtml(entry.name)}</strong>${priceMarkup}<span class="saved-deck-entry__open" aria-hidden="true">↗</span></button></li>`;
+  }).join('')}</ul>`;
 }
 
 async function hydrateSavedDeckPreviews(entries, deckId) {
   try {
-    await fetchDeckCards(entries);
+    const [, book] = await Promise.all([fetchDeckCards(entries), getLigaMagicPriceBook().catch(() => null)]);
+    if (book) savedDeckPriceBook = book;
     if (currentSavedDeck?.id !== deckId || !$('savedDeckModal').open) return;
+    renderSavedDeckStats(currentSavedDeck, entries);
     renderSavedDeckList(entries);
   } catch {
     // The text list remains fully usable if Scryfall artwork is temporarily unavailable.
