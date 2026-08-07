@@ -322,6 +322,7 @@ main{display:block;min-width:0}
 .card-price{display:inline-flex;align-items:center;gap:4px;color:var(--gold);font-size:9px;font-weight:800;white-space:nowrap}
 .card-price.is-estimated{color:#9fc4c5}
 .card-price small{color:inherit;font-size:6px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;opacity:.72}
+.price-source-dot{display:inline-block;flex:0 0 auto;width:6px;height:6px;margin-right:5px;border-radius:50%;vertical-align:middle;box-shadow:0 0 0 1px rgba(255,255,255,.08),0 0 7px currentColor}.price-source-dot.is-ligamagic{background:#62ce83;color:#62ce83}.price-source-dot.is-scryfall{background:#e4c357;color:#e4c357}
 .card-tile__ban-warning{display:inline-flex;align-items:center;min-height:18px;padding:2px 6px;border:1px solid rgba(230,109,96,.42);border-radius:99px;background:rgba(104,30,34,.22);color:#ffb4aa;font-size:7px;font-weight:800;text-transform:uppercase}
 .card-tile__set{display:flex;align-items:center;gap:5px;min-width:0;color:#8f9297;font-size:8px;letter-spacing:.04em;text-transform:uppercase}
 .card-tile__set-symbol{width:14px;height:14px;flex:0 0 14px;filter:invert(1);opacity:.62}

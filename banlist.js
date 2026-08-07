@@ -581,7 +581,7 @@ function renderCards() {
     const formatsLabel = card.formats.map((key) => formats.find((item) => item.key === key)?.label || key).join(', ');
     const imageMarkup = image ? `<img loading="lazy" decoding="async" width="488" height="680" src="${escapeHtml(image)}"${srcset ? ` srcset="${escapeHtml(srcset)}" sizes="(max-width: 559px) calc(50vw - 22px), (max-width: 959px) calc(25vw - 20px), 220px"` : ''} alt="Carta ${escapeHtml(card.name)}" />` : '';
     const price = state.tab === 'catalog' ? effectiveCatalogPrice(card) : null;
-    const priceMarkup = price ? `<span class="card-price${price.estimated ? ' is-estimated' : ''}" title="${price.estimated ? 'Estimativa pelo Scryfall convertida pela PTAX' : `Preço ${price.stale ? 'desatualizado ' : ''}da LigaMagic`}">${price.estimated ? '~ ' : ''}${escapeHtml(formatBrlPrice(price.value))}${price.estimated ? '<small>estimado</small>' : ''}</span>` : '';
+    const priceMarkup = price ? `<span class="card-price${price.estimated ? ' is-estimated' : ''}" title="${price.estimated ? 'Estimativa pelo Scryfall convertida pela PTAX' : `Preço ${price.stale ? 'desatualizado ' : ''}da LigaMagic`}">${priceSourceDot(price.estimated)}${price.estimated ? '~ ' : ''}${escapeHtml(formatBrlPrice(price.value))}${price.estimated ? '<small>estimado</small>' : ''}</span>` : '';
     const banWarning = state.tab === 'catalog' && card.formats.length ? '<span class="card-tile__ban-warning">Banida</span>' : '';
     const setAndPrice = state.tab === 'catalog' ? `<div class="card-tile__catalog-row"><span class="card-tile__set">${setLine}</span>${priceMarkup}</div>` : `<span class="card-tile__set">${setLine}</span>`;
     const ariaFormats = formatsLabel ? `. Banida em ${formatsLabel}` : '';
@@ -833,6 +833,11 @@ function formatBrlPrice(value) {
   return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(Number(value));
 }
 
+function priceSourceDot(estimated) {
+  const label = estimated ? 'Estimativa do Scryfall convertida pela PTAX' : 'Preço atualizado pela LigaMagic';
+  return `<span class="price-source-dot ${estimated ? 'is-scryfall' : 'is-ligamagic'}" title="${label}" aria-label="${label}"></span>`;
+}
+
 function formatMarketTimestamp(value) {
   const date = new Date(value);
   if (Number.isNaN(date.getTime())) return 'data indisponível';
@@ -881,7 +886,7 @@ async function hydrateCatalogMarketPrice(card) {
     target.innerHTML = '<div class="modal-kv"><span class="modal-kv__label">Preço em reais</span><span class="modal-kv__value">Indisponível</span></div><p class="market-ligamagic__note">Ainda não há preço confirmado nem estimativa para esta carta.</p>';
     return;
   }
-  inlinePrice.textContent = `${price.estimated ? '~ ' : ''}${formatBrlPrice(price.value)}`;
+  inlinePrice.innerHTML = `${priceSourceDot(price.estimated)}${price.estimated ? '~ ' : ''}${formatBrlPrice(price.value)}`;
   inlinePrice.classList.toggle('is-stale', price.stale && !price.estimated);
   inlinePrice.classList.toggle('is-estimated', price.estimated);
   inlinePrice.title = price.estimated ? 'Estimativa pelo Scryfall convertida pela PTAX' : `${price.stale ? 'Último ' : ''}menor preço Normal/NM na LigaMagic`;
@@ -891,7 +896,7 @@ async function hydrateCatalogMarketPrice(card) {
     const usd = Number(card?.prices?.usd);
     const rate = Number(catalogIndex?.usd_brl?.rate);
     target.classList.remove('is-stale');
-    target.innerHTML = `<div class="modal-kv"><span class="modal-kv__label">Estimativa em reais</span><strong class="market-ligamagic__price">~ ${formatBrlPrice(price.value)}</strong></div><p class="market-ligamagic__note">Estimativa: US$ ${Number.isFinite(usd) ? usd.toFixed(2) : '—'} no Scryfall × PTAX de ${Number.isFinite(rate) ? rate.toFixed(4).replace('.', ',') : '—'}. O preço real da LigaMagic ainda entrará na cobertura.</p>`;
+    target.innerHTML = `<div class="modal-kv"><span class="modal-kv__label">Estimativa em reais</span><strong class="market-ligamagic__price">${priceSourceDot(true)}~ ${formatBrlPrice(price.value)}</strong></div><p class="market-ligamagic__note">Estimativa: US$ ${Number.isFinite(usd) ? usd.toFixed(2) : '—'} no Scryfall × PTAX de ${Number.isFinite(rate) ? rate.toFixed(4).replace('.', ',') : '—'}. O preço real da LigaMagic ainda entrará na cobertura.</p>`;
     return;
   }
 
@@ -900,7 +905,7 @@ async function hydrateCatalogMarketPrice(card) {
   if (link) link.href = detail?.source_url || ligaMagicUrl(card);
   const printing = [detail?.printing_name, detail?.printing_code].filter(Boolean).join(' · ');
   target.classList.toggle('is-stale', price.stale);
-  target.innerHTML = `<div class="modal-kv"><span class="modal-kv__label">${price.stale ? 'Último menor preço normal' : 'Menor preço normal'}</span><strong class="market-ligamagic__price">${formatBrlPrice(price.value)}</strong></div><p class="market-ligamagic__note">Fonte: LigaMagic · Normal/NM${printing ? ` · ${escapeHtml(printing)}` : ''} · consultado em ${escapeHtml(formatMarketTimestamp(detail?.checked_at || price.checkedAt))}${price.stale ? ' · atualização pendente' : ''}.</p>`;
+  target.innerHTML = `<div class="modal-kv"><span class="modal-kv__label">${price.stale ? 'Último menor preço normal' : 'Menor preço normal'}</span><strong class="market-ligamagic__price">${priceSourceDot(false)}${formatBrlPrice(price.value)}</strong></div><p class="market-ligamagic__note">Fonte: LigaMagic · Normal/NM${printing ? ` · ${escapeHtml(printing)}` : ''} · consultado em ${escapeHtml(formatMarketTimestamp(detail?.checked_at || price.checkedAt))}${price.stale ? ' · atualização pendente' : ''}.</p>`;
 }
 
 async function hydrateLigaMagicPrice(card) {
@@ -916,7 +921,7 @@ async function hydrateLigaMagicPrice(card) {
   };
   const showInlinePrice = (entry, { stale = false } = {}) => {
     if (!inlinePrice) return;
-    inlinePrice.textContent = formatBrlPrice(entry.price_brl);
+    inlinePrice.innerHTML = `${priceSourceDot(false)}${formatBrlPrice(entry.price_brl)}`;
     inlinePrice.title = `${stale ? 'Último ' : ''}menor preço Normal/NM na LigaMagic`;
     inlinePrice.classList.toggle('is-stale', stale);
     inlinePrice.hidden = false;
@@ -927,13 +932,13 @@ async function hydrateLigaMagicPrice(card) {
     if (!Number.isFinite(usd) || usd <= 0 || !Number.isFinite(rate) || rate <= 0) return false;
     const value = usd * rate;
     if (inlinePrice) {
-      inlinePrice.textContent = `~ ${formatBrlPrice(value)}`;
+      inlinePrice.innerHTML = `${priceSourceDot(true)}~ ${formatBrlPrice(value)}`;
       inlinePrice.title = 'Estimativa pelo Scryfall convertida pela PTAX';
       inlinePrice.classList.add('is-estimated');
       inlinePrice.hidden = false;
     }
     target.classList.remove('is-stale');
-    target.innerHTML = `<div class="modal-kv"><span class="modal-kv__label">Estimativa em reais</span><strong class="market-ligamagic__price">~ ${formatBrlPrice(value)}</strong></div><p class="market-ligamagic__note">Estimativa: US$ ${usd.toFixed(2)} no Scryfall × PTAX de ${rate.toFixed(4).replace('.', ',')}. O preço real da LigaMagic ainda entrará na cobertura.</p>`;
+    target.innerHTML = `<div class="modal-kv"><span class="modal-kv__label">Estimativa em reais</span><strong class="market-ligamagic__price">${priceSourceDot(true)}~ ${formatBrlPrice(value)}</strong></div><p class="market-ligamagic__note">Estimativa: US$ ${usd.toFixed(2)} no Scryfall × PTAX de ${rate.toFixed(4).replace('.', ',')}. O preço real da LigaMagic ainda entrará na cobertura.</p>`;
     return true;
   };
   hideInlinePrice();
@@ -956,13 +961,13 @@ async function hydrateLigaMagicPrice(card) {
       const printing = [entry.printing_name, entry.printing_code].filter(Boolean).join(' · ');
       target.classList.remove('is-stale');
       showInlinePrice(entry);
-      target.innerHTML = `<div class="modal-kv"><span class="modal-kv__label">Menor preço normal</span><strong class="market-ligamagic__price">${formatBrlPrice(entry.price_brl)}</strong></div><p class="market-ligamagic__note">Fonte: LigaMagic · Normal/NM${printing ? ` · ${escapeHtml(printing)}` : ''} · consultado em ${escapeHtml(formatMarketTimestamp(entry.checked_at))}.</p>`;
+      target.innerHTML = `<div class="modal-kv"><span class="modal-kv__label">Menor preço normal</span><strong class="market-ligamagic__price">${priceSourceDot(false)}${formatBrlPrice(entry.price_brl)}</strong></div><p class="market-ligamagic__note">Fonte: LigaMagic · Normal/NM${printing ? ` · ${escapeHtml(printing)}` : ''} · consultado em ${escapeHtml(formatMarketTimestamp(entry.checked_at))}.</p>`;
       return;
     }
     if (entry?.status === 'stale' && Number.isFinite(Number(entry.price_brl))) {
       target.classList.add('is-stale');
       showInlinePrice(entry, { stale: true });
-      target.innerHTML = `<div class="modal-kv"><span class="modal-kv__label">Último menor preço normal</span><strong class="market-ligamagic__price">${formatBrlPrice(entry.price_brl)}</strong></div><p class="market-ligamagic__note">Fonte: LigaMagic · última leitura em ${escapeHtml(formatMarketTimestamp(entry.checked_at))}. A atualização mais recente não respondeu.</p>`;
+      target.innerHTML = `<div class="modal-kv"><span class="modal-kv__label">Último menor preço normal</span><strong class="market-ligamagic__price">${priceSourceDot(false)}${formatBrlPrice(entry.price_brl)}</strong></div><p class="market-ligamagic__note">Fonte: LigaMagic · última leitura em ${escapeHtml(formatMarketTimestamp(entry.checked_at))}. A atualização mais recente não respondeu.</p>`;
       return;
     }
     if (showScryfallEstimate(book)) return;
@@ -1365,7 +1370,7 @@ async function fetchDeckCards(entries) {
     const response = await fetch('https://api.scryfall.com/cards/collection', {
       method: 'POST',
       headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
-      body: JSON.stringify({ identifiers: batch.map((entry) => ({ name: entry.name })) }),
+      body: JSON.stringify({ identifiers: batch.map((entry) => ({ name: String(entry.name || '').split(/\s*\/\/\s*/)[0].trim() })) }),
     });
     if (!response.ok) throw new Error(`Scryfall ${response.status}`);
     const payload = await response.json();
@@ -1662,7 +1667,7 @@ function savedDeckPricing(entries) {
 
 function renderSavedDeckStats(deck, entries) {
   const pricing = savedDeckPricing(entries);
-  const value = pricing.quoted ? `${pricing.estimated || pricing.missing ? '~ ' : ''}${formatBrlPrice(pricing.value)}${pricing.missing ? '+' : ''}` : '—';
+  const value = pricing.quoted ? `${priceSourceDot(pricing.estimated)}${pricing.estimated || pricing.missing ? '~ ' : ''}${formatBrlPrice(pricing.value)}${pricing.missing ? '+' : ''}` : '—';
   const label = pricing.missing ? 'valor parcial' : pricing.estimated ? 'valor estimado' : 'valor do deck';
   $('savedDeckStats').innerHTML = `<div><strong>${Number(deck.card_count) || 0}</strong><span>cartas</span></div><div><strong>${Number(deck.unique_count) || 0}</strong><span>nomes</span></div><div class="saved-deck-modal__value"><strong>${value}</strong><span>${label}</span></div><div><strong>${validatedDeckDate(deck.created_at)}</strong><span>validado</span></div>`;
 }
@@ -1672,7 +1677,7 @@ function renderSavedDeckList(entries) {
     const price = savedDeckEntryPrice(entry);
     const quantity = Number(entry.quantity) || 1;
     const subtotal = price ? price.value * quantity : null;
-    const priceMarkup = price ? `<span class="saved-deck-entry__price${price.estimated ? ' is-estimated' : ''}"><small>${price.estimated ? '~ ' : ''}${formatBrlPrice(price.value)} × ${quantity}</small><strong>${price.estimated ? '~ ' : ''}${formatBrlPrice(subtotal)}</strong></span>` : '<span class="saved-deck-entry__price is-pending"><small>Preço</small><strong>pendente</strong></span>';
+    const priceMarkup = price ? `<span class="saved-deck-entry__price${price.estimated ? ' is-estimated' : ''}"><small>${priceSourceDot(price.estimated)}${price.estimated ? '~ ' : ''}${formatBrlPrice(price.value)} × ${quantity}</small><strong>${priceSourceDot(price.estimated)}${price.estimated ? '~ ' : ''}${formatBrlPrice(subtotal)}</strong></span>` : '<span class="saved-deck-entry__price is-pending"><small>Preço</small><strong>pendente</strong></span>';
     return `<li><button class="saved-deck-entry" type="button" data-saved-deck-entry="${escapeHtml(entry.key)}" aria-label="Abrir detalhes de ${escapeHtml(entry.name)}"><span class="saved-deck-entry__art">${savedDeckEntryImage(entry)}</span><span class="saved-deck-entry__quantity">${quantity}×</span><strong>${escapeHtml(entry.name)}</strong>${priceMarkup}<span class="saved-deck-entry__open" aria-hidden="true">↗</span></button></li>`;
   }).join('')}</ul>`;
 }
