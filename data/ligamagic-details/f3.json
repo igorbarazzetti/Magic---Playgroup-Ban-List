@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agent%20Bishop%2C%20Man%20in%20Black",
     "checked_at": "2026-08-06T11:10:34.125Z"
   },
+  "f334087a-deda-4e9e-ab58-68f7e226d7ce": {
+    "status": "available",
+    "name": "Ant-Man, Elusive Avenger",
+    "price_brl": 3.19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes Commander",
+    "printing_code": "MSC",
+    "collector_number": "73",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ant-Man%2C%20Elusive%20Avenger",
+    "checked_at": "2026-08-07T09:31:56.369Z"
+  },
   "f36d1d8b-8303-44a9-ab56-531931641ea2": {
     "status": "available",
     "name": "Academy Manufactor",
@@ -70,6 +82,18 @@
     "collector_number": "199",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agatha%20of%20the%20Vile%20Cauldron",
     "checked_at": "2026-08-06T11:09:04.051Z"
+  },
+  "f3c40943-1d7c-4ea2-b34f-8df8b6775701": {
+    "status": "available",
+    "name": "Animal Sanctuary",
+    "price_brl": 2.48,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2021",
+    "printing_code": "M21",
+    "collector_number": "242",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Animal%20Sanctuary",
+    "checked_at": "2026-08-07T09:24:36.100Z"
   },
   "f3c5978a-70fa-431f-933b-b954bd0db0ea": {
     "status": "available",

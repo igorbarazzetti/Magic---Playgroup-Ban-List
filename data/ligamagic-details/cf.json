@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Hypergenesis",
     "checked_at": "2026-08-05T20:08:01.862Z"
   },
+  "cf6dc79e-840c-4d47-8f94-c8623528acd2": {
+    "status": "available",
+    "name": "Angry Rabble",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel's Spider-Man",
+    "printing_code": "SPM",
+    "collector_number": "75",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angry%20Rabble",
+    "checked_at": "2026-08-07T09:23:07.210Z"
+  },
   "cfc023e0-9e9d-48ac-bfb5-74bfd5977dee": {
     "status": "available",
     "name": "Alpha Brawl",

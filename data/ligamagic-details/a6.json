@@ -58,5 +58,17 @@
     "collector_number": "19980117",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Recurring%20Nightmare",
     "checked_at": "2026-08-05T20:11:50.480Z"
+  },
+  "a67f78be-8fbe-414a-9574-bb11ac50e1a5": {
+    "status": "available",
+    "name": "Anointed Peacekeeper",
+    "price_brl": 1.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominária Unida",
+    "printing_code": "DMU",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anointed%20Peacekeeper",
+    "checked_at": "2026-08-07T09:30:06.360Z"
   }
 }

@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Afterlife%20Insurance",
     "checked_at": "2026-08-06T11:07:44.011Z"
   },
+  "05551d91-50c6-46d1-86a4-cd3d177d0923": {
+    "status": "available",
+    "name": "Anim Pakal, Thousandth Moon",
+    "price_brl": 27.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "As Cavernas Perdidas de Ixalan",
+    "printing_code": "LCI",
+    "collector_number": "223",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anim%20Pakal%2C%20Thousandth%20Moon",
+    "checked_at": "2026-08-07T09:23:46.083Z"
+  },
   "056a98aa-f3f7-4ac9-9755-3e8a60a59abb": {
     "status": "available",
     "name": "Afiya Grove",
@@ -70,6 +82,18 @@
     "collector_number": "62",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambush",
     "checked_at": "2026-08-07T04:37:31.115Z"
+  },
+  "05b020fd-21be-495d-ae45-7de3b1224e6d": {
+    "status": "available",
+    "name": "Angelic Shield",
+    "price_brl": 0.14,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Duel Decks: Venser vs. Koth",
+    "printing_code": "DDI",
+    "collector_number": "27",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Shield",
+    "checked_at": "2026-08-07T09:20:05.936Z"
   },
   "05b6f9e3-9acd-43a6-acff-caa811aaf0a1": {
     "status": "available",

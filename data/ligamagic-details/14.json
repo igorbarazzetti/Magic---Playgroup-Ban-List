@@ -1,4 +1,16 @@
 {
+  "141f952b-9e9f-48c5-9c88-b1504dfa73bc": {
+    "status": "available",
+    "name": "Anthousa, Setessan Hero",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros",
+    "printing_code": "THS",
+    "collector_number": "149",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anthousa%2C%20Setessan%20Hero",
+    "checked_at": "2026-08-07T09:33:37.055Z"
+  },
   "14693689-d087-43b6-9c3f-63ab0648fc20": {
     "status": "available",
     "name": "All Is Dust",
@@ -22,6 +34,18 @@
     "collector_number": "262",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20the%20Ruins",
     "checked_at": "2026-08-07T07:56:56.417Z"
+  },
+  "14a555eb-9720-45b4-9eb5-77b739e1045c": {
+    "status": "available",
+    "name": "Angelic Quartermaster",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Voto Carmesim",
+    "printing_code": "VOW",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Quartermaster",
+    "checked_at": "2026-08-07T09:19:25.913Z"
   },
   "14c356aa-178d-4c14-a88e-fbe92ee6d89f": {
     "status": "available",

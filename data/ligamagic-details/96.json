@@ -1,4 +1,16 @@
 {
+  "967c2c79-7e49-448d-8d30-b2eb08b21d0a": {
+    "status": "available",
+    "name": "Angry Mob",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quarta Edição",
+    "printing_code": "4E",
+    "collector_number": "9",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angry%20Mob",
+    "checked_at": "2026-08-07T09:22:56.031Z"
+  },
   "96de29a1-3178-4c8b-a67b-ab0262442cb6": {
     "status": "available",
     "name": "Akki Coalflinger",

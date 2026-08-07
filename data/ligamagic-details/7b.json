@@ -1,4 +1,16 @@
 {
+  "7b238254-51b4-4e68-a8c6-93ab1180012e": {
+    "status": "available",
+    "name": "Answered Prayers",
+    "price_brl": 0.02,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons",
+    "printing_code": "MH1",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Answered%20Prayers",
+    "checked_at": "2026-08-07T09:31:36.403Z"
+  },
   "7b3e74ad-0179-480b-871c-9e3bc30a43ff": {
     "status": "available",
     "name": "Aethersphere Harvester",

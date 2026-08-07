@@ -22,5 +22,17 @@
     "collector_number": "76",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aid%20the%20Fallen",
     "checked_at": "2026-08-06T14:44:11.867Z"
+  },
+  "aceea999-90ab-472c-86a7-48af1542cbcf": {
+    "status": "available",
+    "name": "Anticausal Vestige",
+    "price_brl": 5.38,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Edge of Eternities",
+    "printing_code": "EOE",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anticausal%20Vestige",
+    "checked_at": "2026-08-07T09:34:26.482Z"
   }
 }

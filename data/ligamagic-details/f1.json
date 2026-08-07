@@ -46,5 +46,17 @@
     "collector_number": "21",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acquire",
     "checked_at": "2026-08-06T03:55:51.981Z"
+  },
+  "f1d8e9a6-1903-4be5-8609-1009a463f393": {
+    "status": "available",
+    "name": "Anthem of Champions",
+    "price_brl": 0.86,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Foundations",
+    "printing_code": "FDN",
+    "collector_number": "116",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anthem%20of%20Champions",
+    "checked_at": "2026-08-07T09:33:16.460Z"
   }
 }

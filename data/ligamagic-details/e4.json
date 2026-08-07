@@ -34,5 +34,17 @@
     "collector_number": "212",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alpharael%2C%20Dreaming%20Acolyte",
     "checked_at": "2026-08-07T00:41:24.932Z"
+  },
+  "e4f880f5-0639-4acb-a099-e48f5707f0db": {
+    "status": "available",
+    "name": "Anointer of Valor",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Double Masters 2022",
+    "printing_code": "2X2",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anointer%20of%20Valor",
+    "checked_at": "2026-08-07T09:30:26.355Z"
   }
 }

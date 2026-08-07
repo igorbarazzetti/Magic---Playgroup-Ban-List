@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Rift",
     "checked_at": "2026-08-06T10:59:13.746Z"
   },
+  "2579e9e0-b00f-4a1b-8fce-15d06bb7fe5a": {
+    "status": "available",
+    "name": "Angelic Sleuth",
+    "price_brl": 2.71,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nova Capenna Commander",
+    "printing_code": "NCC",
+    "collector_number": "12",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Sleuth",
+    "checked_at": "2026-08-07T09:20:25.950Z"
+  },
   "2583836d-7fd3-47b3-9b69-6814efe54a90": {
     "status": "available",
     "name": "Stirring Bard",

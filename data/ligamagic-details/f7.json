@@ -11,6 +11,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Cloudpost",
     "checked_at": "2026-08-05T20:04:22.493Z"
   },
+  "f74ef5b0-9222-43d0-a919-aaf28dc21b59": {
+    "status": "available",
+    "name": "Anointer of Champions",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic Origens",
+    "printing_code": "ORI",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anointer%20of%20Champions",
+    "checked_at": "2026-08-07T09:30:16.905Z"
+  },
+  "f7536d94-4062-4ccc-a086-1c47954b24c7": {
+    "status": "available",
+    "name": "Anthroplasm",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Legado de Urza",
+    "printing_code": "UL",
+    "collector_number": "25",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anthroplasm",
+    "checked_at": "2026-08-07T09:33:56.455Z"
+  },
   "f759d112-76db-4091-a22b-b9f19ab6fa5f": {
     "status": "available",
     "name": "Griselbrand",
@@ -22,6 +46,18 @@
     "collector_number": "106",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Griselbrand",
     "checked_at": "2026-08-05T20:07:22.774Z"
+  },
+  "f785133a-636a-487d-8d56-e07012e5d732": {
+    "status": "available",
+    "name": "Animate Library",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unstable",
+    "printing_code": "UST",
+    "collector_number": "26",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Animate%20Library",
+    "checked_at": "2026-08-07T09:25:26.147Z"
   },
   "f7ed301a-dce7-49d0-a68a-d3a099201f65": {
     "status": "available",

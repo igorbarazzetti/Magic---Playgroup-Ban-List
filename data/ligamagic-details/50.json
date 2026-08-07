@@ -82,5 +82,17 @@
     "collector_number": "98",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ace%2C%20Fearless%20Rebel",
     "checked_at": "2026-08-06T03:52:11.840Z"
+  },
+  "50de88d4-0beb-45e5-9664-d4f0e280e652": {
+    "status": "available",
+    "name": "Ant Queen",
+    "price_brl": 0.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Masters 2015",
+    "printing_code": "MM2",
+    "collector_number": "139",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ant%20Queen",
+    "checked_at": "2026-08-07T09:32:46.396Z"
   }
 }

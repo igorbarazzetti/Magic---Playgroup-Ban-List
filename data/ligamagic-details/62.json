@@ -1,4 +1,16 @@
 {
+  "620d7146-b5b3-487c-a24b-f36b10f48df4": {
+    "status": "available",
+    "name": "Angler Drake",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Amonkhet",
+    "printing_code": "AKH",
+    "collector_number": "41",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angler%20Drake",
+    "checked_at": "2026-08-07T09:21:25.959Z"
+  },
   "629fe1be-272d-465f-b9b1-2ce177410f13": {
     "status": "available",
     "name": "+2 Mace",

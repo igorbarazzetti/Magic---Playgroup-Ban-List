@@ -46,5 +46,17 @@
     "collector_number": "60",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Burst",
     "checked_at": "2026-08-06T07:22:05.277Z"
+  },
+  "1e4cf4a4-50a4-4856-bf7e-20899e8affd1": {
+    "status": "available",
+    "name": "Ant-Man, Scott Lang",
+    "price_brl": 1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes Commander (Begginer Box)",
+    "printing_code": "BBMSC",
+    "collector_number": "834",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ant-Man%2C%20Scott%20Lang",
+    "checked_at": "2026-08-07T09:32:36.415Z"
   }
 }

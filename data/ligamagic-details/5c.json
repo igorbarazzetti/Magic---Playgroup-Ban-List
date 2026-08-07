@@ -1,4 +1,16 @@
 {
+  "5c2dbe90-5784-4bc4-a715-76a61c1ecfbc": {
+    "status": "available",
+    "name": "Anodet Lurker",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Quinta Aurora",
+    "printing_code": "5DN",
+    "collector_number": "101",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anodet%20Lurker",
+    "checked_at": "2026-08-07T09:29:16.325Z"
+  },
   "5c8e5092-962e-49ef-ab82-8434e475e4e7": {
     "status": "available",
     "name": "Food Chain",

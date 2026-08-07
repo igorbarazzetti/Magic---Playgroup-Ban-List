@@ -1,4 +1,16 @@
 {
+  "5d7eea87-b60f-4ab9-b485-30aadda0cd79": {
+    "status": "available",
+    "name": "Ant-Man's Air Force",
+    "price_brl": 1.89,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes Commander",
+    "printing_code": "MSC",
+    "collector_number": "759",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ant-Man's%20Air%20Force",
+    "checked_at": "2026-08-07T09:32:16.813Z"
+  },
   "5d96170f-14dd-496e-a485-bd3b9eedfe02": {
     "status": "available",
     "name": "Maddening Hex",

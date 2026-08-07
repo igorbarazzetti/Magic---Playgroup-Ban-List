@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Accessories%20to%20Murder",
     "checked_at": "2026-08-06T03:49:51.705Z"
   },
+  "fe7bad80-f853-4af9-82e2-5ccf8038d93b": {
+    "status": "available",
+    "name": "Angelsong",
+    "price_brl": 0.57,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fragmentos de Alara",
+    "printing_code": "ALA",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelsong",
+    "checked_at": "2026-08-07T09:20:55.929Z"
+  },
   "fee680c6-afe2-4321-9d8a-8f81a612a53b": {
     "status": "available",
     "name": "Sorin, Imperious Bloodlord",

@@ -22,5 +22,17 @@
     "collector_number": "271",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Lion's%20Eye%20Diamond",
     "checked_at": "2026-08-05T20:09:14.013Z"
+  },
+  "ee8f16ba-cbf0-4286-b26c-d78dd35bee17": {
+    "status": "available",
+    "name": "Ankle Biter",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Os Fora da Lei de Encruzilhada do Trovão",
+    "printing_code": "OTJ",
+    "collector_number": "153",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ankle%20Biter",
+    "checked_at": "2026-08-07T09:27:26.240Z"
   }
 }

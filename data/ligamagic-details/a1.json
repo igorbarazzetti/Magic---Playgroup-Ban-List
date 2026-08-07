@@ -58,5 +58,17 @@
     "collector_number": "510",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Absorbing%20Man%20and%20Titania",
     "checked_at": "2026-08-06T00:14:07.169Z"
+  },
+  "a1bdf7f1-e3f7-4a13-9cf0-a2394df6cc74": {
+    "status": "available",
+    "name": "Animal Magnetism",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Masters",
+    "printing_code": "CMM",
+    "collector_number": "271",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Animal%20Magnetism",
+    "checked_at": "2026-08-07T09:24:26.099Z"
   }
 }

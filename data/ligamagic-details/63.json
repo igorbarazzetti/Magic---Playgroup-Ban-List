@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Sowing%20Mycospawn",
     "checked_at": "2026-08-05T20:12:57.145Z"
   },
+  "63c1eda1-3e6f-4e9c-adf3-a43164df98bb": {
+    "status": "available",
+    "name": "Ankh of Mishra",
+    "price_brl": 10.35,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Revised Edition (BB)",
+    "printing_code": "RVB",
+    "collector_number": "233",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ankh%20of%20Mishra",
+    "checked_at": "2026-08-07T09:27:16.224Z"
+  },
   "63d50d5e-56de-44c4-b906-b2a21a56e3f3": {
     "status": "available",
     "name": "Alania, Divergent Storm",

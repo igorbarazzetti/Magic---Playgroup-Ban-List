@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani%2C%20Adversary%20of%20Tyrants",
     "checked_at": "2026-08-06T14:49:12.060Z"
   },
+  "b262a057-9ace-48b4-b418-1bb751ccb300": {
+    "status": "available",
+    "name": "Angelic Purge",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Sombras em Innistrad",
+    "printing_code": "SOI",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Purge",
+    "checked_at": "2026-08-07T09:19:15.915Z"
+  },
   "b268fe15-2860-4730-865e-eed7f308fc45": {
     "status": "available",
     "name": "Agoraphobia",
@@ -82,6 +94,18 @@
     "collector_number": "120",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abzan%20Kin-Guard",
     "checked_at": "2026-08-06T03:46:21.618Z"
+  },
+  "b2bd58ea-b2c6-47f1-b082-7969f093bbc6": {
+    "status": "available",
+    "name": "Animate Land",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nêmesis",
+    "printing_code": "NE",
+    "collector_number": "101",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Animate%20Land",
+    "checked_at": "2026-08-07T09:25:16.185Z"
   },
   "b2d597b4-f9ba-44b0-a947-0c2ecda2d308": {
     "status": "available",

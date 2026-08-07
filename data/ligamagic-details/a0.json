@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amulet%20of%20Quoz",
     "checked_at": "2026-08-05T20:02:52.040Z"
   },
+  "a09da13e-f8a3-410e-941a-9912d2cfe7de": {
+    "status": "available",
+    "name": "Angler Turtle",
+    "price_brl": 0.55,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends: Batalha por Portal de Baldur",
+    "printing_code": "CLB",
+    "collector_number": "713",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angler%20Turtle",
+    "checked_at": "2026-08-07T09:21:36.977Z"
+  },
   "a0a1cd2b-ed7c-4cce-8497-4873e1e5e3df": {
     "status": "available",
     "name": "Geological Appraiser",

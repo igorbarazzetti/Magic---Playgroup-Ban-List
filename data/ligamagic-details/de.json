@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alchemist's%20Apprentice",
     "checked_at": "2026-08-06T18:14:07.614Z"
   },
+  "de08f5d4-8868-4d0f-8c0e-d0d3a2105581": {
+    "status": "available",
+    "name": "Angrath, Captain of Chaos",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "The List",
+    "printing_code": "PLIST",
+    "collector_number": "234",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angrath%2C%20Captain%20of%20Chaos",
+    "checked_at": "2026-08-07T09:21:45.972Z"
+  },
   "de23275e-e9c1-4151-aed8-f79ead03d5d4": {
     "status": "available",
     "name": "Adriana, Captain of the Guard",

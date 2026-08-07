@@ -1,4 +1,16 @@
 {
+  "dd0412ee-6c14-4cfc-95d8-942a2392111a": {
+    "status": "available",
+    "name": "Angelic Rocket",
+    "price_brl": 0.33,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unstable",
+    "printing_code": "UST",
+    "collector_number": "139",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Rocket",
+    "checked_at": "2026-08-07T09:19:45.938Z"
+  },
   "dd0cac88-0a78-408f-8eb0-080f79150180": {
     "status": "available",
     "name": "Aethertow",

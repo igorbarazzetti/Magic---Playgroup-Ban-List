@@ -47,6 +47,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abundant%20Harvest",
     "checked_at": "2026-08-06T00:16:37.343Z"
   },
+  "3485109b-251f-4bef-a069-308031f47912": {
+    "status": "available",
+    "name": "Angelic Voices",
+    "price_brl": 0.23,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Chronicles",
+    "printing_code": "CH",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Voices",
+    "checked_at": "2026-08-07T09:20:35.949Z"
+  },
+  "34c0f75d-10a9-428d-b202-3defb3949090": {
+    "status": "available",
+    "name": "Ant-Man's Army",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes",
+    "printing_code": "MSH",
+    "collector_number": "161",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ant-Man's%20Army",
+    "checked_at": "2026-08-07T09:32:26.972Z"
+  },
   "34dd789c-4d80-4ccc-a4f7-2e5388a9689d": {
     "status": "available",
     "name": "Angelic Arbiter",

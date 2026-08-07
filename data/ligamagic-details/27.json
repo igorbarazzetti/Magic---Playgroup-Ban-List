@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Tempest%20Efreet",
     "checked_at": "2026-08-05T20:13:26.715Z"
   },
+  "2737a78c-77ed-4bd0-ac0d-39ca2d816e83": {
+    "status": "available",
+    "name": "Angrath, Minotaur Pirate",
+    "price_brl": 10.11,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Rivais de Ixalan",
+    "printing_code": "RIX",
+    "collector_number": "201",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angrath%2C%20Minotaur%20Pirate",
+    "checked_at": "2026-08-07T09:21:55.962Z"
+  },
   "274ce6b0-af29-4afc-873b-b4126a67bd81": {
     "status": "available",
     "name": "Ancestor's Prophet",

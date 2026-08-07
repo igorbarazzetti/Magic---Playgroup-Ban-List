@@ -1,4 +1,16 @@
 {
+  "5212f0a8-7341-4960-835b-2f4600ca1b2d": {
+    "status": "available",
+    "name": "Anointed Deacon",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ixalan",
+    "printing_code": "XLN",
+    "collector_number": "89",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anointed%20Deacon",
+    "checked_at": "2026-08-07T09:29:56.348Z"
+  },
   "52adc761-1a0a-43d1-a706-41a92bb7880c": {
     "status": "available",
     "name": "Afflicted Deserter // Werewolf Ransacker",

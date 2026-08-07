@@ -1,4 +1,16 @@
 {
+  "762f891e-5d88-42b0-8abf-c69f3421011b": {
+    "status": "available",
+    "name": "Annihilating Fire",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Retorno a Ravnica",
+    "printing_code": "RTR",
+    "collector_number": "85",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Annihilating%20Fire",
+    "checked_at": "2026-08-07T09:28:36.802Z"
+  },
   "7647682d-d491-4cb1-add7-b4d745994e62": {
     "status": "available",
     "name": "Underdark Explorer",

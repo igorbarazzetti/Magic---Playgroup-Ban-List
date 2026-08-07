@@ -1,4 +1,16 @@
 {
+  "092ceffb-1ee4-452c-b15e-5b79267d42a6": {
+    "status": "available",
+    "name": "Angrath, the Flame-Chained",
+    "price_brl": 6.24,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Rivais de Ixalan",
+    "printing_code": "RIX",
+    "collector_number": "152",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angrath%2C%20the%20Flame-Chained",
+    "checked_at": "2026-08-07T09:22:46.029Z"
+  },
   "09496421-74e4-466a-9546-56f2a0c8eef4": {
     "status": "available",
     "name": "Vault of Whispers",

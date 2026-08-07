@@ -1,4 +1,16 @@
 {
+  "991fd651-0cba-41ee-855a-d01a1a7c8f60": {
+    "status": "available",
+    "name": "Anikthea, Hand of Erebos",
+    "price_brl": 10.55,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Masters",
+    "printing_code": "CMM",
+    "collector_number": "705",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anikthea%2C%20Hand%20of%20Erebos",
+    "checked_at": "2026-08-07T09:23:36.085Z"
+  },
   "992d9a72-d34d-47d7-96fb-37f0efb515ef": {
     "status": "available",
     "name": "Hymn to Tourach",

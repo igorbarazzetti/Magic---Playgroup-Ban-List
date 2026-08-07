@@ -22,5 +22,17 @@
     "collector_number": "194",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ahn-Crop%20Champion",
     "checked_at": "2026-08-06T14:43:21.793Z"
+  },
+  "c0d8fef4-65f4-4769-982d-b397d2b7e977": {
+    "status": "available",
+    "name": "Animate Dead",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Limited Edition Alpha",
+    "printing_code": "AL",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Animate%20Dead",
+    "checked_at": "2026-08-07T09:24:56.694Z"
   }
 }

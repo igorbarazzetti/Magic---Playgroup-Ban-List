@@ -1,4 +1,16 @@
 {
+  "ad09b3c3-c8e7-481c-8c45-e7f234935117": {
+    "status": "available",
+    "name": "Anguished Unmaking",
+    "price_brl": 6.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "últimas Notícias",
+    "printing_code": "OTP",
+    "collector_number": "35",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anguished%20Unmaking",
+    "checked_at": "2026-08-07T09:23:16.064Z"
+  },
   "ad172d4e-febf-4844-9544-861d03e27ab5": {
     "status": "available",
     "name": "Alabaster Host Sanctifier",

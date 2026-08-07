@@ -1,4 +1,16 @@
 {
+  "af42079b-a3c0-448c-9bb2-b915252e87a9": {
+    "status": "available",
+    "name": "Animation Module",
+    "price_brl": 2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaladesh Remastered",
+    "printing_code": "KLR",
+    "collector_number": "220",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Animation%20Module",
+    "checked_at": "2026-08-07T09:26:06.180Z"
+  },
   "af471455-6b9f-4c14-bb90-a74a44ecd247": {
     "status": "available",
     "name": "Aeon Engine",

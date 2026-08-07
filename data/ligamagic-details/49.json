@@ -1,4 +1,16 @@
 {
+  "4940783f-2534-41c1-b614-5dabb0dff405": {
+    "status": "available",
+    "name": "Animist's Might",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marcha das Máquinas: Consequências",
+    "printing_code": "MAT",
+    "collector_number": "20",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Animist's%20Might",
+    "checked_at": "2026-08-07T09:26:26.207Z"
+  },
   "4954181c-cb46-4cac-adc3-2c8b7693a211": {
     "status": "available",
     "name": "Abyssal Gatekeeper",

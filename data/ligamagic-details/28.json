@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Invention",
     "checked_at": "2026-08-07T07:54:46.276Z"
   },
+  "28f55673-7aa0-497e-8434-aa70df1b5e04": {
+    "status": "available",
+    "name": "Annihilate",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Eternal Masters",
+    "printing_code": "EMA",
+    "collector_number": "79",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Annihilate",
+    "checked_at": "2026-08-07T09:28:26.615Z"
+  },
   "28f70f86-19a9-4811-bc10-423a05842d39": {
     "status": "available",
     "name": "Aboroth",

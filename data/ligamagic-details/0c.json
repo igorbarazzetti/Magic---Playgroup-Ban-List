@@ -1,4 +1,16 @@
 {
+  "0c201f79-9eca-48c8-88ba-a20fa6918a07": {
+    "status": "available",
+    "name": "Anowon, the Ruin Sage",
+    "price_brl": 7,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Despertar do Mundo",
+    "printing_code": "WWK",
+    "collector_number": "49",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anowon%2C%20the%20Ruin%20Sage",
+    "checked_at": "2026-08-07T09:31:06.369Z"
+  },
   "0c97aea7-c997-45b4-a044-84fb5c07a021": {
     "status": "available",
     "name": "Aerie Auxiliary",

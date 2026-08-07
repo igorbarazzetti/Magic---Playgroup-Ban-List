@@ -23,6 +23,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abuna's%20Chant",
     "checked_at": "2026-08-06T00:15:57.283Z"
   },
+  "2d4976d4-649c-4d42-ac5a-ada4b46a480c": {
+    "status": "available",
+    "name": "Angrath's Marauders",
+    "price_brl": 1.88,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ixalan",
+    "printing_code": "XLN",
+    "collector_number": "132",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angrath's%20Marauders",
+    "checked_at": "2026-08-07T09:22:25.996Z"
+  },
+  "2dd7a4dc-902a-4e85-8a3b-c96a898fba86": {
+    "status": "available",
+    "name": "Animate Artifact",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quarta Edição",
+    "printing_code": "4E",
+    "collector_number": "10",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Animate%20Artifact",
+    "checked_at": "2026-08-07T09:24:46.179Z"
+  },
   "2ddbbe65-f928-4b8e-8c4c-a9ce82e2594d": {
     "status": "available",
     "name": "Amok",

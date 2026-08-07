@@ -1,4 +1,16 @@
 {
+  "4e0b9273-6614-41a8-9738-959349c0717b": {
+    "status": "available",
+    "name": "Anointer Priest",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Amonkhet",
+    "printing_code": "AKH",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anointer%20Priest",
+    "checked_at": "2026-08-07T09:30:36.378Z"
+  },
   "4e183439-17d2-47ff-9d99-5e22821d91e3": {
     "status": "available",
     "name": "Flawless Maneuver",

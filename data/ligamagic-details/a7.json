@@ -1,4 +1,16 @@
 {
+  "a75087aa-41bd-4e0f-a118-61b5209356f5": {
+    "status": "available",
+    "name": "Annihilating Glare",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Phyrexia: Tudo será um",
+    "printing_code": "ONE",
+    "collector_number": "80",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Annihilating%20Glare",
+    "checked_at": "2026-08-07T09:28:46.298Z"
+  },
   "a7c69802-99c4-4778-934e-cc09ba58c267": {
     "status": "available",
     "name": "Basking Broodscale",

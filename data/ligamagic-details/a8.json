@@ -1,4 +1,16 @@
 {
+  "a8135179-51ef-454e-98ff-69137440339f": {
+    "status": "available",
+    "name": "Annoyed Altisaur",
+    "price_brl": 0.17,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Double Masters 2022",
+    "printing_code": "2X2",
+    "collector_number": "134",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Annoyed%20Altisaur",
+    "checked_at": "2026-08-07T09:28:56.322Z"
+  },
   "a87abe7a-fee9-45fd-b3d8-896e43ed6b3c": {
     "status": "available",
     "name": "Agent's Toolkit",

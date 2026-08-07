@@ -1,4 +1,16 @@
 {
+  "8f1016c7-0551-4813-987d-36abf3b2ffeb": {
+    "status": "available",
+    "name": "Anje's Ravager",
+    "price_brl": 2.93,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2019",
+    "printing_code": "C19",
+    "collector_number": "22",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anje's%20Ravager",
+    "checked_at": "2026-08-07T09:27:06.261Z"
+  },
   "8f3cba20-e7a4-47f4-8bce-90168ce9cc5c": {
     "status": "available",
     "name": "Accursed Horde",

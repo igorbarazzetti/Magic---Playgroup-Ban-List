@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alliance%20of%20Arms",
     "checked_at": "2026-08-07T00:35:54.687Z"
   },
+  "be31fa46-d5ac-4c85-9c19-3f0e2b1f223b": {
+    "status": "available",
+    "name": "Annex Sentry",
+    "price_brl": 0.18,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Phyrexia: Tudo será um",
+    "printing_code": "ONE",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Annex%20Sentry",
+    "checked_at": "2026-08-07T09:27:56.253Z"
+  },
   "be662217-41c2-4caa-89da-ae7f6f817c34": {
     "status": "available",
     "name": "Alesha's Vanguard",

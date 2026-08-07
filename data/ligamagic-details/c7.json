@@ -1,4 +1,16 @@
 {
+  "c7a6a165-b709-46e0-ae42-6f69a17c0621": {
+    "status": "available",
+    "name": "Animate Wall",
+    "price_brl": 0.85,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quarta Edição (BB)",
+    "printing_code": "4EB",
+    "collector_number": "12",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Animate%20Wall",
+    "checked_at": "2026-08-07T09:25:46.164Z"
+  },
   "c7aecca5-2f67-4245-ab2d-e723d8b23a67": {
     "status": "available",
     "name": "Expressive Iteration",

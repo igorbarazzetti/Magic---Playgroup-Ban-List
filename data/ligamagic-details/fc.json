@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amateur%20Hero",
     "checked_at": "2026-08-07T00:47:25.236Z"
   },
+  "fcb03c54-5b9a-428d-bbf6-ef8977770c8d": {
+    "status": "available",
+    "name": "Anoint",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tempestade",
+    "printing_code": "TP",
+    "collector_number": "9",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anoint",
+    "checked_at": "2026-08-07T09:29:26.326Z"
+  },
   "fcb7c93c-46ab-49b5-a6e0-35d73f3be8f0": {
     "status": "available",
     "name": "Screaming Nemesis",

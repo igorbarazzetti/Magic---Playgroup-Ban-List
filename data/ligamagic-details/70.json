@@ -106,5 +106,17 @@
     "collector_number": "250",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adagia%2C%20Windswept%20Bastion",
     "checked_at": "2026-08-06T03:58:42.116Z"
+  },
+  "70ff487d-96b3-4322-9975-59bf3c6b517f": {
+    "status": "available",
+    "name": "Animus of Predation",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Conspiracy: Take the Crown",
+    "printing_code": "CN2",
+    "collector_number": "60",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Animus%20of%20Predation",
+    "checked_at": "2026-08-07T09:26:36.200Z"
   }
 }

@@ -34,5 +34,17 @@
     "collector_number": "169",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Paradox%20Engine",
     "checked_at": "2026-08-05T20:10:56.294Z"
+  },
+  "d3c3f293-6790-4dce-900a-8af0464c2572": {
+    "status": "available",
+    "name": "Anhelo, the Painter",
+    "price_brl": 1.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nova Capenna Commander",
+    "printing_code": "NCC",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anhelo%2C%20the%20Painter",
+    "checked_at": "2026-08-07T09:23:26.064Z"
   }
 }

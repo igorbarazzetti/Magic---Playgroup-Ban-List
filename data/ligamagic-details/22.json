@@ -1,4 +1,16 @@
 {
+  "22052572-0b7d-4dd8-84a8-e2658f77b85e": {
+    "status": "available",
+    "name": "Ankle Shanker",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2016",
+    "printing_code": "C16",
+    "collector_number": "178",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ankle%20Shanker",
+    "checked_at": "2026-08-07T09:27:36.248Z"
+  },
   "222fd9fc-7af4-4269-bbb9-cd7b8ac029bd": {
     "status": "available",
     "name": "Troll of Khazad-dûm",

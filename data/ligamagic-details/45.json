@@ -1,4 +1,16 @@
 {
+  "4502b24f-604b-4e36-9168-31c1a1ab4dab": {
+    "status": "available",
+    "name": "Angelic Wall",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Odisséia",
+    "printing_code": "OD",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Wall",
+    "checked_at": "2026-08-07T09:20:45.996Z"
+  },
   "4514777d-0589-4631-978b-ff244167c176": {
     "status": "available",
     "name": "Vexing Bauble",
@@ -10,6 +22,18 @@
     "collector_number": "212",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Vexing%20Bauble",
     "checked_at": "2026-08-05T20:14:54.487Z"
+  },
+  "452d98ae-0fa2-4cff-9e18-eecd76ddb20b": {
+    "status": "available",
+    "name": "Anthropede",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Noctumbra: A Casa dos Horrores",
+    "printing_code": "DSK",
+    "collector_number": "167",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anthropede",
+    "checked_at": "2026-08-07T09:33:46.458Z"
   },
   "454ed336-362d-46d9-96d5-8fcaa8a1c543": {
     "status": "available",

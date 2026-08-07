@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Almost%20Perfect",
     "checked_at": "2026-08-07T00:38:34.785Z"
   },
+  "61859443-e298-41c7-a179-6e6554de91c9": {
+    "status": "available",
+    "name": "Anointed Chorister",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2021",
+    "printing_code": "M21",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anointed%20Chorister",
+    "checked_at": "2026-08-07T09:29:46.328Z"
+  },
   "61a23402-3244-4b5e-9134-98e1f82eda65": {
     "status": "available",
     "name": "Abstruse Appropriation",
@@ -70,5 +82,17 @@
     "collector_number": "123",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alaborn%20Musketeer",
     "checked_at": "2026-08-06T18:11:28.005Z"
+  },
+  "61f3a549-77b4-4403-afa2-a0f02603f2e6": {
+    "status": "available",
+    "name": "Angrath's Fury",
+    "price_brl": 0.35,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Rivais de Ixalan",
+    "printing_code": "RIX",
+    "collector_number": "204",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angrath's%20Fury",
+    "checked_at": "2026-08-07T09:22:15.985Z"
   }
 }

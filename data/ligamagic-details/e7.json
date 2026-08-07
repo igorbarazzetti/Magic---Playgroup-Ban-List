@@ -70,5 +70,17 @@
     "collector_number": "79",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Comet%2C%20Stellar%20Pup",
     "checked_at": "2026-08-05T20:04:25.335Z"
+  },
+  "e7e69583-8326-417e-8a9a-6b917c8ba4b6": {
+    "status": "available",
+    "name": "Anowon, the Ruin Thief",
+    "price_brl": 7.89,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Renascer de Zendikar Commander",
+    "printing_code": "ZNC",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anowon%2C%20the%20Ruin%20Thief",
+    "checked_at": "2026-08-07T09:31:16.351Z"
   }
 }

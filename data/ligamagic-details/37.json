@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agony%20Warp",
     "checked_at": "2026-08-06T14:42:31.743Z"
   },
+  "379ce83a-478a-429b-8f15-935e63efe00e": {
+    "status": "available",
+    "name": "Animate Graveyard",
+    "price_brl": 0.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unfinity",
+    "printing_code": "UNF",
+    "collector_number": "65",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Animate%20Graveyard",
+    "checked_at": "2026-08-07T09:25:06.136Z"
+  },
   "37c49483-bef6-47c6-9354-ead8560d48da": {
     "status": "available",
     "name": "Pradesh Gypsies",

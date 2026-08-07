@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=All%20Suns'%20Dawn",
     "checked_at": "2026-08-07T00:34:44.613Z"
   },
+  "a97da5a9-17fc-4367-81e1-17ff81601a63": {
+    "status": "available",
+    "name": "Anticipate",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ikoria: Terra de Colossos",
+    "printing_code": "IKO",
+    "collector_number": "40",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anticipate",
+    "checked_at": "2026-08-07T09:34:36.839Z"
+  },
   "a9d68cf5-3055-4ec9-9893-244bfd7046be": {
     "status": "available",
     "name": "Action News Crew",

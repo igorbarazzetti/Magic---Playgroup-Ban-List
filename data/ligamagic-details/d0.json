@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abstergo%20Entertainment",
     "checked_at": "2026-08-06T00:14:17.174Z"
   },
+  "d08e9784-75f7-4164-ac48-d06160f8c56b": {
+    "status": "available",
+    "name": "Annul",
+    "price_brl": 0.21,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros",
+    "printing_code": "THS",
+    "collector_number": "38",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Annul",
+    "checked_at": "2026-08-07T09:29:06.328Z"
+  },
   "d09c9cba-fdd2-479b-ad5d-d05181c3e3f9": {
     "status": "available",
     "name": "Fierce Guardianship",

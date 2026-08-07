@@ -23,6 +23,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Backup%20Plan",
     "checked_at": "2026-08-05T20:03:16.105Z"
   },
+  "6f1bfe50-b61a-4fdd-963c-40d59117bdf4": {
+    "status": "available",
+    "name": "Animist's Awakening",
+    "price_brl": 1.62,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven Commander",
+    "printing_code": "SOC",
+    "collector_number": "261",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Animist's%20Awakening",
+    "checked_at": "2026-08-07T09:26:16.166Z"
+  },
+  "6f78c1e2-e38f-431b-8864-8aad982e9912": {
+    "status": "available",
+    "name": "Anti-Magic Aura",
+    "price_brl": 0.19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quinta Edição",
+    "printing_code": "5E",
+    "collector_number": "16",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anti-Magic%20Aura",
+    "checked_at": "2026-08-07T09:34:06.465Z"
+  },
   "6f856f99-4cb4-479d-958d-964220965ed6": {
     "status": "available",
     "name": "Wilderness Reclamation",
@@ -34,5 +58,17 @@
     "collector_number": "149",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Wilderness%20Reclamation",
     "checked_at": "2026-08-05T20:15:17.970Z"
+  },
+  "6fa9debf-c60e-432d-86c8-aed16556c532": {
+    "status": "available",
+    "name": "Animal Boneyard",
+    "price_brl": 0.35,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Odisséia",
+    "printing_code": "OD",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Animal%20Boneyard",
+    "checked_at": "2026-08-07T09:24:06.120Z"
   }
 }

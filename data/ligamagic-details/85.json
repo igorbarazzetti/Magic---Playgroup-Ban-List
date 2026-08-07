@@ -1,4 +1,16 @@
 {
+  "850a8369-94ab-43b6-8cfe-286e3623b19d": {
+    "status": "available",
+    "name": "Angrath's Rampage",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra da Centelha",
+    "printing_code": "WAR",
+    "collector_number": "185",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angrath's%20Rampage",
+    "checked_at": "2026-08-07T09:22:36.600Z"
+  },
   "850eb3c3-029b-49b0-91a9-6daeb1b3a9e8": {
     "status": "available",
     "name": "Adeliz, the Cinder Wind",
@@ -46,6 +58,30 @@
     "collector_number": "135",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Invoke%20Prejudice",
     "checked_at": "2026-08-05T20:08:25.931Z"
+  },
+  "85791f11-44ab-4405-b284-1d91c7e0afbb": {
+    "status": "available",
+    "name": "Angrath's Ambusher",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Rivais de Ixalan",
+    "printing_code": "RIX",
+    "collector_number": "202",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angrath's%20Ambusher",
+    "checked_at": "2026-08-07T09:22:06.009Z"
+  },
+  "858067f9-eb1f-4569-9831-30441cba5f90": {
+    "status": "available",
+    "name": "Annie Flash, the Veteran",
+    "price_brl": 1.02,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Os Fora da Lei de Encruzilhada do Trovão",
+    "printing_code": "OTJ",
+    "collector_number": "190",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Annie%20Flash%2C%20the%20Veteran",
+    "checked_at": "2026-08-07T09:28:06.303Z"
   },
   "85b2fb89-5ebe-4c13-bc12-38d1417e5880": {
     "status": "available",

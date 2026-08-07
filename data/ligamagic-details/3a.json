@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Tradewinds",
     "checked_at": "2026-08-06T11:01:13.743Z"
   },
+  "3a228b9f-3629-4f3e-8649-4531ca21363a": {
+    "status": "available",
+    "name": "Animate Object",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unfinity",
+    "printing_code": "UNF",
+    "collector_number": "33",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Animate%20Object",
+    "checked_at": "2026-08-07T09:25:37.372Z"
+  },
   "3a30089d-cd2d-49be-9b06-7a2454117692": {
     "status": "available",
     "name": "Aminatou, the Fateshifter",
@@ -46,6 +58,18 @@
     "collector_number": "35",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aegis%20Sculptor",
     "checked_at": "2026-08-06T07:15:14.930Z"
+  },
+  "3a7fe095-8278-4b1d-bec4-19b35bdcdd1b": {
+    "status": "available",
+    "name": "Anger of the Gods",
+    "price_brl": 0.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros",
+    "printing_code": "THS",
+    "collector_number": "112",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anger%20of%20the%20Gods",
+    "checked_at": "2026-08-07T09:21:15.973Z"
   },
   "3a92b235-196b-4f46-9d20-06f4d3653d36": {
     "status": "available",
