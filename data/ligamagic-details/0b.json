@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcane%20Teachings",
     "checked_at": "2026-08-07T13:54:13.926Z"
   },
+  "0b6c74a7-d7d3-4c05-84b1-bcb580bb476f": {
+    "status": "available",
+    "name": "Argivian Find",
+    "price_brl": 3.85,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "The List",
+    "printing_code": "PLIST",
+    "collector_number": "958",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Argivian%20Find",
+    "checked_at": "2026-08-07T19:24:43.543Z"
+  },
   "0baabe39-72ae-47bd-a095-cbf7eb8a6361": {
     "status": "available",
     "name": "Ancient Ziggurat",

@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aesi%2C%20Tyrant%20of%20Gyre%20Strait",
     "checked_at": "2026-08-06T07:21:15.144Z"
   },
+  "652ef093-06e9-4bf1-b9cf-950fe043b319": {
+    "status": "available",
+    "name": "Argent Mutation",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nova Phyrexia",
+    "printing_code": "NPH",
+    "collector_number": "27",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Argent%20Mutation",
+    "checked_at": "2026-08-07T19:23:34.005Z"
+  },
   "652f6d90-b158-4f9b-a15e-3e677905331d": {
     "status": "available",
     "name": "Worldknit",

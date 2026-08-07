@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abzan%20Ascendancy",
     "checked_at": "2026-08-06T03:45:01.572Z"
   },
+  "3b93427c-5b40-4119-96ae-7dce3ca2bbb9": {
+    "status": "available",
+    "name": "Armament Corps",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Khans de Tarkir",
+    "printing_code": "KTK",
+    "collector_number": "165",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armament%20Corps",
+    "checked_at": "2026-08-07T19:29:53.825Z"
+  },
   "3ba809ce-3556-415c-9fcc-291cb10a43cd": {
     "status": "available",
     "name": "Ajani, Outland Chaperone",
@@ -58,5 +70,17 @@
     "collector_number": "178",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Greenwarden",
     "checked_at": "2026-08-07T07:49:36.037Z"
+  },
+  "3be3d7e6-7860-438a-b8c8-ef154c18c163": {
+    "status": "available",
+    "name": "Arid Archway",
+    "price_brl": 2.7,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Os Fora da Lei de Encruzilhada do Trovão",
+    "printing_code": "OTJ",
+    "collector_number": "252",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arid%20Archway",
+    "checked_at": "2026-08-07T19:26:53.589Z"
   }
 }

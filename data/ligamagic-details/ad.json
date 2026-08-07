@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alluring%20Scent",
     "checked_at": "2026-08-07T00:37:44.811Z"
   },
+  "ad3d6003-66d3-486d-aa54-ddce1adb5ff1": {
+    "status": "available",
+    "name": "Armored Griffin",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Planechase Anthology",
+    "printing_code": "PCA",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armored%20Griffin",
+    "checked_at": "2026-08-07T19:34:04.248Z"
+  },
   "ad6bdd24-5a32-4046-83ee-2fe51bf8bb7a": {
     "status": "available",
     "name": "Archers of Qarsi",

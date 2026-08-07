@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aeronaut%20Cavalry",
     "checked_at": "2026-08-06T07:20:45.164Z"
   },
+  "15397a59-70a8-441f-abf7-230405a1602b": {
+    "status": "available",
+    "name": "Armadillo Cloak",
+    "price_brl": 10.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Invasão",
+    "printing_code": "IN",
+    "collector_number": "229",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armadillo%20Cloak",
+    "checked_at": "2026-08-07T19:29:13.760Z"
+  },
   "15474e82-94b4-47e1-b91c-3deaf4dbffd6": {
     "status": "available",
     "name": "Ajani, Inspiring Leader",

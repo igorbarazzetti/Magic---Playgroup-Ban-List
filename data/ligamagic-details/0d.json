@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alaborn%20Zealot",
     "checked_at": "2026-08-06T18:11:57.750Z"
   },
+  "0d3a4db2-df79-4946-8f87-b174cf9c293c": {
+    "status": "available",
+    "name": "Armored Scrapgorger",
+    "price_brl": 0.23,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Phyrexia: Tudo será um",
+    "printing_code": "ONE",
+    "collector_number": "158",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armored%20Scrapgorger",
+    "checked_at": "2026-08-07T19:34:44.025Z"
+  },
   "0d6b89dc-23fb-48e9-a54b-cea2838ae7c8": {
     "status": "available",
     "name": "Grief",
@@ -34,5 +46,17 @@
     "collector_number": "19",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani%20Fells%20the%20Godsire",
     "checked_at": "2026-08-06T14:49:32.146Z"
+  },
+  "0dbcc5d8-9533-48fd-a69d-bbc6c72aaac5": {
+    "status": "available",
+    "name": "Argothian Sprite",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra dos Irmãos",
+    "printing_code": "BRO",
+    "collector_number": "168",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Argothian%20Sprite",
+    "checked_at": "2026-08-07T19:25:53.621Z"
   }
 }

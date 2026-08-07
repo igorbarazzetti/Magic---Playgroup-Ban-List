@@ -1,4 +1,16 @@
 {
+  "360f7bfd-3b4c-4e87-a251-fd55c8a62320": {
+    "status": "available",
+    "name": "Armory Paladin",
+    "price_brl": 2.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fallout",
+    "printing_code": "PIP",
+    "collector_number": "93",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armory%20Paladin",
+    "checked_at": "2026-08-07T19:36:44.088Z"
+  },
   "3676b745-001d-46e6-880f-2fe26476a38d": {
     "status": "available",
     "name": "Abundant Maw",

@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apocalypse%20Runner",
     "checked_at": "2026-08-07T11:17:26.651Z"
   },
+  "0caae56e-5995-4f1b-b735-80580a372707": {
+    "status": "available",
+    "name": "Armored Transport",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portões Violados",
+    "printing_code": "GTC",
+    "collector_number": "226",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armored%20Transport",
+    "checked_at": "2026-08-07T19:35:14.047Z"
+  },
   "0cd77ee1-408c-4c51-ac87-24f4fc50083d": {
     "status": "available",
     "name": "Academy Wall",

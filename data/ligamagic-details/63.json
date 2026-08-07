@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Vitality",
     "checked_at": "2026-08-07T07:57:06.401Z"
   },
+  "637a10e8-4384-49a0-ad78-03da8930811e": {
+    "status": "available",
+    "name": "Armored Galleon",
+    "price_brl": 4.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portal Segunda Era",
+    "printing_code": "PO2",
+    "collector_number": "33",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armored%20Galleon",
+    "checked_at": "2026-08-07T19:33:53.966Z"
+  },
   "63a19c7c-49d7-4b75-aac8-d0ff36c45fb8": {
     "status": "available",
     "name": "Sowing Mycospawn",

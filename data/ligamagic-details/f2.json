@@ -1,4 +1,16 @@
 {
+  "f227ce07-7e96-4a36-ab7c-9be6e777d649": {
+    "status": "available",
+    "name": "Arlinn, the Pack's Hope // Arlinn, the Moon's Fury",
+    "price_brl": 20.7,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Caçada à Meia-noite",
+    "printing_code": "MID",
+    "collector_number": "211",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arlinn%2C%20the%20Pack's%20Hope",
+    "checked_at": "2026-08-07T19:28:13.709Z"
+  },
   "f24efc60-fdac-4a5d-bcbc-784ec5ae6d96": {
     "status": "available",
     "name": "Aerial Doombot",

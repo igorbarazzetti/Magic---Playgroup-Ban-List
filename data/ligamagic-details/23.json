@@ -119,6 +119,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agency%20Outfitter",
     "checked_at": "2026-08-06T11:10:14.659Z"
   },
+  "23c75386-8011-4ee4-97e2-eaafeb20b788": {
+    "status": "available",
+    "name": "Armament Dragon",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm",
+    "printing_code": "TDM",
+    "collector_number": "168",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armament%20Dragon",
+    "checked_at": "2026-08-07T19:30:03.810Z"
+  },
   "23d4f436-a417-4a26-b5b8-c698f11a186b": {
     "status": "available",
     "name": "Acid Web Spider",

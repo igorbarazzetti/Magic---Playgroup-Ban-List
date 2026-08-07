@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aardvark%20Sloth",
     "checked_at": "2026-08-06T00:04:36.730Z"
   },
+  "1c482b20-b423-48ef-b162-53960d43b4f7": {
+    "status": "available",
+    "name": "Armor of Faith",
+    "price_brl": 0.01,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Era Glacial",
+    "printing_code": "IA",
+    "collector_number": "15",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armor%20of%20Faith",
+    "checked_at": "2026-08-07T19:32:13.915Z"
+  },
   "1c69fdcf-ba87-480a-88df-70aa4ec9fff0": {
     "status": "available",
     "name": "Amber Prison",
@@ -58,6 +70,18 @@
     "collector_number": "40",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Accumulated%20Knowledge",
     "checked_at": "2026-08-06T03:51:01.790Z"
+  },
+  "1ca8d2cb-58ba-476b-a4f2-1bf273a54cf3": {
+    "status": "available",
+    "name": "Argivian Phalanx",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominária Unida",
+    "printing_code": "DMU",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Argivian%20Phalanx",
+    "checked_at": "2026-08-07T19:24:53.542Z"
   },
   "1cae5752-b4af-4a8f-8c8c-2493e163083b": {
     "status": "available",

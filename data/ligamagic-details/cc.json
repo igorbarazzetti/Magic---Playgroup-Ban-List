@@ -1,4 +1,16 @@
 {
+  "cc9d3868-9814-4506-80b3-660bc462ff98": {
+    "status": "available",
+    "name": "Argothian Opportunist",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra dos Irmãos",
+    "printing_code": "BRO",
+    "collector_number": "167",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Argothian%20Opportunist",
+    "checked_at": "2026-08-07T19:25:33.574Z"
+  },
   "cca29a9b-794f-4712-8e6c-36ce3da9cb8b": {
     "status": "available",
     "name": "Angelic Curator",

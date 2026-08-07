@@ -1,4 +1,16 @@
 {
+  "fa3335be-80b1-49d7-9809-5bef13be79f4": {
+    "status": "available",
+    "name": "Armory Automaton",
+    "price_brl": 1.69,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY Commander",
+    "printing_code": "FIC",
+    "collector_number": "336",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armory%20Automaton",
+    "checked_at": "2026-08-07T19:36:04.065Z"
+  },
   "fa43793d-a215-4a64-a09c-ed9799f745a4": {
     "status": "available",
     "name": "Abandon Reason",

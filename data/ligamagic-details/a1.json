@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aeon%20Chronicler",
     "checked_at": "2026-08-06T07:15:44.953Z"
   },
+  "a1464164-fbda-43b5-988e-6e1da9bd9eef": {
+    "status": "available",
+    "name": "Armix, Filigree Thrasher",
+    "price_brl": 0.14,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends",
+    "printing_code": "CMR",
+    "collector_number": "108",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armix%2C%20Filigree%20Thrasher",
+    "checked_at": "2026-08-07T19:32:03.911Z"
+  },
   "a149eeb1-007c-435d-9d55-34af205090e0": {
     "status": "available",
     "name": "Acidic Sliver",
@@ -22,6 +34,18 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acidic%20Sliver",
     "checked_at": "2026-08-06T03:53:41.922Z"
+  },
+  "a15b83df-91b7-49f0-9bec-5776a3dac8bd": {
+    "status": "available",
+    "name": "Arlinn, Voice of the Pack",
+    "price_brl": 0.06,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra da Centelha",
+    "printing_code": "WAR",
+    "collector_number": "150",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arlinn%2C%20Voice%20of%20the%20Pack",
+    "checked_at": "2026-08-07T19:28:23.739Z"
   },
   "a15bb807-ea31-4bff-b573-c249c4c78dd6": {
     "status": "available",

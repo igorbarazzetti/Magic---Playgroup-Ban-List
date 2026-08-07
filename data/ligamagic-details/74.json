@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mana%20Drain",
     "checked_at": "2026-08-05T20:09:32.075Z"
   },
+  "74d85903-6404-41d9-bc00-81c6b2f61bb0": {
+    "status": "available",
+    "name": "Armored Skaab",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad",
+    "printing_code": "ISD",
+    "collector_number": "43",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armored%20Skaab",
+    "checked_at": "2026-08-07T19:34:54.040Z"
+  },
   "74f10b9a-a286-49b2-bfa1-a427ff041bd4": {
     "status": "available",
     "name": "Darkpact",

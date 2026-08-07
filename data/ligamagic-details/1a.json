@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Snap",
     "checked_at": "2026-08-06T10:59:43.644Z"
   },
+  "1a4d16eb-343e-41ca-9363-90dc79da4769": {
+    "status": "available",
+    "name": "Armament of Nyx",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Viagem para Nyx",
+    "printing_code": "JOU",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armament%20of%20Nyx",
+    "checked_at": "2026-08-07T19:30:24.365Z"
+  },
   "1a587b8d-fcb4-47ca-9689-610897117166": {
     "status": "available",
     "name": "Angelfire Crusader",
@@ -106,5 +118,17 @@
     "collector_number": "151",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agonasaur%20Rex",
     "checked_at": "2026-08-06T14:41:41.715Z"
+  },
+  "1ad83cac-2c85-477b-ab00-1369f9683db5": {
+    "status": "available",
+    "name": "Armor Wars",
+    "price_brl": 2.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes",
+    "printing_code": "MSH",
+    "collector_number": "203",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armor%20Wars",
+    "checked_at": "2026-08-07T19:33:03.952Z"
   }
 }

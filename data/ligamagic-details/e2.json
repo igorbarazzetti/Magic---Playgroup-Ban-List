@@ -58,5 +58,17 @@
     "collector_number": "86",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Fastbond",
     "checked_at": "2026-08-05T20:06:08.135Z"
+  },
+  "e2a35850-92c5-40ab-8697-2e995819d7ac": {
+    "status": "available",
+    "name": "Armaggon, Future Shark",
+    "price_brl": 0.95,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Teenage Mutant Ninja Turtles",
+    "printing_code": "TMT",
+    "collector_number": "58",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armaggon%2C%20Future%20Shark",
+    "checked_at": "2026-08-07T19:29:44.433Z"
   }
 }

@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Allied%20Assault",
     "checked_at": "2026-08-07T00:36:04.678Z"
   },
+  "31ead5a5-aa01-4601-8d3e-267b65fce3bb": {
+    "status": "available",
+    "name": "Armor of Thorns",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Miragem",
+    "printing_code": "MR",
+    "collector_number": "11",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armor%20of%20Thorns",
+    "checked_at": "2026-08-07T19:32:33.915Z"
+  },
   "31f54f88-85a6-43f4-a6de-fb6ef5f0c38d": {
     "status": "available",
     "name": "Ambitious Aetherborn",

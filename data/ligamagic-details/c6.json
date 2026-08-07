@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amplifire",
     "checked_at": "2026-08-07T04:41:31.339Z"
   },
+  "c6a1a91f-46b9-4e41-a3d3-3423b02c42a5": {
+    "status": "available",
+    "name": "Arm the Cathars",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Voto Carmesim",
+    "printing_code": "VOW",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arm%20the%20Cathars",
+    "checked_at": "2026-08-07T19:28:43.755Z"
+  },
   "c6a606af-ea08-4cd9-bfd9-60d76e232e85": {
     "status": "available",
     "name": "Angel of Glory's Rise",

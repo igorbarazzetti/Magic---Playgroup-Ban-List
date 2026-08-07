@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alhammarret%2C%20High%20Arbiter",
     "checked_at": "2026-08-06T18:18:27.943Z"
   },
+  "c284b1fd-f238-478a-bcf1-c4b8f32f11f3": {
+    "status": "available",
+    "name": "Armor Sliver",
+    "price_brl": 0.45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tempestade",
+    "printing_code": "TP",
+    "collector_number": "12",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armor%20Sliver",
+    "checked_at": "2026-08-07T19:32:43.976Z"
+  },
   "c2f6ddc2-86bc-43da-9bdd-0c2af79c62fd": {
     "status": "available",
     "name": "Ammit Eternal",

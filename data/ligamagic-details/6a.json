@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Altar's%20Reap",
     "checked_at": "2026-08-07T00:45:55.180Z"
   },
+  "6a23963c-21dc-4d21-8d28-5abad7f859a1": {
+    "status": "available",
+    "name": "Arena Rector",
+    "price_brl": 67.31,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Battlebond",
+    "printing_code": "BBD",
+    "collector_number": "23",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arena%20Rector",
+    "checked_at": "2026-08-07T19:22:43.969Z"
+  },
   "6a381121-9134-489c-8c7e-44be1936b0e2": {
     "status": "available",
     "name": "Apothecary Stomper",
@@ -34,6 +46,18 @@
     "collector_number": "99",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apothecary%20Stomper",
     "checked_at": "2026-08-07T11:18:26.691Z"
+  },
+  "6aad6906-96ec-4994-bfc3-9a76f893bc8c": {
+    "status": "available",
+    "name": "Armored Kincaller",
+    "price_brl": 0.11,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "As Cavernas Perdidas de Ixalan",
+    "printing_code": "LCI",
+    "collector_number": "174",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armored%20Kincaller",
+    "checked_at": "2026-08-07T19:34:23.988Z"
   },
   "6ad8011d-3471-4369-9d68-b264cc027487": {
     "status": "available",

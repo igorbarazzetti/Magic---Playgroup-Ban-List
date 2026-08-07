@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abyssal%20Specter",
     "checked_at": "2026-08-06T03:44:41.588Z"
   },
+  "51a886f2-9b0a-4964-9d59-99dc1a68a97c": {
+    "status": "available",
+    "name": "Armored Whirl Turtle",
+    "price_brl": 0.19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Global Series: Jiang Yanggu and Mu Yanling",
+    "printing_code": "GS1",
+    "collector_number": "7",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armored%20Whirl%20Turtle",
+    "checked_at": "2026-08-07T19:35:34.027Z"
+  },
   "51d7bd70-0874-41d4-94bc-c3e14c968668": {
     "status": "available",
     "name": "Altar of the Goyf",

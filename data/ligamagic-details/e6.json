@@ -1,4 +1,16 @@
 {
+  "e6479195-cbdf-4d2b-9f45-5fd0a6ab4a77": {
+    "status": "available",
+    "name": "Arm with Aether",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nova Phyrexia",
+    "printing_code": "NPH",
+    "collector_number": "28",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arm%20with%20Aether",
+    "checked_at": "2026-08-07T19:28:53.756Z"
+  },
   "e6521404-8474-4727-b2d0-537d15d8a63f": {
     "status": "available",
     "name": "Andúril, Flame of the West",

@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abzan%20Banner",
     "checked_at": "2026-08-06T03:45:11.612Z"
   },
+  "465843dc-57d0-46fd-ac47-238723034563": {
+    "status": "available",
+    "name": "Arenson's Aura",
+    "price_brl": 0.01,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Era Glacial",
+    "printing_code": "IA",
+    "collector_number": "14",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arenson's%20Aura",
+    "checked_at": "2026-08-07T19:23:03.451Z"
+  },
   "465cda20-c8f3-4a7c-a250-875877bce21d": {
     "status": "available",
     "name": "Abyssal Gorestalker",
@@ -22,6 +34,18 @@
     "collector_number": "87",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abyssal%20Gorestalker",
     "checked_at": "2026-08-06T00:17:07.512Z"
+  },
+  "46752289-01e8-4839-8889-49db1efd2e1a": {
+    "status": "available",
+    "name": "Armored Guardian",
+    "price_brl": 0.57,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Invasão",
+    "printing_code": "IN",
+    "collector_number": "230",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armored%20Guardian",
+    "checked_at": "2026-08-07T19:34:13.999Z"
   },
   "467e22c3-6107-40ff-afc7-5960710c970b": {
     "status": "available",

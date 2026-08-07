@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amorphous%20Axe",
     "checked_at": "2026-08-07T04:40:21.236Z"
   },
+  "fe4c0f02-c5fd-4cd5-9f80-0936e3875f1c": {
+    "status": "available",
+    "name": "Arlinn's Wolf",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra da Centelha",
+    "printing_code": "WAR",
+    "collector_number": "151",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arlinn's%20Wolf",
+    "checked_at": "2026-08-07T19:28:03.698Z"
+  },
   "fe6726a1-2aa9-492d-82f8-9e9b3125a991": {
     "status": "available",
     "name": "Accessories to Murder",

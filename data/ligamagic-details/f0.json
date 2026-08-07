@@ -58,5 +58,17 @@
     "collector_number": "16",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Cornucopia",
     "checked_at": "2026-08-07T07:48:55.998Z"
+  },
+  "f097a059-5505-4c3c-b879-7853ab6972ed": {
+    "status": "available",
+    "name": "Armored Pegasus",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Sexta Edição Classica",
+    "printing_code": "6E",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armored%20Pegasus",
+    "checked_at": "2026-08-07T19:34:34.268Z"
   }
 }

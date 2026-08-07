@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcades%20Sabboth",
     "checked_at": "2026-08-07T13:50:23.756Z"
   },
+  "8ebc4198-7317-4ffb-b8b8-14733c2077ff": {
+    "status": "available",
+    "name": "Arms Dealer",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Jumpstart 2022",
+    "printing_code": "J22",
+    "collector_number": "493",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arms%20Dealer",
+    "checked_at": "2026-08-07T19:37:04.063Z"
+  },
   "8eca999e-f7f8-4354-b419-2df4249c4361": {
     "status": "available",
     "name": "Amulet of Kroog",

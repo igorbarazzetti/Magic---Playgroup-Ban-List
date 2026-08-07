@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Zirda%2C%20the%20Dawnwaker",
     "checked_at": "2026-08-05T20:15:48.034Z"
   },
+  "7b75b74c-6003-4b34-bae3-2c9e2f880042": {
+    "status": "available",
+    "name": "Armorer Guildmage",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Miragem",
+    "printing_code": "MR",
+    "collector_number": "12",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armorer%20Guildmage",
+    "checked_at": "2026-08-07T19:35:54.045Z"
+  },
   "7b89b7d2-c724-4d5d-9f0b-7d3302ad1168": {
     "status": "available",
     "name": "Agate Assault",

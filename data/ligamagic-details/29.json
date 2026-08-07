@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akuta%2C%20Born%20of%20Ash",
     "checked_at": "2026-08-06T18:09:27.386Z"
   },
+  "29233aa4-3fa0-4074-ad0f-c8e7101052f3": {
+    "status": "available",
+    "name": "Armored Warhorse",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2012",
+    "printing_code": "M12",
+    "collector_number": "7",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armored%20Warhorse",
+    "checked_at": "2026-08-07T19:35:24.035Z"
+  },
   "2932baae-bdf1-455a-9ac4-23ba1f83e7e1": {
     "status": "available",
     "name": "Adarkar Valkyrie",

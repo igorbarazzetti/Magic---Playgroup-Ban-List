@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adaptive%20Shimmerer",
     "checked_at": "2026-08-06T03:59:52.201Z"
   },
+  "80240b6b-d20d-4dfb-a2c5-c272c3b43a70": {
+    "status": "available",
+    "name": "Argivian Blacksmith",
+    "price_brl": 3.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Antiquities",
+    "printing_code": "AQ",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Argivian%20Blacksmith",
+    "checked_at": "2026-08-07T19:24:23.530Z"
+  },
   "8095ca78-db19-4724-a6ff-eacc85fa2274": {
     "status": "available",
     "name": "Another Round",
@@ -46,6 +58,18 @@
     "collector_number": "2",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adorned%20Pouncer",
     "checked_at": "2026-08-06T07:10:04.646Z"
+  },
+  "80e08ee2-4272-4783-9a0d-90079600b594": {
+    "status": "available",
+    "name": "Argothian Swine",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Saga de Urza",
+    "printing_code": "US",
+    "collector_number": "235",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Argothian%20Swine",
+    "checked_at": "2026-08-07T19:26:03.591Z"
   },
   "80e72437-0c17-44c0-b0a7-eab075a64569": {
     "status": "available",

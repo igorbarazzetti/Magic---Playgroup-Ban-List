@@ -1,4 +1,16 @@
 {
+  "33598888-0367-4085-9415-f4e21da08354": {
+    "status": "available",
+    "name": "Armada Wurm",
+    "price_brl": 0.45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Retorno a Ravnica",
+    "printing_code": "RTR",
+    "collector_number": "143",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armada%20Wurm",
+    "checked_at": "2026-08-07T19:29:03.736Z"
+  },
   "3378fef3-4d8c-4d9e-a338-4abb6f70d410": {
     "status": "available",
     "name": "Aqueous Form",

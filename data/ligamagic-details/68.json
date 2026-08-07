@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Krark-Clan%20Ironworks",
     "checked_at": "2026-08-05T20:08:56.001Z"
   },
+  "68f7d1bf-48c7-483e-b17f-a60008854b46": {
+    "status": "available",
+    "name": "Armory Mice",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Selvagens de Eldraine",
+    "printing_code": "WOE",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armory%20Mice",
+    "checked_at": "2026-08-07T19:36:24.085Z"
+  },
   "68f81fcf-2dcf-41b9-ad7c-588149feb12a": {
     "status": "available",
     "name": "Antagonism",

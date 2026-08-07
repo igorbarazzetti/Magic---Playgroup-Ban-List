@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Fierce%20Guardianship",
     "checked_at": "2026-08-05T20:06:16.555Z"
   },
+  "d0a1f39b-cda4-4925-83f8-2161f575edfb": {
+    "status": "available",
+    "name": "Argentum Armor",
+    "price_brl": 3.28,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Cicatrizes de Mirrodin",
+    "printing_code": "SOM",
+    "collector_number": "137",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Argentum%20Armor",
+    "checked_at": "2026-08-07T19:23:53.517Z"
+  },
   "d0e1904e-1a37-41f6-8582-b9ea794bb886": {
     "status": "available",
     "name": "Abduction",

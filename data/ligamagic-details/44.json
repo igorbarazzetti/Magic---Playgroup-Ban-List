@@ -1,4 +1,16 @@
 {
+  "445bb343-9758-459b-970f-47f1705f1e55": {
+    "status": "available",
+    "name": "Armored Cancrix",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2011",
+    "printing_code": "M11",
+    "collector_number": "44",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armored%20Cancrix",
+    "checked_at": "2026-08-07T19:33:44.070Z"
+  },
   "44600a74-9584-488b-a342-2fccd8fa7599": {
     "status": "available",
     "name": "Aeve, Progenitor Ooze",

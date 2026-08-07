@@ -11,6 +11,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Academy%20Journeymage",
     "checked_at": "2026-08-06T03:47:41.673Z"
   },
+  "b401a490-d25f-4029-bb91-8999e140c6a1": {
+    "status": "available",
+    "name": "Armed with Proof",
+    "price_brl": 2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassinato na Mansão Karlov Commander (Extended Art)",
+    "printing_code": "EAMKC",
+    "collector_number": "320",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armed%20with%20Proof",
+    "checked_at": "2026-08-07T19:31:23.852Z"
+  },
+  "b4505b07-ac99-4706-88b2-6164389e447c": {
+    "status": "available",
+    "name": "Ark of Blight",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Flagelo",
+    "printing_code": "SC",
+    "collector_number": "140",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ark%20of%20Blight",
+    "checked_at": "2026-08-07T19:27:33.676Z"
+  },
   "b46351cf-73c7-493c-b8a7-5d7bedc8b205": {
     "status": "available",
     "name": "Ambulatory Edifice",
@@ -58,6 +82,18 @@
     "collector_number": "220",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apex%20Devastator",
     "checked_at": "2026-08-07T11:14:46.662Z"
+  },
+  "b4dbbf56-d7df-4183-bb48-cfc6b4d0468f": {
+    "status": "available",
+    "name": "Armored Skyhunter",
+    "price_brl": 9.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven Commander",
+    "printing_code": "SOC",
+    "collector_number": "138",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armored%20Skyhunter",
+    "checked_at": "2026-08-07T19:35:04.260Z"
   },
   "b4e57fba-5fa3-4fd5-8f0a-7b61593ade72": {
     "status": "available",

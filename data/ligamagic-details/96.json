@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angry%20Mob",
     "checked_at": "2026-08-07T09:22:56.031Z"
   },
+  "96c67950-df59-430c-94fd-234086c6c8f2": {
+    "status": "available",
+    "name": "Armory Guard",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Duel Decks: Heroes vs. Monsters",
+    "printing_code": "DDL",
+    "collector_number": "12",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armory%20Guard",
+    "checked_at": "2026-08-07T19:36:14.067Z"
+  },
   "96de29a1-3178-4c8b-a67b-ab0262442cb6": {
     "status": "available",
     "name": "Akki Coalflinger",

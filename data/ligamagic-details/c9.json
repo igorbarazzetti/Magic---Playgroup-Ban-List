@@ -58,5 +58,17 @@
     "collector_number": "13",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arctic%20Wolves",
     "checked_at": "2026-08-07T17:24:35.143Z"
+  },
+  "c9ed8b01-959a-47d6-891e-0abbdccf6e4f": {
+    "status": "available",
+    "name": "Armageddon",
+    "price_brl": 10.44,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "World Championship Decks",
+    "printing_code": "WCD",
+    "collector_number": "20000",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armageddon",
+    "checked_at": "2026-08-07T19:29:23.801Z"
   }
 }

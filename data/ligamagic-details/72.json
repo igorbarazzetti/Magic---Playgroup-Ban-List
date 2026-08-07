@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Amphitheater",
     "checked_at": "2026-08-07T07:47:55.922Z"
   },
+  "7220c391-8d0e-4f43-94fc-ff77ffa2ee8d": {
+    "status": "available",
+    "name": "Argent Sphinx",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Masters 2015",
+    "printing_code": "MM2",
+    "collector_number": "41",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Argent%20Sphinx",
+    "checked_at": "2026-08-07T19:23:43.487Z"
+  },
   "722ee05f-6815-41b7-9813-5ec3902c1e9f": {
     "status": "available",
     "name": "Aberrant Researcher // Perfected Form",

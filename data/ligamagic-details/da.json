@@ -1,4 +1,16 @@
 {
+  "da103316-2a85-4de9-8531-ac2cd2859d6f": {
+    "status": "available",
+    "name": "Armistice",
+    "price_brl": 0.21,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2014",
+    "printing_code": "C14",
+    "collector_number": "65",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armistice",
+    "checked_at": "2026-08-07T19:31:53.904Z"
+  },
   "da4cab2d-0068-440f-ba7c-f2d4e5fa976e": {
     "status": "available",
     "name": "Aleatory",

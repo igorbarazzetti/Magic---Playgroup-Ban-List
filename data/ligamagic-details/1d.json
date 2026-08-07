@@ -1,4 +1,16 @@
 {
+  "1d4e7422-2e26-49ce-beef-08f61583089a": {
+    "status": "available",
+    "name": "Armasaur Guide",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Foundations",
+    "printing_code": "FDN",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armasaur%20Guide",
+    "checked_at": "2026-08-07T19:30:33.875Z"
+  },
   "1d5ff280-7f4d-4801-aefd-9b6e6b1f2818": {
     "status": "available",
     "name": "Ajani, Caller of the Pride",

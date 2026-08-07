@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anthem%20of%20Champions",
     "checked_at": "2026-08-07T09:33:16.460Z"
   },
+  "f1dca9ac-8886-4688-9245-763ef486701c": {
+    "status": "available",
+    "name": "Armament Master",
+    "price_brl": 0.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Zendikar",
+    "printing_code": "ZEN",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armament%20Master",
+    "checked_at": "2026-08-07T19:30:13.811Z"
+  },
   "f1ecb3d7-5ea0-45b2-b1b0-d7ae304db2a1": {
     "status": "available",
     "name": "Archmage of Echoes",

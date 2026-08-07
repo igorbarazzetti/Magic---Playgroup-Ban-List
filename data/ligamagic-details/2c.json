@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mana%20Crypt",
     "checked_at": "2026-08-05T20:09:29.087Z"
   },
+  "2c654772-c786-4966-a46e-9556bbf31d7c": {
+    "status": "available",
+    "name": "Ark of Hunger",
+    "price_brl": 0.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven",
+    "printing_code": "SOS",
+    "collector_number": "173",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ark%20of%20Hunger",
+    "checked_at": "2026-08-07T19:27:43.659Z"
+  },
   "2c7c42e1-b097-4443-aa02-1f1dfcbb9732": {
     "status": "available",
     "name": "Arc Blade",

@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ahn-Crop%20Champion",
     "checked_at": "2026-08-06T14:43:21.793Z"
   },
+  "c084930c-ce06-4c6c-93bd-59e92372e3ae": {
+    "status": "available",
+    "name": "Arms Depot",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unstable",
+    "printing_code": "UST",
+    "collector_number": "169",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arms%20Depot",
+    "checked_at": "2026-08-07T19:37:14.111Z"
+  },
   "c0d8fef4-65f4-4769-982d-b397d2b7e977": {
     "status": "available",
     "name": "Animate Dead",

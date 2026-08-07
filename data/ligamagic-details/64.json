@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Seething%20Song",
     "checked_at": "2026-08-05T20:12:20.569Z"
   },
+  "64de050c-7167-4ebd-8584-f064d8be3302": {
+    "status": "available",
+    "name": "Armor of Shadows",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alchemy Horizons: Portal de Baldur",
+    "printing_code": "YCLB",
+    "collector_number": "30",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armor%20of%20Shadows",
+    "checked_at": "2026-08-07T19:32:23.902Z"
+  },
   "64e3791b-de99-4eed-af49-cbec218c28aa": {
     "status": "available",
     "name": "Airbender's Reversal",

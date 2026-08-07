@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerial%20Guide",
     "checked_at": "2026-08-06T07:17:25.058Z"
   },
+  "b57f06e4-da97-4473-9fbf-f66e9129502a": {
+    "status": "available",
+    "name": "Argothian Elder",
+    "price_brl": 1.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Saga de Urza",
+    "printing_code": "US",
+    "collector_number": "233",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Argothian%20Elder",
+    "checked_at": "2026-08-07T19:25:23.570Z"
+  },
   "b59c7c62-ce2f-4062-9790-566191aded69": {
     "status": "available",
     "name": "Alley Evasion",

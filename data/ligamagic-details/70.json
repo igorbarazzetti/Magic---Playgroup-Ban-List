@@ -107,6 +107,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adagia%2C%20Windswept%20Bastion",
     "checked_at": "2026-08-06T03:58:42.116Z"
   },
+  "70d90ef4-0cda-405f-abf1-734fa909efa6": {
+    "status": "available",
+    "name": "Armageddon Clock",
+    "price_brl": 0.48,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quarta Edição",
+    "printing_code": "4E",
+    "collector_number": "16",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armageddon%20Clock",
+    "checked_at": "2026-08-07T19:29:33.795Z"
+  },
+  "70f3bc78-201f-4c56-b87b-9e8f2db9f7f7": {
+    "status": "available",
+    "name": "Arm-Mounted Anchor",
+    "price_brl": 0.87,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "As Cavernas Perdidas de Ixalan Commander",
+    "printing_code": "LCC",
+    "collector_number": "99",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arm-Mounted%20Anchor",
+    "checked_at": "2026-08-07T19:28:33.701Z"
+  },
   "70ff487d-96b3-4322-9975-59bf3c6b517f": {
     "status": "available",
     "name": "Animus of Predation",

@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alliance%20of%20Arms",
     "checked_at": "2026-08-07T00:35:54.687Z"
   },
+  "be2a4bc4-8af6-48c5-9421-32d26272e71a": {
+    "status": "available",
+    "name": "Arguel's Blood Fast // Temple of Aclazotz",
+    "price_brl": 0.47,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ixalan",
+    "printing_code": "XLN",
+    "collector_number": "90",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arguel's%20Blood%20Fast",
+    "checked_at": "2026-08-07T19:26:33.655Z"
+  },
   "be31fa46-d5ac-4c85-9c19-3f0e2b1f223b": {
     "status": "available",
     "name": "Annex Sentry",

@@ -58,5 +58,17 @@
     "collector_number": "82",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=An-Havva%20Inn",
     "checked_at": "2026-08-07T04:43:41.447Z"
+  },
+  "3ceee5c2-321c-49ec-ba49-1fac7f6ee2cc": {
+    "status": "available",
+    "name": "Argentum Masticore",
+    "price_brl": 0.39,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Phyrexia: Tudo será um",
+    "printing_code": "ONE",
+    "collector_number": "222",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Argentum%20Masticore",
+    "checked_at": "2026-08-07T19:24:03.526Z"
   }
 }

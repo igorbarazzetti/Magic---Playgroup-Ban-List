@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Stone-Throwing%20Devils",
     "checked_at": "2026-08-05T20:13:02.625Z"
   },
+  "12584f75-77c1-4b6b-ae9d-1882792b6b94": {
+    "status": "available",
+    "name": "Arena of the Ancients",
+    "price_brl": 23.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Chronicles",
+    "printing_code": "CH",
+    "collector_number": "7",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arena%20of%20the%20Ancients",
+    "checked_at": "2026-08-07T19:22:33.441Z"
+  },
   "1267dfda-eb1a-4963-9fe3-fa619d924d7a": {
     "status": "available",
     "name": "Agonizing Remorse",

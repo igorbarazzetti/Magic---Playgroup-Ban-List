@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ahn-Crop%20Invader",
     "checked_at": "2026-08-06T14:43:41.834Z"
   },
+  "d7f49243-a96e-499f-b2d7-8e9842432420": {
+    "status": "available",
+    "name": "Armorcraft Judge",
+    "price_brl": 0.06,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaladesh",
+    "printing_code": "KLD",
+    "collector_number": "144",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armorcraft%20Judge",
+    "checked_at": "2026-08-07T19:33:13.993Z"
+  },
   "d7fa5c42-7cd5-42e7-a42e-724c1a3df96a": {
     "status": "available",
     "name": "Aerial Boost",

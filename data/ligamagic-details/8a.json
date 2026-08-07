@@ -1,4 +1,16 @@
 {
+  "8a09d4a2-4796-4a15-ab75-a3a0b717f62d": {
+    "status": "available",
+    "name": "Ares, God of War",
+    "price_brl": 1.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes",
+    "printing_code": "MSH",
+    "collector_number": "202",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ares%2C%20God%20of%20War",
+    "checked_at": "2026-08-07T19:23:13.482Z"
+  },
   "8a206c6f-4f6f-4c31-9dab-d73a57db989c": {
     "status": "available",
     "name": "Akroan Sergeant",

@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Dockside%20Extortionist",
     "checked_at": "2026-08-05T20:05:22.479Z"
   },
+  "69858691-1190-4454-af0a-87c2ac4ab6ec": {
+    "status": "available",
+    "name": "Arisen Gorgon",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2019",
+    "printing_code": "M19",
+    "collector_number": "292",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arisen%20Gorgon",
+    "checked_at": "2026-08-07T19:27:03.614Z"
+  },
   "69b1b0ec-9db0-48d1-a7b5-71281aca16fe": {
     "status": "available",
     "name": "Aerial Responder",
@@ -82,6 +94,18 @@
     "collector_number": "5",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arashin%20Cleric",
     "checked_at": "2026-08-07T11:27:17.087Z"
+  },
+  "69c27223-d676-4916-899b-297dc4ed2d59": {
+    "status": "available",
+    "name": "Arena Trickster",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros Além da Morte",
+    "printing_code": "THB",
+    "collector_number": "126",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arena%20Trickster",
+    "checked_at": "2026-08-07T19:22:53.442Z"
   },
   "69c4429e-a8a4-49c3-bb43-9dce4cc6b90a": {
     "status": "available",

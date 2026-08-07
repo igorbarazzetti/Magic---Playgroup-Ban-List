@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Access%20Denied",
     "checked_at": "2026-08-06T03:49:31.679Z"
   },
+  "35453c9e-e1ae-4fe9-926d-75724deb0555": {
+    "status": "available",
+    "name": "Armor Thrull",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fallen Empires",
+    "printing_code": "FE",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armor%20Thrull",
+    "checked_at": "2026-08-07T19:32:53.918Z"
+  },
   "354fecd1-2371-49e3-81c6-7e47728dbb1f": {
     "status": "available",
     "name": "Akoum Refuge",
