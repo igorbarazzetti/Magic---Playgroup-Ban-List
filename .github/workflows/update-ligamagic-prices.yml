@@ -33,6 +33,20 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Garantir estado Git limpo
+        shell: powershell
+        run: |
+          $rebaseMerge = git rev-parse --git-path rebase-merge
+          $rebaseApply = git rev-parse --git-path rebase-apply
+          if ((Test-Path -LiteralPath $rebaseMerge) -or (Test-Path -LiteralPath $rebaseApply)) {
+            git rebase --abort
+            if ($LASTEXITCODE -ne 0) { throw "Não foi possível abortar o rebase residual do runner." }
+          }
+          git checkout --detach $env:GITHUB_SHA
+          if ($LASTEXITCODE -ne 0) { throw "Não foi possível restaurar o SHA $env:GITHUB_SHA no runner." }
+          git reset --hard $env:GITHUB_SHA
+          if ($LASTEXITCODE -ne 0) { throw "Não foi possível limpar o checkout do runner." }
+
       - name: Preparar Node.js
         uses: actions/setup-node@v4
         with:
@@ -53,6 +67,12 @@ jobs:
       - name: Publicar dados atualizados
         shell: powershell
         run: |
+          function Invoke-Git {
+            param([Parameter(ValueFromRemainingArguments = $true)][string[]]$Arguments)
+            & git @Arguments
+            if ($LASTEXITCODE -ne 0) { throw "git $($Arguments -join ' ') falhou com código $LASTEXITCODE." }
+          }
+
           $dataChanges = git status --porcelain -- data | Out-String
           if ([string]::IsNullOrWhiteSpace($dataChanges)) {
             Write-Output "Nenhuma alteração de dados para publicar."
@@ -60,7 +80,32 @@ jobs:
           }
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data
-          git commit -m "Atualiza cobertura LigaMagic [skip ci]"
-          git pull --rebase origin main
-          git push origin HEAD:main
+          Invoke-Git add data
+          Invoke-Git commit -m "Atualiza cobertura LigaMagic [skip ci]"
+          $dataCommit = (& git rev-parse HEAD | Select-Object -First 1).Trim()
+          if ($LASTEXITCODE -ne 0 -or -not $dataCommit) { throw "Não foi possível identificar o commit de dados." }
+
+          for ($attempt = 1; $attempt -le 3; $attempt++) {
+            Invoke-Git fetch origin main
+            Invoke-Git checkout --detach origin/main
+            Invoke-Git restore --source=$dataCommit --staged --worktree -- data
+
+            $pendingChanges = git status --porcelain -- data | Out-String
+            if ([string]::IsNullOrWhiteSpace($pendingChanges)) {
+              Write-Output "Os dados coletados já estão publicados no main."
+              exit 0
+            }
+
+            Invoke-Git commit -m "Atualiza cobertura LigaMagic [skip ci]"
+            & git push origin HEAD:main
+            if ($LASTEXITCODE -eq 0) {
+              Write-Output "Dados publicados no main com sucesso."
+              exit 0
+            }
+
+            if ($attempt -lt 3) {
+              Write-Warning "O main avançou durante a publicação; repetindo sobre o SHA mais recente ($attempt/3)."
+            }
+          }
+
+          throw "Não foi possível publicar os dados no main após três tentativas."

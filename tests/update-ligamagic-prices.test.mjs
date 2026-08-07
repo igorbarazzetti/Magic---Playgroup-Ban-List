@@ -3,11 +3,29 @@ import assert from 'node:assert/strict';
 
 import {
   extractCheapestNormalPrinting,
+  extractLigaMagicResultUrl,
+  ligaMagicUrl,
   priceTuple,
   scryfallPriceCents,
   selectBatch,
   usdCents,
 } from '../scripts/update-ligamagic-prices.mjs';
+
+test('preserva o nome completo de cartas com duas faces na consulta da LigaMagic', () => {
+  const url = new URL(ligaMagicUrl('Adventurous Eater // Have a Bite'));
+  assert.equal(url.searchParams.get('card'), 'Adventurous Eater // Have a Bite');
+});
+
+test('remove apenas aspas tipográficas que envolvem todo o nome', () => {
+  const url = new URL(ligaMagicUrl('"Ach! Hans, Run!"'));
+  assert.equal(url.searchParams.get('card'), 'Ach! Hans, Run!');
+});
+
+test('resolve o link canônico retornado pela LigaMagic para nomes especiais', () => {
+  const html = '<a href="/?view=cards/card&amp;card=%26ldquo%3BAch%21+Hans%2C+Run%21%26rdquo%3B">&ldquo;Ach! Hans, Run!&rdquo;</a>';
+  const url = extractLigaMagicResultUrl(html, '"Ach! Hans, Run!"');
+  assert.equal(new URL(url).searchParams.get('card'), '&ldquo;Ach! Hans, Run!&rdquo;');
+});
 
 test('não converte preço USD ausente em zero', () => {
   assert.equal(usdCents({ prices: { usd: null } }), null);

@@ -22,7 +22,7 @@ const defaultDelayMs = Math.max(10_000, Number(process.env.LIGAMAGIC_REQUEST_DEL
 const requestHeaders = {
   Accept: 'text/html,application/xhtml+xml',
   'Accept-Language': 'pt-BR,pt;q=0.9,en;q=0.8',
-  'User-Agent': 'Playgroup-da-Amizade/2.0 (personal use; source: LigaMagic; https://codice-dos-banidos.igorbarazzetti.chatgpt.site)',
+  'User-Agent': 'Playgroup-da-Amizade/2.0 (personal use; source: LigaMagic; https://formatinho.igorb.com.br)',
 };
 const jsonHeaders = {
   Accept: 'application/json',
@@ -58,9 +58,29 @@ function decodeHtml(value = '') {
   });
 }
 
-function ligaMagicUrl(cardName) {
-  const lookupName = String(cardName || '').split(' // ')[0].trim();
+export function ligaMagicUrl(cardName) {
+  const lookupName = String(cardName || '').trim().replace(/^["“”]([\s\S]*)["“”]$/, '$1').trim();
   return `https://www.ligamagic.com.br/?view=cards/card&card=${encodeURIComponent(lookupName)}`;
+}
+
+export function extractLigaMagicResultUrl(html, cardName) {
+  const expectedName = normalizeName(cardName);
+  const anchors = String(html).matchAll(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi);
+  for (const match of anchors) {
+    const text = decodeHtml(match[2].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim())
+      .replace(/&(?:l|r)dquo;/gi, '"')
+      .replace(/&(?:l|r)squo;/gi, "'");
+    if (normalizeName(text) !== expectedName) continue;
+    const href = decodeHtml(match[1]);
+    try {
+      const url = new URL(href, sourceHomepage);
+      if (url.hostname !== 'www.ligamagic.com.br' || url.searchParams.get('view') !== 'cards/card' || !url.searchParams.get('card')) continue;
+      return url.toString();
+    } catch {
+      // Ignora links malformados presentes no HTML e continua procurando.
+    }
+  }
+  return null;
 }
 
 function parsePrice(value) {
@@ -389,11 +409,21 @@ function coverageFor(targets, prices, mode) {
 }
 
 async function collectPrice(card, previousEntry, throttle) {
-  const sourceUrl = ligaMagicUrl(card.name);
+  let sourceUrl = ligaMagicUrl(card.name);
   try {
     await throttle();
-    const html = await fetchWithRetry(sourceUrl, { headers: requestHeaders, expect: 'text' });
-    const cheapest = extractCheapestNormalPrinting(html);
+    let html = await fetchWithRetry(sourceUrl, { headers: requestHeaders, expect: 'text' });
+    let cheapest;
+    try {
+      cheapest = extractCheapestNormalPrinting(html);
+    } catch (error) {
+      const resolvedUrl = extractLigaMagicResultUrl(html, card.name);
+      if (!resolvedUrl || resolvedUrl === sourceUrl) throw error;
+      sourceUrl = resolvedUrl;
+      await throttle();
+      html = await fetchWithRetry(sourceUrl, { headers: requestHeaders, expect: 'text' });
+      cheapest = extractCheapestNormalPrinting(html);
+    }
     const checkedAt = new Date().toISOString();
     if (!cheapest) return { entry: { status: 'unavailable', name: card.name, price_brl: null, finish: 'normal', condition: 'NM', source_url: sourceUrl, checked_at: checkedAt }, statusCode: null };
     return {
