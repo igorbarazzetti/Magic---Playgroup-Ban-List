@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Vial",
     "checked_at": "2026-08-06T11:01:33.788Z"
   },
+  "fc8ee6e1-a2e1-4033-a164-7968fc79dd27": {
+    "status": "available",
+    "name": "Amateur Hero",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel's Spider-Man Eternal",
+    "printing_code": "SPE",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amateur%20Hero",
+    "checked_at": "2026-08-07T00:47:25.236Z"
+  },
   "fcb7c93c-46ab-49b5-a6e0-35d73f3be8f0": {
     "status": "available",
     "name": "Screaming Nemesis",

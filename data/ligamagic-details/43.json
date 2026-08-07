@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Admiral%20Beckett%20Brass",
     "checked_at": "2026-08-06T07:09:04.586Z"
   },
+  "43dc4b0c-e437-4abc-a3fb-48bd3098de88": {
+    "status": "available",
+    "name": "Altaïr Ibn-La'Ahad",
+    "price_brl": 30.95,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassin's Creed",
+    "printing_code": "ACR",
+    "collector_number": "45",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alta%C3%AFr%20Ibn-La'Ahad",
+    "checked_at": "2026-08-07T00:43:45.033Z"
+  },
   "43f5a93b-0f8d-48d2-ab9d-275d44cf88b5": {
     "status": "available",
     "name": "Aggressive Urge",

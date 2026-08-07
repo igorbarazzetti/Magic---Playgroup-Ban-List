@@ -1,4 +1,16 @@
 {
+  "88939cb3-5f61-4857-95cb-9446c6c1f1aa": {
+    "status": "available",
+    "name": "Alpine Houndmaster",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2021",
+    "printing_code": "M21",
+    "collector_number": "215",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alpine%20Houndmaster",
+    "checked_at": "2026-08-07T00:42:15.022Z"
+  },
   "88aa032d-dc11-4cae-81f3-ce66353963e0": {
     "status": "available",
     "name": "Affectionate Indrik",

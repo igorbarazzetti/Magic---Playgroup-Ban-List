@@ -46,5 +46,17 @@
     "collector_number": "20",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Accursed%20Duneyard",
     "checked_at": "2026-08-06T03:51:21.766Z"
+  },
+  "48f80047-a4f9-4ebb-a97a-cad157b9bb64": {
+    "status": "available",
+    "name": "All of History, All at Once",
+    "price_brl": 4.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Doctor Who",
+    "printing_code": "WHO",
+    "collector_number": "34",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=All%20of%20History%2C%20All%20at%20Once",
+    "checked_at": "2026-08-07T00:34:14.603Z"
   }
 }

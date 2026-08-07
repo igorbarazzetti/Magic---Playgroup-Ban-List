@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aggravate",
     "checked_at": "2026-08-06T14:39:31.620Z"
   },
+  "19504e19-2886-4d28-a813-b798a9a446a2": {
+    "status": "available",
+    "name": "Alien Symbiosis",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel's Spider-Man",
+    "printing_code": "SPM",
+    "collector_number": "50",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alien%20Symbiosis",
+    "checked_at": "2026-08-07T00:32:34.531Z"
+  },
   "19ad338a-c89f-406d-ad1a-222c22044e1b": {
     "status": "available",
     "name": "Act on Impulse",

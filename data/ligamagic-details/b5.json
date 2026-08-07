@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerial%20Guide",
     "checked_at": "2026-08-06T07:17:25.058Z"
   },
+  "b59c7c62-ce2f-4062-9790-566191aded69": {
+    "status": "available",
+    "name": "Alley Evasion",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Revolta do éter",
+    "printing_code": "AER",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alley%20Evasion",
+    "checked_at": "2026-08-07T00:35:24.669Z"
+  },
   "b5f5400e-f341-40e3-b935-36d9cf983a20": {
     "status": "available",
     "name": "Adherent of Hope",

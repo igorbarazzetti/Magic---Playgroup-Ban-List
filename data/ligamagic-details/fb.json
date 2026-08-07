@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mystical%20Tutor",
     "checked_at": "2026-08-05T20:10:29.262Z"
   },
+  "fb9af562-7384-4575-93bb-34f1ada23735": {
+    "status": "available",
+    "name": "Alley Strangler",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Revolta do éter",
+    "printing_code": "AER",
+    "collector_number": "52",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alley%20Strangler",
+    "checked_at": "2026-08-07T00:35:44.679Z"
+  },
   "fbf9f8c5-849f-45d5-8129-5fc683c21a04": {
     "status": "available",
     "name": "Fury",

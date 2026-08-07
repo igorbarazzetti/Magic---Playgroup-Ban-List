@@ -1,4 +1,16 @@
 {
+  "d371031e-78be-4964-b521-b1eaa22a5480": {
+    "status": "available",
+    "name": "Alseid of Life's Bounty",
+    "price_brl": 0.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros Além da Morte",
+    "printing_code": "THB",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alseid%20of%20Life's%20Bounty",
+    "checked_at": "2026-08-07T00:43:25.627Z"
+  },
   "d38937a6-ab1c-4de8-a278-d81a6ce0d921": {
     "status": "available",
     "name": "Paradox Engine",

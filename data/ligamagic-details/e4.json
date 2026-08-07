@@ -22,5 +22,17 @@
     "collector_number": "50",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Spike",
     "checked_at": "2026-08-06T11:00:03.690Z"
+  },
+  "e4be4071-7910-460f-90f3-6c4d8cc9db65": {
+    "status": "available",
+    "name": "Alpharael, Dreaming Acolyte",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Edge of Eternities",
+    "printing_code": "EOE",
+    "collector_number": "212",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alpharael%2C%20Dreaming%20Acolyte",
+    "checked_at": "2026-08-07T00:41:24.932Z"
   }
 }

@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Admiral's%20Order",
     "checked_at": "2026-08-06T07:09:24.606Z"
   },
+  "ae61b2ef-2e60-499a-8708-e37b9bd5620e": {
+    "status": "available",
+    "name": "Aligned Heart",
+    "price_brl": 4.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm Commander",
+    "printing_code": "TDC",
+    "collector_number": "12",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aligned%20Heart",
+    "checked_at": "2026-08-07T00:32:44.561Z"
+  },
   "ae7604bb-4818-45a3-960c-cf3d83f15964": {
     "status": "available",
     "name": "Teferi, Time Raveler",

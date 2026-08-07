@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abyssal%20Specter",
     "checked_at": "2026-08-06T03:44:41.588Z"
   },
+  "51d7bd70-0874-41d4-94bc-c3e14c968668": {
+    "status": "available",
+    "name": "Altar of the Goyf",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 2",
+    "printing_code": "MH2",
+    "collector_number": "220",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Altar%20of%20the%20Goyf",
+    "checked_at": "2026-08-07T00:45:05.106Z"
+  },
   "51f091a7-9b0b-4362-8e9c-c174752f369b": {
     "status": "available",
     "name": "White Plume Adventurer",

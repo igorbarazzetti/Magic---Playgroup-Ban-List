@@ -1,4 +1,16 @@
 {
+  "ac143b8e-f993-4989-8833-e26dc9faffa4": {
+    "status": "available",
+    "name": "Altar Golem",
+    "price_brl": 0.6,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Entardecer",
+    "printing_code": "EVE",
+    "collector_number": "166",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Altar%20Golem",
+    "checked_at": "2026-08-07T00:44:05.175Z"
+  },
   "acb0084d-3b09-4d2a-a4c1-848c92588845": {
     "status": "available",
     "name": "Aid the Fallen",

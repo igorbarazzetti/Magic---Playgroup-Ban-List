@@ -1,4 +1,16 @@
 {
+  "ed43f1f9-ef96-47bc-8a54-e59154319f9d": {
+    "status": "available",
+    "name": "Alpharael, Stonechosen",
+    "price_brl": 0.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Edge of Eternities",
+    "printing_code": "EOE",
+    "collector_number": "87",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alpharael%2C%20Stonechosen",
+    "checked_at": "2026-08-07T00:41:35.731Z"
+  },
   "ed7bdb3e-5c51-4547-9266-76a791e0b2b0": {
     "status": "available",
     "name": "Humility",

@@ -22,5 +22,17 @@
     "collector_number": "44",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=A.I.M.%20Scientists",
     "checked_at": "2026-08-06T00:01:46.643Z"
+  },
+  "fa9b6be2-b88c-4302-b7e2-faf25a60bcb9": {
+    "status": "available",
+    "name": "Altar's Light",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mirrodin",
+    "printing_code": "MI",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Altar's%20Light",
+    "checked_at": "2026-08-07T00:45:45.108Z"
   }
 }

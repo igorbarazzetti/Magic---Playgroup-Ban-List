@@ -10,5 +10,17 @@
     "collector_number": "48",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancestral%20Recall",
     "checked_at": "2026-08-05T20:02:55.092Z"
+  },
+  "55b12241-2495-45e6-b618-3746d5521291": {
+    "status": "available",
+    "name": "Alpine Guide",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons",
+    "printing_code": "MH1",
+    "collector_number": "117",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alpine%20Guide",
+    "checked_at": "2026-08-07T00:42:05.630Z"
   }
 }

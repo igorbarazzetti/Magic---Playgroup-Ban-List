@@ -1,4 +1,16 @@
 {
+  "8b46b50c-f824-4c4e-86de-38065c6f9a64": {
+    "status": "available",
+    "name": "Alpine Moon",
+    "price_brl": 1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2019",
+    "printing_code": "M19",
+    "collector_number": "128",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alpine%20Moon",
+    "checked_at": "2026-08-07T00:42:35.048Z"
+  },
   "8b4aa971-b919-4750-8388-33d4f42c9280": {
     "status": "available",
     "name": "Tree of Tales",
@@ -22,5 +34,17 @@
     "collector_number": "7",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abzan%20Falconer",
     "checked_at": "2026-08-06T03:46:01.598Z"
+  },
+  "8bed1349-4d0a-4544-ba66-c38e72cd2863": {
+    "status": "available",
+    "name": "Alpha Tyrranax",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Cicatrizes de Mirrodin",
+    "printing_code": "SOM",
+    "collector_number": "109",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alpha%20Tyrranax",
+    "checked_at": "2026-08-07T00:41:14.905Z"
   }
 }

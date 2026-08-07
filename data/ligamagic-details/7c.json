@@ -1,4 +1,16 @@
 {
+  "7c35f3fd-c64e-4944-a4d5-37ce916d23c3": {
+    "status": "available",
+    "name": "Altered Ego",
+    "price_brl": 0.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Sombras em Innistrad",
+    "printing_code": "SOI",
+    "collector_number": "241",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Altered%20Ego",
+    "checked_at": "2026-08-07T00:46:15.124Z"
+  },
   "7c427c3d-ecd8-45ef-bebd-8f10f4a311db": {
     "status": "available",
     "name": "Gaea's Cradle",
@@ -22,6 +34,18 @@
     "collector_number": "29",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aetherize",
     "checked_at": "2026-08-06T11:02:53.757Z"
+  },
+  "7c854a07-e031-458e-a335-9c31865020b8": {
+    "status": "available",
+    "name": "Alien Invasion",
+    "price_brl": 1.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes",
+    "printing_code": "MSH",
+    "collector_number": "200",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alien%20Invasion",
+    "checked_at": "2026-08-07T00:32:24.542Z"
   },
   "7cafc972-a6f5-4cac-a3d3-8a3ae36ffb1e": {
     "status": "available",

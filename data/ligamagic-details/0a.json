@@ -11,6 +11,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adaptive%20Snapjaw",
     "checked_at": "2026-08-06T04:00:02.846Z"
   },
+  "0a69c3dd-52a3-4ef6-b53f-b0780e0dc5f8": {
+    "status": "available",
+    "name": "Alrund, God of the Cosmos // Hakka, Whispering Raven",
+    "price_brl": 2.37,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaldheim",
+    "printing_code": "KHM",
+    "collector_number": "40",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alrund%2C%20God%20of%20the%20Cosmos",
+    "checked_at": "2026-08-07T00:43:04.987Z"
+  },
+  "0a7d0d1f-a5ac-4db9-860c-9fcbe3fd9e71": {
+    "status": "available",
+    "name": "Alpha Deathclaw",
+    "price_brl": 11.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fallout",
+    "printing_code": "PIP",
+    "collector_number": "91",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alpha%20Deathclaw",
+    "checked_at": "2026-08-07T00:40:25.491Z"
+  },
   "0a90d1fb-7a76-4b62-b001-4a539a8e5df1": {
     "status": "available",
     "name": "Aether Tunnel",

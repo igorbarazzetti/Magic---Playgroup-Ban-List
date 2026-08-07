@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Tibalt's%20Trickery",
     "checked_at": "2026-08-05T20:13:47.775Z"
   },
+  "664d982a-5cd8-4289-afb8-fa2e083042c9": {
+    "status": "available",
+    "name": "Allay",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "êxodo",
+    "printing_code": "EX",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Allay",
+    "checked_at": "2026-08-07T00:35:04.607Z"
+  },
   "668a6a9d-80fc-437b-99b8-6807e92eabca": {
     "status": "available",
     "name": "Agent of Horizons",

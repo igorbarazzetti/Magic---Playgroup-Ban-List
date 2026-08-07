@@ -1,4 +1,16 @@
 {
+  "be2a4595-4378-4af8-8368-e3b2bb3cb5bb": {
+    "status": "available",
+    "name": "Alliance of Arms",
+    "price_brl": 21.12,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander",
+    "printing_code": "CMD",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alliance%20of%20Arms",
+    "checked_at": "2026-08-07T00:35:54.687Z"
+  },
   "be662217-41c2-4caa-89da-ae7f6f817c34": {
     "status": "available",
     "name": "Alesha's Vanguard",

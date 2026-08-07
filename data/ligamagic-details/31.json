@@ -34,5 +34,17 @@
     "collector_number": "87",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acererak%20the%20Archlich",
     "checked_at": "2026-08-06T03:52:31.845Z"
+  },
+  "31d8c2c4-3309-4eee-a704-f760f381f080": {
+    "status": "available",
+    "name": "Allied Assault",
+    "price_brl": 0.06,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Renascer de Zendikar",
+    "printing_code": "ZNR",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Allied%20Assault",
+    "checked_at": "2026-08-07T00:36:04.678Z"
   }
 }

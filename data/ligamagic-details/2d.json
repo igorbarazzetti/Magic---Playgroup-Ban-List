@@ -22,5 +22,17 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abuna's%20Chant",
     "checked_at": "2026-08-06T00:15:57.283Z"
+  },
+  "2df8f253-1d3c-4b1f-8549-93fb90623474": {
+    "status": "available",
+    "name": "Ambassador Laquatus",
+    "price_brl": 2.95,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Décima Edição",
+    "printing_code": "10E",
+    "collector_number": "65",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambassador%20Laquatus",
+    "checked_at": "2026-08-07T00:48:15.235Z"
   }
 }

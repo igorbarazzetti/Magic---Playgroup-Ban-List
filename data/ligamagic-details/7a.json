@@ -34,5 +34,17 @@
     "collector_number": "165",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ainok%20Survivalist",
     "checked_at": "2026-08-06T14:45:21.883Z"
+  },
+  "7a6c4216-7aff-41d4-8d79-bd1ac0b263ae": {
+    "status": "available",
+    "name": "Amazing Spider-Girl",
+    "price_brl": 16.39,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes Commander",
+    "printing_code": "MSC",
+    "collector_number": "583",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amazing%20Spider-Girl",
+    "checked_at": "2026-08-07T00:47:55.223Z"
   }
 }

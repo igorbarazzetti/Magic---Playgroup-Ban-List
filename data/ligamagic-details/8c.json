@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Natural%20Order",
     "checked_at": "2026-08-05T20:10:35.253Z"
   },
+  "8c281ebe-d9a1-48af-b58b-19c55aa4625b": {
+    "status": "available",
+    "name": "Alpine Meadow",
+    "price_brl": 1.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaldheim",
+    "printing_code": "KHM",
+    "collector_number": "248",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alpine%20Meadow",
+    "checked_at": "2026-08-07T00:42:25.046Z"
+  },
   "8c912b1f-4584-4945-9931-f6850e5ebfa4": {
     "status": "available",
     "name": "Assemble the Rank and Vile",
@@ -34,5 +46,17 @@
     "collector_number": "2",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assemble%20the%20Rank%20and%20Vile",
     "checked_at": "2026-08-05T20:03:07.147Z"
+  },
+  "8cccc8d0-bdd8-4853-8330-6f6a57695d11": {
+    "status": "available",
+    "name": "Amareth, the Lustrous",
+    "price_brl": 0.74,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends",
+    "printing_code": "CMR",
+    "collector_number": "266",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amareth%2C%20the%20Lustrous",
+    "checked_at": "2026-08-07T00:46:55.801Z"
   }
 }

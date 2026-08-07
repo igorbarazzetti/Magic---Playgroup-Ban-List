@@ -10,5 +10,17 @@
     "collector_number": "62",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Airborne%20Aid",
     "checked_at": "2026-08-06T14:47:41.913Z"
+  },
+  "7f9d5219-0306-4c39-8640-dcb4314042de": {
+    "status": "available",
+    "name": "Altac Bloodseeker",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2015",
+    "printing_code": "M15",
+    "collector_number": "128",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Altac%20Bloodseeker",
+    "checked_at": "2026-08-07T00:43:35.121Z"
   }
 }

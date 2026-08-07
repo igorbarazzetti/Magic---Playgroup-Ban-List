@@ -22,5 +22,29 @@
     "collector_number": "123",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alania's%20Pathmaker",
     "checked_at": "2026-08-06T18:13:18.291Z"
+  },
+  "ceddea59-de47-4ddd-b424-6e1dcb13ab79": {
+    "status": "available",
+    "name": "Allied Teamwork",
+    "price_brl": 9.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Avatar: The Last Airbender Eternal",
+    "printing_code": "TLE",
+    "collector_number": "213",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Allied%20Teamwork",
+    "checked_at": "2026-08-07T00:36:34.697Z"
+  },
+  "cef5361a-a189-4e05-a8b8-fc764aed73b9": {
+    "status": "available",
+    "name": "All-Fates Scroll",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Edge of Eternities",
+    "printing_code": "EOE",
+    "collector_number": "234",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=All-Fates%20Scroll",
+    "checked_at": "2026-08-07T00:33:44.592Z"
   }
 }

@@ -10,5 +10,17 @@
     "collector_number": "6",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani's%20Welcome",
     "checked_at": "2026-08-06T14:52:12.091Z"
+  },
+  "4acacdd2-a736-43a2-ad67-891b9bd124f8": {
+    "status": "available",
+    "name": "Alloy Animist",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra dos Irmãos",
+    "printing_code": "BRO",
+    "collector_number": "166",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alloy%20Animist",
+    "checked_at": "2026-08-07T00:37:04.865Z"
   }
 }

@@ -70,5 +70,17 @@
     "collector_number": "3",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adaptive%20Gemguard",
     "checked_at": "2026-08-06T03:59:32.165Z"
+  },
+  "2fe8d739-dee5-4220-8102-6fbae7d4fc19": {
+    "status": "available",
+    "name": "Alistair, the Brigadier",
+    "price_brl": 1.78,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Doctor Who",
+    "printing_code": "WHO",
+    "collector_number": "112",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alistair%2C%20the%20Brigadier",
+    "checked_at": "2026-08-07T00:33:24.543Z"
   }
 }

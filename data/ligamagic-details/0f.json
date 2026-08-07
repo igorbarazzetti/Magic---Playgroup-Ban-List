@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agility",
     "checked_at": "2026-08-06T14:41:02.240Z"
   },
+  "0f623e23-81ae-4c35-b68b-e0a2f431cbad": {
+    "status": "available",
+    "name": "Amass the Components",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Iconic Masters",
+    "printing_code": "IMA",
+    "collector_number": "41",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amass%20the%20Components",
+    "checked_at": "2026-08-07T00:47:05.200Z"
+  },
   "0fe602b7-9f88-4d3d-af24-7790df867ed5": {
     "status": "available",
     "name": "Aether Barrier",

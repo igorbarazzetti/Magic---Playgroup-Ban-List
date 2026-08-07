@@ -46,5 +46,17 @@
     "collector_number": "4",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abzan%20Skycaptain",
     "checked_at": "2026-08-06T03:46:51.628Z"
+  },
+  "86e3c86c-d50e-4aa9-b080-f68b6afee87c": {
+    "status": "available",
+    "name": "Alpine Grizzly",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Khans de Tarkir",
+    "printing_code": "KTK",
+    "collector_number": "127",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alpine%20Grizzly",
+    "checked_at": "2026-08-07T00:41:55.049Z"
   }
 }

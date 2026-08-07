@@ -1,4 +1,16 @@
 {
+  "252d9b25-45a1-40ca-b563-4cdefc791a44": {
+    "status": "available",
+    "name": "Allure of the Unknown",
+    "price_brl": 0.19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros Além da Morte",
+    "printing_code": "THB",
+    "collector_number": "207",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Allure%20of%20the%20Unknown",
+    "checked_at": "2026-08-07T00:37:34.786Z"
+  },
   "254878f0-be90-4653-a395-0c41258fceaf": {
     "status": "available",
     "name": "Tinker",

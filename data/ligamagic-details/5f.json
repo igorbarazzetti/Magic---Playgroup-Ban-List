@@ -1,4 +1,16 @@
 {
+  "5f358544-7319-4f8e-9d60-a410c4feb774": {
+    "status": "available",
+    "name": "Alluring Siren",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2012",
+    "printing_code": "M12",
+    "collector_number": "42",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alluring%20Siren",
+    "checked_at": "2026-08-07T00:37:54.780Z"
+  },
   "5fae52ed-1b84-406e-951d-b0d329dc48a7": {
     "status": "available",
     "name": "Glimpse of Nature",

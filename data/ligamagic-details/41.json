@@ -1,4 +1,16 @@
 {
+  "410b7faf-365c-4b73-a64d-bddbe49cfded": {
+    "status": "available",
+    "name": "Alloy Golem",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Invasão",
+    "printing_code": "IN",
+    "collector_number": "297",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alloy%20Golem",
+    "checked_at": "2026-08-07T00:37:14.727Z"
+  },
   "4137a22c-f793-4e27-a9b2-72740a6e2121": {
     "status": "available",
     "name": "Abzan Charm",

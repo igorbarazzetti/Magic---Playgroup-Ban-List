@@ -1,4 +1,16 @@
 {
+  "183a9488-e21f-448b-8b69-e53b56fa0a56": {
+    "status": "available",
+    "name": "Ambassador Blorpityblorpboop",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unfinity",
+    "printing_code": "UNF",
+    "collector_number": "161",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambassador%20Blorpityblorpboop",
+    "checked_at": "2026-08-07T00:48:05.272Z"
+  },
   "1890ef1b-38e5-432d-b040-f33cea7814e7": {
     "status": "available",
     "name": "Punishing Fire",

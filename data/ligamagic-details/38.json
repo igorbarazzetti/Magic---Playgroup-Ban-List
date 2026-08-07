@@ -46,5 +46,17 @@
     "collector_number": "108",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adeline%2C%20Resplendent%20Cathar",
     "checked_at": "2026-08-06T07:08:04.497Z"
+  },
+  "38e36eb0-f3a9-42d7-9223-417d23e434fa": {
+    "status": "available",
+    "name": "Amateur Auteur",
+    "price_brl": 0.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unstable",
+    "printing_code": "UST",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amateur%20Auteur",
+    "checked_at": "2026-08-07T00:47:15.162Z"
   }
 }

@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aardwolf's%20Advantage",
     "checked_at": "2026-08-06T00:04:46.797Z"
   },
+  "4caa8e68-e599-416f-b839-3d009569ff29": {
+    "status": "available",
+    "name": "Alpha Myr",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mirrodin",
+    "printing_code": "MI",
+    "collector_number": "142",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alpha%20Myr",
+    "checked_at": "2026-08-07T00:40:54.960Z"
+  },
   "4ccc1ac5-db90-4fc9-9795-7afaf7466c3e": {
     "status": "available",
     "name": "Acidic Soil",

@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Accorder's%20Shield",
     "checked_at": "2026-08-06T03:50:42.341Z"
   },
+  "dd79a994-7dad-49d4-8d8f-62dbedde4a38": {
+    "status": "available",
+    "name": "Alquist Proft, Master Sleuth",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassinato na Mansão Karlov",
+    "printing_code": "MKM",
+    "collector_number": "185",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alquist%20Proft%2C%20Master%20Sleuth",
+    "checked_at": "2026-08-07T00:42:55.092Z"
+  },
   "dd97e457-07eb-4918-b780-ae7ff42a37e7": {
     "status": "available",
     "name": "Abjure",

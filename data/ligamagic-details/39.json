@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brago's%20Favor",
     "checked_at": "2026-08-05T20:03:46.346Z"
   },
+  "399af8ea-7a6f-4f43-bd39-dc29a6e75e06": {
+    "status": "available",
+    "name": "Alley Grifters",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Máscaras de Mercádia",
+    "printing_code": "MM",
+    "collector_number": "115",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alley%20Grifters",
+    "checked_at": "2026-08-07T00:35:34.635Z"
+  },
   "39b4a47a-df51-4bd9-9a20-43ac80a5d352": {
     "status": "available",
     "name": "Balustrade Spy",

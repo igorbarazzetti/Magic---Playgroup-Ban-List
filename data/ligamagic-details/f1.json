@@ -1,4 +1,28 @@
 {
+  "f15460d9-0133-436c-b0fe-1661989124f0": {
+    "status": "available",
+    "name": "All-Seeing Arbiter",
+    "price_brl": 0.65,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ruas de Nova Capenna",
+    "printing_code": "SNC",
+    "collector_number": "34",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=All-Seeing%20Arbiter",
+    "checked_at": "2026-08-07T00:34:34.653Z"
+  },
+  "f1a76cca-829a-4576-a560-f1af34b80b87": {
+    "status": "available",
+    "name": "Alpha Kavu",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Conjunção",
+    "printing_code": "PS",
+    "collector_number": "77",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alpha%20Kavu",
+    "checked_at": "2026-08-07T00:40:44.870Z"
+  },
   "f1c3d749-5cdb-4af2-967f-6413d6cb04fe": {
     "status": "available",
     "name": "Acquire",

@@ -1,4 +1,16 @@
 {
+  "bc842838-1993-4480-b8fe-f9d9f2dee7a4": {
+    "status": "available",
+    "name": "Alrund's Epiphany",
+    "price_brl": 19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaldheim (Variantes)",
+    "printing_code": "CBKHM",
+    "collector_number": "295",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alrund's%20Epiphany",
+    "checked_at": "2026-08-07T00:43:15.063Z"
+  },
   "bc899d5c-0a91-4f19-a3e4-3078ae966110": {
     "status": "available",
     "name": "Abstract Paintmage",

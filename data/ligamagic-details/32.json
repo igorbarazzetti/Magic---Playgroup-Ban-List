@@ -1,4 +1,16 @@
 {
+  "322d2407-fa9f-48d0-bdf0-88f6d24cf865": {
+    "status": "available",
+    "name": "Amarant Coral",
+    "price_brl": 30,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY Commander (Scene Box)",
+    "printing_code": "SBFIC",
+    "collector_number": "457",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amarant%20Coral",
+    "checked_at": "2026-08-07T00:46:35.146Z"
+  },
   "322f0459-f394-44f0-977b-55fd0cbe0712": {
     "status": "available",
     "name": "Yawgmoth's Will",

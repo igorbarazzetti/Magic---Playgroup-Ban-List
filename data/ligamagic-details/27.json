@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Tempest%20Efreet",
     "checked_at": "2026-08-05T20:13:26.715Z"
   },
+  "278e51fe-3cd9-4c82-bd81-2164771f8611": {
+    "status": "available",
+    "name": "Alms Collector",
+    "price_brl": 4.68,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Masters",
+    "printing_code": "CMM",
+    "collector_number": "10",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alms%20Collector",
+    "checked_at": "2026-08-07T00:39:04.844Z"
+  },
   "27e0948b-9916-473b-8d8c-a51bdfbc7457": {
     "status": "available",
     "name": "Underworld Breach",

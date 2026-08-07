@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Act%20of%20Treason",
     "checked_at": "2026-08-06T03:57:43.132Z"
   },
+  "9d293b69-12b7-4b50-a0a7-c4f493dee30b": {
+    "status": "available",
+    "name": "Ally Encampment",
+    "price_brl": 0.43,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Batalha por Zendikar",
+    "printing_code": "BFZ",
+    "collector_number": "228",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ally%20Encampment",
+    "checked_at": "2026-08-07T00:38:14.806Z"
+  },
   "9d341ed4-4f9b-40df-9bd9-3bfeaf0fe595": {
     "status": "available",
     "name": "Abominable Treefolk",

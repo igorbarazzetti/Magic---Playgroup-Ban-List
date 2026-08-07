@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Deadly%20Rollick",
     "checked_at": "2026-08-05T20:04:58.513Z"
   },
+  "0466f23c-d07c-4015-82d5-eab4b226f1ff": {
+    "status": "available",
+    "name": "Amazing Acrobatics",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel's Spider-Man",
+    "printing_code": "SPM",
+    "collector_number": "25",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amazing%20Acrobatics",
+    "checked_at": "2026-08-07T00:47:35.393Z"
+  },
   "04ea7e88-7ea5-4b4c-9a7c-2a6ac0bc0682": {
     "status": "available",
     "name": "Absorb Vis",

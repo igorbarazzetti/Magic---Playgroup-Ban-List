@@ -1,4 +1,28 @@
 {
+  "5337b747-dc69-4fe4-9899-c1374e22aa79": {
+    "status": "available",
+    "name": "Alpha Guard",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unfinity",
+    "printing_code": "UNF",
+    "collector_number": "129",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alpha%20Guard",
+    "checked_at": "2026-08-07T00:40:35.132Z"
+  },
+  "538fa2e0-d225-4232-b243-38868b695e26": {
+    "status": "available",
+    "name": "Alpha Authority",
+    "price_brl": 5.54,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portões Violados",
+    "printing_code": "GTC",
+    "collector_number": "114",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alpha%20Authority",
+    "checked_at": "2026-08-07T00:40:05.411Z"
+  },
   "53b2c8f2-db9a-4ab0-a4e8-17385b2fa3bd": {
     "status": "available",
     "name": "Aethertide Whale",

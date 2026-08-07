@@ -11,6 +11,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adventuring%20Gear",
     "checked_at": "2026-08-06T07:12:54.821Z"
   },
+  "171a3ac4-0c9c-46ac-b273-089d566cca05": {
+    "status": "available",
+    "name": "Altar of the Lost",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ascensão das Trevas",
+    "printing_code": "DKA",
+    "collector_number": "144",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Altar%20of%20the%20Lost",
+    "checked_at": "2026-08-07T00:45:15.099Z"
+  },
+  "176508ba-c107-4694-8dd7-ea34fca3b299": {
+    "status": "available",
+    "name": "Allosaurus Rider",
+    "price_brl": 6.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Duel Decks: Elves vs. Goblins",
+    "printing_code": "EVG",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Allosaurus%20Rider",
+    "checked_at": "2026-08-07T00:36:54.788Z"
+  },
   "17969b71-9612-45ff-b789-1c033f832154": {
     "status": "available",
     "name": "Alaborn Trooper",
@@ -58,6 +82,18 @@
     "collector_number": "115",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alesha%2C%20Who%20Laughs%20at%20Fate",
     "checked_at": "2026-08-06T18:17:07.706Z"
+  },
+  "17d41bbf-6a84-48c4-baac-e45f8ed86b78": {
+    "status": "available",
+    "name": "Altar of the Pantheon",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros Além da Morte",
+    "printing_code": "THB",
+    "collector_number": "231",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Altar%20of%20the%20Pantheon",
+    "checked_at": "2026-08-07T00:45:25.131Z"
   },
   "17fa98cd-ed8f-483f-9525-7e989a82ebb2": {
     "status": "available",

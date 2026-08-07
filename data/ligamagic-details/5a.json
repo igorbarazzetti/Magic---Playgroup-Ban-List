@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alchemist's%20Talent",
     "checked_at": "2026-08-06T18:15:18.206Z"
   },
+  "5a399467-abb7-4f33-962d-8bef5aa9ebf3": {
+    "status": "available",
+    "name": "Aligned Hedron Network",
+    "price_brl": 0.17,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Batalha por Zendikar",
+    "printing_code": "BFZ",
+    "collector_number": "222",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aligned%20Hedron%20Network",
+    "checked_at": "2026-08-07T00:32:54.520Z"
+  },
   "5a46ad2a-35b1-4dd5-b7c3-fec36b7c67ab": {
     "status": "available",
     "name": "Sinkhole",
@@ -34,6 +46,18 @@
     "collector_number": "312",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abandoned%20Outpost",
     "checked_at": "2026-08-06T00:06:16.880Z"
+  },
+  "5a824aff-52fe-4402-b074-884afb5286d4": {
+    "status": "available",
+    "name": "Amazing Alliance",
+    "price_brl": 4.84,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel's Spider-Man Eternal",
+    "printing_code": "SPE",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amazing%20Alliance",
+    "checked_at": "2026-08-07T00:47:45.225Z"
   },
   "5a98decb-30ba-4c34-a88a-424b7f4e03bc": {
     "status": "available",

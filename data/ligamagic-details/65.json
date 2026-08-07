@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Wooded%20Foothills",
     "checked_at": "2026-08-05T20:15:30.018Z"
   },
+  "6591f243-f94c-4a83-bb16-1fb838d9eb14": {
+    "status": "available",
+    "name": "Altanak, the Thrice-Called",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Noctumbra: A Casa dos Horrores",
+    "printing_code": "DSK",
+    "collector_number": "166",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Altanak%2C%20the%20Thrice-Called",
+    "checked_at": "2026-08-07T00:43:55.058Z"
+  },
   "65986c1b-8e51-4604-b685-d82fa7d1263a": {
     "status": "available",
     "name": "Skullclamp",

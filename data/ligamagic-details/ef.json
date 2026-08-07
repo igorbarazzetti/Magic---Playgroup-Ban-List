@@ -35,6 +35,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akoum%20Flameseeker",
     "checked_at": "2026-08-06T18:04:57.195Z"
   },
+  "efb0394c-2a45-4dd8-bca3-08704056fa31": {
+    "status": "available",
+    "name": "Alloy Myr",
+    "price_brl": 0.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Masters 2015",
+    "printing_code": "MM2",
+    "collector_number": "201",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alloy%20Myr",
+    "checked_at": "2026-08-07T00:37:24.735Z"
+  },
+  "efd46a6e-a901-4224-8a29-d53a4dc7750c": {
+    "status": "available",
+    "name": "Alms",
+    "price_brl": 0.14,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alisios",
+    "printing_code": "WL",
+    "collector_number": "9",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alms",
+    "checked_at": "2026-08-07T00:38:44.785Z"
+  },
   "efe9c3e0-7315-408e-9903-9d25a681039b": {
     "status": "available",
     "name": "Golos, Tireless Pilgrim",

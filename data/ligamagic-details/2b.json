@@ -58,5 +58,17 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akrasan%20Squire",
     "checked_at": "2026-08-06T18:05:57.233Z"
+  },
+  "2baf2ee6-e290-4a2b-89a0-0e725edde06d": {
+    "status": "available",
+    "name": "Allied Reinforcements",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Juramento das Sentinelas",
+    "printing_code": "OGW",
+    "collector_number": "15",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Allied%20Reinforcements",
+    "checked_at": "2026-08-07T00:36:14.716Z"
   }
 }
