@@ -3,7 +3,7 @@ const site = {
   playgroupInitials: 'PA',
   pageTitle: 'Códice do Formatinho',
   pageSubtitle: 'A banlist oficial do nosso formato',
-  logoPath: './formatinho-logo.png?v=3',
+  logoPath: './formatinho-logo.png?v=4',
   scryfallQuery: '(banned:standard OR banned:pioneer OR banned:modern OR banned:legacy OR banned:commander OR banned:duel OR banned:pauper) -set:sunf -set:unf',
   catalogQuery: '(game:paper) usd<20.00 prefer:best',
   backgroundCards: ['Teferi, Hero of Dominaria', "Elspeth, Sun's Champion", 'Chandra, Torch of Defiance', 'Nissa, Who Shakes the World'],
@@ -1594,7 +1594,7 @@ function parseDeckList(value) {
       .trim();
     if (!name || /^\d+$/.test(name)) return;
 
-    const key = slug(name).replace(/['’]/g, "'").replace(/\s+/g, ' ').trim();
+    const key = normalizeDeckName(name);
     if (!key) return;
     const existing = entries.get(key);
     if (existing) existing.quantity += quantity;
@@ -1602,6 +1602,46 @@ function parseDeckList(value) {
   });
 
   return [...entries.values()];
+}
+
+function normalizeDeckName(value = '') {
+  return slug(String(value))
+    .replace(/[\u2018\u2019\u02bc\uff07]/g, "'")
+    .replace(/[^a-z0-9/]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function deckNameDistance(left, right, maximum) {
+  if (Math.abs(left.length - right.length) > maximum) return maximum + 1;
+  let previous = Array.from({ length: right.length + 1 }, (_, index) => index);
+
+  for (let row = 1; row <= left.length; row += 1) {
+    const current = [row];
+    let best = row;
+    for (let column = 1; column <= right.length; column += 1) {
+      const value = Math.min(
+        previous[column] + 1,
+        current[column - 1] + 1,
+        previous[column - 1] + (left[row - 1] === right[column - 1] ? 0 : 1),
+      );
+      current[column] = value;
+      best = Math.min(best, value);
+    }
+    if (best > maximum) return maximum + 1;
+    previous = current;
+  }
+
+  return previous[right.length];
+}
+
+function isConservativeDeckCorrection(input, candidate) {
+  const source = normalizeDeckName(input);
+  const target = normalizeDeckName(candidate);
+  if (!source || !target || source === target) return source === target;
+  if (source.split(' ').length !== target.split(' ').length) return false;
+  const maximum = source.length >= 16 ? 2 : source.length >= 6 ? 1 : 0;
+  return maximum > 0 && deckNameDistance(source, target, maximum) <= maximum;
 }
 
 function updateDeckListCount() {
@@ -1616,13 +1656,12 @@ function updateDeckListCount() {
 function cardNameKeys(card) {
   return [card?.name, card?.printed_name, ...(card?.card_faces || []).flatMap((face) => [face.name, face.printed_name])]
     .filter(Boolean)
-    .map((name) => slug(name).replace(/['’]/g, "'").replace(/\s+/g, ' ').trim());
+    .map(normalizeDeckName);
 }
 
 function deckEntryKeys(entry) {
-  const normalize = (name) => slug(name).replace(/[^a-z0-9/]+/g, ' ').replace(/\s+/g, ' ').trim();
   const name = String(entry?.name || '');
-  return [...new Set([entry?.key, name, ...name.split(/\s*\/\/\s*/)].map(normalize).filter(Boolean))];
+  return [...new Set([entry?.key, name, ...name.split(/\s*\/\/\s*/)].map(normalizeDeckName).filter(Boolean))];
 }
 
 function deckCardForEntry(entry) {
@@ -1647,6 +1686,19 @@ async function fetchDeckCards(entries) {
       keys.forEach((key) => deckCardCache.set(key, card));
       if (card) cardNameKeys(card).forEach((key) => deckCardCache.set(key, card));
     });
+    const unresolved = batch.filter((entry) => !deckCardForEntry(entry));
+    for (const entry of unresolved) {
+      const query = String(entry.name || '').split(/\s*\/\/\s*/)[0].trim();
+      const fuzzyResponse = await fetch(`https://api.scryfall.com/cards/named?fuzzy=${encodeURIComponent(query)}`, {
+        headers: { Accept: 'application/json;q=0.9,*/*;q=0.8' },
+      });
+      const fuzzyCard = fuzzyResponse.ok ? await fuzzyResponse.json() : null;
+      const card = fuzzyCard && isConservativeDeckCorrection(query, fuzzyCard.name) ? fuzzyCard : null;
+      const keys = deckEntryKeys(entry);
+      keys.forEach((key) => deckCardCache.set(key, card));
+      if (card) cardNameKeys(card).forEach((key) => deckCardCache.set(key, card));
+      await new Promise((resolve) => setTimeout(resolve, 80));
+    }
     if (start + 75 < missing.length) await new Promise((resolve) => setTimeout(resolve, 80));
   }
   return new Map(entries.map((entry) => [entry.key, deckCardForEntry(entry)]));

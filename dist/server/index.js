@@ -30,9 +30,41 @@ const json = (body, status = 200) => new Response(JSON.stringify(body), {
 const normalizeName = (value = "") => String(value)
   .normalize("NFD")
   .replace(/[\u0300-\u036f]/g, "")
-  .replace(/[’‘]/g, "'")
+  .replace(/[\u2018\u2019\u02bc\uff07]/g, "'")
+  .replace(/[^a-z0-9/]+/gi, " ")
+  .replace(/\s+/g, " ")
   .trim()
   .toLocaleLowerCase("en-US");
+
+function nameDistance(left, right, maximum) {
+  if (Math.abs(left.length - right.length) > maximum) return maximum + 1;
+  let previous = Array.from({ length: right.length + 1 }, (_, index) => index);
+  for (let row = 1; row <= left.length; row += 1) {
+    const current = [row];
+    let best = row;
+    for (let column = 1; column <= right.length; column += 1) {
+      const value = Math.min(
+        previous[column] + 1,
+        current[column - 1] + 1,
+        previous[column - 1] + (left[row - 1] === right[column - 1] ? 0 : 1),
+      );
+      current[column] = value;
+      best = Math.min(best, value);
+    }
+    if (best > maximum) return maximum + 1;
+    previous = current;
+  }
+  return previous[right.length];
+}
+
+function isConservativeCorrection(input, candidate) {
+  const source = normalizeName(input);
+  const target = normalizeName(candidate);
+  if (!source || !target || source === target) return source === target;
+  if (source.split(" ").length !== target.split(" ").length) return false;
+  const maximum = source.length >= 16 ? 2 : source.length >= 6 ? 1 : 0;
+  return maximum > 0 && nameDistance(source, target, maximum) <= maximum;
+}
 
 const cleanText = (value, maxLength) => String(value || "")
   .replace(/[\u0000-\u001f\u007f]/g, " ")
@@ -108,6 +140,22 @@ async function fetchCards(entries) {
     const payload = await response.json();
     for (const card of payload.data || []) {
       for (const key of cardNameKeys(card)) cardsByName.set(key, card);
+    }
+
+    for (const entry of batch.filter((item) => !cardsByName.has(normalizeName(item.name)))) {
+      const query = String(entry.name || "").split(/\s*\/\/\s*/)[0].trim();
+      const fuzzyResponse = await fetch(`https://api.scryfall.com/cards/named?fuzzy=${encodeURIComponent(query)}`, {
+        headers: {
+          Accept: "application/json;q=0.9,*/*;q=0.8",
+          "User-Agent": "Codice-do-Formatinho/1.0 validated-decks",
+        },
+      });
+      const fuzzyCard = fuzzyResponse.ok ? await fuzzyResponse.json() : null;
+      if (fuzzyCard && isConservativeCorrection(query, fuzzyCard.name)) {
+        cardsByName.set(normalizeName(entry.name), fuzzyCard);
+        for (const key of cardNameKeys(fuzzyCard)) cardsByName.set(key, fuzzyCard);
+      }
+      await new Promise((resolve) => setTimeout(resolve, 120));
     }
 
     if (start + 75 < entries.length) {
