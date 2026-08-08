@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ant-Man%2C%20Reformed%20Rogue",
     "checked_at": "2026-08-07T09:32:06.392Z"
   },
+  "c5355c5e-d07d-48ca-90c5-98edcab1a3c7": {
+    "status": "available",
+    "name": "Axegrinder Giant",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn",
+    "printing_code": "LW",
+    "collector_number": "151",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Axegrinder%20Giant",
+    "checked_at": "2026-08-08T13:24:07.009Z"
+  },
   "c551f007-9740-4a2a-8ef5-7be1a7afe14b": {
     "status": "available",
     "name": "Altar of the Wretched // Wretched Bonemass",
@@ -70,5 +82,17 @@
     "collector_number": "6",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akron%20Legionnaire",
     "checked_at": "2026-08-06T18:08:57.393Z"
+  },
+  "c5fc8e7c-a87e-4586-a13c-d30e0a3aafbf": {
+    "status": "available",
+    "name": "Avengers Tower",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes",
+    "printing_code": "MSH",
+    "collector_number": "260",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avengers%20Tower",
+    "checked_at": "2026-08-08T13:17:56.843Z"
   }
 }

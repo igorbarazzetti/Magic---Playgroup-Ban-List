@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ahn-Crop%20Champion",
     "checked_at": "2026-08-06T14:43:21.793Z"
   },
+  "c04dd88f-fb7f-43be-b586-7fc5642073dc": {
+    "status": "available",
+    "name": "Avoid Fate",
+    "price_brl": 12.35,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Time Spiral Timeshifted",
+    "printing_code": "TSTS",
+    "collector_number": "73",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avoid%20Fate",
+    "checked_at": "2026-08-08T13:20:27.354Z"
+  },
   "c084930c-ce06-4c6c-93bd-59e92372e3ae": {
     "status": "available",
     "name": "Arms Depot",

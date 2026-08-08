@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Archer",
     "checked_at": "2026-08-08T09:14:10.540Z"
   },
+  "91520db8-2d50-4c17-9f0e-2f92f63285f7": {
+    "status": "available",
+    "name": "Avizoa",
+    "price_brl": 2.69,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alisios",
+    "printing_code": "WL",
+    "collector_number": "18",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avizoa",
+    "checked_at": "2026-08-08T13:20:16.860Z"
+  },
   "916db499-7f0a-45f7-8abe-94818a53e494": {
     "status": "available",
     "name": "Armored Ascension",

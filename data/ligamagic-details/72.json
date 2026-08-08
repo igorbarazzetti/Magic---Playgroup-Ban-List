@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashen%20Firebeast",
     "checked_at": "2026-08-07T21:17:09.244Z"
   },
+  "7266b491-54e6-4393-a448-d5ae99d965c6": {
+    "status": "available",
+    "name": "Azorius Keyrune",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2013",
+    "printing_code": "C13",
+    "collector_number": "236",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azorius%20Keyrune",
+    "checked_at": "2026-08-08T13:30:47.208Z"
+  },
   "727f4734-53cc-4279-ba51-dfa26c4ceb1d": {
     "status": "available",
     "name": "Aegis Automaton",

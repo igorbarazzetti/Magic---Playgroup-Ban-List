@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ardbert%2C%20Warrior%20of%20Darkness",
     "checked_at": "2026-08-07T17:25:34.661Z"
   },
+  "a94bb381-74e2-488f-896d-a017a2b568ab": {
+    "status": "available",
+    "name": "Avid Reclaimer",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Hora da Devastação",
+    "printing_code": "HOU",
+    "collector_number": "201",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avid%20Reclaimer",
+    "checked_at": "2026-08-08T13:19:57.251Z"
+  },
   "a95a0b13-d50f-41cf-8668-de60d445e7b0": {
     "status": "available",
     "name": "Ancestors' Aid",

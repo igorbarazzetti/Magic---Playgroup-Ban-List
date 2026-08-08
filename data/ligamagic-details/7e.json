@@ -58,5 +58,17 @@
     "collector_number": "186",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ascendant%20Packleader",
     "checked_at": "2026-08-07T21:14:09.121Z"
+  },
+  "7e8f5b34-fd16-4307-9104-17b584b25b14": {
+    "status": "available",
+    "name": "Awakener Druid",
+    "price_brl": 0.06,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2010",
+    "printing_code": "M10",
+    "collector_number": "167",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Awakener%20Druid",
+    "checked_at": "2026-08-08T13:22:06.927Z"
   }
 }

@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adeline%2C%20Resplendent%20Cathar",
     "checked_at": "2026-08-06T07:08:04.497Z"
   },
+  "388168b3-ec68-4af2-b88c-6a5ec88c15f6": {
+    "status": "available",
+    "name": "Ayara, First of Locthwain",
+    "price_brl": 25.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Trono de Eldraine",
+    "printing_code": "ELD",
+    "collector_number": "75",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ayara%2C%20First%20of%20Locthwain",
+    "checked_at": "2026-08-08T13:25:37.039Z"
+  },
   "38e0a1d0-2a4c-4510-9610-abea7fa1de7c": {
     "status": "available",
     "name": "Archon of Falling Stars",

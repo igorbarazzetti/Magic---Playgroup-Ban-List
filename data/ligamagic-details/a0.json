@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Reanimate",
     "checked_at": "2026-08-05T20:11:44.460Z"
   },
+  "a0476da9-51b1-4cd3-90c4-ad01d0e4c3d6": {
+    "status": "available",
+    "name": "Azorius Herald",
+    "price_brl": 0.14,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Insurreição",
+    "printing_code": "DI",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azorius%20Herald",
+    "checked_at": "2026-08-08T13:30:27.184Z"
+  },
   "a051dee0-60c8-4f58-84cb-55460c097115": {
     "status": "available",
     "name": "Abandoned Sarcophagus",

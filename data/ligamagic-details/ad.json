@@ -11,6 +11,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anguished%20Unmaking",
     "checked_at": "2026-08-07T09:23:16.064Z"
   },
+  "ad11ff81-acaa-4529-ba15-718dadbea259": {
+    "status": "available",
+    "name": "Aviation Pioneer",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2019",
+    "printing_code": "M19",
+    "collector_number": "46",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aviation%20Pioneer",
+    "checked_at": "2026-08-08T13:19:47.365Z"
+  },
+  "ad1712d8-809f-410c-8b91-ffe6fb8a69a1": {
+    "status": "available",
+    "name": "Azorius Guildgate",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lealdade em Ravnica",
+    "printing_code": "RNA",
+    "collector_number": "243",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azorius%20Guildgate",
+    "checked_at": "2026-08-08T13:30:07.246Z"
+  },
   "ad172d4e-febf-4844-9544-861d03e27ab5": {
     "status": "available",
     "name": "Alabaster Host Sanctifier",

@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Underdark%20Explorer",
     "checked_at": "2026-08-05T20:14:26.937Z"
   },
+  "767c1f97-03de-474d-9112-e7521ba3b3f3": {
+    "status": "available",
+    "name": "Avian Changeling",
+    "price_brl": 0.12,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn",
+    "printing_code": "LW",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avian%20Changeling",
+    "checked_at": "2026-08-08T13:19:16.825Z"
+  },
   "76bdc626-f51b-420a-ac5c-5ab33772fabe": {
     "status": "available",
     "name": "Arsenal Thresher",

@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anchovy%20%26%20Banana%20Pizza",
     "checked_at": "2026-08-07T07:47:35.927Z"
   },
+  "5f694917-f434-4459-bc86-caf9ac1c80e7": {
+    "status": "available",
+    "name": "Awaken the Honored Dead",
+    "price_brl": 0.35,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm",
+    "printing_code": "TDM",
+    "collector_number": "170",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Awaken%20the%20Honored%20Dead",
+    "checked_at": "2026-08-08T13:21:06.889Z"
+  },
   "5f7c6fa9-4208-4dc8-a75b-9586200d8e19": {
     "status": "available",
     "name": "Attended Socialite",

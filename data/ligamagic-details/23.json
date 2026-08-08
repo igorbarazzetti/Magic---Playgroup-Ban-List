@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ardent%20Militia",
     "checked_at": "2026-08-07T17:26:34.697Z"
   },
+  "23695bc2-86d3-4d78-b374-9e83c4cc9cc4": {
+    "status": "available",
+    "name": "Averna, the Chaos Bloom",
+    "price_brl": 0.7,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends",
+    "printing_code": "CMR",
+    "collector_number": "269",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Averna%2C%20the%20Chaos%20Bloom",
+    "checked_at": "2026-08-08T13:19:06.872Z"
+  },
   "2392a41a-59d3-4749-be94-4d9df0af9c4c": {
     "status": "available",
     "name": "Alabaster Dragon",

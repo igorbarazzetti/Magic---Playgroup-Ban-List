@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Artisan%20of%20Forms",
     "checked_at": "2026-08-07T21:10:48.989Z"
   },
+  "3ebbe05c-7cc4-4845-87e5-ab93d7ac9623": {
+    "status": "available",
+    "name": "Aysen Crusader",
+    "price_brl": 1.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Natais",
+    "printing_code": "HL",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aysen%20Crusader",
+    "checked_at": "2026-08-08T13:26:57.070Z"
+  },
   "3ecc4b57-3e0c-48b8-9952-e4b63b6bc45d": {
     "status": "available",
     "name": "Appeal // Authority",

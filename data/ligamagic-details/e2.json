@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armaggon%2C%20Future%20Shark",
     "checked_at": "2026-08-07T19:29:44.433Z"
   },
+  "e2c35551-1ba5-4424-baf9-821b49bbcc8c": {
+    "status": "available",
+    "name": "Avishkar Raceway",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Aetherdrift",
+    "printing_code": "DFT",
+    "collector_number": "249",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avishkar%20Raceway",
+    "checked_at": "2026-08-08T13:20:06.851Z"
+  },
   "e2f22cef-9494-4356-aa5c-619aecd7e74d": {
     "status": "available",
     "name": "Avatar of Hope",

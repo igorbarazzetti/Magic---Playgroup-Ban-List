@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armed%20Assailant",
     "checked_at": "2026-08-07T19:30:54.102Z"
   },
+  "53dc9795-d26a-4821-afad-8d77d279ffe3": {
+    "status": "available",
+    "name": "Awaken the Bear",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Khans de Tarkir",
+    "printing_code": "KTK",
+    "collector_number": "129",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Awaken%20the%20Bear",
+    "checked_at": "2026-08-08T13:20:47.382Z"
+  },
   "53e4273c-3292-47a0-90d1-8a0eb0eaf381": {
     "status": "available",
     "name": "Amphin Pathmage",

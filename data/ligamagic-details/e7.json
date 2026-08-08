@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agrus%20Kos%2C%20Wojek%20Veteran",
     "checked_at": "2026-08-06T14:43:11.755Z"
   },
+  "e7592863-4aee-47b3-9abf-4b863ab0b6ec": {
+    "status": "available",
+    "name": "Azorius Charm",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Retorno a Ravnica",
+    "printing_code": "RTR",
+    "collector_number": "145",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azorius%20Charm",
+    "checked_at": "2026-08-08T13:29:37.197Z"
+  },
   "e75b2a97-b28d-43fe-8b1e-ba87a09f339c": {
     "status": "available",
     "name": "Ambush Commander",

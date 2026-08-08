@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apothecary%20Stomper",
     "checked_at": "2026-08-07T11:18:26.691Z"
   },
+  "6a92b011-fd01-4b6a-a17c-73ac1967ff98": {
+    "status": "available",
+    "name": "Axgard Cavalry",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Foundations",
+    "printing_code": "FDN",
+    "collector_number": "189",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Axgard%20Cavalry",
+    "checked_at": "2026-08-08T13:24:57.058Z"
+  },
   "6aad6906-96ec-4994-bfc3-9a76f893bc8c": {
     "status": "available",
     "name": "Armored Kincaller",

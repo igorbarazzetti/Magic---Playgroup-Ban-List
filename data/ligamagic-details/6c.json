@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Nexus%20of%20Fate",
     "checked_at": "2026-08-05T20:10:44.303Z"
   },
+  "6c29add6-8524-4a33-9f2e-f792032dd6cd": {
+    "status": "available",
+    "name": "Avenging Arrow",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Retorno a Ravnica",
+    "printing_code": "RTR",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avenging%20Arrow",
+    "checked_at": "2026-08-08T13:18:26.789Z"
+  },
   "6c3caa64-ff51-4adb-9c9f-06b80a28d169": {
     "status": "available",
     "name": "Assembled Ensemble",

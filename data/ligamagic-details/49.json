@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abyssal%20Gatekeeper",
     "checked_at": "2026-08-06T00:16:57.827Z"
   },
+  "4957c166-9734-4ba0-a4b9-2a248c0ff38f": {
+    "status": "available",
+    "name": "Avenging Huntbonder",
+    "price_brl": 0.38,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2020",
+    "printing_code": "C20",
+    "collector_number": "22",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avenging%20Huntbonder",
+    "checked_at": "2026-08-08T13:18:46.786Z"
+  },
   "49638d96-e83e-4aab-bafb-d6183a6e3ff6": {
     "status": "available",
     "name": "Air Servant",

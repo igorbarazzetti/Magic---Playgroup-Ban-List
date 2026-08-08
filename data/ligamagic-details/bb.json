@@ -34,5 +34,17 @@
     "collector_number": "8",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Argothian%20Pixies",
     "checked_at": "2026-08-07T19:25:43.604Z"
+  },
+  "bbfdb5eb-2140-4d50-a667-1b4ac75d03a5": {
+    "status": "available",
+    "name": "Azorius Skyguard",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lealdade em Ravnica",
+    "printing_code": "RNA",
+    "collector_number": "155",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azorius%20Skyguard",
+    "checked_at": "2026-08-08T13:31:37.285Z"
   }
 }

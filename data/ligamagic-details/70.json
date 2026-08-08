@@ -119,6 +119,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armageddon%20Clock",
     "checked_at": "2026-08-07T19:29:33.795Z"
   },
+  "70e10cb9-ae27-4dba-9a0d-34a78f924774": {
+    "status": "available",
+    "name": "Aziza, Mage Tower Captain",
+    "price_brl": 1.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven",
+    "printing_code": "SOS",
+    "collector_number": "174",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aziza%2C%20Mage%20Tower%20Captain",
+    "checked_at": "2026-08-08T13:28:07.144Z"
+  },
   "70f14b10-8129-4249-a267-8b4be5d9befa": {
     "status": "available",
     "name": "Astral Slide",

@@ -1,4 +1,16 @@
 {
+  "ca13dda2-fbb0-4b6b-9126-3c8df04dee2b": {
+    "status": "available",
+    "name": "Azorius Locket",
+    "price_brl": 0.06,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lealdade em Ravnica",
+    "printing_code": "RNA",
+    "collector_number": "231",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azorius%20Locket",
+    "checked_at": "2026-08-08T13:31:07.227Z"
+  },
   "ca349ba9-b5ea-48e6-a617-c9b7f2708853": {
     "status": "available",
     "name": "Alena, Kessig Trapper",

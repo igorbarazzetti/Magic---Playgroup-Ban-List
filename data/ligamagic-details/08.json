@@ -70,5 +70,17 @@
     "collector_number": "111",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Windfall",
     "checked_at": "2026-08-05T20:15:21.543Z"
+  },
+  "08d02fdb-4b3f-4f55-b5fc-6bb4d2a14b1f": {
+    "status": "available",
+    "name": "Azorius First-Wing",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Insurreição",
+    "printing_code": "DI",
+    "collector_number": "105",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azorius%20First-Wing",
+    "checked_at": "2026-08-08T13:29:57.204Z"
   }
 }

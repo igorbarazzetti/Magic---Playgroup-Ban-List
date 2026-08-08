@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alien%20Invasion",
     "checked_at": "2026-08-07T00:32:24.542Z"
   },
+  "7c9e351d-2e6c-4050-9c3d-b15bb9255a4d": {
+    "status": "available",
+    "name": "Azula, Cunning Usurper",
+    "price_brl": 1.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Avatar: The Last Airbender",
+    "printing_code": "TLA",
+    "collector_number": "208",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azula%2C%20Cunning%20Usurper",
+    "checked_at": "2026-08-08T13:32:27.259Z"
+  },
   "7cafc972-a6f5-4cac-a3d3-8a3ae36ffb1e": {
     "status": "available",
     "name": "Upheaval",

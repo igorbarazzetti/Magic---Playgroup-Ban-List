@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancestral%20Recall",
     "checked_at": "2026-08-05T20:02:55.092Z"
   },
+  "5563427d-ffdc-4bea-ad7d-1605894b8a6c": {
+    "status": "available",
+    "name": "Awakening",
+    "price_brl": 20.95,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fortaleza",
+    "printing_code": "SH",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Awakening",
+    "checked_at": "2026-08-08T13:22:16.927Z"
+  },
   "55b12241-2495-45e6-b618-3746d5521291": {
     "status": "available",
     "name": "Alpine Guide",
@@ -22,6 +34,18 @@
     "collector_number": "117",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alpine%20Guide",
     "checked_at": "2026-08-07T00:42:05.630Z"
+  },
+  "55bc7f55-f73b-40b5-8912-9bf76c129ccc": {
+    "status": "available",
+    "name": "Azlask, the Swelling Scourge",
+    "price_brl": 2.47,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3 Commander (Borderless Profile)",
+    "printing_code": "BPM3C",
+    "collector_number": "9",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azlask%2C%20the%20Swelling%20Scourge",
+    "checked_at": "2026-08-08T13:28:17.157Z"
   },
   "55d1a788-fe9a-4e19-a524-6709f728ea28": {
     "status": "available",

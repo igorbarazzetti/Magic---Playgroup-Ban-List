@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Autograph%20Book",
     "checked_at": "2026-08-08T09:07:00.037Z"
   },
+  "b9b58c3a-5a76-4b6a-884b-74f54f0ca53c": {
+    "status": "available",
+    "name": "Azorius Ploy",
+    "price_brl": 0.18,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Insurreição",
+    "printing_code": "DI",
+    "collector_number": "106",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azorius%20Ploy",
+    "checked_at": "2026-08-08T13:31:17.224Z"
+  },
   "b9be5ce9-08bb-4361-940c-9031e429ba86": {
     "status": "available",
     "name": "Akroma, Vision of Ixidor",

@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Hymn%20to%20Tourach",
     "checked_at": "2026-08-05T20:07:58.879Z"
   },
+  "994bcde3-4a76-403d-a6e1-88609a13a99c": {
+    "status": "available",
+    "name": "Awe Strike",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mirrodin",
+    "printing_code": "MI",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Awe%20Strike",
+    "checked_at": "2026-08-08T13:22:56.952Z"
+  },
   "9956f9b7-0140-484c-b606-3685690b84cc": {
     "status": "available",
     "name": "Aryel, Knight of Windgrace",

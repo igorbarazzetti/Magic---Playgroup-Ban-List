@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Argentum%20Armor",
     "checked_at": "2026-08-07T19:23:53.517Z"
   },
+  "d0d4ab83-8b9b-49cd-86b8-720abd0550f4": {
+    "status": "available",
+    "name": "Axgard Braggart",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaldheim",
+    "printing_code": "KHM",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Axgard%20Braggart",
+    "checked_at": "2026-08-08T13:24:47.018Z"
+  },
   "d0e1904e-1a37-41f6-8582-b9ea794bb886": {
     "status": "available",
     "name": "Abduction",

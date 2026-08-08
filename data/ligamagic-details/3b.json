@@ -94,5 +94,17 @@
     "collector_number": "252",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arid%20Archway",
     "checked_at": "2026-08-07T19:26:53.589Z"
+  },
+  "3bf1ddcd-efde-4888-92f6-718be495b799": {
+    "status": "available",
+    "name": "AWOL",
+    "price_brl": 0.14,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unsanctioned",
+    "printing_code": "UND",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=AWOL",
+    "checked_at": "2026-08-08T13:23:16.962Z"
   }
 }

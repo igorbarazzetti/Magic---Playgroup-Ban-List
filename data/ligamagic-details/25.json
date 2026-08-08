@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Air%20Bladder",
     "checked_at": "2026-08-06T14:45:51.893Z"
   },
+  "25d955e3-2b98-4a75-bb51-6072000111be": {
+    "status": "available",
+    "name": "Ayula's Influence",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons",
+    "printing_code": "MH1",
+    "collector_number": "156",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ayula's%20Influence",
+    "checked_at": "2026-08-08T13:27:27.109Z"
+  },
   "25edb501-11b5-4617-8a65-2eb4869cccd5": {
     "status": "available",
     "name": "Act of Heroism",

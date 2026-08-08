@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Annoyed%20Altisaur",
     "checked_at": "2026-08-07T09:28:56.322Z"
   },
+  "a82d9c9b-ec17-4f51-a6bf-5984ca4433e5": {
+    "status": "available",
+    "name": "Azimaet Drake",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Miragem",
+    "printing_code": "MR",
+    "collector_number": "16",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azimaet%20Drake",
+    "checked_at": "2026-08-08T13:27:57.503Z"
+  },
   "a85ee0cf-39ce-49f2-874a-f6f54ca1775f": {
     "status": "available",
     "name": "Attrition",
@@ -94,6 +106,18 @@
     "collector_number": "185",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Wheel%20of%20Fortune",
     "checked_at": "2026-08-05T20:15:11.978Z"
+  },
+  "a8b018a7-0350-4ee0-9582-8d391018bdee": {
+    "status": "available",
+    "name": "Azog, Moria's Ruin",
+    "price_brl": 16.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "The Hobbit",
+    "printing_code": "HOB",
+    "collector_number": "61",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azog%2C%20Moria's%20Ruin",
+    "checked_at": "2026-08-08T13:28:27.116Z"
   },
   "a8e55287-f0df-46f2-a41d-27bea90216cc": {
     "status": "available",

@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anodet%20Lurker",
     "checked_at": "2026-08-07T09:29:16.325Z"
   },
+  "5c326102-005d-463c-b9f7-14b034b66baa": {
+    "status": "available",
+    "name": "Awakening of Vitu-Ghazi",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra da Centelha",
+    "printing_code": "WAR",
+    "collector_number": "152",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Awakening%20of%20Vitu-Ghazi",
+    "checked_at": "2026-08-08T13:22:26.953Z"
+  },
   "5c641df8-97d7-484b-8d0e-790279fd6177": {
     "status": "available",
     "name": "Artifact Possession",

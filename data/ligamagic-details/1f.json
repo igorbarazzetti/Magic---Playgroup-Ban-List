@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assemble%20the%20Entmoot",
     "checked_at": "2026-08-08T02:48:21.986Z"
   },
+  "1f3fb367-60b5-4b36-9604-3064afdac0d9": {
+    "status": "available",
+    "name": "Avenging Druid",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "êxodo",
+    "printing_code": "EX",
+    "collector_number": "105",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avenging%20Druid",
+    "checked_at": "2026-08-08T13:18:36.806Z"
+  },
   "1f74e26f-5cf3-4b0e-bcc6-f858599474fc": {
     "status": "available",
     "name": "Asmoranomardicadaistinaculdacar",

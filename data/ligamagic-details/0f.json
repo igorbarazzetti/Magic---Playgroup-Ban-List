@@ -83,6 +83,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Attentive%20Sunscribe",
     "checked_at": "2026-08-08T07:23:03.620Z"
   },
+  "0f8b97fe-3e5e-47c2-9a9d-7f77482aa159": {
+    "status": "available",
+    "name": "Azami, Lady of Scrolls",
+    "price_brl": 1.43,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2013",
+    "printing_code": "C13",
+    "collector_number": "31",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azami%2C%20Lady%20of%20Scrolls",
+    "checked_at": "2026-08-08T13:27:47.129Z"
+  },
+  "0fd27f59-36ec-4235-8e1f-4a4a14972f4a": {
+    "status": "available",
+    "name": "Awaken the Ancient",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2014",
+    "printing_code": "M14",
+    "collector_number": "126",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Awaken%20the%20Ancient",
+    "checked_at": "2026-08-08T13:20:36.887Z"
+  },
   "0fdfe986-0216-468b-aac8-bbcf588fd894": {
     "status": "available",
     "name": "Arcum Dagsson",

@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Punishing%20Fire",
     "checked_at": "2026-08-05T20:11:35.433Z"
   },
+  "189fc8f4-17ac-4f1d-82c8-8401445bdaf4": {
+    "status": "available",
+    "name": "Azorius Chancery",
+    "price_brl": 0.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Insurreição",
+    "printing_code": "DI",
+    "collector_number": "170",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azorius%20Chancery",
+    "checked_at": "2026-08-08T13:29:27.176Z"
+  },
   "18a22d9f-81bc-4ed5-bd83-e3f8ec5e38c8": {
     "status": "available",
     "name": "Air Response Unit",

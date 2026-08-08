@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aura%20Flux",
     "checked_at": "2026-08-08T07:29:03.260Z"
   },
+  "12971527-aa8e-4517-9b00-71474caebfd0": {
+    "status": "available",
+    "name": "Azorius Aethermage",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Insurreição",
+    "printing_code": "DI",
+    "collector_number": "104",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azorius%20Aethermage",
+    "checked_at": "2026-08-08T13:29:07.158Z"
+  },
   "12a6cad9-eb42-43bd-9e68-aaf862cd83db": {
     "status": "available",
     "name": "Adrix and Nev, Twincasters",
@@ -94,5 +106,17 @@
     "collector_number": "156",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adrix%20and%20Nev%2C%20Twincasters",
     "checked_at": "2026-08-06T07:10:54.793Z"
+  },
+  "12acd466-deb9-4e68-b75b-aed86680b917": {
+    "status": "available",
+    "name": "Ayumi, the Last Visitor",
+    "price_brl": 0.85,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Salvadores Kamigawa",
+    "printing_code": "SOK",
+    "collector_number": "122",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ayumi%2C%20the%20Last%20Visitor",
+    "checked_at": "2026-08-08T13:27:37.119Z"
   }
 }

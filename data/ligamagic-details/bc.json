@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ardoz%2C%20Cobbler%20of%20War",
     "checked_at": "2026-08-07T17:27:34.686Z"
   },
+  "bce30fd0-ed1e-495d-9149-6a4c81c45c7b": {
+    "status": "available",
+    "name": "Axgard Armory",
+    "price_brl": 0.7,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaldheim",
+    "printing_code": "KHM",
+    "collector_number": "250",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Axgard%20Armory",
+    "checked_at": "2026-08-08T13:24:26.985Z"
+  },
   "bcf5a931-6ce8-4721-98ab-8bd295f26a13": {
     "status": "available",
     "name": "An Incident Has Occurred",

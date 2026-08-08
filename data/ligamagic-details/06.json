@@ -1,4 +1,28 @@
 {
+  "0607b289-74a6-4f3a-b15c-a639244873b6": {
+    "status": "available",
+    "name": "Awaken the Sky Tyrant",
+    "price_brl": 0.39,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2015",
+    "printing_code": "C15",
+    "collector_number": "24",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Awaken%20the%20Sky%20Tyrant",
+    "checked_at": "2026-08-08T13:21:16.879Z"
+  },
+  "060e0378-e335-4b3d-82aa-ae36639339f6": {
+    "status": "available",
+    "name": "Axebane Guardian",
+    "price_brl": 0.59,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Retorno a Ravnica",
+    "printing_code": "RTR",
+    "collector_number": "115",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Axebane%20Guardian",
+    "checked_at": "2026-08-08T13:23:47.000Z"
+  },
   "062c8e40-dea7-4df7-bcaa-f1d696fe61c3": {
     "status": "available",
     "name": "Aetherjacket",
@@ -94,5 +118,17 @@
     "collector_number": "3",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aetherstorm%20Roc",
     "checked_at": "2026-08-06T11:04:43.851Z"
+  },
+  "06fa6719-aa4f-4857-8029-e42d01232645": {
+    "status": "available",
+    "name": "Awaken the Erstwhile",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lealdade em Ravnica",
+    "printing_code": "RNA",
+    "collector_number": "61",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Awaken%20the%20Erstwhile",
+    "checked_at": "2026-08-08T13:20:56.957Z"
   }
 }

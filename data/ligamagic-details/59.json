@@ -82,5 +82,17 @@
     "collector_number": "43",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Air%20Marshal",
     "checked_at": "2026-08-06T14:46:21.932Z"
+  },
+  "59fcd09c-4633-457e-b36a-488e94c1c941": {
+    "status": "available",
+    "name": "Ayesha Tanaka, Armorer",
+    "price_brl": 0.7,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominária Unida Commander",
+    "printing_code": "DMC",
+    "collector_number": "29",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ayesha%20Tanaka%2C%20Armorer",
+    "checked_at": "2026-08-08T13:26:17.097Z"
   }
 }

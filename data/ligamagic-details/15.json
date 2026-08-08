@@ -83,6 +83,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Power%20Play",
     "checked_at": "2026-08-05T20:11:11.359Z"
   },
+  "158cb888-a115-4d50-a82f-746622f0578e": {
+    "status": "available",
+    "name": "Axis of Mortality",
+    "price_brl": 1.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ixalan",
+    "printing_code": "XLN",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Axis%20of%20Mortality",
+    "checked_at": "2026-08-08T13:25:17.015Z"
+  },
+  "158d0272-a850-4399-8afa-d0caa143c3cb": {
+    "status": "available",
+    "name": "Avenger of the Fallen",
+    "price_brl": 2.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm",
+    "printing_code": "TDM",
+    "collector_number": "73",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avenger%20of%20the%20Fallen",
+    "checked_at": "2026-08-08T13:16:56.736Z"
+  },
   "15b86440-2040-47ae-ab4e-8445b3e24462": {
     "status": "available",
     "name": "Ajani's Comrade",

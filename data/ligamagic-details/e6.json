@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Augur",
     "checked_at": "2026-08-08T09:14:20.325Z"
   },
+  "e6a35729-edee-4a8c-9aa1-041114d66c69": {
+    "status": "available",
+    "name": "Ayli, Eternal Pilgrim",
+    "price_brl": 0.89,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Juramento das Sentinelas",
+    "printing_code": "OGW",
+    "collector_number": "151",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ayli%2C%20Eternal%20Pilgrim",
+    "checked_at": "2026-08-08T13:26:27.094Z"
+  },
   "e6bef0c4-3dfc-49a8-8fec-22b2570b704b": {
     "status": "available",
     "name": "Aftershock",

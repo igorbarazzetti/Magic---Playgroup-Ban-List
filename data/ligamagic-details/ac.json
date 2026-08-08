@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Altar%20Golem",
     "checked_at": "2026-08-07T00:44:05.175Z"
   },
+  "ac4d065e-7eb6-4224-8a7c-e57f2c1a2733": {
+    "status": "available",
+    "name": "Azra Bladeseeker",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Battlebond",
+    "printing_code": "BBD",
+    "collector_number": "55",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azra%20Bladeseeker",
+    "checked_at": "2026-08-08T13:31:47.239Z"
+  },
   "acab4fa9-d9ab-4a89-a50f-0cee9d7ca0c3": {
     "status": "available",
     "name": "Archery Training",

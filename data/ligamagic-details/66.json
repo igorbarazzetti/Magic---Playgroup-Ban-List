@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Tibalt's%20Trickery",
     "checked_at": "2026-08-05T20:13:47.775Z"
   },
+  "6629e5f3-ac59-48f8-b09c-3b98f59b9922": {
+    "status": "available",
+    "name": "Awakened Awareness",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kamigawa: Dinastia Neon",
+    "printing_code": "NEO",
+    "collector_number": "47",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Awakened%20Awareness",
+    "checked_at": "2026-08-08T13:21:56.944Z"
+  },
   "664d982a-5cd8-4289-afb8-fa2e083042c9": {
     "status": "available",
     "name": "Allay",

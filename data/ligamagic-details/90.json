@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani%20Steadfast",
     "checked_at": "2026-08-06T14:52:32.098Z"
   },
+  "905e4bd1-f5f2-4691-b13f-ce2628d26a38": {
+    "status": "available",
+    "name": "Avengers Quinjet",
+    "price_brl": 2.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes Commander",
+    "printing_code": "MSC",
+    "collector_number": "102",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avengers%20Quinjet",
+    "checked_at": "2026-08-08T13:17:46.788Z"
+  },
   "9080a7bb-2b8b-42af-9f5b-a9f374ecb801": {
     "status": "available",
     "name": "Aggressive Biomancy",
@@ -58,5 +70,17 @@
     "collector_number": "121",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aggressive%20Biomancy",
     "checked_at": "2026-08-06T14:39:51.607Z"
+  },
+  "909d7e77-ad7c-4af2-88db-f22442cfa531": {
+    "status": "available",
+    "name": "Awakened Amalgam",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Rivais de Ixalan",
+    "printing_code": "RIX",
+    "collector_number": "175",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Awakened%20Amalgam",
+    "checked_at": "2026-08-08T13:21:46.935Z"
   }
 }

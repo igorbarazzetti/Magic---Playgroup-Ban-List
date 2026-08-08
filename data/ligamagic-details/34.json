@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Phlage%2C%20Titan%20of%20Fire's%20Fury",
     "checked_at": "2026-08-05T20:11:02.338Z"
   },
+  "3415a199-05ac-4627-be97-f842eb1415a3": {
+    "status": "available",
+    "name": "Avenging Angel",
+    "price_brl": 5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tempestade",
+    "printing_code": "TP",
+    "collector_number": "15",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avenging%20Angel",
+    "checked_at": "2026-08-08T13:18:16.842Z"
+  },
   "34187c71-6033-4058-aadc-2bc266f762be": {
     "status": "available",
     "name": "Serra's Sanctum",
@@ -46,6 +58,30 @@
     "collector_number": "10",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apothecary%20Geist",
     "checked_at": "2026-08-07T11:18:06.684Z"
+  },
+  "34493cf5-7586-48ef-806d-57273b2ab034": {
+    "status": "available",
+    "name": "Avengers Disassembled",
+    "price_brl": 6.06,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes",
+    "printing_code": "MSH",
+    "collector_number": "124",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avengers%20Disassembled",
+    "checked_at": "2026-08-08T13:17:26.730Z"
+  },
+  "3477e1cc-46af-46f4-9ea2-bdf0bf1f880e": {
+    "status": "available",
+    "name": "Avengers Assemble!",
+    "price_brl": 8.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes",
+    "printing_code": "MSH",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avengers%20Assemble!",
+    "checked_at": "2026-08-08T13:17:16.771Z"
   },
   "34841228-31ac-48ac-b6d6-486b5e1e07dd": {
     "status": "available",

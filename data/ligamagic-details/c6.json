@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashenmoor%20Cohort",
     "checked_at": "2026-08-07T21:18:09.411Z"
   },
+  "c640350b-16a5-4227-87fa-8b24fdb367c7": {
+    "status": "available",
+    "name": "Axelrod Gunnarson",
+    "price_brl": 0.67,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Chronicles",
+    "printing_code": "CH",
+    "collector_number": "11",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Axelrod%20Gunnarson",
+    "checked_at": "2026-08-08T13:24:17.003Z"
+  },
   "c6424a3e-dbc7-403f-867f-a81cccd17ab8": {
     "status": "available",
     "name": "Arcbound Reclaimer",

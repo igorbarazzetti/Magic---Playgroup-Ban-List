@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arvinox%2C%20the%20Mind%20Flail",
     "checked_at": "2026-08-07T21:11:59.038Z"
   },
+  "9adc1435-3094-427d-88f8-91d55c5a924d": {
+    "status": "available",
+    "name": "Azorius Knight-Arbiter",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lealdade em Ravnica",
+    "printing_code": "RNA",
+    "collector_number": "154",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azorius%20Knight-Arbiter",
+    "checked_at": "2026-08-08T13:30:57.343Z"
+  },
   "9ae13026-960a-4d31-b775-d47209a1e313": {
     "status": "available",
     "name": "Ardyn, the Usurper",

@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atlantean%20Skirmisher",
     "checked_at": "2026-08-08T07:19:02.947Z"
   },
+  "8f1d5c8d-98e1-47b7-8347-38887253e34a": {
+    "status": "available",
+    "name": "Axebane Beast",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lealdade em Ravnica",
+    "printing_code": "RNA",
+    "collector_number": "121",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Axebane%20Beast",
+    "checked_at": "2026-08-08T13:23:26.965Z"
+  },
   "8f3cba20-e7a4-47f4-8bce-90168ce9cc5c": {
     "status": "available",
     "name": "Accursed Horde",

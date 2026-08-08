@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armguard%20Familiar",
     "checked_at": "2026-08-07T19:31:33.910Z"
   },
+  "a79d2fc8-467f-464d-9e73-2dae4b059628": {
+    "status": "available",
+    "name": "Ayula, Queen Among Bears",
+    "price_brl": 0.52,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons",
+    "printing_code": "MH1",
+    "collector_number": "155",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ayula%2C%20Queen%20Among%20Bears",
+    "checked_at": "2026-08-08T13:27:17.117Z"
+  },
   "a7c69802-99c4-4778-934e-cc09ba58c267": {
     "status": "available",
     "name": "Basking Broodscale",
@@ -70,5 +82,17 @@
     "collector_number": "145",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Basking%20Broodscale",
     "checked_at": "2026-08-05T20:03:25.156Z"
+  },
+  "a7ee67a6-0ac7-4079-a947-4e52d09ace8e": {
+    "status": "available",
+    "name": "Axiom Engraver",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Phyrexia: Tudo será um",
+    "printing_code": "ONE",
+    "collector_number": "120",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Axiom%20Engraver",
+    "checked_at": "2026-08-08T13:25:07.030Z"
   }
 }

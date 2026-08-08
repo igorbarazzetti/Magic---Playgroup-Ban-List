@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alchemist's%20Refuge",
     "checked_at": "2026-08-06T18:14:57.653Z"
   },
+  "35b3ae1c-4116-49b0-89a9-7332fe9bbff0": {
+    "status": "available",
+    "name": "Axebane Ferox",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassinato na Mansão Karlov (Promo)",
+    "printing_code": "PRMKM",
+    "collector_number": "428",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Axebane%20Ferox",
+    "checked_at": "2026-08-08T13:23:37.007Z"
+  },
   "35bf67e0-8141-4664-b762-2c613353e1eb": {
     "status": "available",
     "name": "Acolyte of the Inferno",
@@ -94,5 +106,17 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acclaimed%20Contender",
     "checked_at": "2026-08-06T03:50:01.753Z"
+  },
+  "35e4ed0e-8ce2-4729-a009-0d6be8f47663": {
+    "status": "available",
+    "name": "Ayesha Tanaka",
+    "price_brl": 1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Chronicles",
+    "printing_code": "CH",
+    "collector_number": "12",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ayesha%20Tanaka",
+    "checked_at": "2026-08-08T13:26:07.472Z"
   }
 }

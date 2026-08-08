@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Altar%20of%20Dementia",
     "checked_at": "2026-08-07T00:44:35.055Z"
   },
+  "d6a03a52-7e85-46de-920c-93a3f6479c4c": {
+    "status": "available",
+    "name": "Avian Oddity",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ikoria: Terra de Colossos",
+    "printing_code": "IKO",
+    "collector_number": "42",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avian%20Oddity",
+    "checked_at": "2026-08-08T13:19:26.847Z"
+  },
   "d6ae77b3-59e7-475c-800c-930a5cb2e0ca": {
     "status": "available",
     "name": "Aboleth Spawn",
@@ -70,5 +82,17 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abolish",
     "checked_at": "2026-08-06T00:10:06.967Z"
+  },
+  "d6efff61-2087-4f48-a8a8-6c465190dad9": {
+    "status": "available",
+    "name": "Awesome Presence",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alianças",
+    "printing_code": "AI",
+    "collector_number": "34",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Awesome%20Presence",
+    "checked_at": "2026-08-08T13:23:06.979Z"
   }
 }
