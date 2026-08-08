@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acrobatic%20Maneuver",
     "checked_at": "2026-08-06T03:57:02.267Z"
   },
+  "1aa8fdc3-efeb-450d-9540-2ef0efaf270d": {
+    "status": "available",
+    "name": "Aura Barbs",
+    "price_brl": 0.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Traidores de Kamigawa",
+    "printing_code": "BOK",
+    "collector_number": "94",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aura%20Barbs",
+    "checked_at": "2026-08-08T07:28:23.281Z"
+  },
   "1acbbf61-edf7-4f67-968b-6832c2dd54d1": {
     "status": "available",
     "name": "Unexpected Potential",

@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Altar%20of%20Shadows",
     "checked_at": "2026-08-07T00:44:45.228Z"
   },
+  "4b457bc2-2d8c-42cb-9a63-bb4c459d14e3": {
+    "status": "available",
+    "name": "Atomize",
+    "price_brl": 50,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fallout",
+    "printing_code": "PIP",
+    "collector_number": "94",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atomize",
+    "checked_at": "2026-08-08T07:20:13.003Z"
+  },
   "4b4c76e1-c480-4d10-93d4-483ef2debc4b": {
     "status": "available",
     "name": "Akki Ronin",

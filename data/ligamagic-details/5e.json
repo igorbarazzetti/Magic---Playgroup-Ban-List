@@ -1,4 +1,28 @@
 {
+  "5e07d314-119f-4918-9105-77543ccae7e6": {
+    "status": "available",
+    "name": "Auriok Sunchaser",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Cicatrizes de Mirrodin",
+    "printing_code": "SOM",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auriok%20Sunchaser",
+    "checked_at": "2026-08-08T07:33:23.399Z"
+  },
+  "5e166b42-252e-4f34-9610-dcddc04a62ff": {
+    "status": "available",
+    "name": "Auron, Venerated Guardian",
+    "price_brl": 2.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY Commander",
+    "printing_code": "FIC",
+    "collector_number": "10",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auron%2C%20Venerated%20Guardian",
+    "checked_at": "2026-08-08T07:34:33.738Z"
+  },
   "5e419975-e054-4c35-8845-a08589ebb08f": {
     "status": "available",
     "name": "Ambuscade",
@@ -46,6 +70,18 @@
     "collector_number": "13",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Iona%2C%20Shield%20of%20Emeria",
     "checked_at": "2026-08-05T20:08:28.977Z"
+  },
+  "5ec0e58c-99b5-4ebf-8053-f59c30b86ef7": {
+    "status": "available",
+    "name": "Augmenting Automaton",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Revolta do éter",
+    "printing_code": "AER",
+    "collector_number": "143",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Augmenting%20Automaton",
+    "checked_at": "2026-08-08T07:25:53.187Z"
   },
   "5edfe083-391b-41ae-ac4d-d648042cfa5e": {
     "status": "available",

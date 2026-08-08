@@ -1,4 +1,16 @@
 {
+  "ee05fc58-1356-4b2f-b9ce-bda8cc716aee": {
+    "status": "available",
+    "name": "Augury Raven",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaldheim",
+    "printing_code": "KHM",
+    "collector_number": "44",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Augury%20Raven",
+    "checked_at": "2026-08-08T07:27:03.901Z"
+  },
   "ee302659-59ed-4eef-babe-451b9ccf7f14": {
     "status": "available",
     "name": "Uro, Titan of Nature's Wrath",

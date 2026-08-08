@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Flawless%20Maneuver",
     "checked_at": "2026-08-05T20:06:22.586Z"
   },
+  "4e3c3bdc-667d-42ec-b960-159a39c53cb3": {
+    "status": "available",
+    "name": "Aura Blast",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Conjunção",
+    "printing_code": "PS",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aura%20Blast",
+    "checked_at": "2026-08-08T07:28:33.254Z"
+  },
   "4e536142-4ebe-4062-887b-5dd123c41d39": {
     "status": "available",
     "name": "_____",
@@ -46,5 +58,17 @@
     "collector_number": "87",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alchemist's%20Gift",
     "checked_at": "2026-08-06T18:14:37.641Z"
+  },
+  "4eb8d877-ee46-4bbe-99da-fee9e238ca58": {
+    "status": "available",
+    "name": "Audacity",
+    "price_brl": 0.38,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra dos Irmãos",
+    "printing_code": "BRO",
+    "collector_number": "169",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Audacity",
+    "checked_at": "2026-08-08T07:25:03.149Z"
   }
 }

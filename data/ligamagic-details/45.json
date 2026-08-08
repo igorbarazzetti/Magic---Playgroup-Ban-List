@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aethersnatch",
     "checked_at": "2026-08-06T11:03:53.797Z"
   },
+  "45d652c4-188e-4f00-acdd-1be014922cbc": {
+    "status": "available",
+    "name": "Attercop",
+    "price_brl": 0.24,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "The Hobbit",
+    "printing_code": "HOB",
+    "collector_number": "116",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Attercop",
+    "checked_at": "2026-08-08T07:23:13.089Z"
+  },
   "45f88a6a-ac8a-4a53-a96b-f09ca33c79ba": {
     "status": "available",
     "name": "Agent of the Fates",

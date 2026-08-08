@@ -1,4 +1,16 @@
 {
+  "b337c241-f2c4-48e3-a303-371b172fcd18": {
+    "status": "available",
+    "name": "Attune with Aether",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaladesh",
+    "printing_code": "KLD",
+    "collector_number": "145",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Attune%20with%20Aether",
+    "checked_at": "2026-08-08T07:23:43.217Z"
+  },
   "b3779fbe-7701-433b-afad-bebd6096a3c8": {
     "status": "available",
     "name": "Ajani's Aid",
@@ -10,5 +22,17 @@
     "collector_number": "188",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani's%20Aid",
     "checked_at": "2026-08-06T14:50:32.074Z"
+  },
+  "b3eb8f65-5eba-42a9-a1b4-4f37b14d03d9": {
+    "status": "available",
+    "name": "Attended Knight",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Masters 2017",
+    "printing_code": "MM3",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Attended%20Knight",
+    "checked_at": "2026-08-08T07:22:33.115Z"
   }
 }

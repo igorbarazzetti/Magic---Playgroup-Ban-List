@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brago's%20Favor",
     "checked_at": "2026-08-05T20:03:46.346Z"
   },
+  "3961ef7c-4eb4-482e-9cda-d49d6a29c5a9": {
+    "status": "available",
+    "name": "Aurochs",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quinta Edição",
+    "printing_code": "5E",
+    "collector_number": "25",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aurochs",
+    "checked_at": "2026-08-08T07:34:03.436Z"
+  },
   "3963140c-da67-43e6-9514-fe9dc0a43c4d": {
     "status": "available",
     "name": "Armillary Sphere",

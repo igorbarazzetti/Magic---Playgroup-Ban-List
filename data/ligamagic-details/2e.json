@@ -1,4 +1,16 @@
 {
+  "2e1e0385-1537-4cb6-9d24-e4593d9a8f4a": {
+    "status": "available",
+    "name": "Aurelia, Exemplar of Justice",
+    "price_brl": 1.98,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Guildas de Ravnica",
+    "printing_code": "GRN",
+    "collector_number": "153",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aurelia%2C%20Exemplar%20of%20Justice",
+    "checked_at": "2026-08-08T07:31:03.331Z"
+  },
   "2e41ae94-db31-4060-881b-a2f6d834c1ee": {
     "status": "available",
     "name": "Arachnoform",

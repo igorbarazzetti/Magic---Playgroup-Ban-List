@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archangel%20of%20Thune",
     "checked_at": "2026-08-07T17:13:34.078Z"
   },
+  "4f452ce7-1166-4810-afed-ea5e156a6f52": {
+    "status": "available",
+    "name": "Aurelia's Vindicator",
+    "price_brl": 0.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassinato na Mansão Karlov",
+    "printing_code": "MKM",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aurelia's%20Vindicator",
+    "checked_at": "2026-08-08T07:31:23.875Z"
+  },
   "4f57a320-b6b5-49de-af0a-f2e2649758a7": {
     "status": "available",
     "name": "Angel of Indemnity",
@@ -46,6 +58,18 @@
     "collector_number": "77",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambush%20Gigapede",
     "checked_at": "2026-08-07T04:37:51.157Z"
+  },
+  "4fc8a155-4eb8-4b86-8ccc-2569630d3bfa": {
+    "status": "available",
+    "name": "Aurora Eidolon",
+    "price_brl": 9.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Insurreição",
+    "printing_code": "DI",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aurora%20Eidolon",
+    "checked_at": "2026-08-08T07:35:03.469Z"
   },
   "4fed8066-4597-4ebb-ac88-6622cf007d81": {
     "status": "available",

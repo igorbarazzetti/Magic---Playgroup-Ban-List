@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adarkar%20Unicorn",
     "checked_at": "2026-08-06T04:00:42.238Z"
   },
+  "2884e332-707c-4a97-adc1-e1317a513ff4": {
+    "status": "available",
+    "name": "Auriok Bladewarden",
+    "price_brl": 0.02,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mirrodin",
+    "printing_code": "MI",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auriok%20Bladewarden",
+    "checked_at": "2026-08-08T07:32:03.385Z"
+  },
   "28c7f2b6-ba67-4ccf-9e1b-99c89a9d1f72": {
     "status": "available",
     "name": "Angel of Invention",

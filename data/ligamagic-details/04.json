@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amazing%20Acrobatics",
     "checked_at": "2026-08-07T00:47:35.393Z"
   },
+  "048c3b0b-48ef-42f5-a2af-90aa1d133296": {
+    "status": "available",
+    "name": "Atomic Microsizer",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Edge of Eternities",
+    "printing_code": "EOE",
+    "collector_number": "47",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atomic%20Microsizer",
+    "checked_at": "2026-08-08T07:20:02.961Z"
+  },
   "04ea7e88-7ea5-4b4c-9a7c-2a6ac0bc0682": {
     "status": "available",
     "name": "Absorb Vis",

@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anti-Venom%2C%20Horrifying%20Healer",
     "checked_at": "2026-08-07T09:34:16.965Z"
   },
+  "3c7ffc6c-88be-4127-a673-fba8c1aa5fa1": {
+    "status": "available",
+    "name": "Auratouched Mage",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ravnica: A Cidade das Guildas",
+    "printing_code": "RAV",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auratouched%20Mage",
+    "checked_at": "2026-08-08T07:30:53.345Z"
+  },
   "3c9fcda6-3ebc-4f9d-9f73-2bb4252d9420": {
     "status": "available",
     "name": "Amaranthine Wall",

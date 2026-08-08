@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Athreos%2C%20God%20of%20Passage",
     "checked_at": "2026-08-08T02:55:02.231Z"
   },
+  "af22ed78-7054-4f5c-84ab-2a274c3d47fb": {
+    "status": "available",
+    "name": "Atmosphere Surgeon",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Phyrexia: Tudo será um",
+    "printing_code": "ONE",
+    "collector_number": "41",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atmosphere%20Surgeon",
+    "checked_at": "2026-08-08T07:19:32.966Z"
+  },
   "af247e2f-b271-4f5b-ab98-4579d2c17c21": {
     "status": "available",
     "name": "Archfiend of Depravity",
@@ -82,5 +94,17 @@
     "collector_number": "134",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akoum%20Warrior",
     "checked_at": "2026-08-06T18:05:47.232Z"
+  },
+  "affced7f-797d-4e50-8a24-2da14de44e43": {
+    "status": "available",
+    "name": "Atzocan Seer",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Rivais de Ixalan",
+    "printing_code": "RIX",
+    "collector_number": "153",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atzocan%20Seer",
+    "checked_at": "2026-08-08T07:24:13.142Z"
   }
 }

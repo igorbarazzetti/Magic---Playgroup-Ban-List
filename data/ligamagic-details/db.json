@@ -1,4 +1,16 @@
 {
+  "db2f3a06-f75e-4689-b147-9820aebb30e2": {
+    "status": "available",
+    "name": "Auriok Salvagers",
+    "price_brl": 0.14,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Double Masters",
+    "printing_code": "2XM",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auriok%20Salvagers",
+    "checked_at": "2026-08-08T07:32:53.465Z"
+  },
   "db5380ed-ba28-4ea2-abc3-4998e2022903": {
     "status": "available",
     "name": "Ancestral Mask",

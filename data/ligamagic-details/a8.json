@@ -1,4 +1,16 @@
 {
+  "a80a1f84-ea49-4c8d-912d-c7036b814a6c": {
+    "status": "available",
+    "name": "Augusta, Order Returned",
+    "price_brl": 8.69,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven Commander",
+    "printing_code": "SOC",
+    "collector_number": "11",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Augusta%2C%20Order%20Returned",
+    "checked_at": "2026-08-08T07:27:13.201Z"
+  },
   "a80ea391-54d1-4b61-95a3-f8deb4cbe842": {
     "status": "available",
     "name": "Arclight Phoenix",
@@ -22,6 +34,18 @@
     "collector_number": "134",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Annoyed%20Altisaur",
     "checked_at": "2026-08-07T09:28:56.322Z"
+  },
+  "a85ee0cf-39ce-49f2-874a-f6f54ca1775f": {
+    "status": "available",
+    "name": "Attrition",
+    "price_brl": 37.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Destino de Urza",
+    "printing_code": "UD",
+    "collector_number": "52",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Attrition",
+    "checked_at": "2026-08-08T07:23:23.068Z"
   },
   "a8730922-3f47-4c07-bdd5-4a0f557a3d3d": {
     "status": "available",

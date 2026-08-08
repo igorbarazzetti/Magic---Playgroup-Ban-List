@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Protean%20Hulk",
     "checked_at": "2026-08-05T20:11:29.411Z"
   },
+  "103b92c7-8f8e-4924-8d7e-fc0a01486e86": {
+    "status": "available",
+    "name": "Auriok Survivors",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nova Phyrexia",
+    "printing_code": "NPH",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auriok%20Survivors",
+    "checked_at": "2026-08-08T07:33:33.442Z"
+  },
   "10733767-1c97-4e2e-b02b-54bf346f6583": {
     "status": "available",
     "name": "Abyssal Nightstalker",

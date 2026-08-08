@@ -1,4 +1,16 @@
 {
+  "84100106-1f97-4859-aadd-a35796ee000f": {
+    "status": "available",
+    "name": "Aura Extraction",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Investida",
+    "printing_code": "ON",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aura%20Extraction",
+    "checked_at": "2026-08-08T07:28:43.292Z"
+  },
   "84122d1e-7657-42fa-8724-c4a3a19729a6": {
     "status": "available",
     "name": "Ancient Carp",

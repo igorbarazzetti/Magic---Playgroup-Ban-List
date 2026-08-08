@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amorphous%20Axe",
     "checked_at": "2026-08-07T04:40:21.236Z"
   },
+  "fe47535e-e50c-49ad-beda-46750d33e6f4": {
+    "status": "available",
+    "name": "Auratog",
+    "price_brl": 0.85,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Time Spiral Timeshifted",
+    "printing_code": "TSTS",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auratog",
+    "checked_at": "2026-08-08T07:30:43.311Z"
+  },
   "fe4c0f02-c5fd-4cd5-9f80-0936e3875f1c": {
     "status": "available",
     "name": "Arlinn's Wolf",

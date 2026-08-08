@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Veil%20of%20Summer",
     "checked_at": "2026-08-05T20:14:50.946Z"
   },
+  "00317e4f-0228-469a-9789-fb6c39976860": {
+    "status": "available",
+    "name": "Aura Graft",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Odisséia",
+    "printing_code": "OD",
+    "collector_number": "62",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aura%20Graft",
+    "checked_at": "2026-08-08T07:29:33.314Z"
+  },
   "009a399b-c78e-475b-8bc3-7db2afc9d676": {
     "status": "available",
     "name": "Airdrop Aeronauts",

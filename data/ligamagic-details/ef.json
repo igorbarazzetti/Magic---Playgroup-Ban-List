@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alms",
     "checked_at": "2026-08-07T00:38:44.785Z"
   },
+  "efd5f51f-931d-46a9-9773-f74cfc318c23": {
+    "status": "available",
+    "name": "Atlas, Sizable Stooge",
+    "price_brl": 0.95,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes Commander",
+    "printing_code": "MSC",
+    "collector_number": "566",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atlas%2C%20Sizable%20Stooge",
+    "checked_at": "2026-08-08T07:19:22.971Z"
+  },
   "efe9c3e0-7315-408e-9903-9d25a681039b": {
     "status": "available",
     "name": "Golos, Tireless Pilgrim",

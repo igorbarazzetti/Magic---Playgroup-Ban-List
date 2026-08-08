@@ -1,4 +1,16 @@
 {
+  "b718639d-cfba-4430-b5e3-1e644edd36d7": {
+    "status": "available",
+    "name": "Auriok Edgewright",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Cicatrizes de Mirrodin",
+    "printing_code": "SOM",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auriok%20Edgewright",
+    "checked_at": "2026-08-08T07:32:23.381Z"
+  },
   "b73661a6-d136-4c65-804c-461e83484f4b": {
     "status": "available",
     "name": "Aether Revolt",
@@ -22,6 +34,18 @@
     "collector_number": "67",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Proft's%20Eidetic%20Memory",
     "checked_at": "2026-08-05T20:11:23.412Z"
+  },
+  "b761f6d9-1063-40f8-a3f1-25b1f9b46963": {
+    "status": "available",
+    "name": "Auramancer's Guise",
+    "price_brl": 4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Caos Planar",
+    "printing_code": "PC",
+    "collector_number": "34",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auramancer's%20Guise",
+    "checked_at": "2026-08-08T07:30:33.331Z"
   },
   "b79c4066-66a9-4a53-8716-23f7a340a85f": {
     "status": "available",

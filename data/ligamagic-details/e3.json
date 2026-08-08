@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akroan%20Jailer",
     "checked_at": "2026-08-06T18:06:47.263Z"
   },
+  "e3b70a85-4296-411f-a673-7992b0c8a9aa": {
+    "status": "available",
+    "name": "Attuma, Atlantean Warlord",
+    "price_brl": 0.34,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes",
+    "printing_code": "MSH",
+    "collector_number": "47",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Attuma%2C%20Atlantean%20Warlord",
+    "checked_at": "2026-08-08T07:23:33.131Z"
+  },
   "e3bad2e2-1024-4261-b3d7-82a6998416fd": {
     "status": "available",
     "name": "Aeronaut's Wings",
@@ -71,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aeronaut's%20Wings",
     "checked_at": "2026-08-06T07:20:55.174Z"
   },
+  "e3cd53c1-86bd-4177-adb0-a1fa693b44c6": {
+    "status": "available",
+    "name": "Auntie Ool, Cursewretch",
+    "price_brl": 8.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed Commander (Borderless)",
+    "printing_code": "BLECC",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auntie%20Ool%2C%20Cursewretch",
+    "checked_at": "2026-08-08T07:27:43.227Z"
+  },
   "e3eb6f90-ccfc-41e7-bff6-0b378226bc7e": {
     "status": "available",
     "name": "Abundant Countryside",
@@ -82,5 +106,17 @@
     "collector_number": "22",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abundant%20Countryside",
     "checked_at": "2026-08-06T00:16:17.246Z"
+  },
+  "e3ee8b0e-9bdc-4b9a-b4f9-59189dd6a80d": {
+    "status": "available",
+    "name": "Auriok Steelshaper",
+    "price_brl": 0.69,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mirrodin",
+    "printing_code": "MI",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auriok%20Steelshaper",
+    "checked_at": "2026-08-08T07:33:13.417Z"
   }
 }

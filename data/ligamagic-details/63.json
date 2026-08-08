@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Imprison",
     "checked_at": "2026-08-05T20:08:10.882Z"
   },
+  "633fd158-19d0-4d97-a076-2ad897bbed19": {
+    "status": "available",
+    "name": "Auriok Champion",
+    "price_brl": 27,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Quinta Aurora",
+    "printing_code": "5DN",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auriok%20Champion",
+    "checked_at": "2026-08-08T07:32:13.372Z"
+  },
   "635fe908-6f58-4c9e-ac55-0775a7c6f278": {
     "status": "available",
     "name": "Angel of Vitality",

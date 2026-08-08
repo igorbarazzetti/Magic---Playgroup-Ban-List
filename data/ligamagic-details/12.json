@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agonizing%20Remorse",
     "checked_at": "2026-08-06T14:42:11.731Z"
   },
+  "128304af-4555-4276-bf26-638017beb3ff": {
+    "status": "available",
+    "name": "Aura Flux",
+    "price_brl": 0.6,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Legado de Urza",
+    "printing_code": "UL",
+    "collector_number": "27",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aura%20Flux",
+    "checked_at": "2026-08-08T07:29:03.260Z"
+  },
   "12a6cad9-eb42-43bd-9e68-aaf862cd83db": {
     "status": "available",
     "name": "Adrix and Nev, Twincasters",

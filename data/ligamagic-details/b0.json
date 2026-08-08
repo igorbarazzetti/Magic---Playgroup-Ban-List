@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerial%20Formation",
     "checked_at": "2026-08-06T07:17:15.034Z"
   },
+  "b07bd1cd-4000-4e6b-b16b-283c76593377": {
+    "status": "available",
+    "name": "Aurochs Herd",
+    "price_brl": 0.24,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Frente Fria",
+    "printing_code": "CS",
+    "collector_number": "103",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aurochs%20Herd",
+    "checked_at": "2026-08-08T07:34:13.476Z"
+  },
   "b07ef53e-46db-457e-a5a2-846bb9805b70": {
     "status": "available",
     "name": "Aether Theorist",

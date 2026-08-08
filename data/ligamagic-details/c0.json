@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atarka%2C%20World%20Render",
     "checked_at": "2026-08-08T02:54:42.510Z"
   },
+  "c0c96c7a-02d8-40cb-a08b-4a2a3b631eef": {
+    "status": "available",
+    "name": "Auger Spree",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Battlebond",
+    "printing_code": "BBD",
+    "collector_number": "218",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auger%20Spree",
+    "checked_at": "2026-08-08T07:25:33.225Z"
+  },
   "c0d8fef4-65f4-4769-982d-b397d2b7e977": {
     "status": "available",
     "name": "Animate Dead",

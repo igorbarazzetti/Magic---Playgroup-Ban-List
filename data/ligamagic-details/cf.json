@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abuna%20Acolyte",
     "checked_at": "2026-08-06T00:15:47.264Z"
   },
+  "cf0936ea-2741-43a4-ad6a-a1258b54945b": {
+    "status": "available",
+    "name": "Aura Thief",
+    "price_brl": 14.85,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Destino de Urza",
+    "printing_code": "UD",
+    "collector_number": "26",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aura%20Thief",
+    "checked_at": "2026-08-08T07:30:13.355Z"
+  },
   "cf0dcb27-f02e-4065-81dc-75fbbb09ea3f": {
     "status": "available",
     "name": "Oath of Druids",
@@ -58,6 +70,18 @@
     "collector_number": "75",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angry%20Rabble",
     "checked_at": "2026-08-07T09:23:07.210Z"
+  },
+  "cf9d13e2-bdcc-4c66-95ad-654ef795dbd3": {
+    "status": "available",
+    "name": "Aurora Awakener",
+    "price_brl": 1.95,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed",
+    "printing_code": "ECL",
+    "collector_number": "165",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aurora%20Awakener",
+    "checked_at": "2026-08-08T07:34:43.436Z"
   },
   "cfc023e0-9e9d-48ac-bfb5-74bfd5977dee": {
     "status": "available",

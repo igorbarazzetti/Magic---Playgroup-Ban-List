@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashnod's%20Battle%20Gear",
     "checked_at": "2026-08-08T02:41:31.775Z"
   },
+  "b5c8e24a-f4d7-42dc-8117-905ad0bad888": {
+    "status": "available",
+    "name": "Atlantis Attacks",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes",
+    "printing_code": "MSH",
+    "collector_number": "46",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atlantis%20Attacks",
+    "checked_at": "2026-08-08T07:19:13.049Z"
+  },
   "b5f5400e-f341-40e3-b935-36d9cf983a20": {
     "status": "available",
     "name": "Adherent of Hope",

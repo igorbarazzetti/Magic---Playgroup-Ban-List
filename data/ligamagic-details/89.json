@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambush%20Viper",
     "checked_at": "2026-08-07T04:38:31.162Z"
   },
+  "896213bb-28a0-45a4-abbd-35af51f1d9aa": {
+    "status": "available",
+    "name": "Attentive Skywarden",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marcha das Máquinas",
+    "printing_code": "MOM",
+    "collector_number": "7",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Attentive%20Skywarden",
+    "checked_at": "2026-08-08T07:22:53.050Z"
+  },
   "898f0824-cf4c-4e34-8407-9a32fdae6dcb": {
     "status": "available",
     "name": "Arctic Foxes",
@@ -70,6 +82,18 @@
     "collector_number": "269",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Cavern%20of%20Souls",
     "checked_at": "2026-08-05T20:04:01.352Z"
+  },
+  "89e90361-822f-42b6-9ed9-d94e6d24fb95": {
+    "status": "available",
+    "name": "Attempted Murder",
+    "price_brl": 0.41,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unfinity",
+    "printing_code": "UNF",
+    "collector_number": "66",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Attempted%20Murder",
+    "checked_at": "2026-08-08T07:22:03.030Z"
   },
   "89f5b21c-18da-4071-bc42-9cdc433734bf": {
     "status": "available",

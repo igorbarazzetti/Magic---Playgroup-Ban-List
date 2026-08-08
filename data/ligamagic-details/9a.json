@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aladdin",
     "checked_at": "2026-08-06T18:12:27.545Z"
   },
+  "9a639f82-24b6-4b54-8b9e-1fbc0f0094bf": {
+    "status": "available",
+    "name": "Attendant of Vraska",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Guildas de Ravnica",
+    "printing_code": "GRN",
+    "collector_number": "271",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Attendant%20of%20Vraska",
+    "checked_at": "2026-08-08T07:22:13.042Z"
+  },
   "9aacc1ce-8d0d-4a24-9a15-74635f2f127d": {
     "status": "available",
     "name": "Athreos, Shroud-Veiled",

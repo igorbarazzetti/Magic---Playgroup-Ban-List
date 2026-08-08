@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aatchik%2C%20Emerald%20Radian",
     "checked_at": "2026-08-06T00:04:57.353Z"
   },
+  "406e6db7-6e31-44b9-a793-57ee10688f71": {
+    "status": "available",
+    "name": "Auntie's Sentence",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed",
+    "printing_code": "ECL",
+    "collector_number": "85",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auntie's%20Sentence",
+    "checked_at": "2026-08-08T07:28:03.246Z"
+  },
   "406fad02-e1a6-4c24-b46d-976c548e1c78": {
     "status": "available",
     "name": "Aria of Flame",
@@ -82,6 +94,18 @@
     "collector_number": "111",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=An-Havva%20Township",
     "checked_at": "2026-08-07T04:43:51.381Z"
+  },
+  "40b0b93d-4075-42d6-bcd8-b2f9910cc7d2": {
+    "status": "available",
+    "name": "Audacious Swap",
+    "price_brl": 0.83,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nova Capenna Commander",
+    "printing_code": "NCC",
+    "collector_number": "44",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Audacious%20Swap",
+    "checked_at": "2026-08-08T07:24:43.115Z"
   },
   "40d6e1ff-995b-42fc-8146-8d5e5f1adcd9": {
     "status": "available",

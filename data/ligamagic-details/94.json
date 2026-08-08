@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Inverter%20of%20Truth",
     "checked_at": "2026-08-05T20:08:19.923Z"
   },
+  "9442a18b-9093-4a10-ab61-6962f5af3bb6": {
+    "status": "available",
+    "name": "Attended Healer",
+    "price_brl": 0.14,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Renascer de Zendikar",
+    "printing_code": "ZNR",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Attended%20Healer",
+    "checked_at": "2026-08-08T07:22:23.050Z"
+  },
   "944689b2-f9f7-45c3-952c-54287b9824d5": {
     "status": "available",
     "name": "Acolyte's Reward",

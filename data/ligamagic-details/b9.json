@@ -70,5 +70,17 @@
     "collector_number": "44",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aquitect's%20Defenses",
     "checked_at": "2026-08-07T11:23:36.937Z"
+  },
+  "b9fdb740-e5d7-4464-b378-2e0514ca28d8": {
+    "status": "available",
+    "name": "Atogatog",
+    "price_brl": 3.8,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Odisséia",
+    "printing_code": "OD",
+    "collector_number": "286",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atogatog",
+    "checked_at": "2026-08-08T07:19:53.059Z"
   }
 }

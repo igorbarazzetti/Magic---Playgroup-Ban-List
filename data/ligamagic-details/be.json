@@ -47,6 +47,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Annex%20Sentry",
     "checked_at": "2026-08-07T09:27:56.253Z"
   },
+  "be5a65fd-0d06-4771-bee7-0e42cc9871da": {
+    "status": "available",
+    "name": "Augury Adept",
+    "price_brl": 0.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2013",
+    "printing_code": "C13",
+    "collector_number": "227",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Augury%20Adept",
+    "checked_at": "2026-08-08T07:26:43.171Z"
+  },
+  "be5d6779-ecc9-44b9-8c4d-97a243059d55": {
+    "status": "available",
+    "name": "Augur of Bolas",
+    "price_brl": 0.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Masters 2017",
+    "printing_code": "MM3",
+    "collector_number": "30",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Augur%20of%20Bolas",
+    "checked_at": "2026-08-08T07:26:23.193Z"
+  },
   "be662217-41c2-4caa-89da-ae7f6f817c34": {
     "status": "available",
     "name": "Alesha's Vanguard",

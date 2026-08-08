@@ -46,5 +46,17 @@
     "collector_number": "20",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Allied%20Strategies",
     "checked_at": "2026-08-07T00:36:24.678Z"
+  },
+  "a5e9142e-76bf-40d4-aeaa-ffe197d38f25": {
+    "status": "available",
+    "name": "Auntie Blyte, Bad Influence",
+    "price_brl": 26.84,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Jumpstart 2022",
+    "printing_code": "J22",
+    "collector_number": "30",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auntie%20Blyte%2C%20Bad%20Influence",
+    "checked_at": "2026-08-08T07:27:33.242Z"
   }
 }

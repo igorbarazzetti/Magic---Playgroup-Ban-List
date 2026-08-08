@@ -1,4 +1,16 @@
 {
+  "72075231-e3b3-46cc-b994-2d95b24cf904": {
+    "status": "available",
+    "name": "Auditore Ambush",
+    "price_brl": 3.64,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassin's Creed (Starter Kit)",
+    "printing_code": "SKACR",
+    "collector_number": "295",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auditore%20Ambush",
+    "checked_at": "2026-08-08T07:25:23.146Z"
+  },
   "72101185-4336-480a-b4d7-f8ceb0007a51": {
     "status": "available",
     "name": "Abomination, Terrifying Titan",
@@ -46,6 +58,18 @@
     "collector_number": "49",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aberrant%20Researcher",
     "checked_at": "2026-08-06T00:18:05.426Z"
+  },
+  "723398f2-eaf2-4615-9078-418b9f540a33": {
+    "status": "available",
+    "name": "Augur of Skulls",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Visão do Futuro",
+    "printing_code": "FUT",
+    "collector_number": "63",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Augur%20of%20Skulls",
+    "checked_at": "2026-08-08T07:26:33.376Z"
   },
   "7246e3a0-f8b7-4c1b-ae75-a1eb8990a728": {
     "status": "available",

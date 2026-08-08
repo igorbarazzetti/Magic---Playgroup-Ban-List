@@ -1,4 +1,16 @@
 {
+  "9f1c5040-ac46-4e8f-a5ff-8205e13a8893": {
+    "status": "available",
+    "name": "Atrocious Experiment",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends: Batalha por Portal de Baldur",
+    "printing_code": "CLB",
+    "collector_number": "115",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atrocious%20Experiment",
+    "checked_at": "2026-08-08T07:21:33.063Z"
+  },
   "9fb95813-05e5-4aa0-bab9-53d8a071fe6a": {
     "status": "available",
     "name": "Appendage Amalgam",

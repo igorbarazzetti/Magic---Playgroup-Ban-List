@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anowon%2C%20the%20Ruin%20Thief",
     "checked_at": "2026-08-07T09:31:16.351Z"
   },
+  "e7faf8eb-e829-4109-8dfe-42865a23ba86": {
+    "status": "available",
+    "name": "Aura of Silence",
+    "price_brl": 4.6,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "World Championship Decks",
+    "printing_code": "WCD",
+    "collector_number": "99",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aura%20of%20Silence",
+    "checked_at": "2026-08-08T07:30:03.742Z"
+  },
   "e7fc5ad6-f2f0-4b06-a61b-05022db9d93b": {
     "status": "available",
     "name": "Arcades, the Strategist",

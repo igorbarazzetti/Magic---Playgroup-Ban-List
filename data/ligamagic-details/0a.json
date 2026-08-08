@@ -94,5 +94,17 @@
     "collector_number": "3",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abzan%20Runemark",
     "checked_at": "2026-08-06T03:46:41.619Z"
+  },
+  "0ad5f4c5-f6d2-4e96-af65-5488d9711113": {
+    "status": "available",
+    "name": "Auriok Transfixer",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mirrodin",
+    "printing_code": "MI",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auriok%20Transfixer",
+    "checked_at": "2026-08-08T07:33:43.473Z"
   }
 }

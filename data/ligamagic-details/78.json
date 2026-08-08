@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aladdin's%20Ring",
     "checked_at": "2026-08-06T18:12:47.611Z"
   },
+  "783a62c0-3b06-4250-a1cb-5cf4042611aa": {
+    "status": "available",
+    "name": "Auriok Replica",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Cicatrizes de Mirrodin",
+    "printing_code": "SOM",
+    "collector_number": "138",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auriok%20Replica",
+    "checked_at": "2026-08-08T07:32:43.384Z"
+  },
   "7849426d-895d-4dfe-a94d-b8df634618a5": {
     "status": "available",
     "name": "Apple of Eden, Isu Relic",

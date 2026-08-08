@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Voices",
     "checked_at": "2026-08-07T09:20:35.949Z"
   },
+  "3495d83a-b103-42be-8708-9ce971b352bd": {
+    "status": "available",
+    "name": "Aura Fracture",
+    "price_brl": 0.29,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Profecia",
+    "printing_code": "PR",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aura%20Fracture",
+    "checked_at": "2026-08-08T07:29:13.284Z"
+  },
   "34c0f75d-10a9-428d-b202-3defb3949090": {
     "status": "available",
     "name": "Ant-Man's Army",
@@ -94,5 +106,17 @@
     "collector_number": "5",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Arbiter",
     "checked_at": "2026-08-07T07:59:16.478Z"
+  },
+  "34e05dc1-35af-402d-96ae-e249b3738493": {
+    "status": "available",
+    "name": "Augur il-Vec",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Visão do Futuro",
+    "printing_code": "FUT",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Augur%20il-Vec",
+    "checked_at": "2026-08-08T07:26:03.174Z"
   }
 }

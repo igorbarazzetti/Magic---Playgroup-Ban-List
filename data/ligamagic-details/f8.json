@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Deliverance",
     "checked_at": "2026-08-07T07:53:16.236Z"
   },
+  "f8a06210-de30-4e87-835e-80a6df5716ca": {
+    "status": "available",
+    "name": "Auriok Windwalker",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Quinta Aurora",
+    "printing_code": "5DN",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auriok%20Windwalker",
+    "checked_at": "2026-08-08T07:33:53.438Z"
+  },
   "f8a9c279-0f11-4a22-8651-f9caf013ca3c": {
     "status": "available",
     "name": "Accelerated Mutation",

@@ -131,6 +131,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aphetto%20Vulture",
     "checked_at": "2026-08-07T11:16:27.147Z"
   },
+  "aed10a6c-ef93-46a7-a5d7-c9cd2a4fd91a": {
+    "status": "available",
+    "name": "Atzocan Archer",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ixalan",
+    "printing_code": "XLN",
+    "collector_number": "176",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atzocan%20Archer",
+    "checked_at": "2026-08-08T07:24:03.116Z"
+  },
   "aedcde3b-3ed5-443c-a81c-03d785153e55": {
     "status": "available",
     "name": "Agent Frank Horrigan",

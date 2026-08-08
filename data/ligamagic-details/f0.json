@@ -70,5 +70,17 @@
     "collector_number": "5",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armored%20Pegasus",
     "checked_at": "2026-08-07T19:34:34.268Z"
+  },
+  "f0fd78bb-cb83-4dfa-a910-0334d225f87c": {
+    "status": "available",
+    "name": "Attack-in-the-Box",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Noctumbra: A Casa dos Horrores",
+    "printing_code": "DSK",
+    "collector_number": "242",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Attack-in-the-Box",
+    "checked_at": "2026-08-08T07:21:53.080Z"
   }
 }

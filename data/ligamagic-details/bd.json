@@ -23,6 +23,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adarkar%20Sentinel",
     "checked_at": "2026-08-06T04:00:32.190Z"
   },
+  "bd5eb181-6a69-4dc2-93a0-fa000291bc3d": {
+    "status": "available",
+    "name": "Auramancer",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Masters 25",
+    "printing_code": "A25",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auramancer",
+    "checked_at": "2026-08-08T07:30:23.372Z"
+  },
+  "bdb769b5-c861-4ec1-ad6b-e2a56ca05fd1": {
+    "status": "available",
+    "name": "Aunt May",
+    "price_brl": 0.14,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel's Spider-Man",
+    "printing_code": "SPM",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aunt%20May",
+    "checked_at": "2026-08-08T07:27:23.214Z"
+  },
   "bddb2064-afdb-4184-ae4a-633745e64a3c": {
     "status": "available",
     "name": "At Knifepoint",

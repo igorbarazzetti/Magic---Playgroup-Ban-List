@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akroma's%20Devoted",
     "checked_at": "2026-08-06T18:08:17.307Z"
   },
+  "d2964a68-36d9-4b05-8f34-540969b410bf": {
+    "status": "available",
+    "name": "Auntie's Snitch",
+    "price_brl": 0.24,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Masters",
+    "printing_code": "MMA",
+    "collector_number": "72",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auntie's%20Snitch",
+    "checked_at": "2026-08-08T07:28:13.239Z"
+  },
   "d2aa50d2-d22d-495e-afc9-23a51c8c8f32": {
     "status": "available",
     "name": "Assault on Osgiliath",
@@ -70,5 +82,17 @@
     "collector_number": "55",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agent%20of%20Shauku",
     "checked_at": "2026-08-06T11:12:04.184Z"
+  },
+  "d2f0a918-4435-4d43-811d-2da659086ef5": {
+    "status": "available",
+    "name": "Aura of Dominion",
+    "price_brl": 22.74,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Campeões de Kamigawa",
+    "printing_code": "CHK",
+    "collector_number": "51",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aura%20of%20Dominion",
+    "checked_at": "2026-08-08T07:29:53.304Z"
   }
 }

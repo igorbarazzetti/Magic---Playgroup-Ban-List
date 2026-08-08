@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Altar's%20Reap",
     "checked_at": "2026-08-07T00:45:55.180Z"
   },
+  "6a1a9e8a-a323-489a-b4db-b04da76662f4": {
+    "status": "available",
+    "name": "Auriok Siege Sled",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Darksteel",
+    "printing_code": "DS",
+    "collector_number": "105",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auriok%20Siege%20Sled",
+    "checked_at": "2026-08-08T07:33:03.385Z"
+  },
   "6a23963c-21dc-4d21-8d28-5abad7f859a1": {
     "status": "available",
     "name": "Arena Rector",

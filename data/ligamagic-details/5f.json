@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Art%20Appreciation",
     "checked_at": "2026-08-07T21:07:18.850Z"
   },
+  "5f31a2d6-649a-40f4-89ce-95c635340e9e": {
+    "status": "available",
+    "name": "Atraxi Warden",
+    "price_brl": 0.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Doctor Who",
+    "printing_code": "WHO",
+    "collector_number": "12",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atraxi%20Warden",
+    "checked_at": "2026-08-08T07:21:02.987Z"
+  },
   "5f358544-7319-4f8e-9d60-a410c4feb774": {
     "status": "available",
     "name": "Alluring Siren",
@@ -58,6 +70,18 @@
     "collector_number": "57",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anchovy%20%26%20Banana%20Pizza",
     "checked_at": "2026-08-07T07:47:35.927Z"
+  },
+  "5f7c6fa9-4208-4dc8-a75b-9586200d8e19": {
+    "status": "available",
+    "name": "Attended Socialite",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ruas de Nova Capenna",
+    "printing_code": "SNC",
+    "collector_number": "133",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Attended%20Socialite",
+    "checked_at": "2026-08-08T07:22:43.053Z"
   },
   "5f981cca-5cd9-49e4-ab1a-bbbf6fc7e737": {
     "status": "available",

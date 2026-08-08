@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anointed%20Deacon",
     "checked_at": "2026-08-07T09:29:56.348Z"
   },
+  "525c0e33-f073-4bed-be8a-14e436a0bcf1": {
+    "status": "available",
+    "name": "Audacious Reshapers",
+    "price_brl": 0.44,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2021",
+    "printing_code": "C21",
+    "collector_number": "47",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Audacious%20Reshapers",
+    "checked_at": "2026-08-08T07:24:33.144Z"
+  },
   "52adc761-1a0a-43d1-a706-41a92bb7880c": {
     "status": "available",
     "name": "Afflicted Deserter // Werewolf Ransacker",
@@ -34,5 +46,17 @@
     "collector_number": "282",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Sylvan%20Primordial",
     "checked_at": "2026-08-05T20:13:20.703Z"
+  },
+  "52c6afc6-aff1-46a8-b1ea-b183facec1ae": {
+    "status": "available",
+    "name": "Atmospheric Greenhouse",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Edge of Eternities",
+    "printing_code": "EOE",
+    "collector_number": "171",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atmospheric%20Greenhouse",
+    "checked_at": "2026-08-08T07:19:42.966Z"
   }
 }

@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcane%20Investigator",
     "checked_at": "2026-08-07T13:52:23.870Z"
   },
+  "19bb51dd-2b93-45f0-927d-bbafddadd0a3": {
+    "status": "available",
+    "name": "Aura Mutation",
+    "price_brl": 7,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2016",
+    "printing_code": "C16",
+    "collector_number": "180",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aura%20Mutation",
+    "checked_at": "2026-08-08T07:29:43.297Z"
+  },
   "19d8937e-23fb-4758-a306-0e7af9bb44c4": {
     "status": "available",
     "name": "Aettir and Priwen",

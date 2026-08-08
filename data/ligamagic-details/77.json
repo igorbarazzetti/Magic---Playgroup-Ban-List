@@ -46,5 +46,17 @@
     "collector_number": "19",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aspect%20of%20Wolf",
     "checked_at": "2026-08-08T02:44:21.832Z"
+  },
+  "77ec26f9-c7de-4bd8-bafb-8b9825891015": {
+    "status": "available",
+    "name": "Auriok Glaivemaster",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Darksteel",
+    "printing_code": "DS",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auriok%20Glaivemaster",
+    "checked_at": "2026-08-08T07:32:33.412Z"
   }
 }
