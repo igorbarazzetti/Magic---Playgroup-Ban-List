@@ -294,8 +294,6 @@ main{display:block;min-width:0}
 .primary-button:active,.clear-button:active,.load-more:active{transform:translateY(1px)}
 
 .card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 10px;min-width:0}
-.card-grid.is-virtualized{overflow-anchor:none;contain:layout style}
-.card-grid.is-virtualized .card-tile{animation:none}
 .card-tile{
   --tile-accent:var(--gold);
   position:relative;display:grid;grid-template-rows:auto minmax(0,1fr);min-width:0;padding:0;

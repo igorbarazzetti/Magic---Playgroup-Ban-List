@@ -1,5 +1,3 @@
-import { calculateVirtualRange } from './virtual-grid.js?v=codex-42';
-
 const site = {
   playgroupName: 'Formatinho',
   playgroupInitials: 'PA',
@@ -48,7 +46,6 @@ function createViewState(tab) {
     tab, cards: [], filtered: [], selectedFormats: new Set(), selectedColors: new Set(), colorMatch: 'exact', query: '', type: '', cmc: '', rarity: '', set: '',
     sort: 'name-asc', view: 'cards', visible: 48, modalCard: null, modalFace: 0, lastFocus: null,
     savedScroll: 0, loadingMore: false, loadToken: 0, rawDetailsReady: false, loaded: false,
-    virtualStart: 0, virtualEnd: 0, virtualRowHeight: 0, virtualColumns: 0,
     deckFormat: 'formatinho', deckLastFocus: null, maxPrice: 99, showBanned: false,
     oracleMatchKey: '', oracleMatches: null, oracleSearchToken: 0, oracleSearchAbort: null,
     scryfallSearchCards: null, scryfallSearchKey: '', scryfallSearchToken: 0, scryfallSearchAbort: null,
@@ -78,7 +75,6 @@ let catalogHydrationObserver;
 let catalogHydrationTimer;
 const catalogHydrationQueue = new Map();
 let pendingFilterFrame;
-let pendingVirtualGridFrame;
 let catalogWorker;
 let catalogWorkerReady = false;
 let catalogWorkerReadyPromise;
@@ -790,7 +786,7 @@ function cardTileMarkup(card, index = 0) {
   const banWarning = state.tab === 'catalog' && card.formats.length ? '<span class="card-tile__ban-warning">Banida</span>' : '';
   const setAndPrice = state.tab === 'catalog' ? `<div class="card-tile__catalog-row"><span class="card-tile__set">${setLine}</span>${priceMarkup}</div>` : `<span class="card-tile__set">${setLine}</span>`;
   const ariaFormats = formatsLabel ? `. Banida em ${formatsLabel}` : '';
-  return `<button class="card-tile card-tile--${frameClass} card-tile--${rarityClass}${legendaryClass}" style="--delay:${index < 12 ? index * 24 : 0}ms" type="button" data-card-id="${escapeHtml(card.id)}" data-card-index="${index}"${card.isCatalogStub ? ' data-catalog-stub="true"' : ''} aria-label="Ver ${escapeHtml(card.name)}${escapeHtml(ariaFormats)}. Carta ${index + 1} de ${state.filtered.length}"><div class="card-tile__art${image ? '' : card.isCatalogStub ? ' is-loading' : ' is-error'}">${imageMarkup}</div><div class="card-tile__body"><strong class="card-tile__name">${escapeHtml(card.name)}</strong><div class="card-tile__meta">${setAndPrice}<span class="card-tile__identity">${identity}</span><span class="format-badges">${badges}${more}${banWarning}</span></div></div></button>`;
+  return `<button class="card-tile card-tile--${frameClass} card-tile--${rarityClass}${legendaryClass}" style="--delay:${Math.min(index, 10) * 24}ms" type="button" data-card-id="${escapeHtml(card.id)}"${card.isCatalogStub ? ' data-catalog-stub="true"' : ''} aria-label="Ver ${escapeHtml(card.name)}${escapeHtml(ariaFormats)}"><div class="card-tile__art${image ? '' : card.isCatalogStub ? ' is-loading' : ' is-error'}">${imageMarkup}</div><div class="card-tile__body"><strong class="card-tile__name">${escapeHtml(card.name)}</strong><div class="card-tile__meta">${setAndPrice}<span class="card-tile__identity">${identity}</span><span class="format-badges">${badges}${more}${banWarning}</span></div></div></button>`;
 }
 
 function queueCatalogHydration(card) {
@@ -827,98 +823,27 @@ function observeCatalogCards() {
 function patchHydratedCatalogTiles(cards) {
   if (state.tab !== 'catalog') return;
   const grid = $('cardGrid');
+  const positions = new Map([...grid.children].map((tile, index) => [tile.dataset.cardId, index]));
   cards.forEach((card) => {
-    const tile = [...grid.querySelectorAll('[data-card-id]')].find((item) => item.dataset.cardId === card.id);
-    if (!tile) return;
-    const index = Number(tile.dataset.cardIndex) || 0;
+    const index = positions.get(card.id);
+    if (index === undefined) return;
+    const tile = [...grid.children][index];
     tile.outerHTML = cardTileMarkup(card, index);
-    const replacement = [...grid.querySelectorAll('[data-card-id]')].find((item) => item.dataset.cardId === card.id);
-    if (replacement) bindCardImages(replacement);
-  });
-}
-
-function cardGridColumns() {
-  const template = getComputedStyle($('cardGrid')).gridTemplateColumns;
-  return Math.max(1, template.split(' ').filter(Boolean).length);
-}
-
-function estimatedVirtualRowHeight(columns) {
-  if (state.view === 'list') return innerWidth >= 560 ? 132 : 118;
-  const grid = $('cardGrid');
-  const gap = Number.parseFloat(getComputedStyle(grid).columnGap) || 0;
-  const cardWidth = Math.max(120, (grid.clientWidth - gap * Math.max(0, columns - 1)) / columns);
-  return cardWidth * (680 / 488) + (state.tab === 'catalog' ? 82 : 68);
-}
-
-function virtualGridRange() {
-  const grid = $('cardGrid');
-  const columns = cardGridColumns();
-  if (state.virtualColumns !== columns || !state.virtualRowHeight) {
-    state.virtualColumns = columns;
-    state.virtualRowHeight = estimatedVirtualRowHeight(columns);
-  }
-  const gridTop = grid.getBoundingClientRect().top + scrollY;
-  return calculateVirtualRange({
-    totalItems: state.filtered.length,
-    columns,
-    rowHeight: state.virtualRowHeight,
-    scrollOffset: Math.max(0, scrollY - gridTop),
-    viewportHeight: innerHeight,
-    overscanRows: innerWidth < 560 ? 4 : 3,
-  });
-}
-
-function measureVirtualGridRows() {
-  const grid = $('cardGrid');
-  const tiles = [...grid.querySelectorAll('[data-card-id]')];
-  if (!tiles.length) return;
-  const columns = state.virtualColumns || 1;
-  const rowGap = Number.parseFloat(getComputedStyle(grid).rowGap) || 0;
-  const measured = tiles.length > columns
-    ? tiles[columns].offsetTop - tiles[0].offsetTop
-    : tiles[0].offsetHeight + rowGap;
-  if (!Number.isFinite(measured) || measured < 80 || Math.abs(measured - state.virtualRowHeight) < 2) return;
-  state.virtualRowHeight = measured;
-  scheduleVirtualGridUpdate(true);
-}
-
-function scheduleVirtualGridUpdate(force = false) {
-  if (pendingVirtualGridFrame) return;
-  pendingVirtualGridFrame = requestAnimationFrame(() => {
-    pendingVirtualGridFrame = 0;
-    if ($('archiveSection').hidden || state.filtered.length <= 160) return;
-    const range = virtualGridRange();
-    if (force || range.startIndex !== state.virtualStart || range.endIndex !== state.virtualEnd) renderCards();
+    bindCardImages([...grid.children][index]);
   });
 }
 
 function renderCards() {
-  const grid = $('cardGrid');
-  const virtualized = state.filtered.length > 160;
-  let startIndex = 0;
-  let endIndex = Math.min(state.filtered.length, state.visible);
-  let before = 0;
-  let after = 0;
-  if (virtualized) {
-    const range = virtualGridRange();
-    ({ startIndex, endIndex, before, after } = range);
-  }
-  state.virtualStart = startIndex;
-  state.virtualEnd = endIndex;
-  const visibleCards = state.filtered.slice(startIndex, endIndex);
-  grid.classList.toggle('is-list', state.view === 'list');
-  grid.classList.toggle('is-virtualized', virtualized);
-  grid.style.paddingTop = virtualized ? `${before}px` : '';
-  grid.style.paddingBottom = virtualized ? `${after}px` : '';
-  grid.innerHTML = visibleCards.map((card, index) => cardTileMarkup(card, startIndex + index)).join('');
-  grid.setAttribute('aria-busy', 'false');
-  bindCardImages(grid);
-  const hasMore = !virtualized && state.visible < state.filtered.length;
+  const visibleCards = state.filtered.slice(0, state.visible);
+  $('cardGrid').classList.toggle('is-list', state.view === 'list');
+  $('cardGrid').innerHTML = visibleCards.map(cardTileMarkup).join('');
+  $('cardGrid').setAttribute('aria-busy', 'false');
+  bindCardImages($('cardGrid'));
+  const hasMore = state.visible < state.filtered.length;
   $('loadMore').hidden = !hasMore;
   $('emptyState').hidden = Boolean(state.filtered.length) || !sourceCards().length;
   renderEmptySuggestions();
   observeCatalogCards();
-  if (virtualized) requestAnimationFrame(measureVirtualGridRows);
 }
 
 async function hydrateCatalogCards(cards) {
@@ -2126,12 +2051,7 @@ function bind() {
   });
   $('searchClear').addEventListener('click', () => { clearTimeout(searchTimer); $('searchInput').value = ''; state.query = ''; clearScryfallSyntaxSearch(); $('searchClear').hidden = true; syncUrl(); applyFilters(); $('searchInput').focus(); });
 
-  const setView = (view) => {
-    state.view = view;
-    state.virtualRowHeight = 0;
-    state.virtualColumns = 0;
-    syncUrl(); render();
-  };
+  const setView = (view) => { state.view = view; syncUrl(); render(); };
   $('cardsView').addEventListener('click', () => setView('cards'));
   $('listView').addEventListener('click', () => setView('list'));
 
@@ -2143,24 +2063,6 @@ function bind() {
       : sourceCards().find((item) => item.id === tile.dataset.cardId);
     if (card?.isCatalogStub) await hydrateCatalogCards([card]);
     if (card) openCard(card);
-  });
-  $('cardGrid').addEventListener('keydown', (event) => {
-    if (!['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown'].includes(event.key)) return;
-    const tile = event.target.closest('[data-card-index]');
-    if (!tile || state.filtered.length <= 160) return;
-    const columns = Math.max(1, state.virtualColumns || cardGridColumns());
-    const direction = { ArrowLeft: -1, ArrowRight: 1, ArrowUp: -columns, ArrowDown: columns }[event.key];
-    const nextIndex = Math.max(0, Math.min(state.filtered.length - 1, Number(tile.dataset.cardIndex) + direction));
-    if (nextIndex === Number(tile.dataset.cardIndex)) return;
-    event.preventDefault();
-    const focusCard = () => $('cardGrid').querySelector(`[data-card-index="${nextIndex}"]`)?.focus();
-    const visible = nextIndex >= state.virtualStart && nextIndex < state.virtualEnd;
-    if (visible) { focusCard(); return; }
-    const gridTop = $('cardGrid').getBoundingClientRect().top + scrollY;
-    const row = Math.floor(nextIndex / columns);
-    scrollTo({ top: Math.max(0, gridTop + row * state.virtualRowHeight - 120), behavior: 'auto' });
-    scheduleVirtualGridUpdate(true);
-    requestAnimationFrame(() => requestAnimationFrame(focusCard));
   });
   $('loadMore').addEventListener('click', () => { state.visible += 48; renderCards(); });
   $('clearFilters').addEventListener('click', clearFilters);
@@ -2282,12 +2184,6 @@ function bind() {
 
   addEventListener('online', updateConnectionStatus);
   addEventListener('offline', updateConnectionStatus);
-  addEventListener('scroll', () => scheduleVirtualGridUpdate(), { passive: true });
-  addEventListener('resize', () => {
-    state.virtualRowHeight = 0;
-    state.virtualColumns = 0;
-    scheduleVirtualGridUpdate(true);
-  }, { passive: true });
   matchMedia('(min-width: 960px)').addEventListener('change', () => { if ($('filterPanel').classList.contains('is-open')) closeFilterSheet({ restoreFocus: false }); });
   addEventListener('popstate', () => {
     const requestedTab = new URLSearchParams(location.search).get('tab') === 'catalog' ? 'catalog' : 'banlist';
