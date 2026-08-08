@@ -16,6 +16,7 @@ $clientFiles = @(
   "index.html",
   "styles.css",
   "banlist.js",
+  "catalog-worker.js",
   "README.md",
   "og.png",
   "formatinho-logo.png",

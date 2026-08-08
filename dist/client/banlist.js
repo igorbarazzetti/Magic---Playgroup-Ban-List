@@ -58,8 +58,9 @@ const cacheTtl = 1000 * 60 * 60 * 6;
 const ligaMagicPriceBookUrl = 'https://raw.githubusercontent.com/igorbarazzetti/Magic---Playgroup-Ban-List/main/data/ligamagic-prices.json';
 const repositoryDataBase = 'https://raw.githubusercontent.com/igorbarazzetti/Magic---Playgroup-Ban-List/main/data';
 const localDataBase = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) ? './data' : repositoryDataBase;
-const catalogIndexUrl = `${localDataBase}/catalog/scryfall-index.json`;
-const catalogPriceIndexUrl = `${localDataBase}/ligamagic-catalog-prices.json`;
+const isLocalPreview = /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
+const catalogIndexUrl = isLocalPreview ? `${localDataBase}/catalog/scryfall-index.json` : '/api/catalog/index';
+const catalogPriceIndexUrl = isLocalPreview ? `${localDataBase}/ligamagic-catalog-prices.json` : '/api/catalog/prices';
 let ligaMagicPriceBookPromise;
 let catalogIndex;
 let catalogPriceIndex;
@@ -74,6 +75,14 @@ let catalogHydrationObserver;
 let catalogHydrationTimer;
 const catalogHydrationQueue = new Map();
 let pendingFilterFrame;
+let catalogWorker;
+let catalogWorkerReady = false;
+let catalogWorkerReadyPromise;
+let catalogWorkerRequestId = 0;
+let catalogFilterToken = 0;
+const catalogWorkerRequests = new Map();
+const catalogCacheDbName = 'formatinho-catalog-cache-v1';
+let catalogCacheDbPromise;
 const deckCardCache = new Map();
 const savedDeckCache = new Map();
 let pendingValidatedDeck = null;
@@ -554,7 +563,101 @@ function cardTypeMatches(card, type) {
   return !/(creature|instant|sorcery|artifact|enchantment|planeswalker|land|battle)/.test(line);
 }
 
+function initializeCatalogWorker() {
+  if (catalogWorkerReadyPromise) return catalogWorkerReadyPromise;
+  if (!('Worker' in window)) return Promise.resolve(false);
+  catalogWorkerReadyPromise = new Promise((resolve) => {
+    try {
+      catalogWorker = new Worker('./catalog-worker.js?v=codex-35');
+      const timeout = setTimeout(() => {
+        catalogWorker?.terminate(); catalogWorker = null; catalogWorkerReady = false; resolve(false);
+      }, 8000);
+      catalogWorker.addEventListener('message', ({ data }) => {
+        if (data?.type === 'ready') {
+          clearTimeout(timeout); catalogWorkerReady = true; resolve(true); return;
+        }
+        if (data?.type !== 'result') return;
+        const pending = catalogWorkerRequests.get(data.requestId);
+        if (!pending) return;
+        catalogWorkerRequests.delete(data.requestId);
+        pending.resolve(data.indexes || []);
+      });
+      catalogWorker.addEventListener('error', () => {
+        clearTimeout(timeout); catalogWorkerReady = false;
+        for (const pending of catalogWorkerRequests.values()) pending.reject(new Error('Catálogo indisponível'));
+        catalogWorkerRequests.clear(); resolve(false);
+      });
+      catalogWorker.postMessage({
+        type: 'init',
+        tuples: catalogIndex?.cards || [],
+        sets: catalogIndex?.sets || {},
+        prices: catalogPriceIndex?.prices || {},
+        usdBrlRate: catalogIndex?.usd_brl?.rate || 0,
+      });
+    } catch {
+      catalogWorker = null; catalogWorkerReady = false; resolve(false);
+    }
+  });
+  return catalogWorkerReadyPromise;
+}
+
+function requestCatalogWorkerFilter(criteria) {
+  return new Promise((resolve, reject) => {
+    const requestId = ++catalogWorkerRequestId;
+    catalogWorkerRequests.set(requestId, { resolve, reject });
+    catalogWorker.postMessage({ type: 'filter', requestId, criteria });
+  });
+}
+
+function canFilterCatalogInWorker() {
+  return state.tab === 'catalog' && catalogWorkerReady && sourceCards() === state.cards && !state.scryfallSearchKey;
+}
+
+async function applyCatalogFiltersInWorker() {
+  const targetState = state;
+  const token = ++catalogFilterToken;
+  const search = parseCardSearch(targetState.query);
+  const oracleKey = catalogOracleKey(search.exactPhrases);
+  const oracleMatches = search.exactPhrases.length && targetState.oracleMatchKey === oracleKey
+    ? [...(targetState.oracleMatches || [])]
+    : null;
+  $('cardGrid').setAttribute('aria-busy', 'true');
+  try {
+    const indexes = await requestCatalogWorkerFilter({
+      freeText: search.freeText,
+      oracleMatches,
+      selectedFormats: [...targetState.selectedFormats],
+      colors: [...targetState.selectedColors],
+      colorMatch: targetState.colorMatch,
+      type: targetState.type,
+      cmc: targetState.cmc,
+      rarity: targetState.rarity,
+      set: targetState.set,
+      showBanned: targetState.showBanned,
+      maxPrice: targetState.maxPrice,
+      sort: targetState.sort,
+    });
+    if (token !== catalogFilterToken || state !== targetState) return;
+    targetState.filtered = indexes.map((index) => targetState.cards[index]).filter(Boolean);
+    targetState.visible = 48;
+    render();
+  } catch {
+    if (token === catalogFilterToken && state === targetState) applyFiltersSync();
+  } finally {
+    if (token === catalogFilterToken && state === targetState) $('cardGrid').setAttribute('aria-busy', 'false');
+  }
+}
+
 function applyFilters() {
+  if (pendingFilterFrame) { cancelAnimationFrame(pendingFilterFrame); pendingFilterFrame = 0; }
+  if (canFilterCatalogInWorker()) {
+    void applyCatalogFiltersInWorker();
+    return;
+  }
+  applyFiltersSync();
+}
+
+function applyFiltersSync() {
   if (pendingFilterFrame) { cancelAnimationFrame(pendingFilterFrame); pendingFilterFrame = 0; }
   const search = parseCardSearch(state.query);
   const syntaxSearchActive = Boolean(state.scryfallSearchKey);
@@ -2119,6 +2222,80 @@ async function getCatalogData() {
   return catalogDataPromise;
 }
 
+function openCatalogCacheDb() {
+  if (catalogCacheDbPromise) return catalogCacheDbPromise;
+  if (!('indexedDB' in window)) return Promise.resolve(null);
+  catalogCacheDbPromise = new Promise((resolve) => {
+    const request = indexedDB.open(catalogCacheDbName, 1);
+    request.onupgradeneeded = () => {
+      if (!request.result.objectStoreNames.contains('resources')) request.result.createObjectStore('resources', { keyPath: 'key' });
+    };
+    request.onsuccess = () => resolve(request.result);
+    request.onerror = () => resolve(null);
+    request.onblocked = () => resolve(null);
+  });
+  return catalogCacheDbPromise;
+}
+
+async function readPersistentCatalogResource(key) {
+  const db = await openCatalogCacheDb();
+  if (!db) return null;
+  return new Promise((resolve) => {
+    const transaction = db.transaction('resources', 'readonly');
+    const request = transaction.objectStore('resources').get(key);
+    request.onsuccess = () => resolve(request.result || null);
+    request.onerror = () => resolve(null);
+  });
+}
+
+async function writePersistentCatalogResource(key, payload) {
+  const db = await openCatalogCacheDb();
+  if (!db) return;
+  await new Promise((resolve) => {
+    const transaction = db.transaction('resources', 'readwrite');
+    transaction.objectStore('resources').put({ key, payload, storedAt: Date.now() });
+    transaction.oncomplete = resolve;
+    transaction.onerror = resolve;
+    transaction.onabort = resolve;
+  });
+}
+
+async function fetchCatalogResource(url, key, maxAge) {
+  const cached = await readPersistentCatalogResource(key);
+  const cacheIsFresh = cached?.payload && Date.now() - Number(cached.storedAt || 0) < maxAge;
+  const fetchFresh = async () => {
+    const response = await fetch(url, { headers: { Accept: 'application/json' }, cache: 'default' });
+    if (!response.ok) throw new Error(`${key} ${response.status}`);
+    const payload = await response.json();
+    void writePersistentCatalogResource(key, payload);
+    return payload;
+  };
+  if (cacheIsFresh) {
+    void fetchFresh().catch(() => {});
+    return cached.payload;
+  }
+  try {
+    return await fetchFresh();
+  } catch (error) {
+    if (cached?.payload) return cached.payload;
+    throw error;
+  }
+}
+
+let persistentCatalogDataPromise;
+async function getPersistentCatalogData() {
+  if (!persistentCatalogDataPromise) {
+    persistentCatalogDataPromise = Promise.all([
+      fetchCatalogResource(catalogIndexUrl, 'catalog-index-v1', 12 * 60 * 60 * 1000),
+      fetchCatalogResource(catalogPriceIndexUrl, 'catalog-prices-v1', 90 * 60 * 1000).catch(() => ({ prices: {}, coverage: null })),
+    ]).then(([index, prices]) => ({ index, prices })).catch((error) => {
+      persistentCatalogDataPromise = null;
+      throw error;
+    });
+  }
+  return persistentCatalogDataPromise;
+}
+
 async function buildCatalogCards(tuples, token, view) {
   const cards = new Array(tuples.length);
   for (let start = 0; start < tuples.length; start += 4000) {
@@ -2138,11 +2315,13 @@ async function loadCatalog() {
     $('cardGrid').setAttribute('aria-busy', 'true'); $('cardGrid').innerHTML = '';
   }
   try {
-    const data = await getCatalogData();
+    const data = await getPersistentCatalogData();
     catalogIndex = data.index;
     catalogPriceIndex = data.prices;
     if (token !== view.loadToken || !Array.isArray(catalogIndex?.cards)) return;
+    const workerReady = initializeCatalogWorker();
     view.cards = await buildCatalogCards(catalogIndex.cards, token, view);
+    await workerReady;
     if (token !== view.loadToken) return;
     catalogCardById.clear();
     view.cards.forEach((card) => catalogCardById.set(card.id, card));

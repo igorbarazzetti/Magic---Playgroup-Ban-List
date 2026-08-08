@@ -260,11 +260,50 @@ async function createDeck(request, env) {
   }, 201);
 }
 
+const CATALOG_RESOURCES = {
+  index: "https://raw.githubusercontent.com/igorbarazzetti/Magic---Playgroup-Ban-List/main/data/catalog/scryfall-index.json",
+  prices: "https://raw.githubusercontent.com/igorbarazzetti/Magic---Playgroup-Ban-List/main/data/ligamagic-catalog-prices.json",
+};
+
+async function getCatalogResource(request, kind, context) {
+  const sourceUrl = CATALOG_RESOURCES[kind];
+  if (!sourceUrl) return json({ error: "Índice não encontrado." }, 404);
+  const cache = caches.default;
+  const cacheKey = new Request(new URL(`/api/catalog/${kind}`, request.url), { method: "GET" });
+  const cached = await cache.match(cacheKey);
+  if (cached) {
+    const headers = new Headers(cached.headers);
+    headers.set("x-formatinho-cache", "hit");
+    return new Response(cached.body, { status: cached.status, headers });
+  }
+
+  const upstream = await fetch(sourceUrl, {
+    headers: {
+      Accept: "application/json",
+      "User-Agent": "Codice-do-Formatinho/1.0 catalog-cache",
+    },
+  });
+  if (!upstream.ok) return json({ error: "O catálogo não pôde ser atualizado agora." }, 502);
+  const headers = new Headers(upstream.headers);
+  headers.set("content-type", "application/json; charset=utf-8");
+  headers.set("cache-control", "public, max-age=3600, stale-while-revalidate=86400");
+  headers.set("x-formatinho-cache", "miss");
+  headers.delete("set-cookie");
+  const response = new Response(upstream.body, { status: 200, headers });
+  context.waitUntil(cache.put(cacheKey, response.clone()));
+  return response;
+}
+
 const worker = {
-  async fetch(request, env) {
+  async fetch(request, env, context) {
     const url = new URL(request.url);
 
     try {
+      if (url.pathname.startsWith("/api/catalog/")) {
+        if (request.method !== "GET") return json({ error: "Método não permitido." }, 405);
+        return getCatalogResource(request, url.pathname.slice(13), context);
+      }
+
       if (url.pathname === "/api/decks") {
         if (request.method === "GET") return listDecks(env);
         if (request.method === "POST") return createDeck(request, env);
@@ -286,7 +325,13 @@ const worker = {
     const isFileRequest = url.pathname.includes(".");
     if (!isFileRequest) url.pathname = "/index.html";
     const response = await env.ASSETS.fetch(new Request(url, request));
-    if (isFileRequest) return response;
+    if (isFileRequest) {
+      const headers = new Headers(response.headers);
+      if (/\.(?:js|css|png|jpe?g|webp|avif|woff2?)$/i.test(url.pathname)) {
+        headers.set("cache-control", "public, max-age=31536000, immutable");
+      }
+      return new Response(response.body, { status: response.status, statusText: response.statusText, headers });
+    }
     const headers = new Headers(response.headers);
     headers.set("cache-control", "no-store, max-age=0");
     return new Response(response.body, { status: response.status, statusText: response.statusText, headers });
