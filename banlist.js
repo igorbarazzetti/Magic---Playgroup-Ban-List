@@ -85,6 +85,13 @@ const catalogCacheDbName = 'formatinho-catalog-cache-v1';
 let catalogCacheDbPromise;
 const deckCardCache = new Map();
 const savedDeckCache = new Map();
+const deckBuilderStorageKey = 'formatinho-deck-builder:v1';
+const deckBuilderReturnKey = 'formatinho-deck-builder-return:v1';
+let deckBuilder = { version: 1, main: {}, sideboard: {}, updatedAt: 0 };
+let deckBuilderValidation = null;
+let deckBuilderValidationToken = 0;
+let deckBuilderValidationTimer;
+let deckBuilderWasValid = false;
 let pendingValidatedDeck = null;
 let validatedDecks = [];
 let validatedDecksLoaded = false;
@@ -395,23 +402,35 @@ function catalogCardFromTuple(tuple) {
   });
 }
 
-function effectiveCatalogPrice(card) {
-  if (card?._catalogPriceReady) return card._catalogPrice || null;
+function resolvedCardPrice(card) {
+  if (!card) return null;
   const tuple = catalogPriceIndex?.prices?.[card.oracle_id || card.id];
   const ligaCents = tuple?.[0] === null || tuple?.[0] === undefined || tuple?.[0] === '' ? null : Number(tuple[0]);
   if (Number.isFinite(ligaCents) && ligaCents > 0 && ['a', 's'].includes(tuple[1])) {
-    card._catalogPrice = { value: ligaCents / 100, source: 'LigaMagic', estimated: false, stale: tuple[1] === 's', checkedAt: tuple[2] ? new Date(Number(tuple[2]) * 1000).toISOString() : null };
-    card._catalogPriceReady = true;
-    return card._catalogPrice;
+    return { value: ligaCents / 100, source: 'LigaMagic', estimated: false, stale: tuple[1] === 's', checkedAt: tuple[2] ? new Date(Number(tuple[2]) * 1000).toISOString() : null };
+  }
+  const ligaEntry = savedDeckPriceBook?.cards?.[card.oracle_id || card.id];
+  const ligaPrice = Number(ligaEntry?.price_brl);
+  if (['available', 'stale'].includes(ligaEntry?.status) && Number.isFinite(ligaPrice) && ligaPrice > 0) {
+    return { value: ligaPrice, source: 'LigaMagic', estimated: false, stale: ligaEntry.status === 'stale', checkedAt: ligaEntry.checked_at || null };
   }
   const rawUsd = card?.prices?.usd;
   const usd = rawUsd === null || rawUsd === undefined || rawUsd === '' ? null : Number(rawUsd);
-  const rate = Number(catalogIndex?.usd_brl?.rate);
-  card._catalogPrice = Number.isFinite(usd) && usd > 0 && Number.isFinite(rate) && rate > 0
-    ? { value: usd * rate, source: 'Scryfall + PTAX', estimated: true, stale: Boolean(catalogIndex?.usd_brl?.stale), checkedAt: catalogIndex?.usd_brl?.as_of || null }
+  const exchange = catalogIndex?.usd_brl || savedDeckPriceBook?.usd_brl || {};
+  const rate = Number(exchange.rate);
+  return Number.isFinite(usd) && usd > 0 && Number.isFinite(rate) && rate > 0
+    ? { value: usd * rate, source: 'Scryfall + PTAX', estimated: true, stale: Boolean(exchange.stale), checkedAt: exchange.as_of || exchange.checked_at || null }
     : null;
-  card._catalogPriceReady = true;
-  return card._catalogPrice;
+}
+
+function effectiveCatalogPrice(card) {
+  if (card?._catalogPriceReady && card._catalogPrice) return card._catalogPrice;
+  const price = resolvedCardPrice(card);
+  if (price) {
+    card._catalogPrice = price;
+    card._catalogPriceReady = true;
+  }
+  return price;
 }
 
 async function fetchScryfallPages(query, { signal, onPage } = {}) {
@@ -786,7 +805,11 @@ function cardTileMarkup(card, index = 0) {
   const banWarning = state.tab === 'catalog' && card.formats.length ? '<span class="card-tile__ban-warning">Banida</span>' : '';
   const setAndPrice = state.tab === 'catalog' ? `<div class="card-tile__catalog-row"><span class="card-tile__set">${setLine}</span>${priceMarkup}</div>` : `<span class="card-tile__set">${setLine}</span>`;
   const ariaFormats = formatsLabel ? `. Banida em ${formatsLabel}` : '';
-  return `<button class="card-tile card-tile--${frameClass} card-tile--${rarityClass}${legendaryClass}" style="--delay:${Math.min(index, 10) * 24}ms" type="button" data-card-id="${escapeHtml(card.id)}"${card.isCatalogStub ? ' data-catalog-stub="true"' : ''} aria-label="Ver ${escapeHtml(card.name)}${escapeHtml(ariaFormats)}"><div class="card-tile__art${image ? '' : card.isCatalogStub ? ' is-loading' : ' is-error'}">${imageMarkup}</div><div class="card-tile__body"><strong class="card-tile__name">${escapeHtml(card.name)}</strong><div class="card-tile__meta">${setAndPrice}<span class="card-tile__identity">${identity}</span><span class="format-badges">${badges}${more}${banWarning}</span></div></div></button>`;
+  const builderQuantity = deckBuilderQuantityForCard(card);
+  const addLabel = builderQuantity
+    ? `Adicionar outra cópia de ${card.name} ao Main Deck. ${builderQuantity} no deck atual.`
+    : `Adicionar ${card.name} ao Main Deck`;
+  return `<article class="card-tile card-tile--${frameClass} card-tile--${rarityClass}${legendaryClass}" style="--delay:${Math.min(index, 10) * 24}ms" data-card-id="${escapeHtml(card.id)}" data-card-key="${escapeHtml(card.oracle_id || card.id)}"${card.isCatalogStub ? ' data-catalog-stub="true"' : ''}><button class="card-tile__open-card" type="button" data-open-card aria-label="Ver ${escapeHtml(card.name)}${escapeHtml(ariaFormats)}"></button><div class="card-tile__art${image ? '' : card.isCatalogStub ? ' is-loading' : ' is-error'}">${imageMarkup}</div><div class="card-tile__body"><strong class="card-tile__name">${escapeHtml(card.name)}</strong><div class="card-tile__meta">${setAndPrice}<span class="card-tile__identity">${identity}</span><span class="format-badges">${badges}${more}${banWarning}</span></div></div><button class="card-tile__add" type="button" data-add-card aria-label="${escapeHtml(addLabel)}" title="Adicionar ao Main Deck">+</button></article>`;
 }
 
 function queueCatalogHydration(card) {
@@ -1716,7 +1739,7 @@ function deckIssueGroup(title, items) {
   }).join('')}</ul></div>`;
 }
 
-function renderDeckValidation({ entries, format, cards, partial = false }) {
+function evaluateDeckLegality(entries, format, cards, { partial = false } = {}) {
   const formatInfo = deckFormats.find((item) => item.key === format);
   const groups = { banned: [], notLegal: [], restricted: [], unknown: [] };
 
@@ -1735,9 +1758,14 @@ function renderDeckValidation({ entries, format, cards, partial = false }) {
   });
 
   const issueCount = Object.values(groups).reduce((total, items) => total + items.length, 0);
-  const totalCopies = entries.reduce((total, entry) => total + entry.quantity, 0);
   const issueCopies = Object.values(groups).flat().reduce((total, item) => total + item.entry.quantity, 0);
-  const valid = !partial && issueCount === 0;
+  return { groups, issueCount, issueCopies, valid: !partial && issueCount === 0, formatInfo };
+}
+
+function renderDeckValidation({ entries, format, cards, partial = false }) {
+  const evaluation = evaluateDeckLegality(entries, format, cards, { partial });
+  const { groups, issueCount, issueCopies, valid, formatInfo } = evaluation;
+  const totalCopies = entries.reduce((total, entry) => total + entry.quantity, 0);
   const coverCard = entries.map((entry) => cards.get(entry.key) || localBannedCard(entry, format)).find(Boolean) || null;
   pendingValidatedDeck = valid ? {
     entries: entries.map(({ name, quantity }) => ({ name, quantity })),
@@ -1839,18 +1867,7 @@ async function saveValidatedDeck(event) {
   submit.disabled = true;
   submit.textContent = 'Conferindo e salvando…';
   try {
-    const response = await fetch('/api/decks', {
-      method: 'POST',
-      headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name, pilot, format: pendingValidatedDeck.format, entries: pendingValidatedDeck.entries }),
-    });
-    const payload = await response.json().catch(() => ({}));
-    if (!response.ok) throw new Error(payload.error || 'Não foi possível salvar o deck.');
-    const saved = { ...payload.deck, entries: pendingValidatedDeck.entries };
-    savedDeckCache.set(saved.id, saved);
-    validatedDecks = [saved, ...validatedDecks.filter((deck) => deck.id !== saved.id)];
-    validatedDecksLoaded = true;
-    renderValidatedDecks();
+    await persistValidatedDeck(pendingValidatedDeck, { name, pilot });
     pendingValidatedDeck = null;
     form.outerHTML = '<div class="deck-save-success"><span aria-hidden="true">✓</span><div><strong>Deck selado no arquivo.</strong><a href="?page=decks&rev=28">Ver em Decks validados →</a></div></div>';
     showToast('Deck salvo no arquivo do playgroup');
@@ -1859,6 +1876,22 @@ async function saveValidatedDeck(event) {
     submit.textContent = 'Tentar salvar novamente';
     showToast(error.message || 'Não foi possível salvar o deck agora.');
   }
+}
+
+async function persistValidatedDeck(deck, { name, pilot = '' }) {
+  const response = await fetch('/api/decks', {
+    method: 'POST',
+    headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name, pilot, format: deck.format, entries: deck.entries }),
+  });
+  const payload = await response.json().catch(() => ({}));
+  if (!response.ok) throw new Error(payload.error || 'Não foi possível salvar o deck.');
+  const saved = { ...payload.deck, entries: deck.entries };
+  savedDeckCache.set(saved.id, saved);
+  validatedDecks = [saved, ...validatedDecks.filter((item) => item.id !== saved.id)];
+  validatedDecksLoaded = true;
+  renderValidatedDecks();
+  return saved;
 }
 
 function validatedDeckFormatLabel(key) {
@@ -1961,15 +1994,7 @@ function savedDeckEntryImage(entry) {
 
 function savedDeckEntryPrice(entry) {
   const card = deckCardForEntry(entry);
-  const ligaEntry = savedDeckPriceBook?.cards?.[card?.oracle_id || card?.id];
-  const ligaPrice = Number(ligaEntry?.price_brl);
-  if (['available', 'stale'].includes(ligaEntry?.status) && Number.isFinite(ligaPrice) && ligaPrice > 0) {
-    return { value: ligaPrice, estimated: false, stale: ligaEntry.status === 'stale' };
-  }
-  const usd = Number(card?.prices?.usd);
-  const rate = Number(savedDeckPriceBook?.usd_brl?.rate);
-  if (Number.isFinite(usd) && usd > 0 && Number.isFinite(rate) && rate > 0) return { value: usd * rate, estimated: true };
-  return null;
+  return resolvedCardPrice(card);
 }
 
 function savedDeckPricing(entries) {
@@ -2026,18 +2051,420 @@ async function copySavedDeck() {
   catch { window.prompt('Copie a lista do deck:', text); }
 }
 
+function emptyDeckBuilder() {
+  return { version: 1, main: {}, sideboard: {}, updatedAt: Date.now() };
+}
+
+function loadDeckBuilderDraft() {
+  try {
+    const stored = JSON.parse(localStorage.getItem(deckBuilderStorageKey) || 'null');
+    if (!stored || stored.version !== 1 || !stored.main || !stored.sideboard) throw new Error('invalid');
+    deckBuilder = { version: 1, main: stored.main, sideboard: stored.sideboard, updatedAt: Number(stored.updatedAt) || 0 };
+  } catch {
+    deckBuilder = emptyDeckBuilder();
+  }
+}
+
+function persistDeckBuilderDraft() {
+  deckBuilder.updatedAt = Date.now();
+  try { localStorage.setItem(deckBuilderStorageKey, JSON.stringify(deckBuilder)); } catch { /* O rascunho continua ativo nesta sessão. */ }
+}
+
+function deckBuilderZoneEntries(zone) {
+  return Object.values(deckBuilder[zone] || {}).filter((entry) => entry && Number(entry.quantity) > 0);
+}
+
+function deckBuilderAllEntries() {
+  return ['main', 'sideboard'].flatMap((zone) => deckBuilderZoneEntries(zone).map((entry) => ({ ...entry, section: zone })));
+}
+
+function deckBuilderTotal(zone = 'main') {
+  return deckBuilderZoneEntries(zone).reduce((total, entry) => total + (Number(entry.quantity) || 0), 0);
+}
+
+function deckBuilderEntryId(card) {
+  return card?.oracle_id || card?.id || normalizeDeckName(card?.name || '');
+}
+
+function deckBuilderFindEntry(card, zone) {
+  const id = deckBuilderEntryId(card);
+  const entries = zone ? deckBuilderZoneEntries(zone) : deckBuilderAllEntries();
+  return entries.find((entry) => entry.id === id || (card?.oracle_id && entry.oracleId === card.oracle_id) || normalizeDeckName(entry.name) === normalizeDeckName(card?.name));
+}
+
+function deckBuilderQuantityForCard(card) {
+  return ['main', 'sideboard'].reduce((total, zone) => total + (Number(deckBuilderFindEntry(card, zone)?.quantity) || 0), 0);
+}
+
+function deckBuilderCard(entry) {
+  return deckCardForEntry({ key: entry.key || normalizeDeckName(entry.name), name: entry.name });
+}
+
+function deckBuilderStoredEntry(card, quantity = 1) {
+  const id = deckBuilderEntryId(card);
+  return {
+    id,
+    key: normalizeDeckName(card.name),
+    oracleId: card.oracle_id || card.id,
+    cardId: card.id,
+    name: card.name,
+    quantity,
+    image: imageFor(card, 0, 'small') || '',
+    usd: card.prices?.usd || null,
+  };
+}
+
+function deckBuilderReturnUrl() {
+  const fallback = '/?tab=catalog';
+  try {
+    const value = localStorage.getItem(deckBuilderReturnKey) || fallback;
+    return value.startsWith('/') && !value.startsWith('/deckbuilder') ? value : fallback;
+  } catch { return fallback; }
+}
+
+function rememberDeckBuilderReturnUrl() {
+  if (location.pathname === '/deckbuilder') return;
+  try { localStorage.setItem(deckBuilderReturnKey, `${location.pathname}${location.search}${location.hash}`); } catch { /* Navegação ainda usa o catálogo padrão. */ }
+}
+
+function updateDeckBuilderLinks() {
+  const returnUrl = deckBuilderReturnUrl();
+  if ($('deckBuilderAddCards')) $('deckBuilderAddCards').href = returnUrl;
+  if ($('deckBuilderAddCardsBottom')) $('deckBuilderAddCardsBottom').href = returnUrl;
+}
+
+function updateDeckBuilderFab() {
+  const total = deckBuilderTotal('main');
+  const fab = $('deckBuilderFab');
+  if (!fab) return;
+  const isBuilderPage = location.pathname === '/deckbuilder';
+  fab.hidden = total < 1 || isBuilderPage;
+  fab.classList.toggle('is-complete', total >= 60);
+  $('deckBuilderFabCount').textContent = total > 999 ? '999+' : String(total);
+  fab.setAttribute('aria-label', `Abrir Deck Builder com ${total} ${total === 1 ? 'carta' : 'cartas'} no Main Deck`);
+}
+
+function updateCardAddLabels() {
+  document.querySelectorAll('.card-tile[data-card-id]').forEach((tile) => {
+    const card = sourceCards().find((item) => item.id === tile.dataset.cardId) || catalogCardById.get(tile.dataset.cardId);
+    const button = tile.querySelector('[data-add-card]');
+    if (!card || !button) return;
+    const quantity = deckBuilderQuantityForCard(card);
+    button.setAttribute('aria-label', quantity
+      ? `Adicionar outra cópia de ${card.name} ao Main Deck. ${quantity} no deck atual.`
+      : `Adicionar ${card.name} ao Main Deck`);
+  });
+}
+
+function pulseDeckBuilderFab() {
+  const fab = $('deckBuilderFab');
+  if (!fab || fab.hidden) return;
+  fab.classList.remove('is-receiving');
+  requestAnimationFrame(() => fab.classList.add('is-receiving'));
+  setTimeout(() => fab.classList.remove('is-receiving'), 360);
+}
+
+function animateCardToDeckBuilder(tile, card) {
+  const fab = $('deckBuilderFab');
+  if (!tile || !fab || fab.hidden || matchMedia('(prefers-reduced-motion: reduce)').matches) { pulseDeckBuilderFab(); return; }
+  const sourceImage = tile.querySelector('.card-tile__art img');
+  const source = (sourceImage || tile.querySelector('.card-tile__art'))?.getBoundingClientRect();
+  const target = fab.getBoundingClientRect();
+  if (!source || !target.width) { pulseDeckBuilderFab(); return; }
+  const flight = document.createElement('img');
+  flight.className = 'deck-flight-card';
+  flight.alt = '';
+  flight.src = sourceImage?.currentSrc || imageFor(card, 0, 'small');
+  const width = Math.min(source.width, 150);
+  const height = width * 680 / 488;
+  const left = source.left + (source.width - width) / 2;
+  const top = source.top + (source.height - height) / 2;
+  Object.assign(flight.style, { left: `${left}px`, top: `${top}px`, width: `${width}px`, height: `${height}px` });
+  document.body.append(flight);
+  const destinationX = target.left + target.width / 2 - (left + width / 2);
+  const destinationY = target.top + target.height / 2 - (top + height / 2);
+  requestAnimationFrame(() => requestAnimationFrame(() => {
+    flight.style.transform = `translate3d(${destinationX}px,${destinationY}px,0) scale(.12) rotate(4deg)`;
+    flight.style.opacity = '.08';
+  }));
+  flight.addEventListener('transitionend', () => { flight.remove(); pulseDeckBuilderFab(); }, { once: true });
+  setTimeout(() => { if (flight.isConnected) { flight.remove(); pulseDeckBuilderFab(); } }, 650);
+}
+
+function addCardToDeckBuilder(card, tile) {
+  if (!card) return;
+  cardNameKeys(card).forEach((key) => deckCardCache.set(key, card));
+  const id = deckBuilderEntryId(card);
+  const existing = deckBuilder.main[id];
+  deckBuilder.main[id] = existing
+    ? { ...existing, quantity: Number(existing.quantity) + 1, image: existing.image || imageFor(card, 0, 'small') }
+    : deckBuilderStoredEntry(card);
+  persistDeckBuilderDraft();
+  updateDeckBuilderFab();
+  updateCardAddLabels();
+  animateCardToDeckBuilder(tile, card);
+  showToast(`${card.name} adicionada ao Main Deck`);
+  if (!$('deckBuilderPage')?.hidden) scheduleDeckBuilderValidation();
+
+  if (card.isCatalogStub) {
+    void hydrateCatalogCards([card]).then(() => {
+      cardNameKeys(card).forEach((key) => deckCardCache.set(key, card));
+      const entry = deckBuilder.main[id] || deckBuilder.sideboard[id];
+      if (entry) {
+        entry.image ||= imageFor(card, 0, 'small');
+        entry.cardId = card.id;
+        entry.oracleId = card.oracle_id || entry.oracleId;
+        entry.usd = card.prices?.usd || entry.usd;
+        persistDeckBuilderDraft();
+        if (!$('deckBuilderPage')?.hidden) renderDeckBuilder();
+      }
+    });
+  }
+}
+
+function deckBuilderPricing(entries = deckBuilderAllEntries()) {
+  return entries.reduce((summary, entry) => {
+    const card = deckBuilderCard(entry);
+    const price = resolvedCardPrice(card);
+    const quantity = Number(entry.quantity) || 0;
+    if (!price) { summary.missing += quantity; return summary; }
+    summary.value += price.value * quantity;
+    summary.estimated ||= price.estimated;
+    summary.quoted += quantity;
+    return summary;
+  }, { value: 0, quoted: 0, missing: 0, estimated: false });
+}
+
+function deckBuilderEntryMarkup(entry, zone) {
+  const card = deckBuilderCard(entry);
+  const quantity = Number(entry.quantity) || 1;
+  const image = card ? imageFor(card, 0, 'small') : entry.image;
+  const price = resolvedCardPrice(card);
+  const subtotal = price ? price.value * quantity : null;
+  const priceMarkup = price
+    ? `<span class="deck-builder-entry__price${price.estimated ? ' is-estimated' : ''}"><small>${priceSourceDot(price.estimated)}${price.estimated ? '~ ' : ''}${formatBrlPrice(price.value)} × ${quantity}</small><strong>${priceSourceDot(price.estimated)}${price.estimated ? '~ ' : ''}${formatBrlPrice(subtotal)}</strong></span>`
+    : '<span class="deck-builder-entry__price is-pending"><small>Preço</small><strong>Preparando…</strong></span>';
+  const target = zone === 'main' ? 'sideboard' : 'main';
+  const moveLabel = zone === 'main' ? '→ Sideboard' : '→ Main Deck';
+  return `<li><article class="deck-builder-entry" data-builder-entry="${escapeHtml(entry.id)}" data-builder-zone="${zone}">
+    <button class="deck-builder-entry__card" type="button" data-builder-open aria-label="Abrir detalhes de ${escapeHtml(entry.name)}">${image ? `<img src="${escapeHtml(image)}" alt="" loading="lazy" decoding="async" />` : '<span class="deck-builder-entry__placeholder" aria-hidden="true">✦</span>'}</button>
+    <div class="deck-builder-entry__body"><button class="deck-builder-entry__name" type="button" data-builder-open>${escapeHtml(entry.name)}</button>${priceMarkup}
+      <div class="deck-builder-entry__controls"><div class="deck-builder-quantity" aria-label="Quantidade de ${escapeHtml(entry.name)}"><button type="button" data-builder-action="decrease" aria-label="Diminuir ${escapeHtml(entry.name)}">−</button><span>${quantity}</span><button type="button" data-builder-action="increase" aria-label="Aumentar ${escapeHtml(entry.name)}">+</button></div>
+        <div class="deck-builder-entry__actions"><button type="button" data-builder-action="move" data-builder-target="${target}">${moveLabel}</button><button type="button" data-builder-action="remove" aria-label="Remover ${escapeHtml(entry.name)}">×</button></div></div>
+    </div></article></li>`;
+}
+
+function renderDeckBuilder() {
+  updateDeckBuilderFab();
+  updateDeckBuilderLinks();
+  if (!$('deckBuilderPage') || $('deckBuilderPage').hidden) return;
+  const mainEntries = deckBuilderZoneEntries('main');
+  const sideEntries = deckBuilderZoneEntries('sideboard');
+  const mainCount = deckBuilderTotal('main');
+  const sideCount = deckBuilderTotal('sideboard');
+  const pricing = deckBuilderPricing([...mainEntries, ...sideEntries]);
+  $('deckBuilderMainCount').textContent = mainCount;
+  $('deckBuilderSideCount').textContent = sideCount;
+  $('deckBuilderMainMeta').textContent = `${mainCount} / 60 cartas`;
+  $('deckBuilderSideMeta').textContent = `${sideCount} ${sideCount === 1 ? 'carta' : 'cartas'}`;
+  $('deckBuilderTotalPrice').innerHTML = pricing.quoted
+    ? `${priceSourceDot(pricing.estimated)}${pricing.estimated || pricing.missing ? '~ ' : ''}${formatBrlPrice(pricing.value)}${pricing.missing ? '+' : ''}`
+    : 'R$ 0,00';
+  $('deckBuilderMainList').innerHTML = mainEntries.map((entry) => deckBuilderEntryMarkup(entry, 'main')).join('');
+  $('deckBuilderSideList').innerHTML = sideEntries.map((entry) => deckBuilderEntryMarkup(entry, 'sideboard')).join('');
+  $('deckBuilderMainEmpty').hidden = mainEntries.length > 0;
+  $('deckBuilderSideEmpty').hidden = sideEntries.length > 0;
+  $('deckBuilderClear').disabled = mainEntries.length + sideEntries.length === 0;
+  renderDeckBuilderStatus();
+}
+
+function renderDeckBuilderStatus() {
+  const target = $('deckBuilderStatus');
+  if (!target || $('deckBuilderPage')?.hidden) return;
+  const seal = target.querySelector('.deck-builder-status__seal');
+  const copy = target.querySelector('.deck-builder-status__copy');
+  const save = $('deckBuilderSave');
+  const total = deckBuilderTotal('main') + deckBuilderTotal('sideboard');
+  target.classList.remove('is-valid', 'is-invalid', 'is-loading');
+  if (!total) {
+    seal.textContent = '◇';
+    copy.innerHTML = '<h2>Comece adicionando cartas</h2><p>O Main Deck precisa chegar a 60 cartas e respeitar o limite de R$ 100,00.</p>';
+    save.disabled = true;
+    return;
+  }
+  if (!deckBuilderValidation) {
+    target.classList.add('is-loading');
+    seal.textContent = '✦';
+    copy.innerHTML = '<h2>Conferindo o grimório…</h2><p>Atualizando quantidade, preços e legalidade.</p>';
+    save.disabled = true;
+    return;
+  }
+  const validation = deckBuilderValidation;
+  target.classList.add(validation.valid ? 'is-valid' : 'is-invalid');
+  seal.textContent = validation.valid ? '✓' : '×';
+  copy.innerHTML = validation.valid
+    ? '<h2>Deck válido no Formatinho</h2><p>60 cartas, orçamento e legalidade conferidos. A lista está pronta para ser selada.</p>'
+    : `<h2>Deck ainda não é válido</h2><ul>${validation.reasons.map((reason) => `<li>${escapeHtml(reason)}</li>`).join('')}</ul>`;
+  save.disabled = !validation.valid;
+  if (validation.valid && !deckBuilderWasValid && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    target.animate([{ transform: 'scale(.985)', opacity: .86 }, { transform: 'scale(1)', opacity: 1 }], { duration: 320, easing: 'cubic-bezier(.2,.8,.2,1)' });
+  }
+  deckBuilderWasValid = validation.valid;
+}
+
+function combinedDeckBuilderEntries() {
+  const merged = new Map();
+  deckBuilderAllEntries().forEach((entry) => {
+    const key = normalizeDeckName(entry.name);
+    const current = merged.get(key);
+    if (current) current.quantity += Number(entry.quantity) || 0;
+    else merged.set(key, { key, name: entry.name, quantity: Number(entry.quantity) || 0 });
+  });
+  return [...merged.values()];
+}
+
+async function ensureDeckBuilderData(entries) {
+  const catalogPromise = getCatalogData().then((data) => {
+    catalogIndex ||= data.index;
+    catalogPriceIndex ||= data.prices;
+  }).catch(() => null);
+  const marketPromise = getLigaMagicPriceBook().then((book) => { savedDeckPriceBook = book; }).catch(() => null);
+  const cardsPromise = fetchDeckCards(entries);
+  const [, , cards] = await Promise.all([catalogPromise, marketPromise, cardsPromise]);
+  return cards;
+}
+
+async function validateDeckBuilder() {
+  const token = ++deckBuilderValidationToken;
+  const entries = combinedDeckBuilderEntries();
+  if (!entries.length) { deckBuilderValidation = null; renderDeckBuilder(); return; }
+  deckBuilderValidation = null;
+  renderDeckBuilderStatus();
+  try {
+    const cards = await ensureDeckBuilderData(entries);
+    if (token !== deckBuilderValidationToken) return;
+    const legality = evaluateDeckLegality(entries, 'formatinho', cards);
+    const mainCount = deckBuilderTotal('main');
+    const pricing = deckBuilderPricing();
+    const reasons = [];
+    if (mainCount !== 60) reasons.push(`Main Deck: ${mainCount} / 60 cartas`);
+    if (pricing.missing) reasons.push(`${pricing.missing} ${pricing.missing === 1 ? 'carta está' : 'cartas estão'} sem preço disponível`);
+    else if (pricing.value > 100) reasons.push(`Preço: ${formatBrlPrice(pricing.value)} / R$ 100,00`);
+    if (legality.issueCount) reasons.push(`${legality.issueCount} ${legality.issueCount === 1 ? 'carta não permitida' : 'cartas não permitidas'}`);
+    const priceValid = !pricing.missing && pricing.value <= 100;
+    const valid = mainCount === 60 && priceValid && legality.valid;
+    const allEntries = deckBuilderAllEntries();
+    const coverEntry = deckBuilderZoneEntries('main')[0] || allEntries[0];
+    const coverCard = coverEntry ? deckBuilderCard(coverEntry) : null;
+    deckBuilderValidation = {
+      valid, reasons: valid ? [] : reasons, mainCount, pricing, legality,
+      pending: valid ? {
+        entries: allEntries.map((entry) => ({ name: entry.name, quantity: Number(entry.quantity), section: entry.section })),
+        format: 'formatinho',
+        totalCopies: mainCount,
+        uniqueCount: entries.length,
+        coverName: coverCard?.name || coverEntry?.name || '',
+        coverImage: coverCard?.image_uris?.art_crop || coverCard?.image_uris?.normal || coverEntry?.image || '',
+      } : null,
+    };
+    renderDeckBuilder();
+  } catch {
+    if (token !== deckBuilderValidationToken) return;
+    deckBuilderValidation = { valid: false, reasons: ['Não foi possível concluir a conferência agora. Tente novamente quando a conexão voltar.'] };
+    renderDeckBuilder();
+  }
+}
+
+function scheduleDeckBuilderValidation() {
+  deckBuilderValidation = null;
+  deckBuilderWasValid = false;
+  clearTimeout(deckBuilderValidationTimer);
+  renderDeckBuilder();
+  deckBuilderValidationTimer = setTimeout(() => { void validateDeckBuilder(); }, 180);
+}
+
+function mutateDeckBuilderEntry(zone, id, action, target) {
+  const entry = deckBuilder[zone]?.[id];
+  if (!entry) return;
+  if (action === 'increase') entry.quantity = Math.min(999, Number(entry.quantity) + 1);
+  if (action === 'decrease') entry.quantity = Number(entry.quantity) - 1;
+  if (action === 'remove' || Number(entry.quantity) <= 0) delete deckBuilder[zone][id];
+  if (action === 'move' && ['main', 'sideboard'].includes(target)) {
+    const existing = deckBuilder[target][id];
+    deckBuilder[target][id] = existing ? { ...existing, quantity: Number(existing.quantity) + Number(entry.quantity) } : { ...entry };
+    delete deckBuilder[zone][id];
+  }
+  persistDeckBuilderDraft();
+  $('deckBuilderSaveForm').hidden = true;
+  scheduleDeckBuilderValidation();
+}
+
+async function openDeckBuilderCard(zone, id) {
+  const entry = deckBuilder[zone]?.[id];
+  if (!entry) return;
+  let card = deckBuilderCard(entry);
+  if (!card) {
+    const cards = await fetchDeckCards([{ key: normalizeDeckName(entry.name), name: entry.name, quantity: entry.quantity }]);
+    card = cards.get(normalizeDeckName(entry.name));
+  }
+  if (card) openCard(normalizeCard(card));
+  else showToast('A carta ainda está sendo preparada. Tente novamente em instantes.');
+}
+
+async function saveDeckBuilder(event) {
+  event.preventDefault();
+  if (!deckBuilderValidation?.valid || !deckBuilderValidation.pending) return;
+  const form = event.currentTarget;
+  const data = new FormData(form);
+  const name = String(data.get('name') || '').trim();
+  const pilot = String(data.get('pilot') || '').trim();
+  if (!name) { $('deckBuilderSaveName').focus(); return; }
+  const submit = form.querySelector('button[type="submit"]');
+  submit.disabled = true;
+  submit.textContent = 'Conferindo e salvando…';
+  try {
+    await persistValidatedDeck(deckBuilderValidation.pending, { name, pilot });
+    form.hidden = true;
+    form.reset();
+    const success = document.createElement('div');
+    success.className = 'deck-builder-save-success';
+    success.innerHTML = '<span aria-hidden="true">✓</span><div><strong>Deck selado no arquivo.</strong><br><a href="/?page=decks&rev=29">Ver em Decks validados →</a></div>';
+    form.after(success);
+    showToast('Deck salvo no arquivo do playgroup');
+  } catch (error) {
+    submit.disabled = false;
+    submit.textContent = 'Tentar salvar novamente';
+    showToast(error.message || 'Não foi possível salvar o deck agora.');
+  }
+}
+
+async function loadDeckBuilderPage() {
+  renderDeckBuilder();
+  const entries = combinedDeckBuilderEntries();
+  if (!entries.length) return;
+  await validateDeckBuilder();
+}
+
 function configurePageMode() {
-  const decksPage = new URLSearchParams(location.search).get('page') === 'decks';
-  $('homeHero').hidden = decksPage;
-  $('archiveSection').hidden = decksPage;
+  const builderPage = location.pathname.replace(/\/+$/, '') === '/deckbuilder';
+  const decksPage = !builderPage && new URLSearchParams(location.search).get('page') === 'decks';
+  $('homeHero').hidden = decksPage || builderPage;
+  $('archiveSection').hidden = decksPage || builderPage;
   $('validatedDecksPage').hidden = !decksPage;
+  $('deckBuilderPage').hidden = !builderPage;
   document.body.classList.toggle('is-decks-page', decksPage);
-  document.querySelector('.brand-lockup').href = decksPage ? '/' : '#top';
+  document.body.classList.toggle('is-deck-builder-page', builderPage);
+  document.querySelector('.brand-lockup').href = decksPage || builderPage ? '/' : '#top';
   if (decksPage) {
     document.title = 'Decks validados · Códice do Formatinho';
     document.querySelector('.skip-link').href = '#validatedDecksTitle';
     loadValidatedDecks();
+  } else if (builderPage) {
+    document.title = 'Deck Builder · Códice do Formatinho';
+    document.querySelector('.skip-link').href = '#deckBuilderTitle';
+    document.querySelector('.skip-link').textContent = 'Ir para o Deck Builder';
   }
+  return { decksPage, builderPage };
 }
 
 function bind() {
@@ -2113,6 +2540,7 @@ function bind() {
     const card = state.tab === 'catalog'
       ? catalogCardById.get(tile.dataset.cardId) || sourceCards().find((item) => item.id === tile.dataset.cardId)
       : sourceCards().find((item) => item.id === tile.dataset.cardId);
+    if (event.target.closest('[data-add-card]')) { addCardToDeckBuilder(card, tile); return; }
     if (card?.isCatalogStub) await hydrateCatalogCards([card]);
     if (card) openCard(card);
   });
@@ -2208,6 +2636,45 @@ function bind() {
   $('savedDeckModal').addEventListener('cancel', (event) => { event.preventDefault(); closeSavedDeck(); });
   $('savedDeckModal').addEventListener('click', (event) => { if (event.target === $('savedDeckModal')) closeSavedDeck(); });
 
+  $('deckBuilderFab').addEventListener('click', () => {
+    rememberDeckBuilderReturnUrl();
+    location.assign('/deckbuilder');
+  });
+  $('deckBuilderPage').addEventListener('click', (event) => {
+    const item = event.target.closest('[data-builder-entry]');
+    if (!item) return;
+    const zone = item.dataset.builderZone;
+    const id = item.dataset.builderEntry;
+    if (event.target.closest('[data-builder-open]')) { void openDeckBuilderCard(zone, id); return; }
+    const action = event.target.closest('[data-builder-action]');
+    if (action) mutateDeckBuilderEntry(zone, id, action.dataset.builderAction, action.dataset.builderTarget);
+  });
+  $('deckBuilderSave').addEventListener('click', () => {
+    if (!deckBuilderValidation?.valid) return;
+    document.querySelector('.deck-builder-save-success')?.remove();
+    $('deckBuilderSaveForm').hidden = false;
+    $('deckBuilderSaveName').focus();
+  });
+  $('deckBuilderSaveCancel').addEventListener('click', () => { $('deckBuilderSaveForm').hidden = true; });
+  $('deckBuilderSaveForm').addEventListener('submit', saveDeckBuilder);
+  $('deckBuilderClear').addEventListener('click', () => {
+    const modal = $('deckBuilderClearModal');
+    modal.returnValue = '';
+    if (typeof modal.showModal === 'function') modal.showModal(); else modal.setAttribute('open', '');
+  });
+  $('deckBuilderClearModal').addEventListener('close', () => {
+    if ($('deckBuilderClearModal').returnValue !== 'confirm') return;
+    deckBuilder = emptyDeckBuilder();
+    deckBuilderValidation = null;
+    deckBuilderWasValid = false;
+    try { localStorage.removeItem(deckBuilderStorageKey); } catch { /* Estado em memória já foi limpo. */ }
+    $('deckBuilderSaveForm').hidden = true;
+    document.querySelector('.deck-builder-save-success')?.remove();
+    renderDeckBuilder();
+    updateCardAddLabels();
+    showToast('Deck limpo');
+  });
+
   $('closeCardModal').addEventListener('click', closeCard);
   $('flipCard').addEventListener('click', flipModalCard);
   $('previousCard').addEventListener('click', () => navigateModal(-1));
@@ -2216,7 +2683,7 @@ function bind() {
   document.querySelector('.modal-section--data').addEventListener('toggle', (event) => { if (event.target.open) hydrateRawDetails(); });
 
   document.addEventListener('keydown', (event) => {
-    if (event.key === '/' && !/INPUT|SELECT|TEXTAREA/.test(document.activeElement?.tagName || '')) { event.preventDefault(); (document.body.classList.contains('is-decks-page') ? $('validatedDeckSearch') : $('searchInput')).focus(); }
+    if (event.key === '/' && !document.body.classList.contains('is-deck-builder-page') && !/INPUT|SELECT|TEXTAREA/.test(document.activeElement?.tagName || '')) { event.preventDefault(); (document.body.classList.contains('is-decks-page') ? $('validatedDeckSearch') : $('searchInput')).focus(); }
     if (event.key === 'Escape' && $('filterPanel').classList.contains('is-open')) { event.preventDefault(); closeFilterSheet(); }
     if (event.key === 'Tab' && $('filterPanel').classList.contains('is-open') && innerWidth < 960) {
       const focusable = [...$('filterPanel').querySelectorAll('button,select,input,[href]')].filter((item) => !item.hidden && !item.disabled);
@@ -2435,7 +2902,8 @@ async function loadCards() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+  loadDeckBuilderDraft();
   $('brandLogo').src = site.logoPath;
   $('brandName').textContent = site.playgroupName;
   $('pageTitle').textContent = site.pageTitle;
@@ -2444,9 +2912,14 @@ document.addEventListener('DOMContentLoaded', () => {
   renderDeckFormats();
   $('validatedDeckFormat').innerHTML = `<option value="">Todos os formatos</option>${deckFormats.map((format) => `<option value="${format.key}">${format.label}</option>`).join('')}`;
   bind();
-  configurePageMode();
-  loadCards();
-  if (state.tab === 'catalog') loadCatalog();
+  const pageMode = configurePageMode();
+  updateDeckBuilderFab();
+  const cardsPromise = loadCards();
+  if (state.tab === 'catalog' && !pageMode.builderPage) loadCatalog();
   if (isScryfallSyntaxSearch(state.query)) void ensureScryfallSyntaxSearch();
   loadBackground();
+  if (pageMode.builderPage) {
+    await cardsPromise.catch(() => null);
+    await loadDeckBuilderPage();
+  }
 });

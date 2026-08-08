@@ -233,14 +233,15 @@ async function createDeck(request, env) {
   for (const item of body.entries) {
     const cardName = cleanText(item?.name, 160);
     const quantity = Math.trunc(Number(item?.quantity));
+    const section = item?.section === "sideboard" ? "sideboard" : "main";
     if (!cardName || !Number.isFinite(quantity) || quantity < 1 || quantity > 99) {
       return json({ error: "Há uma carta ou quantidade inválida na lista." }, 400);
     }
-    const key = normalizeName(cardName);
+    const key = `${section}:${normalizeName(cardName)}`;
     const current = mergedEntries.get(key);
     const total = (current?.quantity || 0) + quantity;
     if (total > 99) return json({ error: `Quantidade inválida para ${cardName}.` }, 400);
-    mergedEntries.set(key, { name: current?.name || cardName, quantity: total });
+    mergedEntries.set(key, { name: current?.name || cardName, quantity: total, section });
   }
 
   const entries = [...mergedEntries.values()];
@@ -261,9 +262,9 @@ async function createDeck(request, env) {
 
   const canonicalEntries = entries.map((entry) => {
     const card = cardsByName.get(normalizeName(entry.name));
-    return { name: card?.name || entry.name, quantity: entry.quantity };
+    return { name: card?.name || entry.name, quantity: entry.quantity, section: entry.section };
   });
-  const coverCard = canonicalEntries
+  const coverCard = [...canonicalEntries.filter((entry) => entry.section !== "sideboard"), ...canonicalEntries]
     .map((entry) => cardsByName.get(normalizeName(entry.name)))
     .find(Boolean);
   const coverImage = coverCard?.image_uris?.art_crop

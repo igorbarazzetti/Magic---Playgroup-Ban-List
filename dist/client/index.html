@@ -32,7 +32,7 @@
     <link rel="preconnect" href="https://cards.scryfall.io" />
     <link rel="preconnect" href="https://api.scryfall.com" />
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=codex-44" />
+    <link rel="stylesheet" href="styles.css?v=codex-46" />
     <script>
       (() => {
         if (!('serviceWorker' in navigator)) return;
@@ -133,6 +133,55 @@
         <section class="decks-state decks-state--loading" id="validatedDecksLoading"><span aria-hidden="true">✦</span><h2>Abrindo o arquivo…</h2><p>Consultando os decks aprovados pelo conselho.</p></section>
         <section class="decks-state" id="validatedDecksEmpty" hidden><span aria-hidden="true">◇</span><h2>Nenhum deck selado ainda</h2><p>Valide a primeira lista e inaugure o arquivo do playgroup.</p><button type="button" data-open-deck-validator>Validar primeiro deck</button></section>
         <section class="decks-state decks-state--error" id="validatedDecksError" hidden><span aria-hidden="true">!</span><h2>O arquivo não respondeu</h2><p>Seus decks continuam preservados. Tente abrir novamente.</p><button type="button" id="retryValidatedDecks">Tentar novamente</button></section>
+      </section>
+
+      <section class="deck-builder-page" id="deckBuilderPage" aria-labelledby="deckBuilderTitle" hidden>
+        <header class="deck-builder-hero">
+          <div class="deck-builder-hero__copy">
+            <p class="eyebrow"><span aria-hidden="true">✦</span> Oficina do Formatinho</p>
+            <h1 id="deckBuilderTitle">Monte seu deck</h1>
+            <p>Organize sua lista, acompanhe o orçamento e veja a validação acontecer enquanto você constrói.</p>
+          </div>
+          <a class="deck-builder-add-cards" id="deckBuilderAddCards" href="/?tab=catalog"><span aria-hidden="true">＋</span><span>Adicionar cartas</span></a>
+        </header>
+
+        <section class="deck-builder-summary" aria-label="Resumo do deck">
+          <div><strong id="deckBuilderMainCount">0</strong><span>Main Deck</span></div>
+          <div><strong id="deckBuilderSideCount">0</strong><span>Sideboard</span></div>
+          <div class="deck-builder-summary__price"><strong id="deckBuilderTotalPrice">R$ 0,00</strong><span>de R$ 100,00</span></div>
+        </section>
+
+        <section class="deck-builder-status" id="deckBuilderStatus" aria-live="polite" aria-busy="false">
+          <span class="deck-builder-status__seal" aria-hidden="true">◇</span>
+          <div class="deck-builder-status__copy"><h2>Comece adicionando cartas</h2><p>O Main Deck precisa chegar a 60 cartas e respeitar o limite de R$ 100,00.</p></div>
+          <button id="deckBuilderSave" type="button" disabled>Salvar em decks validados</button>
+        </section>
+
+        <form class="deck-builder-save-form deck-save-form" id="deckBuilderSaveForm" hidden>
+          <div class="deck-save-form__heading"><strong>Como este deck será conhecido?</strong><span>O nome ficará público no arquivo do playgroup. O piloto é opcional.</span></div>
+          <label for="deckBuilderSaveName">Nome do deck<input id="deckBuilderSaveName" name="name" maxlength="80" required placeholder="Ex.: Elfos da Lathril" autocomplete="off" /></label>
+          <label for="deckBuilderSavePilot">Piloto<input id="deckBuilderSavePilot" name="pilot" maxlength="60" placeholder="Seu nome ou apelido" autocomplete="name" /></label>
+          <div class="deck-save-form__actions"><button type="submit">Selar no arquivo</button><button type="button" id="deckBuilderSaveCancel">Cancelar</button></div>
+        </form>
+
+        <div class="deck-builder-columns">
+          <section class="deck-builder-zone deck-builder-zone--main" aria-labelledby="deckBuilderMainTitle">
+            <header><div><p class="eyebrow">Lista principal</p><h2 id="deckBuilderMainTitle">Main Deck</h2></div><span id="deckBuilderMainMeta">0 / 60 cartas</span></header>
+            <div class="deck-builder-empty" id="deckBuilderMainEmpty"><span aria-hidden="true">◇</span><p>As cartas adicionadas na biblioteca aparecem aqui.</p></div>
+            <ul class="deck-builder-list" id="deckBuilderMainList"></ul>
+          </section>
+
+          <section class="deck-builder-zone deck-builder-zone--sideboard" aria-labelledby="deckBuilderSideTitle">
+            <header><div><p class="eyebrow">Reserva da mesa</p><h2 id="deckBuilderSideTitle">Sideboard</h2></div><span id="deckBuilderSideMeta">0 cartas</span></header>
+            <div class="deck-builder-empty" id="deckBuilderSideEmpty"><span aria-hidden="true">◇</span><p>Mova cartas do Main Deck quando quiser deixá-las na reserva.</p></div>
+            <ul class="deck-builder-list" id="deckBuilderSideList"></ul>
+          </section>
+        </div>
+
+        <div class="deck-builder-footer-actions">
+          <a id="deckBuilderAddCardsBottom" href="/?tab=catalog">Adicionar mais cartas</a>
+          <button id="deckBuilderClear" type="button" disabled>Limpar deck</button>
+        </div>
       </section>
 
       <section class="archive" id="archiveSection" aria-labelledby="archiveTitle">
@@ -293,6 +342,12 @@
       </section>
     </main>
 
+    <button class="deck-builder-fab" id="deckBuilderFab" type="button" aria-label="Abrir Deck Builder com 0 cartas" hidden>
+      <span class="deck-builder-fab__icon" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="deck-builder-fab__copy"><strong>Deck</strong><small>Em construção</small></span>
+      <span class="deck-builder-fab__badge" id="deckBuilderFabCount">0</span>
+    </button>
+
     <footer class="site-footer">
       <p><strong>Projeto de fã, sem afiliação com a Wizards of the Coast.</strong> Magic: The Gathering e as artes das cartas pertencem a seus respectivos proprietários.</p>
       <div><a href="https://scryfall.com" target="_blank" rel="noreferrer">Dados e imagens via Scryfall ↗</a><span>·</span><span>Feito para uso da mesa</span></div>
@@ -429,7 +484,15 @@
       </div>
     </dialog>
 
+    <dialog id="deckBuilderClearModal" class="deck-builder-confirm" aria-labelledby="deckBuilderClearTitle">
+      <form method="dialog" class="deck-builder-confirm__shell">
+        <span class="deck-builder-confirm__seal" aria-hidden="true">!</span>
+        <div><p class="eyebrow">Ação irreversível</p><h2 id="deckBuilderClearTitle">Limpar todo o deck?</h2><p>Main Deck e Sideboard serão removidos deste aparelho.</p></div>
+        <div class="deck-builder-confirm__actions"><button value="cancel">Cancelar</button><button id="deckBuilderClearConfirm" value="confirm">Sim, limpar deck</button></div>
+      </form>
+    </dialog>
+
     <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
-    <script type="module" src="banlist.js?v=codex-44"></script>
+    <script type="module" src="banlist.js?v=codex-46"></script>
   </body>
 </html>
