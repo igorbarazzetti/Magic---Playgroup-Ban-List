@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armed%20and%20Armored",
     "checked_at": "2026-08-07T19:30:44.004Z"
   },
+  "3d783beb-9ca6-4681-9276-fc3ad13b993f": {
+    "status": "available",
+    "name": "Balefire Dragon",
+    "price_brl": 41.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad",
+    "printing_code": "ISD",
+    "collector_number": "129",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balefire%20Dragon",
+    "checked_at": "2026-08-08T15:06:37.795Z"
+  },
   "3d98a656-1737-486f-9b25-449b7c871d1f": {
     "status": "available",
     "name": "Aurification",
@@ -94,6 +106,18 @@
     "collector_number": "159",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abomination%20of%20Gudul",
     "checked_at": "2026-08-06T00:10:47.017Z"
+  },
+  "3db9bf7b-da4e-428f-aa5d-a0cd1afeb16c": {
+    "status": "available",
+    "name": "Backlash",
+    "price_brl": 2.8,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Invasão",
+    "printing_code": "IN",
+    "collector_number": "234",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Backlash",
+    "checked_at": "2026-08-08T14:57:57.447Z"
   },
   "3dce6c6c-599f-4e35-ae15-728c5e78dee1": {
     "status": "available",

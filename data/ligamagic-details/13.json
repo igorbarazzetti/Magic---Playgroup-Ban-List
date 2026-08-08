@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anathemancer",
     "checked_at": "2026-08-07T04:47:21.534Z"
   },
+  "1389c9fa-fec2-4212-a7aa-6dfb318dc202": {
+    "status": "available",
+    "name": "Bagel and Schmear",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel's Spider-Man",
+    "printing_code": "SPM",
+    "collector_number": "161",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bagel%20and%20Schmear",
+    "checked_at": "2026-08-08T15:01:08.054Z"
+  },
   "13a9b9fd-20fa-4734-9d95-3ab41ab9c7a0": {
     "status": "available",
     "name": "Ancestral Katana",

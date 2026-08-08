@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abundance",
     "checked_at": "2026-08-06T00:16:07.292Z"
   },
+  "ecd9a0a4-1dfa-4d91-8339-062e2be4e5d9": {
+    "status": "available",
+    "name": "Bakersbane Duo",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Bloomburrow",
+    "printing_code": "BLB",
+    "collector_number": "163",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bakersbane%20Duo",
+    "checked_at": "2026-08-08T15:01:57.712Z"
+  },
   "ecf1e378-d6bc-4ee0-800e-eb8a955d781f": {
     "status": "available",
     "name": "Aether Gust",

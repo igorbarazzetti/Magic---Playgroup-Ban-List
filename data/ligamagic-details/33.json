@@ -1,4 +1,16 @@
 {
+  "3354c3d3-5713-4139-beb2-4fa17f6b47d9": {
+    "status": "available",
+    "name": "Balduvian Shaman",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Era Glacial",
+    "printing_code": "IA",
+    "collector_number": "24",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balduvian%20Shaman",
+    "checked_at": "2026-08-08T15:05:57.762Z"
+  },
   "33598888-0367-4085-9415-f4e21da08354": {
     "status": "available",
     "name": "Armada Wurm",
@@ -34,5 +46,17 @@
     "collector_number": "19",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Felidar%20Guardian",
     "checked_at": "2026-08-05T20:06:10.590Z"
+  },
+  "33b401b1-cf94-4c7a-8a8a-426ac3d87bd0": {
+    "status": "available",
+    "name": "Baeloth Barrityl, Entertainer",
+    "price_brl": 40.7,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends: Batalha por Portal de Baldur",
+    "printing_code": "CLB",
+    "collector_number": "655",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baeloth%20Barrityl%2C%20Entertainer",
+    "checked_at": "2026-08-08T14:59:47.530Z"
   }
 }

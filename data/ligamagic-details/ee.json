@@ -23,6 +23,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Uro%2C%20Titan%20of%20Nature's%20Wrath",
     "checked_at": "2026-08-05T20:14:41.947Z"
   },
+  "ee35ed62-d5a2-4e65-a7eb-fcdcb3665532": {
+    "status": "available",
+    "name": "Balefire Liege",
+    "price_brl": 1.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven Commander",
+    "printing_code": "SOC",
+    "collector_number": "295",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balefire%20Liege",
+    "checked_at": "2026-08-08T15:06:47.746Z"
+  },
+  "ee3d21b9-58b4-480c-bae3-26de50f1a5c6": {
+    "status": "available",
+    "name": "Back for Seconds",
+    "price_brl": 0.18,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Selvagens de Eldraine",
+    "printing_code": "WOE",
+    "collector_number": "80",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Back%20for%20Seconds",
+    "checked_at": "2026-08-08T14:56:37.935Z"
+  },
   "ee496b34-d8e0-482a-a2c2-3122ea376da0": {
     "status": "available",
     "name": "Arcbound Crusher",

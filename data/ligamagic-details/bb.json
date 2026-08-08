@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Argothian%20Pixies",
     "checked_at": "2026-08-07T19:25:43.604Z"
   },
+  "bbf9fd47-10e1-4749-b06f-4fe72200afc7": {
+    "status": "available",
+    "name": "Azure Mage",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2014",
+    "printing_code": "C14",
+    "collector_number": "98",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azure%20Mage",
+    "checked_at": "2026-08-08T14:54:47.363Z"
+  },
   "bbfdb5eb-2140-4d50-a667-1b4ac75d03a5": {
     "status": "available",
     "name": "Azorius Skyguard",

@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apex%20Altisaur",
     "checked_at": "2026-08-07T11:14:36.547Z"
   },
+  "fc5d3341-cbce-49e5-93cc-8add92479dca": {
+    "status": "available",
+    "name": "Bad Moon",
+    "price_brl": 13.95,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2014",
+    "printing_code": "C14",
+    "collector_number": "135",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bad%20Moon",
+    "checked_at": "2026-08-08T14:59:07.524Z"
+  },
   "fc734a75-93bf-448b-b347-810ae835fe49": {
     "status": "available",
     "name": "Archangel's Light",
@@ -142,6 +154,18 @@
     "collector_number": "4",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Flock",
     "checked_at": "2026-08-08T09:16:10.380Z"
+  },
+  "fcf9057a-4975-4a7d-85f5-3fdc80942fcd": {
+    "status": "available",
+    "name": "Backdraft Hellkite",
+    "price_brl": 2.61,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2019",
+    "printing_code": "C19",
+    "collector_number": "23",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Backdraft%20Hellkite",
+    "checked_at": "2026-08-08T14:57:37.481Z"
   },
   "fcfcac6b-6d26-4ffe-ae9e-b0ee7fa49787": {
     "status": "available",

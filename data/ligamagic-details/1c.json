@@ -118,5 +118,17 @@
     "collector_number": "235",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Sojourner's%20Companion",
     "checked_at": "2026-08-05T20:12:44.654Z"
+  },
+  "1cfa9f7d-ef1f-4907-aeb1-15c0df33fccc": {
+    "status": "available",
+    "name": "Baleful Ammit",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Amonkhet",
+    "printing_code": "AKH",
+    "collector_number": "79",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baleful%20Ammit",
+    "checked_at": "2026-08-08T15:06:57.771Z"
   }
 }

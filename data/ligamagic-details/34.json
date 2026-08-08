@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Serra's%20Sanctum",
     "checked_at": "2026-08-05T20:12:29.562Z"
   },
+  "341a92b9-d6a0-499e-abb7-e2b7d7bc248c": {
+    "status": "available",
+    "name": "Baki's Curse",
+    "price_brl": 1.95,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Natais",
+    "printing_code": "HL",
+    "collector_number": "22",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baki's%20Curse",
+    "checked_at": "2026-08-08T15:02:07.608Z"
+  },
   "341f198b-beb6-4a44-af91-a64a5989c865": {
     "status": "available",
     "name": "Ajani, Wise Counselor",

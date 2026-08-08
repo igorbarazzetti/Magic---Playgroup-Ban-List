@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambush%20Wolf",
     "checked_at": "2026-08-07T04:38:41.182Z"
   },
+  "4c68282b-776f-463a-9652-f611538c53ee": {
+    "status": "available",
+    "name": "Balancing Act",
+    "price_brl": 9.95,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Odisséia",
+    "printing_code": "OD",
+    "collector_number": "10",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balancing%20Act",
+    "checked_at": "2026-08-08T15:03:37.640Z"
+  },
   "4c71074b-b8bf-47f4-87e4-67c275abdbc5": {
     "status": "available",
     "name": "Avarice Amulet",

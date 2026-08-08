@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Fall%20from%20Favor",
     "checked_at": "2026-08-05T20:06:01.568Z"
   },
+  "e8e15ab4-e4c7-4faf-b469-288451ddee02": {
+    "status": "available",
+    "name": "Ballad of the Black Flag",
+    "price_brl": 0.45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassin's Creed",
+    "printing_code": "ACR",
+    "collector_number": "13",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ballad%20of%20the%20Black%20Flag",
+    "checked_at": "2026-08-08T15:08:38.256Z"
+  },
   "e8ebf5cb-3a26-4bbd-812b-414c129e4bb7": {
     "status": "available",
     "name": "Abstruse Interference",

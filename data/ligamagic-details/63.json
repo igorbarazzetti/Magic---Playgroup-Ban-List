@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Sowing%20Mycospawn",
     "checked_at": "2026-08-05T20:12:57.145Z"
   },
+  "63c04040-e109-494e-baa6-c639a6c9a996": {
+    "status": "available",
+    "name": "Bag of Holding",
+    "price_brl": 0.17,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Adventures in the Forgotten Realms",
+    "printing_code": "AFR",
+    "collector_number": "240",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bag%20of%20Holding",
+    "checked_at": "2026-08-08T15:00:47.575Z"
+  },
   "63c1eda1-3e6f-4e9c-adf3-a43164df98bb": {
     "status": "available",
     "name": "Ankh of Mishra",

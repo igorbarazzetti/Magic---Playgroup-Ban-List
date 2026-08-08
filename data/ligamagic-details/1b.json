@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aragorn%2C%20Company%20Leader",
     "checked_at": "2026-08-07T11:26:07.055Z"
   },
+  "1b9ec782-0ba1-41f1-bc39-d3302494ecb3": {
+    "status": "available",
+    "name": "Bake into a Pie",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Foundations",
+    "printing_code": "FDN",
+    "collector_number": "169",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bake%20into%20a%20Pie",
+    "checked_at": "2026-08-08T15:01:47.653Z"
+  },
   "1bc42024-52da-4d93-8b47-544f0a4a72a1": {
     "status": "available",
     "name": "Astral Cornucopia",
@@ -46,6 +58,30 @@
     "collector_number": "201",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ash%2C%20Party%20Crasher",
     "checked_at": "2026-08-07T21:15:39.179Z"
+  },
+  "1bc7d73b-0f54-4807-b13a-3def0c5e5616": {
+    "status": "available",
+    "name": "Balduvian Rage",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Double Masters",
+    "printing_code": "2XM",
+    "collector_number": "115",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balduvian%20Rage",
+    "checked_at": "2026-08-08T15:05:47.712Z"
+  },
+  "1bda7f60-f986-455b-9d56-bbd494e27c17": {
+    "status": "available",
+    "name": "Balduvian War-Makers",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alianças",
+    "printing_code": "AI",
+    "collector_number": "97",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balduvian%20War-Makers",
+    "checked_at": "2026-08-08T15:06:17.774Z"
   },
   "1be4bb28-6ad7-4df9-98b7-fa32061e7a95": {
     "status": "available",

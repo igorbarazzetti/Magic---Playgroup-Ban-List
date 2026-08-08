@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assault%20on%20Osgiliath",
     "checked_at": "2026-08-08T02:47:31.969Z"
   },
+  "d2aecca6-fe03-4686-9daa-68f1f6c73ab4": {
+    "status": "available",
+    "name": "Backwoods Survivalists",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lua Arcana",
+    "printing_code": "EMN",
+    "collector_number": "150",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Backwoods%20Survivalists",
+    "checked_at": "2026-08-08T14:58:37.520Z"
+  },
   "d2e0d739-b441-4173-a8f1-b831a19ea98e": {
     "status": "available",
     "name": "Agent of Shauku",

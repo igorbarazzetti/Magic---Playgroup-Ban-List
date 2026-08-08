@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Daze",
     "checked_at": "2026-08-05T20:04:52.434Z"
   },
+  "704aaf92-590f-46d3-8b39-4ab84e1c766d": {
+    "status": "available",
+    "name": "Back from the Brink",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad",
+    "printing_code": "ISD",
+    "collector_number": "44",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Back%20from%20the%20Brink",
+    "checked_at": "2026-08-08T14:56:47.550Z"
+  },
   "70564c3a-858f-498e-8b92-acb3ca54ae7e": {
     "status": "available",
     "name": "Aang, the Last Airbender",

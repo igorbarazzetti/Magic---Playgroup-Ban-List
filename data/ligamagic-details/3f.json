@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ace's%20Baseball%20Bat",
     "checked_at": "2026-08-06T03:52:21.850Z"
   },
+  "3f60a7ce-c714-4e87-a2d9-3710f2d610fa": {
+    "status": "available",
+    "name": "Balduvian Fallen",
+    "price_brl": 0.17,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Frente Fria",
+    "printing_code": "CS",
+    "collector_number": "51",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balduvian%20Fallen",
+    "checked_at": "2026-08-08T15:05:08.115Z"
+  },
   "3f60de36-ed63-4d08-a012-fc16e91da46d": {
     "status": "available",
     "name": "Alexi, Zephyr Mage",
@@ -70,6 +82,18 @@
     "collector_number": "28",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alexi%2C%20Zephyr%20Mage",
     "checked_at": "2026-08-06T18:17:57.814Z"
+  },
+  "3f678f76-3863-4ab5-a4fd-9b76a282b1a8": {
+    "status": "available",
+    "name": "Balamb T-Rexaur",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY",
+    "printing_code": "FIN",
+    "collector_number": "173",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balamb%20T-Rexaur",
+    "checked_at": "2026-08-08T15:03:07.633Z"
   },
   "3f806353-592e-431c-a7dd-a4c64034f94d": {
     "status": "available",

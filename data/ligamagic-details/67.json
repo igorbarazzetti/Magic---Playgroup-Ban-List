@@ -1,4 +1,16 @@
 {
+  "670df8be-21cd-49d8-92e3-d7cc38b256d6": {
+    "status": "available",
+    "name": "Back for More",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ikoria: Terra de Colossos",
+    "printing_code": "IKO",
+    "collector_number": "177",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Back%20for%20More",
+    "checked_at": "2026-08-08T14:56:27.438Z"
+  },
   "674c34eb-1080-4811-8f2a-5006e08d98b8": {
     "status": "available",
     "name": "Aerie Worshippers",

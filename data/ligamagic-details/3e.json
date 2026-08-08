@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Artisan%20of%20Forms",
     "checked_at": "2026-08-07T21:10:48.989Z"
   },
+  "3eb21641-90e1-4865-b7be-a21d52b7b56b": {
+    "status": "available",
+    "name": "Balduvian Conjurer",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Era Glacial",
+    "printing_code": "IA",
+    "collector_number": "22",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balduvian%20Conjurer",
+    "checked_at": "2026-08-08T15:04:47.706Z"
+  },
   "3ebbe05c-7cc4-4845-87e5-ab93d7ac9623": {
     "status": "available",
     "name": "Aysen Crusader",

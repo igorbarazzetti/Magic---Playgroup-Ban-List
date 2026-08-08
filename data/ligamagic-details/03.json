@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Appa%2C%20Steadfast%20Guardian",
     "checked_at": "2026-08-07T11:19:06.715Z"
   },
+  "03c35670-84ac-4825-b395-cefb76ceb89a": {
+    "status": "available",
+    "name": "Baffling End",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Rivais de Ixalan",
+    "printing_code": "RIX",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baffling%20End",
+    "checked_at": "2026-08-08T14:59:57.547Z"
+  },
   "03f5946b-e000-4b39-a49f-1c31668b51bd": {
     "status": "available",
     "name": "Autumn's Veil",

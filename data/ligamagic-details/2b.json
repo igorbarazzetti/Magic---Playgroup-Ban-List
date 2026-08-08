@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Allied%20Reinforcements",
     "checked_at": "2026-08-07T00:36:14.716Z"
   },
+  "2bc5b68d-8c2e-42e8-a4c3-e3970d018aaa": {
+    "status": "available",
+    "name": "B-I-N-G-O",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unsanctioned",
+    "printing_code": "UND",
+    "collector_number": "61",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=B-I-N-G-O",
+    "checked_at": "2026-08-08T14:55:27.362Z"
+  },
   "2bcc9f11-5b12-433e-9680-0f4b18aa521c": {
     "status": "available",
     "name": "Ambrosia Whiteheart",

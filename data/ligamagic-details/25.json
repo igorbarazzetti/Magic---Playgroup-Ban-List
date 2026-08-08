@@ -1,4 +1,16 @@
 {
+  "2522a9dd-bcf3-4b84-abff-52b9e6dbde34": {
+    "status": "available",
+    "name": "Bag End Banquet",
+    "price_brl": 79.88,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "The Hobbit Eternal (Scene Card)",
+    "printing_code": "SCHOC",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bag%20End%20Banquet",
+    "checked_at": "2026-08-08T15:00:17.539Z"
+  },
   "252d9b25-45a1-40ca-b563-4cdefc791a44": {
     "status": "available",
     "name": "Allure of the Unknown",
@@ -94,6 +106,18 @@
     "collector_number": "237",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani%2C%20Nacatl%20Pariah",
     "checked_at": "2026-08-06T14:50:12.018Z"
+  },
+  "259fc423-d078-4668-9e95-8c1a0d2e49ba": {
+    "status": "available",
+    "name": "Bad River",
+    "price_brl": 3.17,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Miragem",
+    "printing_code": "MR",
+    "collector_number": "17",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bad%20River",
+    "checked_at": "2026-08-08T14:59:17.514Z"
   },
   "25c8a3b0-c393-4fc6-a373-808cd8e9850c": {
     "status": "available",

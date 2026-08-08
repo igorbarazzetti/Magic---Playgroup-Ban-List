@@ -82,5 +82,17 @@
     "collector_number": "114",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archweaver",
     "checked_at": "2026-08-07T17:22:54.493Z"
+  },
+  "2cff1f9e-11a6-460c-8f5f-4c02424357e3": {
+    "status": "available",
+    "name": "Balduvian Frostwaker",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Frente Fria",
+    "printing_code": "CS",
+    "collector_number": "28",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balduvian%20Frostwaker",
+    "checked_at": "2026-08-08T15:05:17.720Z"
   }
 }

@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auspicious%20Starrix",
     "checked_at": "2026-08-08T09:05:50.062Z"
   },
+  "8443b8c2-d0ab-4fb1-ad35-7e5e4cb345b6": {
+    "status": "available",
+    "name": "Baku Altar",
+    "price_brl": 0.85,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Traidores de Kamigawa",
+    "printing_code": "BOK",
+    "collector_number": "152",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baku%20Altar",
+    "checked_at": "2026-08-08T15:02:17.627Z"
+  },
   "84587724-af96-4396-a0b3-1133d492d915": {
     "status": "available",
     "name": "Atalya, Samite Master",

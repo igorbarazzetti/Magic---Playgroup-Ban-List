@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agate%20Assault",
     "checked_at": "2026-08-06T11:08:34.061Z"
   },
+  "7bb51602-60e8-4730-b11c-2870d6b42e20": {
+    "status": "available",
+    "name": "Azure Beastbinder",
+    "price_brl": 10.72,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Bloomburrow",
+    "printing_code": "BLB",
+    "collector_number": "41",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azure%20Beastbinder",
+    "checked_at": "2026-08-08T14:54:17.344Z"
+  },
   "7bf8bb41-6f46-492c-b6cf-5cfb29f973a4": {
     "status": "available",
     "name": "Apothecary White",

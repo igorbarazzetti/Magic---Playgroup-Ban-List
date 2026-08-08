@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerial%20Doombot",
     "checked_at": "2026-08-06T07:16:45.629Z"
   },
+  "f26fa9e4-f528-4e22-8f7c-329fc3b633e4": {
+    "status": "available",
+    "name": "Baleful Force",
+    "price_brl": 3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2013",
+    "printing_code": "C13",
+    "collector_number": "70",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baleful%20Force",
+    "checked_at": "2026-08-08T15:07:27.756Z"
+  },
   "f2cedb38-12b0-4489-a62b-9b6a3776d695": {
     "status": "available",
     "name": "Arnjlot's Ascent",

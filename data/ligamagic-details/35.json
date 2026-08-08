@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armor%20Thrull",
     "checked_at": "2026-08-07T19:32:53.918Z"
   },
+  "354d9db1-18a6-4701-be3c-c4ded900e2ff": {
+    "status": "available",
+    "name": "Backstreet Bruiser",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ruas de Nova Capenna",
+    "printing_code": "SNC",
+    "collector_number": "35",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Backstreet%20Bruiser",
+    "checked_at": "2026-08-08T14:58:17.478Z"
+  },
   "354fecd1-2371-49e3-81c6-7e47728dbb1f": {
     "status": "available",
     "name": "Akoum Refuge",

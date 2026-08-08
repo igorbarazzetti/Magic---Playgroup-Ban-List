@@ -82,5 +82,17 @@
     "collector_number": "119",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abzan%20Beastmaster",
     "checked_at": "2026-08-06T03:45:31.622Z"
+  },
+  "aaf46eaf-2e01-46ac-b79d-6b70739d11c2": {
+    "status": "available",
+    "name": "Back on Track",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Aetherdrift",
+    "printing_code": "DFT",
+    "collector_number": "76",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Back%20on%20Track",
+    "checked_at": "2026-08-08T14:57:07.995Z"
   }
 }

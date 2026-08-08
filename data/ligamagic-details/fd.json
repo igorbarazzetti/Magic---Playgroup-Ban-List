@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anurid%20Swarmsnapper",
     "checked_at": "2026-08-07T11:13:16.555Z"
   },
+  "fd2a94d3-901d-4b46-aa9b-a30ed6dea6bd": {
+    "status": "available",
+    "name": "Balduvian Horde",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Masters 25",
+    "printing_code": "A25",
+    "collector_number": "120",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balduvian%20Horde",
+    "checked_at": "2026-08-08T15:05:27.755Z"
+  },
   "fd6ffa00-170b-46d2-810a-f255de62b9d7": {
     "status": "available",
     "name": "Arcbound Lancer",

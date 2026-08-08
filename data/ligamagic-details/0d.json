@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armored%20Scrapgorger",
     "checked_at": "2026-08-07T19:34:44.025Z"
   },
+  "0d420e41-43e9-41d6-832c-5a9f410c994e": {
+    "status": "available",
+    "name": "Balin, Loremaster",
+    "price_brl": 14.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "The Hobbit",
+    "printing_code": "HOB",
+    "collector_number": "87",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balin%2C%20Loremaster",
+    "checked_at": "2026-08-08T15:08:17.930Z"
+  },
   "0d6b89dc-23fb-48e9-a54b-cea2838ae7c8": {
     "status": "available",
     "name": "Grief",
@@ -58,5 +70,17 @@
     "collector_number": "168",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Argothian%20Sprite",
     "checked_at": "2026-08-07T19:25:53.621Z"
+  },
+  "0dcd13ab-37f9-4d66-8227-1e72d920f297": {
+    "status": "available",
+    "name": "Balduvian Atrocity",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominária Unida",
+    "printing_code": "DMU",
+    "collector_number": "79",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balduvian%20Atrocity",
+    "checked_at": "2026-08-08T15:04:07.683Z"
   }
 }

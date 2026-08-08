@@ -1,4 +1,16 @@
 {
+  "3a020ae9-279b-4c6c-8d3d-90d7b335fa3c": {
+    "status": "available",
+    "name": "Bala Ged Thief",
+    "price_brl": 0.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Zendikar",
+    "printing_code": "ZEN",
+    "collector_number": "79",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bala%20Ged%20Thief",
+    "checked_at": "2026-08-08T15:02:47.628Z"
+  },
   "3a0dd318-9523-4740-b0aa-a911032e3851": {
     "status": "available",
     "name": "Aether Tradewinds",
@@ -58,6 +70,18 @@
     "collector_number": "35",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aegis%20Sculptor",
     "checked_at": "2026-08-06T07:15:14.930Z"
+  },
+  "3a7b1d1c-1724-4208-943b-650a5d773653": {
+    "status": "available",
+    "name": "Balduvian Berserker",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominária Unida",
+    "printing_code": "DMU",
+    "collector_number": "116",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balduvian%20Berserker",
+    "checked_at": "2026-08-08T15:04:37.692Z"
   },
   "3a7fe095-8278-4b1d-bec4-19b35bdcdd1b": {
     "status": "available",

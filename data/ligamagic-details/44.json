@@ -1,4 +1,16 @@
 {
+  "4443345d-a292-4394-97dd-0e6f4d9aedf7": {
+    "status": "available",
+    "name": "Bag of Devouring",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Forgotten Realms Commander",
+    "printing_code": "AFC",
+    "collector_number": "21",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bag%20of%20Devouring",
+    "checked_at": "2026-08-08T15:00:37.540Z"
+  },
   "445bb343-9758-459b-970f-47f1705f1e55": {
     "status": "available",
     "name": "Armored Cancrix",

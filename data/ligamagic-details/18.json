@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Air%20Response%20Unit",
     "checked_at": "2026-08-06T14:46:51.909Z"
   },
+  "18d6b89a-3588-43d9-a247-4747a7d784fc": {
+    "status": "available",
+    "name": "Balduvian Dead",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Coldsnap Theme Decks",
+    "printing_code": "CSTD",
+    "collector_number": "21",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balduvian%20Dead",
+    "checked_at": "2026-08-08T15:04:57.671Z"
+  },
   "18e96674-6fd8-4046-a3fe-7ba80138d85d": {
     "status": "available",
     "name": "Alarum",

@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Ooze",
     "checked_at": "2026-08-07T07:50:46.503Z"
   },
+  "2084a7f6-226b-4fb4-a30e-703f674d33b4": {
+    "status": "available",
+    "name": "Badgermole",
+    "price_brl": 0.12,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Avatar: The Last Airbender",
+    "printing_code": "TLA",
+    "collector_number": "166",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Badgermole",
+    "checked_at": "2026-08-08T14:59:27.526Z"
+  },
   "20f7f33d-0c49-49f7-80fa-aed86e33a528": {
     "status": "available",
     "name": "Hold the Perimeter",

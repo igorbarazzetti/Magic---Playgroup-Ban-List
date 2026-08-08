@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Afflict",
     "checked_at": "2026-08-06T11:06:43.936Z"
   },
+  "47258c3e-b4a7-466d-9464-3924f75d9293": {
+    "status": "available",
+    "name": "Bad Deal",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2021",
+    "printing_code": "M21",
+    "collector_number": "89",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bad%20Deal",
+    "checked_at": "2026-08-08T14:58:57.485Z"
+  },
   "4728e320-d29b-4019-8ab5-e45319c77c40": {
     "status": "available",
     "name": "Anticognition",

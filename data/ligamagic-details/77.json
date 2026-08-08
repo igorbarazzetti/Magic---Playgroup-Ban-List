@@ -1,4 +1,16 @@
 {
+  "77014a94-650a-46e4-8d62-abbd31ee5b99": {
+    "status": "available",
+    "name": "Bad Ass",
+    "price_brl": 0.33,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unhinged",
+    "printing_code": "UH",
+    "collector_number": "49",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bad%20Ass",
+    "checked_at": "2026-08-08T14:58:47.477Z"
+  },
   "7744bae4-a8b7-44a5-9b4c-0048ad4cc448": {
     "status": "available",
     "name": "Air Elemental",

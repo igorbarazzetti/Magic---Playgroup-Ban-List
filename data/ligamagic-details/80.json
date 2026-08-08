@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assault%20Zeppelid",
     "checked_at": "2026-08-08T02:48:02.410Z"
   },
+  "80734bb0-5032-4355-9304-49f4a4557aba": {
+    "status": "available",
+    "name": "Backdraft",
+    "price_brl": 25.71,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Legends",
+    "printing_code": "LG",
+    "collector_number": "24",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Backdraft",
+    "checked_at": "2026-08-08T14:57:27.835Z"
+  },
   "80788ac7-19d6-42d2-9f6e-676d7b5c912e": {
     "status": "available",
     "name": "Astral Confrontation",

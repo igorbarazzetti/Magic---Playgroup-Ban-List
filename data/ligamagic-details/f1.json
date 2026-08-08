@@ -1,4 +1,16 @@
 {
+  "f14ce7d7-6cfa-4f88-a381-d6e912c18b5d": {
+    "status": "available",
+    "name": "Bag of Tricks",
+    "price_brl": 0.61,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Forgotten Realms Commander",
+    "printing_code": "AFC",
+    "collector_number": "37",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bag%20of%20Tricks",
+    "checked_at": "2026-08-08T15:00:57.539Z"
+  },
   "f15460d9-0133-436c-b0fe-1661989124f0": {
     "status": "available",
     "name": "All-Seeing Arbiter",

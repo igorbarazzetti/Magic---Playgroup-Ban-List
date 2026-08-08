@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambush%20Commander",
     "checked_at": "2026-08-07T04:37:41.149Z"
   },
+  "e7645ac4-6e05-426a-a62d-a33b30c33102": {
+    "status": "available",
+    "name": "Baleful Beholder",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Adventures in the Forgotten Realms (Variantes)",
+    "printing_code": "CBAFR",
+    "collector_number": "311",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baleful%20Beholder",
+    "checked_at": "2026-08-08T15:07:08.260Z"
+  },
   "e766a5eb-684b-4939-b164-6093d15600c9": {
     "status": "available",
     "name": "Amphin Cutthroat",

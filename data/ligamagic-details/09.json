@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angrath%2C%20the%20Flame-Chained",
     "checked_at": "2026-08-07T09:22:46.029Z"
   },
+  "0930a976-f69e-44a8-8b19-72095f20ed13": {
+    "status": "available",
+    "name": "Baleful Eidolon",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros",
+    "printing_code": "THS",
+    "collector_number": "78",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baleful%20Eidolon",
+    "checked_at": "2026-08-08T15:07:17.804Z"
+  },
   "09496421-74e4-466a-9546-56f2a0c8eef4": {
     "status": "available",
     "name": "Vault of Whispers",

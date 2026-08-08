@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assembly-Worker",
     "checked_at": "2026-08-08T02:49:22.407Z"
   },
+  "753b4258-bc1d-47f4-b994-356507b0816a": {
+    "status": "available",
+    "name": "Bala Ged Scorpion",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Iconic Masters",
+    "printing_code": "IMA",
+    "collector_number": "79",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bala%20Ged%20Scorpion",
+    "checked_at": "2026-08-08T15:02:37.670Z"
+  },
   "753ead8c-f3f8-42fe-931d-79f5ee3ece54": {
     "status": "available",
     "name": "Aberrant Mind Sorcerer",

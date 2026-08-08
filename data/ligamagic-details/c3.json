@@ -1,4 +1,16 @@
 {
+  "c33af24f-3371-4af9-af33-940078d3cef2": {
+    "status": "available",
+    "name": "B.O.B. (Bevy of Beebles)",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unsanctioned",
+    "printing_code": "UND",
+    "collector_number": "18",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=B.O.B.%20(Bevy%20of%20Beebles)",
+    "checked_at": "2026-08-08T14:55:37.386Z"
+  },
   "c37537ae-616a-41e4-890c-f4b9475dbf31": {
     "status": "available",
     "name": "Ana Battlemage",

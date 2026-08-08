@@ -1,4 +1,16 @@
 {
+  "a511772c-3739-469d-a5a2-5827b7ce9b5c": {
+    "status": "available",
+    "name": "Balemurk Leech",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Noctumbra: A Casa dos Horrores",
+    "printing_code": "DSK",
+    "collector_number": "84",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balemurk%20Leech",
+    "checked_at": "2026-08-08T15:08:07.813Z"
+  },
   "a5458de0-0f61-49a3-a013-d90f92559809": {
     "status": "available",
     "name": "Archetype of Imagination",

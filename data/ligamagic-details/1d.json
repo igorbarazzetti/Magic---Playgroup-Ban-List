@@ -1,4 +1,16 @@
 {
+  "1d078108-f88c-4a32-a28f-bae5182b2f53": {
+    "status": "available",
+    "name": "Baird, Argivian Recruiter",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominária Unida",
+    "printing_code": "DMU",
+    "collector_number": "195",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baird%2C%20Argivian%20Recruiter",
+    "checked_at": "2026-08-08T15:01:17.593Z"
+  },
   "1d4e7422-2e26-49ce-beef-08f61583089a": {
     "status": "available",
     "name": "Armasaur Guide",

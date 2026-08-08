@@ -118,5 +118,17 @@
     "collector_number": "59",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Jeweled%20Bird",
     "checked_at": "2026-08-05T20:08:38.106Z"
+  },
+  "89f96032-5cba-404d-82b0-38d2be963e4b": {
+    "status": "available",
+    "name": "Azula, On the Hunt",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Avatar: The Last Airbender",
+    "printing_code": "TLA",
+    "collector_number": "85",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azula%2C%20On%20the%20Hunt",
+    "checked_at": "2026-08-08T14:53:57.349Z"
   }
 }

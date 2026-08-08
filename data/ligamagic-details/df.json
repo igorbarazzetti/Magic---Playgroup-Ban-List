@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avacynian%20Priest",
     "checked_at": "2026-08-08T09:09:50.159Z"
   },
+  "df9a3fe0-aca8-4adb-9ef6-45616025925b": {
+    "status": "available",
+    "name": "Backup Agent",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ruas de Nova Capenna",
+    "printing_code": "SNC",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Backup%20Agent",
+    "checked_at": "2026-08-08T14:58:27.523Z"
+  },
   "df9cdc11-cb92-46ce-a83d-eb26e3cd004a": {
     "status": "available",
     "name": "Another Chance",
