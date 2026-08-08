@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=All-Fates%20Stalker",
     "checked_at": "2026-08-07T00:33:55.188Z"
   },
+  "daa47749-7a20-4e64-b476-a44eaeb4d844": {
+    "status": "available",
+    "name": "Bane's Invoker",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends: Batalha por Portal de Baldur",
+    "printing_code": "CLB",
+    "collector_number": "7",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bane's%20Invoker",
+    "checked_at": "2026-08-08T17:04:37.223Z"
+  },
   "dad0b69f-ef33-475b-aebc-3a3ca880feb1": {
     "status": "available",
     "name": "Artillery Blast",

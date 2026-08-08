@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ardent%20Electromancer",
     "checked_at": "2026-08-07T17:26:14.651Z"
   },
+  "438546b8-0b67-4bec-a43b-f2fc7449c90e": {
+    "status": "available",
+    "name": "Banshee",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Chronicles",
+    "printing_code": "CH",
+    "collector_number": "14",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Banshee",
+    "checked_at": "2026-08-08T17:08:47.703Z"
+  },
   "43ace4d5-9006-4bad-bd17-3d368c20564d": {
     "status": "available",
     "name": "Aerie Bowmasters",

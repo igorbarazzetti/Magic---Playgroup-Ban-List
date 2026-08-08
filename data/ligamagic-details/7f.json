@@ -1,4 +1,16 @@
 {
+  "7f2579ef-0422-4cb1-a0f8-6ad0d942515b": {
+    "status": "available",
+    "name": "Banquet Guests",
+    "price_brl": 5.6,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Contos da Terra Média Commander",
+    "printing_code": "LTC",
+    "collector_number": "47",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Banquet%20Guests",
+    "checked_at": "2026-08-08T17:08:37.326Z"
+  },
   "7f715f72-5444-4ab3-a6ca-3d5bfd0d4851": {
     "status": "available",
     "name": "Airborne Aid",
@@ -22,6 +34,18 @@
     "collector_number": "170",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auto-Key",
     "checked_at": "2026-08-08T09:06:40.053Z"
+  },
+  "7f9bc0c9-0333-4c02-bc14-e6affe848b5d": {
+    "status": "available",
+    "name": "Baloth Gorger",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominaria",
+    "printing_code": "DOM",
+    "collector_number": "156",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baloth%20Gorger",
+    "checked_at": "2026-08-08T17:00:17.075Z"
   },
   "7f9d5219-0306-4c39-8640-dcb4314042de": {
     "status": "available",

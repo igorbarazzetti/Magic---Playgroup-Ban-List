@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arashi%2C%20the%20Sky%20Asunder",
     "checked_at": "2026-08-07T11:27:07.101Z"
   },
+  "928a7fbc-ba34-42a9-947e-0f3bf1cba152": {
+    "status": "available",
+    "name": "Balshan Beguiler",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Odisséia",
+    "printing_code": "OD",
+    "collector_number": "66",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balshan%20Beguiler",
+    "checked_at": "2026-08-08T17:01:07.033Z"
+  },
   "92b617f9-6e6b-42a0-9c45-6ff5f6193051": {
     "status": "available",
     "name": "Aang's Defense",
@@ -94,6 +106,18 @@
     "collector_number": "5",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerial%20Surveyor",
     "checked_at": "2026-08-06T07:18:15.602Z"
+  },
+  "92d8b956-87db-43e4-bbb5-436ba01b5714": {
+    "status": "available",
+    "name": "Bant Battlemage",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fragmentos de Alara",
+    "printing_code": "ALA",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bant%20Battlemage",
+    "checked_at": "2026-08-08T17:09:17.336Z"
   },
   "92de7cf0-ac3e-46ae-86b2-7d8ebb0276e4": {
     "status": "available",

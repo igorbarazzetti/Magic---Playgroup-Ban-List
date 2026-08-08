@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Absorbing%20Man",
     "checked_at": "2026-08-06T00:13:57.187Z"
   },
+  "eca9cb24-4dc8-48eb-b055-5fdf7c67bd43": {
+    "status": "available",
+    "name": "Barbarian Horde",
+    "price_brl": 11,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portal Three Kingdoms",
+    "printing_code": "P3K",
+    "collector_number": "101",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbarian%20Horde",
+    "checked_at": "2026-08-08T17:11:57.464Z"
+  },
   "ecb81888-589b-4486-a444-e0c26384854e": {
     "status": "available",
     "name": "Avatar Destiny",

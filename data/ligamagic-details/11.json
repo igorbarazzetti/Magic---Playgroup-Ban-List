@@ -1,4 +1,16 @@
 {
+  "1134eea5-e931-4cb2-9e30-64c227386d43": {
+    "status": "available",
+    "name": "Bane Alley Blackguard",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Labirinto do Dragão",
+    "printing_code": "DGM",
+    "collector_number": "21",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bane%20Alley%20Blackguard",
+    "checked_at": "2026-08-08T17:03:27.136Z"
+  },
   "115fd5ac-460b-49a3-83ed-9d56a7aecb14": {
     "status": "available",
     "name": "Artisan's Sorrow",
@@ -82,5 +94,17 @@
     "collector_number": "184",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agrus%20Kos%2C%20Spirit%20of%20Justice",
     "checked_at": "2026-08-06T14:43:01.753Z"
+  },
+  "11f55ec5-b9a3-4670-8afb-31d29478fb59": {
+    "status": "available",
+    "name": "Bar the Gate",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Adventures in the Forgotten Realms",
+    "printing_code": "AFR",
+    "collector_number": "47",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bar%20the%20Gate",
+    "checked_at": "2026-08-08T17:10:27.539Z"
   }
 }

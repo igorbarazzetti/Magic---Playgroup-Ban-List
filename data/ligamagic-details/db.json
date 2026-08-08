@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aphotic%20Wisps",
     "checked_at": "2026-08-07T11:16:36.635Z"
   },
+  "dba3dcc1-2177-4a8c-8cf3-7d4fb83c7a16": {
+    "status": "available",
+    "name": "Baloth Prime",
+    "price_brl": 1.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Edge of Eternities Commander",
+    "printing_code": "EOC",
+    "collector_number": "13",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baloth%20Prime",
+    "checked_at": "2026-08-08T17:00:37.069Z"
+  },
   "dba4fd31-8931-42dd-bd86-45479c2abf74": {
     "status": "available",
     "name": "Tolarian Academy",

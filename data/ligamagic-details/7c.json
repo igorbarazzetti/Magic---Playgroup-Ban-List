@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Altered%20Ego",
     "checked_at": "2026-08-07T00:46:15.124Z"
   },
+  "7c415180-c179-474b-8c58-e7096bd2c763": {
+    "status": "available",
+    "name": "Ballynock Cohort",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Eternal Masters",
+    "printing_code": "EMA",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ballynock%20Cohort",
+    "checked_at": "2026-08-08T16:59:07.491Z"
+  },
   "7c427c3d-ecd8-45ef-bebd-8f10f4a311db": {
     "status": "available",
     "name": "Gaea's Cradle",
@@ -106,5 +118,17 @@
     "collector_number": "201",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arni%20Slays%20the%20Troll",
     "checked_at": "2026-08-07T21:04:18.689Z"
+  },
+  "7cdbc115-cb15-4ada-8229-d40f0b22dd27": {
+    "status": "available",
+    "name": "Balshan Collaborator",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tormento",
+    "printing_code": "TR",
+    "collector_number": "25",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balshan%20Collaborator",
+    "checked_at": "2026-08-08T17:01:17.210Z"
   }
 }

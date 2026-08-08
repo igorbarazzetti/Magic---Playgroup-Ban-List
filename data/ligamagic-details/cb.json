@@ -1,4 +1,16 @@
 {
+  "cb06cf58-3cc6-429a-9bb0-be4b1c53de30": {
+    "status": "available",
+    "name": "Baloth Pup",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Juramento das Sentinelas",
+    "printing_code": "OGW",
+    "collector_number": "127",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baloth%20Pup",
+    "checked_at": "2026-08-08T17:00:47.175Z"
+  },
   "cb50ec2e-cb27-4ee5-a7de-64ab93619cea": {
     "status": "available",
     "name": "Awe for the Guilds",
@@ -34,6 +46,18 @@
     "collector_number": "149",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Airtight%20Alibi",
     "checked_at": "2026-08-06T14:48:42.017Z"
+  },
+  "cb91e842-9f06-4863-a328-2cabe1bcfe27": {
+    "status": "available",
+    "name": "Ballroom",
+    "price_brl": 3.56,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ravnica: Clue Edition",
+    "printing_code": "CLU",
+    "collector_number": "12",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ballroom",
+    "checked_at": "2026-08-08T16:58:36.959Z"
   },
   "cba0eae3-73ea-4ea9-87bf-1015e490da90": {
     "status": "available",

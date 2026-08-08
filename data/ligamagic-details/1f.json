@@ -1,4 +1,16 @@
 {
+  "1f18e63d-ab1f-426c-afd5-ce89433394ca": {
+    "status": "available",
+    "name": "Banish into Fable",
+    "price_brl": 0.26,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Trono de Eldraine",
+    "printing_code": "ELD",
+    "collector_number": "325",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Banish%20into%20Fable",
+    "checked_at": "2026-08-08T17:06:07.237Z"
+  },
   "1f1ad44c-1811-40e3-976b-03f19866abd5": {
     "status": "available",
     "name": "Assemble the Entmoot",

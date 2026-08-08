@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amazing%20Alliance",
     "checked_at": "2026-08-07T00:47:45.225Z"
   },
+  "5a88f616-986d-4e97-9457-26c783489123": {
+    "status": "available",
+    "name": "Barbarian Bully",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Julgamento",
+    "printing_code": "JU",
+    "collector_number": "79",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbarian%20Bully",
+    "checked_at": "2026-08-08T17:11:27.424Z"
+  },
   "5a898412-5b1e-4217-ac78-5b4099ed8e16": {
     "status": "available",
     "name": "Angelic Ascension",

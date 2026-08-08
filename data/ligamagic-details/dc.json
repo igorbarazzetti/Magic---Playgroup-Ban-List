@@ -1,4 +1,16 @@
 {
+  "dc1711cf-c62b-436b-ba35-56bef8ef14d0": {
+    "status": "available",
+    "name": "Baneful Omen",
+    "price_brl": 2.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ascensão dos Eldrazi",
+    "printing_code": "ROE",
+    "collector_number": "96",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baneful%20Omen",
+    "checked_at": "2026-08-08T17:05:07.344Z"
+  },
   "dc671205-f2fa-454f-9957-921a6069ad53": {
     "status": "available",
     "name": "High Tide",

@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=A.I.M.%20Synthoids",
     "checked_at": "2026-08-06T00:01:56.991Z"
   },
+  "10a66403-606d-4814-9583-50cdcd6976e0": {
+    "status": "available",
+    "name": "Bankrupt in Blood",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lealdade em Ravnica",
+    "printing_code": "RNA",
+    "collector_number": "62",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bankrupt%20in%20Blood",
+    "checked_at": "2026-08-08T17:07:47.382Z"
+  },
   "10ab3102-43a3-4c60-8641-2c5a7c1e29c2": {
     "status": "available",
     "name": "Akoum Firebird",
@@ -94,6 +106,18 @@
     "collector_number": "242",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Eye%20of%20Ugin",
     "checked_at": "2026-08-05T20:05:59.002Z"
+  },
+  "10f182a7-ffa3-4128-8b2e-e05b97f92e00": {
+    "status": "available",
+    "name": "Balloon Peddler",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Máscaras de Mercádia",
+    "printing_code": "MM",
+    "collector_number": "59",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balloon%20Peddler",
+    "checked_at": "2026-08-08T16:58:06.985Z"
   },
   "10fc2009-4212-47c6-8a97-ab0f45c1f91b": {
     "status": "available",

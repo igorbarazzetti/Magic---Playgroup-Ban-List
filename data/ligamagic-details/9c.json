@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amphibious%20Kavu",
     "checked_at": "2026-08-07T04:40:51.325Z"
   },
+  "9c9b3bf7-afb7-4e9b-bdbc-e2b4d5ba477f": {
+    "status": "available",
+    "name": "Banishment",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends: Batalha por Portal de Baldur",
+    "printing_code": "CLB",
+    "collector_number": "8",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Banishment",
+    "checked_at": "2026-08-08T17:07:27.272Z"
+  },
   "9cc69ea5-42a2-4306-ac6d-cff5adb20bcb": {
     "status": "available",
     "name": "Ashcoat of the Shadow Swarm",

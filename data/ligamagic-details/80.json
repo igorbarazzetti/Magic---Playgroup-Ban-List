@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Astral%20Confrontation",
     "checked_at": "2026-08-08T02:51:22.442Z"
   },
+  "8089c3eb-99a8-40ca-882a-c1d4e30075ee": {
+    "status": "available",
+    "name": "Bane's Contingency",
+    "price_brl": 0.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends: Batalha por Portal de Baldur",
+    "printing_code": "CLB",
+    "collector_number": "57",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bane's%20Contingency",
+    "checked_at": "2026-08-08T17:04:27.179Z"
+  },
   "8095ca78-db19-4724-a6ff-eacc85fa2274": {
     "status": "available",
     "name": "Another Round",

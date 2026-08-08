@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Initiate",
     "checked_at": "2026-08-08T09:16:50.374Z"
   },
+  "c87dff29-fa4c-44f4-9de6-d85a347c1720": {
+    "status": "available",
+    "name": "Ballroom Brawlers",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ruas de Nova Capenna",
+    "printing_code": "SNC",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ballroom%20Brawlers",
+    "checked_at": "2026-08-08T16:58:46.993Z"
+  },
   "c8c110db-4d98-4087-a3b0-c7fe88b5e38a": {
     "status": "available",
     "name": "Angelic Cub",

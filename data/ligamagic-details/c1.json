@@ -118,5 +118,17 @@
     "collector_number": "85",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashnod's%20Intervention",
     "checked_at": "2026-08-08T02:42:11.776Z"
+  },
+  "c1cb870a-8c1f-435c-b678-e456c4d2d627": {
+    "status": "available",
+    "name": "Banewasp Affliction",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fragmentos de Alara",
+    "printing_code": "ALA",
+    "collector_number": "65",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Banewasp%20Affliction",
+    "checked_at": "2026-08-08T17:05:37.230Z"
   }
 }

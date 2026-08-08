@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Asinine%20Antics",
     "checked_at": "2026-08-08T02:42:51.784Z"
   },
+  "0a1d817d-dce8-4e83-a380-909f7c9eee46": {
+    "status": "available",
+    "name": "Bant Panorama",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fragmentos de Alara",
+    "printing_code": "ALA",
+    "collector_number": "221",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bant%20Panorama",
+    "checked_at": "2026-08-08T17:09:37.351Z"
+  },
   "0a364b66-95df-480b-a733-e90f6d5c4d2b": {
     "status": "available",
     "name": "Altar of Bhaal // Bone Offering",
@@ -94,6 +106,18 @@
     "collector_number": "3",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abzan%20Runemark",
     "checked_at": "2026-08-06T03:46:41.619Z"
+  },
+  "0ad27d0e-b6c3-4c3f-a389-285d889b6a65": {
+    "status": "available",
+    "name": "Ballyrush Banneret",
+    "price_brl": 0.19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alvorecer",
+    "printing_code": "MT",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ballyrush%20Banneret",
+    "checked_at": "2026-08-08T16:59:27.011Z"
   },
   "0ad5f4c5-f6d2-4e96-af65-5488d9711113": {
     "status": "available",

@@ -106,5 +106,29 @@
     "collector_number": "271",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Animal%20Magnetism",
     "checked_at": "2026-08-07T09:24:26.099Z"
+  },
+  "a1cdcb8c-1e12-4d39-aa4a-db678a80df9c": {
+    "status": "available",
+    "name": "Baral's Expertise",
+    "price_brl": 0.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm Commander",
+    "printing_code": "TDC",
+    "collector_number": "146",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baral's%20Expertise",
+    "checked_at": "2026-08-08T17:11:07.565Z"
+  },
+  "a1eccd85-d243-4d27-bf49-d3ac816159e4": {
+    "status": "available",
+    "name": "Bamboozle",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Odisséia",
+    "printing_code": "OD",
+    "collector_number": "68",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bamboozle",
+    "checked_at": "2026-08-08T17:02:27.102Z"
   }
 }

@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arrest",
     "checked_at": "2026-08-07T21:05:18.762Z"
   },
+  "81a770e9-adea-4799-9fed-f10e97e7e901": {
+    "status": "available",
+    "name": "Banshee's Blade",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mirrodin",
+    "printing_code": "MI",
+    "collector_number": "144",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Banshee's%20Blade",
+    "checked_at": "2026-08-08T17:09:07.370Z"
+  },
   "81c6c4f0-81ad-463c-a42b-60a73e6d70f3": {
     "status": "available",
     "name": "Alexios, Deimos of Kosmos",

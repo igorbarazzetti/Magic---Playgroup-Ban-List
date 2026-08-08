@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ascending%20Aven",
     "checked_at": "2026-08-07T21:14:39.127Z"
   },
+  "67ceffa4-2fdb-499c-88cd-49fb5eb9be59": {
+    "status": "available",
+    "name": "Bant Sojourners",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alara Reunida",
+    "printing_code": "ARB",
+    "collector_number": "125",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bant%20Sojourners",
+    "checked_at": "2026-08-08T17:09:47.420Z"
+  },
   "67d66678-a8e6-4f80-bade-1f1daf4b0610": {
     "status": "available",
     "name": "Ashiok, Wicked Manipulator",

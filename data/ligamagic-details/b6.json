@@ -1,4 +1,16 @@
 {
+  "b60d83ea-18bf-4c64-b4ee-981d54629362": {
+    "status": "available",
+    "name": "Banners Raised",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Retorno de Avacyn",
+    "printing_code": "AVR",
+    "collector_number": "127",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Banners%20Raised",
+    "checked_at": "2026-08-08T17:08:17.317Z"
+  },
   "b655bee5-52d3-467e-b16c-cfc2edf2b1a1": {
     "status": "available",
     "name": "Arachnogenesis",

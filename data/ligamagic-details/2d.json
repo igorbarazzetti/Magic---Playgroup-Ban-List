@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avatar%20of%20Woe",
     "checked_at": "2026-08-08T09:13:30.266Z"
   },
+  "2dd32fec-5bc3-4cc0-a9b4-814229a64914": {
+    "status": "available",
+    "name": "Balustrade Wurm",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Noctumbra: A Casa dos Horrores",
+    "printing_code": "DSK",
+    "collector_number": "168",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balustrade%20Wurm",
+    "checked_at": "2026-08-08T17:02:07.140Z"
+  },
   "2dd7a4dc-902a-4e85-8a3b-c96a898fba86": {
     "status": "available",
     "name": "Animate Artifact",

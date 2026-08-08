@@ -1,4 +1,16 @@
 {
+  "567b676b-54f3-44c7-8654-4d2b0262ea12": {
+    "status": "available",
+    "name": "Banishment Decree",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mirrodin Sitiada",
+    "printing_code": "MBS",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Banishment%20Decree",
+    "checked_at": "2026-08-08T17:07:37.294Z"
+  },
   "56d13879-2dc5-4d84-918b-4bd1a5fc2a33": {
     "status": "available",
     "name": "Acorn Catapult",

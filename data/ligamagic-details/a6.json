@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anointed%20Peacekeeper",
     "checked_at": "2026-08-07T09:30:06.360Z"
   },
+  "a6898364-c29e-4b97-a500-344efa3ec24a": {
+    "status": "available",
+    "name": "Banishing Stroke",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Masters 2017",
+    "printing_code": "MM3",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Banishing%20Stroke",
+    "checked_at": "2026-08-08T17:07:17.314Z"
+  },
   "a6cefecd-459e-439a-a62c-689c2919b689": {
     "status": "available",
     "name": "Arbiter of the Ideal",

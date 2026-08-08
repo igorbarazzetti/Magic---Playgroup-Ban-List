@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alaborn%20Veteran",
     "checked_at": "2026-08-06T18:11:47.495Z"
   },
+  "7da19fc5-cb85-4ec7-beea-95210378bbfe": {
+    "status": "available",
+    "name": "Balmor, Battlemage Captain",
+    "price_brl": 0.24,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominária Unida",
+    "printing_code": "DMU",
+    "collector_number": "196",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balmor%2C%20Battlemage%20Captain",
+    "checked_at": "2026-08-08T16:59:47.028Z"
+  },
   "7db864fe-e0b7-4b32-8706-2ad01f93f7ca": {
     "status": "available",
     "name": "Aethertorch Renegade",

@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ardent%20Militia",
     "checked_at": "2026-08-07T17:26:34.697Z"
   },
+  "23669721-fe9e-49d7-9504-ae6164de723a": {
+    "status": "available",
+    "name": "Balthor the Stout",
+    "price_brl": 4.55,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tormento",
+    "printing_code": "TR",
+    "collector_number": "91",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balthor%20the%20Stout",
+    "checked_at": "2026-08-08T17:01:57.556Z"
+  },
   "23695bc2-86d3-4d78-b374-9e83c4cc9cc4": {
     "status": "available",
     "name": "Averna, the Chaos Bloom",

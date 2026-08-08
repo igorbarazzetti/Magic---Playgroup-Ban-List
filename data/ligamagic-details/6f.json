@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashiok's%20Reaper",
     "checked_at": "2026-08-08T02:39:22.010Z"
   },
+  "6f23621e-eceb-402e-a8d3-8e2b734762b3": {
+    "status": "available",
+    "name": "Banishing Knack",
+    "price_brl": 8,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Entardecer",
+    "printing_code": "EVE",
+    "collector_number": "17",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Banishing%20Knack",
+    "checked_at": "2026-08-08T17:06:47.278Z"
+  },
   "6f6e0abb-18d0-4a15-9b21-0a72542998ac": {
     "status": "available",
     "name": "Azra Smokeshaper",
@@ -94,6 +106,18 @@
     "collector_number": "149",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Wilderness%20Reclamation",
     "checked_at": "2026-08-05T20:15:17.970Z"
+  },
+  "6f931c1e-f1d2-4dc7-a653-c29adfc8fb2c": {
+    "status": "available",
+    "name": "Balor",
+    "price_brl": 19.76,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends: Batalha por Portal de Baldur",
+    "printing_code": "CLB",
+    "collector_number": "162",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balor",
+    "checked_at": "2026-08-08T16:59:57.027Z"
   },
   "6fa9debf-c60e-432d-86c8-aed16556c532": {
     "status": "available",

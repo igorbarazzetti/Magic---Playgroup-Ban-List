@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Air%20Servant",
     "checked_at": "2026-08-06T14:47:01.948Z"
   },
+  "4993e373-4b76-4582-a789-6a3123e7ca89": {
+    "status": "available",
+    "name": "Bane Alley Broker",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portões Violados",
+    "printing_code": "GTC",
+    "collector_number": "145",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bane%20Alley%20Broker",
+    "checked_at": "2026-08-08T17:03:37.124Z"
+  },
   "49a8ca54-30d3-42d3-b122-334d24805e1b": {
     "status": "available",
     "name": "Ardent Plea",
@@ -70,6 +82,18 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ardent%20Plea",
     "checked_at": "2026-08-07T17:26:44.675Z"
+  },
+  "49d44e89-b94e-43f7-a996-f50651df9264": {
+    "status": "available",
+    "name": "Barbarian Outcast",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tormento",
+    "printing_code": "TR",
+    "collector_number": "92",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbarian%20Outcast",
+    "checked_at": "2026-08-08T17:12:17.459Z"
   },
   "49e1e202-37bf-46ed-93d1-1adb13726039": {
     "status": "available",

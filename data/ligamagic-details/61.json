@@ -1,4 +1,16 @@
 {
+  "610adb2b-9d52-4b70-92d1-0c7adeb93552": {
+    "status": "available",
+    "name": "Bant Sureblade",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alara Reunida",
+    "printing_code": "ARB",
+    "collector_number": "143",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bant%20Sureblade",
+    "checked_at": "2026-08-08T17:09:57.394Z"
+  },
   "61105cb5-d7a1-4021-a006-dd1b947dfa68": {
     "status": "available",
     "name": "Aether Sting",

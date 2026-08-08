@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Air%20Marshal",
     "checked_at": "2026-08-06T14:46:21.932Z"
   },
+  "59faa1b9-17aa-4f2c-a8f8-17ab50392b36": {
+    "status": "available",
+    "name": "Barbarian Class",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Adventures in the Forgotten Realms",
+    "printing_code": "AFR",
+    "collector_number": "131",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbarian%20Class",
+    "checked_at": "2026-08-08T17:11:37.437Z"
+  },
   "59fcd09c-4633-457e-b36a-488e94c1c941": {
     "status": "available",
     "name": "Ayesha Tanaka, Armorer",

@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambitious%20Farmhand",
     "checked_at": "2026-08-07T04:36:31.066Z"
   },
+  "b8645fe4-884b-4511-b138-ea4ba2eee943": {
+    "status": "available",
+    "name": "Bamboozling Beeble",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unfinity",
+    "printing_code": "UNF",
+    "collector_number": "37",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bamboozling%20Beeble",
+    "checked_at": "2026-08-08T17:02:37.277Z"
+  },
   "b8942c72-16ce-4f2f-875f-97a56e85a03e": {
     "status": "available",
     "name": "Vicious Battlerager",

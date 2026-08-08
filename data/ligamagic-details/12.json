@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerie%20Mystics",
     "checked_at": "2026-08-06T07:19:15.155Z"
   },
+  "1221bef9-5947-4c32-a74b-b60279bb79bf": {
+    "status": "available",
+    "name": "Baloth Cage Trap",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Masters 2017",
+    "printing_code": "MM3",
+    "collector_number": "120",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baloth%20Cage%20Trap",
+    "checked_at": "2026-08-08T17:00:07.046Z"
+  },
   "12326d23-1fb5-4084-a23a-d6e2c90ea36c": {
     "status": "available",
     "name": "Arena",
@@ -118,5 +130,17 @@
     "collector_number": "122",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ayumi%2C%20the%20Last%20Visitor",
     "checked_at": "2026-08-08T13:27:37.119Z"
+  },
+  "12b5fbe5-a426-4b7e-bef0-abea71170e49": {
+    "status": "available",
+    "name": "Barbarian Lunatic",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Odisséia",
+    "printing_code": "OD",
+    "collector_number": "175",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbarian%20Lunatic",
+    "checked_at": "2026-08-08T17:12:07.446Z"
   }
 }

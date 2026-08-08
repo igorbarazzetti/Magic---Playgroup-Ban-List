@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atalya%2C%20Samite%20Master",
     "checked_at": "2026-08-08T02:53:42.533Z"
   },
+  "84b08b55-0623-4202-98c6-1756d3c1bb8f": {
+    "status": "available",
+    "name": "Bandit's Haul",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Os Fora da Lei de Encruzilhada do Trovão",
+    "printing_code": "OTJ",
+    "collector_number": "240",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bandit's%20Haul",
+    "checked_at": "2026-08-08T17:03:07.137Z"
+  },
   "84de4fec-2f38-4293-93d3-b3882c5aac14": {
     "status": "available",
     "name": "Ambition's Cost",

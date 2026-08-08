@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcbound%20Reclaimer",
     "checked_at": "2026-08-07T13:56:54.014Z"
   },
+  "c664df64-0103-462b-a0f8-c483b152974a": {
+    "status": "available",
+    "name": "Bandage",
+    "price_brl": 0.19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fortaleza",
+    "printing_code": "SH",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bandage",
+    "checked_at": "2026-08-08T17:02:57.122Z"
+  },
   "c66dc0d3-b98c-40a2-be35-e455b4658828": {
     "status": "available",
     "name": "Avalanche Caller",

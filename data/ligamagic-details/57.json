@@ -1,4 +1,16 @@
 {
+  "570cb560-c246-4652-b230-ab34f966c78a": {
+    "status": "available",
+    "name": "Balthier and Fran",
+    "price_brl": 1.18,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY",
+    "printing_code": "FIN",
+    "collector_number": "213",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balthier%20and%20Fran",
+    "checked_at": "2026-08-08T17:01:37.564Z"
+  },
   "575ffeb4-6d12-4f69-bcc9-15db325daac1": {
     "status": "available",
     "name": "Archghoul of Thraben",

@@ -119,6 +119,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alania%2C%20Divergent%20Storm",
     "checked_at": "2026-08-06T18:13:07.589Z"
   },
+  "63d846e2-4bef-4911-9508-273c75a4a040": {
+    "status": "available",
+    "name": "Banehound",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra da Centelha",
+    "printing_code": "WAR",
+    "collector_number": "77",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Banehound",
+    "checked_at": "2026-08-08T17:05:17.257Z"
+  },
   "63dfe794-5f56-41ec-9883-5523b41cc3e0": {
     "status": "available",
     "name": "Arena of Glory",

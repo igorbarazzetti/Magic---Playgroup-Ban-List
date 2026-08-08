@@ -1,4 +1,16 @@
 {
+  "96232342-3ec7-4740-a114-969537b8f2fc": {
+    "status": "available",
+    "name": "Ballynock Trapper",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Entardecer",
+    "printing_code": "EVE",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ballynock%20Trapper",
+    "checked_at": "2026-08-08T16:59:16.991Z"
+  },
   "9640225a-8f31-495f-b9de-53ed348ff24b": {
     "status": "available",
     "name": "Arbor Adherent",

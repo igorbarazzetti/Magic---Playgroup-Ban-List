@@ -106,5 +106,17 @@
     "collector_number": "93",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Membrane",
     "checked_at": "2026-08-06T10:58:23.560Z"
+  },
+  "5eff8a06-e0d6-435a-a7c0-db9f9d98636a": {
+    "status": "available",
+    "name": "Banefire",
+    "price_brl": 0.89,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Confluência",
+    "printing_code": "CON",
+    "collector_number": "58",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Banefire",
+    "checked_at": "2026-08-08T17:04:57.219Z"
   }
 }

@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atrocious%20Experiment",
     "checked_at": "2026-08-08T07:21:33.063Z"
   },
+  "9f560b83-32d4-4bb4-a956-8f5db18599db": {
+    "status": "available",
+    "name": "Banisher Priest",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2014",
+    "printing_code": "M14",
+    "collector_number": "7",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Banisher%20Priest",
+    "checked_at": "2026-08-08T17:06:28.113Z"
+  },
   "9fb95813-05e5-4aa0-bab9-53d8a071fe6a": {
     "status": "available",
     "name": "Appendage Amalgam",

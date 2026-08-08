@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abyssal%20Horror",
     "checked_at": "2026-08-06T00:17:27.348Z"
   },
+  "6b633e58-ea1b-4ed0-addb-6dfd93645ae4": {
+    "status": "available",
+    "name": "Banishing Betrayal",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven",
+    "printing_code": "SOS",
+    "collector_number": "38",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Banishing%20Betrayal",
+    "checked_at": "2026-08-08T17:06:37.245Z"
+  },
   "6b6ac99a-7548-4cad-9fe5-ea611618ab9e": {
     "status": "available",
     "name": "Temporal Manipulation",

@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Awakening",
     "checked_at": "2026-08-08T13:22:16.927Z"
   },
+  "55a0a40c-cb40-469d-9bf3-9c33b378f4f7": {
+    "status": "available",
+    "name": "Baloth Null",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Masters 25",
+    "printing_code": "A25",
+    "collector_number": "197",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baloth%20Null",
+    "checked_at": "2026-08-08T17:00:27.045Z"
+  },
   "55b12241-2495-45e6-b618-3746d5521291": {
     "status": "available",
     "name": "Alpine Guide",
@@ -70,6 +82,18 @@
     "collector_number": "38",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aquamoeba",
     "checked_at": "2026-08-07T11:22:37.399Z"
+  },
+  "55e96601-9508-48db-8b1a-f2b70b8a21e4": {
+    "status": "available",
+    "name": "Bar Entry",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unfinity",
+    "printing_code": "UNF",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bar%20Entry",
+    "checked_at": "2026-08-08T17:10:07.377Z"
   },
   "55f3c721-e13a-406e-bc8e-d6cdc91ac477": {
     "status": "available",

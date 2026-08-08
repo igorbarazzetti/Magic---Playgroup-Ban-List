@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adeline%2C%20Resplendent%20Cathar",
     "checked_at": "2026-08-06T07:08:04.497Z"
   },
+  "386a6fa7-db5b-4e82-bd25-fd86d910ed0c": {
+    "status": "available",
+    "name": "Baral and Kari Zev",
+    "price_brl": 0.45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marcha das Máquinas",
+    "printing_code": "MOM",
+    "collector_number": "218",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baral%20and%20Kari%20Zev",
+    "checked_at": "2026-08-08T17:10:47.459Z"
+  },
   "388168b3-ec68-4af2-b88c-6a5ec88c15f6": {
     "status": "available",
     "name": "Ayara, First of Locthwain",
@@ -82,6 +94,18 @@
     "collector_number": "75",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ayara%2C%20First%20of%20Locthwain",
     "checked_at": "2026-08-08T13:25:37.039Z"
+  },
+  "38839894-1706-4e11-8310-5ea8dd8866d9": {
+    "status": "available",
+    "name": "Bane of Bala Ged",
+    "price_brl": 0.64,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Batalha por Zendikar",
+    "printing_code": "BFZ",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bane%20of%20Bala%20Ged",
+    "checked_at": "2026-08-08T17:03:57.200Z"
   },
   "38e0a1d0-2a4c-4510-9610-abea7fa1de7c": {
     "status": "available",

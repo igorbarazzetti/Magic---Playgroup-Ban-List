@@ -130,5 +130,17 @@
     "collector_number": "1118",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ana%20Sanctuary",
     "checked_at": "2026-08-07T04:45:11.432Z"
+  },
+  "51f9a6cc-8eb2-44ed-a2d9-913ac514ad67": {
+    "status": "available",
+    "name": "Bane of Progress",
+    "price_brl": 2.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2013",
+    "printing_code": "C13",
+    "collector_number": "137",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bane%20of%20Progress",
+    "checked_at": "2026-08-08T17:04:07.177Z"
   }
 }

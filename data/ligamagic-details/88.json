@@ -1,4 +1,16 @@
 {
+  "88159872-d37d-4847-b048-e4a9af6437bd": {
+    "status": "available",
+    "name": "Barad-dûr",
+    "price_brl": 8,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Senhor dos Anéis: Contos da Terra Média",
+    "printing_code": "LTR",
+    "collector_number": "253",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barad-d%C3%BBr",
+    "checked_at": "2026-08-08T17:10:37.363Z"
+  },
   "88939cb3-5f61-4857-95cb-9446c6c1f1aa": {
     "status": "available",
     "name": "Alpine Houndmaster",

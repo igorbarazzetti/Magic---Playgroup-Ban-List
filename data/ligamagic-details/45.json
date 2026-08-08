@@ -131,6 +131,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Farseer",
     "checked_at": "2026-08-08T09:15:30.339Z"
   },
+  "45a40b4c-1d37-4d87-adf1-abf0ea4c86b4": {
+    "status": "available",
+    "name": "Balm of Restoration",
+    "price_brl": 3.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fallen Empires",
+    "printing_code": "FE",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balm%20of%20Restoration",
+    "checked_at": "2026-08-08T16:59:37.013Z"
+  },
   "45aeac84-4705-4179-be3f-b31bde844ea0": {
     "status": "available",
     "name": "Azor's Elocutors",

@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aquatic%20Incursion",
     "checked_at": "2026-08-07T11:23:17.406Z"
   },
+  "e4508afd-7cc3-4176-8291-cfc2c155ac11": {
+    "status": "available",
+    "name": "Banish from Edoras",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Senhor dos Anéis: Contos da Terra Média",
+    "printing_code": "LTR",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Banish%20from%20Edoras",
+    "checked_at": "2026-08-08T17:05:57.263Z"
+  },
   "e46b2ac6-97d6-48f2-aba3-cd92f8e092c6": {
     "status": "available",
     "name": "Aang, Air Nomad",

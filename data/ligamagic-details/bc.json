@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashling%20the%20Pilgrim",
     "checked_at": "2026-08-08T02:40:52.116Z"
   },
+  "bcbe879a-4609-4493-bd7d-47c26d27e83c": {
+    "status": "available",
+    "name": "Bandit's Talent",
+    "price_brl": 3.28,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Bloomburrow",
+    "printing_code": "BLB",
+    "collector_number": "83",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bandit's%20Talent",
+    "checked_at": "2026-08-08T17:03:17.195Z"
+  },
   "bcd5e175-2ef0-48f4-b9bd-14383dd234e0": {
     "status": "available",
     "name": "Ardoz, Cobbler of War",

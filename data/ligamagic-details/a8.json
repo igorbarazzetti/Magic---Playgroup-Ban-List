@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Attrition",
     "checked_at": "2026-08-08T07:23:23.068Z"
   },
+  "a8631e87-bfc3-463b-bdd1-974ea1d79ae4": {
+    "status": "available",
+    "name": "Band Together",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra da Centelha",
+    "printing_code": "WAR",
+    "collector_number": "153",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Band%20Together",
+    "checked_at": "2026-08-08T17:02:47.647Z"
+  },
   "a8730922-3f47-4c07-bdd5-4a0f557a3d3d": {
     "status": "available",
     "name": "Archpriest of Iona",

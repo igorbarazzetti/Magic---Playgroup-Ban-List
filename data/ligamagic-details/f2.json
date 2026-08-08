@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baleful%20Force",
     "checked_at": "2026-08-08T15:07:27.756Z"
   },
+  "f28b21a6-f7ce-437a-8c5b-0423cb55cefb": {
+    "status": "available",
+    "name": "Banishing Light",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros Além da Morte",
+    "printing_code": "THB",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Banishing%20Light",
+    "checked_at": "2026-08-08T17:06:57.505Z"
+  },
   "f2cedb38-12b0-4489-a62b-9b6a3776d695": {
     "status": "available",
     "name": "Arnjlot's Ascent",
