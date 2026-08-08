@@ -118,7 +118,8 @@ async function readJson(path, fallback = null) {
 async function writeJson(path, value) {
   await mkdir(dirname(path), { recursive: true });
   const temporaryPath = `${path}.tmp`;
-  await writeFile(temporaryPath, `${JSON.stringify(value, null, 2)}\n`, 'utf8');
+  const compact = path === catalogPath || path === priceIndexPath;
+  await writeFile(temporaryPath, `${JSON.stringify(value, null, compact ? undefined : 2)}\n`, 'utf8');
   await rename(temporaryPath, path);
 }
 

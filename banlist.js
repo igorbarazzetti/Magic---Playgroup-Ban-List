@@ -3,7 +3,7 @@ const site = {
   playgroupInitials: 'PA',
   pageTitle: 'Códice do Formatinho',
   pageSubtitle: 'A banlist oficial do nosso formato',
-  logoPath: './formatinho-logo.png?v=2',
+  logoPath: './formatinho-logo.png?v=3',
   scryfallQuery: '(banned:standard OR banned:pioneer OR banned:modern OR banned:legacy OR banned:commander OR banned:duel OR banned:pauper) -set:sunf -set:unf',
   catalogQuery: '(game:paper) usd<20.00 prefer:best',
   backgroundCards: ['Teferi, Hero of Dominaria', "Elspeth, Sun's Champion", 'Chandra, Torch of Defiance', 'Nissa, Who Shakes the World'],
@@ -47,7 +47,7 @@ function createViewState(tab) {
     sort: 'name-asc', view: 'cards', visible: 48, modalCard: null, modalFace: 0, lastFocus: null,
     savedScroll: 0, loadingMore: false, loadToken: 0, rawDetailsReady: false, loaded: false,
     deckFormat: 'formatinho', deckLastFocus: null, maxPrice: 99, showBanned: false,
-    oracleMatchKey: '', oracleMatches: null, oracleSearchToken: 0,
+    oracleMatchKey: '', oracleMatches: null, oracleSearchToken: 0, oracleSearchAbort: null,
     scryfallSearchCards: null, scryfallSearchKey: '', scryfallSearchToken: 0, scryfallSearchAbort: null,
   };
 }
@@ -64,8 +64,16 @@ let ligaMagicPriceBookPromise;
 let catalogIndex;
 let catalogPriceIndex;
 const catalogHydrationCache = new Map();
+const catalogCardById = new Map();
 const catalogHydrating = new Set();
+const catalogHydrationPromises = new Map();
 const catalogDetailShards = new Map();
+const catalogOracleSearchCache = new Map();
+let catalogDataPromise;
+let catalogHydrationObserver;
+let catalogHydrationTimer;
+const catalogHydrationQueue = new Map();
+let pendingFilterFrame;
 const deckCardCache = new Map();
 const savedDeckCache = new Map();
 let pendingValidatedDeck = null;
@@ -76,6 +84,8 @@ let savedDeckPriceBook = null;
 const $ = (id) => document.getElementById(id);
 const escapeHtml = (value = '') => String(value).replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[char]));
 const slug = (value = '') => value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+const colorBit = { W: 1, U: 2, B: 4, R: 8, G: 16 };
+const colorsMask = (colors = []) => colors.reduce((mask, color) => mask | (colorBit[color] || 0), 0);
 function parseCardSearch(value = '') {
   const exactPhrases = [...String(value).matchAll(/"([^"]+)"/g)]
     .map((match) => slug(match[1]).replace(/\s+/g, ' ').trim())
@@ -95,15 +105,23 @@ function colorMatchHint(mode = state.colorMatch) {
     minimum: 'Mostra cartas que tenham todas as cores selecionadas, mesmo que tenham outras cores.',
   }[mode] || 'Escolha como comparar as cores selecionadas.';
 }
-function colorIdentityMatches(cardColors = []) {
-  if (!state.selectedColors.size) return true;
+function selectedColorCriteria() {
   const selected = [...state.selectedColors];
-  const selectedColorless = selected.includes('C');
-  const selectedColored = selected.filter((color) => color !== 'C');
+  return {
+    selected,
+    mask: colorsMask(selected),
+    selectedColorless: selected.includes('C'),
+    selectedColored: selected.filter((color) => color !== 'C'),
+  };
+}
+
+function colorIdentityMatches(cardColors = [], criteria = selectedColorCriteria()) {
+  if (!criteria.selected.length) return true;
+  const { selected, selectedColorless, selectedColored, mask } = criteria;
   const isColorless = cardColors.length === 0;
   if (state.colorMatch === 'exact') {
     if (selectedColorless) return selected.length === 1 && isColorless;
-    return !isColorless && cardColors.length === selectedColored.length && selectedColored.every((color) => cardColors.includes(color));
+    return !isColorless && colorsMask(cardColors) === mask;
   }
   if (state.colorMatch === 'minimum') {
     if (selectedColorless) return selected.length === 1 && isColorless;
@@ -113,7 +131,19 @@ function colorIdentityMatches(cardColors = []) {
 }
 const nameCollator = new Intl.Collator('en', { sensitivity: 'base', numeric: true });
 const sortableName = (value = '') => slug(value).replace(/^[^a-z0-9]+/, '');
-const compareNames = (a, b) => nameCollator.compare(sortableName(a?.name), sortableName(b?.name));
+const compareNames = (a, b) => nameCollator.compare(a?._sortName || sortableName(a?.name), b?._sortName || sortableName(b?.name));
+
+function prepareCard(card) {
+  if (!card) return card;
+  card._sortName = sortableName(card.name);
+  card._typeLineNormalized = slug(card.type_line || '');
+  card._searchable = slug([card.name, card.type_line, card.oracle_text, card.artist, card.set_name].filter(Boolean).join(' '));
+  card._oracleText = slug([card.oracle_text, ...(card.card_faces || []).map((face) => face.oracle_text)].filter(Boolean).join(' ')).replace(/\s+/g, ' ');
+  card._colorMask = colorsMask(card.color_identity || []);
+  card._cmcValue = Number(card.cmc || 0);
+  card._catalogPriceReady = false;
+  return card;
+}
 
 function cardFrameClass(card) {
   const line = slug(card?.type_line || '');
@@ -135,7 +165,7 @@ function cardRarityClass(card) {
 }
 
 function isLegendaryCard(card) {
-  return slug(card?.type_line || '').includes('legendary');
+  return (card?._typeLineNormalized || slug(card?.type_line || '')).includes('legendary');
 }
 
 function manaSymbolImage(symbol) {
@@ -182,7 +212,7 @@ function makePlaceholder(name, color = '') {
 function normalizeCard(card) {
   const bannedFormats = formats.filter(({ key }) => card.legalities?.[key] === 'banned').map(({ key }) => key);
   const faces = card.card_faces ? card.card_faces.map((face) => ({ ...face })) : [];
-  return { ...card, formats: bannedFormats, image: imageFor(card), faces, oracle_id: card.oracle_id || card.id };
+  return prepareCard({ ...card, formats: bannedFormats, image: imageFor(card), faces, oracle_id: card.oracle_id || card.id });
 }
 
 function dedupeCards(cards) {
@@ -349,24 +379,30 @@ function catalogCardFromTuple(tuple) {
   const [id, oracleId, name, mask, type, cmc, rarity, set, usd, bannedFormats] = tuple;
   const labels = { creature: 'Creature', instant: 'Instant', sorcery: 'Sorcery', artifact: 'Artifact', enchantment: 'Enchantment', planeswalker: 'Planeswalker', land: 'Land', battle: 'Battle', other: 'Card' };
   const usdAmount = usd === null || usd === undefined || usd === '' ? null : Number(usd);
-  return {
+  return prepareCard({
     id, oracle_id: oracleId, name, color_identity: colorsFromMask(mask), type_line: labels[type] || 'Card', catalog_type: type,
     cmc, rarity, set, set_name: catalogIndex?.sets?.[set] || String(set || '').toUpperCase(), prices: { usd: Number.isFinite(usdAmount) && usdAmount > 0 ? (usdAmount / 100).toFixed(2) : null },
     formats: bannedFormats ? String(bannedFormats).split(',').filter(Boolean) : [], isCatalogStub: true,
-  };
+  });
 }
 
 function effectiveCatalogPrice(card) {
+  if (card?._catalogPriceReady) return card._catalogPrice || null;
   const tuple = catalogPriceIndex?.prices?.[card.oracle_id || card.id];
   const ligaCents = tuple?.[0] === null || tuple?.[0] === undefined || tuple?.[0] === '' ? null : Number(tuple[0]);
   if (Number.isFinite(ligaCents) && ligaCents > 0 && ['a', 's'].includes(tuple[1])) {
-    return { value: ligaCents / 100, source: 'LigaMagic', estimated: false, stale: tuple[1] === 's', checkedAt: tuple[2] ? new Date(Number(tuple[2]) * 1000).toISOString() : null };
+    card._catalogPrice = { value: ligaCents / 100, source: 'LigaMagic', estimated: false, stale: tuple[1] === 's', checkedAt: tuple[2] ? new Date(Number(tuple[2]) * 1000).toISOString() : null };
+    card._catalogPriceReady = true;
+    return card._catalogPrice;
   }
   const rawUsd = card?.prices?.usd;
   const usd = rawUsd === null || rawUsd === undefined || rawUsd === '' ? null : Number(rawUsd);
   const rate = Number(catalogIndex?.usd_brl?.rate);
-  if (Number.isFinite(usd) && usd > 0 && Number.isFinite(rate) && rate > 0) return { value: usd * rate, source: 'Scryfall + PTAX', estimated: true, stale: Boolean(catalogIndex?.usd_brl?.stale), checkedAt: catalogIndex?.usd_brl?.as_of || null };
-  return null;
+  card._catalogPrice = Number.isFinite(usd) && usd > 0 && Number.isFinite(rate) && rate > 0
+    ? { value: usd * rate, source: 'Scryfall + PTAX', estimated: true, stale: Boolean(catalogIndex?.usd_brl?.stale), checkedAt: catalogIndex?.usd_brl?.as_of || null }
+    : null;
+  card._catalogPriceReady = true;
+  return card._catalogPrice;
 }
 
 async function fetchScryfallPages(query, { signal, onPage } = {}) {
@@ -377,8 +413,9 @@ async function fetchScryfallPages(query, { signal, onPage } = {}) {
     if (response.status === 404) return [];
     if (!response.ok) throw new Error(`Scryfall ${response.status}`);
     const payload = await response.json();
-    cards.push(...(payload.data || []));
-    onPage?.(cards);
+    const pageCards = payload.data || [];
+    cards.push(...pageCards);
+    onPage?.(pageCards, cards);
     url = payload.has_more && payload.next_page ? payload.next_page : '';
     if (url) await new Promise((resolve) => setTimeout(resolve, 120));
   }
@@ -409,13 +446,18 @@ async function ensureScryfallSyntaxSearch() {
   $('loadingState').hidden = false;
   applyFilters();
   const scope = state.tab === 'catalog' ? (catalogIndex?.query || site.catalogQuery) : site.scryfallQuery;
+  const partialByOracle = new Map();
   try {
     const cards = await fetchScryfallPages(`(${scope}) (${state.query})`, {
       signal: controller.signal,
-      onPage: (partialCards) => {
+      onPage: (pageCards) => {
         if (token !== state.scryfallSearchToken || state.scryfallSearchKey !== key) return;
-        state.scryfallSearchCards = state.tab === 'catalog' ? dedupeSearchCards(partialCards) : dedupeCards(partialCards);
-        applyFilters();
+        pageCards.forEach((card) => {
+          const normalized = normalizeCard(card);
+          if (!partialByOracle.has(normalized.oracle_id) && (state.tab === 'catalog' || normalized.formats.length)) partialByOracle.set(normalized.oracle_id, normalized);
+        });
+        state.scryfallSearchCards = [...partialByOracle.values()];
+        scheduleApplyFilters();
       },
     });
     if (token !== state.scryfallSearchToken || state.scryfallSearchKey !== key) return true;
@@ -434,28 +476,61 @@ async function ensureScryfallSyntaxSearch() {
   return true;
 }
 
+function catalogServerFilterSyntax() {
+  return [
+    state.type && `t:${state.type}`,
+    state.cmc && (state.cmc === '6' ? 'mv>=6' : `mv=${state.cmc}`),
+    state.rarity && state.rarity !== 'special' && `r:${state.rarity}`,
+    state.set && `set:${state.set}`,
+  ].filter(Boolean).join(' ');
+}
+
+function catalogOracleKey(phrases) {
+  return `${phrases.join('|')}::${catalogServerFilterSyntax()}`;
+}
+
 async function ensureCatalogOracleMatches() {
   if (state.tab !== 'catalog') return;
   const phrases = parseCardSearch(state.query).exactPhrases;
-  const key = phrases.join('|');
-  if (!phrases.length) { state.oracleMatchKey = ''; state.oracleMatches = null; return; }
+  const serverFilters = catalogServerFilterSyntax();
+  const key = catalogOracleKey(phrases);
+  if (!phrases.length) {
+    state.oracleSearchAbort?.abort(); state.oracleSearchAbort = null;
+    state.oracleMatchKey = ''; state.oracleMatches = null; return;
+  }
   if (state.oracleMatchKey === key && state.oracleMatches) return;
+  state.oracleSearchAbort?.abort();
+  const cached = catalogOracleSearchCache.get(key);
+  if (cached) {
+    state.oracleMatchKey = key;
+    state.oracleMatches = new Set(cached.map((card) => card.oracle_id || card.id));
+    cached.forEach((card) => catalogHydrationCache.set(card.id, card));
+    return;
+  }
+  const controller = new AbortController();
+  state.oracleSearchAbort = controller;
   const token = ++state.oracleSearchToken;
   $('loadingState').hidden = false;
   try {
     const phraseQuery = phrases.map((phrase) => `o:"${phrase.replace(/"/g, '\\"')}"`).join(' ');
-    const cards = await fetchScryfallPages(`${catalogIndex?.query || '(game:paper) usd<20.00 prefer:best'} ${phraseQuery}`);
+    const cards = await fetchScryfallPages(`${catalogIndex?.query || '(game:paper) usd<20.00 prefer:best'} ${phraseQuery} ${serverFilters}`, { signal: controller.signal });
     if (token !== state.oracleSearchToken || state.tab !== 'catalog') return;
+    catalogOracleSearchCache.set(key, cards);
+    if (catalogOracleSearchCache.size > 8) catalogOracleSearchCache.delete(catalogOracleSearchCache.keys().next().value);
     state.oracleMatchKey = key;
     state.oracleMatches = new Set(cards.map((card) => card.oracle_id || card.id));
     cards.forEach((card) => catalogHydrationCache.set(card.id, card));
-  } catch {
+  } catch (error) {
+    if (error?.name === 'AbortError' || token !== state.oracleSearchToken) return;
     if (token !== state.oracleSearchToken || state.tab !== 'catalog') return;
     state.oracleMatchKey = key;
     state.oracleMatches = new Set();
     showToast('Não foi possível consultar o texto das cartas agora.');
   } finally {
-    if (token === state.oracleSearchToken) $('loadingState').hidden = true;
+    if (token === state.oracleSearchToken) {
+      state.oracleSearchAbort = null;
+      $('loadingState').hidden = true;
+    }
   }
 }
 
@@ -466,7 +541,8 @@ function cardIdentity(card) {
 
 function cardTypeMatches(card, type) {
   if (!type) return true;
-  const line = slug(card.type_line);
+  if (card.catalog_type) return type === card.catalog_type;
+  const line = card._typeLineNormalized || slug(card.type_line);
   if (type === 'creature') return line.includes('creature');
   if (type === 'instant') return line.includes('instant');
   if (type === 'sorcery') return line.includes('sorcery');
@@ -479,31 +555,41 @@ function cardTypeMatches(card, type) {
 }
 
 function applyFilters() {
+  if (pendingFilterFrame) { cancelAnimationFrame(pendingFilterFrame); pendingFilterFrame = 0; }
   const search = parseCardSearch(state.query);
   const syntaxSearchActive = Boolean(state.scryfallSearchKey);
-  state.filtered = sourceCards().filter((card) => {
-    const searchable = slug([card.name, card.type_line, card.oracle_text, card.artist, card.set_name].filter(Boolean).join(' '));
-    const oracleText = slug([card.oracle_text, ...(card.card_faces || []).map((face) => face.oracle_text)].filter(Boolean).join(' ')).replace(/\s+/g, ' ');
-    const exactTextMatch = syntaxSearchActive ? true : state.tab === 'catalog'
-      ? !search.exactPhrases.length || (state.oracleMatchKey === search.exactPhrases.join('|') && state.oracleMatches?.has(card.oracle_id || card.id))
-      : search.exactPhrases.every((phrase) => oracleText.includes(phrase));
-    const textMatch = syntaxSearchActive || ((!search.freeText || searchable.includes(search.freeText)) && exactTextMatch);
-    const formatMatch = !state.selectedFormats.size || card.formats.some((format) => state.selectedFormats.has(format));
-    const cardColors = card.color_identity || [];
-    const identityMatch = colorIdentityMatches(cardColors);
-    const typeMatch = cardTypeMatches(card, state.type);
-    const cmc = Number(card.cmc || 0);
-    const cmcMatch = !state.cmc || (state.cmc === '6' ? cmc >= 6 : cmc === Number(state.cmc));
-    const rarityMatch = !state.rarity || (state.rarity === 'special' ? !['common', 'uncommon', 'rare', 'mythic'].includes(card.rarity) : card.rarity === state.rarity);
-    const setMatch = !state.set || card.set === state.set;
-    const catalogPrice = state.tab === 'catalog' ? effectiveCatalogPrice(card) : null;
-    const priceMatch = state.tab !== 'catalog' || (catalogPrice && catalogPrice.value <= state.maxPrice);
-    const bannedMatch = state.tab !== 'catalog' || state.showBanned || !card.formats.length;
-    return textMatch && formatMatch && identityMatch && typeMatch && cmcMatch && rarityMatch && setMatch && priceMatch && bannedMatch;
-  });
+  const catalog = state.tab === 'catalog';
+  const oracleKey = catalogOracleKey(search.exactPhrases);
+  const colorCriteria = selectedColorCriteria();
+  const selectedCmc = state.cmc ? Number(state.cmc) : null;
+  const filtered = [];
+
+  for (const sourceCard of sourceCards()) {
+    const card = sourceCard._searchable === undefined ? prepareCard(sourceCard) : sourceCard;
+    if (!syntaxSearchActive) {
+      if (search.freeText && !card._searchable.includes(search.freeText)) continue;
+      if (search.exactPhrases.length) {
+        if (catalog) {
+          if (state.oracleMatchKey !== oracleKey || !state.oracleMatches?.has(card.oracle_id || card.id)) continue;
+        } else if (!search.exactPhrases.every((phrase) => card._oracleText.includes(phrase))) continue;
+      }
+    }
+    if (state.selectedFormats.size && !card.formats.some((format) => state.selectedFormats.has(format))) continue;
+    if (!colorIdentityMatches(card.color_identity || [], colorCriteria)) continue;
+    if (!cardTypeMatches(card, state.type)) continue;
+    if (selectedCmc !== null && (state.cmc === '6' ? card._cmcValue < 6 : card._cmcValue !== selectedCmc)) continue;
+    if (state.rarity && (state.rarity === 'special' ? ['common', 'uncommon', 'rare', 'mythic'].includes(card.rarity) : card.rarity !== state.rarity)) continue;
+    if (state.set && card.set !== state.set) continue;
+    if (catalog) {
+      if (!state.showBanned && card.formats.length) continue;
+      const price = effectiveCatalogPrice(card);
+      if (!price || price.value > state.maxPrice) continue;
+    }
+    filtered.push(card);
+  }
+
+  state.filtered = filtered;
   const sorters = {
-    'name-asc': compareNames,
-    'name-desc': (a, b) => compareNames(b, a),
     'cmc-asc': (a, b) => (a.cmc || 0) - (b.cmc || 0) || compareNames(a, b),
     'cmc-desc': (a, b) => (b.cmc || 0) - (a.cmc || 0) || compareNames(a, b),
     'formats-desc': (a, b) => b.formats.length - a.formats.length || compareNames(a, b),
@@ -511,17 +597,32 @@ function applyFilters() {
     'price-asc': (a, b) => (effectiveCatalogPrice(a)?.value ?? Infinity) - (effectiveCatalogPrice(b)?.value ?? Infinity) || compareNames(a, b),
     'price-desc': (a, b) => (effectiveCatalogPrice(b)?.value ?? -Infinity) - (effectiveCatalogPrice(a)?.value ?? -Infinity) || compareNames(a, b),
   };
-  state.filtered.sort(sorters[state.sort] || sorters['name-asc']);
+  if (state.sort === 'name-desc') state.filtered.reverse();
+  else if (state.sort !== 'name-asc') state.filtered.sort(sorters[state.sort] || compareNames);
   state.visible = 48;
   render();
+}
+
+function scheduleApplyFilters() {
+  if (pendingFilterFrame) return;
+  pendingFilterFrame = requestAnimationFrame(() => {
+    pendingFilterFrame = 0;
+    applyFilters();
+  });
 }
 
 function populateSetFilter() {
   const select = $('setFilter');
   if (!select) return;
-  const options = [...new Map(state.cards.filter((card) => card.set).map((card) => [card.set, card.set_name || String(card.set).toUpperCase()])).entries()]
+  const cacheKey = `${state.tab}:${state.cards.length}:${state.tab === 'catalog' ? catalogIndex?.generated_at || '' : ''}`;
+  if (select.dataset.optionsKey === cacheKey) { select.value = state.set; return; }
+  const entries = state.tab === 'catalog' && catalogIndex?.sets
+    ? Object.entries(catalogIndex.sets)
+    : [...new Map(state.cards.filter((card) => card.set).map((card) => [card.set, card.set_name || String(card.set).toUpperCase()])).entries()];
+  const options = entries
     .sort((a, b) => a[1].localeCompare(b[1], 'pt-BR'));
   select.innerHTML = `<option value="">Todas as coleções</option>${options.map(([value, label]) => `<option value="${escapeHtml(value)}">${escapeHtml(label)}</option>`).join('')}`;
+  select.dataset.optionsKey = cacheKey;
   select.value = state.set;
 }
 
@@ -562,47 +663,114 @@ function renderActiveFilters() {
   if ($('searchClear')) $('searchClear').hidden = !state.query;
 }
 
+function cardTileMarkup(card, index = 0) {
+  const frameClass = cardFrameClass(card);
+  const rarityClass = cardRarityClass(card);
+  const legendaryClass = isLegendaryCard(card) ? ' card-tile--legendary' : '';
+  const setLine = setLineMarkup(card);
+  const badges = card.formats.slice(0, 3).map((format) => {
+    const item = formats.find((candidate) => candidate.key === format);
+    return `<span class="format-badge" title="Banida em ${escapeHtml(item?.label || format)}">${escapeHtml(item?.short || format)}</span>`;
+  }).join('');
+  const more = card.formats.length > 3 ? `<span class="format-badge format-badge--more">+${card.formats.length - 3}</span>` : '';
+  const identity = (card.color_identity || []).map((color) => manaSymbolImage(color)).join('');
+  const srcset = imageSrcSet(card);
+  const image = imageFor(card, 0, 'small');
+  const formatsLabel = card.formats.map((key) => formats.find((item) => item.key === key)?.label || key).join(', ');
+  const imageMarkup = image ? `<img loading="${index < 4 ? 'eager' : 'lazy'}" decoding="async" fetchpriority="${index < 4 ? 'high' : 'low'}" width="488" height="680" src="${escapeHtml(image)}"${srcset ? ` srcset="${escapeHtml(srcset)}" sizes="(max-width: 559px) calc(50vw - 22px), (max-width: 959px) calc(25vw - 20px), 220px"` : ''} alt="Carta ${escapeHtml(card.name)}" />` : '';
+  const price = state.tab === 'catalog' ? effectiveCatalogPrice(card) : null;
+  const priceMarkup = price ? `<span class="card-price${price.estimated ? ' is-estimated' : ''}" title="${price.estimated ? 'Estimativa pelo Scryfall convertida pela PTAX' : `Preço ${price.stale ? 'desatualizado ' : ''}da LigaMagic`}">${priceSourceDot(price.estimated)}${price.estimated ? '~ ' : ''}${escapeHtml(formatBrlPrice(price.value))}${price.estimated ? '<small>estimado</small>' : ''}</span>` : '';
+  const banWarning = state.tab === 'catalog' && card.formats.length ? '<span class="card-tile__ban-warning">Banida</span>' : '';
+  const setAndPrice = state.tab === 'catalog' ? `<div class="card-tile__catalog-row"><span class="card-tile__set">${setLine}</span>${priceMarkup}</div>` : `<span class="card-tile__set">${setLine}</span>`;
+  const ariaFormats = formatsLabel ? `. Banida em ${formatsLabel}` : '';
+  return `<button class="card-tile card-tile--${frameClass} card-tile--${rarityClass}${legendaryClass}" style="--delay:${Math.min(index, 10) * 24}ms" type="button" data-card-id="${escapeHtml(card.id)}"${card.isCatalogStub ? ' data-catalog-stub="true"' : ''} aria-label="Ver ${escapeHtml(card.name)}${escapeHtml(ariaFormats)}"><div class="card-tile__art${image ? '' : card.isCatalogStub ? ' is-loading' : ' is-error'}">${imageMarkup}</div><div class="card-tile__body"><strong class="card-tile__name">${escapeHtml(card.name)}</strong><div class="card-tile__meta">${setAndPrice}<span class="card-tile__identity">${identity}</span><span class="format-badges">${badges}${more}${banWarning}</span></div></div></button>`;
+}
+
+function queueCatalogHydration(card) {
+  if (!card?.isCatalogStub || catalogHydrating.has(card.id)) return;
+  catalogHydrationQueue.set(card.id, card);
+  clearTimeout(catalogHydrationTimer);
+  catalogHydrationTimer = setTimeout(() => {
+    const queued = [...catalogHydrationQueue.values()];
+    catalogHydrationQueue.clear();
+    void hydrateCatalogCards(queued);
+  }, 40);
+}
+
+function observeCatalogCards() {
+  catalogHydrationObserver?.disconnect();
+  catalogHydrationObserver = null;
+  if (state.tab !== 'catalog') return;
+  const tiles = [...$('cardGrid').querySelectorAll('[data-catalog-stub="true"]')];
+  if (!tiles.length) return;
+  if (!('IntersectionObserver' in window)) {
+    tiles.slice(0, 12).forEach((tile) => queueCatalogHydration(catalogCardById.get(tile.dataset.cardId)));
+    return;
+  }
+  catalogHydrationObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      observer.unobserve(entry.target);
+      queueCatalogHydration(catalogCardById.get(entry.target.dataset.cardId));
+    });
+  }, { rootMargin: '600px 0px' });
+  tiles.forEach((tile) => catalogHydrationObserver.observe(tile));
+}
+
+function patchHydratedCatalogTiles(cards) {
+  if (state.tab !== 'catalog') return;
+  const grid = $('cardGrid');
+  const positions = new Map([...grid.children].map((tile, index) => [tile.dataset.cardId, index]));
+  cards.forEach((card) => {
+    const index = positions.get(card.id);
+    if (index === undefined) return;
+    const tile = [...grid.children][index];
+    tile.outerHTML = cardTileMarkup(card, index);
+    bindCardImages([...grid.children][index]);
+  });
+}
+
 function renderCards() {
   const visibleCards = state.filtered.slice(0, state.visible);
   $('cardGrid').classList.toggle('is-list', state.view === 'list');
-  $('cardGrid').innerHTML = visibleCards.map((card, index) => {
-    const frameClass = cardFrameClass(card);
-    const rarityClass = cardRarityClass(card);
-    const legendaryClass = isLegendaryCard(card) ? ' card-tile--legendary' : '';
-    const setLine = setLineMarkup(card);
-    const badges = card.formats.slice(0, 3).map((format) => {
-      const item = formats.find((candidate) => candidate.key === format);
-      return `<span class="format-badge" title="Banida em ${escapeHtml(item?.label || format)}">${escapeHtml(item?.short || format)}</span>`;
-    }).join('');
-    const more = card.formats.length > 3 ? `<span class="format-badge format-badge--more">+${card.formats.length - 3}</span>` : '';
-    const identity = (card.color_identity || []).map((color) => manaSymbolImage(color)).join('');
-    const srcset = imageSrcSet(card);
-    const image = imageFor(card, 0, 'small');
-    const formatsLabel = card.formats.map((key) => formats.find((item) => item.key === key)?.label || key).join(', ');
-    const imageMarkup = image ? `<img loading="lazy" decoding="async" width="488" height="680" src="${escapeHtml(image)}"${srcset ? ` srcset="${escapeHtml(srcset)}" sizes="(max-width: 559px) calc(50vw - 22px), (max-width: 959px) calc(25vw - 20px), 220px"` : ''} alt="Carta ${escapeHtml(card.name)}" />` : '';
-    const price = state.tab === 'catalog' ? effectiveCatalogPrice(card) : null;
-    const priceMarkup = price ? `<span class="card-price${price.estimated ? ' is-estimated' : ''}" title="${price.estimated ? 'Estimativa pelo Scryfall convertida pela PTAX' : `Preço ${price.stale ? 'desatualizado ' : ''}da LigaMagic`}">${priceSourceDot(price.estimated)}${price.estimated ? '~ ' : ''}${escapeHtml(formatBrlPrice(price.value))}${price.estimated ? '<small>estimado</small>' : ''}</span>` : '';
-    const banWarning = state.tab === 'catalog' && card.formats.length ? '<span class="card-tile__ban-warning">Banida</span>' : '';
-    const setAndPrice = state.tab === 'catalog' ? `<div class="card-tile__catalog-row"><span class="card-tile__set">${setLine}</span>${priceMarkup}</div>` : `<span class="card-tile__set">${setLine}</span>`;
-    const ariaFormats = formatsLabel ? `. Banida em ${formatsLabel}` : '';
-    return `<button class="card-tile card-tile--${frameClass} card-tile--${rarityClass}${legendaryClass}" style="--delay:${Math.min(index, 10) * 24}ms" type="button" data-card-id="${escapeHtml(card.id)}" aria-label="Ver ${escapeHtml(card.name)}${escapeHtml(ariaFormats)}"><div class="card-tile__art${image ? '' : card.isCatalogStub ? ' is-loading' : ' is-error'}">${imageMarkup}</div><div class="card-tile__body"><strong class="card-tile__name">${escapeHtml(card.name)}</strong><div class="card-tile__meta">${setAndPrice}<span class="card-tile__identity">${identity}</span><span class="format-badges">${badges}${more}${banWarning}</span></div></div></button>`;
-  }).join('');
+  $('cardGrid').innerHTML = visibleCards.map(cardTileMarkup).join('');
   $('cardGrid').setAttribute('aria-busy', 'false');
   bindCardImages($('cardGrid'));
   const hasMore = state.visible < state.filtered.length;
   $('loadMore').hidden = !hasMore;
   $('emptyState').hidden = Boolean(state.filtered.length) || !sourceCards().length;
   renderEmptySuggestions();
-  if (state.tab === 'catalog') void hydrateCatalogCards(visibleCards);
+  observeCatalogCards();
 }
 
 async function hydrateCatalogCards(cards) {
-  const stubs = cards.filter((card) => card?.isCatalogStub && !catalogHydrating.has(card.id));
-  if (!stubs.length) return;
+  const requested = cards.filter((card) => card?.isCatalogStub);
+  const pending = requested.map((card) => catalogHydrationPromises.get(card.id)).filter(Boolean);
+  const stubs = requested.filter((card) => !catalogHydrating.has(card.id));
+  if (!stubs.length) { if (pending.length) await Promise.allSettled(pending); return; }
   stubs.forEach((card) => catalogHydrating.add(card.id));
-  try {
-    for (let start = 0; start < stubs.length; start += 75) {
-      const batch = stubs.slice(start, start + 75);
+  const work = (async () => {
+    const updated = [];
+    const mergeCard = (stub, fullCard) => {
+      if (!fullCard) return;
+      catalogHydrationCache.set(stub.id, fullCard);
+      const bannedFormats = [...stub.formats];
+      const fallbackUsd = stub.prices?.usd || null;
+      const hydratedCard = normalizeCard(fullCard);
+      const hydratedUsd = hydratedCard.prices?.usd;
+      if ((hydratedUsd === null || hydratedUsd === undefined || hydratedUsd === '') && fallbackUsd) hydratedCard.prices = { ...hydratedCard.prices, usd: fallbackUsd };
+      Object.assign(stub, hydratedCard, { formats: bannedFormats, isCatalogStub: false });
+      prepareCard(stub);
+      updated.push(stub);
+    };
+    const missing = [];
+    stubs.forEach((stub) => {
+      const cached = catalogHydrationCache.get(stub.id);
+      if (cached) mergeCard(stub, cached); else missing.push(stub);
+    });
+    for (let start = 0; start < missing.length; start += 75) {
+      const batch = missing.slice(start, start + 75);
+      if (!batch.length) continue;
       const response = await fetch('https://api.scryfall.com/cards/collection', {
         method: 'POST', headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
         body: JSON.stringify({ identifiers: batch.map((card) => ({ id: card.id })) }),
@@ -610,27 +778,15 @@ async function hydrateCatalogCards(cards) {
       if (!response.ok) throw new Error(`Scryfall ${response.status}`);
       const payload = await response.json();
       const byId = new Map((payload.data || []).map((card) => [card.id, card]));
-      batch.forEach((stub) => {
-        const fullCard = byId.get(stub.id);
-        if (!fullCard) return;
-        catalogHydrationCache.set(stub.id, fullCard);
-        const bannedFormats = [...stub.formats];
-        const fallbackUsd = stub.prices?.usd || null;
-        const hydratedCard = normalizeCard(fullCard);
-        const hydratedUsd = hydratedCard.prices?.usd;
-        if ((hydratedUsd === null || hydratedUsd === undefined || hydratedUsd === '') && fallbackUsd) {
-          hydratedCard.prices = { ...hydratedCard.prices, usd: fallbackUsd };
-        }
-        Object.assign(stub, hydratedCard, { formats: bannedFormats, isCatalogStub: false });
-      });
+      batch.forEach((stub) => mergeCard(stub, byId.get(stub.id)));
     }
-    if (state.tab === 'catalog') renderCards();
-  } catch {
-    stubs.forEach((stub) => { stub.isCatalogStub = false; });
-    if (state.tab === 'catalog') renderCards();
-  } finally {
+    patchHydratedCatalogTiles(updated);
+  })().catch(() => {}).finally(() => {
     stubs.forEach((card) => catalogHydrating.delete(card.id));
-  }
+    stubs.forEach((card) => catalogHydrationPromises.delete(card.id));
+  });
+  stubs.forEach((card) => catalogHydrationPromises.set(card.id, work));
+  await Promise.allSettled([work, ...pending]);
 }
 
 function bindCardImages(scope) {
@@ -671,9 +827,15 @@ function renderEmptySuggestions() {
   }
   const query = search.freeText;
   if (!query) { target.innerHTML = ''; $('emptyMessage').textContent = 'Remova um dos filtros ativos para ampliar a consulta.'; return; }
-  const suggestions = state.cards
+  const candidates = state.cards
+    .filter((card) => {
+      const name = card._sortName || sortableName(card.name);
+      return name.includes(query) || query.includes(name) || (name[0] === query[0] && Math.abs(name.length - query.length) <= 6);
+    })
+    .slice(0, 600);
+  const suggestions = candidates
     .map((card) => {
-      const name = slug(card.name);
+      const name = card._sortName || sortableName(card.name);
       const distance = editDistance(query, name);
       const similarity = 1 - distance / Math.max(query.length, name.length, 1);
       return { card, similarity };
@@ -1232,6 +1394,7 @@ async function loadBackground() {
 
 function clearFilters() {
   clearScryfallSyntaxSearch();
+  state.oracleSearchAbort?.abort(); state.oracleSearchAbort = null;
   state.selectedFormats.clear(); state.selectedColors.clear(); state.colorMatch = 'exact'; state.query = ''; state.type = ''; state.cmc = ''; state.rarity = ''; state.set = ''; state.sort = 'name-asc'; state.maxPrice = 99; state.showBanned = false; state.oracleMatchKey = ''; state.oracleMatches = null;
   $('searchInput').value = ''; $('typeFilter').value = ''; $('cmcFilter').value = ''; $('rarityFilter').value = ''; $('setFilter').value = ''; $('sortFilter').value = 'name-asc';
   if ($('priceFilter')) $('priceFilter').value = 99;
@@ -1759,8 +1922,17 @@ function bind() {
     syncUrl(); applyFilters();
   });
 
-  const applySelect = (key, element) => element.addEventListener('change', () => { state[key] = element.value; syncUrl(); applyFilters(); });
-  applySelect('type', $('typeFilter')); applySelect('cmc', $('cmcFilter')); applySelect('rarity', $('rarityFilter')); applySelect('set', $('setFilter')); applySelect('sort', $('sortFilter'));
+  const applySelect = (key, element, { refreshOracle = false } = {}) => element.addEventListener('change', async () => {
+    state[key] = element.value;
+    syncUrl();
+    if (refreshOracle) await ensureCatalogOracleMatches();
+    applyFilters();
+  });
+  applySelect('type', $('typeFilter'), { refreshOracle: true });
+  applySelect('cmc', $('cmcFilter'), { refreshOracle: true });
+  applySelect('rarity', $('rarityFilter'), { refreshOracle: true });
+  applySelect('set', $('setFilter'), { refreshOracle: true });
+  applySelect('sort', $('sortFilter'));
 
   let searchTimer;
   $('searchInput').addEventListener('input', (event) => {
@@ -1783,7 +1955,9 @@ function bind() {
   $('cardGrid').addEventListener('click', async (event) => {
     const tile = event.target.closest('[data-card-id]');
     if (!tile) return;
-    const card = sourceCards().find((item) => item.id === tile.dataset.cardId);
+    const card = state.tab === 'catalog'
+      ? catalogCardById.get(tile.dataset.cardId) || sourceCards().find((item) => item.id === tile.dataset.cardId)
+      : sourceCards().find((item) => item.id === tile.dataset.cardId);
     if (card?.isCatalogStub) await hydrateCatalogCards([card]);
     if (card) openCard(card);
   });
@@ -1797,7 +1971,7 @@ function bind() {
     $('searchInput').value = state.query;
     syncUrl(); applyFilters();
   });
-  $('activeFilters').addEventListener('click', (event) => {
+  $('activeFilters').addEventListener('click', async (event) => {
     const button = event.target.closest('[data-remove-filter]');
     if (!button) return;
     const key = button.dataset.removeFilter;
@@ -1808,14 +1982,23 @@ function bind() {
     else if (key === 'maxPrice') { state.maxPrice = 99; $('priceFilter').value = 99; $('priceFilterValue').textContent = 'R$ 99'; }
     else if (key === 'showBanned') { state.showBanned = false; $('showBannedCatalog').checked = false; }
     else state[key] = '';
-    syncUrl(); restoreControlsFromState(); populateSetFilter(); applyFilters();
+    syncUrl(); restoreControlsFromState(); populateSetFilter();
+    await ensureCatalogOracleMatches();
+    applyFilters();
   });
 
-  $('priceFilter').addEventListener('input', (event) => {
-    state.maxPrice = Number(event.target.value);
-    $('priceFilterValue').textContent = `R$ ${state.maxPrice}`;
+  let priceFilterTimer;
+  const commitPriceFilter = () => {
+    clearTimeout(priceFilterTimer);
+    state.maxPrice = Number($('priceFilter').value);
     syncUrl(); applyFilters();
+  };
+  $('priceFilter').addEventListener('input', (event) => {
+    $('priceFilterValue').textContent = `R$ ${event.target.value}`;
+    clearTimeout(priceFilterTimer);
+    priceFilterTimer = setTimeout(commitPriceFilter, 90);
   });
+  $('priceFilter').addEventListener('change', commitPriceFilter);
   $('showBannedCatalog').addEventListener('change', (event) => { state.showBanned = event.target.checked; syncUrl(); applyFilters(); });
 
   $('openFilters').addEventListener('click', openFilterSheet);
@@ -1920,6 +2103,33 @@ function bind() {
   updateConnectionStatus();
 }
 
+async function getCatalogData() {
+  if (!catalogDataPromise) {
+    catalogDataPromise = Promise.all([
+      fetch(catalogIndexUrl, { headers: { Accept: 'application/json' }, cache: 'default' }),
+      fetch(catalogPriceIndexUrl, { headers: { Accept: 'application/json' }, cache: 'default' }),
+    ]).then(async ([catalogResponse, priceResponse]) => {
+      if (!catalogResponse.ok) throw new Error(`Catálogo ${catalogResponse.status}`);
+      return {
+        index: await catalogResponse.json(),
+        prices: priceResponse.ok ? await priceResponse.json() : { prices: {}, coverage: null },
+      };
+    }).catch((error) => { catalogDataPromise = null; throw error; });
+  }
+  return catalogDataPromise;
+}
+
+async function buildCatalogCards(tuples, token, view) {
+  const cards = new Array(tuples.length);
+  for (let start = 0; start < tuples.length; start += 4000) {
+    if (token !== view.loadToken) return [];
+    const end = Math.min(start + 4000, tuples.length);
+    for (let index = start; index < end; index += 1) cards[index] = catalogCardFromTuple(tuples[index]);
+    if (end < tuples.length) await new Promise((resolve) => setTimeout(resolve, 0));
+  }
+  return cards;
+}
+
 async function loadCatalog() {
   const view = viewStates.catalog;
   const token = ++view.loadToken;
@@ -1928,15 +2138,14 @@ async function loadCatalog() {
     $('cardGrid').setAttribute('aria-busy', 'true'); $('cardGrid').innerHTML = '';
   }
   try {
-    const [catalogResponse, priceResponse] = await Promise.all([
-      fetch(catalogIndexUrl, { headers: { Accept: 'application/json' }, cache: 'no-store' }),
-      fetch(catalogPriceIndexUrl, { headers: { Accept: 'application/json' }, cache: 'no-store' }),
-    ]);
-    if (!catalogResponse.ok) throw new Error(`Catálogo ${catalogResponse.status}`);
-    catalogIndex = await catalogResponse.json();
-    catalogPriceIndex = priceResponse.ok ? await priceResponse.json() : { prices: {}, coverage: null };
+    const data = await getCatalogData();
+    catalogIndex = data.index;
+    catalogPriceIndex = data.prices;
     if (token !== view.loadToken || !Array.isArray(catalogIndex?.cards)) return;
-    view.cards = catalogIndex.cards.map(catalogCardFromTuple);
+    view.cards = await buildCatalogCards(catalogIndex.cards, token, view);
+    if (token !== view.loadToken) return;
+    catalogCardById.clear();
+    view.cards.forEach((card) => catalogCardById.set(card.id, card));
     view.loaded = true; view.loadingMore = false;
     if (state !== view) return;
     populateSetFilter();
