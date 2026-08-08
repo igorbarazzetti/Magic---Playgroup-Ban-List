@@ -1,4 +1,4 @@
-import { calculateVirtualRange } from './virtual-grid.js?v=codex-36';
+import { calculateVirtualRange } from './virtual-grid.js?v=codex-42';
 
 const site = {
   playgroupName: 'Formatinho',
@@ -2487,13 +2487,6 @@ async function loadCards() {
   }
 }
 
-function registerServiceWorker() {
-  if (isLocalPreview || !('serviceWorker' in navigator) || !window.isSecureContext) return;
-  addEventListener('load', () => {
-    navigator.serviceWorker.register('/service-worker.js?v=codex-36', { scope: '/', updateViaCache: 'none' }).catch(() => {});
-  }, { once: true });
-}
-
 document.addEventListener('DOMContentLoaded', () => {
   $('brandLogo').src = site.logoPath;
   $('brandName').textContent = site.playgroupName;
@@ -2508,5 +2501,4 @@ document.addEventListener('DOMContentLoaded', () => {
   if (state.tab === 'catalog') loadCatalog();
   if (isScryfallSyntaxSearch(state.query)) void ensureScryfallSyntaxSearch();
   loadBackground();
-  registerServiceWorker();
 });

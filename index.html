@@ -26,7 +26,32 @@
     <link rel="preconnect" href="https://cards.scryfall.io" />
     <link rel="preconnect" href="https://api.scryfall.com" />
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=codex-36" />
+    <link rel="stylesheet" href="styles.css?v=codex-42" />
+    <script>
+      (() => {
+        if (!('serviceWorker' in navigator)) return;
+        addEventListener('load', async () => {
+          try {
+            const registrations = await navigator.serviceWorker.getRegistrations();
+            const hadController = Boolean(navigator.serviceWorker.controller);
+            await Promise.all(registrations
+              .filter((registration) => registration.scope.startsWith(location.origin))
+              .map((registration) => registration.unregister()));
+            if ('caches' in window) {
+              const keys = await caches.keys();
+              await Promise.all(keys.filter((key) => key.startsWith('formatinho-')).map((key) => caches.delete(key)));
+            }
+            const repairKey = 'formatinho-cache-repair-v42';
+            if (hadController && !sessionStorage.getItem(repairKey)) {
+              sessionStorage.setItem(repairKey, 'done');
+              location.reload();
+            }
+          } catch {
+            // A falha na limpeza nunca deve impedir o carregamento do aplicativo.
+          }
+        }, { once: true });
+      })();
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#archiveTitle">Ir para as cartas</a>
@@ -399,6 +424,6 @@
     </dialog>
 
     <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
-    <script type="module" src="banlist.js?v=codex-36"></script>
+    <script type="module" src="banlist.js?v=codex-42"></script>
   </body>
 </html>
