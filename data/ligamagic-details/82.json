@@ -115,5 +115,17 @@
     "collector_number": "151",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Stirrings",
     "checked_at": "2026-08-07T07:51:36.409Z"
+  },
+  "82fb9834-de65-41a5-b908-f49668dee3ec": {
+    "status": "available",
+    "name": "Auspicious Ancestor",
+    "price_brl": 3.63,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Miragem",
+    "printing_code": "MR",
+    "collector_number": "15",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auspicious%20Ancestor",
+    "checked_at": "2026-08-08T09:05:30.437Z"
   }
 }

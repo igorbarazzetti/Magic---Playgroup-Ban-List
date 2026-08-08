@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Academy%20Elite",
     "checked_at": "2026-08-06T03:47:31.660Z"
   },
+  "ba7aad10-6897-4e85-a976-1bf9282de5de": {
+    "status": "available",
+    "name": "Aven Eternal",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra da Centelha",
+    "printing_code": "WAR",
+    "collector_number": "42",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Eternal",
+    "checked_at": "2026-08-08T09:15:20.343Z"
+  },
   "baea7cc5-15ec-4229-ad8b-d4b34c2e21e8": {
     "status": "available",
     "name": "Akki Scrapchomper",

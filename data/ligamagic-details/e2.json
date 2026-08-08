@@ -70,5 +70,17 @@
     "collector_number": "58",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armaggon%2C%20Future%20Shark",
     "checked_at": "2026-08-07T19:29:44.433Z"
+  },
+  "e2f22cef-9494-4356-aa5c-619aecd7e74d": {
+    "status": "available",
+    "name": "Avatar of Hope",
+    "price_brl": 1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Oitava Edição - Kit Básico",
+    "printing_code": "8E",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avatar%20of%20Hope",
+    "checked_at": "2026-08-08T09:12:30.238Z"
   }
 }

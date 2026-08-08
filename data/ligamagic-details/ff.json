@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcbound%20Tracker",
     "checked_at": "2026-08-07T13:57:44.115Z"
   },
+  "ffa3b20b-d77b-43d5-86ac-6a591df1877f": {
+    "status": "available",
+    "name": "Auxiliary Boosters",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Edge of Eternities",
+    "printing_code": "EOE",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auxiliary%20Boosters",
+    "checked_at": "2026-08-08T09:08:30.093Z"
+  },
   "ffaa2776-f61d-4eaa-8949-a0407f85214f": {
     "status": "available",
     "name": "Ashiok's Skulker",

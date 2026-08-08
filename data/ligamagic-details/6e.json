@@ -1,4 +1,16 @@
 {
+  "6e24a5bd-0ce3-4dc1-98c6-60d527bfdcfd": {
+    "status": "available",
+    "name": "Automated Assembly Line",
+    "price_brl": 0.6,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fallout",
+    "printing_code": "PIP",
+    "collector_number": "10",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Automated%20Assembly%20Line",
+    "checked_at": "2026-08-08T09:07:20.065Z"
+  },
   "6eb74f6e-1c9d-4caf-a0d8-fa472d435346": {
     "status": "available",
     "name": "Abbey Griffin",

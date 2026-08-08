@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Curator",
     "checked_at": "2026-08-07T08:00:36.573Z"
   },
+  "ccad8b03-5ff1-4895-94e0-0c96883cb875": {
+    "status": "available",
+    "name": "Avalanche Tusker",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Khans de Tarkir",
+    "printing_code": "KTK",
+    "collector_number": "166",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avalanche%20Tusker",
+    "checked_at": "2026-08-08T09:10:40.144Z"
+  },
   "ccba143d-ed9b-4044-bdad-f010a0e38e47": {
     "status": "available",
     "name": "Blazing Shoal",

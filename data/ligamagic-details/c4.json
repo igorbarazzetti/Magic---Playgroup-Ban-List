@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aggressive%20Negotiations",
     "checked_at": "2026-08-06T14:40:31.694Z"
   },
+  "c4698dcc-baa0-44c5-a283-22f9dfe150f5": {
+    "status": "available",
+    "name": "Avarice Totem",
+    "price_brl": 0.43,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Quinta Aurora",
+    "printing_code": "5DN",
+    "collector_number": "104",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avarice%20Totem",
+    "checked_at": "2026-08-08T09:11:10.204Z"
+  },
   "c4d2fdf9-637d-4e97-ae33-45f2d27bf8cd": {
     "status": "available",
     "name": "Airbender Ascension",

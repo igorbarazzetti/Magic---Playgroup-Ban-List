@@ -154,5 +154,17 @@
     "collector_number": "108",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acid%20Web%20Spider",
     "checked_at": "2026-08-06T03:53:11.884Z"
+  },
+  "23f3e8ef-28c0-4a7f-adb1-af07bd0e1a05": {
+    "status": "available",
+    "name": "Avatar of Me",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unsanctioned",
+    "printing_code": "UND",
+    "collector_number": "17",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avatar%20of%20Me",
+    "checked_at": "2026-08-08T09:12:40.216Z"
   }
 }

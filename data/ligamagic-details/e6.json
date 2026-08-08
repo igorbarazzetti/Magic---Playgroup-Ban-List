@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Adamantoise",
     "checked_at": "2026-08-07T07:47:45.952Z"
   },
+  "e68d1b86-3996-4bbf-9086-a76a7f9ce2a4": {
+    "status": "available",
+    "name": "Aven Augur",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Visão do Futuro",
+    "printing_code": "FUT",
+    "collector_number": "32",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Augur",
+    "checked_at": "2026-08-08T09:14:20.325Z"
+  },
   "e6bef0c4-3dfc-49a8-8fec-22b2570b704b": {
     "status": "available",
     "name": "Aftershock",

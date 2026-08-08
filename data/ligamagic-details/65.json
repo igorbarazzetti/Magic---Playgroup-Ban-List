@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anafenza%2C%20Unyielding%20Lineage",
     "checked_at": "2026-08-07T04:46:31.506Z"
   },
+  "65a64759-3a93-4542-84fc-3af5ccb741f4": {
+    "status": "available",
+    "name": "Avenge",
+    "price_brl": 2.19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes Commander",
+    "printing_code": "MSC",
+    "collector_number": "11",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avenge",
+    "checked_at": "2026-08-08T09:21:00.534Z"
+  },
   "65a9f643-063f-406a-8d5a-5ebbe0f04c3d": {
     "status": "available",
     "name": "Demonic Attorney",

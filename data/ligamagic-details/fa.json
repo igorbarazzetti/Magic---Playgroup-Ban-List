@@ -58,5 +58,17 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Altar's%20Light",
     "checked_at": "2026-08-07T00:45:45.108Z"
+  },
+  "faac29f5-10ad-4800-a9d3-2259c4800352": {
+    "status": "available",
+    "name": "Aven Redeemer",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Legiões",
+    "printing_code": "LE",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Redeemer",
+    "checked_at": "2026-08-08T09:17:50.715Z"
   }
 }

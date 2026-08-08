@@ -1,4 +1,16 @@
 {
+  "8406b724-a824-4905-83e0-a6c02d7f72e3": {
+    "status": "available",
+    "name": "Aven Windreader",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Décima Edição",
+    "printing_code": "10E",
+    "collector_number": "69",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Windreader",
+    "checked_at": "2026-08-08T09:20:50.552Z"
+  },
   "84100106-1f97-4859-aadd-a35796ee000f": {
     "status": "available",
     "name": "Aura Extraction",
@@ -46,6 +58,30 @@
     "collector_number": "143",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arctic%20Flats",
     "checked_at": "2026-08-07T17:23:44.521Z"
+  },
+  "842e3835-fff3-4684-bfd1-e7064a1fd2e6": {
+    "status": "available",
+    "name": "Avacyn's Collar",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ascensão das Trevas",
+    "printing_code": "DKA",
+    "collector_number": "145",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avacyn's%20Collar",
+    "checked_at": "2026-08-08T09:09:00.108Z"
+  },
+  "8432df19-dbf4-457b-8c0b-1f4b3a0a37d2": {
+    "status": "available",
+    "name": "Auspicious Starrix",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ikoria: Terra de Colossos",
+    "printing_code": "IKO",
+    "collector_number": "144",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auspicious%20Starrix",
+    "checked_at": "2026-08-08T09:05:50.062Z"
   },
   "84587724-af96-4396-a0b3-1133d492d915": {
     "status": "available",

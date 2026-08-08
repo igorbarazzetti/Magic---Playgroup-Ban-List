@@ -58,5 +58,17 @@
     "collector_number": "3",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archway%20Angel",
     "checked_at": "2026-08-07T17:22:24.568Z"
+  },
+  "f2d5949b-3cdc-4efd-9841-7d450e12dbbe": {
+    "status": "available",
+    "name": "Aven Tactician",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dragões de Tarkir",
+    "printing_code": "DTK",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Tactician",
+    "checked_at": "2026-08-08T09:19:40.627Z"
   }
 }

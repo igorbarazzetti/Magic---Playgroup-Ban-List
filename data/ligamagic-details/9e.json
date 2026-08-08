@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashnod's%20Harvester",
     "checked_at": "2026-08-08T02:42:02.011Z"
   },
+  "9eb9e4c1-fabf-45ff-a584-fbe4b94fb41c": {
+    "status": "available",
+    "name": "Avatar Roku, Firebender",
+    "price_brl": 98,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Avatar: The Last Airbender Eternal",
+    "printing_code": "TLE",
+    "collector_number": "112",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avatar%20Roku%2C%20Firebender",
+    "checked_at": "2026-08-08T09:13:40.281Z"
+  },
   "9ecd53b0-4551-4505-b5d2-02ae49d4cbdb": {
     "status": "available",
     "name": "Acquired Mutation",

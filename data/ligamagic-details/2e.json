@@ -1,4 +1,16 @@
 {
+  "2e1deb7e-d40d-437e-b817-b66132d2d1d6": {
+    "status": "available",
+    "name": "Avarax",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominaria Remastered",
+    "printing_code": "DMR",
+    "collector_number": "112",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avarax",
+    "checked_at": "2026-08-08T09:10:50.264Z"
+  },
   "2e1e0385-1537-4cb6-9d24-e4593d9a8f4a": {
     "status": "available",
     "name": "Aurelia, Exemplar of Justice",

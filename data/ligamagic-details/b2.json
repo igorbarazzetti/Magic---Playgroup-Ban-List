@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani%2C%20Adversary%20of%20Tyrants",
     "checked_at": "2026-08-06T14:49:12.060Z"
   },
+  "b25d5b06-44cf-42bc-90dd-3b238f702361": {
+    "status": "available",
+    "name": "Auspicious Arrival",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassinato na Mansão Karlov",
+    "printing_code": "MKM",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auspicious%20Arrival",
+    "checked_at": "2026-08-08T09:05:40.022Z"
+  },
   "b262a057-9ace-48b4-b418-1bb751ccb300": {
     "status": "available",
     "name": "Angelic Purge",

@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Tide",
     "checked_at": "2026-08-06T11:01:03.688Z"
   },
+  "2fc6305e-e75e-478a-826b-49f655ed832c": {
+    "status": "available",
+    "name": "Avatar of Slaughter",
+    "price_brl": 0.8,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Anthology",
+    "printing_code": "CMA2",
+    "collector_number": "77",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avatar%20of%20Slaughter",
+    "checked_at": "2026-08-08T09:13:00.238Z"
+  },
   "2fcca686-03c8-4407-9f9f-2b7462470044": {
     "status": "available",
     "name": "Alabaster Potion",

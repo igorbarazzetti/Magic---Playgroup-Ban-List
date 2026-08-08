@@ -1,4 +1,28 @@
 {
+  "910ae0ca-257d-4b45-b039-f26e7b2f3d5c": {
+    "status": "available",
+    "name": "Aven Brigadier",
+    "price_brl": 9.19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Investida",
+    "printing_code": "ON",
+    "collector_number": "7",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Brigadier",
+    "checked_at": "2026-08-08T09:14:40.337Z"
+  },
+  "914ce8f6-5e92-436d-8541-1c72da8577dc": {
+    "status": "available",
+    "name": "Aven Archer",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Odisséia",
+    "printing_code": "OD",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Archer",
+    "checked_at": "2026-08-08T09:14:10.540Z"
+  },
   "916db499-7f0a-45f7-8abe-94818a53e494": {
     "status": "available",
     "name": "Armored Ascension",

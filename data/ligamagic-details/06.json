@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akawalli%2C%20the%20Seething%20Tower",
     "checked_at": "2026-08-06T14:53:52.221Z"
   },
+  "069f6530-e65c-4d52-85f3-e0a2acd148c5": {
+    "status": "available",
+    "name": "Avacyn's Pilgrim",
+    "price_brl": 0.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad",
+    "printing_code": "ISD",
+    "collector_number": "170",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avacyn's%20Pilgrim",
+    "checked_at": "2026-08-08T09:09:30.133Z"
+  },
   "06bea0b2-1d0f-4d64-a13e-723d08042e83": {
     "status": "available",
     "name": "Arbalest Engineers",

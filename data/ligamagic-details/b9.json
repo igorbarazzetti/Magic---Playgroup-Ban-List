@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aetherling",
     "checked_at": "2026-08-06T11:03:13.801Z"
   },
+  "b99af29a-2b1c-4682-bbbd-4fd7452b8f82": {
+    "status": "available",
+    "name": "Autograph Book",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unfinity",
+    "printing_code": "UNF",
+    "collector_number": "183",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Autograph%20Book",
+    "checked_at": "2026-08-08T09:07:00.037Z"
+  },
   "b9be5ce9-08bb-4361-940c-9031e429ba86": {
     "status": "available",
     "name": "Akroma, Vision of Ixidor",

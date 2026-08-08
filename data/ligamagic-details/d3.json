@@ -1,4 +1,16 @@
 {
+  "d31fd12f-b4dd-4bc3-ace4-703dabd0f607": {
+    "status": "available",
+    "name": "Aven Interrupter",
+    "price_brl": 29.94,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Os Fora da Lei de Encruzilhada do Trovão",
+    "printing_code": "OTJ",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Interrupter",
+    "checked_at": "2026-08-08T09:17:00.377Z"
+  },
   "d343c116-b33a-4ed6-ad15-d7270e739b04": {
     "status": "available",
     "name": "Aspiring Champion",

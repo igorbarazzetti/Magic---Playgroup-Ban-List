@@ -1,4 +1,16 @@
 {
+  "62009b63-ca6c-4fb0-8c9a-eccdec51cb18": {
+    "status": "available",
+    "name": "Avenger en-Dal",
+    "price_brl": 0.6,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nêmesis",
+    "printing_code": "NE",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avenger%20en-Dal",
+    "checked_at": "2026-08-08T09:21:10.514Z"
+  },
   "620d7146-b5b3-487c-a24b-f36b10f48df4": {
     "status": "available",
     "name": "Angler Drake",

@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambush%20Wolf",
     "checked_at": "2026-08-07T04:38:41.182Z"
   },
+  "4c71074b-b8bf-47f4-87e4-67c275abdbc5": {
+    "status": "available",
+    "name": "Avarice Amulet",
+    "price_brl": 0.19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2015",
+    "printing_code": "M15",
+    "collector_number": "212",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avarice%20Amulet",
+    "checked_at": "2026-08-08T09:11:00.181Z"
+  },
   "4c80112a-8ff5-4ca4-8737-b8d499d78982": {
     "status": "available",
     "name": "Amrou Scout",

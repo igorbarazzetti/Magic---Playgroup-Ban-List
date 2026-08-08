@@ -94,5 +94,17 @@
     "collector_number": "451",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=The%20One%20Ring",
     "checked_at": "2026-08-05T20:13:38.785Z"
+  },
+  "3afdc98e-aeeb-43e9-bdcd-0c51da44d2f8": {
+    "status": "available",
+    "name": "Autonomous Assembler",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra dos Irmãos",
+    "printing_code": "BRO",
+    "collector_number": "34",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Autonomous%20Assembler",
+    "checked_at": "2026-08-08T09:07:50.608Z"
   }
 }

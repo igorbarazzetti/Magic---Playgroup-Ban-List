@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Poisoner",
     "checked_at": "2026-08-06T10:58:43.587Z"
   },
+  "739d93c4-8d7b-4a54-bb6e-1d283e333392": {
+    "status": "available",
+    "name": "Aven Fateshaper",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Investida",
+    "printing_code": "ON",
+    "collector_number": "69",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Fateshaper",
+    "checked_at": "2026-08-08T09:15:40.376Z"
+  },
   "73a1552e-bbfa-445e-8306-b347354c0364": {
     "status": "available",
     "name": "Amugaba",
@@ -34,5 +46,17 @@
     "collector_number": "61",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amugaba",
     "checked_at": "2026-08-07T04:42:21.343Z"
+  },
+  "73cd8461-7930-4e2d-9a14-4d10db91e93e": {
+    "status": "available",
+    "name": "Aven Envoy",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Legiões",
+    "printing_code": "LE",
+    "collector_number": "30",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Envoy",
+    "checked_at": "2026-08-08T09:15:10.697Z"
   }
 }

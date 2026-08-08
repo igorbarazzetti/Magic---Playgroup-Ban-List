@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archghoul%20of%20Thraben",
     "checked_at": "2026-08-07T17:17:24.392Z"
   },
+  "57831c07-6915-4579-b3e1-de93a3664444": {
+    "status": "available",
+    "name": "Aven Surveyor",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends",
+    "printing_code": "CMR",
+    "collector_number": "57",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Surveyor",
+    "checked_at": "2026-08-08T09:19:31.231Z"
+  },
   "57ad3c3a-6ac7-4a35-bc07-00f6ea0988c5": {
     "status": "available",
     "name": "Alive // Well",
@@ -22,6 +34,18 @@
     "collector_number": "121",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alive%20%2F%2F%20Well",
     "checked_at": "2026-08-07T19:53:07.715Z"
+  },
+  "57d8d656-ccbd-4deb-abf1-a7fde4e7d691": {
+    "status": "available",
+    "name": "Aven Skirmisher",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Destino Reescrito",
+    "printing_code": "FRF",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Skirmisher",
+    "checked_at": "2026-08-08T09:18:40.915Z"
   },
   "57eba48e-87bd-4b54-8635-7348020f2ba4": {
     "status": "available",

@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aetherspouts",
     "checked_at": "2026-08-06T11:04:23.831Z"
   },
+  "4854f836-2247-43c3-adbc-1d1ee5eaf120": {
+    "status": "available",
+    "name": "Avatar of Fury",
+    "price_brl": 0.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander",
+    "printing_code": "CMD",
+    "collector_number": "110",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avatar%20of%20Fury",
+    "checked_at": "2026-08-08T09:12:20.238Z"
+  },
   "48a773d0-c433-4463-b50f-b6d4604a042c": {
     "status": "available",
     "name": "Abigale, Eloquent First-Year",
@@ -58,6 +70,18 @@
     "collector_number": "137",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archon%20of%20Sun's%20Grace",
     "checked_at": "2026-08-07T17:21:14.427Z"
+  },
+  "48bda7dd-d023-41e8-8c28-e0cfda0d07ca": {
+    "status": "available",
+    "name": "Aven Cloudchaser",
+    "price_brl": 0.02,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Odisséia",
+    "printing_code": "OD",
+    "collector_number": "7",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Cloudchaser",
+    "checked_at": "2026-08-08T09:14:50.330Z"
   },
   "48d14b5c-711a-4f8a-9de5-55415cb7a79a": {
     "status": "available",

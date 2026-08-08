@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Age%20of%20Ultron",
     "checked_at": "2026-08-06T11:09:24.083Z"
   },
+  "511d3de9-076b-4811-bddf-00623f98993f": {
+    "status": "available",
+    "name": "Auroral Procession",
+    "price_brl": 0.39,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm",
+    "printing_code": "TDM",
+    "collector_number": "169",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auroral%20Procession",
+    "checked_at": "2026-08-08T09:05:20.011Z"
+  },
   "512a9ab9-ddd4-4872-b4f4-dee56f9f5575": {
     "status": "available",
     "name": "Adriana's Valor",
@@ -46,6 +58,18 @@
     "collector_number": "94",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcbound%20Bruiser",
     "checked_at": "2026-08-07T13:55:03.974Z"
+  },
+  "518115c9-0f0f-4249-81ff-e79b27dda1be": {
+    "status": "available",
+    "name": "Aven Trailblazer",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Confluência",
+    "printing_code": "CON",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Trailblazer",
+    "checked_at": "2026-08-08T09:19:50.493Z"
   },
   "51833cff-6519-4806-8d91-0040e9a02189": {
     "status": "available",

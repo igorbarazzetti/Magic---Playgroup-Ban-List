@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alpine%20Meadow",
     "checked_at": "2026-08-07T00:42:25.046Z"
   },
+  "8c601628-b1ed-467b-ba92-8572343147f8": {
+    "status": "available",
+    "name": "Aven Gagglemaster",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2021",
+    "printing_code": "M21",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Gagglemaster",
+    "checked_at": "2026-08-08T09:16:30.353Z"
+  },
   "8c64db66-879e-46ad-9d11-8a95b6cf5d19": {
     "status": "available",
     "name": "Anaba Bodyguard",

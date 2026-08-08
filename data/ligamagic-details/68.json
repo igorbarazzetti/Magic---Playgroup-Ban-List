@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abyssal%20Harvester",
     "checked_at": "2026-08-06T00:17:17.343Z"
   },
+  "68d84ffa-5bd0-4ed9-a987-6cef13095438": {
+    "status": "available",
+    "name": "Avatar of Might",
+    "price_brl": 1.58,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Décima Edição",
+    "printing_code": "10E",
+    "collector_number": "251",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avatar%20of%20Might",
+    "checked_at": "2026-08-08T09:12:50.192Z"
+  },
   "68e1f7e0-a9b3-437f-8086-0c0cb85f2880": {
     "status": "available",
     "name": "Krark-Clan Ironworks",

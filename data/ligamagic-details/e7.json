@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Artifact%20Mutation",
     "checked_at": "2026-08-07T21:08:49.445Z"
   },
+  "e7ac8c1d-d298-4d57-8e0e-c60c7e61b247": {
+    "status": "available",
+    "name": "Aven Soulgazer",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Investida",
+    "printing_code": "ON",
+    "collector_number": "8",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Soulgazer",
+    "checked_at": "2026-08-08T09:19:00.863Z"
+  },
   "e7b2f844-2ba2-4465-bb80-358a4d915f36": {
     "status": "available",
     "name": "Abzan Advantage",

@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akroan%20Line%20Breaker",
     "checked_at": "2026-08-06T18:06:57.314Z"
   },
+  "01518a87-6b16-4b7b-805d-b652404c6356": {
+    "status": "available",
+    "name": "Aven Squire",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Confluência",
+    "printing_code": "CON",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Squire",
+    "checked_at": "2026-08-08T09:19:10.463Z"
+  },
   "01790829-cc03-430f-a899-2f274b7dbf62": {
     "status": "available",
     "name": "Arcbond",

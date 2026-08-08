@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bridge%20from%20Below",
     "checked_at": "2026-08-05T20:03:49.486Z"
   },
+  "0f3fff7a-cc46-4c72-9edc-fdbddd3b51b5": {
+    "status": "available",
+    "name": "Aven Liberator",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Flagelo",
+    "printing_code": "SC",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Liberator",
+    "checked_at": "2026-08-08T09:17:10.401Z"
+  },
   "0f5a3a09-2f07-4774-9e0f-e99d9a444166": {
     "status": "available",
     "name": "Aurelia, the Warleader",

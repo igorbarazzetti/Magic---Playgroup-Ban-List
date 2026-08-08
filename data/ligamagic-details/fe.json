@@ -106,5 +106,17 @@
     "collector_number": "115",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Sorin%2C%20Imperious%20Bloodlord",
     "checked_at": "2026-08-05T20:12:50.635Z"
+  },
+  "fee73267-b0ef-4f43-a0bd-7728691d6f17": {
+    "status": "available",
+    "name": "Aven Heartstabber",
+    "price_brl": 0.23,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ruas de Nova Capenna",
+    "printing_code": "SNC",
+    "collector_number": "166",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Heartstabber",
+    "checked_at": "2026-08-08T09:16:40.398Z"
   }
 }

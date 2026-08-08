@@ -1,4 +1,16 @@
 {
+  "a349e526-882c-454f-ba79-ad17340f8153": {
+    "status": "available",
+    "name": "Avalanche",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Era Glacial",
+    "printing_code": "IA",
+    "collector_number": "19",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avalanche",
+    "checked_at": "2026-08-08T09:10:00.111Z"
+  },
   "a35e1882-b878-49cf-a06c-be12a06d4977": {
     "status": "available",
     "name": "Arrogant Bloodlord",

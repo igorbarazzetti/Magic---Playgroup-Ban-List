@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alexi%2C%20Zephyr%20Mage",
     "checked_at": "2026-08-06T18:17:57.814Z"
   },
+  "3f806353-592e-431c-a7dd-a4c64034f94d": {
+    "status": "available",
+    "name": "Avatar of Discord",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Insurreição",
+    "printing_code": "DI",
+    "collector_number": "140",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avatar%20of%20Discord",
+    "checked_at": "2026-08-08T09:12:10.207Z"
+  },
   "3fa2d51c-d549-4287-ac3b-76bc72bcd8bc": {
     "status": "available",
     "name": "Alacrian Armory",
@@ -94,6 +106,18 @@
     "collector_number": "133",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambitious%20Assault",
     "checked_at": "2026-08-07T04:36:01.049Z"
+  },
+  "3fb3d4b3-1034-449c-864b-633e7f39d73f": {
+    "status": "available",
+    "name": "Aven Fogbringer",
+    "price_brl": 0.21,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Julgamento",
+    "printing_code": "JU",
+    "collector_number": "34",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Fogbringer",
+    "checked_at": "2026-08-08T09:16:20.383Z"
   },
   "3fe95820-cd7f-4f28-82bf-eb4350ea4179": {
     "status": "available",

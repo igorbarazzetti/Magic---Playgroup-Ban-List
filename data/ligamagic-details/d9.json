@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcane%20Encyclopedia",
     "checked_at": "2026-08-07T13:51:23.844Z"
   },
+  "d9517c5d-66d0-4178-96fb-a8c04f311ad8": {
+    "status": "available",
+    "name": "Aven Mindcensor",
+    "price_brl": 0.61,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Amonkhet",
+    "printing_code": "AKH",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Mindcensor",
+    "checked_at": "2026-08-08T09:17:30.421Z"
+  },
   "d981d85c-e97b-4fe7-b415-6e73a3e7e35c": {
     "status": "available",
     "name": "Akroan Crusader",
@@ -58,5 +70,17 @@
     "collector_number": "107",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aetherwind%20Basker",
     "checked_at": "2026-08-06T11:05:33.886Z"
+  },
+  "d9f43942-4296-417d-a180-5b4f64e4b12d": {
+    "status": "available",
+    "name": "Aven Reedstalker",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Hora da Devastação",
+    "printing_code": "HOU",
+    "collector_number": "30",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Reedstalker",
+    "checked_at": "2026-08-08T09:18:00.431Z"
   }
 }

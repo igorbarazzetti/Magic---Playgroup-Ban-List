@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Airborne%20Aid",
     "checked_at": "2026-08-06T14:47:41.913Z"
   },
+  "7f7e3701-6d65-4dde-8fcd-ce43ccef19e5": {
+    "status": "available",
+    "name": "Auto-Key",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unstable",
+    "printing_code": "UST",
+    "collector_number": "170",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auto-Key",
+    "checked_at": "2026-08-08T09:06:40.053Z"
+  },
   "7f9d5219-0306-4c39-8640-dcb4314042de": {
     "status": "available",
     "name": "Altac Bloodseeker",

@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aggressive%20Sabotage",
     "checked_at": "2026-08-06T14:40:41.651Z"
   },
+  "a4d22abe-87c5-4f6b-ad14-4a7935883169": {
+    "status": "available",
+    "name": "Aven Riftwatcher",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Caos Planar",
+    "printing_code": "PC",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Riftwatcher",
+    "checked_at": "2026-08-08T09:18:10.441Z"
+  },
   "a4d751e0-41c1-4e90-853d-512f385acd81": {
     "status": "available",
     "name": "All That Glitters",

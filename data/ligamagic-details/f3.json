@@ -119,6 +119,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Argothian%20Treefolk",
     "checked_at": "2026-08-07T19:26:13.606Z"
   },
+  "f3ae58ed-8ef7-4e0a-945f-1f622157236b": {
+    "status": "available",
+    "name": "Avacyn's Judgment",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Sombras em Innistrad",
+    "printing_code": "SOI",
+    "collector_number": "145",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avacyn's%20Judgment",
+    "checked_at": "2026-08-08T09:09:10.146Z"
+  },
   "f3c40943-1d7c-4ea2-b34f-8df8b6775701": {
     "status": "available",
     "name": "Animal Sanctuary",

@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcbound%20Lancer",
     "checked_at": "2026-08-07T13:56:03.998Z"
   },
+  "fd751ed4-4002-4cae-9d1d-1fe0f1fd4965": {
+    "status": "available",
+    "name": "Avatar Kyoshi, Earthbender",
+    "price_brl": 99.89,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Avatar: The Last Airbender Eternal",
+    "printing_code": "TLE",
+    "collector_number": "130",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avatar%20Kyoshi%2C%20Earthbender",
+    "checked_at": "2026-08-08T09:12:00.215Z"
+  },
   "fd949f82-fc10-4e37-8aa9-6c7569fe3c55": {
     "status": "available",
     "name": "Akroma's Will",

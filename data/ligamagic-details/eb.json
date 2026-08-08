@@ -35,6 +35,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archetype%20of%20Finality",
     "checked_at": "2026-08-07T17:16:04.757Z"
   },
+  "eb50b5f2-4840-4f90-9c85-40fc581be9c7": {
+    "status": "available",
+    "name": "Autarch Mammoth",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Aetherdrift",
+    "printing_code": "DFT",
+    "collector_number": "153",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Autarch%20Mammoth",
+    "checked_at": "2026-08-08T09:06:10.284Z"
+  },
+  "eb570331-35da-44b8-b711-ccf7444d8e39": {
+    "status": "available",
+    "name": "Automatic Librarian",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominária Unida",
+    "printing_code": "DMU",
+    "collector_number": "229",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Automatic%20Librarian",
+    "checked_at": "2026-08-08T09:07:30.086Z"
+  },
   "eb62aa4b-c11b-4195-ae85-cff8f78ce17b": {
     "status": "available",
     "name": "Advent of the Wurm",

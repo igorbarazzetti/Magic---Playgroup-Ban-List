@@ -119,6 +119,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Charge",
     "checked_at": "2026-08-06T07:22:25.263Z"
   },
+  "15fd66db-f9dd-40ab-92bc-9e0575bd7489": {
+    "status": "available",
+    "name": "Avatar of the Resolute",
+    "price_brl": 0.7,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dragões de Tarkir",
+    "printing_code": "DTK",
+    "collector_number": "175",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avatar%20of%20the%20Resolute",
+    "checked_at": "2026-08-08T09:13:10.255Z"
+  },
   "15fee0bd-ede2-4f65-a9a1-2da4623679d5": {
     "status": "available",
     "name": "Aether Figment",

@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcbound%20Whelp",
     "checked_at": "2026-08-07T13:58:04.162Z"
   },
+  "36a600fe-91b4-46a0-97ee-0cea2b63ec8e": {
+    "status": "available",
+    "name": "Aven Sentry",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominaria",
+    "printing_code": "DOM",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Sentry",
+    "checked_at": "2026-08-08T09:18:22.085Z"
+  },
   "36c2fc4c-7d8b-47c2-91c3-e356df60b219": {
     "status": "available",
     "name": "Angel of Jubilation",

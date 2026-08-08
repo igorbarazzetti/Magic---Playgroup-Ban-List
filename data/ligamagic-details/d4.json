@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcbound%20Condor",
     "checked_at": "2026-08-07T13:55:14.141Z"
   },
+  "d499e473-aed8-4c8b-8cf0-a43bcc5f40cf": {
+    "status": "available",
+    "name": "Aurora Shifter",
+    "price_brl": 2.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3 Commander",
+    "printing_code": "M3C",
+    "collector_number": "97",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aurora%20Shifter",
+    "checked_at": "2026-08-08T09:05:09.963Z"
+  },
   "d4ccc319-db23-4ef4-8129-317426f3a794": {
     "status": "available",
     "name": "Aerial Maneuver",

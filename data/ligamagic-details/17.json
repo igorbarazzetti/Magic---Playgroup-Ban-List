@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Allosaurus%20Rider",
     "checked_at": "2026-08-07T00:36:54.788Z"
   },
+  "176c0ca2-0ca1-45e2-8412-86de5dbead48": {
+    "status": "available",
+    "name": "Aven Mimeomancer",
+    "price_brl": 0.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nova Capenna Commander",
+    "printing_code": "NCC",
+    "collector_number": "329",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Mimeomancer",
+    "checked_at": "2026-08-08T09:17:20.392Z"
+  },
   "177c1f2d-abb9-40ea-afe4-141b08fdeabb": {
     "status": "available",
     "name": "Atarka Efreet",

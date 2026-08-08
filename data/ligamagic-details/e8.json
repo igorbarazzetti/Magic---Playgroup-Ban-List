@@ -11,6 +11,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arms%20Race",
     "checked_at": "2026-08-07T21:03:19.335Z"
   },
+  "e80be353-8b19-42d2-9141-5353a8409c8e": {
+    "status": "available",
+    "name": "Aven Smokeweaver",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Odisséia",
+    "printing_code": "OD",
+    "collector_number": "64",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Smokeweaver",
+    "checked_at": "2026-08-08T09:18:50.539Z"
+  },
+  "e8291185-9d87-4aa2-b7ba-d4946e5a082f": {
+    "status": "available",
+    "name": "Aven of Enduring Hope",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Hora da Devastação",
+    "printing_code": "HOU",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20of%20Enduring%20Hope",
+    "checked_at": "2026-08-08T09:17:40.415Z"
+  },
   "e89e1fae-bac3-4cc0-a233-24b9e08a5290": {
     "status": "available",
     "name": "Fall from Favor",

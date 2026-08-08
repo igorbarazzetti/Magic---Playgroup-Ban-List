@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armored%20Griffin",
     "checked_at": "2026-08-07T19:34:04.248Z"
   },
+  "ad5f9a18-89a5-4bcb-9cd7-5399ffd252d3": {
+    "status": "available",
+    "name": "Aven Wind Mage",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2019",
+    "printing_code": "M19",
+    "collector_number": "45",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Wind%20Mage",
+    "checked_at": "2026-08-08T09:20:41.052Z"
+  },
   "ad6bdd24-5a32-4046-83ee-2fe51bf8bb7a": {
     "status": "available",
     "name": "Archers of Qarsi",

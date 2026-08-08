@@ -1,4 +1,16 @@
 {
+  "bb813ffa-2615-4177-a7fb-6e0dfb819fc2": {
+    "status": "available",
+    "name": "Aven Wind Guide",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Amonkhet",
+    "printing_code": "AKH",
+    "collector_number": "195",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Wind%20Guide",
+    "checked_at": "2026-08-08T09:20:30.492Z"
+  },
   "bb956492-e3ed-483a-9169-5b795a8e619e": {
     "status": "available",
     "name": "Astelli Reclaimer",

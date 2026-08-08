@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aquamoeba",
     "checked_at": "2026-08-07T11:22:37.399Z"
   },
+  "55f3c721-e13a-406e-bc8e-d6cdc91ac477": {
+    "status": "available",
+    "name": "Authority of the Consuls",
+    "price_brl": 22.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaladesh",
+    "printing_code": "KLD",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Authority%20of%20the%20Consuls",
+    "checked_at": "2026-08-08T09:06:30.025Z"
+  },
   "55f7b005-31ea-4865-a8f3-460d15bed795": {
     "status": "available",
     "name": "Arc Reactor",

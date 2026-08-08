@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Artifact%20Ward",
     "checked_at": "2026-08-07T21:09:08.920Z"
   },
+  "9be9d534-470d-463a-ba2f-9817a6723692": {
+    "status": "available",
+    "name": "Avaricious Dragon",
+    "price_brl": 3.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic Origens",
+    "printing_code": "ORI",
+    "collector_number": "131",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avaricious%20Dragon",
+    "checked_at": "2026-08-08T09:11:20.376Z"
+  },
   "9bf4ee0f-6e28-4793-b251-f81ee444a119": {
     "status": "available",
     "name": "Assault Strobe",

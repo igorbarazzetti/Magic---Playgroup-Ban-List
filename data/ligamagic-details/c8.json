@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Disciple%20of%20the%20Vault",
     "checked_at": "2026-08-05T20:05:19.459Z"
   },
+  "c872012d-b598-4076-8385-2e3771c0306f": {
+    "status": "available",
+    "name": "Aven Initiate",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Amonkhet",
+    "printing_code": "AKH",
+    "collector_number": "43",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Initiate",
+    "checked_at": "2026-08-08T09:16:50.374Z"
+  },
   "c8c110db-4d98-4087-a3b0-c7fe88b5e38a": {
     "status": "available",
     "name": "Angelic Cub",
@@ -34,6 +46,18 @@
     "collector_number": "2",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Cub",
     "checked_at": "2026-08-07T08:00:26.516Z"
+  },
+  "c8c868f8-19a5-4cc5-b769-aa382f7b97ad": {
+    "status": "available",
+    "name": "Autumn Willow",
+    "price_brl": 2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Natais",
+    "printing_code": "HL",
+    "collector_number": "83",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Autumn%20Willow",
+    "checked_at": "2026-08-08T09:08:10.105Z"
   },
   "c8deef08-fcf2-41e1-8aeb-aa4e0af147ca": {
     "status": "available",

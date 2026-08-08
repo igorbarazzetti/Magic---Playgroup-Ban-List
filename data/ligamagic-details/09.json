@@ -94,5 +94,29 @@
     "collector_number": "93",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Andradite%20Leech",
     "checked_at": "2026-08-07T07:52:26.167Z"
+  },
+  "09c450cf-5f22-45c2-86ed-21b85552a96f": {
+    "status": "available",
+    "name": "Aven Shrine",
+    "price_brl": 0.41,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Odisséia",
+    "printing_code": "OD",
+    "collector_number": "9",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Shrine",
+    "checked_at": "2026-08-08T09:18:30.565Z"
+  },
+  "09cc8709-fe10-472a-b05c-e89f3523018d": {
+    "status": "available",
+    "name": "Austere Command",
+    "price_brl": 3.38,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes Commander",
+    "printing_code": "MSC",
+    "collector_number": "121",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Austere%20Command",
+    "checked_at": "2026-08-08T09:06:00.004Z"
   }
 }

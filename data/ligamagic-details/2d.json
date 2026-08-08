@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Artifact%20Blast",
     "checked_at": "2026-08-07T21:08:38.913Z"
   },
+  "2da5aa33-3794-4f83-936c-9d8640833d86": {
+    "status": "available",
+    "name": "Avatar of Woe",
+    "price_brl": 14.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Anthology 2018",
+    "printing_code": "CM2",
+    "collector_number": "57",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avatar%20of%20Woe",
+    "checked_at": "2026-08-08T09:13:30.266Z"
+  },
   "2dd7a4dc-902a-4e85-8a3b-c96a898fba86": {
     "status": "available",
     "name": "Animate Artifact",

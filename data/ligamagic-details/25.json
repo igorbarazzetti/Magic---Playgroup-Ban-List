@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Sleuth",
     "checked_at": "2026-08-07T09:20:25.950Z"
   },
+  "258073aa-6500-46a2-a5e5-22378b14260b": {
+    "status": "available",
+    "name": "Aven Trooper",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tormento",
+    "printing_code": "TR",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Trooper",
+    "checked_at": "2026-08-08T09:20:00.801Z"
+  },
   "2583836d-7fd3-47b3-9b69-6814efe54a90": {
     "status": "available",
     "name": "Stirring Bard",

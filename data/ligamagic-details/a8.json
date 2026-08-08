@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agent's%20Toolkit",
     "checked_at": "2026-08-06T11:13:14.179Z"
   },
+  "a8abc5db-4e0b-488d-898a-8109690d5099": {
+    "status": "available",
+    "name": "Avacyn's Memorial",
+    "price_brl": 27.59,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Caçada à Meia-noite (Commander)",
+    "printing_code": "MIC",
+    "collector_number": "31",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avacyn's%20Memorial",
+    "checked_at": "2026-08-08T09:09:20.101Z"
+  },
   "a8abd966-de7b-46a3-8ac7-8747ab35653a": {
     "status": "available",
     "name": "Wheel of Fortune",

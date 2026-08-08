@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aethersnatch",
     "checked_at": "2026-08-06T11:03:53.797Z"
   },
+  "4591e1e5-5cac-4812-80e0-67c1237862d3": {
+    "status": "available",
+    "name": "Aven Farseer",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Flagelo",
+    "printing_code": "SC",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Farseer",
+    "checked_at": "2026-08-08T09:15:30.339Z"
+  },
   "45d652c4-188e-4f00-acdd-1be014922cbc": {
     "status": "available",
     "name": "Attercop",

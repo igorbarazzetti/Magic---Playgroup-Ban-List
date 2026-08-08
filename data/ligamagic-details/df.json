@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Academy%20Researchers",
     "checked_at": "2026-08-06T03:48:21.646Z"
   },
+  "df7e296d-96de-4280-a4d8-49189544b9e3": {
+    "status": "available",
+    "name": "Avacynian Priest",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad Remastered",
+    "printing_code": "INR",
+    "collector_number": "12",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avacynian%20Priest",
+    "checked_at": "2026-08-08T09:09:50.159Z"
+  },
   "df9cdc11-cb92-46ce-a83d-eb26e3cd004a": {
     "status": "available",
     "name": "Another Chance",

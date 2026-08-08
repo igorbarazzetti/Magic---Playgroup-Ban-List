@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alesha%2C%20Who%20Smiles%20at%20Death",
     "checked_at": "2026-08-06T18:17:18.104Z"
   },
+  "696fb1fa-5535-4f73-8235-ad4416dcfdd0": {
+    "status": "available",
+    "name": "Aven Battle Priest",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic Origens",
+    "printing_code": "ORI",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Battle%20Priest",
+    "checked_at": "2026-08-08T09:14:30.293Z"
+  },
   "697ac261-263b-4879-bf45-6d10d23312ae": {
     "status": "available",
     "name": "Ao, the Dawn Sky",
@@ -58,6 +70,18 @@
     "collector_number": "292",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arisen%20Gorgon",
     "checked_at": "2026-08-07T19:27:03.614Z"
+  },
+  "69a72414-d02f-4a5c-b5c9-8941bb181f61": {
+    "status": "available",
+    "name": "Aven Fisher",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominaria Remastered",
+    "printing_code": "DMR",
+    "collector_number": "41",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Fisher",
+    "checked_at": "2026-08-08T09:15:50.382Z"
   },
   "69b1b0ec-9db0-48d1-a7b5-71281aca16fe": {
     "status": "available",

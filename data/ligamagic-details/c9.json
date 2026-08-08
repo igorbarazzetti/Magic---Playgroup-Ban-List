@@ -1,4 +1,16 @@
 {
+  "c9048d35-aff7-45ae-ae97-db89397b3e74": {
+    "status": "available",
+    "name": "Avalanche Riders",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "World Championship Decks",
+    "printing_code": "WCD",
+    "collector_number": "20000",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avalanche%20Riders",
+    "checked_at": "2026-08-08T09:10:30.150Z"
+  },
   "c9160997-0305-47f5-9a2f-77588d167da0": {
     "status": "available",
     "name": "Aminatou's Augury",

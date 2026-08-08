@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcbound%20Reclaimer",
     "checked_at": "2026-08-07T13:56:54.014Z"
   },
+  "c66dc0d3-b98c-40a2-be35-e455b4658828": {
+    "status": "available",
+    "name": "Avalanche Caller",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Jumpstart 2022",
+    "printing_code": "J22",
+    "collector_number": "274",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avalanche%20Caller",
+    "checked_at": "2026-08-08T09:10:10.230Z"
+  },
   "c6861c50-d336-4352-a76d-ec22a86ec09e": {
     "status": "available",
     "name": "Amplifire",

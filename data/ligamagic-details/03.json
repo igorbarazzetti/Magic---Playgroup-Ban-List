@@ -58,5 +58,17 @@
     "collector_number": "10",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Appa%2C%20Steadfast%20Guardian",
     "checked_at": "2026-08-07T11:19:06.715Z"
+  },
+  "03f5946b-e000-4b39-a49f-1c31668b51bd": {
+    "status": "available",
+    "name": "Autumn's Veil",
+    "price_brl": 1.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2012",
+    "printing_code": "M12",
+    "collector_number": "164",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Autumn's%20Veil",
+    "checked_at": "2026-08-08T09:08:00.059Z"
   }
 }

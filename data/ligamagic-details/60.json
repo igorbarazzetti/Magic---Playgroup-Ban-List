@@ -1,4 +1,16 @@
 {
+  "600e1093-5619-49b3-b193-bd263e4fde33": {
+    "status": "available",
+    "name": "Automated Artificer",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kamigawa: Dinastia Neon",
+    "printing_code": "NEO",
+    "collector_number": "239",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Automated%20Artificer",
+    "checked_at": "2026-08-08T09:07:10.046Z"
+  },
   "602cce3e-7033-47d6-aec1-d755f234f270": {
     "status": "available",
     "name": "Adept Watershaper",
@@ -58,6 +70,18 @@
     "collector_number": "14",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancestor%20Dragon",
     "checked_at": "2026-08-07T04:48:02.086Z"
+  },
+  "60b0fd7c-a4cc-4a41-8455-debcfeccff81": {
+    "status": "available",
+    "name": "Aven Sunstriker",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dragões de Tarkir",
+    "printing_code": "DTK",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Sunstriker",
+    "checked_at": "2026-08-08T09:19:20.464Z"
   },
   "60c60923-ff1b-43f7-8768-731499fcffc9": {
     "status": "available",
