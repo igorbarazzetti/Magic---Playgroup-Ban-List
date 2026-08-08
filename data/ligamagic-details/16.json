@@ -1,4 +1,16 @@
 {
+  "1610875f-48da-490c-a371-c439dc36f533": {
+    "status": "available",
+    "name": "Barrow Ghoul",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alisios",
+    "printing_code": "WL",
+    "collector_number": "20",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barrow%20Ghoul",
+    "checked_at": "2026-08-08T19:17:12.457Z"
+  },
   "162572f2-1757-42e9-bd97-e6bd9a762c0e": {
     "status": "available",
     "name": "Ashaya, Soul of the Wild",

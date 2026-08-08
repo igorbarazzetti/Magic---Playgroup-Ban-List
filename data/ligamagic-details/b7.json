@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abyssal%20Nocturnus",
     "checked_at": "2026-08-06T03:44:21.490Z"
   },
+  "b7d231eb-255d-4505-89a9-0c6824622209": {
+    "status": "available",
+    "name": "Barkhide Troll",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2020",
+    "printing_code": "M20",
+    "collector_number": "165",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barkhide%20Troll",
+    "checked_at": "2026-08-08T19:11:12.338Z"
+  },
   "b7d7c131-b628-4b35-b40b-1087589ebdd0": {
     "status": "available",
     "name": "Andúril, Narsil Reforged",

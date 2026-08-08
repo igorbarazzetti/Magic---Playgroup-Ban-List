@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auriok%20Bladewarden",
     "checked_at": "2026-08-08T07:32:03.385Z"
   },
+  "28b22709-3e69-4eb7-8a3d-b75b6e65f30e": {
+    "status": "available",
+    "name": "Barbed Spike",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 2",
+    "printing_code": "MH2",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbed%20Spike",
+    "checked_at": "2026-08-08T19:08:02.255Z"
+  },
   "28c7f2b6-ba67-4ccf-9e1b-99c89a9d1f72": {
     "status": "available",
     "name": "Angel of Invention",

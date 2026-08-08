@@ -46,5 +46,17 @@
     "collector_number": "2",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Airlift%20Chaplain",
     "checked_at": "2026-08-06T14:48:11.965Z"
+  },
+  "71a756f3-cd1e-4047-90ac-eda096b90647": {
+    "status": "available",
+    "name": "Barrage of Boulders",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Khans de Tarkir",
+    "printing_code": "KTK",
+    "collector_number": "100",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barrage%20of%20Boulders",
+    "checked_at": "2026-08-08T19:13:12.438Z"
   }
 }

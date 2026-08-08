@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Animate%20Library",
     "checked_at": "2026-08-07T09:25:26.147Z"
   },
+  "f7c237e6-17a4-4e72-8cc3-456aec738394": {
+    "status": "available",
+    "name": "Barrin's Codex",
+    "price_brl": 0.52,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Saga de Urza",
+    "printing_code": "US",
+    "collector_number": "286",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barrin's%20Codex",
+    "checked_at": "2026-08-08T19:16:12.435Z"
+  },
   "f7ed301a-dce7-49d0-a68a-d3a099201f65": {
     "status": "available",
     "name": "Aether Swooper",

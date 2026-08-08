@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Brigadier",
     "checked_at": "2026-08-08T09:14:40.337Z"
   },
+  "913672bc-cc88-4964-a331-7dbce40f2bda": {
+    "status": "available",
+    "name": "Barret Wallace",
+    "price_brl": 0.14,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY",
+    "printing_code": "FIN",
+    "collector_number": "129",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barret%20Wallace",
+    "checked_at": "2026-08-08T19:15:22.404Z"
+  },
   "914ce8f6-5e92-436d-8541-1c72da8577dc": {
     "status": "available",
     "name": "Aven Archer",
@@ -34,6 +46,18 @@
     "collector_number": "18",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avizoa",
     "checked_at": "2026-08-08T13:20:16.860Z"
+  },
+  "9167998d-5cac-47d7-99f2-f38122f7b8e7": {
+    "status": "available",
+    "name": "Barter in Blood",
+    "price_brl": 0.11,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Retorno de Avacyn",
+    "printing_code": "AVR",
+    "collector_number": "85",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barter%20in%20Blood",
+    "checked_at": "2026-08-08T19:18:02.557Z"
   },
   "916db499-7f0a-45f7-8abe-94818a53e494": {
     "status": "available",

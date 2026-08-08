@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bad%20Moon",
     "checked_at": "2026-08-08T14:59:07.524Z"
   },
+  "fc728cd7-2b5b-45f3-896a-a45648bcb61d": {
+    "status": "available",
+    "name": "Baron Sengir",
+    "price_brl": 4.8,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Natais",
+    "printing_code": "HL",
+    "collector_number": "41",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baron%20Sengir",
+    "checked_at": "2026-08-08T19:12:32.370Z"
+  },
   "fc734a75-93bf-448b-b347-810ae835fe49": {
     "status": "available",
     "name": "Archangel's Light",

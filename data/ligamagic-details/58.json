@@ -1,4 +1,16 @@
 {
+  "581425e6-3128-4f83-9efc-17028fc65078": {
+    "status": "available",
+    "name": "Barrier Breach",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ikoria: Terra de Colossos",
+    "printing_code": "IKO",
+    "collector_number": "145",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barrier%20Breach",
+    "checked_at": "2026-08-08T19:15:42.423Z"
+  },
   "581c2fb6-fcce-42c1-b198-1f8d62e862b1": {
     "status": "available",
     "name": "Arashin Foremost",

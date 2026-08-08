@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apocalypse%20Demon",
     "checked_at": "2026-08-07T11:17:07.183Z"
   },
+  "5bbc3ad0-4865-43f0-8baf-e7f4af5db656": {
+    "status": "available",
+    "name": "Bard Class",
+    "price_brl": 5.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Adventures in the Forgotten Realms",
+    "printing_code": "AFR",
+    "collector_number": "217",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bard%20Class",
+    "checked_at": "2026-08-08T19:08:42.637Z"
+  },
   "5bd81d2f-46a1-4536-92e7-28c7e1892735": {
     "status": "available",
     "name": "Akki Battle Squad",

@@ -82,5 +82,29 @@
     "collector_number": "126",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agility%20Bobblehead",
     "checked_at": "2026-08-06T14:41:11.706Z"
+  },
+  "83a38c8d-e2f6-404b-83be-9cfce037d6e2": {
+    "status": "available",
+    "name": "Basalt Gargoyle",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Espiral Temporal",
+    "printing_code": "TS",
+    "collector_number": "145",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Basalt%20Gargoyle",
+    "checked_at": "2026-08-08T19:19:32.519Z"
+  },
+  "83f776d9-f3b6-40c2-8008-1ace4d110825": {
+    "status": "available",
+    "name": "Barret, Avalanche Leader",
+    "price_brl": 1.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY Commander",
+    "printing_code": "FIC",
+    "collector_number": "79",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barret%2C%20Avalanche%20Leader",
+    "checked_at": "2026-08-08T19:15:12.365Z"
   }
 }

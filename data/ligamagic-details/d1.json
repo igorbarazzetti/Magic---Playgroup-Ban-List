@@ -203,6 +203,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aggressive%20Instinct",
     "checked_at": "2026-08-06T14:40:01.627Z"
   },
+  "d1ce7fcf-42f8-4b35-9ba1-55033c65c43e": {
+    "status": "available",
+    "name": "Barroom Brawl",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends: Batalha por Portal de Baldur",
+    "printing_code": "CLB",
+    "collector_number": "217",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barroom%20Brawl",
+    "checked_at": "2026-08-08T19:16:52.478Z"
+  },
   "d1d719e9-9c02-40cf-8849-91a5c120a516": {
     "status": "available",
     "name": "Alabaster Host Intercessor",

@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Animation%20Module",
     "checked_at": "2026-08-07T09:26:06.180Z"
   },
+  "af422a4b-087c-4753-9288-c31fb3457740": {
+    "status": "available",
+    "name": "Barging Sergeant",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Guildas de Ravnica",
+    "printing_code": "GRN",
+    "collector_number": "92",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barging%20Sergeant",
+    "checked_at": "2026-08-08T19:10:02.383Z"
+  },
   "af471455-6b9f-4c14-bb90-a74a44ecd247": {
     "status": "available",
     "name": "Aeon Engine",

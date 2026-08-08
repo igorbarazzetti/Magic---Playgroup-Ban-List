@@ -131,6 +131,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avacyn's%20Judgment",
     "checked_at": "2026-08-08T09:09:10.146Z"
   },
+  "f3b70d61-e33e-4243-aac9-e7bd9ba40acb": {
+    "status": "available",
+    "name": "Barrage Tyrant",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Batalha por Zendikar",
+    "printing_code": "BFZ",
+    "collector_number": "127",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barrage%20Tyrant",
+    "checked_at": "2026-08-08T19:13:42.327Z"
+  },
   "f3c40943-1d7c-4ea2-b34f-8df8b6775701": {
     "status": "available",
     "name": "Animal Sanctuary",

@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Hogaak%2C%20Arisen%20Necropolis",
     "checked_at": "2026-08-05T20:07:40.807Z"
   },
+  "97ba11a1-16cd-47ee-a187-1e919c468e4e": {
+    "status": "available",
+    "name": "Barbed Sextant",
+    "price_brl": 0.12,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Era Glacial",
+    "printing_code": "IA",
+    "collector_number": "26",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbed%20Sextant",
+    "checked_at": "2026-08-08T19:07:32.115Z"
+  },
   "97bb1589-2941-4a75-a5f6-916871e51e9e": {
     "status": "available",
     "name": "Alandra, Sky Dreamer",

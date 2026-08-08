@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balduvian%20Dead",
     "checked_at": "2026-08-08T15:04:57.671Z"
   },
+  "18e7ba0d-88a5-466b-9228-d3f5aae8f83e": {
+    "status": "available",
+    "name": "Basal Sliver",
+    "price_brl": 0.85,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Espiral Temporal",
+    "printing_code": "TS",
+    "collector_number": "96",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Basal%20Sliver",
+    "checked_at": "2026-08-08T19:19:12.604Z"
+  },
   "18e96674-6fd8-4046-a3fe-7ba80138d85d": {
     "status": "available",
     "name": "Alarum",

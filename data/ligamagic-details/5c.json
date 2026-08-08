@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Awakening%20of%20Vitu-Ghazi",
     "checked_at": "2026-08-08T13:22:26.953Z"
   },
+  "5c5bfbb2-0e63-4e43-b441-c4878983288f": {
+    "status": "available",
+    "name": "Bard's Company",
+    "price_brl": 13.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "The Hobbit",
+    "printing_code": "HOB",
+    "collector_number": "146",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bard's%20Company",
+    "checked_at": "2026-08-08T19:09:12.147Z"
+  },
   "5c641df8-97d7-484b-8d0e-790279fd6177": {
     "status": "available",
     "name": "Artifact Possession",

@@ -58,5 +58,17 @@
     "collector_number": "655",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baeloth%20Barrityl%2C%20Entertainer",
     "checked_at": "2026-08-08T14:59:47.530Z"
+  },
+  "33d42811-686d-4aca-bb3b-086de453ddaf": {
+    "status": "available",
+    "name": "Bartered Cow",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Trono de Eldraine",
+    "printing_code": "ELD",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bartered%20Cow",
+    "checked_at": "2026-08-08T19:18:12.464Z"
   }
 }

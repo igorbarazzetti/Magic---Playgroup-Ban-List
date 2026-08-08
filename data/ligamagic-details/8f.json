@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Accursed%20Horde",
     "checked_at": "2026-08-06T03:51:31.789Z"
   },
+  "8fbca9ba-8b83-40ca-9f7e-5c483ba76675": {
+    "status": "available",
+    "name": "Barbed Sliver",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tempestade",
+    "printing_code": "TP",
+    "collector_number": "16",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbed%20Sliver",
+    "checked_at": "2026-08-08T19:07:52.092Z"
+  },
   "8fea91ee-5849-4c46-8198-fd383d9a55e8": {
     "status": "available",
     "name": "Arachnus Spinner",

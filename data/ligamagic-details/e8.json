@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20of%20Enduring%20Hope",
     "checked_at": "2026-08-08T09:17:40.415Z"
   },
+  "e886756a-298d-4f79-8699-8bfc9345352e": {
+    "status": "available",
+    "name": "Barony Vampire",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2020",
+    "printing_code": "M20",
+    "collector_number": "85",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barony%20Vampire",
+    "checked_at": "2026-08-08T19:13:02.797Z"
+  },
   "e89e1fae-bac3-4cc0-a233-24b9e08a5290": {
     "status": "available",
     "name": "Fall from Favor",

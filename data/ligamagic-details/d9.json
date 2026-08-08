@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aetherwind%20Basker",
     "checked_at": "2026-08-06T11:05:33.886Z"
   },
+  "d9ecb346-7745-4106-a3e1-c467a3b91ec7": {
+    "status": "available",
+    "name": "Barrel Down Sokenzan",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Salvadores Kamigawa",
+    "printing_code": "SOK",
+    "collector_number": "94",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barrel%20Down%20Sokenzan",
+    "checked_at": "2026-08-08T19:13:52.331Z"
+  },
   "d9f43942-4296-417d-a180-5b4f64e4b12d": {
     "status": "available",
     "name": "Aven Reedstalker",

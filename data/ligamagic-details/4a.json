@@ -1,4 +1,16 @@
 {
+  "4a221518-c850-4e8a-a697-765c0a0e76e7": {
+    "status": "available",
+    "name": "Barktooth Warbeard",
+    "price_brl": 13.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Legends",
+    "printing_code": "LG",
+    "collector_number": "27",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barktooth%20Warbeard",
+    "checked_at": "2026-08-08T19:11:32.244Z"
+  },
   "4a782bf9-4051-4613-8852-33b0d85a0edd": {
     "status": "available",
     "name": "Ajani's Welcome",
@@ -22,6 +34,18 @@
     "collector_number": "166",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alloy%20Animist",
     "checked_at": "2026-08-07T00:37:04.865Z"
+  },
+  "4aceb786-960d-4719-9de8-79dffd491a51": {
+    "status": "available",
+    "name": "Bard's Bow",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY",
+    "printing_code": "FIN",
+    "collector_number": "174",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bard's%20Bow",
+    "checked_at": "2026-08-08T19:09:02.161Z"
   },
   "4adcd967-9ff7-4940-b8b9-0c4215bbcb75": {
     "status": "available",

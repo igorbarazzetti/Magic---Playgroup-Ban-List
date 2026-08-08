@@ -46,5 +46,17 @@
     "collector_number": "2212",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atreus%2C%20Impulsive%20Son",
     "checked_at": "2026-08-08T07:21:13.067Z"
+  },
+  "f6e1eb52-9f13-425c-8309-1b08ed6557db": {
+    "status": "available",
+    "name": "Barbed Lightning",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Darksteel",
+    "printing_code": "DS",
+    "collector_number": "55",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbed%20Lightning",
+    "checked_at": "2026-08-08T19:07:12.078Z"
   }
 }

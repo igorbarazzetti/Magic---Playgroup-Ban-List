@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aggressive%20Mammoth",
     "checked_at": "2026-08-06T14:40:11.655Z"
   },
+  "0339bd11-ad71-4998-9b5d-a32790f0e5e3": {
+    "status": "available",
+    "name": "Barkform Harvester",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Bloomburrow",
+    "printing_code": "BLB",
+    "collector_number": "243",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barkform%20Harvester",
+    "checked_at": "2026-08-08T19:10:52.198Z"
+  },
   "03436524-197a-4941-a2a1-c7c4b71c4709": {
     "status": "available",
     "name": "Arcbound Wanderer",
@@ -46,6 +58,18 @@
     "collector_number": "75",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anavolver",
     "checked_at": "2026-08-07T04:47:31.514Z"
+  },
+  "03ad624e-71f6-4f72-8ce0-7700e83458d9": {
+    "status": "available",
+    "name": "Barbtooth Wurm",
+    "price_brl": 4.48,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portal Segunda Era",
+    "printing_code": "PO2",
+    "collector_number": "62",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbtooth%20Wurm",
+    "checked_at": "2026-08-08T19:08:32.117Z"
   },
   "03c141ca-11e4-4927-a6bd-980ee1203c73": {
     "status": "available",

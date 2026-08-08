@@ -178,5 +178,17 @@
     "collector_number": "98",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arrow%20Storm",
     "checked_at": "2026-08-07T21:06:39.589Z"
+  },
+  "a0dd88f6-6e36-40ce-bac2-a0db2b0117b6": {
+    "status": "available",
+    "name": "Bargain",
+    "price_brl": 1.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Starter 1999",
+    "printing_code": "ST",
+    "collector_number": "7",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bargain",
+    "checked_at": "2026-08-08T19:09:32.169Z"
   }
 }

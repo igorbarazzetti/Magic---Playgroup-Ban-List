@@ -35,6 +35,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auramancer",
     "checked_at": "2026-08-08T07:30:23.372Z"
   },
+  "bd7accec-ca8a-49c7-9ae4-fe97d99b4a34": {
+    "status": "available",
+    "name": "Barbflare Gremlin",
+    "price_brl": 2.38,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Noctumbra: A Casa dos Horrores Commander (Extended Art)",
+    "printing_code": "EADSC",
+    "collector_number": "55",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbflare%20Gremlin",
+    "checked_at": "2026-08-08T19:08:22.116Z"
+  },
+  "bd7ad427-11d9-40d1-b292-71f985711665": {
+    "status": "available",
+    "name": "Barrin's Unmaking",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Invasão",
+    "printing_code": "IN",
+    "collector_number": "46",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barrin's%20Unmaking",
+    "checked_at": "2026-08-08T19:16:32.426Z"
+  },
   "bdb769b5-c861-4ec1-ad6b-e2a56ca05fd1": {
     "status": "available",
     "name": "Aunt May",

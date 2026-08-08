@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angry%20Mob",
     "checked_at": "2026-08-07T09:22:56.031Z"
   },
+  "969233f8-a644-4297-a2bf-b1ca7a58bb0b": {
+    "status": "available",
+    "name": "Barrenton Cragtreads",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Pântano Sombrio",
+    "printing_code": "SHM",
+    "collector_number": "138",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barrenton%20Cragtreads",
+    "checked_at": "2026-08-08T19:14:52.662Z"
+  },
   "96c67950-df59-430c-94fd-234086c6c8f2": {
     "status": "available",
     "name": "Armory Guard",

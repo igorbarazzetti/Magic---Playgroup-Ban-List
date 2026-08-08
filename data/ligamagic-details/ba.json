@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akki%20Scrapchomper",
     "checked_at": "2026-08-06T18:03:47.401Z"
   },
+  "baf3d4d9-0590-4d94-8f4e-1e726194b920": {
+    "status": "available",
+    "name": "Barkshell Blessing",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Pântano Sombrio",
+    "printing_code": "SHM",
+    "collector_number": "224",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barkshell%20Blessing",
+    "checked_at": "2026-08-08T19:11:22.271Z"
+  },
   "baf80db7-2ca8-4bfc-b5b6-25ed51878dd7": {
     "status": "available",
     "name": "Baral, Chief of Compliance",

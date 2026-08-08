@@ -1,4 +1,16 @@
 {
+  "f9275c99-0616-44b3-a19e-98c683e87ad3": {
+    "status": "available",
+    "name": "Barbed Foliage",
+    "price_brl": 0.11,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Miragem",
+    "printing_code": "MR",
+    "collector_number": "18",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbed%20Foliage",
+    "checked_at": "2026-08-08T19:07:02.081Z"
+  },
   "f953afdf-96f7-4851-994c-1617e8f5e5c9": {
     "status": "available",
     "name": "Ajani Vengeant",
@@ -22,6 +34,18 @@
     "collector_number": "262",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Awakening%20Zone",
     "checked_at": "2026-08-08T13:22:36.943Z"
+  },
+  "f98f7cb7-90ca-41e7-9f1d-8054931ecf0e": {
+    "status": "available",
+    "name": "Barrin, Tolarian Archmage",
+    "price_brl": 0.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2021",
+    "printing_code": "M21",
+    "collector_number": "45",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barrin%2C%20Tolarian%20Archmage",
+    "checked_at": "2026-08-08T19:16:42.451Z"
   },
   "f9db72dc-9a5b-48a4-a86e-7464d9a2166a": {
     "status": "available",

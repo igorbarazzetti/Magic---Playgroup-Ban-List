@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aim%20High",
     "checked_at": "2026-08-06T14:44:31.996Z"
   },
+  "c16d5daf-4995-4342-815c-a6b29d594f26": {
+    "status": "available",
+    "name": "Barrowin of Clan Undurr",
+    "price_brl": 0.18,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Adventures in the Forgotten Realms",
+    "printing_code": "AFR",
+    "collector_number": "218",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barrowin%20of%20Clan%20Undurr",
+    "checked_at": "2026-08-08T19:17:52.493Z"
+  },
   "c174dcbb-03a0-439c-b3d8-ed61bd46dc67": {
     "status": "available",
     "name": "Artful Dodge",

@@ -82,5 +82,17 @@
     "collector_number": "105",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azorius%20First-Wing",
     "checked_at": "2026-08-08T13:29:57.204Z"
+  },
+  "08e173e3-4c28-49d2-bb57-ccf533f20daf": {
+    "status": "available",
+    "name": "Bark-Knuckle Boxer",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Bloomburrow",
+    "printing_code": "BLB",
+    "collector_number": "164",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bark-Knuckle%20Boxer",
+    "checked_at": "2026-08-08T19:10:22.547Z"
   }
 }

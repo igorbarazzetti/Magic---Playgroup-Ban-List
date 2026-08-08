@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Afterlife%20from%20the%20Loam",
     "checked_at": "2026-08-06T11:07:34.060Z"
   },
+  "151d9035-c8e8-4794-8405-dc7744eb99a2": {
+    "status": "available",
+    "name": "Bargaining Table",
+    "price_brl": 0.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Máscaras de Mercádia",
+    "printing_code": "MM",
+    "collector_number": "288",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bargaining%20Table",
+    "checked_at": "2026-08-08T19:09:42.155Z"
+  },
   "153292f9-e0d1-43a7-a083-275c49d0554a": {
     "status": "available",
     "name": "Aeronaut Cavalry",
@@ -166,6 +178,18 @@
     "collector_number": "175",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avatar%20of%20the%20Resolute",
     "checked_at": "2026-08-08T09:13:10.255Z"
+  },
+  "15febce7-8320-4591-9535-ef11c8adecc2": {
+    "status": "available",
+    "name": "Barbed Bloodletter",
+    "price_brl": 0.11,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed",
+    "printing_code": "ECL",
+    "collector_number": "86",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbed%20Bloodletter",
+    "checked_at": "2026-08-08T19:06:42.139Z"
   },
   "15fee0bd-ede2-4f65-a9a1-2da4623679d5": {
     "status": "available",

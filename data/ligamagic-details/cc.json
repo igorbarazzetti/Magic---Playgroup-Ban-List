@@ -1,4 +1,16 @@
 {
+  "cc710da0-5a2e-4bc4-8fdd-d90e7bc1f224": {
+    "status": "available",
+    "name": "Baron, Airship Kingdom",
+    "price_brl": 0.17,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY",
+    "printing_code": "FIN",
+    "collector_number": "273",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baron%2C%20Airship%20Kingdom",
+    "checked_at": "2026-08-08T19:12:02.255Z"
+  },
   "cc9d3868-9814-4506-80b3-660bc462ff98": {
     "status": "available",
     "name": "Argothian Opportunist",

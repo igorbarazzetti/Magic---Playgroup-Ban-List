@@ -82,5 +82,17 @@
     "collector_number": "68",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balustrade%20Spy",
     "checked_at": "2026-08-05T20:03:22.152Z"
+  },
+  "39bfe194-1662-4c0e-a7c6-ea7764d29b65": {
+    "status": "available",
+    "name": "Barbary Apes",
+    "price_brl": 5.36,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Legends",
+    "printing_code": "LG",
+    "collector_number": "26",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbary%20Apes",
+    "checked_at": "2026-08-08T19:06:02.107Z"
   }
 }

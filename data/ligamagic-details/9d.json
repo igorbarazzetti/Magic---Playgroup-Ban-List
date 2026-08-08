@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abominable%20Treefolk",
     "checked_at": "2026-08-06T00:10:17.002Z"
   },
+  "9d4b34cc-0452-42a4-90e4-2a48e7ffadc0": {
+    "status": "available",
+    "name": "Barrow Witches",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Trono de Eldraine",
+    "printing_code": "ELD",
+    "collector_number": "77",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barrow%20Witches",
+    "checked_at": "2026-08-08T19:17:32.523Z"
+  },
   "9d7624ea-ffff-470b-928b-bbac66ddbd1c": {
     "status": "available",
     "name": "Act of Aggression",
@@ -58,6 +70,18 @@
     "collector_number": "141",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Act%20of%20Aggression",
     "checked_at": "2026-08-06T03:57:12.053Z"
+  },
+  "9da50130-3f83-4968-983c-7dcba257cf1b": {
+    "status": "available",
+    "name": "Basal Thrull",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fallen Empires",
+    "printing_code": "FE",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Basal%20Thrull",
+    "checked_at": "2026-08-08T19:19:22.734Z"
   },
   "9df1c48b-52a8-47d7-8315-272fecf1a8a0": {
     "status": "available",

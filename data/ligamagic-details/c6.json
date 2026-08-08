@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Glory's%20Rise",
     "checked_at": "2026-08-07T07:54:16.246Z"
   },
+  "c6cd520c-106b-4ee5-bc02-6c5fbdbc78dd": {
+    "status": "available",
+    "name": "Barrels of Blasting Jelly",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Avatar: The Last Airbender",
+    "printing_code": "TLA",
+    "collector_number": "254",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barrels%20of%20Blasting%20Jelly",
+    "checked_at": "2026-08-08T19:14:12.412Z"
+  },
   "c6d0f1bc-b82a-4e64-a4bc-11ad3f54c71a": {
     "status": "available",
     "name": "Acridian",

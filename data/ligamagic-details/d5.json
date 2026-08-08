@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archon%20of%20Justice",
     "checked_at": "2026-08-07T17:20:54.446Z"
   },
+  "d556c71e-ce16-4229-880b-744790f93797": {
+    "status": "available",
+    "name": "Barrage Ogre",
+    "price_brl": 0.01,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Duel Decks: Elves vs. Inventors",
+    "printing_code": "DDU",
+    "collector_number": "44",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barrage%20Ogre",
+    "checked_at": "2026-08-08T19:13:32.616Z"
+  },
   "d561dcff-0a19-46ac-9dee-f374c840d532": {
     "status": "available",
     "name": "Arvad the Cursed",

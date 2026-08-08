@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Argent%20Dais",
     "checked_at": "2026-08-07T19:23:23.911Z"
   },
+  "326ba371-124c-4949-a048-3a0c8962e567": {
+    "status": "available",
+    "name": "Barren Moor",
+    "price_brl": 0.26,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Investida",
+    "printing_code": "ON",
+    "collector_number": "312",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barren%20Moor",
+    "checked_at": "2026-08-08T19:14:32.415Z"
+  },
   "32c10a3e-85b0-49af-9b23-81d0b7e407df": {
     "status": "available",
     "name": "Balduvian Bears",
@@ -142,6 +154,18 @@
     "collector_number": "327",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Asari%20Captain",
     "checked_at": "2026-08-07T21:13:19.089Z"
+  },
+  "32eb5d30-f4e7-48ef-b5f6-051ddddd4175": {
+    "status": "available",
+    "name": "Barge In",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Trono de Eldraine",
+    "printing_code": "ELD",
+    "collector_number": "112",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barge%20In",
+    "checked_at": "2026-08-08T19:09:52.188Z"
   },
   "32fb0096-546c-4633-b6e3-ba3f2d9fa49c": {
     "status": "available",

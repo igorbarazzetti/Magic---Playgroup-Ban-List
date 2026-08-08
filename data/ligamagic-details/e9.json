@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Cranial%20Ram",
     "checked_at": "2026-08-05T20:04:37.396Z"
   },
+  "e9612e4c-1527-4255-9f2f-b8d8cee65cc6": {
+    "status": "available",
+    "name": "Barbarian Riftcutter",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ravnica: A Cidade das Guildas",
+    "printing_code": "RAV",
+    "collector_number": "114",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbarian%20Riftcutter",
+    "checked_at": "2026-08-08T19:05:42.021Z"
+  },
   "e98e8129-3e0e-45cc-b00c-1387cc592023": {
     "status": "available",
     "name": "Alluring Suitor // Deadly Dancer",

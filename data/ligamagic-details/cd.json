@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambush%20Paratrooper",
     "checked_at": "2026-08-07T04:38:11.135Z"
   },
+  "cdc6e187-73d2-4f79-a0ff-daa6d2de5bdb": {
+    "status": "available",
+    "name": "Barbed Wire",
+    "price_brl": 11.95,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Máscaras de Mercádia",
+    "printing_code": "MM",
+    "collector_number": "287",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbed%20Wire",
+    "checked_at": "2026-08-08T19:08:12.103Z"
+  },
   "cdc7356c-9621-4420-9fda-c8b91df0ec7c": {
     "status": "available",
     "name": "Alchemax Slayer-Bots",

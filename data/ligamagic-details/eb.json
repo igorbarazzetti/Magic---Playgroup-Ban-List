@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baboon%20Spirit",
     "checked_at": "2026-08-08T14:56:17.421Z"
   },
+  "eb260cd3-9060-4a5e-bc60-a8ca13d542cc": {
+    "status": "available",
+    "name": "Barl's Cage",
+    "price_brl": 0.44,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Chronicles",
+    "printing_code": "CH",
+    "collector_number": "15",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barl's%20Cage",
+    "checked_at": "2026-08-08T19:11:52.297Z"
+  },
   "eb287c04-97f5-4e47-beb1-66cc7d15e748": {
     "status": "available",
     "name": "Atarka Monument",

@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Allosaurus%20Rider",
     "checked_at": "2026-08-07T00:36:54.788Z"
   },
+  "17661062-928c-4e33-a4f3-92ddc9d8c817": {
+    "status": "available",
+    "name": "Barrenton Medic",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Pântano Sombrio",
+    "printing_code": "SHM",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barrenton%20Medic",
+    "checked_at": "2026-08-08T19:15:02.608Z"
+  },
   "176c0ca2-0ca1-45e2-8412-86de5dbead48": {
     "status": "available",
     "name": "Aven Mimeomancer",

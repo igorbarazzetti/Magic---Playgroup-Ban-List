@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auriok%20Salvagers",
     "checked_at": "2026-08-08T07:32:53.465Z"
   },
+  "db3ba239-2239-4e9d-ad70-cff32ed24578": {
+    "status": "available",
+    "name": "Bark of Doran",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed",
+    "printing_code": "ECL",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bark%20of%20Doran",
+    "checked_at": "2026-08-08T19:10:32.389Z"
+  },
   "db5380ed-ba28-4ea2-abc3-4998e2022903": {
     "status": "available",
     "name": "Ancestral Mask",

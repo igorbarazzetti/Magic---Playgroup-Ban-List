@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ascend%20from%20Avernus",
     "checked_at": "2026-08-07T21:13:29.071Z"
   },
+  "45222123-f5e0-48ff-b80c-858727d155d7": {
+    "status": "available",
+    "name": "Barbed Field",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Profecia",
+    "printing_code": "PR",
+    "collector_number": "83",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbed%20Field",
+    "checked_at": "2026-08-08T19:06:52.497Z"
+  },
   "452d98ae-0fa2-4cff-9e18-eecd76ddb20b": {
     "status": "available",
     "name": "Anthropede",

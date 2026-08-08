@@ -119,6 +119,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Sojourner's%20Companion",
     "checked_at": "2026-08-05T20:12:44.654Z"
   },
+  "1cf27d78-d6ae-4fa2-9c8d-c277913f821c": {
+    "status": "available",
+    "name": "Baru, Wurmspeaker",
+    "price_brl": 1.89,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominária Unida Commander",
+    "printing_code": "DMC",
+    "collector_number": "26",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baru%2C%20Wurmspeaker",
+    "checked_at": "2026-08-08T19:19:02.534Z"
+  },
   "1cfa9f7d-ef1f-4907-aeb1-15c0df33fccc": {
     "status": "available",
     "name": "Baleful Ammit",

@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Accorder%20Paladin",
     "checked_at": "2026-08-06T03:50:31.789Z"
   },
+  "68b038ef-71c4-4ca5-9821-57bf85831bb7": {
+    "status": "available",
+    "name": "Barrin's Spite",
+    "price_brl": 0.48,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Invasão",
+    "printing_code": "IN",
+    "collector_number": "235",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barrin's%20Spite",
+    "checked_at": "2026-08-08T19:16:22.501Z"
+  },
   "68cc5065-0514-4adf-885f-da554e1db00a": {
     "status": "available",
     "name": "Abyssal Harvester",

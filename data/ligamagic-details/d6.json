@@ -1,4 +1,16 @@
 {
+  "d60cbdf0-f20f-4306-be6b-eed90d2a2f77": {
+    "status": "available",
+    "name": "Barbed-Back Wurm",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Miragem",
+    "printing_code": "MR",
+    "collector_number": "19",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbed-Back%20Wurm",
+    "checked_at": "2026-08-08T19:06:12.098Z"
+  },
   "d64e9152-ef24-4394-aeb0-9c3befc56549": {
     "status": "available",
     "name": "Altar of Dementia",

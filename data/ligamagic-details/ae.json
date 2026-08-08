@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Admiral's%20Order",
     "checked_at": "2026-08-06T07:09:24.606Z"
   },
+  "ae5cf0da-bea8-4ba7-9fb3-0fcb076257ae": {
+    "status": "available",
+    "name": "Barbed Shocker",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Espiral Temporal",
+    "printing_code": "TS",
+    "collector_number": "144",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbed%20Shocker",
+    "checked_at": "2026-08-08T19:07:42.167Z"
+  },
   "ae61b2ef-2e60-499a-8708-e37b9bd5620e": {
     "status": "available",
     "name": "Aligned Heart",

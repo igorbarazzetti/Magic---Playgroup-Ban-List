@@ -23,6 +23,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Along%20the%20Crooked%20Way",
     "checked_at": "2026-08-07T00:39:34.791Z"
   },
+  "f44eab45-8ff9-40eb-9919-28fe5203fc48": {
+    "status": "available",
+    "name": "Barreling Attack",
+    "price_brl": 2.61,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Miragem",
+    "printing_code": "MR",
+    "collector_number": "20",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barreling%20Attack",
+    "checked_at": "2026-08-08T19:14:02.294Z"
+  },
+  "f47e4c56-0a0b-422d-bf3d-7a20ee289f15": {
+    "status": "available",
+    "name": "Bartolomé del Presidio",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "As Cavernas Perdidas de Ixalan",
+    "printing_code": "LCI",
+    "collector_number": "224",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bartolom%C3%A9%20del%20Presidio",
+    "checked_at": "2026-08-08T19:18:32.494Z"
+  },
   "f4819061-b0b5-48ab-af7b-6525c3d2eab7": {
     "status": "available",
     "name": "Great Furnace",
