@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abstract%20Performance",
     "checked_at": "2026-08-06T00:14:47.196Z"
   },
+  "3e765710-e567-4af0-b5f5-7c182649b757": {
+    "status": "available",
+    "name": "Battle-Scarred Goblin",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Senhor dos Anéis: Contos da Terra Média",
+    "printing_code": "LTR",
+    "collector_number": "115",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battle-Scarred%20Goblin",
+    "checked_at": "2026-08-08T21:07:26.884Z"
+  },
   "3e8abec7-1e18-460a-9d88-30969755ebd2": {
     "status": "available",
     "name": "Artisan of Forms",

@@ -1,4 +1,16 @@
 {
+  "a20bb8b3-b724-4fec-b179-ca9e6adc4718": {
+    "status": "available",
+    "name": "Baton of Courage",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Quinta Aurora",
+    "printing_code": "5DN",
+    "collector_number": "105",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baton%20of%20Courage",
+    "checked_at": "2026-08-08T21:01:36.741Z"
+  },
   "a20dd48d-d344-4db1-b0e9-a2b71c3cc9d1": {
     "status": "available",
     "name": "Karn, the Great Creator",

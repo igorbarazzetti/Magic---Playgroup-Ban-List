@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aspect%20of%20Gorgon",
     "checked_at": "2026-08-08T02:43:32.130Z"
   },
+  "4b977117-741c-4157-8fcf-719e475a8a4c": {
+    "status": "available",
+    "name": "Battle Hymn",
+    "price_brl": 6.89,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Retorno de Avacyn",
+    "printing_code": "AVR",
+    "collector_number": "128",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battle%20Hymn",
+    "checked_at": "2026-08-08T21:05:26.849Z"
+  },
   "4ba5b3f6-503b-43e6-b66e-4f8c55cffed7": {
     "status": "available",
     "name": "Avenger of Zendikar",

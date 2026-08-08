@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amazing%20Spider-Girl",
     "checked_at": "2026-08-07T00:47:55.223Z"
   },
+  "7a6db509-7ef4-483c-b8a0-62a4f3e16ef9": {
+    "status": "available",
+    "name": "Battle Mammoth",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaldheim",
+    "printing_code": "KHM",
+    "collector_number": "160",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battle%20Mammoth",
+    "checked_at": "2026-08-08T21:05:46.785Z"
+  },
   "7aa5db50-5057-45fd-bce9-fb4a5e874263": {
     "status": "available",
     "name": "Astral Drift",

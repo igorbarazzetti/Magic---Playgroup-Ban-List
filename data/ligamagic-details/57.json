@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Surveyor",
     "checked_at": "2026-08-08T09:19:31.231Z"
   },
+  "5783e71e-2497-4241-9d1a-8bced4745b1d": {
+    "status": "available",
+    "name": "Battle Squadron",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Eternal Masters",
+    "printing_code": "EMA",
+    "collector_number": "118",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battle%20Squadron",
+    "checked_at": "2026-08-08T21:07:56.887Z"
+  },
   "57ad3c3a-6ac7-4a35-bc07-00f6ea0988c5": {
     "status": "available",
     "name": "Alive // Well",
@@ -46,6 +58,18 @@
     "collector_number": "121",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alive%20%2F%2F%20Well",
     "checked_at": "2026-08-07T19:53:07.715Z"
+  },
+  "57d0c688-6206-4c83-9fcb-27fd29e2a9ed": {
+    "status": "available",
+    "name": "Basri's Lieutenant",
+    "price_brl": 0.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2021",
+    "printing_code": "M21",
+    "collector_number": "9",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Basri's%20Lieutenant",
+    "checked_at": "2026-08-08T20:59:06.603Z"
   },
   "57d8d656-ccbd-4deb-abf1-a7fde4e7d691": {
     "status": "available",

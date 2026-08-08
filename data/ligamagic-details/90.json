@@ -1,4 +1,16 @@
 {
+  "900ae045-0160-4e85-b283-e35399c2acec": {
+    "status": "available",
+    "name": "Bastion Inventor",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Revolta do éter",
+    "printing_code": "AER",
+    "collector_number": "30",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bastion%20Inventor",
+    "checked_at": "2026-08-08T21:00:06.667Z"
+  },
   "900ca697-ad38-4b2b-bc74-2ff7eb6ea951": {
     "status": "available",
     "name": "Emrakul, the Aeons Torn",

@@ -70,5 +70,17 @@
     "collector_number": "7",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aisling%20Leprechaun",
     "checked_at": "2026-08-06T14:49:01.961Z"
+  },
+  "547ab16c-b8d1-4357-9219-7cabde80f5ba": {
+    "status": "available",
+    "name": "Basic Conjuration",
+    "price_brl": 0.19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Strixhaven: Escola de Magos",
+    "printing_code": "STX",
+    "collector_number": "120",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Basic%20Conjuration",
+    "checked_at": "2026-08-08T20:56:27.179Z"
   }
 }

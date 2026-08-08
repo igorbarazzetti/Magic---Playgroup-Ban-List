@@ -130,5 +130,17 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aegis%20of%20the%20Heavens",
     "checked_at": "2026-08-06T07:14:44.927Z"
+  },
+  "f8e8cdc6-5685-4986-a14b-20bb9e31d9cf": {
+    "status": "available",
+    "name": "Battershield Warrior",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaldheim",
+    "printing_code": "KHM",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battershield%20Warrior",
+    "checked_at": "2026-08-08T21:03:37.251Z"
   }
 }

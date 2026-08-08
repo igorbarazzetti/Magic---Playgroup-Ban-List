@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avatar%20of%20Fury",
     "checked_at": "2026-08-08T09:12:20.238Z"
   },
+  "48a01671-da1f-4875-bcd5-ca99566ff399": {
+    "status": "available",
+    "name": "Bastion Mastodon",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaladesh",
+    "printing_code": "KLD",
+    "collector_number": "197",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bastion%20Mastodon",
+    "checked_at": "2026-08-08T21:00:16.594Z"
+  },
   "48a773d0-c433-4463-b50f-b6d4604a042c": {
     "status": "available",
     "name": "Abigale, Eloquent First-Year",

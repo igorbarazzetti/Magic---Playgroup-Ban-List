@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azami%2C%20Lady%20of%20Scrolls",
     "checked_at": "2026-08-08T13:27:47.129Z"
   },
+  "0fca46ec-ec1a-4e6c-bb0e-cdb834b38c92": {
+    "status": "available",
+    "name": "Battle Frenzy",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Era Glacial",
+    "printing_code": "IA",
+    "collector_number": "29",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battle%20Frenzy",
+    "checked_at": "2026-08-08T21:05:06.769Z"
+  },
   "0fd27f59-36ec-4235-8e1f-4a4a14972f4a": {
     "status": "available",
     "name": "Awaken the Ancient",

@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Achilles%20Davenport",
     "checked_at": "2026-08-06T03:52:51.849Z"
   },
+  "b92afdba-5aea-42c8-bdd8-6ba5ff6cba4f": {
+    "status": "available",
+    "name": "Battle Cry",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Era Glacial",
+    "printing_code": "IA",
+    "collector_number": "28",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battle%20Cry",
+    "checked_at": "2026-08-08T21:04:36.794Z"
+  },
   "b96ccc2f-88e5-4522-924e-76fc76dc3b39": {
     "status": "available",
     "name": "Abyssal Hunter",
@@ -82,6 +94,18 @@
     "collector_number": "2",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akroma%2C%20Vision%20of%20Ixidor",
     "checked_at": "2026-08-06T18:08:47.347Z"
+  },
+  "b9dd5841-7e4b-40bf-9969-e8fb5df46763": {
+    "status": "available",
+    "name": "Batterhorn",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Retorno a Ravnica",
+    "printing_code": "RTR",
+    "collector_number": "87",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Batterhorn",
+    "checked_at": "2026-08-08T21:02:36.802Z"
   },
   "b9dee727-8ad8-42e0-93c6-5ef91d3f7309": {
     "status": "available",

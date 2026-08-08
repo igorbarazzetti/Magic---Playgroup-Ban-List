@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bard%20the%20Bowman",
     "checked_at": "2026-08-08T19:09:22.204Z"
   },
+  "ec187304-4c05-44da-8ad5-7c56f6b05212": {
+    "status": "available",
+    "name": "Battle Rampart",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Battlebond",
+    "printing_code": "BBD",
+    "collector_number": "165",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battle%20Rampart",
+    "checked_at": "2026-08-08T21:07:06.902Z"
+  },
   "ec22386d-42fd-40f9-b800-a043e80faabe": {
     "status": "available",
     "name": "Angelic Overseer",

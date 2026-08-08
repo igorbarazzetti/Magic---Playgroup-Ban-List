@@ -1,4 +1,16 @@
 {
+  "d513e5df-31b0-4756-bf47-403460d0068e": {
+    "status": "available",
+    "name": "Battle Sliver",
+    "price_brl": 0.14,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2014",
+    "printing_code": "M14",
+    "collector_number": "128",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battle%20Sliver",
+    "checked_at": "2026-08-08T21:07:46.976Z"
+  },
   "d5251d47-11de-41f7-9965-1f921e12d927": {
     "status": "available",
     "name": "Arcane Infusion",

@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alley%20Grifters",
     "checked_at": "2026-08-07T00:35:34.635Z"
   },
+  "39a7c52d-0b89-47c1-a376-5004c94c2e0f": {
+    "status": "available",
+    "name": "Battle-Mad Ronin",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Campeões de Kamigawa",
+    "printing_code": "CHK",
+    "collector_number": "156",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battle-Mad%20Ronin",
+    "checked_at": "2026-08-08T21:05:36.798Z"
+  },
   "39b4a47a-df51-4bd9-9a20-43ac80a5d352": {
     "status": "available",
     "name": "Balustrade Spy",
@@ -94,5 +106,17 @@
     "collector_number": "26",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbary%20Apes",
     "checked_at": "2026-08-08T19:06:02.107Z"
+  },
+  "39daa265-8d02-4449-9c45-ae8ec2b13e5b": {
+    "status": "available",
+    "name": "Bassara Tower Archer",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Viagem para Nyx",
+    "printing_code": "JOU",
+    "collector_number": "117",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bassara%20Tower%20Archer",
+    "checked_at": "2026-08-08T20:59:36.705Z"
   }
 }

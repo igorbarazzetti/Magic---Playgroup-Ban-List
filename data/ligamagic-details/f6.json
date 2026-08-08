@@ -58,5 +58,17 @@
     "collector_number": "55",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbed%20Lightning",
     "checked_at": "2026-08-08T19:07:12.078Z"
+  },
+  "f6f39a85-28b9-49f3-ab90-2ff99169de42": {
+    "status": "available",
+    "name": "Battalion Foot Soldier",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2020",
+    "printing_code": "M20",
+    "collector_number": "7",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battalion%20Foot%20Soldier",
+    "checked_at": "2026-08-08T21:02:06.670Z"
   }
 }

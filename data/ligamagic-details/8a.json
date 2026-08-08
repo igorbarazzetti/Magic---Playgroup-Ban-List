@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ainok%20Bond-Kin",
     "checked_at": "2026-08-06T14:44:51.889Z"
   },
+  "8a70bde5-c514-4dcf-919a-48bdd1c17768": {
+    "status": "available",
+    "name": "Basim Ibn Ishaq",
+    "price_brl": 31.48,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassin's Creed",
+    "printing_code": "ACR",
+    "collector_number": "49",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Basim%20Ibn%20Ishaq",
+    "checked_at": "2026-08-08T20:57:56.516Z"
+  },
   "8a70ddc5-bb51-45eb-96f2-8ecaecac0cc2": {
     "status": "available",
     "name": "Ajani Unyielding",
@@ -142,5 +154,17 @@
     "collector_number": "36",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bag%20Check",
     "checked_at": "2026-08-08T15:00:07.548Z"
+  },
+  "8af57b80-bbc6-47ce-83f6-34ae8e2f5bd5": {
+    "status": "available",
+    "name": "Battle Menu",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY",
+    "printing_code": "FIN",
+    "collector_number": "9",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battle%20Menu",
+    "checked_at": "2026-08-08T21:06:06.839Z"
   }
 }

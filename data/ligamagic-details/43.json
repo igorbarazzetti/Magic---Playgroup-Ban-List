@@ -1,4 +1,16 @@
 {
+  "43057d84-b424-489c-abec-3fb4cb823d80": {
+    "status": "available",
+    "name": "Basilica Skullbomb",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Phyrexia: Tudo será um",
+    "printing_code": "ONE",
+    "collector_number": "224",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Basilica%20Skullbomb",
+    "checked_at": "2026-08-08T20:57:16.565Z"
+  },
   "4317f4f1-d339-4940-b46e-659641035595": {
     "status": "available",
     "name": "Ascended Lawmage",

@@ -1,4 +1,16 @@
 {
+  "c2022f95-2c26-4a2a-b83b-60efa937cdde": {
+    "status": "available",
+    "name": "Bat Colony",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "As Cavernas Perdidas de Ixalan",
+    "printing_code": "LCI",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bat%20Colony",
+    "checked_at": "2026-08-08T21:00:56.679Z"
+  },
   "c2042b38-1f06-44d4-b56f-2cb4d9197712": {
     "status": "available",
     "name": "Angelic Armaments",

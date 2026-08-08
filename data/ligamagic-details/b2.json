@@ -142,5 +142,17 @@
     "collector_number": "46",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aspiring%20Aeronaut",
     "checked_at": "2026-08-08T02:45:02.276Z"
+  },
+  "b2ec080f-ad5d-4274-91e3-bc6ac89fc3e4": {
+    "status": "available",
+    "name": "Basking Rootwalla",
+    "price_brl": 0.48,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ultimate Masters",
+    "printing_code": "UMA",
+    "collector_number": "156",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Basking%20Rootwalla",
+    "checked_at": "2026-08-08T20:58:16.553Z"
   }
 }

@@ -34,5 +34,17 @@
     "collector_number": "16",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Candelabra%20of%20Tawnos",
     "checked_at": "2026-08-05T20:03:55.305Z"
+  },
+  "c7f33cea-2ec8-4081-9208-a5b1d86721b3": {
+    "status": "available",
+    "name": "Bastion of Remembrance",
+    "price_brl": 3.26,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ikoria: Terra de Colossos",
+    "printing_code": "IKO",
+    "collector_number": "73",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bastion%20of%20Remembrance",
+    "checked_at": "2026-08-08T21:00:27.176Z"
   }
 }

@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balshan%20Beguiler",
     "checked_at": "2026-08-08T17:01:07.033Z"
   },
+  "929c67aa-49ff-4401-85e8-76990fe1a369": {
+    "status": "available",
+    "name": "Basilica Shepherd",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Phyrexia: Tudo será um",
+    "printing_code": "ONE",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Basilica%20Shepherd",
+    "checked_at": "2026-08-08T20:57:06.531Z"
+  },
   "92b617f9-6e6b-42a0-9c45-6ff5f6193051": {
     "status": "available",
     "name": "Aang's Defense",
@@ -94,6 +106,18 @@
     "collector_number": "266",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aang's%20Defense",
     "checked_at": "2026-08-06T00:03:46.738Z"
+  },
+  "92c824da-2351-43bd-9fa0-d09709ad8205": {
+    "status": "available",
+    "name": "Basri's Acolyte",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2021",
+    "printing_code": "M21",
+    "collector_number": "8",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Basri's%20Acolyte",
+    "checked_at": "2026-08-08T20:58:46.967Z"
   },
   "92c9b2fd-95d6-4937-aee2-67b4bb8ca29d": {
     "status": "available",

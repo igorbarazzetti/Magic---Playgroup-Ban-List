@@ -82,5 +82,17 @@
     "collector_number": "64",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archdemon%20of%20Unx",
     "checked_at": "2026-08-07T17:14:24.185Z"
+  },
+  "41fbf835-baee-4530-9155-e2c1b9045567": {
+    "status": "available",
+    "name": "Base Camp",
+    "price_brl": 0.12,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Renascer de Zendikar",
+    "printing_code": "ZNR",
+    "collector_number": "257",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Base%20Camp",
+    "checked_at": "2026-08-08T20:55:46.469Z"
   }
 }

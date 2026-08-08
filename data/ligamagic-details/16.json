@@ -1,4 +1,16 @@
 {
+  "1601e553-31c2-4e04-9f0c-bc17e49eeff7": {
+    "status": "available",
+    "name": "Basri, Devoted Paladin",
+    "price_brl": 22.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2021",
+    "printing_code": "M21",
+    "collector_number": "320",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Basri%2C%20Devoted%20Paladin",
+    "checked_at": "2026-08-08T20:58:26.569Z"
+  },
   "1610875f-48da-490c-a371-c439dc36f533": {
     "status": "available",
     "name": "Barrow Ghoul",

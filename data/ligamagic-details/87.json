@@ -11,6 +11,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Asylum%20Visitor",
     "checked_at": "2026-08-08T02:53:12.767Z"
   },
+  "8733a4fc-4068-4af4-9598-dc3d895e8556": {
+    "status": "available",
+    "name": "Basilisk Gate",
+    "price_brl": 3.28,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends: Batalha por Portal de Baldur",
+    "printing_code": "CLB",
+    "collector_number": "346",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Basilisk%20Gate",
+    "checked_at": "2026-08-08T20:57:46.587Z"
+  },
+  "87449f64-9500-4967-a073-cde19824e087": {
+    "status": "available",
+    "name": "Bastion Enforcer",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Revolta do éter",
+    "printing_code": "AER",
+    "collector_number": "8",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bastion%20Enforcer",
+    "checked_at": "2026-08-08T20:59:57.406Z"
+  },
   "8789d5fa-101c-457a-90ec-5cf067f5289b": {
     "status": "available",
     "name": "Aesthetic Consultation",
@@ -22,6 +46,18 @@
     "collector_number": "48",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aesthetic%20Consultation",
     "checked_at": "2026-08-06T07:21:25.159Z"
+  },
+  "879011c6-550e-4e33-a664-fffb655321d9": {
+    "status": "available",
+    "name": "Baton of Morale",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Era Glacial",
+    "printing_code": "IA",
+    "collector_number": "27",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baton%20of%20Morale",
+    "checked_at": "2026-08-08T21:01:46.655Z"
   },
   "87a4806e-8d5e-473b-8d6d-665e45a5e042": {
     "status": "available",

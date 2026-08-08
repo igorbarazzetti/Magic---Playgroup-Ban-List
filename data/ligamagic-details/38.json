@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bane%20of%20Bala%20Ged",
     "checked_at": "2026-08-08T17:03:57.200Z"
   },
+  "389d459d-446a-4b84-82b2-a30fe6ced11f": {
+    "status": "available",
+    "name": "Batterbone",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 2",
+    "printing_code": "MH2",
+    "collector_number": "221",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Batterbone",
+    "checked_at": "2026-08-08T21:02:16.745Z"
+  },
   "38e0a1d0-2a4c-4510-9610-abea7fa1de7c": {
     "status": "available",
     "name": "Archon of Falling Stars",

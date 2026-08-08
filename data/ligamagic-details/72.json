@@ -143,6 +143,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Airship%20Crash",
     "checked_at": "2026-08-06T14:48:22.269Z"
   },
+  "72d793e8-1d19-4ca1-894c-8851a2ebecde": {
+    "status": "available",
+    "name": "Bathe in Dragonfire",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Battlebond",
+    "printing_code": "BBD",
+    "collector_number": "164",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bathe%20in%20Dragonfire",
+    "checked_at": "2026-08-08T21:01:16.709Z"
+  },
+  "72dc807b-35fb-4d69-ae4c-04eed0646170": {
+    "status": "available",
+    "name": "Battle-Rattle Shaman",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2021",
+    "printing_code": "M21",
+    "collector_number": "130",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battle-Rattle%20Shaman",
+    "checked_at": "2026-08-08T21:07:16.990Z"
+  },
   "72e6cc74-0574-4421-a6b8-97d180484950": {
     "status": "available",
     "name": "Arcbound Fiend",

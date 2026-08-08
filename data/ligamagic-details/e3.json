@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bannerhide%20Krushok",
     "checked_at": "2026-08-08T17:08:07.323Z"
   },
+  "e3233686-7703-460c-80ee-8cd37b3014ff": {
+    "status": "available",
+    "name": "Bast, Panther Goddess",
+    "price_brl": 9.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes Commander",
+    "printing_code": "MSC",
+    "collector_number": "75",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bast%2C%20Panther%20Goddess",
+    "checked_at": "2026-08-08T20:59:46.652Z"
+  },
   "e32c0de7-132d-4a39-85fb-da0ed1132878": {
     "status": "available",
     "name": "Ascendant Evincar",
@@ -46,6 +58,18 @@
     "collector_number": "127",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ascendant%20Evincar",
     "checked_at": "2026-08-07T21:13:59.115Z"
+  },
+  "e335485a-80fc-40d4-8be6-7eabf2bab571": {
+    "status": "available",
+    "name": "Basilica Stalker",
+    "price_brl": 0.06,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassinato na Mansão Karlov",
+    "printing_code": "MKM",
+    "collector_number": "78",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Basilica%20Stalker",
+    "checked_at": "2026-08-08T20:57:26.571Z"
   },
   "e3431dae-969c-4896-9f9e-a80e7bec4bdf": {
     "status": "available",

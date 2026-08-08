@@ -34,5 +34,17 @@
     "collector_number": "86",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Retribution",
     "checked_at": "2026-08-07T07:55:36.334Z"
+  },
+  "24d2e266-2dcb-40f1-a465-cfc63e9aa6ae": {
+    "status": "available",
+    "name": "Basilica Guards",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portões Violados",
+    "printing_code": "GTC",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Basilica%20Guards",
+    "checked_at": "2026-08-08T20:56:46.548Z"
   }
 }

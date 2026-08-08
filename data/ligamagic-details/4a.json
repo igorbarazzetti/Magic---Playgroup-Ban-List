@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barktooth%20Warbeard",
     "checked_at": "2026-08-08T19:11:32.244Z"
   },
+  "4a480736-4cdc-4e3a-a8cb-d1c726982f9f": {
+    "status": "available",
+    "name": "Basandra, Battle Seraph",
+    "price_brl": 2.97,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Conspiracy",
+    "printing_code": "CNS",
+    "collector_number": "184",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Basandra%2C%20Battle%20Seraph",
+    "checked_at": "2026-08-08T20:55:36.447Z"
+  },
   "4a782bf9-4051-4613-8852-33b0d85a0edd": {
     "status": "available",
     "name": "Ajani's Welcome",
@@ -58,6 +70,18 @@
     "collector_number": "186",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anzrag%2C%20the%20Quake-Mole",
     "checked_at": "2026-08-07T11:13:56.497Z"
+  },
+  "4adf959b-2e09-47ff-a1b1-b889348735b8": {
+    "status": "available",
+    "name": "Battering Sliver",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Espiral Temporal Remasterizada",
+    "printing_code": "TSR",
+    "collector_number": "154",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battering%20Sliver",
+    "checked_at": "2026-08-08T21:03:16.851Z"
   },
   "4ae19803-23a7-4724-a4cd-dc6f3c16fb24": {
     "status": "available",

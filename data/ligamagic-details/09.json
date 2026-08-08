@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apathy",
     "checked_at": "2026-08-07T11:14:16.520Z"
   },
+  "09b4fba6-d943-49e4-9f9e-a74fcbabe83f": {
+    "status": "available",
+    "name": "Battle Plan",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 2",
+    "printing_code": "MH2",
+    "collector_number": "114",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battle%20Plan",
+    "checked_at": "2026-08-08T21:06:46.867Z"
+  },
   "09be0f69-9c7f-491f-964d-bfbbc2d4251f": {
     "status": "available",
     "name": "Abbot of Keral Keep",

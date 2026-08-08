@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcum's%20Whistle",
     "checked_at": "2026-08-07T17:25:14.863Z"
   },
+  "de6fd93e-16d8-4855-a655-1cc0755c5d15": {
+    "status": "available",
+    "name": "Battery Bearer",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra dos Irmãos",
+    "printing_code": "BRO",
+    "collector_number": "207",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battery%20Bearer",
+    "checked_at": "2026-08-08T21:03:56.776Z"
+  },
   "de8c0e2d-3207-4bc6-83ef-91e33b26a981": {
     "status": "available",
     "name": "All-Out Assault",

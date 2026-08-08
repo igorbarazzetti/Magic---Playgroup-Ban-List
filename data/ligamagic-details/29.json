@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Windswept%20Heath",
     "checked_at": "2026-08-05T20:15:24.019Z"
   },
+  "2978ba77-c0ce-4411-99c7-ef05dd602c8d": {
+    "status": "available",
+    "name": "Battlefield Butcher",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra dos Irmãos",
+    "printing_code": "BRO",
+    "collector_number": "86",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battlefield%20Butcher",
+    "checked_at": "2026-08-08T21:08:16.884Z"
+  },
   "299fc083-0834-4064-8344-f895aff68867": {
     "status": "available",
     "name": "Entomb",

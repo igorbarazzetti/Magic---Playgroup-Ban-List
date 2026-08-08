@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Annie%20Flash%2C%20the%20Veteran",
     "checked_at": "2026-08-07T09:28:06.303Z"
   },
+  "858f53ef-3fec-4aa0-867d-b7f040614b3c": {
+    "status": "available",
+    "name": "Bastion Protector",
+    "price_brl": 2.46,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes Commander",
+    "printing_code": "MSC",
+    "collector_number": "122",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bastion%20Protector",
+    "checked_at": "2026-08-08T21:00:36.624Z"
+  },
   "85b2fb89-5ebe-4c13-bc12-38d1417e5880": {
     "status": "available",
     "name": "Abzan Guide",

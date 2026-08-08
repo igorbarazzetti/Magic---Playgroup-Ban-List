@@ -1,4 +1,16 @@
 {
+  "980c32ff-c154-4ac9-adc2-ed3a85c8d71c": {
+    "status": "available",
+    "name": "Basalt Ravager",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaldheim",
+    "printing_code": "KHM",
+    "collector_number": "122",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Basalt%20Ravager",
+    "checked_at": "2026-08-08T20:55:26.449Z"
+  },
   "981b0e21-e5e6-4a1e-bfde-679d56623f7f": {
     "status": "available",
     "name": "Ad Nauseam",
@@ -10,6 +22,18 @@
     "collector_number": "63",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ad%20Nauseam",
     "checked_at": "2026-08-06T03:58:32.705Z"
+  },
+  "9825dab8-ca1a-44ea-b1d7-77c66f00351f": {
+    "status": "available",
+    "name": "Basri's Aegis",
+    "price_brl": 0.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2021",
+    "printing_code": "M21",
+    "collector_number": "322",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Basri's%20Aegis",
+    "checked_at": "2026-08-08T20:58:56.548Z"
   },
   "98709d61-4da4-4d3a-a654-bb2a7a0edb6b": {
     "status": "available",

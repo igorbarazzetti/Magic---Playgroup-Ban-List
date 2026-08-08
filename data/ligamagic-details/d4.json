@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Banewhip%20Punisher",
     "checked_at": "2026-08-08T17:05:47.401Z"
   },
+  "d46d8913-7575-4aef-b511-6c0ca9d4b506": {
+    "status": "available",
+    "name": "Battle Brawler",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Destino Reescrito",
+    "printing_code": "FRF",
+    "collector_number": "63",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battle%20Brawler",
+    "checked_at": "2026-08-08T21:04:26.752Z"
+  },
   "d484be42-5dd4-49e0-afcd-2d3c1a2c3037": {
     "status": "available",
     "name": "Arcbound Condor",

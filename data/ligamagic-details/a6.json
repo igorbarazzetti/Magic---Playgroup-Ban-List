@@ -1,4 +1,16 @@
 {
+  "a600af0b-ea04-4813-b700-f51820868c86": {
+    "status": "available",
+    "name": "Battlefield Medic",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Investida",
+    "printing_code": "ON",
+    "collector_number": "9",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battlefield%20Medic",
+    "checked_at": "2026-08-08T21:08:47.382Z"
+  },
   "a610c77c-fe31-4465-a1c1-392db4ce4ed1": {
     "status": "available",
     "name": "Cleanse",

@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assassin%20Den",
     "checked_at": "2026-08-08T02:45:32.230Z"
   },
+  "8294539d-7982-4ec9-8392-99eed78542f5": {
+    "status": "available",
+    "name": "Battle for Bretagard",
+    "price_brl": 0.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaldheim",
+    "printing_code": "KHM",
+    "collector_number": "203",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battle%20for%20Bretagard",
+    "checked_at": "2026-08-08T21:04:56.821Z"
+  },
   "82b9ad93-df75-4417-9746-798db8fe6ba0": {
     "status": "available",
     "name": "Anarchist",

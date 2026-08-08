@@ -1,4 +1,28 @@
 {
+  "9b544415-841d-4038-841b-efb0cede5c24": {
+    "status": "available",
+    "name": "Battle of Wits",
+    "price_brl": 1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2013",
+    "printing_code": "M13",
+    "collector_number": "44",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battle%20of%20Wits",
+    "checked_at": "2026-08-08T21:06:36.833Z"
+  },
+  "9b5a3765-943b-4925-b008-fc734b2934f7": {
+    "status": "available",
+    "name": "Baseball Bat",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Noctumbra: A Casa dos Horrores",
+    "printing_code": "DSK",
+    "collector_number": "209",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baseball%20Bat",
+    "checked_at": "2026-08-08T20:55:56.467Z"
+  },
   "9b6a74fb-c48f-4d85-b4b3-96eb80b9efc7": {
     "status": "available",
     "name": "Angel of Flight Alabaster",

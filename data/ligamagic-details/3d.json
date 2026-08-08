@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Intervention",
     "checked_at": "2026-08-07T08:02:06.609Z"
   },
+  "3d0c1301-4fa7-4245-a13f-f613188eb638": {
+    "status": "available",
+    "name": "Battering Krasis",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Labirinto do Dragão",
+    "printing_code": "DGM",
+    "collector_number": "41",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battering%20Krasis",
+    "checked_at": "2026-08-08T21:02:56.726Z"
+  },
   "3d0d4ba4-d5aa-4d9f-89ab-46687637fecf": {
     "status": "available",
     "name": "Angel's Feather",
@@ -70,6 +82,18 @@
     "collector_number": "379",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armed%20and%20Armored",
     "checked_at": "2026-08-07T19:30:44.004Z"
+  },
+  "3d63ad3a-4e9f-4968-a576-4be063f4ecbf": {
+    "status": "available",
+    "name": "Battle at the Bridge",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Revolta do éter",
+    "printing_code": "AER",
+    "collector_number": "53",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battle%20at%20the%20Bridge",
+    "checked_at": "2026-08-08T21:04:06.730Z"
   },
   "3d783beb-9ca6-4681-9276-fc3ad13b993f": {
     "status": "available",

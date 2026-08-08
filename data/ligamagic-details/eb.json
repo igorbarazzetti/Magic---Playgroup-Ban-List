@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Memory%20Jar",
     "checked_at": "2026-08-05T20:09:38.083Z"
   },
+  "ebbea7a7-c990-43fa-8f67-a5da17fbbb10": {
+    "status": "available",
+    "name": "Batroc the Leaper",
+    "price_brl": 2.14,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes Commander",
+    "printing_code": "MSC",
+    "collector_number": "49",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Batroc%20the%20Leaper",
+    "checked_at": "2026-08-08T21:01:56.911Z"
+  },
   "ebc9ff52-c914-4c48-9d35-0e4cd07741cb": {
     "status": "available",
     "name": "Ashiok, Nightmare Muse",

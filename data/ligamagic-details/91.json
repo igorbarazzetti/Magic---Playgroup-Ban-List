@@ -47,6 +47,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avizoa",
     "checked_at": "2026-08-08T13:20:16.860Z"
   },
+  "9155f78e-0ccc-4e08-ae79-ef5b2db1183f": {
+    "status": "available",
+    "name": "Basalt Golem",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Miragem",
+    "printing_code": "MR",
+    "collector_number": "21",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Basalt%20Golem",
+    "checked_at": "2026-08-08T20:55:06.686Z"
+  },
+  "91596da5-5b1a-430c-a878-7757ae366b6b": {
+    "status": "available",
+    "name": "Battle of Hoover Dam",
+    "price_brl": 1.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fallout",
+    "printing_code": "PIP",
+    "collector_number": "11",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battle%20of%20Hoover%20Dam",
+    "checked_at": "2026-08-08T21:06:26.957Z"
+  },
   "9167998d-5cac-47d7-99f2-f38122f7b8e7": {
     "status": "available",
     "name": "Barter in Blood",

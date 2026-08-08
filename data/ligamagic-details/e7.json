@@ -1,4 +1,16 @@
 {
+  "e73131cd-b454-405b-9539-9d777e232b9e": {
+    "status": "available",
+    "name": "Battle Screech",
+    "price_brl": 0.59,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons",
+    "printing_code": "MH1",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battle%20Screech",
+    "checked_at": "2026-08-08T21:07:36.898Z"
+  },
   "e7436d37-c331-4524-b5d4-861e9d25bfc5": {
     "status": "available",
     "name": "Abomination, Irradiated Brute",
@@ -10,6 +22,18 @@
     "collector_number": "511",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abomination%2C%20Irradiated%20Brute",
     "checked_at": "2026-08-06T00:10:36.997Z"
+  },
+  "e74c4001-d958-4d2b-b57d-c3601f01580c": {
+    "status": "available",
+    "name": "Battle Cry Goblin",
+    "price_brl": 1.52,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Adventures in the Forgotten Realms",
+    "printing_code": "AFR",
+    "collector_number": "132",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battle%20Cry%20Goblin",
+    "checked_at": "2026-08-08T21:04:46.841Z"
   },
   "e758aecd-6ce1-42f6-9716-32871e3bfa41": {
     "status": "available",
@@ -95,6 +119,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Soulgazer",
     "checked_at": "2026-08-08T09:19:00.863Z"
   },
+  "e7aeabd9-a72c-47ee-b275-b025d7142766": {
+    "status": "available",
+    "name": "Bashful Beastie",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Noctumbra: A Casa dos Horrores",
+    "printing_code": "DSK",
+    "collector_number": "169",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bashful%20Beastie",
+    "checked_at": "2026-08-08T20:56:16.501Z"
+  },
   "e7b2f844-2ba2-4465-bb80-358a4d915f36": {
     "status": "available",
     "name": "Abzan Advantage",
@@ -106,6 +142,18 @@
     "collector_number": "2",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abzan%20Advantage",
     "checked_at": "2026-08-06T03:44:52.354Z"
+  },
+  "e7b91fba-8d96-4040-95e8-f0023b65c497": {
+    "status": "available",
+    "name": "Battering Ram",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quinta Edição",
+    "printing_code": "5E",
+    "collector_number": "32",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battering%20Ram",
+    "checked_at": "2026-08-08T21:03:06.717Z"
   },
   "e7c67480-1816-4071-9eab-a1d1b535a344": {
     "status": "available",

@@ -1,4 +1,16 @@
 {
+  "e2225848-bfde-4921-b47f-b93da10140a9": {
+    "status": "available",
+    "name": "Bat-",
+    "price_brl": 0.14,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unsanctioned",
+    "printing_code": "UND",
+    "collector_number": "32",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bat-",
+    "checked_at": "2026-08-08T21:00:47.093Z"
+  },
   "e2266f74-56cc-469f-893b-6aedd63873bd": {
     "status": "available",
     "name": "Applied Aeronautics",

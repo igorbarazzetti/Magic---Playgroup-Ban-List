@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balan%2C%20Wandering%20Knight",
     "checked_at": "2026-08-08T15:03:17.664Z"
   },
+  "d12e5ce0-5705-4c35-9a93-b883db52c80c": {
+    "status": "available",
+    "name": "Batterskull",
+    "price_brl": 13.59,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nova Phyrexia",
+    "printing_code": "NPH",
+    "collector_number": "130",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Batterskull",
+    "checked_at": "2026-08-08T21:03:46.750Z"
+  },
   "d137586f-83b0-40af-8100-443460b07ac0": {
     "status": "available",
     "name": "Archivist",

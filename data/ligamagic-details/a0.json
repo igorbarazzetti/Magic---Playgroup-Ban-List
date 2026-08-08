@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aberrant%20Manawurm",
     "checked_at": "2026-08-06T00:08:06.915Z"
   },
+  "a06c7c1a-8534-40fb-8bb8-59f8f2530567": {
+    "status": "available",
+    "name": "Battle Mastery",
+    "price_brl": 0.12,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mystery Booster",
+    "printing_code": "MB1",
+    "collector_number": "34",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battle%20Mastery",
+    "checked_at": "2026-08-08T21:05:56.885Z"
+  },
   "a06f8476-0a23-413a-bc28-8dc2427fdc2a": {
     "status": "available",
     "name": "Amulet of Quoz",
@@ -106,6 +118,18 @@
     "collector_number": "8",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amulet%20of%20Quoz",
     "checked_at": "2026-08-05T20:02:52.040Z"
+  },
+  "a084bca4-fe72-443e-adf4-ab5456c7e699": {
+    "status": "available",
+    "name": "Battering Craghorn",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Investida",
+    "printing_code": "ON",
+    "collector_number": "188",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battering%20Craghorn",
+    "checked_at": "2026-08-08T21:02:47.289Z"
   },
   "a086f7a5-1319-4c5d-b23f-41bec2f81027": {
     "status": "available",

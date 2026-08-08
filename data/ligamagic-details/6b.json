@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arrester's%20Zeal",
     "checked_at": "2026-08-07T21:05:38.779Z"
   },
+  "6b75b94e-83b7-457e-ac41-7ca90b5a59aa": {
+    "status": "available",
+    "name": "Battlefield Forge",
+    "price_brl": 3.7,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm Commander",
+    "printing_code": "TDC",
+    "collector_number": "340",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battlefield%20Forge",
+    "checked_at": "2026-08-08T21:08:27.011Z"
+  },
   "6b8c69ac-1856-4070-9489-798a6b224268": {
     "status": "available",
     "name": "Arcane Savant",
@@ -82,6 +94,18 @@
     "collector_number": "27",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcane%20Savant",
     "checked_at": "2026-08-07T13:53:33.914Z"
+  },
+  "6b8cf2a0-b045-4d91-9d91-c602d40c6237": {
+    "status": "available",
+    "name": "Basalt Monolith",
+    "price_brl": 24.89,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Revised Edition",
+    "printing_code": "RV",
+    "collector_number": "15",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Basalt%20Monolith",
+    "checked_at": "2026-08-08T20:55:16.424Z"
   },
   "6bab6d0a-cd06-45e3-b780-d5354ee2a032": {
     "status": "available",

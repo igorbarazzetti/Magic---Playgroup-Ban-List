@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aetherplasm",
     "checked_at": "2026-08-06T11:03:34.360Z"
   },
+  "0ce678fa-6495-4857-b178-231c283b4514": {
+    "status": "available",
+    "name": "Basking Capybara",
+    "price_brl": 0.06,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "As Cavernas Perdidas de Ixalan",
+    "printing_code": "LCI",
+    "collector_number": "175",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Basking%20Capybara",
+    "checked_at": "2026-08-08T20:58:06.558Z"
+  },
   "0cf78877-bf08-413c-8ecb-8c3265ac1c4a": {
     "status": "available",
     "name": "Aegis of the Meek",
