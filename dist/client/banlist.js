@@ -1580,7 +1580,7 @@ function parseDeckList(value) {
 
     let quantity = 1;
     let name = line;
-    const compactQuantity = line.match(/^(\d+)\s*[xX]\s*(.+)$/);
+    const compactQuantity = line.match(/^(\d+)[xX]\s*(.+)$/);
     const spacedQuantity = line.match(/^(\d+)\s+(.+)$/);
     if (compactQuantity) { quantity = Number(compactQuantity[1]); name = compactQuantity[2]; }
     else if (spacedQuantity) { quantity = Number(spacedQuantity[1]); name = spacedQuantity[2]; }
