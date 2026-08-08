@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amazing%20Spider-Girl",
     "checked_at": "2026-08-07T00:47:55.223Z"
   },
+  "7aa5db50-5057-45fd-bce9-fb4a5e874263": {
+    "status": "available",
+    "name": "Astral Drift",
+    "price_brl": 0.12,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons",
+    "printing_code": "MH1",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Astral%20Drift",
+    "checked_at": "2026-08-08T02:51:52.610Z"
+  },
   "7ac1aab0-9d2d-4fb7-b0bb-0af3e6d665db": {
     "status": "available",
     "name": "Armory of Iroas",

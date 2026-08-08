@@ -11,6 +11,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerial%20Toastmaster",
     "checked_at": "2026-08-06T07:18:25.027Z"
   },
+  "085bc7be-bd44-40af-8e8f-a1a8006fe22c": {
+    "status": "available",
+    "name": "Assert Authority",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mirrodin",
+    "printing_code": "MI",
+    "collector_number": "30",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assert%20Authority",
+    "checked_at": "2026-08-08T02:49:32.289Z"
+  },
+  "087018b6-6355-4534-9a35-9336b4b7fccc": {
+    "status": "available",
+    "name": "Assure // Assemble",
+    "price_brl": 0.19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Guildas de Ravnica",
+    "printing_code": "GRN",
+    "collector_number": "221",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assure%20%2F%2F%20Assemble",
+    "checked_at": "2026-08-08T02:50:22.432Z"
+  },
   "0897adea-2759-40e8-a05a-c722473e1cf3": {
     "status": "available",
     "name": "Aeolipile",

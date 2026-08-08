@@ -1,4 +1,16 @@
 {
+  "a0397f06-d557-4c9f-af89-238ab38ada3e": {
+    "status": "available",
+    "name": "Asmira, Holy Avenger",
+    "price_brl": 5.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Miragem",
+    "printing_code": "MR",
+    "collector_number": "14",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Asmira%2C%20Holy%20Avenger",
+    "checked_at": "2026-08-08T02:43:02.821Z"
+  },
   "a044474a-cd72-4e9d-bd8d-a08f2de9cdc0": {
     "status": "available",
     "name": "Reanimate",
@@ -22,6 +34,18 @@
     "collector_number": "236",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abandoned%20Sarcophagus",
     "checked_at": "2026-08-06T00:06:26.875Z"
+  },
+  "a054b6ed-f6ca-4436-a433-89771ffdd2d6": {
+    "status": "available",
+    "name": "Astral Wingspan",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marcha das Máquinas",
+    "printing_code": "MOM",
+    "collector_number": "48",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Astral%20Wingspan",
+    "checked_at": "2026-08-08T02:52:22.181Z"
   },
   "a0593a5b-6f76-4eb3-a1b1-9794d2d36c92": {
     "status": "available",

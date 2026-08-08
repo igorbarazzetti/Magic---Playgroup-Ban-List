@@ -118,5 +118,17 @@
     "collector_number": "2083",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amy%20Rose",
     "checked_at": "2026-08-07T04:43:11.364Z"
+  },
+  "b2e31c0f-8914-4a18-bc05-44efb7e0f18c": {
+    "status": "available",
+    "name": "Aspiring Aeronaut",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic Origens",
+    "printing_code": "ORI",
+    "collector_number": "46",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aspiring%20Aeronaut",
+    "checked_at": "2026-08-08T02:45:02.276Z"
   }
 }

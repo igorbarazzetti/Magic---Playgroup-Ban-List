@@ -1,4 +1,16 @@
 {
+  "180ba940-2b11-4953-b7ce-74847e1aebfd": {
+    "status": "available",
+    "name": "Assemble the Players",
+    "price_brl": 0.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassinato na Mansão Karlov",
+    "printing_code": "MKM",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assemble%20the%20Players",
+    "checked_at": "2026-08-08T02:48:42.956Z"
+  },
   "180efbd4-0f77-41cc-8ae2-2e6ccf853d10": {
     "status": "available",
     "name": "Archon of the Wild Rose",

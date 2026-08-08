@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ark%20of%20Hunger",
     "checked_at": "2026-08-07T19:27:43.659Z"
   },
+  "2c7818f4-a818-4603-9af1-05aee2d56ec8": {
+    "status": "available",
+    "name": "Assaultron Dominator",
+    "price_brl": 1.65,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fallout",
+    "printing_code": "PIP",
+    "collector_number": "54",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assaultron%20Dominator",
+    "checked_at": "2026-08-08T02:48:12.283Z"
+  },
   "2c7c42e1-b097-4443-aa02-1f1dfcbb9732": {
     "status": "available",
     "name": "Arc Blade",

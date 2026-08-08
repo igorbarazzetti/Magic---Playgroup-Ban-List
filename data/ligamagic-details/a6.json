@@ -82,5 +82,29 @@
     "collector_number": "31",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arbiter%20of%20the%20Ideal",
     "checked_at": "2026-08-07T13:46:43.623Z"
+  },
+  "a6d95d26-48d8-4a97-9a42-f492a61300c9": {
+    "status": "available",
+    "name": "Assassin's Ink",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kamigawa: Dinastia Neon",
+    "printing_code": "NEO",
+    "collector_number": "87",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assassin's%20Ink",
+    "checked_at": "2026-08-08T02:46:12.352Z"
+  },
+  "a6ffcbc9-0990-4d95-a995-1b2f321256d7": {
+    "status": "available",
+    "name": "Asphodel Wanderer",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros",
+    "printing_code": "THS",
+    "collector_number": "77",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Asphodel%20Wanderer",
+    "checked_at": "2026-08-08T02:44:32.354Z"
   }
 }

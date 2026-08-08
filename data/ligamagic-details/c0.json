@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arwen%2C%20Weaver%20of%20Hope",
     "checked_at": "2026-08-07T21:12:39.097Z"
   },
+  "c0b3bbce-977c-42a9-afcb-dabdfc717c97": {
+    "status": "available",
+    "name": "Atarka, World Render",
+    "price_brl": 1.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Destino Reescrito",
+    "printing_code": "FRF",
+    "collector_number": "149",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atarka%2C%20World%20Render",
+    "checked_at": "2026-08-08T02:54:42.510Z"
+  },
   "c0d8fef4-65f4-4769-982d-b397d2b7e977": {
     "status": "available",
     "name": "Animate Dead",

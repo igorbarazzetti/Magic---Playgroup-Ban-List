@@ -119,6 +119,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agency%20Outfitter",
     "checked_at": "2026-08-06T11:10:14.659Z"
   },
+  "23be5c68-6530-474d-b677-551da4745b3c": {
+    "status": "available",
+    "name": "Assassin Initiate",
+    "price_brl": 0.35,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassin's Creed",
+    "printing_code": "ACR",
+    "collector_number": "22",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assassin%20Initiate",
+    "checked_at": "2026-08-08T02:45:51.934Z"
+  },
   "23c75386-8011-4ee4-97e2-eaafeb20b788": {
     "status": "available",
     "name": "Armament Dragon",

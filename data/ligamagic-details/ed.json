@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mox%20Ruby",
     "checked_at": "2026-08-05T20:10:14.182Z"
   },
+  "ed9c488a-9d44-4d2d-bcf8-81352193b8c2": {
+    "status": "available",
+    "name": "Aspirant's Ascent",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Phyrexia: Tudo será um",
+    "printing_code": "ONE",
+    "collector_number": "40",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aspirant's%20Ascent",
+    "checked_at": "2026-08-08T02:44:52.158Z"
+  },
   "ed9cc560-f30b-4b60-a094-ccf93ed656a7": {
     "status": "available",
     "name": "Access Tunnel",

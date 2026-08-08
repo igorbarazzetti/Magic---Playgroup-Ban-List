@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Animist's%20Awakening",
     "checked_at": "2026-08-07T09:26:16.166Z"
   },
+  "6f1e5571-ddda-4cea-84ef-36a571d8fd51": {
+    "status": "available",
+    "name": "Ashiok's Reaper",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Selvagens de Eldraine",
+    "printing_code": "WOE",
+    "collector_number": "79",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashiok's%20Reaper",
+    "checked_at": "2026-08-08T02:39:22.010Z"
+  },
   "6f78c1e2-e38f-431b-8864-8aad982e9912": {
     "status": "available",
     "name": "Anti-Magic Aura",
@@ -46,6 +58,18 @@
     "collector_number": "16",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anti-Magic%20Aura",
     "checked_at": "2026-08-07T09:34:06.465Z"
+  },
+  "6f81bef3-6ca0-4cf4-aa99-7b2813eeef04": {
+    "status": "available",
+    "name": "Assemble the Legion",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portões Violados",
+    "printing_code": "GTC",
+    "collector_number": "142",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assemble%20the%20Legion",
+    "checked_at": "2026-08-08T02:48:32.510Z"
   },
   "6f856f99-4cb4-479d-958d-964220965ed6": {
     "status": "available",
@@ -70,5 +94,17 @@
     "collector_number": "4",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Animal%20Boneyard",
     "checked_at": "2026-08-07T09:24:06.120Z"
+  },
+  "6fe9fd59-9cac-4572-8f94-bc19bea44f94": {
+    "status": "available",
+    "name": "Ashling, Flame Dancer",
+    "price_brl": 29.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3 (Foil Etched)",
+    "printing_code": "FEMH3",
+    "collector_number": "481",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashling%2C%20Flame%20Dancer",
+    "checked_at": "2026-08-08T02:40:01.630Z"
   }
 }

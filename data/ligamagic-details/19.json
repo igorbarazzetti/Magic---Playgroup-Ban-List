@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Artisan%20of%20Kozilek",
     "checked_at": "2026-08-07T21:10:59.003Z"
   },
+  "1943cbb0-2b12-4450-90af-060b8c8627c3": {
+    "status": "available",
+    "name": "Atarka's Command",
+    "price_brl": 1.86,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dragões de Tarkir",
+    "printing_code": "DTK",
+    "collector_number": "213",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atarka's%20Command",
+    "checked_at": "2026-08-08T02:54:32.680Z"
+  },
   "19504e19-2886-4d28-a813-b798a9a446a2": {
     "status": "available",
     "name": "Alien Symbiosis",
@@ -58,6 +70,18 @@
     "collector_number": "50",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alien%20Symbiosis",
     "checked_at": "2026-08-07T00:32:34.531Z"
+  },
+  "196962f0-6aff-4198-9e0c-eaf42aeaf147": {
+    "status": "available",
+    "name": "Astor, Bearer of Blades",
+    "price_brl": 0.53,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominária Unida (Stained Glass)",
+    "printing_code": "SGDMU",
+    "collector_number": "293",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Astor%2C%20Bearer%20of%20Blades",
+    "checked_at": "2026-08-08T02:51:12.584Z"
   },
   "19ad338a-c89f-406d-ad1a-222c22044e1b": {
     "status": "available",

@@ -1,4 +1,16 @@
 {
+  "24059283-edbd-4817-9f35-4be02f07b8f8": {
+    "status": "available",
+    "name": "Astonishing Spider-Man",
+    "price_brl": 22.8,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes Commander",
+    "printing_code": "MSC",
+    "collector_number": "740",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Astonishing%20Spider-Man",
+    "checked_at": "2026-08-08T02:51:02.251Z"
+  },
   "248dcf69-b99e-4a71-b9b3-7fd865f873ab": {
     "status": "available",
     "name": "Angel of Retribution",

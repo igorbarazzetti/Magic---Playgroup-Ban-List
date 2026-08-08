@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arthur%2C%20Marigold%20Knight",
     "checked_at": "2026-08-07T21:08:29.089Z"
   },
+  "8da9f975-519d-455a-80c1-2b468cad79a1": {
+    "status": "available",
+    "name": "Assembly Hall",
+    "price_brl": 0.69,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Máscaras de Mercádia",
+    "printing_code": "MM",
+    "collector_number": "286",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assembly%20Hall",
+    "checked_at": "2026-08-08T02:49:12.055Z"
+  },
   "8dedb9a7-0afa-4dff-b124-2344c170f11a": {
     "status": "available",
     "name": "Abaddon the Despoiler",

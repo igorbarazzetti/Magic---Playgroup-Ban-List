@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Altar%20of%20the%20Lost",
     "checked_at": "2026-08-07T00:45:15.099Z"
   },
+  "17520d37-111a-4708-9934-feb20f3d7199": {
+    "status": "available",
+    "name": "Atinlay Igpay",
+    "price_brl": 0.95,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unhinged",
+    "printing_code": "UH",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atinlay%20Igpay",
+    "checked_at": "2026-08-08T02:55:22.204Z"
+  },
   "176508ba-c107-4694-8dd7-ea34fca3b299": {
     "status": "available",
     "name": "Allosaurus Rider",
@@ -46,6 +58,18 @@
     "collector_number": "2",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Allosaurus%20Rider",
     "checked_at": "2026-08-07T00:36:54.788Z"
+  },
+  "177c1f2d-abb9-40ea-afe4-141b08fdeabb": {
+    "status": "available",
+    "name": "Atarka Efreet",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dragões de Tarkir",
+    "printing_code": "DTK",
+    "collector_number": "128",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atarka%20Efreet",
+    "checked_at": "2026-08-08T02:54:02.204Z"
   },
   "17969b71-9612-45ff-b789-1c033f832154": {
     "status": "available",

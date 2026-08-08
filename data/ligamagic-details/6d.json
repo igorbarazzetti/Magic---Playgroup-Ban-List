@@ -1,4 +1,16 @@
 {
+  "6d39d218-254a-4886-907a-89df605d7ce4": {
+    "status": "available",
+    "name": "Assimilation Aegis",
+    "price_brl": 2.34,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Os Fora da Lei de Encruzilhada do Trovão",
+    "printing_code": "OTJ",
+    "collector_number": "192",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assimilation%20Aegis",
+    "checked_at": "2026-08-08T02:50:02.101Z"
+  },
   "6d9af084-cd5d-4242-b0f0-24a36d0a75d4": {
     "status": "available",
     "name": "Arcbound Worker",

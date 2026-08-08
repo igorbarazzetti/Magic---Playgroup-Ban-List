@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Polluted%20Delta",
     "checked_at": "2026-08-05T20:11:05.367Z"
   },
+  "ef8ac291-3789-4147-a11f-c62fd8566dbe": {
+    "status": "available",
+    "name": "Astral Steel",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Flagelo",
+    "printing_code": "SC",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Astral%20Steel",
+    "checked_at": "2026-08-08T02:52:12.813Z"
+  },
   "efae637f-3232-46f2-9839-f3386e2f447d": {
     "status": "available",
     "name": "Akoum Flameseeker",

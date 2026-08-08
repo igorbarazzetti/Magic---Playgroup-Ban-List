@@ -119,6 +119,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armageddon%20Clock",
     "checked_at": "2026-08-07T19:29:33.795Z"
   },
+  "70f14b10-8129-4249-a267-8b4be5d9befa": {
+    "status": "available",
+    "name": "Astral Slide",
+    "price_brl": 2.28,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Investida",
+    "printing_code": "ON",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Astral%20Slide",
+    "checked_at": "2026-08-08T02:52:02.358Z"
+  },
   "70f3bc78-201f-4c56-b87b-9e8f2db9f7f7": {
     "status": "available",
     "name": "Arm-Mounted Anchor",

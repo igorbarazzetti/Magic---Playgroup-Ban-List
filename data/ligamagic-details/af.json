@@ -1,4 +1,16 @@
 {
+  "af206aed-1f58-4f5a-ba42-0e0d1f282940": {
+    "status": "available",
+    "name": "Athreos, God of Passage",
+    "price_brl": 34.19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Viagem para Nyx",
+    "printing_code": "JOU",
+    "collector_number": "146",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Athreos%2C%20God%20of%20Passage",
+    "checked_at": "2026-08-08T02:55:02.231Z"
+  },
   "af247e2f-b271-4f5b-ab98-4579d2c17c21": {
     "status": "available",
     "name": "Archfiend of Depravity",

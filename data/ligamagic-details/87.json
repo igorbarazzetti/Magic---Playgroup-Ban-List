@@ -1,4 +1,16 @@
 {
+  "870deab4-8570-40e9-aeda-ac3726cebb84": {
+    "status": "available",
+    "name": "Asylum Visitor",
+    "price_brl": 0.36,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad Remastered",
+    "printing_code": "INR",
+    "collector_number": "96",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Asylum%20Visitor",
+    "checked_at": "2026-08-08T02:53:12.767Z"
+  },
   "8789d5fa-101c-457a-90ec-5cf067f5289b": {
     "status": "available",
     "name": "Aesthetic Consultation",

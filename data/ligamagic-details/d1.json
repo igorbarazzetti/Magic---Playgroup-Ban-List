@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Artificer's%20Hex",
     "checked_at": "2026-08-07T21:09:59.008Z"
   },
+  "d1580692-ca1c-4682-8cad-7ad380b39454": {
+    "status": "available",
+    "name": "Aspect of Hydra",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nascidos dos Deuses",
+    "printing_code": "BNG",
+    "collector_number": "117",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aspect%20of%20Hydra",
+    "checked_at": "2026-08-08T02:43:42.378Z"
+  },
   "d16783a4-9980-451b-9af0-33866980bc8d": {
     "status": "available",
     "name": "Alphinaud Leveilleur",
@@ -130,6 +142,18 @@
     "collector_number": "245",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arboreal%20Grazer",
     "checked_at": "2026-08-07T13:48:13.715Z"
+  },
+  "d19567ac-1f52-40eb-b2cf-4c791823ec92": {
+    "status": "available",
+    "name": "Astrolabe",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alianças",
+    "printing_code": "AI",
+    "collector_number": "159",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Astrolabe",
+    "checked_at": "2026-08-08T02:52:42.584Z"
   },
   "d1a6aa5f-2ad6-4bc7-82f0-4262f66af730": {
     "status": "available",

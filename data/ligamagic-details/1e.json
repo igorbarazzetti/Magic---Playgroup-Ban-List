@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcane%20Bombardment",
     "checked_at": "2026-08-07T13:51:03.798Z"
   },
+  "1e4032f6-9741-4845-9325-781c9e489172": {
+    "status": "available",
+    "name": "Asmodeus the Archfiend",
+    "price_brl": 3.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Adventures in the Forgotten Realms",
+    "printing_code": "AFR",
+    "collector_number": "88",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Asmodeus%20the%20Archfiend",
+    "checked_at": "2026-08-08T02:43:12.301Z"
+  },
   "1e4cf4a4-50a4-4856-bf7e-20899e8affd1": {
     "status": "available",
     "name": "Ant-Man, Scott Lang",

@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Araumi%20of%20the%20Dead%20Tide",
     "checked_at": "2026-08-07T13:45:53.568Z"
   },
+  "1a8072c9-e2b8-4173-af88-ed0dd64d10fe": {
+    "status": "available",
+    "name": "Ashnod's Transmogrant",
+    "price_brl": 0.18,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quinta Edição",
+    "printing_code": "5E",
+    "collector_number": "22",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashnod's%20Transmogrant",
+    "checked_at": "2026-08-08T02:42:22.186Z"
+  },
   "1a840210-204d-41cd-afc0-46abf7ea5f87": {
     "status": "available",
     "name": "Apocalypse Hydra",
@@ -118,6 +130,18 @@
     "collector_number": "151",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agonasaur%20Rex",
     "checked_at": "2026-08-06T14:41:41.715Z"
+  },
+  "1ad6339d-6206-49bf-bf97-05e6d3bcaab7": {
+    "status": "available",
+    "name": "Assassin's Strike",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Battlebond",
+    "printing_code": "BBD",
+    "collector_number": "138",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assassin's%20Strike",
+    "checked_at": "2026-08-08T02:46:22.285Z"
   },
   "1ad83cac-2c85-477b-ab00-1369f9683db5": {
     "status": "available",

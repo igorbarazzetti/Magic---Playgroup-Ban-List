@@ -1,4 +1,16 @@
 {
+  "d343c116-b33a-4ed6-ad15-d7270e739b04": {
+    "status": "available",
+    "name": "Aspiring Champion",
+    "price_brl": 1.48,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Warhammer 40.000",
+    "printing_code": "40K",
+    "collector_number": "71",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aspiring%20Champion",
+    "checked_at": "2026-08-08T02:45:11.842Z"
+  },
   "d371031e-78be-4964-b521-b1eaa22a5480": {
     "status": "available",
     "name": "Alseid of Life's Bounty",

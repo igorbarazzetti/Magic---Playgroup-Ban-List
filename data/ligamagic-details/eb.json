@@ -1,4 +1,16 @@
 {
+  "eb287c04-97f5-4e47-beb1-66cc7d15e748": {
+    "status": "available",
+    "name": "Atarka Monument",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dragões de Tarkir",
+    "printing_code": "DTK",
+    "collector_number": "235",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atarka%20Monument",
+    "checked_at": "2026-08-08T02:54:12.745Z"
+  },
   "eb448589-28e1-49d4-ba3e-7ddb4341fdc5": {
     "status": "available",
     "name": "Akoum Battlesinger",

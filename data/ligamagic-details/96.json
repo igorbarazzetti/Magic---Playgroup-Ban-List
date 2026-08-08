@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arbor%20Adherent",
     "checked_at": "2026-08-07T13:47:03.612Z"
   },
+  "9651d197-a408-4665-a292-58d5471f4ffc": {
+    "status": "available",
+    "name": "Ashling's Command",
+    "price_brl": 0.89,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed",
+    "printing_code": "ECL",
+    "collector_number": "205",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashling's%20Command",
+    "checked_at": "2026-08-08T02:40:22.049Z"
+  },
   "967c2c79-7e49-448d-8d30-b2eb08b21d0a": {
     "status": "available",
     "name": "Angry Mob",

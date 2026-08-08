@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Screaming%20Nemesis",
     "checked_at": "2026-08-05T20:12:02.531Z"
   },
+  "fcdeb83f-531c-4087-9254-7f19eb065f00": {
+    "status": "available",
+    "name": "Assault // Battery",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Invasão",
+    "printing_code": "IN",
+    "collector_number": "295",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assault%20%2F%2F%20Battery",
+    "checked_at": "2026-08-08T02:46:52.471Z"
+  },
   "fcdfe9d5-2743-4d3e-ab57-bf0f96beaa15": {
     "status": "available",
     "name": "Aclazotz, Deepest Betrayal // Temple of the Dead",

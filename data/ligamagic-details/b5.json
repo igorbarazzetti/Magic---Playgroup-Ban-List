@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerial%20Guide",
     "checked_at": "2026-08-06T07:17:25.058Z"
   },
+  "b56cebe0-3752-4ce5-afbd-911543784015": {
+    "status": "available",
+    "name": "Atla Palani, Nest Tender",
+    "price_brl": 1.35,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominária Unida Commander",
+    "printing_code": "DMC",
+    "collector_number": "142",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atla%20Palani%2C%20Nest%20Tender",
+    "checked_at": "2026-08-08T02:55:32.307Z"
+  },
   "b57f06e4-da97-4473-9fbf-f66e9129502a": {
     "status": "available",
     "name": "Argothian Elder",
@@ -46,6 +58,18 @@
     "collector_number": "6",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alley%20Evasion",
     "checked_at": "2026-08-07T00:35:24.669Z"
+  },
+  "b5a390fd-2864-4481-84b4-41e8fac91a80": {
+    "status": "available",
+    "name": "Ashnod's Battle Gear",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quarta Edição",
+    "printing_code": "4E",
+    "collector_number": "18",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashnod's%20Battle%20Gear",
+    "checked_at": "2026-08-08T02:41:31.775Z"
   },
   "b5f5400e-f341-40e3-b935-36d9cf983a20": {
     "status": "available",

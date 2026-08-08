@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arwen's%20Gift",
     "checked_at": "2026-08-07T21:12:19.078Z"
   },
+  "13cf3ef7-d88e-4cc7-a4d8-cedc671f356a": {
+    "status": "available",
+    "name": "Ashiok's Erasure",
+    "price_brl": 0.18,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros Além da Morte",
+    "printing_code": "THB",
+    "collector_number": "43",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashiok's%20Erasure",
+    "checked_at": "2026-08-08T02:39:02.211Z"
+  },
   "13f63240-a6bb-4333-a3dd-818725c6fb73": {
     "status": "available",
     "name": "Abhorrent Overlord",

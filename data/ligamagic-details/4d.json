@@ -1,4 +1,40 @@
 {
+  "4d18bcba-a346-445e-a182-6cc30b7e066d": {
+    "status": "available",
+    "name": "Ashnod's Altar",
+    "price_brl": 14.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "MTGO Masters Edition IV",
+    "printing_code": "ME4",
+    "collector_number": "181",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashnod's%20Altar",
+    "checked_at": "2026-08-08T02:41:22.171Z"
+  },
+  "4d4b7108-5287-4d52-94a1-a0f99c14c969": {
+    "status": "available",
+    "name": "Ashnod's Coupon",
+    "price_brl": 99.95,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Arena League",
+    "printing_code": "ARENA",
+    "collector_number": "70",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashnod's%20Coupon",
+    "checked_at": "2026-08-08T02:41:42.165Z"
+  },
+  "4d6d3e6d-f958-4c17-b117-960fb8033601": {
+    "status": "available",
+    "name": "Assault Formation",
+    "price_brl": 0.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Iconic Masters",
+    "printing_code": "IMA",
+    "collector_number": "155",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assault%20Formation",
+    "checked_at": "2026-08-08T02:47:02.226Z"
+  },
   "4dab6a96-4376-4aea-983d-406167993214": {
     "status": "available",
     "name": "Anje Falkenrath",
@@ -10,6 +46,18 @@
     "collector_number": "37",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anje%20Falkenrath",
     "checked_at": "2026-08-07T09:26:46.202Z"
+  },
+  "4dcd0583-cee0-46a6-ba43-93bca5eb0428": {
+    "status": "available",
+    "name": "Astrologian's Planisphere",
+    "price_brl": 2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY",
+    "printing_code": "FIN",
+    "collector_number": "46",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Astrologian's%20Planisphere",
+    "checked_at": "2026-08-08T02:52:52.403Z"
   },
   "4df179b4-7c6b-4e63-9d7d-62f4df377989": {
     "status": "available",

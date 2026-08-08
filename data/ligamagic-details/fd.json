@@ -58,5 +58,29 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akroma's%20Will",
     "checked_at": "2026-08-06T18:08:37.330Z"
+  },
+  "fdd4ef61-607a-4090-9380-dabbbb448519": {
+    "status": "available",
+    "name": "Atarka Beastbreaker",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dragões de Tarkir",
+    "printing_code": "DTK",
+    "collector_number": "174",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atarka%20Beastbreaker",
+    "checked_at": "2026-08-08T02:53:52.630Z"
+  },
+  "fdf4e4c3-fe17-4098-9f76-e98f3f00bd3e": {
+    "status": "available",
+    "name": "Ashnod's Cylix",
+    "price_brl": 0.64,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alianças",
+    "printing_code": "AI",
+    "collector_number": "158",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashnod's%20Cylix",
+    "checked_at": "2026-08-08T02:41:52.212Z"
   }
 }

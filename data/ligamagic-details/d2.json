@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akroma's%20Devoted",
     "checked_at": "2026-08-06T18:08:17.307Z"
   },
+  "d2aa50d2-d22d-495e-afc9-23a51c8c8f32": {
+    "status": "available",
+    "name": "Assault on Osgiliath",
+    "price_brl": 0.34,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Senhor dos Anéis: Contos da Terra Média",
+    "printing_code": "LTR",
+    "collector_number": "285",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assault%20on%20Osgiliath",
+    "checked_at": "2026-08-08T02:47:31.969Z"
+  },
   "d2e0d739-b441-4173-a8f1-b831a19ea98e": {
     "status": "available",
     "name": "Agent of Shauku",

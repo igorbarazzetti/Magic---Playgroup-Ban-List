@@ -1,4 +1,16 @@
 {
+  "630fd1ec-0d1a-45b7-84ae-0b00a6112685": {
+    "status": "available",
+    "name": "Ass Whuppin'",
+    "price_brl": 9.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unhinged",
+    "printing_code": "UH",
+    "collector_number": "117",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ass%20Whuppin'",
+    "checked_at": "2026-08-08T02:45:22.345Z"
+  },
   "632ccf7e-eaf4-42a6-9069-6ad915d03a5b": {
     "status": "available",
     "name": "Agent of Masks",

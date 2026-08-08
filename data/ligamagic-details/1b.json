@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aragorn%2C%20Company%20Leader",
     "checked_at": "2026-08-07T11:26:07.055Z"
   },
+  "1bc42024-52da-4d93-8b47-544f0a4a72a1": {
+    "status": "available",
+    "name": "Astral Cornucopia",
+    "price_brl": 1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nascidos dos Deuses",
+    "printing_code": "BNG",
+    "collector_number": "157",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Astral%20Cornucopia",
+    "checked_at": "2026-08-08T02:51:32.357Z"
+  },
   "1bc701e2-913a-45d5-bc3f-16f87e7e2653": {
     "status": "available",
     "name": "Ash, Party Crasher",

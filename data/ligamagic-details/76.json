@@ -34,5 +34,17 @@
     "collector_number": "131",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arsenal%20Thresher",
     "checked_at": "2026-08-07T21:07:08.862Z"
+  },
+  "76da2150-34b9-4483-99df-131e1c5468d5": {
+    "status": "available",
+    "name": "Assassin's Blade",
+    "price_brl": 0.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "The List",
+    "printing_code": "PLIST",
+    "collector_number": "502",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assassin's%20Blade",
+    "checked_at": "2026-08-08T02:46:02.064Z"
   }
 }

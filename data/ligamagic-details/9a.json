@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aladdin",
     "checked_at": "2026-08-06T18:12:27.545Z"
   },
+  "9aacc1ce-8d0d-4a24-9a15-74635f2f127d": {
+    "status": "available",
+    "name": "Athreos, Shroud-Veiled",
+    "price_brl": 3.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Noctumbra: A Casa dos Horrores Commander",
+    "printing_code": "DSC",
+    "collector_number": "212",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Athreos%2C%20Shroud-Veiled",
+    "checked_at": "2026-08-08T02:55:12.544Z"
+  },
   "9aaf0df7-5e2d-4f49-a8cb-66523be15ad6": {
     "status": "available",
     "name": "Alchemist's Greeting",

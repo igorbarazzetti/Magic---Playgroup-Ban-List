@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Karn%2C%20the%20Great%20Creator",
     "checked_at": "2026-08-05T20:08:50.534Z"
   },
+  "a20e2e1a-90d8-4073-96e9-efce86f0178e": {
+    "status": "available",
+    "name": "Astral Dragon",
+    "price_brl": 101.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends: Batalha por Portal de Baldur",
+    "printing_code": "CLB",
+    "collector_number": "664",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Astral%20Dragon",
+    "checked_at": "2026-08-08T02:51:42.131Z"
+  },
   "a2404d88-0621-49ae-9908-052c23a96ac6": {
     "status": "available",
     "name": "Abu Ja'far",
@@ -22,6 +34,18 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abu%20Ja'far",
     "checked_at": "2026-08-06T00:15:27.270Z"
+  },
+  "a24d3d60-2bd7-40cb-8002-b092943f61fe": {
+    "status": "available",
+    "name": "Assimilate Essence",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marcha das Máquinas",
+    "printing_code": "MOM",
+    "collector_number": "47",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assimilate%20Essence",
+    "checked_at": "2026-08-08T02:49:52.162Z"
   },
   "a26432ff-ae60-454d-a6de-fec3feafa669": {
     "status": "available",

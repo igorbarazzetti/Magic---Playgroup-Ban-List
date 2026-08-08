@@ -82,5 +82,17 @@
     "collector_number": "42",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Gust",
     "checked_at": "2026-08-06T07:23:15.763Z"
+  },
+  "ecf574a5-6410-466d-a726-732134f904b2": {
+    "status": "available",
+    "name": "Assert Perfection",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed",
+    "printing_code": "ECL",
+    "collector_number": "164",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assert%20Perfection",
+    "checked_at": "2026-08-08T02:49:42.672Z"
   }
 }

@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abstract%20Paintmage",
     "checked_at": "2026-08-06T00:14:37.244Z"
   },
+  "bc92f0ba-2cf0-453c-a0d3-98a8784fe55b": {
+    "status": "available",
+    "name": "Ashling the Pilgrim",
+    "price_brl": 0.35,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Masters",
+    "printing_code": "CMM",
+    "collector_number": "205",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashling%20the%20Pilgrim",
+    "checked_at": "2026-08-08T02:40:52.116Z"
+  },
   "bcd5e175-2ef0-48f4-b9bd-14383dd234e0": {
     "status": "available",
     "name": "Ardoz, Cobbler of War",

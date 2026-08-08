@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archmage's%20Charm",
     "checked_at": "2026-08-07T17:19:35.098Z"
   },
+  "85d06533-3c0b-46a8-8fdb-379db9ae7e2e": {
+    "status": "available",
+    "name": "Assassin Gauntlet",
+    "price_brl": 0.45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassin's Creed",
+    "printing_code": "ACR",
+    "collector_number": "12",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assassin%20Gauntlet",
+    "checked_at": "2026-08-08T02:45:42.375Z"
+  },
   "85eefda9-4aab-467d-a08c-be026cb8ff42": {
     "status": "available",
     "name": "Amalia Benavides Aguirre",

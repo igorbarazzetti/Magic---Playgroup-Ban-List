@@ -1,4 +1,16 @@
 {
+  "03048844-32bb-45a2-a754-73f75eaa4566": {
+    "status": "available",
+    "name": "Astarion, the Decadent",
+    "price_brl": 1.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends: Batalha por Portal de Baldur",
+    "printing_code": "CLB",
+    "collector_number": "265",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Astarion%2C%20the%20Decadent",
+    "checked_at": "2026-08-08T02:50:42.341Z"
+  },
   "032b5fc4-5aca-41b6-9bf6-2c1ed0018968": {
     "status": "available",
     "name": "Aggressive Mammoth",

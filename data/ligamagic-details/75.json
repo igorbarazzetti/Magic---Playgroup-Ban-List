@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Academy%20Raider",
     "checked_at": "2026-08-06T03:48:11.647Z"
   },
+  "751321ac-af07-4b7e-976f-5bf4e4281470": {
+    "status": "available",
+    "name": "Assembly-Worker",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Espiral Temporal",
+    "printing_code": "TS",
+    "collector_number": "248",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assembly-Worker",
+    "checked_at": "2026-08-08T02:49:22.407Z"
+  },
   "753ead8c-f3f8-42fe-931d-79f5ee3ece54": {
     "status": "available",
     "name": "Aberrant Mind Sorcerer",

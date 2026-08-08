@@ -1,4 +1,16 @@
 {
+  "0a0a051c-59ed-4286-b842-a34da7ef15d5": {
+    "status": "available",
+    "name": "Asinine Antics",
+    "price_brl": 2.61,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Selvagens de Eldraine",
+    "printing_code": "WOE",
+    "collector_number": "42",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Asinine%20Antics",
+    "checked_at": "2026-08-08T02:42:51.784Z"
+  },
   "0a364b66-95df-480b-a733-e90f6d5c4d2b": {
     "status": "available",
     "name": "Altar of Bhaal // Bone Offering",

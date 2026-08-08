@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Spellbomb",
     "checked_at": "2026-08-06T10:59:53.740Z"
   },
+  "4b2831f5-70e3-4f4f-8393-4cd141c9da34": {
+    "status": "available",
+    "name": "Atarka Pummeler",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dragões de Tarkir",
+    "printing_code": "DTK",
+    "collector_number": "129",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atarka%20Pummeler",
+    "checked_at": "2026-08-08T02:54:22.755Z"
+  },
   "4b34a324-d939-453a-97e3-a21c584a0c74": {
     "status": "available",
     "name": "Altar of Shadows",
@@ -58,6 +70,18 @@
     "collector_number": "36",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcane%20Subtraction",
     "checked_at": "2026-08-07T13:54:03.974Z"
+  },
+  "4b65276e-7d03-4700-834c-48178fe98353": {
+    "status": "available",
+    "name": "Aspect of Gorgon",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Viagem para Nyx",
+    "printing_code": "JOU",
+    "collector_number": "60",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aspect%20of%20Gorgon",
+    "checked_at": "2026-08-08T02:43:32.130Z"
   },
   "4bd1d079-314e-4fb5-9b43-c9c83e5528bc": {
     "status": "available",

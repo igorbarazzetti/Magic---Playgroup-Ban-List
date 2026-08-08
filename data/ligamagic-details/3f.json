@@ -1,4 +1,16 @@
 {
+  "3f008b57-6471-4785-9571-3b90193da7e2": {
+    "status": "available",
+    "name": "Ashroot Animist",
+    "price_brl": 0.33,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Foundations",
+    "printing_code": "FDN",
+    "collector_number": "117",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashroot%20Animist",
+    "checked_at": "2026-08-08T02:42:42.181Z"
+  },
   "3f166376-2739-411c-8f42-96f2ef28ef86": {
     "status": "available",
     "name": "April O'Neil, Kunoichi Trainee",

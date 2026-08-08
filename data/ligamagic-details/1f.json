@@ -1,0 +1,26 @@
+{
+  "1f1ad44c-1811-40e3-976b-03f19866abd5": {
+    "status": "available",
+    "name": "Assemble the Entmoot",
+    "price_brl": 4.12,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Contos da Terra Média Commander",
+    "printing_code": "LTC",
+    "collector_number": "36",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assemble%20the%20Entmoot",
+    "checked_at": "2026-08-08T02:48:21.986Z"
+  },
+  "1f74e26f-5cf3-4b0e-bcc6-f858599474fc": {
+    "status": "available",
+    "name": "Asmoranomardicadaistinaculdacar",
+    "price_brl": 1.27,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 2",
+    "printing_code": "MH2",
+    "collector_number": "186",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Asmoranomardicadaistinaculdacar",
+    "checked_at": "2026-08-08T02:43:22.352Z"
+  }
+}

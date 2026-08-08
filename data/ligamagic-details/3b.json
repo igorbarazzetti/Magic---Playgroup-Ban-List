@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armament%20Corps",
     "checked_at": "2026-08-07T19:29:53.825Z"
   },
+  "3ba19659-461f-482c-b882-b4fca7d5d1f8": {
+    "status": "available",
+    "name": "Assault Intercessor",
+    "price_brl": 6.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Warhammer 40.000",
+    "printing_code": "40K",
+    "collector_number": "104",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assault%20Intercessor",
+    "checked_at": "2026-08-08T02:47:22.287Z"
+  },
   "3ba809ce-3556-415c-9fcc-291cb10a43cd": {
     "status": "available",
     "name": "Ajani, Outland Chaperone",

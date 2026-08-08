@@ -94,5 +94,17 @@
     "collector_number": "54",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aarakocra%20Sneak",
     "checked_at": "2026-08-05T20:02:31.709Z"
+  },
+  "c1a7d108-8073-42a5-ade0-a0643d078268": {
+    "status": "available",
+    "name": "Ashnod's Intervention",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra dos Irmãos",
+    "printing_code": "BRO",
+    "collector_number": "85",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashnod's%20Intervention",
+    "checked_at": "2026-08-08T02:42:11.776Z"
   }
 }

@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mox%20Pearl",
     "checked_at": "2026-08-05T20:10:11.194Z"
   },
+  "826274fd-9831-4122-a5d9-0d1caa3d3a85": {
+    "status": "available",
+    "name": "Assassin Den",
+    "price_brl": 0.45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassin's Creed (Starter Kit)",
+    "printing_code": "SKACR",
+    "collector_number": "281",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assassin%20Den",
+    "checked_at": "2026-08-08T02:45:32.230Z"
+  },
   "82b9ad93-df75-4417-9746-798db8fe6ba0": {
     "status": "available",
     "name": "Anarchist",

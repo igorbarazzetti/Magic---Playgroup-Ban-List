@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Destiny",
     "checked_at": "2026-08-07T08:00:46.594Z"
   },
+  "8be11473-6edf-4f45-b541-11858655fb5f": {
+    "status": "available",
+    "name": "Atalan Jackal",
+    "price_brl": 29.84,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Warhammer 40.000",
+    "printing_code": "40K",
+    "collector_number": "105",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atalan%20Jackal",
+    "checked_at": "2026-08-08T02:53:32.693Z"
+  },
   "8bed1349-4d0a-4544-ba66-c38e72cd2863": {
     "status": "available",
     "name": "Alpha Tyrranax",

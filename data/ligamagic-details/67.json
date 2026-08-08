@@ -46,5 +46,17 @@
     "collector_number": "68",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ascending%20Aven",
     "checked_at": "2026-08-07T21:14:39.127Z"
+  },
+  "67d66678-a8e6-4f80-bade-1f1daf4b0610": {
+    "status": "available",
+    "name": "Ashiok, Wicked Manipulator",
+    "price_brl": 3.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Selvagens de Eldraine",
+    "printing_code": "WOE",
+    "collector_number": "78",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashiok%2C%20Wicked%20Manipulator",
+    "checked_at": "2026-08-08T02:39:51.640Z"
   }
 }

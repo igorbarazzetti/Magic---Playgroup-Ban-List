@@ -34,5 +34,17 @@
     "collector_number": "9",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Artifact%20Ward",
     "checked_at": "2026-08-07T21:09:08.920Z"
+  },
+  "9bf4ee0f-6e28-4793-b251-f81ee444a119": {
+    "status": "available",
+    "name": "Assault Strobe",
+    "price_brl": 3.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Cicatrizes de Mirrodin",
+    "printing_code": "SOM",
+    "collector_number": "82",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assault%20Strobe",
+    "checked_at": "2026-08-08T02:47:42.228Z"
   }
 }

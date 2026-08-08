@@ -35,6 +35,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armored%20Armadillo",
     "checked_at": "2026-08-07T19:33:23.986Z"
   },
+  "dcc55415-216e-4e18-83d6-43f301359f84": {
+    "status": "available",
+    "name": "Aspect of Mongoose",
+    "price_brl": 5.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Espiral Temporal",
+    "printing_code": "TS",
+    "collector_number": "191",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aspect%20of%20Mongoose",
+    "checked_at": "2026-08-08T02:44:12.091Z"
+  },
+  "dcd5ab1b-adc5-486e-a1e0-636af6ee9470": {
+    "status": "available",
+    "name": "Ashnod the Uncaring",
+    "price_brl": 0.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra dos Irmãos Commander",
+    "printing_code": "BRC",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashnod%20the%20Uncaring",
+    "checked_at": "2026-08-08T02:42:32.712Z"
+  },
   "dcde1a62-33a5-4454-a389-9bf7a3521a4c": {
     "status": "available",
     "name": "Aeronaut Admiral",

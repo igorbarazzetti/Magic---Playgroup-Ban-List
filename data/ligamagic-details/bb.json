@@ -1,4 +1,16 @@
 {
+  "bb956492-e3ed-483a-9169-5b795a8e619e": {
+    "status": "available",
+    "name": "Astelli Reclaimer",
+    "price_brl": 0.55,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Edge of Eternities",
+    "printing_code": "EOE",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Astelli%20Reclaimer",
+    "checked_at": "2026-08-08T02:50:52.097Z"
+  },
   "bbf183bc-d502-4432-8202-f29f60c08396": {
     "status": "available",
     "name": "Argothian Pixies",

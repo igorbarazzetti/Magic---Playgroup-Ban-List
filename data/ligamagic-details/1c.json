@@ -1,4 +1,16 @@
 {
+  "1c2ce0d0-8c3e-48e8-b1fd-54658bdb9af9": {
+    "status": "available",
+    "name": "Asphyxiate",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nascidos dos Deuses",
+    "printing_code": "BNG",
+    "collector_number": "60",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Asphyxiate",
+    "checked_at": "2026-08-08T02:44:42.277Z"
+  },
   "1c371003-e4f0-4d7c-b021-273176772f97": {
     "status": "available",
     "name": "April, Reporter of the Weird",

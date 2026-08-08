@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Refinery",
     "checked_at": "2026-08-06T10:58:53.570Z"
   },
+  "9ea87566-43da-4ebd-a904-ae8b8830c3a2": {
+    "status": "available",
+    "name": "Ashnod's Harvester",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra dos Irmãos",
+    "printing_code": "BRO",
+    "collector_number": "117",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashnod's%20Harvester",
+    "checked_at": "2026-08-08T02:42:02.011Z"
+  },
   "9ecd53b0-4551-4505-b5d2-02ae49d4cbdb": {
     "status": "available",
     "name": "Acquired Mutation",

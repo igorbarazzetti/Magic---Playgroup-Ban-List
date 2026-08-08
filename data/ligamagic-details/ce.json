@@ -35,6 +35,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anzrag's%20Rampage",
     "checked_at": "2026-08-07T11:13:46.497Z"
   },
+  "ce79bbd2-edf0-4d5e-9aaf-717ec3960c48": {
+    "status": "available",
+    "name": "Ashiok, Sculptor of Fears",
+    "price_brl": 9.8,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros Além da Morte",
+    "printing_code": "THB",
+    "collector_number": "274",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashiok%2C%20Sculptor%20of%20Fears",
+    "checked_at": "2026-08-08T02:39:41.841Z"
+  },
+  "ce979f36-84f2-4419-b400-971263494cc6": {
+    "status": "available",
+    "name": "Assassinate",
+    "price_brl": 0.02,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Espiral Temporal",
+    "printing_code": "TS",
+    "collector_number": "95",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assassinate",
+    "checked_at": "2026-08-08T02:46:42.259Z"
+  },
   "cea09261-41a2-43e5-bf43-c4097e6615c6": {
     "status": "available",
     "name": "Appeal to Eirdu",

@@ -23,6 +23,42 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Argivian%20Blacksmith",
     "checked_at": "2026-08-07T19:24:23.530Z"
   },
+  "802b9333-c256-410a-a635-a22bfeda679f": {
+    "status": "available",
+    "name": "Assault Griffin",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portões Violados",
+    "printing_code": "GTC",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assault%20Griffin",
+    "checked_at": "2026-08-08T02:47:12.255Z"
+  },
+  "8049dbff-6b57-454a-a2e6-7e2ae39bb606": {
+    "status": "available",
+    "name": "Assault Zeppelid",
+    "price_brl": 0.11,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Insurreição",
+    "printing_code": "DI",
+    "collector_number": "103",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assault%20Zeppelid",
+    "checked_at": "2026-08-08T02:48:02.410Z"
+  },
+  "80788ac7-19d6-42d2-9f6e-676d7b5c912e": {
+    "status": "available",
+    "name": "Astral Confrontation",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends: Batalha por Portal de Baldur",
+    "printing_code": "CLB",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Astral%20Confrontation",
+    "checked_at": "2026-08-08T02:51:22.442Z"
+  },
   "8095ca78-db19-4724-a6ff-eacc85fa2274": {
     "status": "available",
     "name": "Another Round",

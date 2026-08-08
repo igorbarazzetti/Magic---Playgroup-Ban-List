@@ -1,4 +1,16 @@
 {
+  "d40fd63b-f55d-49f6-b4e5-a8d00f22e8e1": {
+    "status": "available",
+    "name": "Ashmouth Hound",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Duel Decks: Sorin vs. Tibalt",
+    "printing_code": "DDK",
+    "collector_number": "45",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashmouth%20Hound",
+    "checked_at": "2026-08-08T02:41:02.124Z"
+  },
   "d412b175-2365-4b2c-a8f5-3e4e9d06280d": {
     "status": "available",
     "name": "Archive Trap",
