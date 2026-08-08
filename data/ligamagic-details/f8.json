@@ -59,6 +59,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Deliverance",
     "checked_at": "2026-08-07T07:53:16.236Z"
   },
+  "f88b0634-144a-4a33-a369-62df8edf05fe": {
+    "status": "available",
+    "name": "Battlefield Scavenger",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Amonkhet",
+    "printing_code": "AKH",
+    "collector_number": "118",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battlefield%20Scavenger",
+    "checked_at": "2026-08-08T22:54:00.234Z"
+  },
+  "f88eeb04-4b8e-4c76-a8c6-90887b94d518": {
+    "status": "available",
+    "name": "Beaming Defiance",
+    "price_brl": 0.11,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Strixhaven: Escola de Magos",
+    "printing_code": "STX",
+    "collector_number": "9",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beaming%20Defiance",
+    "checked_at": "2026-08-08T23:00:50.429Z"
+  },
   "f8a06210-de30-4e87-835e-80a6df5716ca": {
     "status": "available",
     "name": "Auriok Windwalker",

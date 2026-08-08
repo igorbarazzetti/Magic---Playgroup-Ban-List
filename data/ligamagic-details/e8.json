@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20of%20Enduring%20Hope",
     "checked_at": "2026-08-08T09:17:40.415Z"
   },
+  "e83b2790-3cec-429c-a65d-6f4c7d025d37": {
+    "status": "available",
+    "name": "Bayou Groff",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Strixhaven: Escola de Magos",
+    "printing_code": "STX",
+    "collector_number": "121",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bayou%20Groff",
+    "checked_at": "2026-08-08T22:58:20.329Z"
+  },
   "e886756a-298d-4f79-8699-8bfc9345352e": {
     "status": "available",
     "name": "Barony Vampire",

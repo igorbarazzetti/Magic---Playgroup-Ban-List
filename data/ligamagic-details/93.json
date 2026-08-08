@@ -1,4 +1,16 @@
 {
+  "930248b3-44e6-4c0b-bd7d-4b48323a7272": {
+    "status": "available",
+    "name": "Bear's Companion",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Khans de Tarkir",
+    "printing_code": "KTK",
+    "collector_number": "167",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bear's%20Companion",
+    "checked_at": "2026-08-08T23:02:00.568Z"
+  },
   "934094d6-c897-4ae2-89cd-08d106600d3c": {
     "status": "available",
     "name": "Ambitious Dragonborn",

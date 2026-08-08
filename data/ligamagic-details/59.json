@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Kavu",
     "checked_at": "2026-08-07T07:50:26.053Z"
   },
+  "59a405d7-2f28-41b8-a5bb-011f45a5fdf2": {
+    "status": "available",
+    "name": "Bebop, Skull & Crossbones",
+    "price_brl": 1.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Teenage Mutant Ninja Turtles Commander",
+    "printing_code": "TMC",
+    "collector_number": "15",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bebop%2C%20Skull%20%26%20Crossbones",
+    "checked_at": "2026-08-08T23:06:50.637Z"
+  },
   "59b2edf0-00e4-4cd4-88ac-6dd74e9b1b14": {
     "status": "available",
     "name": "Air Marshal",

@@ -143,6 +143,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archivist%20of%20Gondor",
     "checked_at": "2026-08-07T17:18:34.293Z"
   },
+  "a08b0a07-6da2-4ff6-88e5-88355dd84589": {
+    "status": "available",
+    "name": "Bebop & Rocksteady",
+    "price_brl": 1.43,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Teenage Mutant Ninja Turtles",
+    "printing_code": "TMT",
+    "collector_number": "140",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bebop%20%26%20Rocksteady",
+    "checked_at": "2026-08-08T23:06:40.608Z"
+  },
   "a09da13e-f8a3-410e-941a-9912d2cfe7de": {
     "status": "available",
     "name": "Angler Turtle",

@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aeve%2C%20Progenitor%20Ooze",
     "checked_at": "2026-08-06T11:06:03.920Z"
   },
+  "44661108-d72f-4d02-9303-7e4b0ecf7e9c": {
+    "status": "available",
+    "name": "Bear Umbra",
+    "price_brl": 16.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ascensão dos Eldrazi",
+    "printing_code": "ROE",
+    "collector_number": "177",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bear%20Umbra",
+    "checked_at": "2026-08-08T23:02:20.618Z"
+  },
   "4489f362-9b7e-4dc0-a459-a990a487454e": {
     "status": "available",
     "name": "Absorb Identity",

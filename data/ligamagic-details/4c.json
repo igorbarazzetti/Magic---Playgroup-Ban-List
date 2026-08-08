@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avarice%20Amulet",
     "checked_at": "2026-08-08T09:11:00.181Z"
   },
+  "4c7f54be-70f6-4fc4-b1e0-e46766c37d01": {
+    "status": "available",
+    "name": "Beast in Show",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unstable",
+    "printing_code": "UST",
+    "collector_number": "103",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beast%20in%20Show",
+    "checked_at": "2026-08-08T23:04:00.515Z"
+  },
   "4c80112a-8ff5-4ca4-8737-b8d499d78982": {
     "status": "available",
     "name": "Amrou Scout",

@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcbound%20Wanderer",
     "checked_at": "2026-08-07T13:57:54.108Z"
   },
+  "035e33ab-adfe-4831-bdbc-52f4ddc7ffe8": {
+    "status": "available",
+    "name": "Beamtown Beatstick",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marcha das Máquinas",
+    "printing_code": "MOM",
+    "collector_number": "131",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beamtown%20Beatstick",
+    "checked_at": "2026-08-08T23:01:20.676Z"
+  },
   "03a4cbe2-cf35-4c2c-b035-666f994ffd09": {
     "status": "available",
     "name": "Anavolver",

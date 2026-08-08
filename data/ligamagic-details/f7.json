@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Animate%20Library",
     "checked_at": "2026-08-07T09:25:26.147Z"
   },
+  "f7afb2c3-50ee-40f5-8b14-32f80c2bacd0": {
+    "status": "available",
+    "name": "Bear Trap",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Noctumbra: A Casa dos Horrores",
+    "printing_code": "DSK",
+    "collector_number": "243",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bear%20Trap",
+    "checked_at": "2026-08-08T23:02:10.482Z"
+  },
   "f7c237e6-17a4-4e72-8cc3-456aec738394": {
     "status": "available",
     "name": "Barrin's Codex",

@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Academic%20Probation",
     "checked_at": "2026-08-06T03:47:12.191Z"
   },
+  "40216d09-ae4d-4a41-b3f6-1a8035093045": {
+    "status": "available",
+    "name": "Battlegrace Angel",
+    "price_brl": 0.79,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Masters 2015",
+    "printing_code": "MM2",
+    "collector_number": "10",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battlegrace%20Angel",
+    "checked_at": "2026-08-08T22:55:10.254Z"
+  },
   "402c3afe-7041-41a3-8fcd-64a060c12d4a": {
     "status": "available",
     "name": "Anoint with Affliction",

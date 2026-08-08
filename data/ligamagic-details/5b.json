@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apocalypse%20Demon",
     "checked_at": "2026-08-07T11:17:07.183Z"
   },
+  "5b8472c8-a7e7-46f2-aecf-e954082a5ef5": {
+    "status": "available",
+    "name": "Beck // Call",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Labirinto do Dragão",
+    "printing_code": "DGM",
+    "collector_number": "123",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beck%20%2F%2F%20Call",
+    "checked_at": "2026-08-08T23:07:10.774Z"
+  },
   "5bbc3ad0-4865-43f0-8baf-e7f4af5db656": {
     "status": "available",
     "name": "Bard Class",

@@ -118,5 +118,17 @@
     "collector_number": "138",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Heartfire%20Hero",
     "checked_at": "2026-08-05T20:07:28.823Z"
+  },
+  "49f0b317-6b06-482e-ab64-e02713e6c7e8": {
+    "status": "available",
+    "name": "Battlewing Mystic",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominária Unida",
+    "printing_code": "DMU",
+    "collector_number": "43",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battlewing%20Mystic",
+    "checked_at": "2026-08-08T22:56:20.356Z"
   }
 }

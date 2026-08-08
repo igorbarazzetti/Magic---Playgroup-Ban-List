@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Grim%20Monolith",
     "checked_at": "2026-08-05T20:07:19.711Z"
   },
+  "22c75ad5-237c-4dbd-bbc4-3058a3db408f": {
+    "status": "available",
+    "name": "Beanstalk Giant // Fertile Footsteps",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Trono de Eldraine",
+    "printing_code": "ELD",
+    "collector_number": "149",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beanstalk%20Giant%20%2F%2F%20Fertile%20Footsteps",
+    "checked_at": "2026-08-08T23:01:30.727Z"
+  },
   "22d0a848-2126-48f0-9050-38daaf93b1d0": {
     "status": "available",
     "name": "Agna Qel'a",

@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Astonishing%20Spider-Man",
     "checked_at": "2026-08-08T02:51:02.251Z"
   },
+  "2450d35b-7d87-4885-b396-f8e1d3ac0b22": {
+    "status": "available",
+    "name": "Battleground Geist",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Jumpstart",
+    "printing_code": "JMP",
+    "collector_number": "139",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battleground%20Geist",
+    "checked_at": "2026-08-08T22:55:20.250Z"
+  },
   "245469ff-72b6-4846-8a82-a1d29f4d09bb": {
     "status": "available",
     "name": "Auntie's Hovel",

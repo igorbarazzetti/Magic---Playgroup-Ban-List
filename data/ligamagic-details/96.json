@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ballynock%20Trapper",
     "checked_at": "2026-08-08T16:59:16.991Z"
   },
+  "963947d5-5fe4-49cd-be0c-0bdb5f7bcbb6": {
+    "status": "available",
+    "name": "Bearer of Glory",
+    "price_brl": 0.02,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm",
+    "printing_code": "TDM",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bearer%20of%20Glory",
+    "checked_at": "2026-08-08T23:02:40.503Z"
+  },
   "9640225a-8f31-495f-b9de-53ed348ff24b": {
     "status": "available",
     "name": "Arbor Adherent",

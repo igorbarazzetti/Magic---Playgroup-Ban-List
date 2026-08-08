@@ -58,5 +58,17 @@
     "collector_number": "100",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barrage%20of%20Boulders",
     "checked_at": "2026-08-08T19:13:12.438Z"
+  },
+  "71bc69a5-7cec-4abd-b97d-13f8e1f9afac": {
+    "status": "available",
+    "name": "Baxter Building",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes",
+    "printing_code": "MSH",
+    "collector_number": "261",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baxter%20Building",
+    "checked_at": "2026-08-08T22:57:10.289Z"
   }
 }

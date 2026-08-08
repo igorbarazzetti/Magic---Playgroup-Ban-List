@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Astelli%20Reclaimer",
     "checked_at": "2026-08-08T02:50:52.097Z"
   },
+  "bbe740f8-6e7c-4cfd-9134-9bf8d5f48cf5": {
+    "status": "available",
+    "name": "Beamsaw Prospector",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Edge of Eternities",
+    "printing_code": "EOE",
+    "collector_number": "89",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beamsaw%20Prospector",
+    "checked_at": "2026-08-08T23:01:00.550Z"
+  },
   "bbf183bc-d502-4432-8202-f29f60c08396": {
     "status": "available",
     "name": "Argothian Pixies",

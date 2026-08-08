@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akawalli%2C%20the%20Seething%20Tower",
     "checked_at": "2026-08-06T14:53:52.221Z"
   },
+  "069c8fa1-fa04-4620-9356-a618158dad3e": {
+    "status": "available",
+    "name": "Beast Hunt",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Zendikar",
+    "printing_code": "ZEN",
+    "collector_number": "158",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beast%20Hunt",
+    "checked_at": "2026-08-08T23:03:50.984Z"
+  },
   "069f6530-e65c-4d52-85f3-e0a2acd148c5": {
     "status": "available",
     "name": "Avacyn's Pilgrim",

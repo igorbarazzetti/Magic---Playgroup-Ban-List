@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armillary%20Sphere",
     "checked_at": "2026-08-07T19:31:43.962Z"
   },
+  "396cc8ce-9efa-4fc7-90a6-b439b2b021db": {
+    "status": "available",
+    "name": "Battlesong Berserker",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Foundations",
+    "printing_code": "FDN",
+    "collector_number": "78",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battlesong%20Berserker",
+    "checked_at": "2026-08-08T22:55:50.291Z"
+  },
   "396efb56-7a54-4d91-b2ce-7f3c62c3238b": {
     "status": "available",
     "name": "Amrou Seekers",
@@ -106,6 +118,18 @@
     "collector_number": "26",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbary%20Apes",
     "checked_at": "2026-08-08T19:06:02.107Z"
+  },
+  "39c813e1-0e26-440a-b9bd-e781f7576b8b": {
+    "status": "available",
+    "name": "Bebop, Warthog Warrior",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Teenage Mutant Ninja Turtles",
+    "printing_code": "TMT",
+    "collector_number": "59",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bebop%2C%20Warthog%20Warrior",
+    "checked_at": "2026-08-08T23:07:01.143Z"
   },
   "39daa265-8d02-4449-9c45-ae8ec2b13e5b": {
     "status": "available",

@@ -22,5 +22,17 @@
     "collector_number": "70",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Maddening%20Hex",
     "checked_at": "2026-08-05T20:09:26.080Z"
+  },
+  "5da7eea8-bb9e-47ce-a554-8a1ee058bd7a": {
+    "status": "available",
+    "name": "Beast Whisperer",
+    "price_brl": 19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Media Inserts (EN)",
+    "printing_code": "MBP",
+    "collector_number": "172",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beast%20Whisperer",
+    "checked_at": "2026-08-08T23:04:50.629Z"
   }
 }

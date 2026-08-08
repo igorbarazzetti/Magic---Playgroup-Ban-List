@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Academy%20Manufactor",
     "checked_at": "2026-08-06T03:48:01.672Z"
   },
+  "f36e316d-c0ad-414d-8cf0-b1c9ea779e03": {
+    "status": "available",
+    "name": "Battleflight Eagle",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2013",
+    "printing_code": "M13",
+    "collector_number": "7",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battleflight%20Eagle",
+    "checked_at": "2026-08-08T22:54:30.784Z"
+  },
   "f3902dfd-6d09-425f-8446-a68cae2eea50": {
     "status": "available",
     "name": "Ashad, the Lone Cyberman",

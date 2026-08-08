@@ -1,4 +1,16 @@
 {
+  "7e481e22-4122-4259-8978-4727eb307195": {
+    "status": "available",
+    "name": "Bearscape",
+    "price_brl": 8.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Odisséia",
+    "printing_code": "OD",
+    "collector_number": "229",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bearscape",
+    "checked_at": "2026-08-08T23:03:20.575Z"
+  },
   "7e5d2801-873f-4318-9c23-9a73e00e31a4": {
     "status": "available",
     "name": "Advanced Stitchwing",

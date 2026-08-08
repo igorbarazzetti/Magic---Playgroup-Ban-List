@@ -131,6 +131,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abomination%20of%20Gudul",
     "checked_at": "2026-08-06T00:10:47.017Z"
   },
+  "3da5fbe2-e47b-4a1d-9e73-393f37314fa3": {
+    "status": "available",
+    "name": "Beastie Beatdown",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Noctumbra: A Casa dos Horrores",
+    "printing_code": "DSK",
+    "collector_number": "210",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beastie%20Beatdown",
+    "checked_at": "2026-08-08T23:05:40.631Z"
+  },
   "3db9bf7b-da4e-428f-aa5d-a0cd1afeb16c": {
     "status": "available",
     "name": "Backlash",

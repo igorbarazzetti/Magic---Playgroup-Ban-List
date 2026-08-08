@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Accorder%20Paladin",
     "checked_at": "2026-08-06T03:50:31.789Z"
   },
+  "68a99e50-0e98-480b-ad25-aa2c226d24ca": {
+    "status": "available",
+    "name": "Battlefield Raptor",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaldheim",
+    "printing_code": "KHM",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battlefield%20Raptor",
+    "checked_at": "2026-08-08T22:53:50.286Z"
+  },
   "68b038ef-71c4-4ca5-9821-57bf85831bb7": {
     "status": "available",
     "name": "Barrin's Spite",
@@ -118,6 +130,18 @@
     "collector_number": "251",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avatar%20of%20Might",
     "checked_at": "2026-08-08T09:12:50.192Z"
+  },
+  "68dfc626-66d5-4a40-9410-2b15676ebcec": {
+    "status": "available",
+    "name": "Beast Walkers",
+    "price_brl": 1.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Natais",
+    "printing_code": "HL",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beast%20Walkers",
+    "checked_at": "2026-08-08T23:04:40.546Z"
   },
   "68e1f7e0-a9b3-437f-8086-0c0cb85f2880": {
     "status": "available",

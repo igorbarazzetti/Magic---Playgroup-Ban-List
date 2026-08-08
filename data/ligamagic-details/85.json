@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bastion%20Protector",
     "checked_at": "2026-08-08T21:00:36.624Z"
   },
+  "85909caa-d2ad-4487-b9b7-6ac60a14b833": {
+    "status": "available",
+    "name": "Beacon of Tomorrows",
+    "price_brl": 19.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Quinta Aurora",
+    "printing_code": "5DN",
+    "collector_number": "24",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beacon%20of%20Tomorrows",
+    "checked_at": "2026-08-08T23:00:30.430Z"
+  },
   "85b2fb89-5ebe-4c13-bc12-38d1417e5880": {
     "status": "available",
     "name": "Abzan Guide",

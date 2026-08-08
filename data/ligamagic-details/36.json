@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcbound%20Whelp",
     "checked_at": "2026-08-07T13:58:04.162Z"
   },
+  "3690ca72-c925-42ab-acc2-7cc1fda05789": {
+    "status": "available",
+    "name": "Be'lakor, the Dark Master",
+    "price_brl": 19.98,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Warhammer 40.000",
+    "printing_code": "40K",
+    "collector_number": "172",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Be'lakor%2C%20the%20Dark%20Master",
+    "checked_at": "2026-08-08T22:59:14.854Z"
+  },
   "36a600fe-91b4-46a0-97ee-0cea2b63ec8e": {
     "status": "available",
     "name": "Aven Sentry",

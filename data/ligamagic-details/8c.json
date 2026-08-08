@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barrin%2C%20Master%20Wizard",
     "checked_at": "2026-08-08T19:16:02.376Z"
   },
+  "8c77f436-81ab-4200-b76d-58b1f91fc3d0": {
+    "status": "available",
+    "name": "Beastbreaker of Bala Ged",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ascensão dos Eldrazi",
+    "printing_code": "ROE",
+    "collector_number": "178",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beastbreaker%20of%20Bala%20Ged",
+    "checked_at": "2026-08-08T23:05:21.308Z"
+  },
   "8c912b1f-4584-4945-9931-f6850e5ebfa4": {
     "status": "available",
     "name": "Assemble the Rank and Vile",

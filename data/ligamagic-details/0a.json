@@ -130,5 +130,17 @@
     "collector_number": "5",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auriok%20Transfixer",
     "checked_at": "2026-08-08T07:33:43.473Z"
+  },
+  "0af189d3-4de1-483e-aac4-dd5d51a57d9c": {
+    "status": "available",
+    "name": "Battlegate Mimic",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Entardecer",
+    "printing_code": "EVE",
+    "collector_number": "133",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battlegate%20Mimic",
+    "checked_at": "2026-08-08T22:55:00.339Z"
   }
 }

@@ -1,4 +1,16 @@
 {
+  "fa09e18c-e7cf-4f08-9cc4-324e36594063": {
+    "status": "available",
+    "name": "Beamsplitter Mage",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Guildas de Ravnica",
+    "printing_code": "GRN",
+    "collector_number": "155",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beamsplitter%20Mage",
+    "checked_at": "2026-08-08T23:01:10.424Z"
+  },
   "fa3335be-80b1-49d7-9809-5bef13be79f4": {
     "status": "available",
     "name": "Armory Automaton",

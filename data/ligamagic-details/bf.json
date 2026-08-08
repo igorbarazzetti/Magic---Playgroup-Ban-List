@@ -94,5 +94,17 @@
     "collector_number": "214",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archway%20of%20Innovation",
     "checked_at": "2026-08-07T17:22:44.569Z"
+  },
+  "bfcdf563-c6e5-4a54-bb63-4aba219b94e2": {
+    "status": "available",
+    "name": "Beacon of Immortality",
+    "price_brl": 33.48,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mystery Booster",
+    "printing_code": "MB1",
+    "collector_number": "35",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beacon%20of%20Immortality",
+    "checked_at": "2026-08-08T23:00:20.424Z"
   }
 }

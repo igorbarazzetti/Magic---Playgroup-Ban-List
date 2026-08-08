@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barad-d%C3%BBr",
     "checked_at": "2026-08-08T17:10:37.363Z"
   },
+  "884686dd-515c-4484-a324-e7d126903a42": {
+    "status": "available",
+    "name": "Beacon Bolt",
+    "price_brl": 0.06,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Guildas de Ravnica",
+    "printing_code": "GRN",
+    "collector_number": "154",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beacon%20Bolt",
+    "checked_at": "2026-08-08T22:59:30.802Z"
+  },
   "88939cb3-5f61-4857-95cb-9446c6c1f1aa": {
     "status": "available",
     "name": "Alpine Houndmaster",

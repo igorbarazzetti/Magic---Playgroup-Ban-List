@@ -1,4 +1,16 @@
 {
+  "9b0bc2d3-d64b-455a-a258-d3c91892f1a7": {
+    "status": "available",
+    "name": "Beasts of Bogardan",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Chronicles",
+    "printing_code": "CH",
+    "collector_number": "16",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beasts%20of%20Bogardan",
+    "checked_at": "2026-08-08T23:06:20.695Z"
+  },
   "9b544415-841d-4038-841b-efb0cede5c24": {
     "status": "available",
     "name": "Battle of Wits",

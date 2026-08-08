@@ -1,4 +1,16 @@
 {
+  "650bf82e-7f83-470c-bf4a-34281bfe9341": {
+    "status": "available",
+    "name": "Battlegrowth",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mirrodin",
+    "printing_code": "MI",
+    "collector_number": "113",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battlegrowth",
+    "checked_at": "2026-08-08T22:55:30.380Z"
+  },
   "6511f317-bd38-46d0-b800-7125a3f420da": {
     "status": "available",
     "name": "Aesi, Tyrant of Gyre Strait",

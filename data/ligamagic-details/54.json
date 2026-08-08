@@ -82,5 +82,17 @@
     "collector_number": "120",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Basic%20Conjuration",
     "checked_at": "2026-08-08T20:56:27.179Z"
+  },
+  "54e86bc8-ff48-49be-902c-4923d59901a7": {
+    "status": "available",
+    "name": "Bearer of the Heavens",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Viagem para Nyx",
+    "printing_code": "JOU",
+    "collector_number": "89",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bearer%20of%20the%20Heavens",
+    "checked_at": "2026-08-08T23:03:10.630Z"
   }
 }

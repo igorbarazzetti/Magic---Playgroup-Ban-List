@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ark%20of%20Blight",
     "checked_at": "2026-08-07T19:27:33.676Z"
   },
+  "b4540f6a-bec8-4942-aebe-d3285b8a8134": {
+    "status": "available",
+    "name": "Battlewise Valor",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros",
+    "printing_code": "THS",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battlewise%20Valor",
+    "checked_at": "2026-08-08T22:56:50.356Z"
+  },
   "b46351cf-73c7-493c-b8a7-5d7bedc8b205": {
     "status": "available",
     "name": "Ambulatory Edifice",

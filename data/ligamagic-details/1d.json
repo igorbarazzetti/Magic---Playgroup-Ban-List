@@ -70,5 +70,17 @@
     "collector_number": "73",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Thassa's%20Oracle",
     "checked_at": "2026-08-05T20:13:35.777Z"
+  },
+  "1de561c7-4ff4-4eb9-8cbe-a29f568e786a": {
+    "status": "available",
+    "name": "Bazaar Krovod",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Retorno a Ravnica",
+    "printing_code": "RTR",
+    "collector_number": "7",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bazaar%20Krovod",
+    "checked_at": "2026-08-08T22:58:30.346Z"
   }
 }

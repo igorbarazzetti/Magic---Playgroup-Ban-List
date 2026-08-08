@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agent%20of%20Acquisitions",
     "checked_at": "2026-08-06T11:11:04.132Z"
   },
+  "191ba5f0-45f4-4b7f-910d-4bd4d2d28b33": {
+    "status": "available",
+    "name": "Beast, Erudite Aerialist",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes",
+    "printing_code": "MSH",
+    "collector_number": "206",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beast%2C%20Erudite%20Aerialist",
+    "checked_at": "2026-08-08T23:03:40.579Z"
+  },
   "191e003f-1a78-4d85-9c70-2ae132a5f9cc": {
     "status": "available",
     "name": "Aphelia, Viper Whisperer",
@@ -82,6 +94,30 @@
     "collector_number": "293",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Astor%2C%20Bearer%20of%20Blades",
     "checked_at": "2026-08-08T02:51:12.584Z"
+  },
+  "19a0d191-64c0-4e8a-8cb0-bf680cc681bb": {
+    "status": "available",
+    "name": "Beastrider Vanguard",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Aetherdrift",
+    "printing_code": "DFT",
+    "collector_number": "154",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beastrider%20Vanguard",
+    "checked_at": "2026-08-08T23:06:10.669Z"
+  },
+  "19a32e29-45ec-433e-9cb4-b2c32cac8f80": {
+    "status": "available",
+    "name": "Beastbond Outcaster",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Os Fora da Lei de Encruzilhada do Trovão",
+    "printing_code": "OTJ",
+    "collector_number": "154",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beastbond%20Outcaster",
+    "checked_at": "2026-08-08T23:05:10.565Z"
   },
   "19ad338a-c89f-406d-ad1a-222c22044e1b": {
     "status": "available",

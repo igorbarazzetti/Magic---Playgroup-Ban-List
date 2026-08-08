@@ -58,5 +58,17 @@
     "collector_number": "30",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Envoy",
     "checked_at": "2026-08-08T09:15:10.697Z"
+  },
+  "73dc28a7-37ac-4b16-aa00-967c9c44d979": {
+    "status": "available",
+    "name": "Baylen, the Haymaker",
+    "price_brl": 3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Bloomburrow",
+    "printing_code": "BLB",
+    "collector_number": "205",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baylen%2C%20the%20Haymaker",
+    "checked_at": "2026-08-08T22:58:00.319Z"
   }
 }

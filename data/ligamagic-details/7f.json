@@ -58,5 +58,17 @@
     "collector_number": "128",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Altac%20Bloodseeker",
     "checked_at": "2026-08-07T00:43:35.121Z"
+  },
+  "7fca65b8-01fe-4858-97c6-f97ae82cd801": {
+    "status": "available",
+    "name": "Bazaar of Wonders",
+    "price_brl": 4.61,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Miragem",
+    "printing_code": "MR",
+    "collector_number": "23",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bazaar%20of%20Wonders",
+    "checked_at": "2026-08-08T22:58:40.334Z"
   }
 }

@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Altar%20of%20Dementia",
     "checked_at": "2026-08-07T00:44:35.055Z"
   },
+  "d69c8c55-6433-4cc5-bdc7-9722f121b8e2": {
+    "status": "available",
+    "name": "Bearer of Silence",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Juramento das Sentinelas",
+    "printing_code": "OGW",
+    "collector_number": "67",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bearer%20of%20Silence",
+    "checked_at": "2026-08-08T23:03:00.715Z"
+  },
   "d6a03a52-7e85-46de-920c-93a3f6479c4c": {
     "status": "available",
     "name": "Avian Oddity",

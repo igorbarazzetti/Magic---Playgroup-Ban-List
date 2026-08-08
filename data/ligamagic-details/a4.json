@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Axebane%20Stag",
     "checked_at": "2026-08-08T13:23:56.998Z"
   },
+  "a465f8a9-d5aa-4dfa-b674-7aa1798cb0bd": {
+    "status": "available",
+    "name": "Beast Mode",
+    "price_brl": 0.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes Commander",
+    "printing_code": "MSC",
+    "collector_number": "713",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beast%20Mode",
+    "checked_at": "2026-08-08T23:04:20.534Z"
+  },
   "a468f6ab-c0a8-4295-8b01-7147d3f889b4": {
     "status": "available",
     "name": "Air Nomad Student",

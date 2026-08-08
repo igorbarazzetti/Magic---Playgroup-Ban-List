@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Fastbond",
     "checked_at": "2026-08-05T20:06:08.135Z"
   },
+  "e28227eb-b3b5-42fa-b597-1fefd2a70186": {
+    "status": "available",
+    "name": "Beastcaller Savant",
+    "price_brl": 1.19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Batalha por Zendikar",
+    "printing_code": "BFZ",
+    "collector_number": "170",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beastcaller%20Savant",
+    "checked_at": "2026-08-08T23:05:30.563Z"
+  },
   "e2a35850-92c5-40ab-8697-2e995819d7ac": {
     "status": "available",
     "name": "Armaggon, Future Shark",

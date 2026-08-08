@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashe%2C%20Princess%20of%20Dalmasca",
     "checked_at": "2026-08-07T21:16:59.229Z"
   },
+  "db794af5-ba2e-4b10-b213-e481e8a50432": {
+    "status": "available",
+    "name": "Beast-Kin Ranger",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Foundations",
+    "printing_code": "FDN",
+    "collector_number": "100",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beast-Kin%20Ranger",
+    "checked_at": "2026-08-08T23:04:11.053Z"
+  },
   "db951ec2-d751-479d-af1f-885d3cf50027": {
     "status": "available",
     "name": "Aphotic Wisps",

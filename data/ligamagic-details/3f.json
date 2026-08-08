@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ace's%20Baseball%20Bat",
     "checked_at": "2026-08-06T03:52:21.850Z"
   },
+  "3f5acd90-199c-4ed3-9c8a-eeac4670d876": {
+    "status": "available",
+    "name": "Beast Attack",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Duel Decks Anthology: Garruk vs. Liliana",
+    "printing_code": "DDAGVL",
+    "collector_number": "23",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beast%20Attack",
+    "checked_at": "2026-08-08T23:03:30.506Z"
+  },
   "3f60a7ce-c714-4e87-a2d9-3710f2d610fa": {
     "status": "available",
     "name": "Balduvian Fallen",

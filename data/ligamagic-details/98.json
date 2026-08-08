@@ -46,5 +46,17 @@
     "collector_number": "226",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amulet%20of%20Safekeeping",
     "checked_at": "2026-08-07T04:42:41.336Z"
+  },
+  "98d3d1f1-ac72-4b1e-87da-b4c1e4f03d08": {
+    "status": "available",
+    "name": "Battlewand Oak",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn",
+    "printing_code": "LW",
+    "collector_number": "197",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battlewand%20Oak",
+    "checked_at": "2026-08-08T22:56:10.258Z"
   }
 }

@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aang%2C%20the%20Last%20Airbender",
     "checked_at": "2026-08-06T00:04:26.809Z"
   },
+  "709e99f1-288b-49e0-80a1-f817b457a2cf": {
+    "status": "available",
+    "name": "Bay Falcon",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Miragem",
+    "printing_code": "MR",
+    "collector_number": "22",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bay%20Falcon",
+    "checked_at": "2026-08-08T22:57:40.335Z"
+  },
   "70caaa64-9623-4d05-9843-18460fea963b": {
     "status": "available",
     "name": "Incendiary Dissent",
@@ -106,6 +118,18 @@
     "collector_number": "65",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerie%20Ouphes",
     "checked_at": "2026-08-06T07:19:25.079Z"
+  },
+  "70d2f5f7-f727-48e1-9532-8d365b1c1ae5": {
+    "status": "available",
+    "name": "Battlefield Thaumaturge",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Viagem para Nyx",
+    "printing_code": "JOU",
+    "collector_number": "31",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battlefield%20Thaumaturge",
+    "checked_at": "2026-08-08T22:54:20.229Z"
   },
   "70d35dbd-1d91-4a2a-a643-6870d168f4f5": {
     "status": "available",

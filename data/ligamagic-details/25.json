@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=This%20Town%20Ain't%20Big%20Enough",
     "checked_at": "2026-08-05T20:13:44.817Z"
   },
+  "25571850-d5c6-460f-b212-9fc9aa705277": {
+    "status": "available",
+    "name": "Beacon Behemoth",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Confluência",
+    "printing_code": "CON",
+    "collector_number": "78",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beacon%20Behemoth",
+    "checked_at": "2026-08-08T22:59:26.323Z"
+  },
   "2577ef8e-d85e-47af-ac34-629f31992751": {
     "status": "available",
     "name": "Aether Rift",

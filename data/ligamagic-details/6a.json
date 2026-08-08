@@ -1,4 +1,16 @@
 {
+  "6a003988-f126-4309-9166-50f3fbf0f30c": {
+    "status": "available",
+    "name": "Battlefront Krushok",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Destino Reescrito",
+    "printing_code": "FRF",
+    "collector_number": "125",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battlefront%20Krushok",
+    "checked_at": "2026-08-08T22:54:50.221Z"
+  },
   "6a0419c3-4bfa-46c1-932b-fe10f2fa2ad7": {
     "status": "available",
     "name": "Alpine Watchdog",

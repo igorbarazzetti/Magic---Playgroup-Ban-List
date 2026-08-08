@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assembled%20Ensemble",
     "checked_at": "2026-08-08T02:49:02.043Z"
   },
+  "6c94a255-c031-48d7-aa07-1189ad3da3b6": {
+    "status": "available",
+    "name": "Bazaar Trademage",
+    "price_brl": 0.24,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons",
+    "printing_code": "MH1",
+    "collector_number": "41",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bazaar%20Trademage",
+    "checked_at": "2026-08-08T22:58:50.361Z"
+  },
   "6ca0078f-d6b5-4643-b801-e7a98706f21c": {
     "status": "available",
     "name": "Archdemon of Paliano",

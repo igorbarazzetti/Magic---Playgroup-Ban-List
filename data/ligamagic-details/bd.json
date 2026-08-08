@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adarkar%20Sentinel",
     "checked_at": "2026-08-06T04:00:32.190Z"
   },
+  "bd56225e-8c80-4328-9ca0-0fff4969573d": {
+    "status": "available",
+    "name": "Battlemage's Bracers",
+    "price_brl": 15.73,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2021",
+    "printing_code": "C21",
+    "collector_number": "48",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battlemage's%20Bracers",
+    "checked_at": "2026-08-08T22:55:40.295Z"
+  },
   "bd5eb181-6a69-4dc2-93a0-fa000291bc3d": {
     "status": "available",
     "name": "Auramancer",

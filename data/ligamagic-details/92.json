@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Basilica%20Shepherd",
     "checked_at": "2026-08-08T20:57:06.531Z"
   },
+  "92ac7531-10bb-47a2-9dd0-378d547b4ed6": {
+    "status": "available",
+    "name": "Battlefield Scrounger",
+    "price_brl": 0.01,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Julgamento",
+    "printing_code": "JU",
+    "collector_number": "106",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battlefield%20Scrounger",
+    "checked_at": "2026-08-08T22:54:10.256Z"
+  },
   "92b617f9-6e6b-42a0-9c45-6ff5f6193051": {
     "status": "available",
     "name": "Aang's Defense",

@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Attuned%20Hunter",
     "checked_at": "2026-08-08T07:23:53.108Z"
   },
+  "f6889f57-2965-4a82-8556-fd91c6227058": {
+    "status": "available",
+    "name": "Beastmaster's Magemark",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Pacto das Guildas",
+    "printing_code": "GP",
+    "collector_number": "80",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beastmaster's%20Magemark",
+    "checked_at": "2026-08-08T23:06:01.151Z"
+  },
   "f6a4298c-3d9d-43e1-b32c-b168c02ad503": {
     "status": "available",
     "name": "Atreus, Impulsive Son",

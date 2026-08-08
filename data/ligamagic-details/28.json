@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Banshee%20of%20the%20Dread%20Choir",
     "checked_at": "2026-08-08T17:08:57.317Z"
   },
+  "2836c144-7268-411a-b651-351cc4ef8fe9": {
+    "status": "available",
+    "name": "Battlefield Percher",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nêmesis",
+    "printing_code": "NE",
+    "collector_number": "52",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battlefield%20Percher",
+    "checked_at": "2026-08-08T22:53:30.186Z"
+  },
   "2844d274-cb60-46c1-a73b-e763c633e496": {
     "status": "available",
     "name": "Alchemist's Assistant",

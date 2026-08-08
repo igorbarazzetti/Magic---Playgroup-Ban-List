@@ -179,6 +179,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avatar%20of%20the%20Resolute",
     "checked_at": "2026-08-08T09:13:10.255Z"
   },
+  "15feb59b-bbbe-462a-8d38-d20735bbc2f3": {
+    "status": "available",
+    "name": "Beacon of Destruction",
+    "price_brl": 0.21,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Décima Edição",
+    "printing_code": "10E",
+    "collector_number": "189",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beacon%20of%20Destruction",
+    "checked_at": "2026-08-08T23:00:10.407Z"
+  },
   "15febce7-8320-4591-9535-ef11c8adecc2": {
     "status": "available",
     "name": "Barbed Bloodletter",

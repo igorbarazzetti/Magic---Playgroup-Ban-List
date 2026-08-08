@@ -130,5 +130,17 @@
     "collector_number": "68",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bamboozle",
     "checked_at": "2026-08-08T17:02:27.102Z"
+  },
+  "a1ed2274-7774-4c65-a95b-28ae5e225994": {
+    "status": "available",
+    "name": "Beacon of Destiny",
+    "price_brl": 1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Legiões",
+    "printing_code": "LE",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beacon%20of%20Destiny",
+    "checked_at": "2026-08-08T23:00:00.736Z"
   }
 }

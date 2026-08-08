@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Altar%20of%20the%20Goyf",
     "checked_at": "2026-08-07T00:45:05.106Z"
   },
+  "51e76d8f-95c6-428f-9030-3f8718139f93": {
+    "status": "available",
+    "name": "Bearer of Memory",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kamigawa: Dinastia Neon",
+    "printing_code": "NEO",
+    "collector_number": "174",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bearer%20of%20Memory",
+    "checked_at": "2026-08-08T23:02:50.535Z"
+  },
   "51f091a7-9b0b-4362-8e9c-c174752f369b": {
     "status": "available",
     "name": "White Plume Adventurer",

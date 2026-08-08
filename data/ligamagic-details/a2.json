@@ -35,6 +35,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Astral%20Dragon",
     "checked_at": "2026-08-08T02:51:42.131Z"
   },
+  "a2192c80-c48f-44e2-807c-2f9ee1aa1152": {
+    "status": "available",
+    "name": "Beanstalk Wurm // Plant Beans",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Selvagens de Eldraine",
+    "printing_code": "WOE",
+    "collector_number": "161",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beanstalk%20Wurm%20%2F%2F%20Plant%20Beans",
+    "checked_at": "2026-08-08T23:01:40.455Z"
+  },
+  "a231319d-5d72-4aa6-8868-5987694791cd": {
+    "status": "available",
+    "name": "Bearded Axe",
+    "price_brl": 3.45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaldheim",
+    "printing_code": "KHM",
+    "collector_number": "388",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bearded%20Axe",
+    "checked_at": "2026-08-08T23:02:30.491Z"
+  },
   "a2404d88-0621-49ae-9908-052c23a96ac6": {
     "status": "available",
     "name": "Abu Ja'far",

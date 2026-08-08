@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avatar%20of%20Fury",
     "checked_at": "2026-08-08T09:12:20.238Z"
   },
+  "4867cc47-de84-4958-b1de-4a0a5050210e": {
+    "status": "available",
+    "name": "Battletide Alchemist",
+    "price_brl": 1.7,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alvorecer",
+    "printing_code": "MT",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battletide%20Alchemist",
+    "checked_at": "2026-08-08T22:56:00.272Z"
+  },
   "48a01671-da1f-4875-bcd5-ca99566ff399": {
     "status": "available",
     "name": "Bastion Mastodon",

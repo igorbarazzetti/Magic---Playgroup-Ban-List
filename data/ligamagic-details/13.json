@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bagel%20and%20Schmear",
     "checked_at": "2026-08-08T15:01:08.054Z"
   },
+  "1396e7f1-ac91-4778-9f71-493c7a44bd51": {
+    "status": "available",
+    "name": "Battlefly Swarm",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominária Unida",
+    "printing_code": "DMU",
+    "collector_number": "81",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battlefly%20Swarm",
+    "checked_at": "2026-08-08T22:54:40.253Z"
+  },
   "13a9b9fd-20fa-4734-9d95-3ab41ab9c7a0": {
     "status": "available",
     "name": "Ancestral Katana",

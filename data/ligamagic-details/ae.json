@@ -178,5 +178,17 @@
     "collector_number": "89",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agent%20Frank%20Horrigan",
     "checked_at": "2026-08-06T11:10:44.256Z"
+  },
+  "aef874fa-93c0-4f86-8b0d-dc24ec51467d": {
+    "status": "available",
+    "name": "Beacon of Unrest",
+    "price_brl": 0.79,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Double Masters",
+    "printing_code": "2XM",
+    "collector_number": "77",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beacon%20of%20Unrest",
+    "checked_at": "2026-08-08T23:00:40.757Z"
   }
 }

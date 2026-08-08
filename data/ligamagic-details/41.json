@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agonizing%20Demise",
     "checked_at": "2026-08-06T14:41:51.868Z"
   },
+  "416de3dd-c15d-4596-9386-5cac53302724": {
+    "status": "available",
+    "name": "Battlewise Hoplite",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros",
+    "printing_code": "THS",
+    "collector_number": "189",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battlewise%20Hoplite",
+    "checked_at": "2026-08-08T22:56:40.305Z"
+  },
   "41785f7b-3d02-4b7f-86ff-b381f626142e": {
     "status": "available",
     "name": "Absolute Grace",

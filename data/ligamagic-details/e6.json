@@ -1,4 +1,16 @@
 {
+  "e610bfd4-d064-410b-929c-1d9dd82828b1": {
+    "status": "available",
+    "name": "Baxter Stockman",
+    "price_brl": 0.12,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Teenage Mutant Ninja Turtles",
+    "printing_code": "TMT",
+    "collector_number": "139",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baxter%20Stockman",
+    "checked_at": "2026-08-08T22:57:30.449Z"
+  },
   "e6479195-cbdf-4d2b-9f45-5fd0a6ab4a77": {
     "status": "available",
     "name": "Arm with Aether",
