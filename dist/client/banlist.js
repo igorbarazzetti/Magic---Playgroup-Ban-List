@@ -2187,8 +2187,12 @@ function animateCardToDeckBuilder(tile, card) {
     flight.style.transform = `translate3d(${destinationX}px,${destinationY}px,0) scale(.12) rotate(4deg)`;
     flight.style.opacity = '.08';
   }));
-  flight.addEventListener('transitionend', () => { flight.remove(); pulseDeckBuilderFab(); }, { once: true });
-  setTimeout(() => { if (flight.isConnected) { flight.remove(); pulseDeckBuilderFab(); } }, 650);
+  flight.addEventListener('transitionend', (event) => {
+    if (event.propertyName !== 'transform') return;
+    flight.remove();
+    pulseDeckBuilderFab();
+  });
+  setTimeout(() => { if (flight.isConnected) { flight.remove(); pulseDeckBuilderFab(); } }, 1250);
 }
 
 function addCardToDeckBuilder(card, tile) {
@@ -2203,7 +2207,6 @@ function addCardToDeckBuilder(card, tile) {
   updateDeckBuilderFab();
   updateCardAddLabels();
   animateCardToDeckBuilder(tile, card);
-  showToast(`${card.name} adicionada ao Main Deck`);
   if (!$('deckBuilderPage')?.hidden) scheduleDeckBuilderValidation();
 
   if (card.isCatalogStub) {
