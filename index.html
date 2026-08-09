@@ -37,11 +37,11 @@
     <link rel="preconnect" href="https://cards.scryfall.io" />
     <link rel="preconnect" href="https://api.scryfall.com" />
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=codex-54" />
+    <link rel="stylesheet" href="styles.css?v=codex-55" />
     <script>
       (() => {
         if (!('serviceWorker' in navigator)) return;
-        addEventListener('load', () => navigator.serviceWorker.register('/service-worker.js?v=54').catch(() => {}), { once: true });
+        addEventListener('load', () => navigator.serviceWorker.register('/service-worker.js?v=55').catch(() => {}), { once: true });
       })();
     </script>
   </head>
@@ -134,9 +134,9 @@
         <header class="decks-hero">
           <div class="decks-hero__glow" aria-hidden="true"></div>
           <div class="decks-hero__copy">
-            <p class="eyebrow"><span aria-hidden="true">✦</span> Arquivo aprovado pelo conselho</p>
-            <h1 id="validatedDecksTitle">Decks validados</h1>
-            <p>Listas conferidas para o Formatinho e demais formatos, preservadas para inspirar a próxima mesa.</p>
+            <p class="eyebrow"><span aria-hidden="true">✦</span> Arquivo do playgroup</p>
+            <h1 id="validatedDecksTitle">Decks do Formatinho</h1>
+            <p>Listas válidas e em construção, preservadas para continuar evoluindo e inspirar a próxima mesa.</p>
           </div>
           <div class="decks-hero__actions">
             <div class="decks-stat"><strong id="validatedDeckCount">—</strong><span>decks no arquivo</span></div>
@@ -149,10 +149,10 @@
           <label class="decks-format-filter" for="validatedDeckFormat"><span class="sr-only">Filtrar decks por formato</span><select id="validatedDeckFormat"><option value="">Todos os formatos</option></select></label>
         </div>
 
-        <div class="decks-page__heading"><div><p class="eyebrow">Grimório de estratégias</p><h2>Listas prontas para a mesa</h2></div><span id="validatedDeckResultCount" aria-live="polite"></span></div>
+        <div class="decks-page__heading"><div><p class="eyebrow">Grimório de estratégias</p><h2>Listas da mesa</h2></div><span id="validatedDeckResultCount" aria-live="polite"></span></div>
         <div class="validated-decks-grid" id="validatedDecksGrid" aria-live="polite" aria-busy="true"></div>
-        <section class="decks-state decks-state--loading" id="validatedDecksLoading"><span aria-hidden="true">✦</span><h2>Abrindo o arquivo…</h2><p>Consultando os decks aprovados pelo conselho.</p></section>
-        <section class="decks-state" id="validatedDecksEmpty" hidden><span aria-hidden="true">◇</span><h2>Nenhum deck selado ainda</h2><p>Valide a primeira lista e inaugure o arquivo do playgroup.</p><button type="button" data-open-deck-validator>Validar primeiro deck</button></section>
+        <section class="decks-state decks-state--loading" id="validatedDecksLoading"><span aria-hidden="true">✦</span><h2>Abrindo o arquivo…</h2><p>Consultando os decks do playgroup.</p></section>
+        <section class="decks-state" id="validatedDecksEmpty" hidden><span aria-hidden="true">◇</span><h2>Nenhum deck salvo ainda</h2><p>Monte ou valide a primeira lista e inaugure o arquivo do playgroup.</p><button type="button" data-open-deck-validator>Validar primeiro deck</button></section>
         <section class="decks-state decks-state--error" id="validatedDecksError" hidden><span aria-hidden="true">!</span><h2>O arquivo não respondeu</h2><p>Seus decks continuam preservados. Tente abrir novamente.</p><button type="button" id="retryValidatedDecks">Tentar novamente</button></section>
       </section>
 
@@ -163,7 +163,10 @@
             <h1 id="deckBuilderTitle">Monte seu deck</h1>
             <p id="deckBuilderBrief">Organize sua lista, acompanhe o orçamento e veja a validação acontecer enquanto você constrói.</p>
           </div>
-          <a class="deck-builder-add-cards" id="deckBuilderAddCards" href="/?tab=catalog"><span aria-hidden="true">＋</span><span>Adicionar cartas</span></a>
+          <div class="deck-builder-hero__actions">
+            <button class="deck-builder-exit-edit" id="deckBuilderExitEdit" type="button" hidden><span aria-hidden="true">←</span><span>Voltar ao meu deck</span></button>
+            <a class="deck-builder-add-cards" id="deckBuilderAddCards" href="/?tab=catalog"><span aria-hidden="true">＋</span><span>Adicionar cartas</span></a>
+          </div>
         </header>
 
         <section class="deck-builder-summary" aria-label="Resumo do deck">
@@ -515,6 +518,6 @@
     </dialog>
 
     <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
-    <script type="module" src="banlist.js?v=codex-54"></script>
+    <script type="module" src="banlist.js?v=codex-55"></script>
   </body>
 </html>

@@ -1,0 +1,2 @@
+ALTER TABLE validated_decks
+ADD COLUMN is_valid INTEGER NOT NULL DEFAULT 1;

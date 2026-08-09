@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import worker from '../dist/server/index.js';
 
 function database(createdAt = '2026-08-08T10:00:00.000Z') {
-  const state = { createdAt, updated: null };
+  const state = { createdAt, inserted: null, updated: null };
   return {
     state,
     async batch() {},
@@ -16,11 +16,15 @@ function database(createdAt = '2026-08-08T10:00:00.000Z') {
           return null;
         },
         async run() {
+          if (sql.includes('INSERT INTO validated_decks')) {
+            state.inserted = { name: this.args[1], entries: JSON.parse(this.args[4]), valid: Boolean(this.args[9]) };
+            return { meta: { changes: 1 } };
+          }
           if (sql.includes('UPDATE validated_decks')) {
             const expectedVersion = this.args.at(-1);
             if (expectedVersion !== state.createdAt) return { meta: { changes: 0 } };
-            state.updated = { name: this.args[0], entries: JSON.parse(this.args[3]) };
-            state.createdAt = this.args[8];
+            state.updated = { name: this.args[0], entries: JSON.parse(this.args[3]), valid: Boolean(this.args[8]) };
+            state.createdAt = this.args[9];
             return { meta: { changes: 1 } };
           }
           return { meta: { changes: 0 } };
@@ -33,6 +37,10 @@ function database(createdAt = '2026-08-08T10:00:00.000Z') {
 const forest = {
   name: 'Forest', set: 'fdn', legalities: {},
   image_uris: { art_crop: 'https://cards.example/forest.jpg' },
+};
+const bannedCard = {
+  name: 'Black Lotus', set: 'lea', legalities: { vintage: 'restricted', legacy: 'banned' },
+  image_uris: { art_crop: 'https://cards.example/lotus.jpg' },
 };
 
 test('public deck editing revalidates and updates the existing deck', async () => {
@@ -52,6 +60,68 @@ test('public deck editing revalidates and updates the existing deck', async () =
     assert.equal(response.status, 200);
     assert.equal((await response.json()).deck.name, 'Mono Green atualizado');
     assert.equal(db.state.updated.entries[0].quantity, 60);
+  } finally { globalThis.fetch = originalFetch; }
+});
+
+test('an incomplete deck can be saved and is persisted as invalid', async () => {
+  const db = database();
+  const originalFetch = globalThis.fetch;
+  globalThis.fetch = async () => new Response(JSON.stringify({ data: [forest] }), { status: 200, headers: { 'content-type': 'application/json' } });
+  try {
+    const response = await worker.fetch(new Request('https://formatinho.test/api/decks', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({
+        name: 'Rascunho verde', format: 'formatinho', valid: false,
+        entries: [{ name: 'Forest', quantity: 52, section: 'main' }],
+      }),
+    }), { DB: db });
+    const payload = await response.json();
+    assert.equal(response.status, 201);
+    assert.equal(payload.deck.valid, false);
+    assert.equal(db.state.inserted.valid, false);
+    assert.equal(db.state.inserted.entries[0].quantity, 52);
+  } finally { globalThis.fetch = originalFetch; }
+});
+
+test('public editing accepts an incomplete deck and keeps its invalid status', async () => {
+  const db = database();
+  const originalFetch = globalThis.fetch;
+  globalThis.fetch = async () => new Response(JSON.stringify({ data: [forest] }), { status: 200, headers: { 'content-type': 'application/json' } });
+  try {
+    const response = await worker.fetch(new Request('https://formatinho.test/api/decks/deck-1', {
+      method: 'PUT',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({
+        name: 'Mono Green em construção', format: 'formatinho', valid: false,
+        base_updated_at: '2026-08-08T10:00:00.000Z',
+        entries: [{ name: 'Forest', quantity: 52, section: 'main' }],
+      }),
+    }), { DB: db });
+    const payload = await response.json();
+    assert.equal(response.status, 200);
+    assert.equal(payload.deck.valid, false);
+    assert.equal(db.state.updated.valid, false);
+  } finally { globalThis.fetch = originalFetch; }
+});
+
+test('the server never marks a banned deck as valid even if the client requests it', async () => {
+  const db = database();
+  const originalFetch = globalThis.fetch;
+  globalThis.fetch = async () => new Response(JSON.stringify({ data: [bannedCard] }), { status: 200, headers: { 'content-type': 'application/json' } });
+  try {
+    const response = await worker.fetch(new Request('https://formatinho.test/api/decks', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({
+        name: 'Lista proibida', format: 'formatinho', valid: true,
+        entries: [{ name: 'Black Lotus', quantity: 60, section: 'main' }],
+      }),
+    }), { DB: db });
+    const payload = await response.json();
+    assert.equal(response.status, 201);
+    assert.equal(payload.deck.valid, false);
+    assert.equal(db.state.inserted.valid, false);
   } finally { globalThis.fetch = originalFetch; }
 });
 

@@ -84,6 +84,7 @@ async function ensureDeckSchema(db) {
       unique_count INTEGER NOT NULL,
       cover_name TEXT NOT NULL DEFAULT '',
       cover_image TEXT NOT NULL DEFAULT '',
+      is_valid INTEGER NOT NULL DEFAULT 1,
       created_at TEXT NOT NULL
     )`),
     db.prepare("CREATE INDEX IF NOT EXISTS validated_decks_created_at_idx ON validated_decks(created_at DESC)"),
@@ -101,6 +102,7 @@ function publicDeck(row, includeEntries = false) {
     unique_count: Number(row.unique_count),
     cover_name: row.cover_name || "",
     cover_image: row.cover_image || "",
+    valid: row.is_valid == null ? true : Boolean(Number(row.is_valid)),
     created_at: row.created_at,
   };
 
@@ -199,7 +201,7 @@ function validateCards(entries, format, cardsByName) {
 async function listDecks(env) {
   await ensureDeckSchema(env.DB);
   const result = await env.DB.prepare(`SELECT id, name, pilot, format, card_count, unique_count,
-    cover_name, cover_image, created_at FROM validated_decks ORDER BY created_at DESC LIMIT 250`).all();
+    cover_name, cover_image, is_valid, created_at FROM validated_decks ORDER BY created_at DESC LIMIT 250`).all();
   return json({ decks: (result.results || []).map((row) => publicDeck(row)) });
 }
 
@@ -256,9 +258,8 @@ async function createDeck(request, env) {
   }
 
   const issues = validateCards(entries, format, cardsByName);
-  if (issues.length) {
-    return json({ error: "O deck deixou de passar na validação.", issues }, 422);
-  }
+  const requestedValid = typeof body?.valid === "boolean" ? body.valid : true;
+  const isValid = requestedValid && issues.length === 0;
 
   const canonicalEntries = entries.map((entry) => {
     const card = cardsByName.get(normalizeName(entry.name));
@@ -277,8 +278,8 @@ async function createDeck(request, env) {
 
   await ensureDeckSchema(env.DB);
   await env.DB.prepare(`INSERT INTO validated_decks
-    (id, name, pilot, format, deck_json, card_count, unique_count, cover_name, cover_image, created_at)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`)
+    (id, name, pilot, format, deck_json, card_count, unique_count, cover_name, cover_image, is_valid, created_at)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`)
     .bind(
       id,
       name,
@@ -289,6 +290,7 @@ async function createDeck(request, env) {
       canonicalEntries.length,
       coverCard?.name || canonicalEntries[0]?.name || "",
       coverImage,
+      isValid ? 1 : 0,
       createdAt,
     )
     .run();
@@ -304,6 +306,7 @@ async function createDeck(request, env) {
       unique_count: canonicalEntries.length,
       cover_name: coverCard?.name || canonicalEntries[0]?.name || "",
       cover_image: coverImage,
+      valid: isValid,
       created_at: createdAt,
     },
   }, 201);
@@ -343,7 +346,8 @@ async function updateDeck(request, env, id) {
   let cardsByName;
   try { cardsByName = await fetchCards(entries); } catch { return json({ error: "Não foi possível confirmar o deck com o Scryfall. Tente novamente." }, 503); }
   const issues = validateCards(entries, format, cardsByName);
-  if (issues.length) return json({ error: "O deck deixou de passar na validação.", issues }, 422);
+  const requestedValid = typeof body?.valid === "boolean" ? body.valid : true;
+  const isValid = requestedValid && issues.length === 0;
 
   const canonicalEntries = entries.map((entry) => {
     const card = cardsByName.get(normalizeName(entry.name));
@@ -360,17 +364,17 @@ async function updateDeck(request, env, id) {
   if (existing.created_at !== baseUpdatedAt) return json({ error: "Este deck foi alterado por outra pessoa. Reabra a versão mais recente antes de editar." }, 409);
 
   const result = await env.DB.prepare(`UPDATE validated_decks SET name = ?, pilot = ?, format = ?, deck_json = ?,
-    card_count = ?, unique_count = ?, cover_name = ?, cover_image = ?, created_at = ?
+    card_count = ?, unique_count = ?, cover_name = ?, cover_image = ?, is_valid = ?, created_at = ?
     WHERE id = ? AND created_at = ?`)
-    .bind(name, pilot, format, JSON.stringify(canonicalEntries), cardCount, canonicalEntries.length,
-      coverCard?.name || canonicalEntries[0]?.name || "", coverImage, updatedAt, id, baseUpdatedAt)
+  .bind(name, pilot, format, JSON.stringify(canonicalEntries), cardCount, canonicalEntries.length,
+      coverCard?.name || canonicalEntries[0]?.name || "", coverImage, isValid ? 1 : 0, updatedAt, id, baseUpdatedAt)
     .run();
   if (!Number(result.meta?.changes || 0)) return json({ error: "Este deck mudou enquanto você editava. Reabra a versão mais recente." }, 409);
 
   return json({ deck: {
     id, name, pilot, format, entries: canonicalEntries, card_count: cardCount,
     unique_count: canonicalEntries.length, cover_name: coverCard?.name || canonicalEntries[0]?.name || "",
-    cover_image: coverImage, created_at: updatedAt,
+    cover_image: coverImage, valid: isValid, created_at: updatedAt,
   } });
 }
 

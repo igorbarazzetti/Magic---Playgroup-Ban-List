@@ -10,6 +10,7 @@ export const validatedDecksSchema = {
     uniqueCount: "INTEGER NOT NULL",
     coverName: "TEXT NOT NULL DEFAULT ''",
     coverImage: "TEXT NOT NULL DEFAULT ''",
+    isValid: "INTEGER NOT NULL DEFAULT 1",
     createdAt: "TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP",
   },
 } as const;

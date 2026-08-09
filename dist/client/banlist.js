@@ -88,6 +88,7 @@ const savedDeckCache = new Map();
 const deckBuilderStorageKey = 'formatinho-deck-builder:v1';
 const deckBuilderReturnKey = 'formatinho-deck-builder-return:v1';
 const deckBuilderEditStorageKey = 'formatinho-deck-builder-edit:v1';
+const deckBuilderEditDraftPrefix = 'formatinho-deck-builder-edit-draft:v1';
 let deckBuilder = { version: 1, main: {}, sideboard: {}, updatedAt: 0 };
 let deckBuilderEdit = null;
 let deckBuilderValidation = null;
@@ -1912,7 +1913,7 @@ async function persistValidatedDeck(deck, { name, pilot = '' }) {
   const response = await fetch('/api/decks', {
     method: 'POST',
     headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
-    body: JSON.stringify({ name, pilot, format: deck.format, entries: deck.entries }),
+    body: JSON.stringify({ name, pilot, format: deck.format, entries: deck.entries, valid: deck.valid !== false }),
   });
   const payload = await response.json().catch(() => ({}));
   if (!response.ok) throw new Error(payload.error || 'Não foi possível salvar o deck.');
@@ -1929,12 +1930,12 @@ async function updateValidatedDeck(deck, { name, pilot = '' }) {
   const response = await fetch(`/api/decks/${encodeURIComponent(deckBuilderEdit.id)}`, {
     method: 'PUT',
     headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
-    body: JSON.stringify({ name, pilot, format: deck.format, entries: deck.entries, base_updated_at: deckBuilderEdit.baseUpdatedAt }),
+    body: JSON.stringify({ name, pilot, format: deck.format, entries: deck.entries, valid: deck.valid !== false, base_updated_at: deckBuilderEdit.baseUpdatedAt }),
   });
   const payload = await response.json().catch(() => ({}));
   if (!response.ok) throw new Error(payload.error || 'Não foi possível atualizar o deck.');
   const saved = { ...payload.deck, entries: payload.deck?.entries || deck.entries };
-  deckBuilderEdit = { id: saved.id, name: saved.name, pilot: saved.pilot || '', format: saved.format, baseUpdatedAt: saved.created_at };
+  deckBuilderEdit = { id: saved.id, name: saved.name, pilot: saved.pilot || '', format: saved.format, baseUpdatedAt: saved.created_at, draftVersion: 2 };
   persistDeckBuilderEdit();
   savedDeckCache.set(saved.id, saved);
   validatedDecks = [saved, ...validatedDecks.filter((item) => item.id !== saved.id)];
@@ -1963,8 +1964,10 @@ function renderValidatedDecks() {
   $('validatedDecksGrid').innerHTML = filtered.map((deck) => {
     const image = deck.cover_image ? `<img src="${escapeHtml(deck.cover_image)}" alt="" loading="lazy" decoding="async" />` : '';
     const pilot = deck.pilot ? `Pilotado por ${escapeHtml(deck.pilot)}` : 'Piloto não informado';
-    return `<button class="validated-deck-card" type="button" data-saved-deck-id="${escapeHtml(deck.id)}" aria-label="Abrir deck ${escapeHtml(deck.name)}">
-      <span class="validated-deck-card__art">${image}<span class="validated-deck-card__seal"><span aria-hidden="true">✓</span> Validado</span></span>
+    const isValid = deck.valid !== false;
+    const status = isValid ? 'Validado' : 'Inválido';
+    return `<button class="validated-deck-card${isValid ? '' : ' is-invalid'}" type="button" data-saved-deck-id="${escapeHtml(deck.id)}" aria-label="Abrir deck ${escapeHtml(deck.name)}, ${status.toLowerCase()}">
+      <span class="validated-deck-card__art">${image}<span class="validated-deck-card__seal${isValid ? '' : ' is-invalid'}"><span aria-hidden="true">${isValid ? '✓' : '×'}</span> ${status}</span></span>
       <span class="validated-deck-card__body"><span class="validated-deck-card__format">${escapeHtml(validatedDeckFormatLabel(deck.format))}</span><h3>${escapeHtml(deck.name)}</h3><span class="validated-deck-card__pilot">${pilot}</span><span class="validated-deck-card__meta"><span>${Number(deck.card_count) || 0} cartas</span><span>${validatedDeckDate(deck.created_at)}</span></span><span class="validated-deck-card__open" aria-hidden="true">→</span></span>
     </button>`;
   }).join('');
@@ -1977,8 +1980,8 @@ function renderValidatedDecks() {
     $('validatedDecksEmpty').querySelector('h2').textContent = 'Nenhum deck com esses filtros';
     $('validatedDecksEmpty').querySelector('p').textContent = 'Tente outro nome ou selecione todos os formatos.';
   } else if (empty) {
-    $('validatedDecksEmpty').querySelector('h2').textContent = 'Nenhum deck selado ainda';
-    $('validatedDecksEmpty').querySelector('p').textContent = 'Valide a primeira lista e inaugure o arquivo do playgroup.';
+    $('validatedDecksEmpty').querySelector('h2').textContent = 'Nenhum deck salvo ainda';
+    $('validatedDecksEmpty').querySelector('p').textContent = 'Monte ou valide a primeira lista e inaugure o arquivo do playgroup.';
   }
   $('validatedDecksEmpty').querySelector('[data-open-deck-validator]').hidden = empty && validatedDecks.length > 0;
 }
@@ -2015,10 +2018,14 @@ async function openSavedDeck(id) {
       savedDeckCache.set(id, deck);
     }
     currentSavedDeck = deck;
+    const isValid = deck.valid !== false;
     $('editSavedDeck').disabled = false;
     $('editSavedDeck').innerHTML = '<span aria-hidden="true">✎</span> Editar este deck';
     $('savedDeckTitle').textContent = deck.name;
-    $('savedDeckEyebrow').textContent = `Deck aprovado · ${validatedDeckFormatLabel(deck.format)}`;
+    $('savedDeckEyebrow').textContent = `${isValid ? 'Deck aprovado' : 'Deck em construção'} · ${validatedDeckFormatLabel(deck.format)}`;
+    const seal = modal.querySelector('.saved-deck-modal__seal');
+    seal.classList.toggle('is-invalid', !isValid);
+    seal.innerHTML = `<span aria-hidden="true">${isValid ? '✓' : '×'}</span> ${isValid ? 'Validado' : 'Inválido'}`;
     $('savedDeckPilot').textContent = deck.pilot ? `Pilotado por ${deck.pilot}` : 'Piloto não informado';
     const entries = Array.isArray(deck.entries) ? deck.entries.map((entry) => ({
       ...entry,
@@ -2063,7 +2070,7 @@ function renderSavedDeckStats(deck, entries) {
   const pricing = savedDeckPricing(entries);
   const value = pricing.quoted ? `${priceSourceDot(pricing.estimated)}${pricing.estimated || pricing.missing ? '~ ' : ''}${formatBrlPrice(pricing.value)}${pricing.missing ? '+' : ''}` : '—';
   const label = pricing.missing ? 'valor parcial' : pricing.estimated ? 'valor estimado' : 'valor do deck';
-  $('savedDeckStats').innerHTML = `<div><strong>${Number(deck.card_count) || 0}</strong><span>cartas</span></div><div><strong>${Number(deck.unique_count) || 0}</strong><span>nomes</span></div><div class="saved-deck-modal__value"><strong>${value}</strong><span>${label}</span></div><div><strong>${validatedDeckDate(deck.created_at)}</strong><span>validado</span></div>`;
+  $('savedDeckStats').innerHTML = `<div><strong>${Number(deck.card_count) || 0}</strong><span>cartas</span></div><div><strong>${Number(deck.unique_count) || 0}</strong><span>nomes</span></div><div class="saved-deck-modal__value"><strong>${value}</strong><span>${label}</span></div><div><strong>${validatedDeckDate(deck.created_at)}</strong><span>${deck.valid === false ? 'última edição' : 'validado'}</span></div>`;
 }
 
 function renderSavedDeckList(entries) {
@@ -2106,9 +2113,19 @@ function emptyDeckBuilder() {
   return { version: 1, main: {}, sideboard: {}, updatedAt: Date.now() };
 }
 
+function activeDeckBuilderStorageKey() {
+  return deckBuilderEdit?.id ? `${deckBuilderEditDraftPrefix}:${deckBuilderEdit.id}` : deckBuilderStorageKey;
+}
+
 function loadDeckBuilderDraft() {
   try {
-    const stored = JSON.parse(localStorage.getItem(deckBuilderStorageKey) || 'null');
+    const activeKey = activeDeckBuilderStorageKey();
+    let raw = localStorage.getItem(activeKey);
+    if (!raw && deckBuilderEdit?.id && deckBuilderEdit.draftVersion !== 2) {
+      raw = localStorage.getItem(deckBuilderStorageKey);
+      if (raw) localStorage.setItem(activeKey, raw);
+    }
+    const stored = JSON.parse(raw || 'null');
     if (!stored || stored.version !== 1 || !stored.main || !stored.sideboard) throw new Error('invalid');
     deckBuilder = { version: 1, main: stored.main, sideboard: stored.sideboard, updatedAt: Number(stored.updatedAt) || 0 };
   } catch {
@@ -2118,7 +2135,7 @@ function loadDeckBuilderDraft() {
 
 function persistDeckBuilderDraft() {
   deckBuilder.updatedAt = Date.now();
-  try { localStorage.setItem(deckBuilderStorageKey, JSON.stringify(deckBuilder)); } catch { /* O rascunho continua ativo nesta sessão. */ }
+  try { localStorage.setItem(activeDeckBuilderStorageKey(), JSON.stringify(deckBuilder)); } catch { /* O rascunho continua ativo nesta sessão. */ }
 }
 
 function loadDeckBuilderEdit() {
@@ -2152,6 +2169,7 @@ async function editCurrentSavedDeck() {
       pilot: currentSavedDeck.pilot || '',
       format: currentSavedDeck.format,
       baseUpdatedAt: currentSavedDeck.created_at,
+      draftVersion: 2,
     };
     persistDeckBuilderDraft();
     persistDeckBuilderEdit();
@@ -2169,6 +2187,22 @@ function persistDeckBuilderEdit() {
     if (deckBuilderEdit?.id) localStorage.setItem(deckBuilderEditStorageKey, JSON.stringify(deckBuilderEdit));
     else localStorage.removeItem(deckBuilderEditStorageKey);
   } catch { /* A edição continua ativa nesta sessão. */ }
+}
+
+function exitDeckBuilderEdit() {
+  if (!deckBuilderEdit) return;
+  deckBuilderEdit = null;
+  persistDeckBuilderEdit();
+  loadDeckBuilderDraft();
+  deckBuilderValidation = null;
+  deckBuilderWasValid = false;
+  $('deckBuilderSaveForm').hidden = true;
+  document.querySelector('.deck-builder-save-success')?.remove();
+  renderDeckBuilderMode();
+  renderDeckBuilder();
+  updateCardAddLabels();
+  if (deckBuilderAllEntries().length) scheduleDeckBuilderValidation();
+  showToast('Seu deck em construção foi restaurado');
 }
 
 function deckBuilderZoneEntries(zone) {
@@ -2389,7 +2423,7 @@ function renderDeckBuilderStatus() {
   const seal = target.querySelector('.deck-builder-status__seal');
   const copy = target.querySelector('.deck-builder-status__copy');
   const save = $('deckBuilderSave');
-  save.textContent = deckBuilderEdit ? 'Salvar alterações no deck' : 'Salvar em decks validados';
+  save.textContent = deckBuilderEdit ? 'Salvar alterações no deck' : 'Salvar deck';
   const total = deckBuilderTotal('main') + deckBuilderTotal('sideboard');
   target.classList.remove('is-valid', 'is-invalid', 'is-loading');
   if (!total) {
@@ -2411,7 +2445,10 @@ function renderDeckBuilderStatus() {
   copy.innerHTML = validation.valid
     ? '<h2>Deck válido no Formatinho</h2><p>60 cartas, orçamento e legalidade conferidos. A lista está pronta para ser selada.</p>'
     : `<h2>Deck ainda não é válido</h2><ul>${validation.reasons.map((reason) => `<li>${escapeHtml(reason)}</li>`).join('')}</ul>`;
-  save.disabled = !validation.valid;
+  save.textContent = validation.valid
+    ? (deckBuilderEdit ? 'Salvar alterações no deck' : 'Salvar em decks validados')
+    : (deckBuilderEdit ? 'Salvar alterações como inválido' : 'Salvar como deck inválido');
+  save.disabled = !validation.pending;
   if (validation.valid && !deckBuilderWasValid && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
     target.animate([{ transform: 'scale(.985)', opacity: .86 }, { transform: 'scale(1)', opacity: 1 }], { duration: 320, easing: 'cubic-bezier(.2,.8,.2,1)' });
   }
@@ -2464,14 +2501,15 @@ async function validateDeckBuilder() {
     const coverCard = coverEntry ? deckBuilderCard(coverEntry) : null;
     deckBuilderValidation = {
       valid, reasons: valid ? [] : reasons, mainCount, pricing, legality,
-      pending: valid ? {
+      pending: {
         entries: allEntries.map((entry) => ({ name: entry.name, quantity: Number(entry.quantity), section: entry.section })),
         format: 'formatinho',
+        valid,
         totalCopies: mainCount,
         uniqueCount: entries.length,
         coverName: coverCard?.name || coverEntry?.name || '',
         coverImage: coverCard?.image_uris?.art_crop || coverCard?.image_uris?.normal || coverEntry?.image || '',
-      } : null,
+      },
     };
     renderDeckBuilder();
   } catch {
@@ -2519,7 +2557,7 @@ async function openDeckBuilderCard(zone, id) {
 
 async function saveDeckBuilder(event) {
   event.preventDefault();
-  if (!deckBuilderValidation?.valid || !deckBuilderValidation.pending) return;
+  if (!deckBuilderValidation?.pending) return;
   const form = event.currentTarget;
   const data = new FormData(form);
   const name = String(data.get('name') || '').trim();
@@ -2536,7 +2574,9 @@ async function saveDeckBuilder(event) {
     form.reset();
     const success = document.createElement('div');
     success.className = 'deck-builder-save-success';
-    success.innerHTML = `<span aria-hidden="true">✓</span><div><strong>${deckBuilderEdit ? 'Alterações publicadas.' : 'Deck selado no arquivo.'}</strong><br><a href="/?page=decks&rev=30">Ver em Decks validados →</a></div>`;
+    const isValid = saved.valid !== false;
+    success.classList.toggle('is-invalid', !isValid);
+    success.innerHTML = `<span aria-hidden="true">${isValid ? '✓' : '×'}</span><div><strong>${deckBuilderEdit ? 'Alterações publicadas.' : 'Deck salvo no arquivo.'}</strong>${isValid ? '' : '<br><span>Marcado como inválido até cumprir as regras.</span>'}<br><a href="/?page=decks&rev=31">Ver no arquivo →</a></div>`;
     if (deckBuilderEdit) {
       deckBuilderEdit.name = saved.name;
       deckBuilderEdit.pilot = saved.pilot || '';
@@ -2544,7 +2584,7 @@ async function saveDeckBuilder(event) {
       persistDeckBuilderEdit();
     }
     form.after(success);
-    showToast('Deck salvo no arquivo do playgroup');
+    showToast(isValid ? 'Deck salvo como válido' : 'Deck salvo e marcado como inválido');
   } catch (error) {
     submit.disabled = false;
     submit.textContent = 'Tentar salvar novamente';
@@ -2609,10 +2649,12 @@ function renderDeckBuilderMode() {
     $('deckBuilderEyebrow').innerHTML = '<span aria-hidden="true">✦</span> Edição pública';
     $('deckBuilderTitle').textContent = 'Aprimore este deck';
     $('deckBuilderBrief').textContent = `Você está editando “${deckBuilderEdit.name}”. A lista será revalidada antes de publicar.`;
+    $('deckBuilderExitEdit').hidden = false;
   } else {
     $('deckBuilderEyebrow').innerHTML = '<span aria-hidden="true">✦</span> Oficina do Formatinho';
     $('deckBuilderTitle').textContent = 'Monte seu deck';
     $('deckBuilderBrief').textContent = 'Organize sua lista, acompanhe o orçamento e veja a validação acontecer enquanto você constrói.';
+    $('deckBuilderExitEdit').hidden = true;
   }
 }
 
@@ -2849,21 +2891,22 @@ function bind() {
     if (action) mutateDeckBuilderEntry(zone, id, action.dataset.builderAction, action.dataset.builderTarget);
   });
   $('deckBuilderSave').addEventListener('click', () => {
-    if (!deckBuilderValidation?.valid) return;
+    if (!deckBuilderValidation?.pending) return;
     document.querySelector('.deck-builder-save-success')?.remove();
     $('deckBuilderSaveForm').hidden = false;
     if (deckBuilderEdit) {
       $('deckBuilderSaveName').value = deckBuilderEdit.name || '';
       $('deckBuilderSavePilot').value = deckBuilderEdit.pilot || '';
-      $('deckBuilderSaveForm').querySelector('.deck-save-form__heading').innerHTML = '<strong>Publicar alterações neste deck?</strong><span>Nome, piloto e lista continuarão públicos no arquivo do playgroup.</span>';
+      $('deckBuilderSaveForm').querySelector('.deck-save-form__heading').innerHTML = `<strong>Publicar alterações neste deck?</strong><span>${deckBuilderValidation.valid ? 'A lista será publicada como válida.' : 'A lista continuará pública e será marcada como inválida até cumprir as regras.'}</span>`;
       $('deckBuilderSaveForm').querySelector('button[type="submit"]').textContent = 'Publicar alterações';
     } else {
-      $('deckBuilderSaveForm').querySelector('.deck-save-form__heading').innerHTML = '<strong>Como este deck será conhecido?</strong><span>O nome ficará público no arquivo do playgroup. O piloto é opcional.</span>';
-      $('deckBuilderSaveForm').querySelector('button[type="submit"]').textContent = 'Selar no arquivo';
+      $('deckBuilderSaveForm').querySelector('.deck-save-form__heading').innerHTML = `<strong>Como este deck será conhecido?</strong><span>${deckBuilderValidation.valid ? 'O nome ficará público no arquivo do playgroup.' : 'O deck ficará público com o selo Inválido e poderá ser editado depois.'} O piloto é opcional.</span>`;
+      $('deckBuilderSaveForm').querySelector('button[type="submit"]').textContent = deckBuilderValidation.valid ? 'Selar no arquivo' : 'Salvar como inválido';
     }
     $('deckBuilderSaveName').focus();
   });
   $('deckBuilderSaveCancel').addEventListener('click', () => { $('deckBuilderSaveForm').hidden = true; });
+  $('deckBuilderExitEdit').addEventListener('click', exitDeckBuilderEdit);
   $('deckBuilderSaveForm').addEventListener('submit', saveDeckBuilder);
   $('deckBuilderClear').addEventListener('click', () => {
     const modal = $('deckBuilderClearModal');
@@ -2872,18 +2915,24 @@ function bind() {
   });
   $('deckBuilderClearModal').addEventListener('close', () => {
     if ($('deckBuilderClearModal').returnValue !== 'confirm') return;
+    const clearedKey = activeDeckBuilderStorageKey();
+    const wasEditing = Boolean(deckBuilderEdit);
     deckBuilder = emptyDeckBuilder();
-    deckBuilderEdit = null;
-    persistDeckBuilderEdit();
     deckBuilderValidation = null;
     deckBuilderWasValid = false;
-    try { localStorage.removeItem(deckBuilderStorageKey); } catch { /* Estado em memória já foi limpo. */ }
+    try { localStorage.removeItem(clearedKey); } catch { /* Estado em memória já foi limpo. */ }
+    if (wasEditing) {
+      deckBuilderEdit = null;
+      persistDeckBuilderEdit();
+      loadDeckBuilderDraft();
+    }
     $('deckBuilderSaveForm').hidden = true;
     document.querySelector('.deck-builder-save-success')?.remove();
     renderDeckBuilderMode();
     renderDeckBuilder();
     updateCardAddLabels();
-    showToast('Deck limpo');
+    if (wasEditing && deckBuilderAllEntries().length) scheduleDeckBuilderValidation();
+    showToast(wasEditing ? 'Edição descartada; seu deck foi restaurado' : 'Deck limpo');
   });
 
   $('closeCardModal').addEventListener('click', closeCard);
@@ -3144,8 +3193,8 @@ async function loadCards() {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-  loadDeckBuilderDraft();
   loadDeckBuilderEdit();
+  loadDeckBuilderDraft();
   $('brandLogo').src = site.logoPath;
   $('brandName').textContent = site.playgroupName;
   $('pageTitle').textContent = site.pageTitle;
