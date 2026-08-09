@@ -812,7 +812,7 @@ function cardTileMarkup(card, index = 0) {
   const formatsLabel = card.formats.map((key) => formats.find((item) => item.key === key)?.label || key).join(', ');
   const imageMarkup = image ? `<img loading="${index < 4 ? 'eager' : 'lazy'}" decoding="async" fetchpriority="${index < 4 ? 'high' : 'low'}" width="488" height="680" src="${escapeHtml(image)}"${srcset ? ` srcset="${escapeHtml(srcset)}" sizes="(max-width: 559px) calc(50vw - 22px), (max-width: 959px) calc(25vw - 20px), 220px"` : ''} alt="Carta ${escapeHtml(card.name)}" />` : '';
   const price = state.tab === 'catalog' ? effectiveCatalogPrice(card) : null;
-  const priceMarkup = price ? `<span class="card-price${price.estimated ? ' is-estimated' : ''}" title="${price.estimated ? 'Estimativa pelo Scryfall convertida pela PTAX' : `Preço ${price.stale ? 'desatualizado ' : ''}da LigaMagic`}">${priceSourceDot(price.estimated)}${price.estimated ? '~ ' : ''}${escapeHtml(formatBrlPrice(price.value))}${price.estimated ? '<small>estimado</small>' : ''}</span>` : '';
+  const priceMarkup = price ? `<span class="card-price${price.estimated ? ' is-estimated' : ''}" title="${price.source === 'Regra do Formatinho' ? 'Preço definido pela regra do Formatinho' : price.estimated ? 'Estimativa pelo Scryfall convertida pela PTAX' : `Preço ${price.stale ? 'desatualizado ' : ''}da LigaMagic`}">${priceSourceDot(price)}${price.estimated ? '~ ' : ''}${escapeHtml(formatBrlPrice(price.value))}${price.estimated ? '<small>estimado</small>' : ''}</span>` : '';
   const banWarning = state.tab === 'catalog' && card.formats.length ? '<span class="card-tile__ban-warning">Banida</span>' : '';
   const setAndPrice = state.tab === 'catalog' ? `<div class="card-tile__catalog-row"><span class="card-tile__set">${setLine}</span>${priceMarkup}</div>` : `<span class="card-tile__set">${setLine}</span>`;
   const ariaFormats = formatsLabel ? `. Banida em ${formatsLabel}` : '';
@@ -1132,8 +1132,15 @@ function formatBrlPrice(value) {
   return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(Number(value));
 }
 
-function priceSourceDot(estimated) {
-  const label = estimated ? 'Estimativa do Scryfall convertida pela PTAX' : 'Preço atualizado pela LigaMagic';
+function priceSourceDot(priceOrEstimated) {
+  const price = typeof priceOrEstimated === 'object' ? priceOrEstimated : null;
+  const estimated = price ? Boolean(price.estimated) : Boolean(priceOrEstimated);
+  const isFormatinhoRule = price?.source === 'Regra do Formatinho';
+  const label = isFormatinhoRule
+    ? 'Preço definido pela regra do Formatinho'
+    : estimated
+      ? 'Estimativa do Scryfall convertida pela PTAX'
+      : 'Preço atualizado pela LigaMagic';
   return `<span class="price-source-dot ${estimated ? 'is-scryfall' : 'is-ligamagic'}" title="${label}" aria-label="${label}"></span>`;
 }
 
@@ -1185,11 +1192,23 @@ async function hydrateCatalogMarketPrice(card) {
     target.innerHTML = '<div class="modal-kv"><span class="modal-kv__label">Preço em reais</span><span class="modal-kv__value">Indisponível</span></div><p class="market-ligamagic__note">Ainda não há preço confirmado nem estimativa para esta carta.</p>';
     return;
   }
-  inlinePrice.innerHTML = `${priceSourceDot(price.estimated)}${price.estimated ? '~ ' : ''}${formatBrlPrice(price.value)}`;
+  inlinePrice.innerHTML = `${priceSourceDot(price)}${price.estimated ? '~ ' : ''}${formatBrlPrice(price.value)}`;
   inlinePrice.classList.toggle('is-stale', price.stale && !price.estimated);
   inlinePrice.classList.toggle('is-estimated', price.estimated);
-  inlinePrice.title = price.estimated ? 'Estimativa pelo Scryfall convertida pela PTAX' : `${price.stale ? 'Último ' : ''}menor preço Normal/NM na LigaMagic`;
+  inlinePrice.title = price.source === 'Regra do Formatinho'
+    ? 'Preço definido pela regra do Formatinho'
+    : price.estimated
+      ? 'Estimativa pelo Scryfall convertida pela PTAX'
+      : `${price.stale ? 'Último ' : ''}menor preço Normal/NM na LigaMagic`;
   inlinePrice.hidden = false;
+
+  if (price.source === 'Regra do Formatinho') {
+    if (link) link.hidden = true;
+    target.classList.remove('is-stale');
+    target.innerHTML = `<div class="modal-kv"><span class="modal-kv__label">Valor no Formatinho</span><strong class="market-ligamagic__price">${priceSourceDot(price)}${formatBrlPrice(price.value)}</strong></div><p class="market-ligamagic__note">Terrenos básicos não entram no orçamento de R$ 100,00 do deck.</p>`;
+    return;
+  }
+  if (link) link.hidden = false;
 
   if (price.estimated) {
     const usd = Number(card?.prices?.usd);
@@ -2052,7 +2071,7 @@ function renderSavedDeckList(entries) {
     const price = savedDeckEntryPrice(entry);
     const quantity = Number(entry.quantity) || 1;
     const subtotal = price ? price.value * quantity : null;
-    const priceMarkup = price ? `<span class="saved-deck-entry__price${price.estimated ? ' is-estimated' : ''}"><small>${priceSourceDot(price.estimated)}${price.estimated ? '~ ' : ''}${formatBrlPrice(price.value)} × ${quantity}</small><strong>${priceSourceDot(price.estimated)}${price.estimated ? '~ ' : ''}${formatBrlPrice(subtotal)}</strong></span>` : '<span class="saved-deck-entry__price is-pending"><small>Preço</small><strong>pendente</strong></span>';
+    const priceMarkup = price ? `<span class="saved-deck-entry__price${price.estimated ? ' is-estimated' : ''}"><small>${priceSourceDot(price)}${price.estimated ? '~ ' : ''}${formatBrlPrice(price.value)} × ${quantity}</small><strong>${priceSourceDot(price)}${price.estimated ? '~ ' : ''}${formatBrlPrice(subtotal)}</strong></span>` : '<span class="saved-deck-entry__price is-pending"><small>Preço</small><strong>pendente</strong></span>';
     return `<li><button class="saved-deck-entry" type="button" data-saved-deck-entry="${escapeHtml(entry.key)}" aria-label="Abrir detalhes de ${escapeHtml(entry.name)}"><span class="saved-deck-entry__art">${savedDeckEntryImage(entry)}</span><span class="saved-deck-entry__quantity">${quantity}×</span><strong>${escapeHtml(entry.name)}</strong>${priceMarkup}<span class="saved-deck-entry__open" aria-hidden="true">↗</span></button></li>`;
   }).join('')}</ul>`;
 }
@@ -2328,7 +2347,7 @@ function deckBuilderEntryMarkup(entry, zone) {
   const price = resolvedCardPrice(card);
   const subtotal = price ? price.value * quantity : null;
   const priceMarkup = price
-    ? `<span class="deck-builder-entry__price${price.estimated ? ' is-estimated' : ''}"><small>${priceSourceDot(price.estimated)}${price.estimated ? '~ ' : ''}${formatBrlPrice(price.value)} × ${quantity}</small><strong>${priceSourceDot(price.estimated)}${price.estimated ? '~ ' : ''}${formatBrlPrice(subtotal)}</strong></span>`
+    ? `<span class="deck-builder-entry__price${price.estimated ? ' is-estimated' : ''}"><small>${priceSourceDot(price)}${price.estimated ? '~ ' : ''}${formatBrlPrice(price.value)} × ${quantity}</small><strong>${priceSourceDot(price)}${price.estimated ? '~ ' : ''}${formatBrlPrice(subtotal)}</strong></span>`
     : '<span class="deck-builder-entry__price is-pending"><small>Preço</small><strong>Preparando…</strong></span>';
   const target = zone === 'main' ? 'sideboard' : 'main';
   const moveLabel = zone === 'main' ? '→ Sideboard' : '→ Main Deck';
