@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancestral%20Knowledge",
     "checked_at": "2026-08-07T04:49:32.155Z"
   },
+  "278db664-4235-40f0-a926-3074a0e038c1": {
+    "status": "available",
+    "name": "Benalish Faithbonder",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominária Unida",
+    "printing_code": "DMU",
+    "collector_number": "7",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benalish%20Faithbonder",
+    "checked_at": "2026-08-09T13:45:04.410Z"
+  },
   "278e51fe-3cd9-4c82-bd81-2164771f8611": {
     "status": "available",
     "name": "Alms Collector",

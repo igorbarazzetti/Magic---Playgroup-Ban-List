@@ -70,5 +70,17 @@
     "collector_number": "21",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agate%20Instigator",
     "checked_at": "2026-08-06T11:08:54.074Z"
+  },
+  "e1e5ad8c-d425-44ad-a8f6-e9290667f6f5": {
+    "status": "available",
+    "name": "Bellowing Saddlebrute",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Khans de Tarkir",
+    "printing_code": "KTK",
+    "collector_number": "64",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bellowing%20Saddlebrute",
+    "checked_at": "2026-08-09T13:42:24.306Z"
   }
 }

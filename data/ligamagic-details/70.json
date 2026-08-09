@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aang%2C%20the%20Last%20Airbender",
     "checked_at": "2026-08-06T00:04:26.809Z"
   },
+  "7063abe1-87dd-4526-9867-f7ce255b2cf0": {
+    "status": "available",
+    "name": "Bellowing Aegisaur",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ixalan",
+    "printing_code": "XLN",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bellowing%20Aegisaur",
+    "checked_at": "2026-08-09T13:41:24.268Z"
+  },
   "709e99f1-288b-49e0-80a1-f817b457a2cf": {
     "status": "available",
     "name": "Bay Falcon",

@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akroan%20Crusader",
     "checked_at": "2026-08-06T18:06:17.245Z"
   },
+  "d9c2e674-11a9-47f0-8790-a53b62c43fe6": {
+    "status": "available",
+    "name": "Bedrock Tortoise",
+    "price_brl": 0.81,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "As Cavernas Perdidas de Ixalan",
+    "printing_code": "LCI",
+    "collector_number": "176",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bedrock%20Tortoise",
+    "checked_at": "2026-08-09T13:34:34.009Z"
+  },
   "d9d7b7a9-5107-4720-9f92-b49e372372b8": {
     "status": "available",
     "name": "Aphetto Grifter",

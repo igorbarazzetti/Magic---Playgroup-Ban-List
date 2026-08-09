@@ -130,5 +130,17 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abduction",
     "checked_at": "2026-08-06T00:07:46.901Z"
+  },
+  "d0e529e3-0f77-4a55-ba35-46591f48d960": {
+    "status": "available",
+    "name": "Belltoll Dragon",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dragões de Tarkir",
+    "printing_code": "DTK",
+    "collector_number": "46",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Belltoll%20Dragon",
+    "checked_at": "2026-08-09T13:42:54.913Z"
   }
 }

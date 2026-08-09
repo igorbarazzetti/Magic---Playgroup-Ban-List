@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azula%2C%20Ruthless%20Firebender",
     "checked_at": "2026-08-08T14:54:07.341Z"
   },
+  "7143d82a-931a-4918-bb14-37bc5b9a4d99": {
+    "status": "available",
+    "name": "Bedhead Beastie",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Noctumbra: A Casa dos Horrores",
+    "printing_code": "DSK",
+    "collector_number": "125",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bedhead%20Beastie",
+    "checked_at": "2026-08-09T13:34:04.015Z"
+  },
   "719aeb50-c8cf-4cd8-b74c-d2cef408b52e": {
     "status": "available",
     "name": "Airlift Chaplain",

@@ -106,5 +106,17 @@
     "collector_number": "6",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Tactician",
     "checked_at": "2026-08-08T09:19:40.627Z"
+  },
+  "f2f3be8a-5ea1-47c2-8104-747f4589f5e6": {
+    "status": "available",
+    "name": "Bellowing Crier",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Bloomburrow",
+    "printing_code": "BLB",
+    "collector_number": "42",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bellowing%20Crier",
+    "checked_at": "2026-08-09T13:41:44.291Z"
   }
 }

@@ -119,6 +119,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aquitect's%20Defenses",
     "checked_at": "2026-08-07T11:23:36.937Z"
   },
+  "b9ed0081-7eda-4ff9-ac2d-bcdc29a22d9f": {
+    "status": "available",
+    "name": "Belltower Sphinx",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2012",
+    "printing_code": "M12",
+    "collector_number": "46",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Belltower%20Sphinx",
+    "checked_at": "2026-08-09T13:43:04.510Z"
+  },
   "b9fdb740-e5d7-4464-b378-2e0514ca28d8": {
     "status": "available",
     "name": "Atogatog",

@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Awakened%20Awareness",
     "checked_at": "2026-08-08T13:21:56.944Z"
   },
+  "664c1219-acfa-41da-b811-503a63fc8d84": {
+    "status": "available",
+    "name": "Befuddle",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2020",
+    "printing_code": "M20",
+    "collector_number": "47",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Befuddle",
+    "checked_at": "2026-08-09T13:36:04.113Z"
+  },
   "664d982a-5cd8-4289-afb8-fa2e083042c9": {
     "status": "available",
     "name": "Allay",
@@ -34,6 +46,18 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Allay",
     "checked_at": "2026-08-07T00:35:04.607Z"
+  },
+  "667dae0b-5006-4e38-be80-eae79c2a2a95": {
+    "status": "available",
+    "name": "Bellows Lizard",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic Origens",
+    "printing_code": "ORI",
+    "collector_number": "132",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bellows%20Lizard",
+    "checked_at": "2026-08-09T13:42:44.345Z"
   },
   "668a6a9d-80fc-437b-99b8-6807e92eabca": {
     "status": "available",

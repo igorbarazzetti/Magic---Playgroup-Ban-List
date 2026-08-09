@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani%2C%20Valiant%20Protector",
     "checked_at": "2026-08-06T14:53:12.143Z"
   },
+  "543af1f4-f93f-4c7f-a067-ad2db599a4ae": {
+    "status": "available",
+    "name": "Benalish Infantry",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "The List",
+    "printing_code": "PLIST",
+    "collector_number": "822",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benalish%20Infantry",
+    "checked_at": "2026-08-09T13:45:44.716Z"
+  },
   "5456f00c-0bef-4c14-902f-f5c14475f284": {
     "status": "available",
     "name": "Aisling Leprechaun",

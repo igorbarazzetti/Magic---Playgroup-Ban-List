@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Accomplished%20Automaton",
     "checked_at": "2026-08-06T03:50:22.457Z"
   },
+  "f5c5f64c-6911-430c-a825-b32b96d39c7d": {
+    "status": "available",
+    "name": "Beetleback Chief",
+    "price_brl": 0.38,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Planechase Anthology",
+    "printing_code": "PCA",
+    "collector_number": "40",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beetleback%20Chief",
+    "checked_at": "2026-08-09T13:35:24.055Z"
+  },
   "f5ca7b13-8003-4361-b827-7095c89f2750": {
     "status": "available",
     "name": "Falling Star",

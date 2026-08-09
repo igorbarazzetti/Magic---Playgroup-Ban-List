@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Animal%20Attendant",
     "checked_at": "2026-08-07T09:23:56.071Z"
   },
+  "789e034c-7f4a-4fd5-9dd8-48313742126e": {
+    "status": "available",
+    "name": "Become Brutes",
+    "price_brl": 0.23,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Selvagens de Eldraine",
+    "printing_code": "WOE",
+    "collector_number": "317",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Become%20Brutes",
+    "checked_at": "2026-08-09T13:33:03.963Z"
+  },
   "78a7bb30-fc60-410c-b086-862b5521c1aa": {
     "status": "available",
     "name": "Admonition Angel",

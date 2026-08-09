@@ -1,4 +1,16 @@
 {
+  "7d05ffe2-e52b-42af-87ca-6aae488b9f41": {
+    "status": "available",
+    "name": "Behemoth of Vault 0",
+    "price_brl": 0.95,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fallout",
+    "printing_code": "PIP",
+    "collector_number": "127",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Behemoth%20of%20Vault%200",
+    "checked_at": "2026-08-09T13:36:34.080Z"
+  },
   "7d3c25bb-5175-4fb1-992f-62a44722f535": {
     "status": "available",
     "name": "Aspect of Lamprey",
@@ -34,6 +46,18 @@
     "collector_number": "40",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Academy%20Loremaster",
     "checked_at": "2026-08-06T03:47:52.306Z"
+  },
+  "7d54a535-e924-47c7-81db-e04df1c3f44e": {
+    "status": "available",
+    "name": "Belligerent Sliver",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2015",
+    "printing_code": "M15",
+    "collector_number": "129",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Belligerent%20Sliver",
+    "checked_at": "2026-08-09T13:40:44.264Z"
   },
   "7d7cf15c-06b9-4062-a1eb-32614c458a3b": {
     "status": "available",

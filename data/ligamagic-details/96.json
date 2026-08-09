@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angry%20Mob",
     "checked_at": "2026-08-07T09:22:56.031Z"
   },
+  "967c509f-dbde-44ee-93fa-a01376f34b99": {
+    "status": "available",
+    "name": "Behemoth's Herald",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fragmentos de Alara",
+    "printing_code": "ALA",
+    "collector_number": "124",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Behemoth's%20Herald",
+    "checked_at": "2026-08-09T13:36:44.118Z"
+  },
   "969233f8-a644-4297-a2bf-b1ca7a58bb0b": {
     "status": "available",
     "name": "Barrenton Cragtreads",

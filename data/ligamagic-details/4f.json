@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aurora%20Eidolon",
     "checked_at": "2026-08-08T07:35:03.469Z"
   },
+  "4feca1da-dcc8-440c-8933-bab91782b015": {
+    "status": "available",
+    "name": "Begin the Invasion",
+    "price_brl": 0.95,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marcha das Máquinas: Commander",
+    "printing_code": "MOC",
+    "collector_number": "79",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Begin%20the%20Invasion",
+    "checked_at": "2026-08-09T13:36:14.058Z"
+  },
   "4fed8066-4597-4ebb-ac88-6622cf007d81": {
     "status": "available",
     "name": "Angelic Harold",

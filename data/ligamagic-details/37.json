@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Prophet%20of%20Kruphix",
     "checked_at": "2026-08-05T20:11:26.382Z"
   },
+  "37331d0e-edda-4791-8bcc-fb457f984877": {
+    "status": "available",
+    "name": "Bellowing Fiend",
+    "price_brl": 0.44,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tempestade",
+    "printing_code": "TP",
+    "collector_number": "18",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bellowing%20Fiend",
+    "checked_at": "2026-08-09T13:42:04.810Z"
+  },
   "3745aea4-4455-4859-9772-bcfd14e4067b": {
     "status": "available",
     "name": "Addle",

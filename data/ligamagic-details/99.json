@@ -130,5 +130,17 @@
     "collector_number": "22",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aegis%20of%20the%20Legion",
     "checked_at": "2026-08-06T07:14:54.914Z"
+  },
+  "99f2e195-5da5-4239-87e0-ed552643e7b5": {
+    "status": "available",
+    "name": "Benalish Emissary",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Invasão",
+    "printing_code": "IN",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benalish%20Emissary",
+    "checked_at": "2026-08-09T13:44:54.375Z"
   }
 }

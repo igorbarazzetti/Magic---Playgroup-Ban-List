@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Academic%20Dispute",
     "checked_at": "2026-08-06T03:47:01.638Z"
   },
+  "b2402ac0-8ab8-413c-bac4-9f4ba2163c58": {
+    "status": "available",
+    "name": "Behold the Beyond",
+    "price_brl": 3.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Sombras em Innistrad",
+    "printing_code": "SOI",
+    "collector_number": "101",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Behold%20the%20Beyond",
+    "checked_at": "2026-08-09T13:37:24.091Z"
+  },
   "b25bea73-7444-4ee2-8022-611461506117": {
     "status": "available",
     "name": "Ajani, Adversary of Tyrants",

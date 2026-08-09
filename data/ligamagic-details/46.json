@@ -143,6 +143,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arrows%20of%20Justice",
     "checked_at": "2026-08-07T21:06:58.847Z"
   },
+  "46e50ee9-91f8-416e-82fa-f1a76e61fb73": {
+    "status": "available",
+    "name": "Belbe's Portal",
+    "price_brl": 3.51,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mystery Booster",
+    "printing_code": "MB1",
+    "collector_number": "1548",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Belbe's%20Portal",
+    "checked_at": "2026-08-09T13:38:54.145Z"
+  },
   "46fbcbdf-73d0-4fa2-8db7-3b19bfc7ac22": {
     "status": "available",
     "name": "Ashen Ghoul",

@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barrowin%20of%20Clan%20Undurr",
     "checked_at": "2026-08-08T19:17:52.493Z"
   },
+  "c171065f-7947-4161-a481-1ea2d3ce8422": {
+    "status": "available",
+    "name": "Belfry Spirit",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Pacto das Guildas",
+    "printing_code": "GP",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Belfry%20Spirit",
+    "checked_at": "2026-08-09T13:39:14.203Z"
+  },
   "c174dcbb-03a0-439c-b3d8-ed61bd46dc67": {
     "status": "available",
     "name": "Artful Dodge",

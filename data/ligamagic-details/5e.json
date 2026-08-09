@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auron%2C%20Venerated%20Guardian",
     "checked_at": "2026-08-08T07:34:33.738Z"
   },
+  "5e29aea1-06e3-49ef-8a22-e3acff1fb679": {
+    "status": "available",
+    "name": "Bell Borca, Spectral Sergeant",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominária Unida Commander",
+    "printing_code": "DMC",
+    "collector_number": "145",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bell%20Borca%2C%20Spectral%20Sergeant",
+    "checked_at": "2026-08-09T13:39:34.268Z"
+  },
   "5e419975-e054-4c35-8845-a08589ebb08f": {
     "status": "available",
     "name": "Ambuscade",

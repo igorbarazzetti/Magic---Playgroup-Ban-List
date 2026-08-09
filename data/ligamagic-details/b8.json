@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aragorn%20and%20Arwen%2C%20Wed",
     "checked_at": "2026-08-07T11:25:57.014Z"
   },
+  "b8bb97a8-5f5d-48e9-a4c1-b4c20efe7739": {
+    "status": "available",
+    "name": "Bedeck // Bedazzle",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lealdade em Ravnica",
+    "printing_code": "RNA",
+    "collector_number": "221",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bedeck%20%2F%2F%20Bedazzle",
+    "checked_at": "2026-08-09T13:33:44.081Z"
+  },
   "b8cc7a78-a627-4e56-b1fc-0b2bd844ef68": {
     "status": "available",
     "name": "Arcanum Wings",

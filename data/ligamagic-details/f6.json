@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adaptive%20Sporesinger",
     "checked_at": "2026-08-06T04:00:12.234Z"
   },
+  "f637d525-2f29-488a-9269-8e5aa377fbb7": {
+    "status": "available",
+    "name": "Bee Sting",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portal Segunda Era",
+    "printing_code": "PO2",
+    "collector_number": "64",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bee%20Sting",
+    "checked_at": "2026-08-09T13:34:54.009Z"
+  },
   "f63ea0e5-7769-4a22-bbb3-658281141d8c": {
     "status": "available",
     "name": "Angel of the Dawn",

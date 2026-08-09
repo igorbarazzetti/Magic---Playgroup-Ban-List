@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Paradox%20Engine",
     "checked_at": "2026-08-05T20:10:56.294Z"
   },
+  "d39df714-bd0b-4de8-b9df-55713bab7f35": {
+    "status": "available",
+    "name": "Beckoning Will-o'-Wisp",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends: Batalha por Portal de Baldur",
+    "printing_code": "CLB",
+    "collector_number": "10",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beckoning%20Will-o'-Wisp",
+    "checked_at": "2026-08-09T13:32:44.468Z"
+  },
   "d3c3f293-6790-4dce-900a-8af0464c2572": {
     "status": "available",
     "name": "Anhelo, the Painter",

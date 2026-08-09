@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Invoke%20Prejudice",
     "checked_at": "2026-08-05T20:08:25.931Z"
   },
+  "8561b088-56b3-4732-82e9-8da1e3affd55": {
+    "status": "available",
+    "name": "Beifong's Bounty Hunters",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Avatar: The Last Airbender",
+    "printing_code": "TLA",
+    "collector_number": "209",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beifong's%20Bounty%20Hunters",
+    "checked_at": "2026-08-09T13:38:04.128Z"
+  },
   "85791f11-44ab-4405-b284-1d91c7e0afbb": {
     "status": "available",
     "name": "Angrath's Ambusher",
@@ -106,6 +118,18 @@
     "collector_number": "24",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beacon%20of%20Tomorrows",
     "checked_at": "2026-08-08T23:00:30.430Z"
+  },
+  "85ac3efc-5e19-4661-b52f-116f57e39581": {
+    "status": "available",
+    "name": "Behind the Mask",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassinato na Mansão Karlov",
+    "printing_code": "MKM",
+    "collector_number": "39",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Behind%20the%20Mask",
+    "checked_at": "2026-08-09T13:37:04.122Z"
   },
   "85b2fb89-5ebe-4c13-bc12-38d1417e5880": {
     "status": "available",

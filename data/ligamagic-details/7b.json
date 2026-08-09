@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azure%20Beastbinder",
     "checked_at": "2026-08-08T14:54:17.344Z"
   },
+  "7bd4e504-541e-4b2c-9f1d-3c67957aef2e": {
+    "status": "available",
+    "name": "Belligerent Hatchling",
+    "price_brl": 0.16,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Entardecer",
+    "printing_code": "EVE",
+    "collector_number": "134",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Belligerent%20Hatchling",
+    "checked_at": "2026-08-09T13:40:24.614Z"
+  },
   "7bf8bb41-6f46-492c-b6cf-5cfb29f973a4": {
     "status": "available",
     "name": "Apothecary White",

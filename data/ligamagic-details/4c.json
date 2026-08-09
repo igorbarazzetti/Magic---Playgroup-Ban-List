@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amrou%20Scout",
     "checked_at": "2026-08-07T04:42:01.350Z"
   },
+  "4c81cfb7-8765-4e28-ae33-4287fa9a86cc": {
+    "status": "available",
+    "name": "Benalish Hero",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quinta Edição",
+    "printing_code": "5E",
+    "collector_number": "33",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benalish%20Hero",
+    "checked_at": "2026-08-09T13:45:24.466Z"
+  },
   "4c9a38f8-8fcb-45f9-8b70-e54298c7b485": {
     "status": "available",
     "name": "Ancient Animus",

@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbara%20Wright",
     "checked_at": "2026-08-08T17:11:17.428Z"
   },
+  "0e6609b4-f359-4bf1-a06e-f4317a0e7b3c": {
+    "status": "available",
+    "name": "Beetle-Headed Merchants",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Avatar: The Last Airbender",
+    "printing_code": "TLA",
+    "collector_number": "86",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beetle-Headed%20Merchants",
+    "checked_at": "2026-08-09T13:35:04.613Z"
+  },
   "0e9551ef-8aee-46ed-b21f-162c64213437": {
     "status": "available",
     "name": "Atomwheel Acrobats",
@@ -82,6 +94,18 @@
     "collector_number": "9",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=And%20They%20Shall%20Know%20No%20Fear",
     "checked_at": "2026-08-07T07:52:16.624Z"
+  },
+  "0ec88e35-191b-411b-9eb0-2dfef7ae4174": {
+    "status": "available",
+    "name": "Belonging",
+    "price_brl": 2.78,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed Commander",
+    "printing_code": "ECC",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Belonging",
+    "checked_at": "2026-08-09T13:43:14.314Z"
   },
   "0edd4894-0df0-4a4e-8a96-d20360ea81c7": {
     "status": "available",

@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atraxa's%20Fall",
     "checked_at": "2026-08-08T07:20:42.996Z"
   },
+  "227cbba1-700b-4255-b730-b324ab3dec34": {
+    "status": "available",
+    "name": "Beetleform Mage",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Labirinto do Dragão",
+    "printing_code": "DGM",
+    "collector_number": "54",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beetleform%20Mage",
+    "checked_at": "2026-08-09T13:35:34.318Z"
+  },
   "228d3307-69a9-45ce-a610-77754ed50877": {
     "status": "available",
     "name": "Barrensteppe Siege",

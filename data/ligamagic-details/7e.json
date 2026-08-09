@@ -1,4 +1,16 @@
 {
+  "7e079dd3-3397-491f-a6c5-7be5ade687d3": {
+    "status": "available",
+    "name": "Become the Pilot",
+    "price_brl": 1.45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Doctor Who",
+    "printing_code": "WHO",
+    "collector_number": "37",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Become%20the%20Pilot",
+    "checked_at": "2026-08-09T13:33:33.982Z"
+  },
   "7e481e22-4122-4259-8978-4727eb307195": {
     "status": "available",
     "name": "Bearscape",

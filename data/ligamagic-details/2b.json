@@ -106,5 +106,17 @@
     "collector_number": "6",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambrosia%20Whiteheart",
     "checked_at": "2026-08-07T04:36:51.109Z"
+  },
+  "2be2f6c8-d8df-4e5c-a0c1-7566183bbe81": {
+    "status": "available",
+    "name": "Belligerent of the Ball",
+    "price_brl": 0.06,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Selvagens de Eldraine",
+    "printing_code": "WOE",
+    "collector_number": "120",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Belligerent%20of%20the%20Ball",
+    "checked_at": "2026-08-09T13:40:34.228Z"
   }
 }

@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ahn-Crop%20Invader",
     "checked_at": "2026-08-06T14:43:41.834Z"
   },
+  "d7d2f701-77df-4169-bf98-0d51d6886e9b": {
+    "status": "available",
+    "name": "Behold the Multiverse",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaldheim",
+    "printing_code": "KHM",
+    "collector_number": "46",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Behold%20the%20Multiverse",
+    "checked_at": "2026-08-09T13:37:34.118Z"
+  },
   "d7f49243-a96e-499f-b2d7-8e9842432420": {
     "status": "available",
     "name": "Armorcraft Judge",

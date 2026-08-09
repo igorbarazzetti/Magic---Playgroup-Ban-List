@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Tradewinds",
     "checked_at": "2026-08-06T11:01:13.743Z"
   },
+  "3a1e85fe-7064-4df7-bc3b-24131cd15d06": {
+    "status": "available",
+    "name": "Benalish Commander",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Espiral Temporal Remasterizada",
+    "printing_code": "TSR",
+    "collector_number": "8",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benalish%20Commander",
+    "checked_at": "2026-08-09T13:44:44.439Z"
+  },
   "3a228b9f-3629-4f3e-8649-4531ca21363a": {
     "status": "available",
     "name": "Animate Object",

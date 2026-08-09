@@ -11,6 +11,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beamsplitter%20Mage",
     "checked_at": "2026-08-08T23:01:10.424Z"
   },
+  "fa0a4765-5799-4464-88b6-6d1b15889eb5": {
+    "status": "available",
+    "name": "Bellowing Mauler",
+    "price_brl": 0.58,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nova Capenna Commander",
+    "printing_code": "NCC",
+    "collector_number": "33",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bellowing%20Mauler",
+    "checked_at": "2026-08-09T13:42:14.244Z"
+  },
+  "fa2d8440-a44a-44fe-8624-0e8b4be53f44": {
+    "status": "available",
+    "name": "Belligerent Brontodon",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ixalan",
+    "printing_code": "XLN",
+    "collector_number": "218",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Belligerent%20Brontodon",
+    "checked_at": "2026-08-09T13:40:04.502Z"
+  },
   "fa3335be-80b1-49d7-9809-5bef13be79f4": {
     "status": "available",
     "name": "Armory Automaton",

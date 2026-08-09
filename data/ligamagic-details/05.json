@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Up%20the%20Beanstalk",
     "checked_at": "2026-08-05T20:14:35.904Z"
   },
+  "051ff7e0-dd00-4467-8796-a5d1c21934ed": {
+    "status": "available",
+    "name": "Bejeweled Warg",
+    "price_brl": 14.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "The Hobbit",
+    "printing_code": "HOB",
+    "collector_number": "117",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bejeweled%20Warg",
+    "checked_at": "2026-08-09T13:38:14.176Z"
+  },
   "054c00b4-c940-455a-ad88-b8aa35931ecf": {
     "status": "available",
     "name": "Alter Reality",
@@ -82,6 +94,18 @@
     "collector_number": "62",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambush",
     "checked_at": "2026-08-07T04:37:31.115Z"
+  },
+  "0595b074-8f25-469d-9e82-ed60c4a7a2cd": {
+    "status": "available",
+    "name": "Benalish Honor Guard",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominaria",
+    "printing_code": "DOM",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benalish%20Honor%20Guard",
+    "checked_at": "2026-08-09T13:45:34.413Z"
   },
   "05b020fd-21be-495d-ae45-7de3b1224e6d": {
     "status": "available",

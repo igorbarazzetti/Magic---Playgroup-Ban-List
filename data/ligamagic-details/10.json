@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abyssal%20Nightstalker",
     "checked_at": "2026-08-06T03:44:12.255Z"
   },
+  "10762505-ebaa-47de-9f3e-08d48f2ac240": {
+    "status": "available",
+    "name": "Beckon Apparition",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portões Violados",
+    "printing_code": "GTC",
+    "collector_number": "212",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beckon%20Apparition",
+    "checked_at": "2026-08-09T13:32:33.943Z"
+  },
   "107f204c-9fd3-490d-8887-be63d14fc6a4": {
     "status": "available",
     "name": "Akroma, Angel of Wrath",

@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aura%20Graft",
     "checked_at": "2026-08-08T07:29:33.314Z"
   },
+  "00573e77-8ff6-4acb-8683-8827d965288f": {
+    "status": "available",
+    "name": "Behemoth Sledge",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Duel Decks: Ajani vs. Nicol Bolas",
+    "printing_code": "DDH",
+    "collector_number": "28",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Behemoth%20Sledge",
+    "checked_at": "2026-08-09T13:36:54.233Z"
+  },
   "009a399b-c78e-475b-8bc3-7db2afc9d676": {
     "status": "available",
     "name": "Airdrop Aeronauts",

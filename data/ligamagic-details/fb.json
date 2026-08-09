@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adorned%20Crocodile",
     "checked_at": "2026-08-06T07:09:54.645Z"
   },
+  "fb773114-6161-46a3-ab30-1853958fbcb0": {
+    "status": "available",
+    "name": "Bello, Bard of the Brambles",
+    "price_brl": 19.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Bloomburrow Commander (Borderless)",
+    "printing_code": "BLBLC",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bello%2C%20Bard%20of%20the%20Brambles",
+    "checked_at": "2026-08-09T13:41:14.217Z"
+  },
   "fb81f95c-70f8-4eb7-8d15-15d0ae23ec03": {
     "status": "available",
     "name": "Mystical Tutor",

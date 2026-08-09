@@ -1,4 +1,16 @@
 {
+  "a1091651-4e3e-4840-87e2-b80084770137": {
+    "status": "available",
+    "name": "Bellowing Tanglewurm",
+    "price_brl": 4.42,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Cicatrizes de Mirrodin",
+    "printing_code": "SOM",
+    "collector_number": "111",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bellowing%20Tanglewurm",
+    "checked_at": "2026-08-09T13:42:34.298Z"
+  },
   "a1399cb8-f22a-487e-b539-2db47b09a790": {
     "status": "available",
     "name": "Aeon Chronicler",

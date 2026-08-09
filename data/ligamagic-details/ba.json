@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Eternal",
     "checked_at": "2026-08-08T09:15:20.343Z"
   },
+  "bac0fcee-9c1a-46b7-86c8-ffbfcc1e96de": {
+    "status": "available",
+    "name": "Become Anonymous",
+    "price_brl": 0.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassin's Creed",
+    "printing_code": "ACR",
+    "collector_number": "14",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Become%20Anonymous",
+    "checked_at": "2026-08-09T13:32:53.943Z"
+  },
   "baea7cc5-15ec-4229-ad8b-d4b34c2e21e8": {
     "status": "available",
     "name": "Akki Scrapchomper",

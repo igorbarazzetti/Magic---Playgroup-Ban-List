@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Hired%20Heist",
     "checked_at": "2026-08-05T20:07:37.813Z"
   },
+  "b0e88bd6-50a3-48d7-a15f-ec51f6bced0d": {
+    "status": "available",
+    "name": "Bard, Heir of Girion",
+    "price_brl": 119.89,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "The Hobbit Eternal (Extended Art)",
+    "printing_code": "EAHOC",
+    "collector_number": "101",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bard%2C%20Heir%20of%20Girion",
+    "checked_at": "2026-08-09T13:32:03.956Z"
+  },
   "b0ed9fbe-324d-467a-a326-c6f85a4c688a": {
     "status": "available",
     "name": "Ant-Man, Colony Commander",

@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arc%20Trail",
     "checked_at": "2026-08-07T13:49:53.779Z"
   },
+  "f1c303d8-6d77-4bc6-82d1-2a409a6f2cfd": {
+    "status": "available",
+    "name": "Belbe, Corrupted Observer",
+    "price_brl": 0.45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends",
+    "printing_code": "CMR",
+    "collector_number": "270",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Belbe%2C%20Corrupted%20Observer",
+    "checked_at": "2026-08-09T13:38:24.145Z"
+  },
   "f1c3d749-5cdb-4af2-967f-6413d6cb04fe": {
     "status": "available",
     "name": "Acquire",

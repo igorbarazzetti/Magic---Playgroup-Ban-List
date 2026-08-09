@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arc%20Mage",
     "checked_at": "2026-08-07T13:49:03.702Z"
   },
+  "011da9c5-aa8a-4fa0-b1f2-62b9f3760476": {
+    "status": "available",
+    "name": "Belladonna Took",
+    "price_brl": 21.21,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "The Hobbit",
+    "printing_code": "HOB",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Belladonna%20Took",
+    "checked_at": "2026-08-09T13:39:44.801Z"
+  },
   "01443d75-3f86-45c0-81fa-fbf1b3175d4f": {
     "status": "available",
     "name": "Akroan Line Breaker",
@@ -58,6 +70,18 @@
     "collector_number": "93",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashen%20Monstrosity",
     "checked_at": "2026-08-07T21:17:29.266Z"
+  },
+  "01a7e0ce-c98f-4cf2-aba3-360aa0a9b9a7": {
+    "status": "available",
+    "name": "Bedlam Reveler",
+    "price_brl": 0.55,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Double Masters 2022",
+    "printing_code": "2X2",
+    "collector_number": "104",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bedlam%20Reveler",
+    "checked_at": "2026-08-09T13:34:24.063Z"
   },
   "01cd52f9-7fac-4396-bec7-d06bf683e011": {
     "status": "available",

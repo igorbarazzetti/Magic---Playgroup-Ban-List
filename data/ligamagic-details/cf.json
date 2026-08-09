@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aura%20Thief",
     "checked_at": "2026-08-08T07:30:13.355Z"
   },
+  "cf0a15f5-5f41-4eea-81f7-02059b9586a2": {
+    "status": "available",
+    "name": "Belligerent Whiptail",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Batalha por Zendikar",
+    "printing_code": "BFZ",
+    "collector_number": "141",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Belligerent%20Whiptail",
+    "checked_at": "2026-08-09T13:40:54.252Z"
+  },
   "cf0dcb27-f02e-4065-81dc-75fbbb09ea3f": {
     "status": "available",
     "name": "Oath of Druids",

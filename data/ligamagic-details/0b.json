@@ -94,5 +94,17 @@
     "collector_number": "64",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Peregrine%20Drake",
     "checked_at": "2026-08-05T20:10:59.351Z"
+  },
+  "0bf619f9-4b19-404c-995f-f23a4b859dd4": {
+    "status": "available",
+    "name": "Benalish Cavalry",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Espiral Temporal",
+    "printing_code": "TS",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benalish%20Cavalry",
+    "checked_at": "2026-08-09T13:44:34.824Z"
   }
 }

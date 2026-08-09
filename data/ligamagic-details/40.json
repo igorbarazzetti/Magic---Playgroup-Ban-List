@@ -131,6 +131,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apprentice%20Sharpshooter",
     "checked_at": "2026-08-07T11:21:07.332Z"
   },
+  "40e5b83e-5f53-4b15-8bfd-c0c0b8355a6f": {
+    "status": "available",
+    "name": "Become Immense",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Khans de Tarkir",
+    "printing_code": "KTK",
+    "collector_number": "130",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Become%20Immense",
+    "checked_at": "2026-08-09T13:33:14.628Z"
+  },
   "40eee955-bec6-455a-addf-68cdb84c76b9": {
     "status": "available",
     "name": "Arcane Flight",

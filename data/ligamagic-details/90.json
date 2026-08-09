@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Emrakul%2C%20the%20Aeons%20Torn",
     "checked_at": "2026-08-05T20:05:46.528Z"
   },
+  "90194ff1-db61-463f-b5a3-15cd85311d0e": {
+    "status": "available",
+    "name": "Beledros Witherbloom",
+    "price_brl": 7.69,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven Commander",
+    "printing_code": "SOC",
+    "collector_number": "296",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beledros%20Witherbloom",
+    "checked_at": "2026-08-09T13:39:04.210Z"
+  },
   "901ee0e3-1011-40e1-815a-09246112e8dc": {
     "status": "available",
     "name": "Arcane Endeavor",

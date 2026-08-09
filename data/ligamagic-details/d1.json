@@ -143,6 +143,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Rebirth",
     "checked_at": "2026-08-05T20:11:47.467Z"
   },
+  "d17a1109-3a7f-4a39-b602-155da819235f": {
+    "status": "available",
+    "name": "Bellowing Elk",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons",
+    "printing_code": "MH1",
+    "collector_number": "157",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bellowing%20Elk",
+    "checked_at": "2026-08-09T13:41:54.261Z"
+  },
   "d17d071d-dbee-4d65-8435-137f35cd89ca": {
     "status": "available",
     "name": "Sundering Titan",

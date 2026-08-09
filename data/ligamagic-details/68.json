@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=A%20Tale%20for%20the%20Ages",
     "checked_at": "2026-08-06T00:02:46.713Z"
   },
+  "682cbf2a-2723-4590-ae52-7c5d8b2573cf": {
+    "status": "available",
+    "name": "Beloved Princess",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Trono de Eldraine",
+    "printing_code": "ELD",
+    "collector_number": "7",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beloved%20Princess",
+    "checked_at": "2026-08-09T13:43:44.348Z"
+  },
   "683a06b6-af77-440f-81b9-8958597a7324": {
     "status": "available",
     "name": "Alert Heedbonder",

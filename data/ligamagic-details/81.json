@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Banshee's%20Blade",
     "checked_at": "2026-08-08T17:09:07.370Z"
   },
+  "81b51bb1-89b9-46a0-ad7a-a43c0d214f11": {
+    "status": "available",
+    "name": "Belbe's Percher",
+    "price_brl": 0.02,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nêmesis",
+    "printing_code": "NE",
+    "collector_number": "53",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Belbe's%20Percher",
+    "checked_at": "2026-08-09T13:38:44.221Z"
+  },
   "81c6c4f0-81ad-463c-a42b-60a73e6d70f3": {
     "status": "available",
     "name": "Alexios, Deimos of Kosmos",

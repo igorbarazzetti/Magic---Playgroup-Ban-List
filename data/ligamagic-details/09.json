@@ -142,5 +142,17 @@
     "collector_number": "121",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Austere%20Command",
     "checked_at": "2026-08-08T09:06:00.004Z"
+  },
+  "09ee1332-741f-4c55-abc3-8bcff9031cd9": {
+    "status": "available",
+    "name": "Benalish Heralds",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Invasão",
+    "printing_code": "IN",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benalish%20Heralds",
+    "checked_at": "2026-08-09T13:45:14.395Z"
   }
 }
