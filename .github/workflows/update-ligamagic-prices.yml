@@ -15,6 +15,11 @@ on:
         required: false
         default: 300
         type: number
+      priority_card:
+        description: "Nome de uma carta para atualizar antes da fila"
+        required: false
+        default: ""
+        type: string
 
 permissions:
   contents: write
@@ -62,9 +67,11 @@ jobs:
           LIGAMAGIC_MAINTENANCE_INTERVAL_MS: "43200000"
           LIGAMAGIC_MAINTENANCE_LIMIT: "100"
           BATCH_SIZE: ${{ inputs.batch_size || 300 }}
+          PRIORITY_CARD: ${{ inputs.priority_card || '' }}
           FORCE_ARG: ${{ inputs.force && '--force' || '' }}
         run: |
           $collectorArgs = @("scripts/update-ligamagic-prices.mjs", "--limit=$env:BATCH_SIZE")
+          if ($env:PRIORITY_CARD) { $collectorArgs += "--card=$env:PRIORITY_CARD" }
           if ($env:FORCE_ARG) { $collectorArgs += $env:FORCE_ARG }
           & node @collectorArgs
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }

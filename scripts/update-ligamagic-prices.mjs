@@ -39,7 +39,7 @@ export const catalogTuple = Object.freeze({ id: 0, oracleId: 1, name: 2, colorMa
 export const priceTuple = Object.freeze({ cents: 0, status: 1, checkedAt: 2 });
 
 function parseOptions(argv) {
-  const options = { force: false, prepareOnly: false, dryRun: false, refreshCatalog: false, repairCatalogPrices: false, limit: 300 };
+  const options = { force: false, prepareOnly: false, dryRun: false, refreshCatalog: false, repairCatalogPrices: false, limit: 300, cardName: '' };
   for (const argument of argv) {
     if (argument === '--force') options.force = true;
     else if (argument === '--prepare-only') options.prepareOnly = true;
@@ -47,6 +47,7 @@ function parseOptions(argv) {
     else if (argument === '--refresh-catalog') options.refreshCatalog = true;
     else if (argument === '--repair-catalog-prices') options.repairCatalogPrices = true;
     else if (argument.startsWith('--limit=')) options.limit = Math.max(1, Number(argument.slice(8)) || 300);
+    else if (argument.startsWith('--card=')) options.cardName = argument.slice(7).trim();
   }
   return options;
 }
@@ -422,6 +423,11 @@ export function selectBatch(targets, prices, limit) {
   return { mode: 'maintenance', cards: oldest.slice(0, limit), missing: 0 };
 }
 
+export function selectPriorityCard(targets, cardName) {
+  const expected = normalizeName(cardName);
+  return targets.find((card) => normalizeName(card.name) === expected || normalizeName(ligaMagicLookupName(card.name)) === expected) || null;
+}
+
 export function requestDelayMs(random = Math.random) {
   const sample = Math.max(0, Math.min(1, Number(random()) || 0));
   return Math.round(defaultDelayMs + sample * (maximumDelayMs - defaultDelayMs));
@@ -498,7 +504,13 @@ async function main() {
   await removeBlockedPlaceholders(priceIndex, legacyBook, shards);
   const targets = targetCards(catalog);
   let selection = selectBatch(targets, priceIndex.prices, options.limit);
-  if (selection.mode === 'maintenance') selection = selectBatch(targets, priceIndex.prices, Math.min(options.limit, maintenanceLimit));
+  if (options.cardName) {
+    const priorityCard = selectPriorityCard(targets, options.cardName);
+    if (!priorityCard) throw new Error(`Carta prioritária não encontrada no catálogo: ${options.cardName}`);
+    selection = { mode: 'priority', cards: [priorityCard], missing: selection.missing };
+  } else if (selection.mode === 'maintenance') {
+    selection = selectBatch(targets, priceIndex.prices, Math.min(options.limit, maintenanceLimit));
+  }
   const lastBatchAt = Date.parse(priceIndex.last_batch_at || '');
   const maintenanceDue = options.force || !Number.isFinite(lastBatchAt) || Date.now() - lastBatchAt >= maintenanceIntervalMs;
   const cooldownUntil = Date.parse(priceIndex.cooldown_until || '');

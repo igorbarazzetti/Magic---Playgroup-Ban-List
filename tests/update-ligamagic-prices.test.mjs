@@ -9,6 +9,7 @@ import {
   ligaMagicUrl,
   priceTuple,
   requestDelayMs,
+  selectPriorityCard,
   scryfallPriceCents,
   selectBatch,
   usdCents,
@@ -100,4 +101,14 @@ test('separa falhas determinísticas de bloqueios e falhas temporárias', () => 
   assert.equal(isDeterministicFailure(null, 'A lista de impressões não foi encontrada na página.'), true);
   assert.equal(isDeterministicFailure(429, 'HTTP 429'), false);
   assert.equal(isDeterministicFailure(null, 'fetch failed'), false);
+});
+
+test('permite priorizar uma carta pelo nome exato ou pela face principal', () => {
+  const targets = [
+    { oracleId: 'hammer', name: 'Colossus Hammer' },
+    { oracleId: 'delver', name: 'Delver of Secrets // Insectile Aberration' },
+  ];
+  assert.equal(selectPriorityCard(targets, 'colossus hammer')?.oracleId, 'hammer');
+  assert.equal(selectPriorityCard(targets, 'Delver of Secrets')?.oracleId, 'delver');
+  assert.equal(selectPriorityCard(targets, 'Carta inventada'), null);
 });
