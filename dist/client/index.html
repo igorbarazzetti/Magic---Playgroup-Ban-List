@@ -37,11 +37,11 @@
     <link rel="preconnect" href="https://cards.scryfall.io" />
     <link rel="preconnect" href="https://api.scryfall.com" />
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=codex-52" />
+    <link rel="stylesheet" href="styles.css?v=codex-53" />
     <script>
       (() => {
         if (!('serviceWorker' in navigator)) return;
-        addEventListener('load', () => navigator.serviceWorker.register('/service-worker.js?v=52').catch(() => {}), { once: true });
+        addEventListener('load', () => navigator.serviceWorker.register('/service-worker.js?v=53').catch(() => {}), { once: true });
       })();
     </script>
   </head>
@@ -68,6 +68,18 @@
         <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
       </button>
     </header>
+
+    <section class="price-coverage" id="priceCoverage" aria-labelledby="priceCoverageTitle" aria-busy="true">
+      <div class="price-coverage__inner">
+        <div class="price-coverage__heading">
+          <p><strong id="priceCoverageTitle">Atualização de preços da LigaMagic</strong><span><b id="priceCoverageCount">—</b> de <b id="priceCoverageTotal">—</b> cartas</span></p>
+          <strong class="price-coverage__percent" id="priceCoveragePercent">—%</strong>
+        </div>
+        <div class="price-coverage__track" id="priceCoverageTrack" role="progressbar" aria-labelledby="priceCoverageTitle" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <span class="price-coverage__fill" id="priceCoverageFill" aria-hidden="true"><i></i></span>
+        </div>
+      </div>
+    </section>
 
     <dialog class="mobile-menu" id="mobileMenu" aria-labelledby="mobileMenuTitle">
       <div class="mobile-menu__shell">
@@ -503,6 +515,6 @@
     </dialog>
 
     <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
-    <script type="module" src="banlist.js?v=codex-52"></script>
+    <script type="module" src="banlist.js?v=codex-53"></script>
   </body>
 </html>

@@ -2949,6 +2949,39 @@ async function getCatalogData() {
   return catalogDataPromise;
 }
 
+function renderPriceCoverage(payload) {
+  const root = $('priceCoverage');
+  const track = $('priceCoverageTrack');
+  const coverage = payload?.coverage;
+  if (!root || !track || !coverage) return false;
+  const target = Math.max(0, Number(coverage.target_count) || 0);
+  const confirmed = Math.min(target || Infinity, Math.max(0, Number(coverage.confirmed_count) || 0));
+  const percent = target ? Math.min(100, (confirmed / target) * 100) : 0;
+  const countFormat = new Intl.NumberFormat('pt-BR');
+  const percentFormat = new Intl.NumberFormat('pt-BR', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  $('priceCoverageCount').textContent = countFormat.format(confirmed);
+  $('priceCoverageTotal').textContent = countFormat.format(target);
+  $('priceCoveragePercent').textContent = `${percentFormat.format(percent)}%`;
+  root.style.setProperty('--price-coverage', `${percent}%`);
+  root.classList.toggle('is-empty', confirmed === 0);
+  root.hidden = false;
+  root.setAttribute('aria-busy', 'false');
+  track.setAttribute('aria-valuenow', percent.toFixed(1));
+  track.setAttribute('aria-valuetext', `${countFormat.format(confirmed)} de ${countFormat.format(target)} cartas com preço confirmado pela LigaMagic, ${percentFormat.format(percent)} por cento`);
+  return true;
+}
+
+async function hydratePriceCoverage() {
+  const root = $('priceCoverage');
+  if (!root) return;
+  try {
+    const response = await fetch(catalogPriceIndexUrl, { headers: { Accept: 'application/json' }, cache: 'no-cache' });
+    if (!response.ok || !renderPriceCoverage(await response.json())) throw new Error('Cobertura indisponível');
+  } catch {
+    root.hidden = true;
+  }
+}
+
 function openCatalogCacheDb() {
   if (catalogCacheDbPromise) return catalogCacheDbPromise;
   if (!('indexedDB' in window)) return Promise.resolve(null);
@@ -3119,6 +3152,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   $('pageSubtitle').textContent = site.pageSubtitle;
   $('formatCount').textContent = formats.length;
   renderDeckFormats();
+  void hydratePriceCoverage();
   $('validatedDeckFormat').innerHTML = `<option value="">Todos os formatos</option>${deckFormats.map((format) => `<option value="${format.key}">${format.label}</option>`).join('')}`;
   bind();
   const pageMode = configurePageMode();
