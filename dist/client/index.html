@@ -27,35 +27,21 @@
     <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png?v=4" />
     <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png?v=4" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=4" />
+    <link rel="manifest" href="/site.webmanifest?v=1" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Formatinho" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://cards.scryfall.io" />
     <link rel="preconnect" href="https://api.scryfall.com" />
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=codex-50" />
+    <link rel="stylesheet" href="styles.css?v=codex-51" />
     <script>
       (() => {
         if (!('serviceWorker' in navigator)) return;
-        addEventListener('load', async () => {
-          try {
-            const registrations = await navigator.serviceWorker.getRegistrations();
-            const hadController = Boolean(navigator.serviceWorker.controller);
-            await Promise.all(registrations
-              .filter((registration) => registration.scope.startsWith(location.origin))
-              .map((registration) => registration.unregister()));
-            if ('caches' in window) {
-              const keys = await caches.keys();
-              await Promise.all(keys.filter((key) => key.startsWith('formatinho-')).map((key) => caches.delete(key)));
-            }
-            const repairKey = 'formatinho-cache-repair-v43';
-            if (hadController && !sessionStorage.getItem(repairKey)) {
-              sessionStorage.setItem(repairKey, 'done');
-              location.reload();
-            }
-          } catch {
-            // A falha na limpeza nunca deve impedir o carregamento do aplicativo.
-          }
-        }, { once: true });
+        addEventListener('load', () => navigator.serviceWorker.register('/service-worker.js?v=51').catch(() => {}), { once: true });
       })();
     </script>
   </head>
@@ -78,7 +64,30 @@
           <span aria-hidden="true">↗</span><span class="icon-button__label">Compartilhar</span>
         </button>
       </div>
+      <button class="mobile-menu-trigger" id="mobileMenuTrigger" type="button" aria-label="Abrir menu" aria-haspopup="dialog" aria-controls="mobileMenu" aria-expanded="false">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
     </header>
+
+    <dialog class="mobile-menu" id="mobileMenu" aria-labelledby="mobileMenuTitle">
+      <div class="mobile-menu__shell">
+        <header class="mobile-menu__header">
+          <div><p class="eyebrow">Navegação</p><h2 id="mobileMenuTitle">Arquivo do Formatinho</h2></div>
+          <button id="mobileMenuClose" type="button" aria-label="Fechar menu">×</button>
+        </header>
+        <nav class="mobile-menu__nav" aria-label="Menu principal">
+          <a href="/deckbuilder" data-mobile-menu-link><span class="mobile-menu__icon" aria-hidden="true">▱</span><span><strong>Deck Builder</strong><small>Continue montando seu deck</small></span><span class="mobile-menu__badge" id="mobileMenuDeckCount">0</span></a>
+          <button type="button" id="mobileMenuValidator"><span class="mobile-menu__icon" aria-hidden="true">✓</span><span><strong>Valide seu deck</strong><small>Cole uma lista e confira as regras</small></span><span aria-hidden="true">→</span></button>
+          <a href="/?page=decks&rev=30" data-mobile-menu-link><span class="mobile-menu__icon" aria-hidden="true">◇</span><span><strong>Decks validados</strong><small>Explore e edite listas do playgroup</small></span><span aria-hidden="true">→</span></a>
+          <button type="button" id="installAppButton"><span class="mobile-menu__icon" aria-hidden="true">↓</span><span><strong>Adicione como web app</strong><small id="installAppHint">Tenha o Formatinho na tela inicial</small></span><span aria-hidden="true">＋</span></button>
+        </nav>
+        <div class="mobile-menu__install-help" id="installAppHelp" hidden role="status">
+          <strong>Adicionar à tela inicial</strong>
+          <p id="installAppInstructions">Abra as opções do navegador e escolha “Adicionar à tela inicial”.</p>
+        </div>
+        <footer><span><i aria-hidden="true"></i> Fanmade</span><button id="mobileMenuShare" type="button">Compartilhar ↗</button></footer>
+      </div>
+    </dialog>
 
     <div class="connection-banner" id="connectionBanner" role="status" hidden>
       <span aria-hidden="true">◇</span> Você está sem conexão. Exibindo o último arquivo disponível.
@@ -138,9 +147,9 @@
       <section class="deck-builder-page" id="deckBuilderPage" aria-labelledby="deckBuilderTitle" hidden>
         <header class="deck-builder-hero">
           <div class="deck-builder-hero__copy">
-            <p class="eyebrow"><span aria-hidden="true">✦</span> Oficina do Formatinho</p>
+            <p class="eyebrow" id="deckBuilderEyebrow"><span aria-hidden="true">✦</span> Oficina do Formatinho</p>
             <h1 id="deckBuilderTitle">Monte seu deck</h1>
-            <p>Organize sua lista, acompanhe o orçamento e veja a validação acontecer enquanto você constrói.</p>
+            <p id="deckBuilderBrief">Organize sua lista, acompanhe o orçamento e veja a validação acontecer enquanto você constrói.</p>
           </div>
           <a class="deck-builder-add-cards" id="deckBuilderAddCards" href="/?tab=catalog"><span aria-hidden="true">＋</span><span>Adicionar cartas</span></a>
         </header>
@@ -477,7 +486,8 @@
             <h2 id="savedDeckTitle">Deck validado</h2>
             <p class="saved-deck-modal__pilot" id="savedDeckPilot"></p>
             <div class="saved-deck-modal__stats" id="savedDeckStats"></div>
-            <div class="saved-deck-modal__actions"><button id="copySavedDeck" type="button"><span aria-hidden="true">⧉</span> Copiar lista</button></div>
+            <div class="saved-deck-modal__actions"><button id="copySavedDeck" type="button"><span aria-hidden="true">⧉</span> Copiar lista</button><button id="editSavedDeck" type="button"><span aria-hidden="true">✎</span> Editar este deck</button></div>
+            <p class="saved-deck-modal__edit-note">Edição pública: qualquer pessoa pode aprimorar esta lista. Toda alteração passa novamente pela validação do Formatinho.</p>
             <div class="saved-deck-list" id="savedDeckList"></div>
           </article>
         </div>
@@ -493,6 +503,6 @@
     </dialog>
 
     <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
-    <script type="module" src="banlist.js?v=codex-50"></script>
+    <script type="module" src="banlist.js?v=codex-51"></script>
   </body>
 </html>

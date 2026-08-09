@@ -309,6 +309,71 @@ async function createDeck(request, env) {
   }, 201);
 }
 
+async function updateDeck(request, env, id) {
+  const contentLength = Number(request.headers.get("content-length") || 0);
+  if (contentLength > 100_000) return json({ error: "A lista é grande demais." }, 413);
+  let body;
+  try { body = await request.json(); } catch { return json({ error: "Dados do deck inválidos." }, 400); }
+
+  const name = cleanText(body?.name, 80);
+  const pilot = cleanText(body?.pilot, 60);
+  const format = cleanText(body?.format, 20).toLowerCase();
+  const baseUpdatedAt = cleanText(body?.base_updated_at, 40);
+  if (!name) return json({ error: "Dê um nome ao deck." }, 400);
+  if (!baseUpdatedAt) return json({ error: "Reabra o deck antes de editar." }, 409);
+  if (!VALID_FORMATS.has(format)) return json({ error: "Formato inválido." }, 400);
+  if (!Array.isArray(body?.entries) || body.entries.length < 1 || body.entries.length > 300) return json({ error: "A lista precisa ter entre 1 e 300 cartas diferentes." }, 400);
+
+  const mergedEntries = new Map();
+  for (const item of body.entries) {
+    const cardName = cleanText(item?.name, 160);
+    const quantity = Math.trunc(Number(item?.quantity));
+    const section = item?.section === "sideboard" ? "sideboard" : "main";
+    if (!cardName || !Number.isFinite(quantity) || quantity < 1 || quantity > 99) return json({ error: "Há uma carta ou quantidade inválida na lista." }, 400);
+    const key = `${section}:${normalizeName(cardName)}`;
+    const current = mergedEntries.get(key);
+    const total = (current?.quantity || 0) + quantity;
+    if (total > 99) return json({ error: `Quantidade inválida para ${cardName}.` }, 400);
+    mergedEntries.set(key, { name: current?.name || cardName, quantity: total, section });
+  }
+
+  const entries = [...mergedEntries.values()];
+  const cardCount = entries.reduce((total, entry) => total + entry.quantity, 0);
+  if (cardCount > 1_000) return json({ error: "A lista excede o limite de 1.000 cartas." }, 400);
+  let cardsByName;
+  try { cardsByName = await fetchCards(entries); } catch { return json({ error: "Não foi possível confirmar o deck com o Scryfall. Tente novamente." }, 503); }
+  const issues = validateCards(entries, format, cardsByName);
+  if (issues.length) return json({ error: "O deck deixou de passar na validação.", issues }, 422);
+
+  const canonicalEntries = entries.map((entry) => {
+    const card = cardsByName.get(normalizeName(entry.name));
+    return { name: card?.name || entry.name, quantity: entry.quantity, section: entry.section };
+  });
+  const coverCard = [...canonicalEntries.filter((entry) => entry.section !== "sideboard"), ...canonicalEntries]
+    .map((entry) => cardsByName.get(normalizeName(entry.name))).find(Boolean);
+  const coverImage = coverCard?.image_uris?.art_crop || coverCard?.image_uris?.normal || coverCard?.card_faces?.[0]?.image_uris?.art_crop || coverCard?.card_faces?.[0]?.image_uris?.normal || "";
+  const updatedAt = new Date().toISOString();
+
+  await ensureDeckSchema(env.DB);
+  const existing = await env.DB.prepare("SELECT created_at FROM validated_decks WHERE id = ? LIMIT 1").bind(id).first();
+  if (!existing) return json({ error: "Deck não encontrado." }, 404);
+  if (existing.created_at !== baseUpdatedAt) return json({ error: "Este deck foi alterado por outra pessoa. Reabra a versão mais recente antes de editar." }, 409);
+
+  const result = await env.DB.prepare(`UPDATE validated_decks SET name = ?, pilot = ?, format = ?, deck_json = ?,
+    card_count = ?, unique_count = ?, cover_name = ?, cover_image = ?, created_at = ?
+    WHERE id = ? AND created_at = ?`)
+    .bind(name, pilot, format, JSON.stringify(canonicalEntries), cardCount, canonicalEntries.length,
+      coverCard?.name || canonicalEntries[0]?.name || "", coverImage, updatedAt, id, baseUpdatedAt)
+    .run();
+  if (!Number(result.meta?.changes || 0)) return json({ error: "Este deck mudou enquanto você editava. Reabra a versão mais recente." }, 409);
+
+  return json({ deck: {
+    id, name, pilot, format, entries: canonicalEntries, card_count: cardCount,
+    unique_count: canonicalEntries.length, cover_name: coverCard?.name || canonicalEntries[0]?.name || "",
+    cover_image: coverImage, created_at: updatedAt,
+  } });
+}
+
 const CATALOG_RESOURCES = {
   index: "https://raw.githubusercontent.com/igorbarazzetti/Magic---Playgroup-Ban-List/main/data/catalog/scryfall-index.json",
   prices: "https://raw.githubusercontent.com/igorbarazzetti/Magic---Playgroup-Ban-List/main/data/ligamagic-catalog-prices.json",
@@ -350,9 +415,10 @@ const worker = {
       }
 
       if (url.pathname.startsWith("/api/decks/")) {
-        if (request.method !== "GET") return json({ error: "Método não permitido." }, 405);
         const id = decodeURIComponent(url.pathname.slice(11));
-        return getDeck(env, id);
+        if (request.method === "GET") return getDeck(env, id);
+        if (request.method === "PUT") return updateDeck(request, env, id);
+        return json({ error: "Método não permitido." }, 405);
       }
 
       if (url.pathname.startsWith("/api/")) return json({ error: "Rota não encontrada." }, 404);

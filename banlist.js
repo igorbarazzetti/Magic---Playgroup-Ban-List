@@ -87,7 +87,9 @@ const deckCardCache = new Map();
 const savedDeckCache = new Map();
 const deckBuilderStorageKey = 'formatinho-deck-builder:v1';
 const deckBuilderReturnKey = 'formatinho-deck-builder-return:v1';
+const deckBuilderEditStorageKey = 'formatinho-deck-builder-edit:v1';
 let deckBuilder = { version: 1, main: {}, sideboard: {}, updatedAt: 0 };
+let deckBuilderEdit = null;
 let deckBuilderValidation = null;
 let deckBuilderValidationToken = 0;
 let deckBuilderValidationTimer;
@@ -97,6 +99,7 @@ let validatedDecks = [];
 let validatedDecksLoaded = false;
 let currentSavedDeck = null;
 let savedDeckPriceBook = null;
+let deferredInstallPrompt = null;
 const $ = (id) => document.getElementById(id);
 const escapeHtml = (value = '') => String(value).replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[char]));
 const slug = (value = '') => value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
@@ -402,8 +405,16 @@ function catalogCardFromTuple(tuple) {
   });
 }
 
+function isBasicLandCard(card) {
+  const typeLine = slug(card?.type_line || '');
+  if (typeLine.includes('basic land') || typeLine.includes('terreno basico')) return true;
+  const name = slug(String(card?.name || '').split('//')[0]).trim();
+  return new Set(['plains', 'island', 'swamp', 'mountain', 'forest', 'wastes', 'snow covered plains', 'snow covered island', 'snow covered swamp', 'snow covered mountain', 'snow covered forest']).has(name);
+}
+
 function resolvedCardPrice(card) {
   if (!card) return null;
+  if (isBasicLandCard(card)) return { value: 0, source: 'Regra do Formatinho', estimated: false, stale: false, checkedAt: null };
   const tuple = catalogPriceIndex?.prices?.[card.oracle_id || card.id];
   const ligaCents = tuple?.[0] === null || tuple?.[0] === undefined || tuple?.[0] === '' ? null : Number(tuple[0]);
   if (Number.isFinite(ligaCents) && ligaCents > 0 && ['a', 's'].includes(tuple[1])) {
@@ -1894,6 +1905,25 @@ async function persistValidatedDeck(deck, { name, pilot = '' }) {
   return saved;
 }
 
+async function updateValidatedDeck(deck, { name, pilot = '' }) {
+  if (!deckBuilderEdit?.id) throw new Error('Nenhum deck está em edição.');
+  const response = await fetch(`/api/decks/${encodeURIComponent(deckBuilderEdit.id)}`, {
+    method: 'PUT',
+    headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name, pilot, format: deck.format, entries: deck.entries, base_updated_at: deckBuilderEdit.baseUpdatedAt }),
+  });
+  const payload = await response.json().catch(() => ({}));
+  if (!response.ok) throw new Error(payload.error || 'Não foi possível atualizar o deck.');
+  const saved = { ...payload.deck, entries: payload.deck?.entries || deck.entries };
+  deckBuilderEdit = { id: saved.id, name: saved.name, pilot: saved.pilot || '', format: saved.format, baseUpdatedAt: saved.created_at };
+  persistDeckBuilderEdit();
+  savedDeckCache.set(saved.id, saved);
+  validatedDecks = [saved, ...validatedDecks.filter((item) => item.id !== saved.id)];
+  validatedDecksLoaded = true;
+  renderValidatedDecks();
+  return saved;
+}
+
 function validatedDeckFormatLabel(key) {
   return deckFormats.find((format) => format.key === key)?.label || key || 'Formatinho';
 }
@@ -1966,6 +1996,8 @@ async function openSavedDeck(id) {
       savedDeckCache.set(id, deck);
     }
     currentSavedDeck = deck;
+    $('editSavedDeck').disabled = false;
+    $('editSavedDeck').innerHTML = '<span aria-hidden="true">✎</span> Editar este deck';
     $('savedDeckTitle').textContent = deck.name;
     $('savedDeckEyebrow').textContent = `Deck aprovado · ${validatedDeckFormatLabel(deck.format)}`;
     $('savedDeckPilot').textContent = deck.pilot ? `Pilotado por ${deck.pilot}` : 'Piloto não informado';
@@ -2070,6 +2102,56 @@ function persistDeckBuilderDraft() {
   try { localStorage.setItem(deckBuilderStorageKey, JSON.stringify(deckBuilder)); } catch { /* O rascunho continua ativo nesta sessão. */ }
 }
 
+function loadDeckBuilderEdit() {
+  try {
+    const editing = JSON.parse(localStorage.getItem(deckBuilderEditStorageKey) || 'null');
+    deckBuilderEdit = editing?.id ? editing : null;
+  } catch { deckBuilderEdit = null; }
+}
+
+async function editCurrentSavedDeck() {
+  if (!currentSavedDeck?.entries?.length) return;
+  const button = $('editSavedDeck');
+  button.disabled = true;
+  button.textContent = 'Preparando edição…';
+  try {
+    const entries = currentSavedDeck.entries.map((entry) => ({ ...entry, key: normalizeDeckName(entry.name) }));
+    const cards = await ensureDeckBuilderData(entries);
+    const next = emptyDeckBuilder();
+    for (const entry of entries) {
+      const card = cards.get(normalizeDeckName(entry.name));
+      if (!card) throw new Error(`Não foi possível preparar ${entry.name}.`);
+      const zone = entry.section === 'sideboard' ? 'sideboard' : 'main';
+      const stored = deckBuilderStoredEntry(card, Number(entry.quantity) || 1);
+      const existing = next[zone][stored.id];
+      next[zone][stored.id] = existing ? { ...existing, quantity: Number(existing.quantity) + stored.quantity } : stored;
+    }
+    deckBuilder = next;
+    deckBuilderEdit = {
+      id: currentSavedDeck.id,
+      name: currentSavedDeck.name,
+      pilot: currentSavedDeck.pilot || '',
+      format: currentSavedDeck.format,
+      baseUpdatedAt: currentSavedDeck.created_at,
+    };
+    persistDeckBuilderDraft();
+    persistDeckBuilderEdit();
+    closeSavedDeck();
+    location.assign('/deckbuilder');
+  } catch (error) {
+    button.disabled = false;
+    button.innerHTML = '<span aria-hidden="true">✎</span> Editar este deck';
+    showToast(error.message || 'Não foi possível iniciar a edição agora.');
+  }
+}
+
+function persistDeckBuilderEdit() {
+  try {
+    if (deckBuilderEdit?.id) localStorage.setItem(deckBuilderEditStorageKey, JSON.stringify(deckBuilderEdit));
+    else localStorage.removeItem(deckBuilderEditStorageKey);
+  } catch { /* A edição continua ativa nesta sessão. */ }
+}
+
 function deckBuilderZoneEntries(zone) {
   return Object.values(deckBuilder[zone] || {}).filter((entry) => entry && Number(entry.quantity) > 0);
 }
@@ -2141,6 +2223,7 @@ function updateDeckBuilderFab() {
   fab.hidden = total < 1 || isBuilderPage;
   fab.classList.toggle('is-complete', total >= 60);
   $('deckBuilderFabCount').textContent = total > 999 ? '999+' : String(total);
+  if ($('mobileMenuDeckCount')) $('mobileMenuDeckCount').textContent = total > 999 ? '999+' : String(total);
   fab.setAttribute('aria-label', `Abrir Deck Builder com ${total} ${total === 1 ? 'carta' : 'cartas'} no Main Deck`);
 }
 
@@ -2287,6 +2370,7 @@ function renderDeckBuilderStatus() {
   const seal = target.querySelector('.deck-builder-status__seal');
   const copy = target.querySelector('.deck-builder-status__copy');
   const save = $('deckBuilderSave');
+  save.textContent = deckBuilderEdit ? 'Salvar alterações no deck' : 'Salvar em decks validados';
   const total = deckBuilderTotal('main') + deckBuilderTotal('sideboard');
   target.classList.remove('is-valid', 'is-invalid', 'is-loading');
   if (!total) {
@@ -2426,12 +2510,20 @@ async function saveDeckBuilder(event) {
   submit.disabled = true;
   submit.textContent = 'Conferindo e salvando…';
   try {
-    await persistValidatedDeck(deckBuilderValidation.pending, { name, pilot });
+    const saved = deckBuilderEdit
+      ? await updateValidatedDeck(deckBuilderValidation.pending, { name, pilot })
+      : await persistValidatedDeck(deckBuilderValidation.pending, { name, pilot });
     form.hidden = true;
     form.reset();
     const success = document.createElement('div');
     success.className = 'deck-builder-save-success';
-    success.innerHTML = '<span aria-hidden="true">✓</span><div><strong>Deck selado no arquivo.</strong><br><a href="/?page=decks&rev=29">Ver em Decks validados →</a></div>';
+    success.innerHTML = `<span aria-hidden="true">✓</span><div><strong>${deckBuilderEdit ? 'Alterações publicadas.' : 'Deck selado no arquivo.'}</strong><br><a href="/?page=decks&rev=30">Ver em Decks validados →</a></div>`;
+    if (deckBuilderEdit) {
+      deckBuilderEdit.name = saved.name;
+      deckBuilderEdit.pilot = saved.pilot || '';
+      deckBuilderEdit.baseUpdatedAt = saved.created_at;
+      persistDeckBuilderEdit();
+    }
     form.after(success);
     showToast('Deck salvo no arquivo do playgroup');
   } catch (error) {
@@ -2441,7 +2533,72 @@ async function saveDeckBuilder(event) {
   }
 }
 
+function openMobileMenu() {
+  const menu = $('mobileMenu');
+  if (!menu) return;
+  $('mobileMenuTrigger').setAttribute('aria-expanded', 'true');
+  if (typeof menu.showModal === 'function') menu.showModal(); else menu.setAttribute('open', '');
+  document.body.classList.add('is-locked');
+  $('mobileMenuClose').focus();
+}
+
+function closeMobileMenu({ restoreFocus = true } = {}) {
+  const menu = $('mobileMenu');
+  if (!menu?.open && !menu?.hasAttribute('open')) return;
+  if (menu.open) menu.close(); else menu.removeAttribute('open');
+  $('mobileMenuTrigger').setAttribute('aria-expanded', 'false');
+  if (!$('cardModal').open && !$('deckValidatorModal').open && !$('savedDeckModal').open) document.body.classList.remove('is-locked');
+  if (restoreFocus) $('mobileMenuTrigger').focus();
+}
+
+function isInstalledWebApp() {
+  return matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+}
+
+async function installFormatinhoApp() {
+  const help = $('installAppHelp');
+  if (isInstalledWebApp()) {
+    $('installAppHint').textContent = 'O Formatinho já está instalado';
+    help.hidden = false;
+    $('installAppInstructions').textContent = 'Este aparelho já está usando o Formatinho como web app.';
+    return;
+  }
+  if (deferredInstallPrompt) {
+    deferredInstallPrompt.prompt();
+    await deferredInstallPrompt.userChoice.catch(() => null);
+    deferredInstallPrompt = null;
+    return;
+  }
+  const isIos = /iphone|ipad|ipod/i.test(navigator.userAgent);
+  help.hidden = false;
+  $('installAppInstructions').textContent = isIos
+    ? 'No Safari, toque em Compartilhar e depois em “Adicionar à Tela de Início”.'
+    : 'Abra o menu do navegador e escolha “Adicionar à tela inicial” ou “Instalar aplicativo”.';
+}
+
+async function shareCurrentPage() {
+  if (navigator.share) {
+    try { await navigator.share({ title: document.title, url: location.href }); return; } catch (error) { if (error?.name === 'AbortError') return; }
+  }
+  try { await navigator.clipboard.writeText(location.href); showToast('Link desta seleção copiado'); }
+  catch { window.prompt('Copie o link desta seleção:', location.href); }
+}
+
+function renderDeckBuilderMode() {
+  if (!$('deckBuilderPage')) return;
+  if (deckBuilderEdit) {
+    $('deckBuilderEyebrow').innerHTML = '<span aria-hidden="true">✦</span> Edição pública';
+    $('deckBuilderTitle').textContent = 'Aprimore este deck';
+    $('deckBuilderBrief').textContent = `Você está editando “${deckBuilderEdit.name}”. A lista será revalidada antes de publicar.`;
+  } else {
+    $('deckBuilderEyebrow').innerHTML = '<span aria-hidden="true">✦</span> Oficina do Formatinho';
+    $('deckBuilderTitle').textContent = 'Monte seu deck';
+    $('deckBuilderBrief').textContent = 'Organize sua lista, acompanhe o orçamento e veja a validação acontecer enquanto você constrói.';
+  }
+}
+
 async function loadDeckBuilderPage() {
+  renderDeckBuilderMode();
   renderDeckBuilder();
   const entries = combinedDeckBuilderEntries();
   if (!entries.length) return;
@@ -2472,6 +2629,25 @@ function configurePageMode() {
 
 function bind() {
   readUrl();
+
+  $('mobileMenuTrigger').addEventListener('click', openMobileMenu);
+  $('mobileMenuClose').addEventListener('click', () => closeMobileMenu());
+  $('mobileMenu').addEventListener('cancel', (event) => { event.preventDefault(); closeMobileMenu(); });
+  $('mobileMenu').addEventListener('click', (event) => { if (event.target === $('mobileMenu')) closeMobileMenu(); });
+  $('mobileMenu').querySelectorAll('[data-mobile-menu-link]').forEach((link) => link.addEventListener('click', () => closeMobileMenu({ restoreFocus: false })));
+  $('mobileMenuValidator').addEventListener('click', () => { closeMobileMenu({ restoreFocus: false }); openDeckValidator(); });
+  $('installAppButton').addEventListener('click', installFormatinhoApp);
+  $('mobileMenuShare').addEventListener('click', shareCurrentPage);
+  addEventListener('beforeinstallprompt', (event) => {
+    event.preventDefault();
+    deferredInstallPrompt = event;
+    $('installAppHint').textContent = 'Instale com um toque neste aparelho';
+  });
+  addEventListener('appinstalled', () => {
+    deferredInstallPrompt = null;
+    $('installAppHint').textContent = 'Instalado na tela inicial';
+    $('installAppHelp').hidden = true;
+  });
 
   $('collectionTabs').addEventListener('click', (event) => {
     const button = event.target.closest('[data-collection-tab]');
@@ -2636,6 +2812,7 @@ function bind() {
     openCard(normalizeCard(card));
   });
   $('copySavedDeck').addEventListener('click', copySavedDeck);
+  $('editSavedDeck').addEventListener('click', editCurrentSavedDeck);
   $('savedDeckModal').addEventListener('cancel', (event) => { event.preventDefault(); closeSavedDeck(); });
   $('savedDeckModal').addEventListener('click', (event) => { if (event.target === $('savedDeckModal')) closeSavedDeck(); });
 
@@ -2656,6 +2833,15 @@ function bind() {
     if (!deckBuilderValidation?.valid) return;
     document.querySelector('.deck-builder-save-success')?.remove();
     $('deckBuilderSaveForm').hidden = false;
+    if (deckBuilderEdit) {
+      $('deckBuilderSaveName').value = deckBuilderEdit.name || '';
+      $('deckBuilderSavePilot').value = deckBuilderEdit.pilot || '';
+      $('deckBuilderSaveForm').querySelector('.deck-save-form__heading').innerHTML = '<strong>Publicar alterações neste deck?</strong><span>Nome, piloto e lista continuarão públicos no arquivo do playgroup.</span>';
+      $('deckBuilderSaveForm').querySelector('button[type="submit"]').textContent = 'Publicar alterações';
+    } else {
+      $('deckBuilderSaveForm').querySelector('.deck-save-form__heading').innerHTML = '<strong>Como este deck será conhecido?</strong><span>O nome ficará público no arquivo do playgroup. O piloto é opcional.</span>';
+      $('deckBuilderSaveForm').querySelector('button[type="submit"]').textContent = 'Selar no arquivo';
+    }
     $('deckBuilderSaveName').focus();
   });
   $('deckBuilderSaveCancel').addEventListener('click', () => { $('deckBuilderSaveForm').hidden = true; });
@@ -2668,11 +2854,14 @@ function bind() {
   $('deckBuilderClearModal').addEventListener('close', () => {
     if ($('deckBuilderClearModal').returnValue !== 'confirm') return;
     deckBuilder = emptyDeckBuilder();
+    deckBuilderEdit = null;
+    persistDeckBuilderEdit();
     deckBuilderValidation = null;
     deckBuilderWasValid = false;
     try { localStorage.removeItem(deckBuilderStorageKey); } catch { /* Estado em memória já foi limpo. */ }
     $('deckBuilderSaveForm').hidden = true;
     document.querySelector('.deck-builder-save-success')?.remove();
+    renderDeckBuilderMode();
     renderDeckBuilder();
     updateCardAddLabels();
     showToast('Deck limpo');
@@ -2698,10 +2887,7 @@ function bind() {
     if ($('cardModal').open && event.key === 'ArrowRight') navigateModal(1);
   });
 
-  $('shareButton').addEventListener('click', async () => {
-    try { await navigator.clipboard.writeText(location.href); showToast('Link desta seleção copiado'); }
-    catch { window.prompt('Copie o link desta seleção:', location.href); }
-  });
+  $('shareButton').addEventListener('click', shareCurrentPage);
   $('retryButton').addEventListener('click', () => { if (state.tab === 'catalog') loadCatalog(); else loadCards(); });
 
   addEventListener('online', updateConnectionStatus);
@@ -2907,6 +3093,7 @@ async function loadCards() {
 
 document.addEventListener('DOMContentLoaded', async () => {
   loadDeckBuilderDraft();
+  loadDeckBuilderEdit();
   $('brandLogo').src = site.logoPath;
   $('brandName').textContent = site.playgroupName;
   $('pageTitle').textContent = site.pageTitle;

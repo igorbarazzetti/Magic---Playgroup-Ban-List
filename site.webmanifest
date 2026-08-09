@@ -1,0 +1,17 @@
+{
+  "name": "Formatinho — Arquivo de Cartas",
+  "short_name": "Formatinho",
+  "description": "Banlist, catálogo, validador e Deck Builder do Formatinho.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#080a0f",
+  "theme_color": "#0b0d12",
+  "lang": "pt-BR",
+  "orientation": "any",
+  "icons": [
+    { "src": "/apple-touch-icon.png?v=4", "sizes": "180x180", "type": "image/png" },
+    { "src": "/favicon-512.png?v=4", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
