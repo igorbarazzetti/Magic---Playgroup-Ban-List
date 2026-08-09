@@ -61,6 +61,10 @@ const localDataBase = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) ? './
 const isLocalPreview = /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
 const catalogIndexUrl = isLocalPreview ? `${localDataBase}/catalog/scryfall-index.json` : '/api/catalog/index';
 const catalogPriceIndexUrl = isLocalPreview ? `${localDataBase}/ligamagic-catalog-prices.json` : '/api/catalog/prices';
+const catalogFallbackUrls = {
+  'catalog-index-v1': `${repositoryDataBase}/catalog/scryfall-index.json`,
+  'catalog-prices-v1': `${repositoryDataBase}/ligamagic-catalog-prices.json`,
+};
 let ligaMagicPriceBookPromise;
 let catalogIndex;
 let catalogPriceIndex;
@@ -3107,11 +3111,11 @@ async function fetchCatalogResource(url, key, maxAge) {
   const cached = await readPersistentCatalogResource(key);
   const cachedIsValid = validCatalogResource(key, cached?.payload);
   const cacheIsFresh = cachedIsValid && Date.now() - Number(cached.storedAt || 0) < maxAge;
-  const fetchFresh = async () => {
+  const fetchFreshFrom = async (resourceUrl, timeoutMs, cacheMode) => {
     const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 15000);
+    const timeout = setTimeout(() => controller.abort(), timeoutMs);
     try {
-      const response = await fetch(url, { headers: { Accept: 'application/json' }, cache: 'default', signal: controller.signal });
+      const response = await fetch(resourceUrl, { headers: { Accept: 'application/json' }, cache: cacheMode, signal: controller.signal });
       if (!response.ok) throw new Error(`${key} ${response.status}`);
       const payload = await response.json();
       if (!validCatalogResource(key, payload)) throw new Error(`${key} invalido`);
@@ -3119,6 +3123,16 @@ async function fetchCatalogResource(url, key, maxAge) {
       return payload;
     } finally {
       clearTimeout(timeout);
+    }
+  };
+  const fetchFresh = async () => {
+    try {
+      return await fetchFreshFrom(url, 12_000, 'default');
+    } catch (primaryError) {
+      const fallbackUrl = catalogFallbackUrls[key];
+      if (!fallbackUrl || fallbackUrl === url) throw primaryError;
+      console.warn(`Fonte principal de ${key} indisponível; tentando a cópia direta.`, primaryError);
+      return fetchFreshFrom(`${fallbackUrl}?v=${Date.now()}`, 20_000, 'no-store');
     }
   };
   if (cacheIsFresh) {
@@ -3186,8 +3200,9 @@ async function loadCatalog() {
     const selectedId = new URLSearchParams(location.search).get('card');
     const selected = view.cards.find((card) => card.id === selectedId);
     if (selected) { await hydrateCatalogCards([selected]); openCard(selected, { pushHistory: false, initial: true }); }
-  } catch {
+  } catch (error) {
     if (token !== view.loadToken || state !== view) return;
+    console.error('Falha ao carregar a Lista de cartas.', error);
     view.cards = []; view.filtered = []; view.loaded = false; render(); $('errorState').hidden = false;
   } finally {
     if (token === view.loadToken && state === view) {

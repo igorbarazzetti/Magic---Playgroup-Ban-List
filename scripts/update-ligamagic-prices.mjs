@@ -17,8 +17,14 @@ const trackedFormats = ['standard', 'pioneer', 'modern', 'legacy', 'commander', 
 const sourceName = 'LigaMagic';
 const sourceHomepage = 'https://www.ligamagic.com.br/';
 const catalogRefreshMs = 24 * 60 * 60 * 1000;
-const maintenanceIntervalMs = 6 * 60 * 60 * 1000;
+const maintenanceIntervalMs = Math.max(6 * 60 * 60 * 1000, Number(process.env.LIGAMAGIC_MAINTENANCE_INTERVAL_MS || 12 * 60 * 60 * 1000));
+const maintenanceLimit = Math.max(1, Number(process.env.LIGAMAGIC_MAINTENANCE_LIMIT || 100));
 const defaultDelayMs = Math.max(10_000, Number(process.env.LIGAMAGIC_REQUEST_DELAY_MS || 10_000));
+const maximumDelayMs = Math.max(defaultDelayMs, Number(process.env.LIGAMAGIC_REQUEST_DELAY_MAX_MS || 12_000));
+const maximumRunMs = Math.max(60_000, Number(process.env.LIGAMAGIC_MAX_RUN_MS || 50 * 60 * 1000));
+const blockCooldownMs = Math.max(60 * 60 * 1000, Number(process.env.LIGAMAGIC_BLOCK_COOLDOWN_MS || 6 * 60 * 60 * 1000));
+const deterministicFailureLimit = 2;
+const bootstrapCardsPerDayEstimate = 6_000;
 const requestHeaders = {
   Accept: 'text/html,application/xhtml+xml',
   'Accept-Language': 'pt-BR,pt;q=0.9,en;q=0.8',
@@ -33,14 +39,14 @@ export const catalogTuple = Object.freeze({ id: 0, oracleId: 1, name: 2, colorMa
 export const priceTuple = Object.freeze({ cents: 0, status: 1, checkedAt: 2 });
 
 function parseOptions(argv) {
-  const options = { force: false, prepareOnly: false, dryRun: false, refreshCatalog: false, repairCatalogPrices: false, limit: 100 };
+  const options = { force: false, prepareOnly: false, dryRun: false, refreshCatalog: false, repairCatalogPrices: false, limit: 300 };
   for (const argument of argv) {
     if (argument === '--force') options.force = true;
     else if (argument === '--prepare-only') options.prepareOnly = true;
     else if (argument === '--dry-run') options.dryRun = true;
     else if (argument === '--refresh-catalog') options.refreshCatalog = true;
     else if (argument === '--repair-catalog-prices') options.repairCatalogPrices = true;
-    else if (argument.startsWith('--limit=')) options.limit = Math.max(1, Number(argument.slice(8)) || 100);
+    else if (argument.startsWith('--limit=')) options.limit = Math.max(1, Number(argument.slice(8)) || 300);
   }
   return options;
 }
@@ -58,8 +64,12 @@ function decodeHtml(value = '') {
   });
 }
 
+export function ligaMagicLookupName(cardName) {
+  return String(cardName || '').split(/\s*\/\/\s*/, 1)[0].trim().replace(/^["“”]([\s\S]*)["“”]$/, '$1').trim();
+}
+
 export function ligaMagicUrl(cardName) {
-  const lookupName = String(cardName || '').trim().replace(/^["“”]([\s\S]*)["“”]$/, '$1').trim();
+  const lookupName = ligaMagicLookupName(cardName);
   return `https://www.ligamagic.com.br/?view=cards/card&card=${encodeURIComponent(lookupName)}`;
 }
 
@@ -127,11 +137,17 @@ async function sleep(milliseconds) {
   await new Promise((resolvePromise) => setTimeout(resolvePromise, milliseconds));
 }
 
-async function fetchWithRetry(url, { headers = jsonHeaders, expect = 'json' } = {}) {
+async function fetchWithRetry(url, { headers = jsonHeaders, expect = 'json', stopOnBlock = false, deadline = Infinity } = {}) {
   let lastError;
   for (let attempt = 0; attempt < 3; attempt += 1) {
     try {
-      const response = await fetch(url, { headers, redirect: 'follow', signal: AbortSignal.timeout(30_000) });
+      const remaining = deadline - Date.now();
+      if (remaining <= 0) {
+        const deadlineError = new Error('Limite de tempo da execução atingido.');
+        deadlineError.code = 'RUN_DEADLINE';
+        throw deadlineError;
+      }
+      const response = await fetch(url, { headers, redirect: 'follow', signal: AbortSignal.timeout(Math.max(1, Math.min(30_000, remaining))) });
       if (!response.ok) {
         const error = new Error(`HTTP ${response.status}`);
         error.status = response.status;
@@ -141,10 +157,21 @@ async function fetchWithRetry(url, { headers = jsonHeaders, expect = 'json' } = 
       return expect === 'text' ? response.text() : response.json();
     } catch (error) {
       lastError = error;
+      if (error?.code === 'RUN_DEADLINE' || Date.now() >= deadline) {
+        const deadlineError = new Error('Limite de tempo da execução atingido.');
+        deadlineError.code = 'RUN_DEADLINE';
+        throw deadlineError;
+      }
       const status = Number(error?.status || String(error?.message || '').match(/HTTP\s+(\d+)/)?.[1]);
+      if (stopOnBlock && [403, 429].includes(status)) break;
       const retriable = !Number.isFinite(status) || status === 408 || status === 429 || status >= 500;
       if (!retriable || attempt === 2) break;
       const retryAfterMs = Number(error?.retryAfter) > 0 ? Number(error.retryAfter) * 1000 : status === 429 ? 60_000 : 10_000 * (attempt + 1);
+      if (Date.now() + retryAfterMs >= deadline) {
+        const deadlineError = new Error('Limite de tempo da execução atingido.');
+        deadlineError.code = 'RUN_DEADLINE';
+        throw deadlineError;
+      }
       await sleep(retryAfterMs);
     }
   }
@@ -310,6 +337,8 @@ function emptyPriceIndex() {
     generated_at: null,
     last_batch_at: null,
     mode: 'bootstrap',
+    cooldown_until: null,
+    failures: {},
     coverage: { target_count: 0, attempted_count: 0, confirmed_count: 0, unavailable_count: 0, stale_count: 0, percent: 0, estimated_completion_at: null },
     prices: {},
   };
@@ -393,11 +422,20 @@ export function selectBatch(targets, prices, limit) {
   return { mode: 'maintenance', cards: oldest.slice(0, limit), missing: 0 };
 }
 
+export function requestDelayMs(random = Math.random) {
+  const sample = Math.max(0, Math.min(1, Number(random()) || 0));
+  return Math.round(defaultDelayMs + sample * (maximumDelayMs - defaultDelayMs));
+}
+
+export function isDeterministicFailure(statusCode, message = '') {
+  return !statusCode && /lista de impressões não foi encontrada/i.test(String(message));
+}
+
 function coverageFor(targets, prices, mode) {
   const values = targets.map((card) => prices[card.oracleId]).filter(Boolean);
   const attempted = values.length;
   const remaining = Math.max(0, targets.length - attempted);
-  const days = remaining / 1200;
+  const days = remaining / bootstrapCardsPerDayEstimate;
   return {
     target_count: targets.length,
     attempted_count: attempted,
@@ -409,20 +447,21 @@ function coverageFor(targets, prices, mode) {
   };
 }
 
-async function collectPrice(card, previousEntry, throttle) {
+async function collectPrice(card, previousEntry, throttle, deadline) {
+  const lookupName = ligaMagicLookupName(card.name);
   let sourceUrl = ligaMagicUrl(card.name);
   try {
-    await throttle();
-    let html = await fetchWithRetry(sourceUrl, { headers: requestHeaders, expect: 'text' });
+    if (!await throttle()) return { entry: null, stopped: true };
+    let html = await fetchWithRetry(sourceUrl, { headers: requestHeaders, expect: 'text', stopOnBlock: true, deadline });
     let cheapest;
     try {
       cheapest = extractCheapestNormalPrinting(html);
     } catch (error) {
-      const resolvedUrl = extractLigaMagicResultUrl(html, card.name);
+      const resolvedUrl = extractLigaMagicResultUrl(html, lookupName);
       if (!resolvedUrl || resolvedUrl === sourceUrl) throw error;
       sourceUrl = resolvedUrl;
-      await throttle();
-      html = await fetchWithRetry(sourceUrl, { headers: requestHeaders, expect: 'text' });
+      if (!await throttle()) return { entry: null, stopped: true };
+      html = await fetchWithRetry(sourceUrl, { headers: requestHeaders, expect: 'text', stopOnBlock: true, deadline });
       cheapest = extractCheapestNormalPrinting(html);
     }
     const checkedAt = new Date().toISOString();
@@ -436,6 +475,7 @@ async function collectPrice(card, previousEntry, throttle) {
       statusCode: null,
     };
   } catch (error) {
+    if (error?.code === 'RUN_DEADLINE') return { entry: null, stopped: true };
     const message = error instanceof Error ? error.message : 'Falha desconhecida';
     const statusCode = Number(error?.status || message.match(/HTTP\s+(\d+)/)?.[1]) || null;
     if (previousEntry?.price_brl) return { entry: { ...previousEntry, status: 'stale', name: card.name, source_url: sourceUrl, attempted_at: new Date().toISOString(), last_error: message }, statusCode };
@@ -450,17 +490,22 @@ async function main() {
     ? await repairCatalogPrices(previousCatalog)
     : await refreshCatalog(previousCatalog, { force: options.refreshCatalog });
   const priceIndex = await readJson(priceIndexPath, emptyPriceIndex());
+  priceIndex.prices ||= {};
+  priceIndex.failures ||= {};
   const legacyBook = await readJson(legacyPath, { cards: {} });
   const shards = await createShardStore();
   await migrateLegacy(priceIndex, legacyBook, shards);
   await removeBlockedPlaceholders(priceIndex, legacyBook, shards);
   const targets = targetCards(catalog);
-  const selection = selectBatch(targets, priceIndex.prices, options.limit);
+  let selection = selectBatch(targets, priceIndex.prices, options.limit);
+  if (selection.mode === 'maintenance') selection = selectBatch(targets, priceIndex.prices, Math.min(options.limit, maintenanceLimit));
   const lastBatchAt = Date.parse(priceIndex.last_batch_at || '');
   const maintenanceDue = options.force || !Number.isFinite(lastBatchAt) || Date.now() - lastBatchAt >= maintenanceIntervalMs;
+  const cooldownUntil = Date.parse(priceIndex.cooldown_until || '');
+  const cooldownActive = !options.force && Number.isFinite(cooldownUntil) && Date.now() < cooldownUntil;
 
   if (options.dryRun) {
-    console.log(JSON.stringify({ mode: selection.mode, selected: selection.cards.length, missing: selection.missing, target_count: targets.length, maintenance_due: maintenanceDue }, null, 2));
+    console.log(JSON.stringify({ mode: selection.mode, selected: selection.cards.length, missing: selection.missing, target_count: targets.length, maintenance_due: maintenanceDue, cooldown_active: cooldownActive, max_run_minutes: maximumRunMs / 60_000, delay_ms: [defaultDelayMs, maximumDelayMs] }, null, 2));
     return;
   }
 
@@ -474,27 +519,47 @@ async function main() {
     return;
   }
 
+  if (cooldownActive) {
+    console.log(`Coleta pausada até ${priceIndex.cooldown_until} após bloqueios consecutivos da LigaMagic.`);
+    if (JSON.stringify(catalog) !== JSON.stringify(previousCatalog)) await writeJson(catalogPath, catalog);
+    return;
+  }
+  if (priceIndex.cooldown_until) priceIndex.cooldown_until = null;
+
   if (selection.mode === 'maintenance' && !maintenanceDue) {
-    console.log('A manutenção ainda está dentro da janela de 6 horas; nenhum lote foi iniciado.');
+    console.log(`A manutenção ainda está dentro da janela de ${Math.round(maintenanceIntervalMs / 3_600_000)} horas; nenhum lote foi iniciado.`);
     if (JSON.stringify(catalog) !== JSON.stringify(previousCatalog)) await writeJson(catalogPath, catalog);
     return;
   }
 
   let nextRequestAt = 0;
+  const deadline = Date.now() + maximumRunMs;
   const throttle = async () => {
     const wait = Math.max(0, nextRequestAt - Date.now());
+    if (Date.now() + wait >= deadline) return false;
     if (wait) await sleep(wait);
-    nextRequestAt = Date.now() + defaultDelayMs;
+    if (Date.now() >= deadline) return false;
+    nextRequestAt = Date.now() + requestDelayMs();
+    return true;
   };
   const banlistIds = new Set((catalog.banlist_targets || []).map(([oracleId]) => oracleId));
   let consecutiveBlocks = 0;
   let processed = 0;
   let requested = 0;
-  console.log(`Modo ${selection.mode}: consultando até ${selection.cards.length} cartas com intervalo mínimo de ${defaultDelayMs} ms.`);
+  let stateChanged = false;
+  console.log(`Modo ${selection.mode}: consultando até ${selection.cards.length} cartas por no máximo ${Math.round(maximumRunMs / 60_000)} minutos, com intervalo de ${defaultDelayMs}–${maximumDelayMs} ms.`);
 
   for (const card of selection.cards) {
+    if (Date.now() >= deadline) {
+      console.log('Limite de 50 minutos atingido; encerrando o lote antes de iniciar outra consulta.');
+      break;
+    }
     const previousEntry = await shards.get(card.oracleId);
-    const { entry, statusCode, error } = await collectPrice(card, previousEntry, throttle);
+    const { entry, statusCode, error, stopped } = await collectPrice(card, previousEntry, throttle, deadline);
+    if (stopped) {
+      console.log('Limite de 50 minutos atingido durante a espera; encerrando o lote com segurança.');
+      break;
+    }
     requested += 1;
     if (entry) {
       const checkedAt = entry.checked_at || entry.attempted_at || new Date().toISOString();
@@ -503,34 +568,54 @@ async function main() {
       priceIndex.prices[card.oracleId] = [cents, status, timestampSeconds(checkedAt)];
       await shards.set(card.oracleId, entry);
       if (banlistIds.has(card.oracleId)) legacyBook.cards[card.oracleId] = entry;
+      delete priceIndex.failures[card.oracleId];
       processed += 1;
+      stateChanged = true;
       const amount = cents !== null ? `R$ ${(cents / 100).toFixed(2)}` : entry.status;
       console.log(`[${requested}/${selection.cards.length}] ${card.name}: ${amount}`);
+    } else if (isDeterministicFailure(statusCode, error)) {
+      const failure = priceIndex.failures[card.oracleId] || { count: 0 };
+      const count = Number(failure.count || 0) + 1;
+      const attemptedAt = new Date().toISOString();
+      priceIndex.failures[card.oracleId] = { count, attempted_at: attemptedAt, error: String(error || 'Falha determinística') };
+      stateChanged = true;
+      if (count >= deterministicFailureLimit) {
+        const unavailableEntry = {
+          status: 'unavailable', name: card.name, price_brl: null, finish: 'normal', condition: 'NM',
+          source_url: ligaMagicUrl(card.name), checked_at: attemptedAt,
+          last_error: String(error || 'Sem impressões reconhecidas'), attempts: count,
+        };
+        priceIndex.prices[card.oracleId] = [null, 'u', timestampSeconds(attemptedAt)];
+        await shards.set(card.oracleId, unavailableEntry);
+        if (banlistIds.has(card.oracleId)) legacyBook.cards[card.oracleId] = unavailableEntry;
+        delete priceIndex.failures[card.oracleId];
+        processed += 1;
+        console.warn(`[${requested}/${selection.cards.length}] ${card.name}: marcada como indisponível após ${count} tentativas determinísticas.`);
+      } else {
+        console.warn(`[${requested}/${selection.cards.length}] ${card.name}: falha determinística ${count}/${deterministicFailureLimit}; será tentada mais uma vez.`);
+      }
     } else {
       console.warn(`[${requested}/${selection.cards.length}] ${card.name}: consulta não registrada (${error || 'falha temporária'}).`);
     }
 
     consecutiveBlocks = [403, 429].includes(statusCode) ? consecutiveBlocks + 1 : 0;
-    if (consecutiveBlocks >= 5) {
-      console.warn('Circuito de segurança acionado após cinco bloqueios consecutivos; encerrando o lote.');
+    if (consecutiveBlocks >= 2) {
+      priceIndex.cooldown_until = new Date(Date.now() + blockCooldownMs).toISOString();
+      stateChanged = true;
+      console.warn(`Circuito de segurança acionado após dois bloqueios consecutivos; coleta pausada até ${priceIndex.cooldown_until}.`);
       break;
     }
   }
 
-  if (!processed) {
-    console.warn('Nenhum preço foi registrado; os dados de cobertura permanecem inalterados.');
-    return;
-  }
-
-  const nextSelection = selectBatch(targets, priceIndex.prices, options.limit);
+  const nextSelection = selectBatch(targets, priceIndex.prices, 1);
   const now = new Date().toISOString();
   priceIndex.mode = nextSelection.mode;
   priceIndex.generated_at = now;
-  priceIndex.last_batch_at = now;
+  if (requested) priceIndex.last_batch_at = now;
   priceIndex.coverage = coverageFor(targets, priceIndex.prices, nextSelection.mode);
   legacyBook.schema_version = legacyBook.schema_version || 1;
   legacyBook.source = legacyBook.source || priceIndex.source;
-  legacyBook.refresh_interval_hours = 80 * 24;
+  legacyBook.refresh_interval_hours = 160 * 24;
   legacyBook.generated_at = now;
   legacyBook.usd_brl = catalog.usd_brl || legacyBook.usd_brl || null;
   const legacyValues = Object.values(legacyBook.cards || {});
@@ -540,10 +625,14 @@ async function main() {
     stale: legacyValues.filter((entry) => entry.status === 'stale').length,
   };
   priceIndex.prices = Object.fromEntries(Object.entries(priceIndex.prices).sort(([left], [right]) => left.localeCompare(right)));
+  priceIndex.failures = Object.fromEntries(Object.entries(priceIndex.failures).sort(([left], [right]) => left.localeCompare(right)));
   legacyBook.cards = Object.fromEntries(Object.entries(legacyBook.cards || {}).sort(([left], [right]) => left.localeCompare(right)));
 
-  await Promise.all([writeJson(catalogPath, catalog), writeJson(priceIndexPath, priceIndex), writeJson(legacyPath, legacyBook), shards.write()]);
-  console.log(`Lote concluído: ${processed} cartas. Cobertura ${priceIndex.coverage.attempted_count}/${priceIndex.coverage.target_count} (${priceIndex.coverage.percent}%).`);
+  if (stateChanged || requested || JSON.stringify(catalog) !== JSON.stringify(previousCatalog)) {
+    await Promise.all([writeJson(catalogPath, catalog), writeJson(priceIndexPath, priceIndex), writeJson(legacyPath, legacyBook), shards.write()]);
+  }
+  if (!processed) console.warn('Nenhum preço foi registrado neste lote; falhas e proteções ainda foram preservadas.');
+  console.log(`Lote concluído: ${processed} cartas registradas em ${requested} consultas. Cobertura ${priceIndex.coverage.attempted_count}/${priceIndex.coverage.target_count} (${priceIndex.coverage.percent}%).`);
 }
 
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {

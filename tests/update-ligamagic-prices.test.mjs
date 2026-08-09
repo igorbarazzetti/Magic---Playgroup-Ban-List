@@ -4,16 +4,20 @@ import assert from 'node:assert/strict';
 import {
   extractCheapestNormalPrinting,
   extractLigaMagicResultUrl,
+  isDeterministicFailure,
+  ligaMagicLookupName,
   ligaMagicUrl,
   priceTuple,
+  requestDelayMs,
   scryfallPriceCents,
   selectBatch,
   usdCents,
 } from '../scripts/update-ligamagic-prices.mjs';
 
-test('preserva o nome completo de cartas com duas faces na consulta da LigaMagic', () => {
+test('consulta cartas de duas faces pelo nome da face principal', () => {
   const url = new URL(ligaMagicUrl('Adventurous Eater // Have a Bite'));
-  assert.equal(url.searchParams.get('card'), 'Adventurous Eater // Have a Bite');
+  assert.equal(url.searchParams.get('card'), 'Adventurous Eater');
+  assert.equal(ligaMagicLookupName('Delver of Secrets // Insectile Aberration'), 'Delver of Secrets');
 });
 
 test('remove apenas aspas tipográficas que envolvem todo o nome', () => {
@@ -84,4 +88,16 @@ test('após a cobertura atualiza primeiro os registros mais antigos', () => {
   assert.equal(selection.mode, 'maintenance');
   assert.deepEqual(selection.cards.map((card) => card.oracleId), ['b', 'c']);
   assert.equal(prices.c[priceTuple.status], 's');
+});
+
+test('varia o intervalo de consulta somente entre 10 e 12 segundos', () => {
+  assert.equal(requestDelayMs(() => 0), 10_000);
+  assert.equal(requestDelayMs(() => 0.5), 11_000);
+  assert.equal(requestDelayMs(() => 1), 12_000);
+});
+
+test('separa falhas determinísticas de bloqueios e falhas temporárias', () => {
+  assert.equal(isDeterministicFailure(null, 'A lista de impressões não foi encontrada na página.'), true);
+  assert.equal(isDeterministicFailure(429, 'HTTP 429'), false);
+  assert.equal(isDeterministicFailure(null, 'fetch failed'), false);
 });
