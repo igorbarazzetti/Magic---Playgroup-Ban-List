@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apothecary%20Geist",
     "checked_at": "2026-08-07T11:18:06.684Z"
   },
+  "34320ebf-da97-44a4-bbeb-a9da06548289": {
+    "status": "available",
+    "name": "Blackbloom Rogue // Blackbloom Bog",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Renascer de Zendikar",
+    "printing_code": "ZNR",
+    "collector_number": "91",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blackbloom%20Rogue",
+    "checked_at": "2026-08-09T21:38:46.928Z"
+  },
   "34400cf5-b8c4-4cf2-9186-51f12037cc51": {
     "status": "available",
     "name": "Blade Juggler",

@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battle%20at%20the%20Helvault",
     "checked_at": "2026-08-08T21:04:16.709Z"
   },
+  "0766cf02-ea55-4271-8c73-213c93b0baac": {
+    "status": "available",
+    "name": "Blinding Beam",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mirrodin",
+    "printing_code": "MI",
+    "collector_number": "7",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blinding%20Beam",
+    "checked_at": "2026-08-09T22:03:12.556Z"
+  },
   "07b6326a-b73d-422b-bcb5-c508aa3fc558": {
     "status": "available",
     "name": "Summoner's Bond",

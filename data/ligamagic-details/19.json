@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agent%20of%20Acquisitions",
     "checked_at": "2026-08-06T11:11:04.132Z"
   },
+  "19066c43-eccd-461b-9695-c3fad95dc1da": {
+    "status": "available",
+    "name": "Blight",
+    "price_brl": 0.35,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quarta Edição",
+    "printing_code": "4E",
+    "collector_number": "33",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blight",
+    "checked_at": "2026-08-09T21:55:14.022Z"
+  },
   "191ba5f0-45f4-4b7f-910d-4bd4d2d28b33": {
     "status": "available",
     "name": "Beast, Erudite Aerialist",
@@ -58,6 +70,18 @@
     "collector_number": "2",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Artisan%20of%20Kozilek",
     "checked_at": "2026-08-07T21:10:59.003Z"
+  },
+  "194166ad-0179-42a3-86b9-ba7f322ec576": {
+    "status": "available",
+    "name": "Blade Splicer",
+    "price_brl": 0.39,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Bloomburrow Commander",
+    "printing_code": "BLC",
+    "collector_number": "136",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blade%20Splicer",
+    "checked_at": "2026-08-09T21:39:31.998Z"
   },
   "1943cbb0-2b12-4450-90af-060b8c8627c3": {
     "status": "available",
@@ -190,5 +214,17 @@
     "collector_number": "7",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archangel%20of%20Strife",
     "checked_at": "2026-08-07T17:13:24.112Z"
+  },
+  "19f344ee-031d-4346-9553-c5d32b02df43": {
+    "status": "available",
+    "name": "Blitz Automaton",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra dos Irmãos",
+    "printing_code": "BRO",
+    "collector_number": "158",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blitz%20Automaton",
+    "checked_at": "2026-08-09T22:07:53.930Z"
   }
 }

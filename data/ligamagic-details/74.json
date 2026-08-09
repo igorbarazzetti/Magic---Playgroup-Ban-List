@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barrowgoyf",
     "checked_at": "2026-08-08T19:17:42.557Z"
   },
+  "74c9cc13-c03f-4322-82af-b7bce1f2a0d8": {
+    "status": "available",
+    "name": "Beloved Beggar // Generous Soul",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Caçada à Meia-noite",
+    "printing_code": "MID",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beloved%20Beggar",
+    "checked_at": "2026-08-09T21:37:40.057Z"
+  },
   "74d3277a-38e5-4732-afed-084a56148f20": {
     "status": "available",
     "name": "Mana Drain",

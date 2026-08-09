@@ -1,4 +1,16 @@
 {
+  "6e111622-c7cc-49cf-83e8-3555e06518c1": {
+    "status": "available",
+    "name": "Bloodbraid Challenger",
+    "price_brl": 4.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3 Commander",
+    "printing_code": "M3C",
+    "collector_number": "122",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodbraid%20Challenger",
+    "checked_at": "2026-08-09T22:22:06.638Z"
+  },
   "6e24a5bd-0ce3-4dc1-98c6-60d527bfdcfd": {
     "status": "available",
     "name": "Automated Assembly Line",

@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Artifact%20Possession",
     "checked_at": "2026-08-07T21:08:58.910Z"
   },
+  "5c84d8da-2bfb-4618-89a0-7d9ed604e854": {
+    "status": "available",
+    "name": "Blessing",
+    "price_brl": 0.11,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2014",
+    "printing_code": "M14",
+    "collector_number": "8",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blessing",
+    "checked_at": "2026-08-09T21:53:56.249Z"
+  },
   "5c8c4d53-f364-40da-989b-cfe1e3f79b7d": {
     "status": "available",
     "name": "Aveline de Grandpré",

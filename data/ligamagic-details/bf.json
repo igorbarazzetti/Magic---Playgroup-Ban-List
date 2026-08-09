@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcbound%20Slasher",
     "checked_at": "2026-08-07T13:57:14.045Z"
   },
+  "bf9b24e1-60d4-4739-808a-535336e191c2": {
+    "status": "available",
+    "name": "Blistercoil Weird",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Retorno a Ravnica",
+    "printing_code": "RTR",
+    "collector_number": "211",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blistercoil%20Weird",
+    "checked_at": "2026-08-09T22:06:27.833Z"
+  },
   "bf9c5c0d-86a5-467a-863c-653279f2e6e7": {
     "status": "available",
     "name": "Akki Raider",
@@ -106,6 +118,18 @@
     "collector_number": "214",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archway%20of%20Innovation",
     "checked_at": "2026-08-07T17:22:44.569Z"
+  },
+  "bfa60dd1-fcc8-4126-ab7a-4695c74f5bce": {
+    "status": "available",
+    "name": "Bereaved Survivor // Dauntless Avenger",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Caçada à Meia-noite",
+    "printing_code": "MID",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bereaved%20Survivor",
+    "checked_at": "2026-08-09T21:37:50.799Z"
   },
   "bfb3d862-d92d-4a4f-9a22-671b55d954fd": {
     "status": "available",

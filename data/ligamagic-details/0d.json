@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alaborn%20Zealot",
     "checked_at": "2026-08-06T18:11:57.750Z"
   },
+  "0d16e52a-a7d0-4850-b49d-99f7978133e4": {
+    "status": "available",
+    "name": "Blightspeaker",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Caos Planar",
+    "printing_code": "PC",
+    "collector_number": "64",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blightspeaker",
+    "checked_at": "2026-08-09T22:00:14.586Z"
+  },
   "0d2dd78c-103c-4286-a3a1-e471dc77ed91": {
     "status": "available",
     "name": "Bhaal, Lord of Murder",

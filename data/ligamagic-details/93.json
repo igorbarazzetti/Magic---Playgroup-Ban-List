@@ -119,6 +119,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbed%20Batterfist",
     "checked_at": "2026-08-08T19:06:22.987Z"
   },
+  "93c6554f-096d-4556-81ca-e87e29265887": {
+    "status": "available",
+    "name": "Blood Price",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Renascer de Zendikar",
+    "printing_code": "ZNR",
+    "collector_number": "93",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Price",
+    "checked_at": "2026-08-09T22:18:35.628Z"
+  },
+  "93da4a35-d2d8-476c-ad03-318101c0118b": {
+    "status": "available",
+    "name": "Blessed Wind",
+    "price_brl": 0.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Profecia",
+    "printing_code": "PR",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blessed%20Wind",
+    "checked_at": "2026-08-09T21:53:34.262Z"
+  },
   "93ee2ea1-4f9b-47dd-b7d4-b0ed5a26d719": {
     "status": "available",
     "name": "Applied Biomancy",

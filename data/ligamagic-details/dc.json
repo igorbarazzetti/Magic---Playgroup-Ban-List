@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashnod%20the%20Uncaring",
     "checked_at": "2026-08-08T02:42:32.712Z"
   },
+  "dcddeac9-8de7-4347-a956-522f4f2fc63b": {
+    "status": "available",
+    "name": "Blastfire Bolt",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2015",
+    "printing_code": "M15",
+    "collector_number": "130",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blastfire%20Bolt",
+    "checked_at": "2026-08-09T21:46:13.731Z"
+  },
   "dcde1a62-33a5-4454-a389-9bf7a3521a4c": {
     "status": "available",
     "name": "Aeronaut Admiral",

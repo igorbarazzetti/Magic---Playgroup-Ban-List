@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Craving",
     "checked_at": "2026-08-07T07:49:16.039Z"
   },
+  "7879b37c-5e2a-4945-9378-47744b715a6c": {
+    "status": "available",
+    "name": "Blazing Effigy",
+    "price_brl": 2.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Legends",
+    "printing_code": "LG",
+    "collector_number": "31",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blazing%20Effigy",
+    "checked_at": "2026-08-09T21:48:24.231Z"
+  },
   "787e6cc6-d97a-4229-97d1-ec2377d138d3": {
     "status": "available",
     "name": "Animal Attendant",

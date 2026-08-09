@@ -46,5 +46,17 @@
     "collector_number": "196",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bilbo%2C%20Retired%20Burglar",
     "checked_at": "2026-08-09T17:05:27.985Z"
+  },
+  "2ee5f5ad-2f16-40d9-831a-2aefece31b36": {
+    "status": "available",
+    "name": "Befriending the Moths // Imperial Moth",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kamigawa: Dinastia Neon",
+    "printing_code": "NEO",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Befriending%20the%20Moths",
+    "checked_at": "2026-08-09T21:37:18.780Z"
   }
 }

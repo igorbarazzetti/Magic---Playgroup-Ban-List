@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=And%C3%BAril%2C%20Flame%20of%20the%20West",
     "checked_at": "2026-08-07T07:52:36.195Z"
   },
+  "e6681d22-821a-47c8-9c0d-042a7d44f843": {
+    "status": "available",
+    "name": "Blazing Salvo",
+    "price_brl": 0.19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Odisséia",
+    "printing_code": "OD",
+    "collector_number": "178",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blazing%20Salvo",
+    "checked_at": "2026-08-09T21:49:18.170Z"
+  },
   "e66b12ff-45da-46dc-9148-bd8ea9b7fde0": {
     "status": "available",
     "name": "Angelic Chorus",

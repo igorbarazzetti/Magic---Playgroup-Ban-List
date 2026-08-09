@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aeronaut%20Cavalry",
     "checked_at": "2026-08-06T07:20:45.164Z"
   },
+  "1534d90f-fc88-42dc-bf01-8b0986485e78": {
+    "status": "available",
+    "name": "Blood Sun",
+    "price_brl": 0.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Rivais de Ixalan",
+    "printing_code": "RIX",
+    "collector_number": "92",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Sun",
+    "checked_at": "2026-08-09T22:20:15.183Z"
+  },
   "15397a59-70a8-441f-abf7-230405a1602b": {
     "status": "available",
     "name": "Armadillo Cloak",

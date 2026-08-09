@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Astarion%2C%20the%20Decadent",
     "checked_at": "2026-08-08T02:50:42.341Z"
   },
+  "031ddf1e-afcf-4b09-8859-4df0f0ab5dcf": {
+    "status": "available",
+    "name": "Blood Cultist",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fragmentos de Alara",
+    "printing_code": "ALA",
+    "collector_number": "157",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Cultist",
+    "checked_at": "2026-08-09T22:13:36.298Z"
+  },
   "032b5fc4-5aca-41b6-9bf6-2c1ed0018968": {
     "status": "available",
     "name": "Aggressive Mammoth",

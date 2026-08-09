@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Accorder%20Paladin",
     "checked_at": "2026-08-06T03:50:31.789Z"
   },
+  "689c9a49-d0f5-494a-9fa2-948cd5517e74": {
+    "status": "available",
+    "name": "Bleeding Effect",
+    "price_brl": 0.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassin's Creed",
+    "printing_code": "ACR",
+    "collector_number": "51",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bleeding%20Effect",
+    "checked_at": "2026-08-09T21:51:09.458Z"
+  },
   "68a99e50-0e98-480b-ad25-aa2c226d24ca": {
     "status": "available",
     "name": "Battlefield Raptor",

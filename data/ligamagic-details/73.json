@@ -1,4 +1,28 @@
 {
+  "730be0d6-2612-44d6-9d36-e1fc6510c6bd": {
+    "status": "available",
+    "name": "Avabruck Caretaker // Hollowhenge Huntmaster",
+    "price_brl": 35.96,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Voto Carmesim",
+    "printing_code": "VOW",
+    "collector_number": "187",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avabruck%20Caretaker",
+    "checked_at": "2026-08-09T21:34:36.750Z"
+  },
+  "7319eec8-48ba-4238-bce1-450abcae73a6": {
+    "status": "available",
+    "name": "Bloodcrazed Neonate",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad",
+    "printing_code": "ISD",
+    "collector_number": "131",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodcrazed%20Neonate",
+    "checked_at": "2026-08-09T22:23:35.994Z"
+  },
   "736892cb-a34b-4bb9-b56c-e26e3db207a2": {
     "status": "available",
     "name": "Mana Vault",

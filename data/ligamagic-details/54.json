@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani%2C%20Valiant%20Protector",
     "checked_at": "2026-08-06T14:53:12.143Z"
   },
+  "542887e9-1032-4396-9cbb-aa3c11ee43a0": {
+    "status": "available",
+    "name": "Blighted Bat",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Amonkhet",
+    "printing_code": "AKH",
+    "collector_number": "80",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blighted%20Bat",
+    "checked_at": "2026-08-09T21:58:01.903Z"
+  },
   "543af1f4-f93f-4c7f-a067-ad2db599a4ae": {
     "status": "available",
     "name": "Benalish Infantry",

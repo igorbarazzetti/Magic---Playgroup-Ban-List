@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aligned%20Hedron%20Network",
     "checked_at": "2026-08-07T00:32:54.520Z"
   },
+  "5a3f9c4d-20a8-46aa-9cf3-3916f56a7906": {
+    "status": "available",
+    "name": "Blood Servitor",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Voto Carmesim",
+    "printing_code": "VOW",
+    "collector_number": "252",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Servitor",
+    "checked_at": "2026-08-09T22:19:41.893Z"
+  },
   "5a4553fc-f945-4094-b231-2d378ed6609e": {
     "status": "available",
     "name": "Archaeomender",

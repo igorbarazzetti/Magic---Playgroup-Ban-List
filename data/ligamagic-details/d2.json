@@ -1,4 +1,16 @@
 {
+  "d2075f58-b0e9-4e85-b7e6-0523a27a1d5b": {
+    "status": "available",
+    "name": "Bala Ged Recovery // Bala Ged Sanctuary",
+    "price_brl": 14.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Renascer de Zendikar",
+    "printing_code": "ZNR",
+    "collector_number": "180",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bala%20Ged%20Recovery",
+    "checked_at": "2026-08-09T21:36:03.571Z"
+  },
   "d215cd4a-412c-4632-ab2d-de51103e6a7d": {
     "status": "available",
     "name": "Argivian Avenger",
@@ -130,6 +142,18 @@
     "collector_number": "49",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Biogenic%20Ooze",
     "checked_at": "2026-08-09T17:09:47.636Z"
+  },
+  "d2db3f9c-26fe-487b-bbb7-8bc6f33456f1": {
+    "status": "available",
+    "name": "Blitz of the Thunder-Raptor",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ikoria: Terra de Colossos",
+    "printing_code": "IKO",
+    "collector_number": "109",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blitz%20of%20the%20Thunder-Raptor",
+    "checked_at": "2026-08-09T22:08:26.780Z"
   },
   "d2e0d739-b441-4173-a8f1-b831a19ea98e": {
     "status": "available",

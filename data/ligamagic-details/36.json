@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armory%20Paladin",
     "checked_at": "2026-08-07T19:36:44.088Z"
   },
+  "3656338d-ca08-465b-b09a-d8d8d1196eec": {
+    "status": "available",
+    "name": "Blazing Volley",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Amonkhet",
+    "printing_code": "AKH",
+    "collector_number": "119",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blazing%20Volley",
+    "checked_at": "2026-08-09T21:50:02.678Z"
+  },
   "3676b745-001d-46e6-880f-2fe26476a38d": {
     "status": "available",
     "name": "Abundant Maw",

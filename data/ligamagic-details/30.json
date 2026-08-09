@@ -71,6 +71,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Biogenic%20Upgrade",
     "checked_at": "2026-08-09T17:09:58.115Z"
   },
+  "3088ee75-3b51-4cbc-8987-76cb93f416b1": {
+    "status": "available",
+    "name": "Bladed Ambassador",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Phyrexia: Tudo será um",
+    "printing_code": "ONE",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bladed%20Ambassador",
+    "checked_at": "2026-08-09T21:40:27.066Z"
+  },
+  "308e551a-6d60-4a28-9e22-1181995ca068": {
+    "status": "available",
+    "name": "Bleeding Edge",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra da Centelha",
+    "printing_code": "WAR",
+    "collector_number": "78",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bleeding%20Edge",
+    "checked_at": "2026-08-09T21:50:58.336Z"
+  },
   "3095f2cf-05c3-4381-929f-c526b6fc30a7": {
     "status": "available",
     "name": "Atog",
@@ -94,6 +118,18 @@
     "collector_number": "361",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcane%20Lighthouse",
     "checked_at": "2026-08-07T13:52:44.357Z"
+  },
+  "30c7e304-ecfe-44c1-88d1-f507df63c080": {
+    "status": "available",
+    "name": "Blind Zealot",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nova Phyrexia",
+    "printing_code": "NPH",
+    "collector_number": "52",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blind%20Zealot",
+    "checked_at": "2026-08-09T22:02:38.562Z"
   },
   "30ca8e92-5955-46a1-86c1-094a873f518f": {
     "status": "available",

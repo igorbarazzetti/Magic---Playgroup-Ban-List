@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baron%20Strucker%2C%20HYDRA%20Overlord",
     "checked_at": "2026-08-08T19:12:42.296Z"
   },
+  "c924e240-02a0-46b5-b004-d5c42db277ec": {
+    "status": "available",
+    "name": "Blinding Drone",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Juramento das Sentinelas",
+    "printing_code": "OGW",
+    "collector_number": "41",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blinding%20Drone",
+    "checked_at": "2026-08-09T22:03:23.617Z"
+  },
   "c95e75fb-2bf2-431c-b7ca-d84236bffe5c": {
     "status": "available",
     "name": "Adder-Staff Boggart",
@@ -70,6 +82,18 @@
     "collector_number": "712",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Advancing%20the%20Spirit",
     "checked_at": "2026-08-06T07:11:54.727Z"
+  },
+  "c99779b7-a271-416e-bdc2-0f9ba6ceb144": {
+    "status": "available",
+    "name": "Blitzball Shot",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY",
+    "printing_code": "FIN",
+    "collector_number": "176",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blitzball%20Shot",
+    "checked_at": "2026-08-09T22:08:49.500Z"
   },
   "c99e4768-192c-49bf-8f51-c204a2248326": {
     "status": "available",

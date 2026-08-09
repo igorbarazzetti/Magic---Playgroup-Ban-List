@@ -58,5 +58,17 @@
     "collector_number": "197",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battlewand%20Oak",
     "checked_at": "2026-08-08T22:56:10.258Z"
+  },
+  "98f9619e-585f-486f-b143-fb42085eb583": {
+    "status": "available",
+    "name": "Blood-Toll Harpy",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros",
+    "printing_code": "THS",
+    "collector_number": "79",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood-Toll%20Harpy",
+    "checked_at": "2026-08-09T22:20:38.025Z"
   }
 }

@@ -119,6 +119,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Argent%20Dais",
     "checked_at": "2026-08-07T19:23:23.911Z"
   },
+  "326adf88-3f6d-4bc2-aafa-dd55c6c95784": {
+    "status": "available",
+    "name": "Blood Baron of Vizkopa",
+    "price_brl": 0.45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Labirinto do Dragão",
+    "printing_code": "DGM",
+    "collector_number": "57",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Baron%20of%20Vizkopa",
+    "checked_at": "2026-08-09T22:12:07.958Z"
+  },
   "326ba371-124c-4949-a048-3a0c8962e567": {
     "status": "available",
     "name": "Barren Moor",
@@ -130,6 +142,18 @@
     "collector_number": "312",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barren%20Moor",
     "checked_at": "2026-08-08T19:14:32.415Z"
+  },
+  "32845ed6-2328-462e-be3a-579589748588": {
+    "status": "available",
+    "name": "Blood Hypnotist",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Voto Carmesim (Variantes)",
+    "printing_code": "VVOW",
+    "collector_number": "302",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Hypnotist",
+    "checked_at": "2026-08-09T22:16:11.033Z"
   },
   "32b401e9-163f-4917-a728-fc63b25ef602": {
     "status": "available",

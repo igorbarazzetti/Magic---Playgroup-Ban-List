@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auriok%20Champion",
     "checked_at": "2026-08-08T07:32:13.372Z"
   },
+  "6344c96a-efa5-4125-8219-d333228391cf": {
+    "status": "available",
+    "name": "Blazing Crescendo",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes",
+    "printing_code": "MSH",
+    "collector_number": "125",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blazing%20Crescendo",
+    "checked_at": "2026-08-09T21:48:14.247Z"
+  },
   "635fe908-6f58-4c9e-ac55-0775a7c6f278": {
     "status": "available",
     "name": "Angel of Vitality",

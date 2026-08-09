@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Affectionate%20Indrik",
     "checked_at": "2026-08-06T11:06:33.963Z"
   },
+  "88ce2017-83a6-4b55-afba-371875bf2172": {
+    "status": "available",
+    "name": "Blinding Spray",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Khans de Tarkir",
+    "printing_code": "KTK",
+    "collector_number": "32",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blinding%20Spray",
+    "checked_at": "2026-08-09T22:04:39.824Z"
+  },
   "88e936c3-cab9-430f-baa1-930ff557cbf6": {
     "status": "available",
     "name": "Emissary's Ploy",

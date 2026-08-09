@@ -35,6 +35,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aloe%20Alchemist",
     "checked_at": "2026-08-07T00:39:24.813Z"
   },
+  "977c2f33-b622-4172-9efb-7f523becd32b": {
+    "status": "available",
+    "name": "Blazemire Verge",
+    "price_brl": 34.95,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Noctumbra: A Casa dos Horrores (Borderless)",
+    "printing_code": "BLDSK",
+    "collector_number": "329",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blazemire%20Verge",
+    "checked_at": "2026-08-09T21:47:20.283Z"
+  },
+  "97913c3c-eec0-4510-921a-d70c022f7961": {
+    "status": "available",
+    "name": "Blind with Anger",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Campeões de Kamigawa",
+    "printing_code": "CHK",
+    "collector_number": "158",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blind%20with%20Anger",
+    "checked_at": "2026-08-09T22:02:27.776Z"
+  },
   "97acd977-164d-49d5-b3a1-72e0d75c9016": {
     "status": "available",
     "name": "Hogaak, Arisen Necropolis",

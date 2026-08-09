@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcum's%20Sleigh",
     "checked_at": "2026-08-07T17:24:54.553Z"
   },
+  "4098ab29-bf90-4ec9-b547-05d304fc7798": {
+    "status": "available",
+    "name": "Blight-Breath Catoblepas",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros Além da Morte",
+    "printing_code": "THB",
+    "collector_number": "86",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blight-Breath%20Catoblepas",
+    "checked_at": "2026-08-09T21:55:25.562Z"
+  },
   "40ae17be-9998-4ee4-9d95-82a08895405f": {
     "status": "available",
     "name": "An-Havva Township",
@@ -130,6 +142,18 @@
     "collector_number": "44",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Audacious%20Swap",
     "checked_at": "2026-08-08T07:24:43.115Z"
+  },
+  "40d45c02-6416-4e19-8fe3-0ddadf5ba627": {
+    "status": "available",
+    "name": "Blinkmoth Nexus",
+    "price_brl": 3.98,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Masters",
+    "printing_code": "MMA",
+    "collector_number": "220",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blinkmoth%20Nexus",
+    "checked_at": "2026-08-09T22:05:44.488Z"
   },
   "40d6e1ff-995b-42fc-8146-8d5e5f1adcd9": {
     "status": "available",

@@ -1,4 +1,16 @@
 {
+  "a2057118-9fd1-431d-9441-fef198d67ff2": {
+    "status": "available",
+    "name": "Bloodbond Vampire",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Batalha por Zendikar",
+    "printing_code": "BFZ",
+    "collector_number": "104",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodbond%20Vampire",
+    "checked_at": "2026-08-09T22:21:45.645Z"
+  },
   "a20bb8b3-b724-4fec-b179-ca9e6adc4718": {
     "status": "available",
     "name": "Baton of Courage",
@@ -95,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alora%2C%20Merry%20Thief",
     "checked_at": "2026-08-07T00:39:45.455Z"
   },
+  "a26f6958-9bc8-46f8-8ca7-7f55098e1291": {
+    "status": "available",
+    "name": "Blinking Spirit",
+    "price_brl": 0.71,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quinta Edição",
+    "printing_code": "5E",
+    "collector_number": "40",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blinking%20Spirit",
+    "checked_at": "2026-08-09T22:05:23.966Z"
+  },
   "a28fc506-a98c-4b4d-a0f4-7d971489ccbb": {
     "status": "available",
     "name": "Arc-Slogger",
@@ -106,6 +130,30 @@
     "collector_number": "85",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arc-Slogger",
     "checked_at": "2026-08-07T13:49:33.774Z"
+  },
+  "a294968e-9a7f-4d66-bde0-e775ae5f8197": {
+    "status": "available",
+    "name": "Blighted Blackthorn",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed",
+    "printing_code": "ECL",
+    "collector_number": "90",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blighted%20Blackthorn",
+    "checked_at": "2026-08-09T21:58:13.576Z"
+  },
+  "a298b2aa-02e3-422a-8804-861fd6bb1068": {
+    "status": "available",
+    "name": "Blazing Blade Askari",
+    "price_brl": 0.02,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Espiral Temporal",
+    "printing_code": "TS",
+    "collector_number": "146",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blazing%20Blade%20Askari",
+    "checked_at": "2026-08-09T21:47:51.563Z"
   },
   "a2c5ee76-6084-413c-bb70-45490d818374": {
     "status": "available",

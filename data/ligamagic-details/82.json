@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battle%20for%20Bretagard",
     "checked_at": "2026-08-08T21:04:56.821Z"
   },
+  "82a70e4c-01ed-4280-80e4-86cb2bf6e63d": {
+    "status": "available",
+    "name": "Blazing Archon",
+    "price_brl": 1.38,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2016",
+    "printing_code": "C16",
+    "collector_number": "58",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blazing%20Archon",
+    "checked_at": "2026-08-09T21:47:40.936Z"
+  },
   "82b9ad93-df75-4417-9746-798db8fe6ba0": {
     "status": "available",
     "name": "Anarchist",

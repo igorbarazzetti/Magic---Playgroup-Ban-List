@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arms%20Dealer",
     "checked_at": "2026-08-07T19:37:04.063Z"
   },
+  "8ec6b0f1-8928-457c-adf0-c74a28edc86f": {
+    "status": "available",
+    "name": "Blister Beetle",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fragmentos de Alara",
+    "printing_code": "ALA",
+    "collector_number": "66",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blister%20Beetle",
+    "checked_at": "2026-08-09T22:06:16.307Z"
+  },
   "8eca999e-f7f8-4354-b419-2df4249c4361": {
     "status": "available",
     "name": "Amulet of Kroog",

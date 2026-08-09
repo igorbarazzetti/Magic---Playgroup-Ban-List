@@ -1,4 +1,16 @@
 {
+  "7a2484a9-04fd-41a0-8224-610c1c07ed10": {
+    "status": "available",
+    "name": "Blasphemous Act",
+    "price_brl": 9.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Teenage Mutant Ninja Turtles Commander",
+    "printing_code": "TMC",
+    "collector_number": "47",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blasphemous%20Act",
+    "checked_at": "2026-08-09T21:44:21.243Z"
+  },
   "7a43bd27-fdd8-41f0-9bc4-92568f3408f1": {
     "status": "available",
     "name": "Mox Amber",
@@ -82,5 +94,29 @@
     "collector_number": "158",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armory%20of%20Iroas",
     "checked_at": "2026-08-07T19:36:34.162Z"
+  },
+  "7aef2a40-ae18-46d6-9873-0e5056345b81": {
+    "status": "available",
+    "name": "Bloodbriar",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Double Masters",
+    "printing_code": "2XM",
+    "collector_number": "154",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodbriar",
+    "checked_at": "2026-08-09T22:22:39.528Z"
+  },
+  "7af3876e-5297-46e6-936e-6c8344f4b6ac": {
+    "status": "available",
+    "name": "Biolume Egg // Biolume Serpent",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad Remastered",
+    "printing_code": "INR",
+    "collector_number": "54",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Biolume%20Egg",
+    "checked_at": "2026-08-09T21:38:24.583Z"
   }
 }

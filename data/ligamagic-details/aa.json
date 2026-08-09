@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akki%20Drillmaster",
     "checked_at": "2026-08-06T14:55:12.787Z"
   },
+  "aa2da79c-b36c-4120-8d7d-f5571e87e45e": {
+    "status": "available",
+    "name": "Blood Tribute",
+    "price_brl": 4.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Zendikar",
+    "printing_code": "ZEN",
+    "collector_number": "81",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Tribute",
+    "checked_at": "2026-08-09T22:20:48.500Z"
+  },
   "aa77980d-0434-40f0-990f-1c8c50610174": {
     "status": "available",
     "name": "Rain of Filth",
@@ -46,6 +58,18 @@
     "collector_number": "75",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amy%20Pond",
     "checked_at": "2026-08-07T04:43:01.440Z"
+  },
+  "aa929252-5dcc-4c9b-9e7c-61d0bef98d6d": {
+    "status": "available",
+    "name": "Blood Spatter Analysis",
+    "price_brl": 0.12,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassinato na Mansão Karlov",
+    "printing_code": "MKM",
+    "collector_number": "189",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Spatter%20Analysis",
+    "checked_at": "2026-08-09T22:19:53.074Z"
   },
   "aa95501f-bb59-494a-bcae-b74ca10ad57e": {
     "status": "available",

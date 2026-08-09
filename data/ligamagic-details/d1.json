@@ -191,6 +191,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Astrolabe",
     "checked_at": "2026-08-08T02:52:42.584Z"
   },
+  "d1a26310-8c14-424b-8a7f-36793769c2a7": {
+    "status": "available",
+    "name": "Bloated Processor",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marcha das Máquinas",
+    "printing_code": "MOM",
+    "collector_number": "93",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloated%20Processor",
+    "checked_at": "2026-08-09T22:10:29.040Z"
+  },
   "d1a6aa5f-2ad6-4bc7-82f0-4262f66af730": {
     "status": "available",
     "name": "Apprentice Necromancer",

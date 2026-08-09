@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Argivian%20Cavalier",
     "checked_at": "2026-08-07T19:24:33.560Z"
   },
+  "c4614b6c-5e77-465f-996f-504121ea8eff": {
+    "status": "available",
+    "name": "Bladed Battle-Fan",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marcha das Máquinas",
+    "printing_code": "MOM",
+    "collector_number": "91",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bladed%20Battle-Fan",
+    "checked_at": "2026-08-09T21:40:38.933Z"
+  },
   "c469133e-174d-476b-b135-bbf15e415e72": {
     "status": "available",
     "name": "Aggressive Negotiations",
@@ -58,6 +70,18 @@
     "collector_number": "104",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avarice%20Totem",
     "checked_at": "2026-08-08T09:11:10.204Z"
+  },
+  "c4a03986-4db6-4114-9a58-5a8a3a7a2461": {
+    "status": "available",
+    "name": "Blessing of Belzenlok",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominaria",
+    "printing_code": "DOM",
+    "collector_number": "77",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blessing%20of%20Belzenlok",
+    "checked_at": "2026-08-09T21:54:07.944Z"
   },
   "c4d2fdf9-637d-4e97-ae33-45f2d27bf8cd": {
     "status": "available",
@@ -94,5 +118,17 @@
     "collector_number": "31",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acornelia%2C%20Fashionable%20Filcher",
     "checked_at": "2026-08-06T03:55:41.981Z"
+  },
+  "c4fe854e-8783-492e-bb2e-9f242ada8a5b": {
+    "status": "available",
+    "name": "Blight Mound",
+    "price_brl": 8.74,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven Commander",
+    "printing_code": "SOC",
+    "collector_number": "208",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blight%20Mound",
+    "checked_at": "2026-08-09T21:56:22.460Z"
   }
 }

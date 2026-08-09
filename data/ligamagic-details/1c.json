@@ -1,4 +1,16 @@
 {
+  "1c0fc9b4-177e-4529-827f-a1e17ff7a752": {
+    "status": "available",
+    "name": "Blight Pile",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominária Unida",
+    "printing_code": "DMU",
+    "collector_number": "82",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blight%20Pile",
+    "checked_at": "2026-08-09T21:56:33.413Z"
+  },
   "1c2ce0d0-8c3e-48e8-b1fd-54658bdb9af9": {
     "status": "available",
     "name": "Asphyxiate",

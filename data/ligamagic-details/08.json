@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerial%20Toastmaster",
     "checked_at": "2026-08-06T07:18:25.027Z"
   },
+  "08497e8f-3521-48e4-a1e7-c192b485d891": {
+    "status": "available",
+    "name": "Blinkmoth Urn",
+    "price_brl": 2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mirrodin",
+    "printing_code": "MI",
+    "collector_number": "145",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blinkmoth%20Urn",
+    "checked_at": "2026-08-09T22:05:54.773Z"
+  },
   "085bc7be-bd44-40af-8e8f-a1a8006fe22c": {
     "status": "available",
     "name": "Assert Authority",
@@ -23,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assert%20Authority",
     "checked_at": "2026-08-08T02:49:32.289Z"
   },
+  "08638828-ce88-44d4-a6b2-1effb68ccbdf": {
+    "status": "available",
+    "name": "Blast from the Past",
+    "price_brl": 0.72,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unsanctioned",
+    "printing_code": "UND",
+    "collector_number": "48",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blast%20from%20the%20Past",
+    "checked_at": "2026-08-09T21:44:43.265Z"
+  },
   "087018b6-6355-4534-9a35-9336b4b7fccc": {
     "status": "available",
     "name": "Assure // Assemble",
@@ -34,6 +58,18 @@
     "collector_number": "221",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assure%20%2F%2F%20Assemble",
     "checked_at": "2026-08-08T02:50:22.432Z"
+  },
+  "088acd15-029b-4091-960a-d5060a364ca9": {
+    "status": "available",
+    "name": "Blazing Bomb",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY",
+    "printing_code": "FIN",
+    "collector_number": "130",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blazing%20Bomb",
+    "checked_at": "2026-08-09T21:48:02.748Z"
   },
   "0897adea-2759-40e8-a05a-c722473e1cf3": {
     "status": "available",

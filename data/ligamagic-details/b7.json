@@ -1,4 +1,16 @@
 {
+  "b704f231-f64c-49fc-84f6-0fc53081bcd0": {
+    "status": "available",
+    "name": "Blood-Chin Fanatic",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dragões de Tarkir",
+    "printing_code": "DTK",
+    "collector_number": "88",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood-Chin%20Fanatic",
+    "checked_at": "2026-08-09T22:12:51.120Z"
+  },
   "b718639d-cfba-4430-b5e3-1e644edd36d7": {
     "status": "available",
     "name": "Auriok Edgewright",
@@ -46,6 +58,18 @@
     "collector_number": "34",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auramancer's%20Guise",
     "checked_at": "2026-08-08T07:30:33.331Z"
+  },
+  "b7894010-fdba-498e-97de-22bd70332439": {
+    "status": "available",
+    "name": "Blade of the Sixth Pride",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Visão do Futuro",
+    "printing_code": "FUT",
+    "collector_number": "19",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blade%20of%20the%20Sixth%20Pride",
+    "checked_at": "2026-08-09T21:38:58.208Z"
   },
   "b79c4066-66a9-4a53-8716-23f7a340a85f": {
     "status": "available",

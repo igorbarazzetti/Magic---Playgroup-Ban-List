@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel's%20Mercy",
     "checked_at": "2026-08-07T07:57:46.454Z"
   },
+  "6b315dc3-c330-4b30-b6ad-4da12ccf6ca3": {
+    "status": "available",
+    "name": "Blinding Light",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Miragem",
+    "printing_code": "MR",
+    "collector_number": "29",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blinding%20Light",
+    "checked_at": "2026-08-09T22:03:55.949Z"
+  },
   "6b336228-92c0-4f14-a479-1f97aaeae018": {
     "status": "available",
     "name": "Belisarius Cawl",

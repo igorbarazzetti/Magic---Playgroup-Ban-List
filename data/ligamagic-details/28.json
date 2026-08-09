@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archmage%20of%20Runes",
     "checked_at": "2026-08-07T17:19:24.397Z"
   },
+  "282003f4-862a-4f80-8f45-e470fc0fe2fe": {
+    "status": "available",
+    "name": "Blightwidow",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mirrodin Sitiada",
+    "printing_code": "MBS",
+    "collector_number": "77",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blightwidow",
+    "checked_at": "2026-08-09T22:00:37.047Z"
+  },
   "282b4dbf-ec00-48ba-8010-73bee489fa7a": {
     "status": "available",
     "name": "Banshee of the Dread Choir",

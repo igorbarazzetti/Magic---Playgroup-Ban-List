@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archon%20of%20Sun's%20Grace",
     "checked_at": "2026-08-07T17:21:14.427Z"
   },
+  "48b67778-6616-4563-8456-62f302649768": {
+    "status": "available",
+    "name": "Blessed Alliance",
+    "price_brl": 0.14,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lua Arcana",
+    "printing_code": "EMN",
+    "collector_number": "13",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blessed%20Alliance",
+    "checked_at": "2026-08-09T21:51:31.453Z"
+  },
   "48bda7dd-d023-41e8-8c28-e0cfda0d07ca": {
     "status": "available",
     "name": "Aven Cloudchaser",

@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Suffering",
     "checked_at": "2026-08-07T07:56:16.394Z"
   },
+  "923b725a-e189-4b61-b01a-c5056f1328ba": {
+    "status": "available",
+    "name": "Blessing of Leeches",
+    "price_brl": 1.59,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Traidores de Kamigawa",
+    "printing_code": "BOK",
+    "collector_number": "62",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blessing%20of%20Leeches",
+    "checked_at": "2026-08-09T21:54:28.071Z"
+  },
   "923d44a9-774d-459c-9cec-1d5b081b51f0": {
     "status": "available",
     "name": "Biomancer's Familiar",
@@ -190,5 +202,17 @@
     "collector_number": "12",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=A%20Good%20Day%20to%20Pie",
     "checked_at": "2026-08-06T00:01:17.198Z"
+  },
+  "92e2f982-f8b9-4c3b-ab50-14c025370e5c": {
+    "status": "available",
+    "name": "Blaze Commando",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Labirinto do Dragão",
+    "printing_code": "DGM",
+    "collector_number": "56",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blaze%20Commando",
+    "checked_at": "2026-08-09T21:47:08.806Z"
   }
 }

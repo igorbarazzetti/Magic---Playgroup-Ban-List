@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20the%20Dawn",
     "checked_at": "2026-08-07T07:56:26.356Z"
   },
+  "f640a102-7ee8-4605-9e15-09938fb229b2": {
+    "status": "available",
+    "name": "Bladetusk Boar",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Viagem para Nyx",
+    "printing_code": "JOU",
+    "collector_number": "90",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bladetusk%20Boar",
+    "checked_at": "2026-08-09T21:42:28.807Z"
+  },
   "f652c593-e8fa-42ff-a8b4-206556b273de": {
     "status": "available",
     "name": "Attuned Hunter",

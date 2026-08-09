@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Timetwister",
     "checked_at": "2026-08-05T20:13:59.801Z"
   },
+  "c82665b7-d011-4bdc-b4a2-eca5861b16d2": {
+    "status": "available",
+    "name": "Blood Tithe",
+    "price_brl": 0.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2011",
+    "printing_code": "M11",
+    "collector_number": "84",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Tithe",
+    "checked_at": "2026-08-09T22:20:26.125Z"
+  },
   "c8625113-0ce4-4454-83a1-25c31b8bfb9a": {
     "status": "available",
     "name": "Disciple of the Vault",
@@ -94,6 +106,18 @@
     "collector_number": "83",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Autumn%20Willow",
     "checked_at": "2026-08-08T09:08:10.105Z"
+  },
+  "c8cdc08a-975b-475f-8e30-85d61f6f3a9b": {
+    "status": "available",
+    "name": "Bladed Pinions",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Cicatrizes de Mirrodin",
+    "printing_code": "SOM",
+    "collector_number": "140",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bladed%20Pinions",
+    "checked_at": "2026-08-09T21:41:00.119Z"
   },
   "c8deef08-fcf2-41e1-8aeb-aa4e0af147ca": {
     "status": "available",

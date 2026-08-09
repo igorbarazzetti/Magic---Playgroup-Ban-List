@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bespoke%20B%C5%8D",
     "checked_at": "2026-08-09T15:07:55.597Z"
   },
+  "67a48e3f-2388-42a9-a8b1-97c08761f807": {
+    "status": "available",
+    "name": "Blood Beckoning",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Renascer de Zendikar",
+    "printing_code": "ZNR",
+    "collector_number": "92",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Beckoning",
+    "checked_at": "2026-08-09T22:12:19.131Z"
+  },
   "67b4a4bc-0b02-4cef-b5c8-41c839eaf0cd": {
     "status": "available",
     "name": "Ascending Aven",
@@ -118,5 +130,17 @@
     "collector_number": "78",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashiok%2C%20Wicked%20Manipulator",
     "checked_at": "2026-08-08T02:39:51.640Z"
+  },
+  "67fba605-9cfa-499c-83e0-4fbd023bcfa0": {
+    "status": "available",
+    "name": "Blood Knight",
+    "price_brl": 0.34,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Caos Planar",
+    "printing_code": "PC",
+    "collector_number": "115",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Knight",
+    "checked_at": "2026-08-09T22:16:23.051Z"
   }
 }

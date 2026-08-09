@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beastbreaker%20of%20Bala%20Ged",
     "checked_at": "2026-08-08T23:05:21.308Z"
   },
+  "8c888122-9d05-4641-931c-83f771ba9d09": {
+    "status": "available",
+    "name": "Blessed Respite",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 2",
+    "printing_code": "MH2",
+    "collector_number": "150",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blessed%20Respite",
+    "checked_at": "2026-08-09T21:52:48.517Z"
+  },
   "8c912b1f-4584-4945-9931-f6850e5ebfa4": {
     "status": "available",
     "name": "Assemble the Rank and Vile",

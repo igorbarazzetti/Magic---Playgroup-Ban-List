@@ -35,6 +35,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambush%20Krotiq",
     "checked_at": "2026-08-07T04:38:01.161Z"
   },
+  "e580a229-e800-4746-9d37-c32fcef8de28": {
+    "status": "available",
+    "name": "Blightstep Pathway // Searstep Pathway",
+    "price_brl": 25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaldheim",
+    "printing_code": "KHM",
+    "collector_number": "252",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blightstep%20Pathway",
+    "checked_at": "2026-08-09T22:00:25.620Z"
+  },
+  "e5b35b54-77d9-4cb0-86a1-efc8e49aea09": {
+    "status": "available",
+    "name": "Blaster Mage",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Máscaras de Mercádia",
+    "printing_code": "MM",
+    "collector_number": "175",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blaster%20Mage",
+    "checked_at": "2026-08-09T21:46:02.115Z"
+  },
   "e5b7d0c5-f478-43ef-98fd-7792122ab8f5": {
     "status": "available",
     "name": "Ben-Ben, Akki Hermit",

@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Worldknit",
     "checked_at": "2026-08-05T20:15:33.006Z"
   },
+  "655847c6-7c5e-4659-870e-825d0cf5e90c": {
+    "status": "available",
+    "name": "Blade-Tribe Berserkers",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Cicatrizes de Mirrodin",
+    "printing_code": "SOM",
+    "collector_number": "84",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blade-Tribe%20Berserkers",
+    "checked_at": "2026-08-09T21:39:42.167Z"
+  },
   "657a4500-4b47-4c78-945b-a7791af7d10e": {
     "status": "available",
     "name": "Adelbert Steiner",

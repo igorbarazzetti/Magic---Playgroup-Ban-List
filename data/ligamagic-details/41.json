@@ -1,4 +1,16 @@
 {
+  "41087db6-34c4-4e2b-9f54-5e4488ca9c0b": {
+    "status": "available",
+    "name": "Blood Seeker",
+    "price_brl": 0.28,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2012",
+    "printing_code": "M12",
+    "collector_number": "81",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Seeker",
+    "checked_at": "2026-08-09T22:19:31.495Z"
+  },
   "410b7faf-365c-4b73-a64d-bddbe49cfded": {
     "status": "available",
     "name": "Alloy Golem",

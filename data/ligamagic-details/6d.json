@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avacyn%2C%20Guardian%20Angel",
     "checked_at": "2026-08-08T09:08:50.095Z"
   },
+  "6db51087-6995-4ed4-978a-3d17d60019af": {
+    "status": "available",
+    "name": "Blood Aspirant",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros Além da Morte",
+    "printing_code": "THB",
+    "collector_number": "128",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Aspirant",
+    "checked_at": "2026-08-09T22:11:45.012Z"
+  },
   "6dccf583-1045-4058-86cc-ebbcc8de080e": {
     "status": "available",
     "name": "Artificer Class",

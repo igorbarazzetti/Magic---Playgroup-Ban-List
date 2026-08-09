@@ -1,4 +1,16 @@
 {
+  "bb02e64c-0c4a-41ae-972e-ce83e6fc4cb9": {
+    "status": "available",
+    "name": "Blood Hustler",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Os Fora da Lei de Encruzilhada do Trovão",
+    "printing_code": "OTJ",
+    "collector_number": "80",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Hustler",
+    "checked_at": "2026-08-09T22:16:00.298Z"
+  },
   "bb813ffa-2615-4177-a7fb-6e0dfb819fc2": {
     "status": "available",
     "name": "Aven Wind Guide",

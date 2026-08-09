@@ -179,6 +179,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armageddon%20Clock",
     "checked_at": "2026-08-07T19:29:33.795Z"
   },
+  "70e0b676-61a2-4dcf-8f61-d9281467ed43": {
+    "status": "available",
+    "name": "Blessed Reversal",
+    "price_brl": 0.35,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Oitava Edição - Kit Básico",
+    "printing_code": "8E",
+    "collector_number": "7",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blessed%20Reversal",
+    "checked_at": "2026-08-09T21:53:00.239Z"
+  },
   "70e10cb9-ae27-4dba-9a0d-34a78f924774": {
     "status": "available",
     "name": "Aziza, Mage Tower Captain",

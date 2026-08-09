@@ -58,5 +58,17 @@
     "collector_number": "125",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blacksmith's%20Talent",
     "checked_at": "2026-08-09T19:20:44.820Z"
+  },
+  "9fff90b6-98ef-4f78-b08d-7e46dfc03403": {
+    "status": "available",
+    "name": "Bladegriff Prototype",
+    "price_brl": 0.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends",
+    "printing_code": "CMR",
+    "collector_number": "300",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bladegriff%20Prototype",
+    "checked_at": "2026-08-09T21:41:30.648Z"
   }
 }

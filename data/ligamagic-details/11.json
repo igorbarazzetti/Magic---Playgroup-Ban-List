@@ -1,4 +1,16 @@
 {
+  "110e5695-a9df-4201-9230-99f6abe9978f": {
+    "status": "available",
+    "name": "Blade Sliver",
+    "price_brl": 1.53,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Legiões",
+    "printing_code": "LE",
+    "collector_number": "88",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blade%20Sliver",
+    "checked_at": "2026-08-09T21:39:20.393Z"
+  },
   "1134eea5-e931-4cb2-9e30-64c227386d43": {
     "status": "available",
     "name": "Bane Alley Blackguard",
@@ -106,6 +118,18 @@
     "collector_number": "184",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agrus%20Kos%2C%20Spirit%20of%20Justice",
     "checked_at": "2026-08-06T14:43:01.753Z"
+  },
+  "11e50e35-bf4b-4089-b0c9-360d9c014584": {
+    "status": "available",
+    "name": "Blockbuster",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ravnica: A Cidade das Guildas",
+    "printing_code": "RAV",
+    "collector_number": "115",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blockbuster",
+    "checked_at": "2026-08-09T22:11:12.591Z"
   },
   "11f55ec5-b9a3-4670-8afb-31d29478fb59": {
     "status": "available",

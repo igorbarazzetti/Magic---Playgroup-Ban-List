@@ -1,4 +1,16 @@
 {
+  "9a10668a-df42-40c2-88d1-ad3b2aba5b03": {
+    "status": "available",
+    "name": "Blitzwing, Cruel Tormentor // Blitzwing, Adaptive Assailant",
+    "price_brl": 4.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Transformers",
+    "printing_code": "BOT",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blitzwing%2C%20Cruel%20Tormentor",
+    "checked_at": "2026-08-09T22:09:11.691Z"
+  },
   "9a1412db-45ad-46ea-8f12-a85d203113d8": {
     "status": "available",
     "name": "Demonic Consultation",
@@ -70,6 +82,18 @@
     "collector_number": "140",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alchemist's%20Greeting",
     "checked_at": "2026-08-06T18:14:47.678Z"
+  },
+  "9abeb38c-2243-424c-bfbc-87aa45b6ea4f": {
+    "status": "available",
+    "name": "Blindblast",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra da Centelha",
+    "printing_code": "WAR",
+    "collector_number": "114",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blindblast",
+    "checked_at": "2026-08-09T22:02:50.103Z"
   },
   "9abecd23-a2d9-43c7-8d01-f8afdc53026e": {
     "status": "available",

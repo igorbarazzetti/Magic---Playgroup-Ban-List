@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adarkar%20Sentinel",
     "checked_at": "2026-08-06T04:00:32.190Z"
   },
+  "bd5310df-2e6c-4584-9a5a-03d6d06b3c20": {
+    "status": "available",
+    "name": "Blood Reckoning",
+    "price_brl": 0.12,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2013",
+    "printing_code": "M13",
+    "collector_number": "81",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Reckoning",
+    "checked_at": "2026-08-09T22:18:46.995Z"
+  },
   "bd56225e-8c80-4328-9ca0-0fff4969573d": {
     "status": "available",
     "name": "Battlemage's Bracers",

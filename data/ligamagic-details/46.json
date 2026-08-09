@@ -1,4 +1,16 @@
 {
+  "464372ef-0b16-4b8d-ba6f-fbf5c905c479": {
+    "status": "available",
+    "name": "Behold the Unspeakable // Vision of the Unspeakable",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kamigawa: Dinastia Neon",
+    "printing_code": "NEO",
+    "collector_number": "48",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Behold%20the%20Unspeakable",
+    "checked_at": "2026-08-09T21:37:28.355Z"
+  },
   "464968a8-865e-4ac8-927e-7c931e3dabb3": {
     "status": "available",
     "name": "Black Market Tycoon",
@@ -130,6 +142,18 @@
     "collector_number": "86",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aberrant",
     "checked_at": "2026-08-06T00:07:56.985Z"
+  },
+  "46c77100-ab2e-43eb-b1cb-c22ed114213e": {
+    "status": "available",
+    "name": "Blazing Sunsteel",
+    "price_brl": 3.42,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends",
+    "printing_code": "CMR",
+    "collector_number": "364",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blazing%20Sunsteel",
+    "checked_at": "2026-08-09T21:49:40.916Z"
   },
   "46db3dc2-9eb1-4be3-96f9-0013119fcd97": {
     "status": "available",

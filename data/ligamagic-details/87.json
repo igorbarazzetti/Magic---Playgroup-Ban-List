@@ -35,6 +35,42 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bastion%20Enforcer",
     "checked_at": "2026-08-08T20:59:57.406Z"
   },
+  "877c34ca-6eff-42ce-b4d7-8a2071d0290a": {
+    "status": "available",
+    "name": "Blood Oath",
+    "price_brl": 6.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "World Championship Decks",
+    "printing_code": "WCD",
+    "collector_number": "20041011",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Oath",
+    "checked_at": "2026-08-09T22:17:04.976Z"
+  },
+  "8783533d-dd98-4b80-b348-29051e1b5c28": {
+    "status": "available",
+    "name": "Blistering Barrier",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Miragem",
+    "printing_code": "MR",
+    "collector_number": "30",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blistering%20Barrier",
+    "checked_at": "2026-08-09T22:06:49.114Z"
+  },
+  "8788f555-8c18-4842-9716-385afae2b9a4": {
+    "status": "available",
+    "name": "Blinkmoth Infusion",
+    "price_brl": 8.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Quinta Aurora",
+    "printing_code": "5DN",
+    "collector_number": "25",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blinkmoth%20Infusion",
+    "checked_at": "2026-08-09T22:05:33.863Z"
+  },
   "8789d5fa-101c-457a-90ec-5cf067f5289b": {
     "status": "available",
     "name": "Aesthetic Consultation",

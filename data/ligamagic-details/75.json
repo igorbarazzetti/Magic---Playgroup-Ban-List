@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Cranial%20Plating",
     "checked_at": "2026-08-05T20:04:34.402Z"
   },
+  "75719f87-ce1a-40d6-ac5a-5ebf0c936c84": {
+    "status": "available",
+    "name": "Blitzball",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY",
+    "printing_code": "FIN",
+    "collector_number": "254",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blitzball",
+    "checked_at": "2026-08-09T22:08:38.685Z"
+  },
   "75c81ce4-ca1d-464a-bb39-e568f8ebf71f": {
     "status": "available",
     "name": "Arashin War Beast",
@@ -106,6 +118,30 @@
     "collector_number": "87",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Army%20of%20the%20Damned",
     "checked_at": "2026-08-07T21:03:38.668Z"
+  },
+  "75e13f7f-aded-405c-97ce-124fa0cb1929": {
+    "status": "available",
+    "name": "Blinding Powder",
+    "price_brl": 0.24,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Traidores de Kamigawa",
+    "printing_code": "BOK",
+    "collector_number": "153",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blinding%20Powder",
+    "checked_at": "2026-08-09T22:04:16.918Z"
+  },
+  "75f5d372-4ff9-430c-8302-72472439e0d2": {
+    "status": "available",
+    "name": "Blood Money",
+    "price_brl": 11.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "As Cavernas Perdidas de Ixalan Commander",
+    "printing_code": "LCC",
+    "collector_number": "183",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Money",
+    "checked_at": "2026-08-09T22:16:54.900Z"
   },
   "75ffebc4-8db9-4de6-a330-e3f41cdccecc": {
     "status": "available",

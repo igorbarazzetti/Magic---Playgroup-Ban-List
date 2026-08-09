@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benthic%20Anomaly",
     "checked_at": "2026-08-09T15:02:55.996Z"
   },
+  "c13079d5-6749-43e5-a8ee-ef3af31ff679": {
+    "status": "available",
+    "name": "Blast-Furnace Hellkite",
+    "price_brl": 48.58,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra dos Irmãos Commander",
+    "printing_code": "BRC",
+    "collector_number": "12",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blast-Furnace%20Hellkite",
+    "checked_at": "2026-08-09T21:44:54.868Z"
+  },
   "c152f829-0452-407b-8020-023bf3d75c74": {
     "status": "available",
     "name": "Aven Warcraft",
@@ -155,6 +167,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashnod's%20Intervention",
     "checked_at": "2026-08-08T02:42:11.776Z"
   },
+  "c1bdd361-c7f2-4aa2-8d07-b582775551ff": {
+    "status": "available",
+    "name": "Blech, Loafing Pest",
+    "price_brl": 1.61,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven",
+    "printing_code": "SOS",
+    "collector_number": "176",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blech%2C%20Loafing%20Pest",
+    "checked_at": "2026-08-09T21:50:36.654Z"
+  },
   "c1cb870a-8c1f-435c-b678-e456c4d2d627": {
     "status": "available",
     "name": "Banewasp Affliction",
@@ -166,5 +190,17 @@
     "collector_number": "65",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Banewasp%20Affliction",
     "checked_at": "2026-08-08T17:05:37.230Z"
+  },
+  "c1cf9d74-e700-456a-9e5a-1c4df22db268": {
+    "status": "available",
+    "name": "Blood Divination",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2019",
+    "printing_code": "M19",
+    "collector_number": "86",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Divination",
+    "checked_at": "2026-08-09T22:14:10.211Z"
   }
 }

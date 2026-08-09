@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azra%20Smokeshaper",
     "checked_at": "2026-08-08T13:32:07.283Z"
   },
+  "6f76fec2-6fd0-4d33-b39a-f1684922d478": {
+    "status": "available",
+    "name": "Blisterstick Shaman",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mirrodin Sitiada",
+    "printing_code": "MBS",
+    "collector_number": "58",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blisterstick%20Shaman",
+    "checked_at": "2026-08-09T22:07:44.405Z"
+  },
   "6f78c1e2-e38f-431b-8864-8aad982e9912": {
     "status": "available",
     "name": "Anti-Magic Aura",

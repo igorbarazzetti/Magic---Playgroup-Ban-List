@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Favor",
     "checked_at": "2026-08-07T08:01:16.671Z"
   },
+  "37165859-87bc-4d44-95a2-39051ab20a14": {
+    "status": "available",
+    "name": "Blind-Spot Giant",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Masters",
+    "printing_code": "MMA",
+    "collector_number": "105",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blind-Spot%20Giant",
+    "checked_at": "2026-08-09T22:02:16.579Z"
+  },
   "372351fd-58f7-4cb8-8644-5fbc94ccb145": {
     "status": "available",
     "name": "Prophet of Kruphix",
@@ -166,6 +178,18 @@
     "collector_number": "44",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Fleetwing",
     "checked_at": "2026-08-08T09:16:00.368Z"
+  },
+  "37c1de8d-30d6-4b08-9368-279cf66d3e85": {
+    "status": "available",
+    "name": "Bloodborn Scoundrels",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Battlebond",
+    "printing_code": "BBD",
+    "collector_number": "45",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodborn%20Scoundrels",
+    "checked_at": "2026-08-09T22:21:55.877Z"
   },
   "37c49483-bef6-47c6-9354-ead8560d48da": {
     "status": "available",

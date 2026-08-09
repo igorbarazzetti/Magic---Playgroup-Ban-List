@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bill%20the%20Pony",
     "checked_at": "2026-08-09T17:07:37.573Z"
   },
+  "e469bb22-57f1-4555-b3c0-9ea108e6cc12": {
+    "status": "available",
+    "name": "Bladecoil Serpent",
+    "price_brl": 0.85,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra dos Irmãos",
+    "printing_code": "BRO",
+    "collector_number": "229",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bladecoil%20Serpent",
+    "checked_at": "2026-08-09T21:40:15.298Z"
+  },
   "e46b2ac6-97d6-48f2-aba3-cd92f8e092c6": {
     "status": "available",
     "name": "Aang, Air Nomad",
@@ -58,6 +70,18 @@
     "collector_number": "210",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aang%2C%20Air%20Nomad",
     "checked_at": "2026-08-06T00:03:06.706Z"
+  },
+  "e48ea9ea-64bc-4f1c-a424-592d48569244": {
+    "status": "available",
+    "name": "Blighted Agent",
+    "price_brl": 3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nova Phyrexia",
+    "printing_code": "NPH",
+    "collector_number": "29",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blighted%20Agent",
+    "checked_at": "2026-08-09T21:57:50.658Z"
   },
   "e4a85647-0b8c-40b2-a5d5-43c78877ce36": {
     "status": "available",

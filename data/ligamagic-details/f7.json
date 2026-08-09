@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Animate%20Library",
     "checked_at": "2026-08-07T09:25:26.147Z"
   },
+  "f792f40d-1d37-4854-98da-e4020c6a44d4": {
+    "status": "available",
+    "name": "Blood Vassal",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Saga de Urza",
+    "printing_code": "US",
+    "collector_number": "118",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Vassal",
+    "checked_at": "2026-08-09T22:21:11.935Z"
+  },
   "f7afb2c3-50ee-40f5-8b14-32f80c2bacd0": {
     "status": "available",
     "name": "Bear Trap",

@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Banishing%20Light",
     "checked_at": "2026-08-08T17:06:57.505Z"
   },
+  "f2c75577-c9be-48f3-8398-3020c79bd34e": {
+    "status": "available",
+    "name": "Blight Titan",
+    "price_brl": 1.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marcha das Máquinas: Commander",
+    "printing_code": "MOC",
+    "collector_number": "25",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blight%20Titan",
+    "checked_at": "2026-08-09T21:57:04.745Z"
+  },
   "f2cedb38-12b0-4489-a62b-9b6a3776d695": {
     "status": "available",
     "name": "Arnjlot's Ascent",

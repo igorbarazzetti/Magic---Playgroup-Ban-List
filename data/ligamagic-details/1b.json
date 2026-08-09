@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Banon%2C%20the%20Returners'%20Leader",
     "checked_at": "2026-08-08T17:08:27.382Z"
   },
+  "1b70d7fa-ba2c-4945-b8fd-23623b88c036": {
+    "status": "available",
+    "name": "Blessed Sanctuary",
+    "price_brl": 3.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Jumpstart",
+    "printing_code": "JMP",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blessed%20Sanctuary",
+    "checked_at": "2026-08-09T21:53:12.111Z"
+  },
   "1b841e8f-9484-4737-bd37-dfa11bd06883": {
     "status": "available",
     "name": "Aragorn, Company Leader",

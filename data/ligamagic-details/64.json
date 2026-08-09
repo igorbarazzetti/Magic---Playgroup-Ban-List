@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashes%20of%20the%20Fallen",
     "checked_at": "2026-08-07T21:18:49.335Z"
   },
+  "644c785d-3061-44bc-9f78-bc939c565bf4": {
+    "status": "available",
+    "name": "Bladegraft Aspirant",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Phyrexia: Tudo será um",
+    "printing_code": "ONE",
+    "collector_number": "122",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bladegraft%20Aspirant",
+    "checked_at": "2026-08-09T21:41:20.414Z"
+  },
   "646a2371-54c0-4492-ac2f-20f109d6108c": {
     "status": "available",
     "name": "Monstrous Rage",

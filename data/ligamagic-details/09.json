@@ -1,4 +1,28 @@
 {
+  "090018e0-4dcb-4b3c-b4e0-7ba62de0484d": {
+    "status": "available",
+    "name": "Bloated Contaminator",
+    "price_brl": 14,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Phyrexia: Tudo será um",
+    "printing_code": "ONE",
+    "collector_number": "159",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloated%20Contaminator",
+    "checked_at": "2026-08-09T22:10:17.195Z"
+  },
+  "0904cc0e-e2c9-4a85-89c7-4254fd423bf8": {
+    "status": "available",
+    "name": "Blessing of the Nephilim",
+    "price_brl": 1.27,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Insurreição",
+    "printing_code": "DI",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blessing%20of%20the%20Nephilim",
+    "checked_at": "2026-08-09T21:54:39.527Z"
+  },
   "092ceffb-1ee4-452c-b15e-5b79267d42a6": {
     "status": "available",
     "name": "Angrath, the Flame-Chained",

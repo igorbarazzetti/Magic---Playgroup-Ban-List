@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bilbo's%20Gambit",
     "checked_at": "2026-08-09T17:05:57.519Z"
   },
+  "ef75da10-1b33-4066-bd42-1111b5a94f75": {
+    "status": "available",
+    "name": "Blood Operative",
+    "price_brl": 0.17,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Guildas de Ravnica",
+    "printing_code": "GRN",
+    "collector_number": "63",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Operative",
+    "checked_at": "2026-08-09T22:17:50.697Z"
+  },
   "ef833546-f755-4ac5-867a-3926984e68a0": {
     "status": "available",
     "name": "Archaeomancer's Map",
@@ -82,6 +94,18 @@
     "collector_number": "25",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbarian%20Guides",
     "checked_at": "2026-08-08T17:11:47.426Z"
+  },
+  "ef987ddb-25f6-4895-8f83-045254745ea4": {
+    "status": "available",
+    "name": "Blood Clock",
+    "price_brl": 3.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Salvadores Kamigawa",
+    "printing_code": "SOK",
+    "collector_number": "153",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Clock",
+    "checked_at": "2026-08-09T22:13:13.927Z"
   },
   "efae637f-3232-46f2-9839-f3386e2f447d": {
     "status": "available",

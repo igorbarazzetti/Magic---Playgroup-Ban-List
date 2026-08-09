@@ -1,4 +1,16 @@
 {
+  "393a254f-be31-431a-9341-a51286f8cbce": {
+    "status": "available",
+    "name": "Blast Zone",
+    "price_brl": 0.89,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra da Centelha",
+    "printing_code": "WAR",
+    "collector_number": "244",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blast%20Zone",
+    "checked_at": "2026-08-09T21:45:16.549Z"
+  },
   "39451b4d-cd7a-40da-b457-cb51b609173f": {
     "status": "available",
     "name": "Seat of the Synod",

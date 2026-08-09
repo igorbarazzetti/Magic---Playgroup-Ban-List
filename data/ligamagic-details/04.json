@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atomic%20Microsizer",
     "checked_at": "2026-08-08T07:20:02.961Z"
   },
+  "04e3d36f-5dec-422c-a371-15e135fdface": {
+    "status": "available",
+    "name": "Blessed Defiance",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Caçada à Meia-noite",
+    "printing_code": "MID",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blessed%20Defiance",
+    "checked_at": "2026-08-09T21:51:54.386Z"
+  },
   "04ea7e88-7ea5-4b4c-9a7c-2a6ac0bc0682": {
     "status": "available",
     "name": "Absorb Vis",

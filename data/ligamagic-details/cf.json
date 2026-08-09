@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archaeological%20Dig",
     "checked_at": "2026-08-07T13:58:44.129Z"
   },
+  "cf5b1cf9-dcd3-44d1-b8b2-338651ebb2a1": {
+    "status": "available",
+    "name": "Blight Rot",
+    "price_brl": 0.11,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed",
+    "printing_code": "ECL",
+    "collector_number": "89",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blight%20Rot",
+    "checked_at": "2026-08-09T21:56:44.372Z"
+  },
   "cf6dc79e-840c-4d47-8f94-c8623528acd2": {
     "status": "available",
     "name": "Angry Rabble",
@@ -118,6 +130,30 @@
     "collector_number": "82",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alpha%20Brawl",
     "checked_at": "2026-08-07T00:40:14.889Z"
+  },
+  "cfc5a284-7238-4c98-9d2f-7e5c3329be7b": {
+    "status": "available",
+    "name": "Blood Pact",
+    "price_brl": 0.24,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Caçada à Meia-noite",
+    "printing_code": "MID",
+    "collector_number": "88",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Pact",
+    "checked_at": "2026-08-09T22:18:01.400Z"
+  },
+  "cfe82e0f-7ac0-4de3-b1b3-a2d519b00bbd": {
+    "status": "available",
+    "name": "Blast of Genius",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ultimate Masters",
+    "printing_code": "UMA",
+    "collector_number": "197",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blast%20of%20Genius",
+    "checked_at": "2026-08-09T21:45:04.984Z"
   },
   "cff434e1-e567-4a80-8dc5-593d70b0f348": {
     "status": "available",

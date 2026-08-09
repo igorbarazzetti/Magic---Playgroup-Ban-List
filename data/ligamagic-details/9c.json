@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani's%20Chosen",
     "checked_at": "2026-08-06T14:50:42.113Z"
   },
+  "9c8007ac-4b3d-4444-93e9-f583185e5d81": {
+    "status": "available",
+    "name": "Blasted Landscape",
+    "price_brl": 1.52,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mystery Booster",
+    "printing_code": "MB1",
+    "collector_number": "1657",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blasted%20Landscape",
+    "checked_at": "2026-08-09T21:45:27.469Z"
+  },
   "9c83979a-b354-4e20-9638-85e8f354da81": {
     "status": "available",
     "name": "Aether Helix",
@@ -95,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Black%20Waltz%20No.%203",
     "checked_at": "2026-08-09T19:18:04.813Z"
   },
+  "9c975fda-471a-4d41-9bb6-ea42edc6a0e6": {
+    "status": "available",
+    "name": "Blood Burglar",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2020",
+    "printing_code": "M20",
+    "collector_number": "88",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Burglar",
+    "checked_at": "2026-08-09T22:12:29.769Z"
+  },
   "9c9b1871-e776-4373-ba89-e009131cb6f7": {
     "status": "available",
     "name": "Amphibious Kavu",
@@ -118,6 +142,18 @@
     "collector_number": "8",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Banishment",
     "checked_at": "2026-08-08T17:07:27.272Z"
+  },
+  "9ca64b8e-e9d2-41b3-b229-6fcdc48a8371": {
+    "status": "available",
+    "name": "Blademane Baku",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Traidores de Kamigawa",
+    "printing_code": "BOK",
+    "collector_number": "95",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blademane%20Baku",
+    "checked_at": "2026-08-09T21:41:54.239Z"
   },
   "9cc69ea5-42a2-4306-ac6d-cff5adb20bcb": {
     "status": "available",

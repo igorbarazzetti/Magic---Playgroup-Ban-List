@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alpha%20Authority",
     "checked_at": "2026-08-07T00:40:05.411Z"
   },
+  "53a1faa1-ca67-4027-bee8-0f7c4584d62b": {
+    "status": "available",
+    "name": "Blinding Mage",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2011",
+    "printing_code": "M11",
+    "collector_number": "8",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blinding%20Mage",
+    "checked_at": "2026-08-09T22:04:05.599Z"
+  },
   "53a4d9ee-6dfa-4a8b-a1e4-7f671a666188": {
     "status": "available",
     "name": "Auron's Inspiration",

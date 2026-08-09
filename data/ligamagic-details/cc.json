@@ -1,4 +1,16 @@
 {
+  "cc4bc5d7-ed37-4a80-a5e7-eb68c255cbef": {
+    "status": "available",
+    "name": "Bladewing, Deathless Tyrant",
+    "price_brl": 8.06,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominária Unida Commander",
+    "printing_code": "DMC",
+    "collector_number": "9",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bladewing%2C%20Deathless%20Tyrant",
+    "checked_at": "2026-08-09T21:42:39.788Z"
+  },
   "cc710da0-5a2e-4bc4-8fdd-d90e7bc1f224": {
     "status": "available",
     "name": "Baron, Airship Kingdom",

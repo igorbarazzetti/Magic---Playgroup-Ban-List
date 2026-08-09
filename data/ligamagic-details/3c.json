@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auratouched%20Mage",
     "checked_at": "2026-08-08T07:30:53.345Z"
   },
+  "3c8b0a8a-8f80-4c3e-8f27-fb1df94aa0d4": {
+    "status": "available",
+    "name": "Blinding Flare",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Viagem para Nyx",
+    "printing_code": "JOU",
+    "collector_number": "91",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blinding%20Flare",
+    "checked_at": "2026-08-09T22:03:34.121Z"
+  },
   "3c9fcda6-3ebc-4f9d-9f73-2bb4252d9420": {
     "status": "available",
     "name": "Amaranthine Wall",

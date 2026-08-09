@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcane%20Adaptation",
     "checked_at": "2026-08-07T13:50:43.767Z"
   },
+  "219cf182-0942-4569-91e9-9bc9bb1d06d0": {
+    "status": "available",
+    "name": "Blood Petal Celebrant",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Voto Carmesim (Variantes)",
+    "printing_code": "VVOW",
+    "collector_number": "303",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Petal%20Celebrant",
+    "checked_at": "2026-08-09T22:18:24.068Z"
+  },
   "21ad7067-3210-42d6-9009-0784b2834227": {
     "status": "available",
     "name": "Bazaar Trader",

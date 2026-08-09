@@ -94,5 +94,17 @@
     "collector_number": "49",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agitator%20Ant",
     "checked_at": "2026-08-06T14:41:21.712Z"
+  },
+  "abfa5753-8c02-4e2f-8f98-b0636907293a": {
+    "status": "available",
+    "name": "Blood Fountain",
+    "price_brl": 5.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Voto Carmesim",
+    "printing_code": "VOW",
+    "collector_number": "95",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Fountain",
+    "checked_at": "2026-08-09T22:14:55.645Z"
   }
 }

@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arbalest%20Elite",
     "checked_at": "2026-08-07T13:46:13.578Z"
   },
+  "1dc73412-c91c-48c9-bde6-b169add79b37": {
+    "status": "available",
+    "name": "Blight Keeper",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ixalan",
+    "printing_code": "XLN",
+    "collector_number": "92",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blight%20Keeper",
+    "checked_at": "2026-08-09T21:55:59.661Z"
+  },
   "1de1b591-a73f-4974-b507-8c63e07a0868": {
     "status": "available",
     "name": "Thassa's Oracle",

@@ -1,4 +1,16 @@
 {
+  "4236851b-5366-43a1-bde4-f525b4fbcbce": {
+    "status": "available",
+    "name": "Bloodchief's Thirst",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Renascer de Zendikar (Promo)",
+    "printing_code": "PRZNR",
+    "collector_number": "388",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodchief's%20Thirst",
+    "checked_at": "2026-08-09T22:23:01.449Z"
+  },
   "4284ff9f-4085-4874-abc7-95467cb759a5": {
     "status": "available",
     "name": "Artificer's Dragon",

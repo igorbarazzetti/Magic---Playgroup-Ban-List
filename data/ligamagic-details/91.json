@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Brigadier",
     "checked_at": "2026-08-08T09:14:40.337Z"
   },
+  "9110339d-72ba-4132-801f-cd2fd738b71d": {
+    "status": "available",
+    "name": "Augmenter Pugilist // Echoing Equation",
+    "price_brl": 0.33,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Strixhaven: Escola de Magos",
+    "printing_code": "STX",
+    "collector_number": "147",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Augmenter%20Pugilist",
+    "checked_at": "2026-08-09T21:34:13.850Z"
+  },
   "913672bc-cc88-4964-a331-7dbce40f2bda": {
     "status": "available",
     "name": "Barret Wallace",
@@ -106,6 +118,18 @@
     "collector_number": "82",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archfiend%20of%20the%20Dross",
     "checked_at": "2026-08-07T17:17:04.308Z"
+  },
+  "918b3860-e96c-45b5-b0e6-e82cad9f304d": {
+    "status": "available",
+    "name": "Blessed Light",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominaria",
+    "printing_code": "DOM",
+    "collector_number": "7",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blessed%20Light",
+    "checked_at": "2026-08-09T21:52:15.079Z"
   },
   "91c380f6-2c41-48b7-9f07-104e8659e397": {
     "status": "available",

@@ -1,4 +1,16 @@
 {
+  "2f14e92d-307f-4854-b7ec-a2f6ce03dced": {
+    "status": "available",
+    "name": "Blighted Shaman",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Sexta Edição Classica",
+    "printing_code": "6E",
+    "collector_number": "114",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blighted%20Shaman",
+    "checked_at": "2026-08-09T21:59:07.840Z"
+  },
   "2f24637d-8d8e-49de-b229-4cdb97595ed7": {
     "status": "available",
     "name": "Beatrix, Loyal General",

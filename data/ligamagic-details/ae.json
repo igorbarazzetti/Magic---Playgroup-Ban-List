@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mycosynth%20Lattice",
     "checked_at": "2026-08-05T20:10:23.226Z"
   },
+  "ae24b863-974c-4efa-ab41-23cfa1906c54": {
+    "status": "available",
+    "name": "Blight Grenade",
+    "price_brl": 2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Warhammer 40.000",
+    "printing_code": "40K",
+    "collector_number": "31",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blight%20Grenade",
+    "checked_at": "2026-08-09T21:55:36.888Z"
+  },
   "ae4249de-1b8c-4b15-8960-180557a15065": {
     "status": "available",
     "name": "Animal Friend",

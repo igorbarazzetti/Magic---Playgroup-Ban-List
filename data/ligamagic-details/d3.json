@@ -1,4 +1,16 @@
 {
+  "d3142c6b-86e9-42b7-916c-ce7c34e7bd53": {
+    "status": "available",
+    "name": "Bladehold War-Whip",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Phyrexia: Tudo será um (Promo)",
+    "printing_code": "PONE",
+    "collector_number": "280",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bladehold%20War-Whip",
+    "checked_at": "2026-08-09T21:41:42.512Z"
+  },
   "d31fd12f-b4dd-4bc3-ace4-703dabd0f607": {
     "status": "available",
     "name": "Aven Interrupter",

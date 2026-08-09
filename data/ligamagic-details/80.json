@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Astral%20Confrontation",
     "checked_at": "2026-08-08T02:51:22.442Z"
   },
+  "8079007c-a07a-4d71-bb08-e1dd215297de": {
+    "status": "available",
+    "name": "Blessed Wine",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quinta Edição",
+    "printing_code": "5E",
+    "collector_number": "38",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blessed%20Wine",
+    "checked_at": "2026-08-09T21:53:44.935Z"
+  },
   "8089c3eb-99a8-40ca-882a-c1d4e30075ee": {
     "status": "available",
     "name": "Bane's Contingency",
@@ -154,6 +166,18 @@
     "collector_number": "30",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Genesis%20Storm",
     "checked_at": "2026-08-05T20:06:46.953Z"
+  },
+  "80ea56ad-e741-4a85-b4e8-ce62e7d593d5": {
+    "status": "available",
+    "name": "Blanchwood Armor",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nona Edição - Kit Básico",
+    "printing_code": "9E",
+    "collector_number": "232",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blanchwood%20Armor",
+    "checked_at": "2026-08-09T21:43:13.083Z"
   },
   "80ea63fd-691a-45ba-a4bf-862e5ec2922d": {
     "status": "available",

@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Axebane%20Stag",
     "checked_at": "2026-08-08T13:23:56.998Z"
   },
+  "a465ba74-615a-4261-b4a0-fcb0819f10b3": {
+    "status": "available",
+    "name": "Blood Researcher",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Strixhaven: Escola de Magos",
+    "printing_code": "STX",
+    "collector_number": "166",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Researcher",
+    "checked_at": "2026-08-09T22:18:59.547Z"
+  },
   "a465f8a9-d5aa-4dfa-b674-7aa1798cb0bd": {
     "status": "available",
     "name": "Beast Mode",
@@ -82,6 +94,18 @@
     "collector_number": "78",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aggressive%20Sabotage",
     "checked_at": "2026-08-06T14:40:41.651Z"
+  },
+  "a4b66fb3-16ea-4bf1-bce3-6df872e8883b": {
+    "status": "available",
+    "name": "Blitzball Stadium",
+    "price_brl": 1.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY Commander",
+    "printing_code": "FIC",
+    "collector_number": "34",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blitzball%20Stadium",
+    "checked_at": "2026-08-09T22:09:00.804Z"
   },
   "a4d22abe-87c5-4f6b-ad14-4a7935883169": {
     "status": "available",

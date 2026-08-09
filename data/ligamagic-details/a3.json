@@ -1,4 +1,16 @@
 {
+  "a3090daf-26d9-4ba5-9fa3-42bd128e229d": {
+    "status": "available",
+    "name": "Blanchwood Treefolk",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Saga de Urza",
+    "printing_code": "US",
+    "collector_number": "238",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blanchwood%20Treefolk",
+    "checked_at": "2026-08-09T21:43:34.687Z"
+  },
   "a30f30e3-dbbf-4cb2-b3d0-76f57dffb2dd": {
     "status": "available",
     "name": "Black Bolt, Inhuman King",

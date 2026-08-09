@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aminatou%2C%20the%20Fateshifter",
     "checked_at": "2026-08-07T04:39:11.158Z"
   },
+  "3a38d2d1-c4ff-4088-b1df-5feb9602ee2e": {
+    "status": "available",
+    "name": "Blasting Station",
+    "price_brl": 25.18,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Quinta Aurora",
+    "printing_code": "5DN",
+    "collector_number": "107",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blasting%20Station",
+    "checked_at": "2026-08-09T21:46:25.421Z"
+  },
   "3a59c882-8bb8-49ba-862f-125020dd5bec": {
     "status": "available",
     "name": "Empty the Warrens",

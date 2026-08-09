@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ant-Man%2C%20Scott%20Lang",
     "checked_at": "2026-08-07T09:32:36.415Z"
   },
+  "1e77cf90-ac51-4ac7-b123-be04aabe1688": {
+    "status": "available",
+    "name": "Blessings of Nature",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Retorno de Avacyn",
+    "printing_code": "AVR",
+    "collector_number": "168",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blessings%20of%20Nature",
+    "checked_at": "2026-08-09T21:54:50.964Z"
+  },
   "1ea20ecb-1919-4be7-b0bb-d79d2dec98fd": {
     "status": "available",
     "name": "Biting Tether",

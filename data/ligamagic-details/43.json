@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Banshee",
     "checked_at": "2026-08-08T17:08:47.703Z"
   },
+  "43985bbc-a0f6-4812-984e-392bc8562633": {
+    "status": "available",
+    "name": "Blood Crypt",
+    "price_brl": 33.33,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lealdade em Ravnica",
+    "printing_code": "RNA",
+    "collector_number": "245",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Crypt",
+    "checked_at": "2026-08-09T22:13:25.259Z"
+  },
   "43ace4d5-9006-4bad-bd17-3d368c20564d": {
     "status": "available",
     "name": "Aerie Bowmasters",

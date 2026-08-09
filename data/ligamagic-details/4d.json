@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assault%20Formation",
     "checked_at": "2026-08-08T02:47:02.226Z"
   },
+  "4d722521-0396-48f9-88b2-08b6249f970d": {
+    "status": "available",
+    "name": "Blighted Cataract",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Batalha por Zendikar",
+    "printing_code": "BFZ",
+    "collector_number": "229",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blighted%20Cataract",
+    "checked_at": "2026-08-09T21:58:35.799Z"
+  },
   "4d74c735-8035-4c42-bfb1-1bc97e5bdd9a": {
     "status": "available",
     "name": "Aurora Griffin",

@@ -1,4 +1,16 @@
 {
+  "b0102259-7a2c-470e-b04b-4a1f615d057c": {
+    "status": "available",
+    "name": "Blightbelly Rat",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Phyrexia: Tudo será um (Borderless Ichor)",
+    "printing_code": "BIONE",
+    "collector_number": "289",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blightbelly%20Rat",
+    "checked_at": "2026-08-09T21:57:27.602Z"
+  },
   "b0168b7e-a8b8-4ce3-af12-a43f3818b6a1": {
     "status": "available",
     "name": "Aerial Formation",
@@ -22,6 +34,18 @@
     "collector_number": "50",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bayek%20of%20Siwa",
     "checked_at": "2026-08-08T22:57:50.378Z"
+  },
+  "b03de49d-246f-44e2-9487-9e4e43ec7be4": {
+    "status": "available",
+    "name": "Beyeen Veil // Beyeen Coast",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Renascer de Zendikar",
+    "printing_code": "ZNR",
+    "collector_number": "46",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beyeen%20Veil",
+    "checked_at": "2026-08-09T21:38:02.274Z"
   },
   "b07bd1cd-4000-4e6b-b16b-283c76593377": {
     "status": "available",

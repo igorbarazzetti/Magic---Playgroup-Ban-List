@@ -1,4 +1,16 @@
 {
+  "db16a2fb-dc42-4086-9928-52076043097f": {
+    "status": "available",
+    "name": "Blighted Steppe",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Batalha por Zendikar",
+    "printing_code": "BFZ",
+    "collector_number": "232",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blighted%20Steppe",
+    "checked_at": "2026-08-09T21:59:19.615Z"
+  },
   "db2f3a06-f75e-4689-b147-9820aebb30e2": {
     "status": "available",
     "name": "Auriok Salvagers",

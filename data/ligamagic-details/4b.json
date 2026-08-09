@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aspect%20of%20Gorgon",
     "checked_at": "2026-08-08T02:43:32.130Z"
   },
+  "4b8ca7fd-3c8e-44fe-ab0a-0ddc2f2b047c": {
+    "status": "available",
+    "name": "Blaster Hulk",
+    "price_brl": 2.77,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3 Commander",
+    "printing_code": "M3C",
+    "collector_number": "107",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blaster%20Hulk",
+    "checked_at": "2026-08-09T21:45:50.515Z"
+  },
   "4b977117-741c-4157-8fcf-719e475a8a4c": {
     "status": "available",
     "name": "Battle Hymn",

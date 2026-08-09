@@ -46,5 +46,17 @@
     "collector_number": "5",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Airdrop%20Aeronauts",
     "checked_at": "2026-08-06T14:47:51.907Z"
+  },
+  "00f579f4-2d18-4c7c-91b2-34726b384535": {
+    "status": "available",
+    "name": "Bladed Sentinel",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mirrodin Sitiada",
+    "printing_code": "MBS",
+    "collector_number": "98",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bladed%20Sentinel",
+    "checked_at": "2026-08-09T21:41:10.285Z"
   }
 }

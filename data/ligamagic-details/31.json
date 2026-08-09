@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani's%20Sunstriker",
     "checked_at": "2026-08-06T14:52:02.392Z"
   },
+  "310f141c-7f37-4729-aed6-dd9c09db448d": {
+    "status": "available",
+    "name": "Blood Artist",
+    "price_brl": 10.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad Remastered",
+    "printing_code": "INR",
+    "collector_number": "97",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Artist",
+    "checked_at": "2026-08-09T22:11:33.499Z"
+  },
   "314f0a96-5e91-42a3-9d75-3f641f22a9ee": {
     "status": "available",
     "name": "Blade Historian",
@@ -22,6 +34,18 @@
     "collector_number": "165",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blade%20Historian",
     "checked_at": "2026-08-09T19:21:24.903Z"
+  },
+  "3159d289-b822-4657-919a-d712623e622e": {
+    "status": "available",
+    "name": "Blight Herder",
+    "price_brl": 0.17,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Batalha por Zendikar",
+    "printing_code": "BFZ",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blight%20Herder",
+    "checked_at": "2026-08-09T21:55:47.913Z"
   },
   "31816924-1430-4581-86e8-325e2ca16217": {
     "status": "available",
@@ -82,5 +106,17 @@
     "collector_number": "72",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambitious%20Aetherborn",
     "checked_at": "2026-08-07T04:35:51.045Z"
+  },
+  "31fc5d8b-94bc-4688-8a84-f15800e717a8": {
+    "status": "available",
+    "name": "Ashling, Rekindled // Ashling, Rimebound",
+    "price_brl": 5.6,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed",
+    "printing_code": "ECL",
+    "collector_number": "124",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashling%2C%20Rekindled",
+    "checked_at": "2026-08-09T21:34:02.384Z"
   }
 }

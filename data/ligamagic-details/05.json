@@ -119,6 +119,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benalish%20Honor%20Guard",
     "checked_at": "2026-08-09T13:45:34.413Z"
   },
+  "0596920f-9946-42f4-a03b-24aab67f9f1b": {
+    "status": "available",
+    "name": "Blaze",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Battlebond",
+    "printing_code": "BBD",
+    "collector_number": "167",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blaze",
+    "checked_at": "2026-08-09T21:46:57.439Z"
+  },
   "05b020fd-21be-495d-ae45-7de3b1224e6d": {
     "status": "available",
     "name": "Angelic Shield",

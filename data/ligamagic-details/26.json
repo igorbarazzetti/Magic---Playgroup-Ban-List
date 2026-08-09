@@ -10,5 +10,17 @@
     "collector_number": "88",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archetype%20of%20Aggression",
     "checked_at": "2026-08-07T17:15:34.198Z"
+  },
+  "2659c0ea-9ae0-4be3-b9f7-5a38230815ad": {
+    "status": "available",
+    "name": "Blood Speaker",
+    "price_brl": 1.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Campeões de Kamigawa",
+    "printing_code": "CHK",
+    "collector_number": "103",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Speaker",
+    "checked_at": "2026-08-09T22:20:03.783Z"
   }
 }

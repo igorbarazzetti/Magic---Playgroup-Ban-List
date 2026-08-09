@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baloth%20Null",
     "checked_at": "2026-08-08T17:00:27.045Z"
   },
+  "55a253f9-f44d-4898-af83-fea68b7b279d": {
+    "status": "available",
+    "name": "Blood Lust",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quinta Edição",
+    "printing_code": "5E",
+    "collector_number": "41",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Lust",
+    "checked_at": "2026-08-09T22:16:33.291Z"
+  },
   "55b12241-2495-45e6-b618-3746d5521291": {
     "status": "available",
     "name": "Alpine Guide",

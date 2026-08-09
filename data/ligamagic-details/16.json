@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Belbe's%20Armor",
     "checked_at": "2026-08-09T13:38:34.453Z"
   },
+  "1675476c-25b1-46c2-81ce-fef9a2360bcc": {
+    "status": "available",
+    "name": "Blaring Captain",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Battlebond",
+    "printing_code": "BBD",
+    "collector_number": "14",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blaring%20Captain",
+    "checked_at": "2026-08-09T21:43:58.064Z"
+  },
   "16cd0b90-f70c-4efa-b252-8de8784ef9a3": {
     "status": "available",
     "name": "Imperial Seal",

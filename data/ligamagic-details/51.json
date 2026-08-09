@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armored%20Whirl%20Turtle",
     "checked_at": "2026-08-07T19:35:34.027Z"
   },
+  "51acd176-e84d-42c2-acb2-cceeb28a9fec": {
+    "status": "available",
+    "name": "Blink of an Eye",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominaria",
+    "printing_code": "DOM",
+    "collector_number": "46",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blink%20of%20an%20Eye",
+    "checked_at": "2026-08-09T22:05:13.398Z"
+  },
   "51d7bd70-0874-41d4-94bc-c3e14c968668": {
     "status": "available",
     "name": "Altar of the Goyf",

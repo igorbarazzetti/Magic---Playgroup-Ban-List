@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Kavu",
     "checked_at": "2026-08-07T07:50:26.053Z"
   },
+  "598a7410-35e8-4d62-9bf1-d44ee7717040": {
+    "status": "available",
+    "name": "Blazing Hellhound",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Double Masters 2022",
+    "printing_code": "2X2",
+    "collector_number": "183",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blazing%20Hellhound",
+    "checked_at": "2026-08-09T21:48:45.321Z"
+  },
   "59a405d7-2f28-41b8-a5bb-011f45a5fdf2": {
     "status": "available",
     "name": "Bebop, Skull & Crossbones",
@@ -106,6 +118,30 @@
     "collector_number": "43",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Air%20Marshal",
     "checked_at": "2026-08-06T14:46:21.932Z"
+  },
+  "59c2af34-a2e5-4c67-af2d-a782e41a8e1e": {
+    "status": "available",
+    "name": "Blaster, Combat DJ // Blaster, Morale Booster",
+    "price_brl": 1.46,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Transformers",
+    "printing_code": "BOT",
+    "collector_number": "8",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blaster%2C%20Combat%20DJ",
+    "checked_at": "2026-08-09T21:45:38.895Z"
+  },
+  "59d22de5-e310-44d7-89cf-ef3529e40cef": {
+    "status": "available",
+    "name": "Barkchannel Pathway // Tidechannel Pathway",
+    "price_brl": 20.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaldheim",
+    "printing_code": "KHM",
+    "collector_number": "251",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barkchannel%20Pathway",
+    "checked_at": "2026-08-09T21:36:57.185Z"
   },
   "59faa1b9-17aa-4f2c-a8f8-17ab50392b36": {
     "status": "available",

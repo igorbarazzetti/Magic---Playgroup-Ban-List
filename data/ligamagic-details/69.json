@@ -1,4 +1,16 @@
 {
+  "695ce90b-a5a2-4d8c-ac05-07f04010603e": {
+    "status": "available",
+    "name": "Blood Celebrant",
+    "price_brl": 2.95,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Legiões",
+    "printing_code": "LE",
+    "collector_number": "61",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Celebrant",
+    "checked_at": "2026-08-09T22:12:40.929Z"
+  },
   "695eea46-1535-48c5-bbb6-0b8379e77bfc": {
     "status": "available",
     "name": "Arasta of the Endless Web",
@@ -34,6 +46,18 @@
     "collector_number": "6",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Battle%20Priest",
     "checked_at": "2026-08-08T09:14:30.293Z"
+  },
+  "69757aaf-182e-41a0-a5b4-4404e4c81c45": {
+    "status": "available",
+    "name": "Blood Rites",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Campeões de Kamigawa",
+    "printing_code": "CHK",
+    "collector_number": "159",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Rites",
+    "checked_at": "2026-08-09T22:19:09.252Z"
   },
   "697ac261-263b-4879-bf45-6d10d23312ae": {
     "status": "available",
@@ -82,6 +106,30 @@
     "collector_number": "62",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bartizan%20Bats",
     "checked_at": "2026-08-08T19:18:22.579Z"
+  },
+  "698f3526-489e-47a1-ac10-70cca73dea10": {
+    "status": "available",
+    "name": "Bleak Coven Vampires",
+    "price_brl": 0.24,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Cicatrizes de Mirrodin",
+    "printing_code": "SOM",
+    "collector_number": "55",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bleak%20Coven%20Vampires",
+    "checked_at": "2026-08-09T21:50:25.948Z"
+  },
+  "698feaaa-2fff-4809-81d1-4caad44c6c0a": {
+    "status": "available",
+    "name": "Blizzard",
+    "price_brl": 3.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Era Glacial",
+    "printing_code": "IA",
+    "collector_number": "34",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blizzard",
+    "checked_at": "2026-08-09T22:09:22.567Z"
   },
   "69a72414-d02f-4a5c-b5c9-8941bb181f61": {
     "status": "available",

@@ -82,5 +82,17 @@
     "collector_number": "51",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Gifts%20Ungiven",
     "checked_at": "2026-08-05T20:06:52.731Z"
+  },
+  "58bd02ae-2676-4c9c-b24e-2bd51be8bde7": {
+    "status": "available",
+    "name": "Bird Admirer // Wing Shredder",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Caçada à Meia-noite (Variantes)",
+    "printing_code": "CBMID",
+    "collector_number": "298",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bird%20Admirer",
+    "checked_at": "2026-08-09T21:38:35.018Z"
   }
 }

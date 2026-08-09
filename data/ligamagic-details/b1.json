@@ -58,5 +58,17 @@
     "collector_number": "123",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Accursed%20Centaur",
     "checked_at": "2026-08-06T03:51:11.832Z"
+  },
+  "b1f441ce-7619-4ab5-ab36-724ed0a76728": {
+    "status": "available",
+    "name": "Bloodcrazed Hoplite",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Viagem para Nyx",
+    "printing_code": "JOU",
+    "collector_number": "61",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodcrazed%20Hoplite",
+    "checked_at": "2026-08-09T22:23:24.635Z"
   }
 }

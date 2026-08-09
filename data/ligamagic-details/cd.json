@@ -1,4 +1,16 @@
 {
+  "cd3d1e5d-db12-4878-92a2-23eb8d23eaf3": {
+    "status": "available",
+    "name": "Blazing Torch",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad",
+    "printing_code": "ISD",
+    "collector_number": "216",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blazing%20Torch",
+    "checked_at": "2026-08-09T21:49:51.778Z"
+  },
   "cd403866-bef1-413a-85e2-c86e295b3589": {
     "status": "available",
     "name": "Agent of Atlas",
@@ -22,6 +34,18 @@
     "collector_number": "3",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambush%20Paratrooper",
     "checked_at": "2026-08-07T04:38:11.135Z"
+  },
+  "cd8a90a7-5502-405f-a49e-ad4252872595": {
+    "status": "available",
+    "name": "Blisterspit Gremlin",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ikoria: Terra de Colossos",
+    "printing_code": "IKO",
+    "collector_number": "108",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blisterspit%20Gremlin",
+    "checked_at": "2026-08-09T22:07:33.150Z"
   },
   "cdb84830-faf2-4beb-8d57-ad696d75876b": {
     "status": "available",

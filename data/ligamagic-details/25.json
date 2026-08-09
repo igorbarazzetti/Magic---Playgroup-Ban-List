@@ -155,6 +155,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bad%20River",
     "checked_at": "2026-08-08T14:59:17.514Z"
   },
+  "25a0fe3b-59c8-496a-a8d6-fca966ca6602": {
+    "status": "available",
+    "name": "Blizzard Brawl",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaldheim",
+    "printing_code": "KHM",
+    "collector_number": "162",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blizzard%20Brawl",
+    "checked_at": "2026-08-09T22:09:33.329Z"
+  },
   "25c8a3b0-c393-4fc6-a373-808cd8e9850c": {
     "status": "available",
     "name": "Air Bladder",
@@ -166,6 +178,18 @@
     "collector_number": "28",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Air%20Bladder",
     "checked_at": "2026-08-06T14:45:51.893Z"
+  },
+  "25ca4b6c-2c4a-40f1-aee8-3bd373572eb7": {
+    "status": "available",
+    "name": "Bloodbraid Marauder",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 2",
+    "printing_code": "MH2",
+    "collector_number": "116",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodbraid%20Marauder",
+    "checked_at": "2026-08-09T22:22:27.842Z"
   },
   "25d955e3-2b98-4a75-bb51-6072000111be": {
     "status": "available",

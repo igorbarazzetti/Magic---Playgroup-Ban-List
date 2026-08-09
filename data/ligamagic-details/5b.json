@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Limited%20Resources",
     "checked_at": "2026-08-05T20:09:11.016Z"
   },
+  "5b356a01-900c-4fe5-93bd-45629528c484": {
+    "status": "available",
+    "name": "Avacynian Missionaries // Lunarch Inquisitors",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Sombras em Innistrad",
+    "printing_code": "SOI",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avacynian%20Missionaries",
+    "checked_at": "2026-08-09T21:34:47.051Z"
+  },
   "5b38a1e4-a6af-4094-9392-70a87759e20d": {
     "status": "available",
     "name": "Affa Protector",
@@ -70,6 +82,18 @@
     "collector_number": "123",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beck%20%2F%2F%20Call",
     "checked_at": "2026-08-08T23:07:10.774Z"
+  },
+  "5b95a5ed-a6b2-4044-9273-2021d27794e9": {
+    "status": "available",
+    "name": "Blight Sickle",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Pântano Sombrio",
+    "printing_code": "SHM",
+    "collector_number": "247",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blight%20Sickle",
+    "checked_at": "2026-08-09T21:56:54.603Z"
   },
   "5bbc3ad0-4865-43f0-8baf-e7f4af5db656": {
     "status": "available",

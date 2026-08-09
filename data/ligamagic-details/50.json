@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arbor%20Armament",
     "checked_at": "2026-08-07T13:47:14.358Z"
   },
+  "50555471-a03c-4735-a6ce-6ae96e27d7c0": {
+    "status": "available",
+    "name": "Blinding Fog",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ixalan",
+    "printing_code": "XLN",
+    "collector_number": "177",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blinding%20Fog",
+    "checked_at": "2026-08-09T22:03:44.819Z"
+  },
   "5063f015-bd1c-4e14-9888-63e202be2ac8": {
     "status": "available",
     "name": "Advice from the Fae",

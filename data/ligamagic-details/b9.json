@@ -119,6 +119,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akroma%2C%20Vision%20of%20Ixidor",
     "checked_at": "2026-08-06T18:08:47.347Z"
   },
+  "b9cf9f1e-0280-43b6-9d58-262052dcb8a8": {
+    "status": "available",
+    "name": "Bladebrand",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends",
+    "printing_code": "CMR",
+    "collector_number": "110",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bladebrand",
+    "checked_at": "2026-08-09T21:40:04.844Z"
+  },
   "b9dd5841-7e4b-40bf-9969-e8fb5df46763": {
     "status": "available",
     "name": "Batterhorn",

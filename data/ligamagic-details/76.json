@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balduvian%20Trading%20Post",
     "checked_at": "2026-08-08T15:06:07.734Z"
   },
+  "7679942f-fcbc-4750-8e8c-fe0ad8103c11": {
+    "status": "available",
+    "name": "Blitz Leech",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ikoria: Terra de Colossos",
+    "printing_code": "IKO",
+    "collector_number": "74",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blitz%20Leech",
+    "checked_at": "2026-08-09T22:08:15.762Z"
+  },
   "767c1f97-03de-474d-9112-e7521ba3b3f3": {
     "status": "available",
     "name": "Avian Changeling",

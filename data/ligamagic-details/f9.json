@@ -1,4 +1,16 @@
 {
+  "f905b72d-734a-44e8-b118-c8de889994a9": {
+    "status": "available",
+    "name": "Blind Seer",
+    "price_brl": 0.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Invasão",
+    "printing_code": "IN",
+    "collector_number": "47",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blind%20Seer",
+    "checked_at": "2026-08-09T22:02:06.306Z"
+  },
   "f9275c99-0616-44b3-a19e-98c683e87ad3": {
     "status": "available",
     "name": "Barbed Foliage",
@@ -35,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Awakening%20Zone",
     "checked_at": "2026-08-08T13:22:36.943Z"
   },
+  "f97df8f4-a7ef-45f9-9563-b76b4d2b03f5": {
+    "status": "available",
+    "name": "Blockade Runner",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Máscaras de Mercádia",
+    "printing_code": "MM",
+    "collector_number": "60",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blockade%20Runner",
+    "checked_at": "2026-08-09T22:11:00.956Z"
+  },
   "f98f7cb7-90ca-41e7-9f1d-8054931ecf0e": {
     "status": "available",
     "name": "Barrin, Tolarian Archmage",
@@ -58,6 +82,18 @@
     "collector_number": "203",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abrade",
     "checked_at": "2026-08-06T00:12:07.222Z"
+  },
+  "f9ef90b9-a2b4-4a5b-92fb-2268ea7d709f": {
+    "status": "available",
+    "name": "Ayara, Widow of the Realm // Ayara, Furnace Queen",
+    "price_brl": 1.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marcha das Máquinas",
+    "printing_code": "MOM",
+    "collector_number": "90",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ayara%2C%20Widow%20of%20the%20Realm",
+    "checked_at": "2026-08-09T21:35:08.466Z"
   },
   "f9f52651-cc64-48c5-bc18-cd5f646dfb1f": {
     "status": "available",

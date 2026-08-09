@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bellowing%20Tanglewurm",
     "checked_at": "2026-08-09T13:42:34.298Z"
   },
+  "a10e5b31-c9c1-45ca-85cc-4a50ed8c4946": {
+    "status": "available",
+    "name": "Bloodcrazed Goblin",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2011",
+    "printing_code": "M11",
+    "collector_number": "125",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodcrazed%20Goblin",
+    "checked_at": "2026-08-09T22:23:12.971Z"
+  },
   "a1399cb8-f22a-487e-b539-2db47b09a790": {
     "status": "available",
     "name": "Aeon Chronicler",

@@ -35,6 +35,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aethertow",
     "checked_at": "2026-08-06T11:05:23.893Z"
   },
+  "dd3fd7cd-d8a1-48e2-861d-c7c40086dc75": {
+    "status": "available",
+    "name": "Blinkmoth Well",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mirrodin",
+    "printing_code": "MI",
+    "collector_number": "279",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blinkmoth%20Well",
+    "checked_at": "2026-08-09T22:06:05.898Z"
+  },
+  "dd489f30-d1cf-4236-8390-9c21cd8659e0": {
+    "status": "available",
+    "name": "Blizzard Elemental",
+    "price_brl": 0.35,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Destino de Urza",
+    "printing_code": "UD",
+    "collector_number": "27",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blizzard%20Elemental",
+    "checked_at": "2026-08-09T22:09:44.247Z"
+  },
   "dd66b8ab-14a9-455b-98f6-5356df72a522": {
     "status": "available",
     "name": "Adarkar Windform",

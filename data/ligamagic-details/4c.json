@@ -1,4 +1,16 @@
 {
+  "4c046368-5899-42ef-9972-3a3a6c8fe3fd": {
+    "status": "available",
+    "name": "Blazing Specter",
+    "price_brl": 2.48,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Duel Decks: Ajani vs. Nicol Bolas",
+    "printing_code": "DDH",
+    "collector_number": "52",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blazing%20Specter",
+    "checked_at": "2026-08-09T21:49:30.022Z"
+  },
   "4c054431-3667-4e28-9d68-03b43447c35b": {
     "status": "available",
     "name": "Bilbo's Deadly Slice",
@@ -166,6 +178,18 @@
     "collector_number": "172",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acidic%20Soil",
     "checked_at": "2026-08-06T03:53:51.900Z"
+  },
+  "4cd6ad78-7441-4dd7-b486-d9575e8e0947": {
+    "status": "available",
+    "name": "Blistering Dieflyn",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Pântano Sombrio",
+    "printing_code": "SHM",
+    "collector_number": "82",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blistering%20Dieflyn",
+    "checked_at": "2026-08-09T22:07:00.119Z"
   },
   "4cd82c7a-86df-4d29-b578-c009208c0d4b": {
     "status": "available",

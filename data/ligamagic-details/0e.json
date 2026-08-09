@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beetle-Headed%20Merchants",
     "checked_at": "2026-08-09T13:35:04.613Z"
   },
+  "0e69e6c2-fdc5-4c1a-bd96-c4283b82743a": {
+    "status": "available",
+    "name": "Blood of the Martyr",
+    "price_brl": 0.18,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Chronicles",
+    "printing_code": "CH",
+    "collector_number": "18",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20of%20the%20Martyr",
+    "checked_at": "2026-08-09T22:17:16.005Z"
+  },
   "0e9551ef-8aee-46ed-b21f-162c64213437": {
     "status": "available",
     "name": "Atomwheel Acrobats",

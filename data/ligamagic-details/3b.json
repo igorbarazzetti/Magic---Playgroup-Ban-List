@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abzan%20Ascendancy",
     "checked_at": "2026-08-06T03:45:01.572Z"
   },
+  "3b91be0e-0683-48df-91b0-25e90b492796": {
+    "status": "available",
+    "name": "Blind Phantasm",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Visão do Futuro",
+    "printing_code": "FUT",
+    "collector_number": "49",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blind%20Phantasm",
+    "checked_at": "2026-08-09T22:01:54.496Z"
+  },
   "3b93427c-5b40-4119-96ae-7dce3ca2bbb9": {
     "status": "available",
     "name": "Armament Corps",

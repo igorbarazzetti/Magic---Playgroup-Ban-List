@@ -5,13 +5,13 @@
     "homepage": "https://www.ligamagic.com.br/",
     "attribution": "Preços consultados na LigaMagic para uso pessoal do playgroup."
   },
-  "refresh_interval_hours": 1920,
+  "refresh_interval_hours": 3840,
   "usd_brl": {
     "rate": 5.0908,
     "as_of": "2026-08-07 13:04:19.455752",
     "source": "Banco Central do Brasil · PTAX"
   },
-  "generated_at": "2026-08-09T19:22:24.971Z",
+  "generated_at": "2026-08-09T22:23:59.395Z",
   "summary": {
     "available": 266,
     "unavailable": 0,

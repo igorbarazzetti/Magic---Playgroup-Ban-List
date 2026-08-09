@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Awaken%20the%20Honored%20Dead",
     "checked_at": "2026-08-08T13:21:06.889Z"
   },
+  "5f7a4ffb-83f7-46e5-b0a7-c8b068af6969": {
+    "status": "available",
+    "name": "Blazethorn Scarecrow",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Pântano Sombrio",
+    "printing_code": "SHM",
+    "collector_number": "246",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blazethorn%20Scarecrow",
+    "checked_at": "2026-08-09T21:47:30.778Z"
+  },
   "5f7c6fa9-4208-4dc8-a75b-9586200d8e19": {
     "status": "available",
     "name": "Attended Socialite",
@@ -118,6 +130,18 @@
     "collector_number": "53",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Glimpse%20of%20Nature",
     "checked_at": "2026-08-05T20:06:58.713Z"
+  },
+  "5fb899c1-3a2f-4b5e-a82d-fece51bdf786": {
+    "status": "available",
+    "name": "Blessed Spirits",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mystery Booster",
+    "printing_code": "MB1",
+    "collector_number": "38",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blessed%20Spirits",
+    "checked_at": "2026-08-09T21:53:22.324Z"
   },
   "5fc888d1-241f-45e1-9c20-3c5ae0aadc30": {
     "status": "available",

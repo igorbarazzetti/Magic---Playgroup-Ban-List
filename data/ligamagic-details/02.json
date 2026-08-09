@@ -119,6 +119,54 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Winota%2C%20Joiner%20of%20Forces",
     "checked_at": "2026-08-05T20:15:27.006Z"
   },
+  "02679a2e-303d-412f-87d8-0a37a8ca259c": {
+    "status": "available",
+    "name": "Blighted Woodland",
+    "price_brl": 0.39,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Batalha por Zendikar",
+    "printing_code": "BFZ",
+    "collector_number": "233",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blighted%20Woodland",
+    "checked_at": "2026-08-09T21:59:29.549Z"
+  },
+  "02a7d95a-0a45-4aa3-b5b8-01c0b36462d8": {
+    "status": "available",
+    "name": "Blink Dog",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Adventures in the Forgotten Realms",
+    "printing_code": "AFR",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blink%20Dog",
+    "checked_at": "2026-08-09T22:05:02.262Z"
+  },
+  "02c60b8b-f665-4279-a00f-ae03991df4a6": {
+    "status": "available",
+    "name": "Azusa's Many Journeys // Likeness of the Seeker",
+    "price_brl": 0.22,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kamigawa: Dinastia Neon",
+    "printing_code": "NEO",
+    "collector_number": "172",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azusa's%20Many%20Journeys",
+    "checked_at": "2026-08-09T21:35:30.605Z"
+  },
+  "02d4c3a8-c733-45c1-bca5-51eed47c9230": {
+    "status": "available",
+    "name": "Blind Creeper",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Quinta Aurora",
+    "printing_code": "5DN",
+    "collector_number": "42",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blind%20Creeper",
+    "checked_at": "2026-08-09T22:01:08.392Z"
+  },
   "02da2cbf-50d6-4c37-8a9f-40db1f7954be": {
     "status": "available",
     "name": "Benefaction of Rhonas",

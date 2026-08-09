@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani's%20Influence",
     "checked_at": "2026-08-06T14:51:02.100Z"
   },
+  "2a62b226-d317-4212-9781-9c1d72056f11": {
+    "status": "available",
+    "name": "Blisterpod",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Batalha por Zendikar",
+    "printing_code": "BFZ",
+    "collector_number": "163",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blisterpod",
+    "checked_at": "2026-08-09T22:07:22.125Z"
+  },
   "2a800427-ff8c-4b3c-baee-85211b70656d": {
     "status": "available",
     "name": "Aurelia, the Law Above",

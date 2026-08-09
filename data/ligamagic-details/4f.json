@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Indemnity",
     "checked_at": "2026-08-07T07:54:36.293Z"
   },
+  "4f5da665-e880-4325-a9e2-6fc4ca1d807a": {
+    "status": "available",
+    "name": "Baneblade Scoundrel // Baneclaw Marauder",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Caçada à Meia-noite (Variantes)",
+    "printing_code": "CBMID",
+    "collector_number": "289",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baneblade%20Scoundrel",
+    "checked_at": "2026-08-09T21:36:46.549Z"
+  },
   "4f958678-2a32-4a30-8fe7-47df9ada6b2f": {
     "status": "available",
     "name": "Birthday Escape",

@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arms%20Depot",
     "checked_at": "2026-08-07T19:37:14.111Z"
   },
+  "c0856fea-cbdc-427b-ae00-bfd9311f284f": {
+    "status": "available",
+    "name": "Blessed Orator",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Odisséia",
+    "printing_code": "OD",
+    "collector_number": "12",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blessed%20Orator",
+    "checked_at": "2026-08-09T21:52:25.828Z"
+  },
   "c0891157-f3dd-4866-866f-fd13e9be9633": {
     "status": "available",
     "name": "Arwen, Weaver of Hope",
@@ -94,6 +106,18 @@
     "collector_number": "218",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auger%20Spree",
     "checked_at": "2026-08-08T07:25:33.225Z"
+  },
+  "c0cbb347-b060-43ce-a9c5-8c835be3cf1b": {
+    "status": "available",
+    "name": "Azor's Gateway // Sanctum of the Sun",
+    "price_brl": 2.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Rivais de Ixalan",
+    "printing_code": "RIX",
+    "collector_number": "176",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azor's%20Gateway",
+    "checked_at": "2026-08-09T21:35:20.026Z"
   },
   "c0d20e66-deb6-4a20-a2c1-8a79514e3792": {
     "status": "available",

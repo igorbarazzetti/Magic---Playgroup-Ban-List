@@ -118,5 +118,17 @@
     "collector_number": "158",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashnod's%20Cylix",
     "checked_at": "2026-08-08T02:41:52.212Z"
+  },
+  "fdf51294-6270-4c94-a2a9-8df37dfcaa0d": {
+    "status": "available",
+    "name": "Blood-Cursed Knight",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic Origens",
+    "printing_code": "ORI",
+    "collector_number": "211",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood-Cursed%20Knight",
+    "checked_at": "2026-08-09T22:13:58.267Z"
   }
 }

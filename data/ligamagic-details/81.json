@@ -58,5 +58,17 @@
     "collector_number": "33",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alexios%2C%20Deimos%20of%20Kosmos",
     "checked_at": "2026-08-06T18:18:07.790Z"
+  },
+  "81dd22f7-f6c6-4cf2-9744-b1d918dbcf9a": {
+    "status": "available",
+    "name": "Blood Funnel",
+    "price_brl": 1.8,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ravnica: A Cidade das Guildas",
+    "printing_code": "RAV",
+    "collector_number": "77",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Funnel",
+    "checked_at": "2026-08-09T22:15:17.374Z"
   }
 }
