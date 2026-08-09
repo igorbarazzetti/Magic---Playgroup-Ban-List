@@ -116,11 +116,11 @@ fieldset{min-width:0;margin:0;padding:0;border:0}
 
 .price-coverage{position:relative;z-index:3;border-bottom:1px solid rgba(113,216,209,.1);background:linear-gradient(90deg,rgba(80,58,143,.055),rgba(7,11,16,.92) 36%,rgba(28,94,96,.055));box-shadow:inset 0 -1px rgba(255,255,255,.015)}
 .price-coverage__inner{width:min(calc(100% - 24px),1180px);margin:0 auto;padding:8px 0 10px}
-.price-coverage__heading{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:6px}
+.price-coverage__heading{display:flex;align-items:center;justify-content:flex-start;gap:8px;margin-bottom:6px}
 .price-coverage__heading p{display:flex;align-items:baseline;flex-wrap:wrap;gap:3px 7px;margin:0;min-width:0;color:#94999d;font-size:8px;line-height:1.3;letter-spacing:.025em}
 .price-coverage__heading p>strong{color:#d9d1c2;font-size:8px;letter-spacing:.08em;text-transform:uppercase}
 .price-coverage__heading p span{white-space:nowrap}.price-coverage__heading p b{color:#efe4ce;font-weight:800}
-.price-coverage__percent{flex:0 0 auto;color:var(--gold-bright);font:800 10px/1 var(--display);letter-spacing:.03em;text-shadow:0 0 12px rgba(231,199,127,.22)}
+.price-coverage__percent{flex:0 0 auto;padding-left:8px;border-left:1px solid rgba(231,199,127,.2);color:var(--gold-bright);font:800 10px/1 var(--display);letter-spacing:.03em;text-shadow:0 0 12px rgba(231,199,127,.22)}
 .price-coverage__track{position:relative;height:3px;overflow:visible;border-radius:99px;background:linear-gradient(90deg,rgba(155,134,255,.12),rgba(113,216,209,.12));box-shadow:inset 0 0 0 1px rgba(255,255,255,.025)}
 .price-coverage__fill{position:absolute;inset:0 auto 0 0;width:var(--price-coverage,0%);min-width:0;border-radius:inherit;background:linear-gradient(90deg,rgba(155,134,255,.72),var(--cyan) 78%,var(--gold-bright));box-shadow:0 0 9px rgba(113,216,209,.28);transition:width 700ms cubic-bezier(.22,.75,.22,1)}
 .price-coverage__fill::before{content:"";position:absolute;right:-22px;top:50%;width:48px;height:20px;transform:translateY(-50%);background:radial-gradient(ellipse,rgba(255,231,167,.42),rgba(113,216,209,.18) 30%,transparent 70%);filter:blur(3px);pointer-events:none}
