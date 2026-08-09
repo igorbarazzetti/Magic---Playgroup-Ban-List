@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Back%20for%20Seconds",
     "checked_at": "2026-08-08T14:56:37.935Z"
   },
+  "ee414d20-b18e-4bed-97fc-3c7535089ec1": {
+    "status": "available",
+    "name": "Benevolent Ancestor",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mystery Booster",
+    "printing_code": "MB1",
+    "collector_number": "36",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benevolent%20Ancestor",
+    "checked_at": "2026-08-09T15:01:35.711Z"
+  },
   "ee496b34-d8e0-482a-a2c2-3122ea376da0": {
     "status": "available",
     "name": "Arcbound Crusher",

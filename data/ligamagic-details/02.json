@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=April%20O'Neil%2C%20Human%20Element",
     "checked_at": "2026-08-07T11:21:56.833Z"
   },
+  "020de6d7-f5a2-4036-ad25-451e5977b4d4": {
+    "status": "available",
+    "name": "Beza, the Bounding Spring",
+    "price_brl": 48.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Bloomburrow",
+    "printing_code": "BLB",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beza%2C%20the%20Bounding%20Spring",
+    "checked_at": "2026-08-09T15:11:15.745Z"
+  },
   "02125db4-4507-467a-ac0c-406de2c7d533": {
     "status": "available",
     "name": "Adventurous Eater // Have a Bite",
@@ -106,6 +118,18 @@
     "collector_number": "19",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Winota%2C%20Joiner%20of%20Forces",
     "checked_at": "2026-08-05T20:15:27.006Z"
+  },
+  "02da2cbf-50d6-4c37-8a9f-40db1f7954be": {
+    "status": "available",
+    "name": "Benefaction of Rhonas",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Amonkhet",
+    "printing_code": "AKH",
+    "collector_number": "156",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benefaction%20of%20Rhonas",
+    "checked_at": "2026-08-09T15:01:15.370Z"
   },
   "02f16726-f2f6-4943-b71a-93f8e26251d3": {
     "status": "available",

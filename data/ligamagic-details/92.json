@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Suffering",
     "checked_at": "2026-08-07T07:56:16.394Z"
   },
+  "92512acd-bf1e-4133-93cd-6c6af5affb95": {
+    "status": "available",
+    "name": "Bhaal's Invoker",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends: Batalha por Portal de Baldur",
+    "printing_code": "CLB",
+    "collector_number": "163",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bhaal's%20Invoker",
+    "checked_at": "2026-08-09T15:11:35.754Z"
+  },
   "925a0b9b-a1fa-4aad-89d9-e2698ac3582f": {
     "status": "available",
     "name": "Ajani's Presence",

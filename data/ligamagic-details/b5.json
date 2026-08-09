@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashnod's%20Battle%20Gear",
     "checked_at": "2026-08-08T02:41:31.775Z"
   },
+  "b5adbd37-8d98-4c65-b42d-cd9db94e7222": {
+    "status": "available",
+    "name": "Benalish Lancer",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Duel Decks: Knights vs. Dragons",
+    "printing_code": "DDG",
+    "collector_number": "12",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benalish%20Lancer",
+    "checked_at": "2026-08-09T14:59:35.322Z"
+  },
   "b5c8e24a-f4d7-42dc-8117-905ad0bad888": {
     "status": "available",
     "name": "Atlantis Attacks",

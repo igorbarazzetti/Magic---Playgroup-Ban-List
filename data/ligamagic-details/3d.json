@@ -143,6 +143,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beastie%20Beatdown",
     "checked_at": "2026-08-08T23:05:40.631Z"
   },
+  "3dadb654-6191-4ad3-8315-46f5613fbc01": {
+    "status": "available",
+    "name": "Biblioplex Assistant",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Strixhaven: Escola de Magos",
+    "printing_code": "STX",
+    "collector_number": "251",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Biblioplex%20Assistant",
+    "checked_at": "2026-08-09T15:11:45.758Z"
+  },
+  "3db8466c-864f-48ba-b617-f2c863dfdcbd": {
+    "status": "available",
+    "name": "Benevolent Offering",
+    "price_brl": 0.6,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2014",
+    "printing_code": "C14",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benevolent%20Offering",
+    "checked_at": "2026-08-09T15:02:15.384Z"
+  },
   "3db9bf7b-da4e-428f-aa5d-a0cd1afeb16c": {
     "status": "available",
     "name": "Backlash",

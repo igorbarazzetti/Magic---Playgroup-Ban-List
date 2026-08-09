@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Air%20Nomad%20Legacy",
     "checked_at": "2026-08-06T14:46:31.923Z"
   },
+  "9e8a2d53-3145-421a-aad1-8f2b2f6eaec8": {
+    "status": "available",
+    "name": "Berserkers of Blood Ridge",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2011",
+    "printing_code": "M11",
+    "collector_number": "124",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Berserkers%20of%20Blood%20Ridge",
+    "checked_at": "2026-08-09T15:06:15.533Z"
+  },
   "9e9cde32-0568-44bc-a00a-9709f15c1350": {
     "status": "available",
     "name": "Aether Refinery",

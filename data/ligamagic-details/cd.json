@@ -70,5 +70,17 @@
     "collector_number": "41",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archive%20Dragon",
     "checked_at": "2026-08-07T17:18:04.311Z"
+  },
+  "cdfcfd2b-966a-4e03-8ed5-4fa7fab423d0": {
+    "status": "available",
+    "name": "Bespoke Battlewagon",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3",
+    "printing_code": "MH3",
+    "collector_number": "52",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bespoke%20Battlewagon",
+    "checked_at": "2026-08-09T15:07:45.617Z"
   }
 }

@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arch%20of%20Orazca",
     "checked_at": "2026-08-07T13:58:34.115Z"
   },
+  "3bc46467-323f-4cbf-9d0a-f3d2ae3c3a34": {
+    "status": "available",
+    "name": "Bender's Waterskin",
+    "price_brl": 0.8,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Avatar: The Last Airbender",
+    "printing_code": "TLA",
+    "collector_number": "255",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bender's%20Waterskin",
+    "checked_at": "2026-08-09T15:00:45.453Z"
+  },
   "3bc757c1-3adb-4321-8832-8e1cc9e687f7": {
     "status": "available",
     "name": "Lurrus of the Dream-Den",

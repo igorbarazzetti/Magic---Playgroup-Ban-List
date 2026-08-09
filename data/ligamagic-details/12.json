@@ -142,5 +142,17 @@
     "collector_number": "175",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbarian%20Lunatic",
     "checked_at": "2026-08-08T17:12:07.446Z"
+  },
+  "12d91743-1ccb-4f2b-b2a9-1c2b34f7c8eb": {
+    "status": "available",
+    "name": "Benevolent River Spirit",
+    "price_brl": 0.14,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Avatar: The Last Airbender",
+    "printing_code": "TLA",
+    "collector_number": "45",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benevolent%20River%20Spirit",
+    "checked_at": "2026-08-09T15:02:25.442Z"
   }
 }

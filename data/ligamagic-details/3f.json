@@ -178,5 +178,17 @@
     "collector_number": "174",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Imperiosaur",
     "checked_at": "2026-08-07T07:50:16.085Z"
+  },
+  "3ff2fc3c-0871-4ba7-9b7c-8634ec770d6b": {
+    "status": "available",
+    "name": "Benediction of Moons",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Pacto das Guildas",
+    "printing_code": "GP",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benediction%20of%20Moons",
+    "checked_at": "2026-08-09T15:01:05.347Z"
   }
 }

@@ -119,6 +119,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armament%20Master",
     "checked_at": "2026-08-07T19:30:13.811Z"
   },
+  "f1dce3f0-30c8-488f-bbeb-b0533886c655": {
+    "status": "available",
+    "name": "Betrayal at the Vault",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Os Fora da Lei de Encruzilhada do Trovão",
+    "printing_code": "OTJ",
+    "collector_number": "155",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Betrayal%20at%20the%20Vault",
+    "checked_at": "2026-08-09T15:09:35.660Z"
+  },
   "f1ecb3d7-5ea0-45b2-b1b0-d7ae304db2a1": {
     "status": "available",
     "name": "Archmage of Echoes",

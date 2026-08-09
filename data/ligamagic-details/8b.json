@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Tree%20of%20Tales",
     "checked_at": "2026-08-05T20:14:17.850Z"
   },
+  "8b67d192-9a05-4a47-82ae-5fc4b7834d88": {
+    "status": "available",
+    "name": "Berserk",
+    "price_brl": 65.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven: Mystical Archive",
+    "printing_code": "SOA",
+    "collector_number": "50",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Berserk",
+    "checked_at": "2026-08-09T15:05:45.561Z"
+  },
   "8b972819-507a-40a9-ab1f-1a674ea56083": {
     "status": "available",
     "name": "Abzan Falconer",

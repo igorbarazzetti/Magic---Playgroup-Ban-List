@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amulet%20of%20Unmaking",
     "checked_at": "2026-08-07T04:42:51.344Z"
   },
+  "9472c96a-2827-4af6-a6a1-b6749a5e9069": {
+    "status": "available",
+    "name": "Benevolent Blessing",
+    "price_brl": 5.79,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends",
+    "printing_code": "CMR",
+    "collector_number": "13",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benevolent%20Blessing",
+    "checked_at": "2026-08-09T15:01:45.395Z"
+  },
   "94779ca4-c202-4163-9c77-1036921a34bc": {
     "status": "available",
     "name": "Adrestia",

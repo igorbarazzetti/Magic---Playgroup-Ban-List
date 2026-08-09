@@ -1,4 +1,16 @@
 {
+  "990b5e12-6e04-4832-9d64-87278f12cbda": {
+    "status": "available",
+    "name": "Betor, Ancestor's Voice",
+    "price_brl": 20.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm Commander (Borderless)",
+    "printing_code": "BLTDC",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Betor%2C%20Ancestor's%20Voice",
+    "checked_at": "2026-08-09T15:09:05.641Z"
+  },
   "991fd651-0cba-41ee-855a-d01a1a7c8f60": {
     "status": "available",
     "name": "Anikthea, Hand of Erebos",

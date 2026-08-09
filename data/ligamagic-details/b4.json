@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armed%20with%20Proof",
     "checked_at": "2026-08-07T19:31:23.852Z"
   },
+  "b437c963-def5-40d6-b567-ae9f1d2a0fa5": {
+    "status": "available",
+    "name": "Benevolent Unicorn",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Miragem",
+    "printing_code": "MR",
+    "collector_number": "24",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benevolent%20Unicorn",
+    "checked_at": "2026-08-09T15:02:35.403Z"
+  },
   "b4505b07-ac99-4706-88b2-6164389e447c": {
     "status": "available",
     "name": "Ark of Blight",

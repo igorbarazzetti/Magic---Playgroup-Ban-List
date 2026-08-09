@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adeliz%2C%20the%20Cinder%20Wind",
     "checked_at": "2026-08-06T07:08:14.526Z"
   },
+  "85113e73-26f7-4938-b7a7-607e704af0ca": {
+    "status": "available",
+    "name": "Benefactor's Draught",
+    "price_brl": 24.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2016",
+    "printing_code": "C16",
+    "collector_number": "21",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benefactor's%20Draught",
+    "checked_at": "2026-08-09T15:01:25.370Z"
+  },
   "8517e5f4-89c5-4879-9b4f-b35e268798df": {
     "status": "available",
     "name": "Aetherstream Leopard",
@@ -166,6 +178,18 @@
     "collector_number": "12",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assassin%20Gauntlet",
     "checked_at": "2026-08-08T02:45:42.375Z"
+  },
+  "85d2948c-1a79-418d-80c4-bc1012a4d313": {
+    "status": "available",
+    "name": "Berserkers' Onslaught",
+    "price_brl": 2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dragões de Tarkir",
+    "printing_code": "DTK",
+    "collector_number": "130",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Berserkers'%20Onslaught",
+    "checked_at": "2026-08-09T15:06:25.572Z"
   },
   "85eefda9-4aab-467d-a08c-be026cb8ff42": {
     "status": "available",

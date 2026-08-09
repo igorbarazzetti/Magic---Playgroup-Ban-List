@@ -1,4 +1,16 @@
 {
+  "ef08d371-9d6c-4a2d-a444-d475fbf1b633": {
+    "status": "available",
+    "name": "Bestial Menace",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Masters 2015",
+    "printing_code": "MM2",
+    "collector_number": "141",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bestial%20Menace",
+    "checked_at": "2026-08-09T15:08:45.693Z"
+  },
   "ef3fdfea-330d-4948-94ec-67e344b48086": {
     "status": "available",
     "name": "Ali Baba",

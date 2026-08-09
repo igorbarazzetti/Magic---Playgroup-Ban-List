@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ascendant%20Packleader",
     "checked_at": "2026-08-07T21:14:09.121Z"
   },
+  "7e8d40fd-c324-4ec2-897d-b46368b050e6": {
+    "status": "available",
+    "name": "Benthic Djinn",
+    "price_brl": 1.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Miragem",
+    "printing_code": "MR",
+    "collector_number": "25",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benthic%20Djinn",
+    "checked_at": "2026-08-09T15:03:35.456Z"
+  },
   "7e8f5b34-fd16-4307-9104-17b584b25b14": {
     "status": "available",
     "name": "Awakener Druid",

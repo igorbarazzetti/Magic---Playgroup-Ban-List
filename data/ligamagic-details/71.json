@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bedhead%20Beastie",
     "checked_at": "2026-08-09T13:34:04.015Z"
   },
+  "715f0832-696c-4111-b418-d9b6da403159": {
+    "status": "available",
+    "name": "Berta, Wise Extrapolator",
+    "price_brl": 0.95,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven",
+    "printing_code": "SOS",
+    "collector_number": "175",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Berta%2C%20Wise%20Extrapolator",
+    "checked_at": "2026-08-09T15:06:36.087Z"
+  },
   "719aeb50-c8cf-4cd8-b74c-d2cef408b52e": {
     "status": "available",
     "name": "Airlift Chaplain",

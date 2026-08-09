@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agate%20Instigator",
     "checked_at": "2026-08-06T11:08:54.074Z"
   },
+  "e1afaef7-9fa3-4662-a95f-adfb0da9fd11": {
+    "status": "available",
+    "name": "Bident of Thassa",
+    "price_brl": 3.53,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros",
+    "printing_code": "THS",
+    "collector_number": "42",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bident%20of%20Thassa",
+    "checked_at": "2026-08-09T15:12:15.737Z"
+  },
   "e1e5ad8c-d425-44ad-a8f6-e9290667f6f5": {
     "status": "available",
     "name": "Bellowing Saddlebrute",

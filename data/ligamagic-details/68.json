@@ -167,6 +167,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Krark-Clan%20Ironworks",
     "checked_at": "2026-08-05T20:08:56.001Z"
   },
+  "68eb3566-c74d-42a6-89a6-b468677fc485": {
+    "status": "available",
+    "name": "Benthicore",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn",
+    "printing_code": "LW",
+    "collector_number": "53",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benthicore",
+    "checked_at": "2026-08-09T15:04:15.505Z"
+  },
   "68f7d1bf-48c7-483e-b17f-a60008854b46": {
     "status": "available",
     "name": "Armory Mice",

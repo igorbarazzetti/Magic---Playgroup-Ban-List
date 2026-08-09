@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arc%20Blade",
     "checked_at": "2026-08-07T13:48:43.674Z"
   },
+  "2cc439e8-d112-44e6-bc5a-6e99333c519a": {
+    "status": "available",
+    "name": "Benalish Marshal",
+    "price_brl": 0.59,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominaria",
+    "printing_code": "DOM",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benalish%20Marshal",
+    "checked_at": "2026-08-09T14:59:45.348Z"
+  },
   "2cdd85c8-fa60-44ca-bc96-d38f029d2184": {
     "status": "available",
     "name": "Anurid Barkripper",

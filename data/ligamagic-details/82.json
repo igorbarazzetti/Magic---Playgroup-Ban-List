@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assassin%20Den",
     "checked_at": "2026-08-08T02:45:32.230Z"
   },
+  "826a0db6-195a-4697-9bd6-f544b279e3cf": {
+    "status": "available",
+    "name": "Betor, Kin to All",
+    "price_brl": 19.7,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm",
+    "printing_code": "TDM",
+    "collector_number": "172",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Betor%2C%20Kin%20to%20All",
+    "checked_at": "2026-08-09T15:09:15.653Z"
+  },
   "8294539d-7982-4ec9-8392-99eed78542f5": {
     "status": "available",
     "name": "Battle for Bretagard",

@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akki%20Rockspeaker",
     "checked_at": "2026-08-06T18:03:27.153Z"
   },
+  "01dbf1bc-ca62-4fb6-959c-ef7c0dc03bb0": {
+    "status": "available",
+    "name": "Benevolent Hydra",
+    "price_brl": 18.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven Commander",
+    "printing_code": "SOC",
+    "collector_number": "124",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benevolent%20Hydra",
+    "checked_at": "2026-08-09T15:02:05.431Z"
+  },
   "01ed9139-293d-4477-a145-3c6fe59266c7": {
     "status": "available",
     "name": "Airship Engine Room",

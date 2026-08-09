@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archangel's%20Light",
     "checked_at": "2026-08-07T17:14:04.094Z"
   },
+  "fc80380c-7d75-4556-aaf2-bf7b2c757e75": {
+    "status": "available",
+    "name": "Besmirch",
+    "price_brl": 0.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Conspiracy: Take the Crown",
+    "printing_code": "CN2",
+    "collector_number": "49",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Besmirch",
+    "checked_at": "2026-08-09T15:07:15.566Z"
+  },
   "fc8247f5-f7b2-4fc4-a9ea-90babad5fa42": {
     "status": "available",
     "name": "Batwing Brume",

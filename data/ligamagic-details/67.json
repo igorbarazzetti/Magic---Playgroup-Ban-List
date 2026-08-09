@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anchor%20to%20Reality",
     "checked_at": "2026-08-07T04:50:51.675Z"
   },
+  "679480aa-f9ad-4a6c-bd79-db9f9f75433d": {
+    "status": "available",
+    "name": "Bespoke Bō",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Teenage Mutant Ninja Turtles",
+    "printing_code": "TMT",
+    "collector_number": "31",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bespoke%20B%C5%8D",
+    "checked_at": "2026-08-09T15:07:55.597Z"
+  },
   "67b4a4bc-0b02-4cef-b5c8-41c839eaf0cd": {
     "status": "available",
     "name": "Ascending Aven",

@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archon%20of%20Redemption",
     "checked_at": "2026-08-07T17:21:04.422Z"
   },
+  "4362efe4-339d-40e1-bd72-3cc9e41bf93f": {
+    "status": "available",
+    "name": "Bend or Break",
+    "price_brl": 2.16,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Invasão",
+    "printing_code": "IN",
+    "collector_number": "137",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bend%20or%20Break",
+    "checked_at": "2026-08-09T15:00:35.340Z"
+  },
   "436e7548-f8d5-43af-947d-b382da0d19b3": {
     "status": "available",
     "name": "Arna Kennerüd, Skycaptain",
@@ -118,6 +130,30 @@
     "collector_number": "731",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Admiral%20Beckett%20Brass",
     "checked_at": "2026-08-06T07:09:04.586Z"
+  },
+  "43c449d1-51a9-45e0-8102-823a6811ff54": {
+    "status": "available",
+    "name": "Benthic Giant",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Battlebond",
+    "printing_code": "BBD",
+    "collector_number": "113",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benthic%20Giant",
+    "checked_at": "2026-08-09T15:03:55.503Z"
+  },
+  "43cee9b6-9853-4337-869a-45540c9db10f": {
+    "status": "available",
+    "name": "Betrayal of Flesh",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mirrodin",
+    "printing_code": "MI",
+    "collector_number": "58",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Betrayal%20of%20Flesh",
+    "checked_at": "2026-08-09T15:09:45.692Z"
   },
   "43dc4b0c-e437-4abc-a3fb-48bd3098de88": {
     "status": "available",

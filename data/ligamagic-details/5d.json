@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Maddening%20Hex",
     "checked_at": "2026-08-05T20:09:26.080Z"
   },
+  "5da2e5c7-ec04-4f1f-bb2f-7572f877393c": {
+    "status": "available",
+    "name": "Benalish Veteran",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2012",
+    "printing_code": "M12",
+    "collector_number": "10",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benalish%20Veteran",
+    "checked_at": "2026-08-09T15:00:25.685Z"
+  },
   "5da7eea8-bb9e-47ce-a554-8a1ee058bd7a": {
     "status": "available",
     "name": "Beast Whisperer",

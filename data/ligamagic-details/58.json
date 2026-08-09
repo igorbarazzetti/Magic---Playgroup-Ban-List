@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aura%20Gnarlid",
     "checked_at": "2026-08-08T07:29:23.306Z"
   },
+  "58a17110-b2a7-4dbc-bba5-5ed3728ad261": {
+    "status": "available",
+    "name": "Bestow Greatness",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Aetherdrift",
+    "printing_code": "DFT",
+    "collector_number": "155",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bestow%20Greatness",
+    "checked_at": "2026-08-09T15:08:55.628Z"
+  },
   "58aec411-167d-4709-8560-793eaaed62c5": {
     "status": "available",
     "name": "Gifts Ungiven",

@@ -1,4 +1,16 @@
 {
+  "9c3d2e1f-a5da-47f4-aea8-5861ef7e1b90": {
+    "status": "available",
+    "name": "Betrayal",
+    "price_brl": 0.24,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Visões",
+    "printing_code": "VI",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Betrayal",
+    "checked_at": "2026-08-09T15:09:25.637Z"
+  },
   "9c4219db-1a7a-4d61-bb8b-7998cfed1faf": {
     "status": "available",
     "name": "Anax and Cymede",

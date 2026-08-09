@@ -82,5 +82,17 @@
     "collector_number": "6",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerathi%20Berserker",
     "checked_at": "2026-08-06T07:16:04.966Z"
+  },
+  "5cd51d39-aebc-4367-9157-da70b8d9b1a3": {
+    "status": "available",
+    "name": "Berserker's Frenzy",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Forgotten Realms Commander",
+    "printing_code": "AFC",
+    "collector_number": "29",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Berserker's%20Frenzy",
+    "checked_at": "2026-08-09T15:06:05.534Z"
   }
 }

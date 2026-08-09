@@ -1,4 +1,16 @@
 {
+  "bc0518fc-d34b-474a-92c5-2cb013828396": {
+    "status": "available",
+    "name": "Benthic Explorers",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alianças",
+    "printing_code": "AI",
+    "collector_number": "36",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benthic%20Explorers",
+    "checked_at": "2026-08-09T15:03:45.474Z"
+  },
   "bc416c17-e1f0-4344-8c21-6184cac10205": {
     "status": "available",
     "name": "Anaba Shaman",

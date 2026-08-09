@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agent%20Venom",
     "checked_at": "2026-08-06T11:13:24.249Z"
   },
+  "14c3692d-16a9-4ef0-98cd-60d15e4aa31f": {
+    "status": "available",
+    "name": "Benalish Sleeper",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominária Unida",
+    "printing_code": "DMU",
+    "collector_number": "8",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benalish%20Sleeper",
+    "checked_at": "2026-08-09T15:00:05.387Z"
+  },
   "14c3e48b-4c4e-4787-8c50-0e3aee19aa23": {
     "status": "available",
     "name": "Aerith Rescue Mission",

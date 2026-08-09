@@ -119,6 +119,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abzan%20Kin-Guard",
     "checked_at": "2026-08-06T03:46:21.618Z"
   },
+  "b2977807-5f46-424a-a6e9-14262f8a723a": {
+    "status": "available",
+    "name": "Benthic Infiltrator",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Batalha por Zendikar",
+    "printing_code": "BFZ",
+    "collector_number": "55",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benthic%20Infiltrator",
+    "checked_at": "2026-08-09T15:04:05.487Z"
+  },
   "b2bd58ea-b2c6-47f1-b082-7969f093bbc6": {
     "status": "available",
     "name": "Animate Land",
@@ -166,5 +178,17 @@
     "collector_number": "156",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Basking%20Rootwalla",
     "checked_at": "2026-08-08T20:58:16.553Z"
+  },
+  "b2ff15b8-1be4-4f94-b4cc-aa959a50288e": {
+    "status": "available",
+    "name": "Bespoke Battlegarb",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Selvagens de Eldraine",
+    "printing_code": "WOE",
+    "collector_number": "122",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bespoke%20Battlegarb",
+    "checked_at": "2026-08-09T15:07:36.068Z"
   }
 }

@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Academy%20Researchers",
     "checked_at": "2026-08-06T03:48:21.646Z"
   },
+  "df72b5d6-6f9e-4d6b-acf6-7dec4ff35468": {
+    "status": "available",
+    "name": "Bess, Soul Nourisher",
+    "price_brl": 2.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nova Capenna Commander",
+    "printing_code": "NCC",
+    "collector_number": "67",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bess%2C%20Soul%20Nourisher",
+    "checked_at": "2026-08-09T15:08:05.611Z"
+  },
   "df7e296d-96de-4280-a4d8-49189544b9e3": {
     "status": "available",
     "name": "Avacynian Priest",
@@ -70,6 +82,18 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani%20Goldmane",
     "checked_at": "2026-08-06T14:49:42.022Z"
+  },
+  "dfc08963-132f-4ebf-9384-15d17d1098f7": {
+    "status": "available",
+    "name": "Bestial Fury",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alianças",
+    "printing_code": "AI",
+    "collector_number": "99",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bestial%20Fury",
+    "checked_at": "2026-08-09T15:08:36.178Z"
   },
   "dfc982a2-9ae8-4206-a2d7-4dcfcde02451": {
     "status": "available",

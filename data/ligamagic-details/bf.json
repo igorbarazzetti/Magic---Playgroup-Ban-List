@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archway%20of%20Innovation",
     "checked_at": "2026-08-07T17:22:44.569Z"
   },
+  "bfb3d862-d92d-4a4f-9a22-671b55d954fd": {
+    "status": "available",
+    "name": "Betrayer's Bargain",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Noctumbra: A Casa dos Horrores",
+    "printing_code": "DSK",
+    "collector_number": "126",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Betrayer's%20Bargain",
+    "checked_at": "2026-08-09T15:09:55.712Z"
+  },
   "bfcdf563-c6e5-4a54-bb63-4aba219b94e2": {
     "status": "available",
     "name": "Beacon of Immortality",

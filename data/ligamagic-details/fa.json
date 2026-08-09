@@ -118,5 +118,17 @@
     "collector_number": "157",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baloth%20Woodcrasher",
     "checked_at": "2026-08-08T17:00:57.067Z"
+  },
+  "fae834ee-2b2e-4f68-b4a4-81592cbecefb": {
+    "status": "available",
+    "name": "Bereavement",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Saga de Urza",
+    "printing_code": "US",
+    "collector_number": "117",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bereavement",
+    "checked_at": "2026-08-09T15:05:15.511Z"
   }
 }

@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aeolipile",
     "checked_at": "2026-08-06T07:15:34.904Z"
   },
+  "08a0e845-9ef9-4de1-b9fe-4530357346ca": {
+    "status": "available",
+    "name": "Biblioplex Tomekeeper",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven",
+    "printing_code": "SOS",
+    "collector_number": "247",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Biblioplex%20Tomekeeper",
+    "checked_at": "2026-08-09T15:12:06.455Z"
+  },
   "08b13e1f-27ca-40a8-b5ed-88ac933d24bf": {
     "status": "available",
     "name": "Archivist of Oghma",

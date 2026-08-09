@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barrel%20Down%20Sokenzan",
     "checked_at": "2026-08-08T19:13:52.331Z"
   },
+  "d9ed7252-11d1-432b-9101-ac08cd28826d": {
+    "status": "available",
+    "name": "Beorn's Hospitality",
+    "price_brl": 2.45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "The Hobbit",
+    "printing_code": "HOB",
+    "collector_number": "120",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beorn's%20Hospitality",
+    "checked_at": "2026-08-09T15:04:35.478Z"
+  },
   "d9f43942-4296-417d-a180-5b4f64e4b12d": {
     "status": "available",
     "name": "Aven Reedstalker",

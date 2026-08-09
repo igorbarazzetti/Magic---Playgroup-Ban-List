@@ -1,4 +1,16 @@
 {
+  "b9000917-4f09-42f4-ae85-fc1ac7571d93": {
+    "status": "available",
+    "name": "Benthic Biomancer",
+    "price_brl": 0.35,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lealdade em Ravnica",
+    "printing_code": "RNA",
+    "collector_number": "32",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benthic%20Biomancer",
+    "checked_at": "2026-08-09T15:03:16.114Z"
+  },
   "b91ed762-9232-4b77-abf4-97f66637f49c": {
     "status": "available",
     "name": "Anarchy",

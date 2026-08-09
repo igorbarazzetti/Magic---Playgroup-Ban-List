@@ -47,6 +47,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aetherflux%20Conduit",
     "checked_at": "2026-08-06T11:02:23.726Z"
   },
+  "776aa036-08aa-4fa0-82bd-c09e6e3e2c5e": {
+    "status": "available",
+    "name": "Bessie, the Doctor's Roadster",
+    "price_brl": 1.89,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Doctor Who",
+    "printing_code": "WHO",
+    "collector_number": "171",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bessie%2C%20the%20Doctor's%20Roadster",
+    "checked_at": "2026-08-09T15:08:15.617Z"
+  },
+  "77849657-c872-4d54-9149-a08bbe90f787": {
+    "status": "available",
+    "name": "Betrothed of Fire",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alisios",
+    "printing_code": "WL",
+    "collector_number": "24",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Betrothed%20of%20Fire",
+    "checked_at": "2026-08-09T15:10:05.727Z"
+  },
   "77a9e7cf-76e9-4323-8504-a5b831de00be": {
     "status": "available",
     "name": "Ashling, the Limitless",

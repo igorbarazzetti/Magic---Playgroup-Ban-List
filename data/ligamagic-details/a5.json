@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Allied%20Strategies",
     "checked_at": "2026-08-07T00:36:24.678Z"
   },
+  "a5d803bc-7fd4-4570-8cd6-cb138727a66e": {
+    "status": "available",
+    "name": "Bewitching Leechcraft",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Senhor dos Anéis: Contos da Terra Média",
+    "printing_code": "LTR",
+    "collector_number": "41",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bewitching%20Leechcraft",
+    "checked_at": "2026-08-09T15:10:45.753Z"
+  },
   "a5e9142e-76bf-40d4-aeaa-ffe197d38f25": {
     "status": "available",
     "name": "Auntie Blyte, Bad Influence",

@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aurelia%2C%20the%20Law%20Above",
     "checked_at": "2026-08-08T07:31:33.371Z"
   },
+  "2a9054ce-7276-4030-901a-cf6aa18f2b62": {
+    "status": "available",
+    "name": "Bequeathal",
+    "price_brl": 3.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "êxodo",
+    "printing_code": "EX",
+    "collector_number": "106",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bequeathal",
+    "checked_at": "2026-08-09T15:04:55.489Z"
+  },
   "2a93236d-f182-4826-8112-4048bb3cbaf9": {
     "status": "available",
     "name": "Ageless Entity",
