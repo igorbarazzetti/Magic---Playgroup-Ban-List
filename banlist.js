@@ -3035,13 +3035,27 @@ function openCatalogCacheDb() {
   if (catalogCacheDbPromise) return catalogCacheDbPromise;
   if (!('indexedDB' in window)) return Promise.resolve(null);
   catalogCacheDbPromise = new Promise((resolve) => {
-    const request = indexedDB.open(catalogCacheDbName, 1);
+    let settled = false;
+    const finish = (value) => {
+      if (settled) return;
+      settled = true;
+      clearTimeout(timeout);
+      resolve(value);
+    };
+    const timeout = setTimeout(() => finish(null), 1200);
+    let request;
+    try {
+      request = indexedDB.open(catalogCacheDbName, 1);
+    } catch {
+      finish(null);
+      return;
+    }
     request.onupgradeneeded = () => {
       if (!request.result.objectStoreNames.contains('resources')) request.result.createObjectStore('resources', { keyPath: 'key' });
     };
-    request.onsuccess = () => resolve(request.result);
-    request.onerror = () => resolve(null);
-    request.onblocked = () => resolve(null);
+    request.onsuccess = () => finish(request.result);
+    request.onerror = () => finish(null);
+    request.onblocked = () => finish(null);
   });
   return catalogCacheDbPromise;
 }
@@ -3050,10 +3064,23 @@ async function readPersistentCatalogResource(key) {
   const db = await openCatalogCacheDb();
   if (!db) return null;
   return new Promise((resolve) => {
-    const transaction = db.transaction('resources', 'readonly');
-    const request = transaction.objectStore('resources').get(key);
-    request.onsuccess = () => resolve(request.result || null);
-    request.onerror = () => resolve(null);
+    let settled = false;
+    const finish = (value) => {
+      if (settled) return;
+      settled = true;
+      clearTimeout(timeout);
+      resolve(value);
+    };
+    const timeout = setTimeout(() => finish(null), 800);
+    try {
+      const transaction = db.transaction('resources', 'readonly');
+      const request = transaction.objectStore('resources').get(key);
+      request.onsuccess = () => finish(request.result || null);
+      request.onerror = () => finish(null);
+      transaction.onabort = () => finish(null);
+    } catch {
+      finish(null);
+    }
   });
 }
 
@@ -3069,15 +3096,30 @@ async function writePersistentCatalogResource(key, payload) {
   });
 }
 
+function validCatalogResource(key, payload) {
+  if (!payload || typeof payload !== 'object') return false;
+  if (key === 'catalog-index-v1') return Array.isArray(payload.cards) && payload.cards.length > 0;
+  if (key === 'catalog-prices-v1') return payload.prices && typeof payload.prices === 'object';
+  return true;
+}
+
 async function fetchCatalogResource(url, key, maxAge) {
   const cached = await readPersistentCatalogResource(key);
-  const cacheIsFresh = cached?.payload && Date.now() - Number(cached.storedAt || 0) < maxAge;
+  const cachedIsValid = validCatalogResource(key, cached?.payload);
+  const cacheIsFresh = cachedIsValid && Date.now() - Number(cached.storedAt || 0) < maxAge;
   const fetchFresh = async () => {
-    const response = await fetch(url, { headers: { Accept: 'application/json' }, cache: 'default' });
-    if (!response.ok) throw new Error(`${key} ${response.status}`);
-    const payload = await response.json();
-    void writePersistentCatalogResource(key, payload);
-    return payload;
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 15000);
+    try {
+      const response = await fetch(url, { headers: { Accept: 'application/json' }, cache: 'default', signal: controller.signal });
+      if (!response.ok) throw new Error(`${key} ${response.status}`);
+      const payload = await response.json();
+      if (!validCatalogResource(key, payload)) throw new Error(`${key} invalido`);
+      void writePersistentCatalogResource(key, payload);
+      return payload;
+    } finally {
+      clearTimeout(timeout);
+    }
   };
   if (cacheIsFresh) {
     void fetchFresh().catch(() => {});
@@ -3086,7 +3128,7 @@ async function fetchCatalogResource(url, key, maxAge) {
   try {
     return await fetchFresh();
   } catch (error) {
-    if (cached?.payload) return cached.payload;
+    if (cachedIsValid) return cached.payload;
     throw error;
   }
 }
@@ -3127,10 +3169,9 @@ async function loadCatalog() {
     const data = await getPersistentCatalogData();
     catalogIndex = data.index;
     catalogPriceIndex = data.prices;
-    if (token !== view.loadToken || !Array.isArray(catalogIndex?.cards)) return;
-    const workerReady = initializeCatalogWorker();
+    if (token !== view.loadToken) return;
+    if (!Array.isArray(catalogIndex?.cards) || !catalogIndex.cards.length) throw new Error('Catalogo vazio');
     view.cards = await buildCatalogCards(catalogIndex.cards, token, view);
-    await workerReady;
     if (token !== view.loadToken) return;
     catalogCardById.clear();
     view.cards.forEach((card) => catalogCardById.set(card.id, card));
@@ -3141,6 +3182,7 @@ async function loadCatalog() {
       await ensureCatalogOracleMatches();
     }
     applyFilters();
+    requestAnimationFrame(() => setTimeout(() => void initializeCatalogWorker(), 0));
     const selectedId = new URLSearchParams(location.search).get('card');
     const selected = view.cards.find((card) => card.id === selectedId);
     if (selected) { await hydrateCatalogCards([selected]); openCard(selected, { pushHistory: false, initial: true }); }
@@ -3206,8 +3248,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   bind();
   const pageMode = configurePageMode();
   updateDeckBuilderFab();
-  const cardsPromise = loadCards();
-  if (state.tab === 'catalog' && !pageMode.builderPage) loadCatalog();
+  const cardsPromise = state.tab === 'catalog' && !pageMode.builderPage ? Promise.resolve() : loadCards();
+  if (state.tab === 'catalog' && !pageMode.builderPage) void loadCatalog();
   if (isScryfallSyntaxSearch(state.query)) void ensureScryfallSyntaxSearch();
   loadBackground();
   if (pageMode.builderPage) {
