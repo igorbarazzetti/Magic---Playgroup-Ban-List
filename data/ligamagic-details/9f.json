@@ -46,5 +46,17 @@
     "collector_number": "7",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcee%2C%20Sharpshooter",
     "checked_at": "2026-08-07T13:58:24.168Z"
+  },
+  "9fdad42a-9db5-4d91-9e80-9d5ce19038b8": {
+    "status": "available",
+    "name": "Blacksmith's Talent",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Bloomburrow",
+    "printing_code": "BLB",
+    "collector_number": "125",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blacksmith's%20Talent",
+    "checked_at": "2026-08-09T19:20:44.820Z"
   }
 }

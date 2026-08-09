@@ -131,6 +131,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bebop%2C%20Warthog%20Warrior",
     "checked_at": "2026-08-08T23:07:01.143Z"
   },
+  "39d60cd8-bebc-407d-b361-8e49e70e339a": {
+    "status": "available",
+    "name": "Black Poplar Shaman",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn",
+    "printing_code": "LW",
+    "collector_number": "99",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Black%20Poplar%20Shaman",
+    "checked_at": "2026-08-09T19:17:04.741Z"
+  },
   "39daa265-8d02-4449-9c45-ae8ec2b13e5b": {
     "status": "available",
     "name": "Bassara Tower Archer",

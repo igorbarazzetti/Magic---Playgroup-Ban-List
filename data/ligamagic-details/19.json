@@ -155,6 +155,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aura%20Mutation",
     "checked_at": "2026-08-08T07:29:43.297Z"
   },
+  "19c22e08-29b6-4b3d-bf6e-28a5add620bb": {
+    "status": "available",
+    "name": "Bitter Downfall",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Senhor dos Anéis: Contos da Terra Média",
+    "printing_code": "LTR",
+    "collector_number": "77",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bitter%20Downfall",
+    "checked_at": "2026-08-09T19:11:54.589Z"
+  },
   "19d8937e-23fb-4758-a306-0e7af9bb44c4": {
     "status": "available",
     "name": "Aettir and Priwen",

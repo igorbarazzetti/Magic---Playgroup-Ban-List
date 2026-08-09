@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bionic%20Blow",
     "checked_at": "2026-08-09T17:11:17.690Z"
   },
+  "2774d8b3-dc5f-4281-b4c5-cb003fef0ab2": {
+    "status": "available",
+    "name": "Black Scarab",
+    "price_brl": 3.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Era Glacial",
+    "printing_code": "IA",
+    "collector_number": "31",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Black%20Scarab",
+    "checked_at": "2026-08-09T19:17:14.699Z"
+  },
   "2786f210-ec64-46ea-9a7f-b03759fb1dae": {
     "status": "available",
     "name": "Ancestral Knowledge",

@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azor%2C%20the%20Lawbringer",
     "checked_at": "2026-08-08T13:28:57.185Z"
   },
+  "8985e545-07c3-45f9-9058-fe3c1f50de04": {
+    "status": "available",
+    "name": "Blade of the Bloodchief",
+    "price_brl": 24.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "As Cavernas Perdidas de Ixalan Commander",
+    "printing_code": "LCC",
+    "collector_number": "300",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blade%20of%20the%20Bloodchief",
+    "checked_at": "2026-08-09T19:22:14.919Z"
+  },
   "898f0824-cf4c-4e34-8407-9a32fdae6dcb": {
     "status": "available",
     "name": "Arctic Foxes",

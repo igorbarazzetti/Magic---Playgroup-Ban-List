@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Sinkhole",
     "checked_at": "2026-08-05T20:12:38.623Z"
   },
+  "5a57fba3-01e3-4852-8c45-7c910502bd03": {
+    "status": "available",
+    "name": "Bitterthorn, Nissa's Animus",
+    "price_brl": 48.19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven Commander",
+    "printing_code": "SOC",
+    "collector_number": "343",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bitterthorn%2C%20Nissa's%20Animus",
+    "checked_at": "2026-08-09T19:13:34.703Z"
+  },
   "5a651557-ce08-46ba-aecd-0e4fbfdef3c0": {
     "status": "available",
     "name": "Bile-Vial Boggart",
@@ -154,6 +166,18 @@
     "collector_number": "97",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arc%20Lightning",
     "checked_at": "2026-08-07T13:48:53.687Z"
+  },
+  "5ad94412-6f79-4c5d-bbd4-4ef5779a7b6d": {
+    "status": "available",
+    "name": "Blackcleave Cliffs",
+    "price_brl": 8.36,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Cicatrizes de Mirrodin",
+    "printing_code": "SOM",
+    "collector_number": "224",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blackcleave%20Cliffs",
+    "checked_at": "2026-08-09T19:19:54.840Z"
   },
   "5adc9d0d-3393-4d91-be85-1f9dd344698b": {
     "status": "available",

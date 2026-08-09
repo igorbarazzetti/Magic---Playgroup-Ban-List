@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bewildering%20Blizzard",
     "checked_at": "2026-08-09T15:10:35.703Z"
   },
+  "84487586-4f71-457a-b983-4f1f7a71deef": {
+    "status": "available",
+    "name": "Bishop's Soldier",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ixalan",
+    "printing_code": "XLN",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bishop's%20Soldier",
+    "checked_at": "2026-08-09T19:10:14.498Z"
+  },
   "84587724-af96-4396-a0b3-1133d492d915": {
     "status": "available",
     "name": "Atalya, Samite Master",
@@ -154,6 +166,18 @@
     "collector_number": "246",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambition's%20Cost",
     "checked_at": "2026-08-07T04:35:41.100Z"
+  },
+  "84fb1c2f-cf1b-4166-834f-a887aa182d09": {
+    "status": "available",
+    "name": "Blade-Blizzard Kitsune",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kamigawa: Dinastia Neon",
+    "printing_code": "NEO",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blade-Blizzard%20Kitsune",
+    "checked_at": "2026-08-09T19:21:15.165Z"
   },
   "84fdcfd3-2b22-4570-af34-7e3f55f97466": {
     "status": "available",

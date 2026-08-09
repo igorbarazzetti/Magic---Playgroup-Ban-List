@@ -130,5 +130,17 @@
     "collector_number": "58",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Banefire",
     "checked_at": "2026-08-08T17:04:57.219Z"
+  },
+  "5effb651-f9e0-4c14-8192-bd0e132b8d5d": {
+    "status": "available",
+    "name": "Bitterbloom Bearer",
+    "price_brl": 73.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed",
+    "printing_code": "ECL",
+    "collector_number": "88",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bitterbloom%20Bearer",
+    "checked_at": "2026-08-09T19:13:04.660Z"
   }
 }

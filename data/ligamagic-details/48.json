@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avatar%20of%20Fury",
     "checked_at": "2026-08-08T09:12:20.238Z"
   },
+  "485cfaca-9348-418b-a751-2ecb19f3f210": {
+    "status": "available",
+    "name": "Biting Rain",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Sombras em Innistrad",
+    "printing_code": "SOI",
+    "collector_number": "102",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Biting%20Rain",
+    "checked_at": "2026-08-09T19:11:24.550Z"
+  },
   "4867cc47-de84-4958-b1de-4a0a5050210e": {
     "status": "available",
     "name": "Battletide Alchemist",
@@ -118,6 +130,18 @@
     "collector_number": "136",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Finality",
     "checked_at": "2026-08-07T07:53:46.253Z"
+  },
+  "48deff27-b421-430b-a484-55b4a593010a": {
+    "status": "available",
+    "name": "Black Panther, Wakandan King",
+    "price_brl": 27.98,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes (Source Material)",
+    "printing_code": "SHMAR",
+    "collector_number": "87",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Black%20Panther%2C%20Wakandan%20King",
+    "checked_at": "2026-08-09T19:16:54.708Z"
   },
   "48e3f6dd-68ab-420a-ad4d-fe7ee39486d3": {
     "status": "available",

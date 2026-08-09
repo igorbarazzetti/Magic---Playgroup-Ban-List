@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baxter%2C%20Fly%20in%20the%20Ointment",
     "checked_at": "2026-08-08T22:57:20.325Z"
   },
+  "9456c5b6-946d-403a-8ed0-dff9f921d98c": {
+    "status": "available",
+    "name": "Black Knight",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2011",
+    "printing_code": "M11",
+    "collector_number": "83",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Black%20Knight",
+    "checked_at": "2026-08-09T19:15:15.119Z"
+  },
   "945d5351-ce7d-488c-bc63-269ad82b74cb": {
     "status": "available",
     "name": "Amulet of Unmaking",

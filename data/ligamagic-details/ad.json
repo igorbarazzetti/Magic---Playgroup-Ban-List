@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archers%20of%20Qarsi",
     "checked_at": "2026-08-07T17:15:04.220Z"
   },
+  "ad804712-18ba-49d7-9af2-4361edaa6cf8": {
+    "status": "available",
+    "name": "Black Dragon",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Adventures in the Forgotten Realms",
+    "printing_code": "AFR",
+    "collector_number": "90",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Black%20Dragon",
+    "checked_at": "2026-08-09T19:14:44.676Z"
+  },
   "adc1f3b4-cce7-42c9-a208-dbab1d1924f5": {
     "status": "available",
     "name": "Cloud of Faeries",

@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Biovisionary",
     "checked_at": "2026-08-09T17:12:37.706Z"
   },
+  "e9a24ed8-e844-4c50-b386-bc28da9989b1": {
+    "status": "available",
+    "name": "Bitter Work",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Avatar: The Last Airbender",
+    "printing_code": "TLA",
+    "collector_number": "210",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bitter%20Work",
+    "checked_at": "2026-08-09T19:12:44.562Z"
+  },
   "e9bee79c-144f-41e4-a53d-17df8381f691": {
     "status": "available",
     "name": "Anaba Spirit Crafter",

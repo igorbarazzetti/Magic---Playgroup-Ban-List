@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambitious%20Augmenter",
     "checked_at": "2026-08-07T04:36:11.046Z"
   },
+  "d8838e16-96ca-4f73-ad61-7e98a76c4baf": {
+    "status": "available",
+    "name": "Blade Banish",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ikoria: Terra de Colossos",
+    "printing_code": "IKO",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blade%20Banish",
+    "checked_at": "2026-08-09T19:21:04.868Z"
+  },
   "d887919a-68d5-455d-977c-4f1f0b4b3141": {
     "status": "available",
     "name": "Argivian Restoration",

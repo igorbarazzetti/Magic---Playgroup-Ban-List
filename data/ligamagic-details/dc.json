@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baneful%20Omen",
     "checked_at": "2026-08-08T17:05:07.344Z"
   },
+  "dc3b2bab-755d-4b2f-97c0-70a74d721a79": {
+    "status": "available",
+    "name": "Black Mana Battery",
+    "price_brl": 1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quarta Edição",
+    "printing_code": "4E",
+    "collector_number": "29",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Black%20Mana%20Battery",
+    "checked_at": "2026-08-09T19:15:34.671Z"
+  },
   "dc671205-f2fa-454f-9957-921a6069ad53": {
     "status": "available",
     "name": "High Tide",
@@ -46,6 +58,18 @@
     "collector_number": "3",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armored%20Armadillo",
     "checked_at": "2026-08-07T19:33:23.986Z"
+  },
+  "dca51281-fb21-45b6-beb4-1f13397caee2": {
+    "status": "available",
+    "name": "Blackblade Reforged",
+    "price_brl": 2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominária Unida Commander",
+    "printing_code": "DMC",
+    "collector_number": "178",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blackblade%20Reforged",
+    "checked_at": "2026-08-09T19:19:34.820Z"
   },
   "dcc55415-216e-4e18-83d6-43f301359f84": {
     "status": "available",

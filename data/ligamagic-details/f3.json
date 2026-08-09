@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battleflight%20Eagle",
     "checked_at": "2026-08-08T22:54:30.784Z"
   },
+  "f3882587-7aff-451f-a990-e25039e5ef85": {
+    "status": "available",
+    "name": "Black Widow, Natasha Romanoff",
+    "price_brl": 1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes Commander (Begginer Box)",
+    "printing_code": "BBMSC",
+    "collector_number": "846",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Black%20Widow%2C%20Natasha%20Romanoff",
+    "checked_at": "2026-08-09T19:19:14.769Z"
+  },
   "f3902dfd-6d09-425f-8446-a68cae2eea50": {
     "status": "available",
     "name": "Ashad, the Lone Cyberman",
@@ -202,6 +214,18 @@
     "collector_number": "20040",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Flooded%20Strand",
     "checked_at": "2026-08-05T20:06:25.615Z"
+  },
+  "f3e025ce-6114-42d0-842f-73366c853657": {
+    "status": "available",
+    "name": "Bitter Revelation",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends",
+    "printing_code": "CMR",
+    "collector_number": "109",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bitter%20Revelation",
+    "checked_at": "2026-08-09T19:12:24.586Z"
   },
   "f3e28778-0149-4dbd-badb-ba5aeacacd76": {
     "status": "available",

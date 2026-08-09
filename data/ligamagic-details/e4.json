@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Spike",
     "checked_at": "2026-08-06T11:00:03.690Z"
   },
+  "e4add901-3f2b-4f92-bb26-7f599e288802": {
+    "status": "available",
+    "name": "Bitter Feud",
+    "price_brl": 0.48,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2014",
+    "printing_code": "C14",
+    "collector_number": "32",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bitter%20Feud",
+    "checked_at": "2026-08-09T19:12:04.577Z"
+  },
   "e4b3e0af-5caa-47c1-b5be-c56a875cbb15": {
     "status": "available",
     "name": "As Foretold",

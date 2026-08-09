@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Rift",
     "checked_at": "2026-08-06T10:59:13.746Z"
   },
+  "25783439-9b22-4882-a7c2-e0b1fc2f7ec6": {
+    "status": "available",
+    "name": "Black Hole",
+    "price_brl": 0.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unfinity",
+    "printing_code": "UNF",
+    "collector_number": "67",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Black%20Hole",
+    "checked_at": "2026-08-09T19:15:04.672Z"
+  },
   "2579e9e0-b00f-4a1b-8fce-15d06bb7fe5a": {
     "status": "available",
     "name": "Angelic Sleuth",
@@ -118,6 +130,18 @@
     "collector_number": "237",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani%2C%20Nacatl%20Pariah",
     "checked_at": "2026-08-06T14:50:12.018Z"
+  },
+  "258a78cc-a9f3-459a-9837-93a9856f72db": {
+    "status": "available",
+    "name": "Blacklance Paragon",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Trono de Eldraine",
+    "printing_code": "ELD",
+    "collector_number": "79",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blacklance%20Paragon",
+    "checked_at": "2026-08-09T19:20:14.861Z"
   },
   "259fc423-d078-4668-9e95-8c1a0d2e49ba": {
     "status": "available",

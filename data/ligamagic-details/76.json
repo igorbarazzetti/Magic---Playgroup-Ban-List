@@ -70,5 +70,17 @@
     "collector_number": "502",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assassin's%20Blade",
     "checked_at": "2026-08-08T02:46:02.064Z"
+  },
+  "76f22670-6806-4124-8bbb-822ed33d2bda": {
+    "status": "available",
+    "name": "Bitterbow Sharpshooters",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Hora da Devastação",
+    "printing_code": "HOU",
+    "collector_number": "112",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bitterbow%20Sharpshooters",
+    "checked_at": "2026-08-09T19:13:14.614Z"
   }
 }

@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acolyte%20Hybrid",
     "checked_at": "2026-08-06T03:54:11.944Z"
   },
+  "99c3a315-db53-4292-9d31-1efd791d3a13": {
+    "status": "available",
+    "name": "Black Widow, Intel Expert",
+    "price_brl": 22.77,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes Commander (Scene Card)",
+    "printing_code": "SCMSC",
+    "collector_number": "504",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Black%20Widow%2C%20Intel%20Expert",
+    "checked_at": "2026-08-09T19:19:04.806Z"
+  },
   "99d4d99d-cf56-45aa-aa39-a250695612f2": {
     "status": "available",
     "name": "Time Vault",
@@ -118,6 +130,18 @@
     "collector_number": "270",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Time%20Vault",
     "checked_at": "2026-08-05T20:13:50.788Z"
+  },
+  "99da512c-e222-4e5c-aa64-a276ed9ebe87": {
+    "status": "available",
+    "name": "Blacksnag Buzzard",
+    "price_brl": 0.02,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Os Fora da Lei de Encruzilhada do Trovão",
+    "printing_code": "OTJ",
+    "collector_number": "79",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blacksnag%20Buzzard",
+    "checked_at": "2026-08-09T19:20:54.911Z"
   },
   "99dcde0b-4f4d-4d7a-89aa-8a89c256e38f": {
     "status": "available",

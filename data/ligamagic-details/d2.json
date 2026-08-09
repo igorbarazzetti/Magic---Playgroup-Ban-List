@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akroma's%20Devoted",
     "checked_at": "2026-08-06T18:08:17.307Z"
   },
+  "d2664f28-49e1-46f8-a863-b217e961a57c": {
+    "status": "available",
+    "name": "Black Market Connections",
+    "price_brl": 70.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes Commander",
+    "printing_code": "MSC",
+    "collector_number": "155",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Black%20Market%20Connections",
+    "checked_at": "2026-08-09T19:15:54.750Z"
+  },
   "d273f87d-1271-49d2-a628-2d1bd888f56c": {
     "status": "available",
     "name": "Bilbo, Fellow Conspirator",
@@ -58,6 +70,18 @@
     "collector_number": "4",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bilbo%2C%20Fellow%20Conspirator",
     "checked_at": "2026-08-09T17:05:07.496Z"
+  },
+  "d291d8f7-bb67-470c-8794-cd553c91e5cc": {
+    "status": "available",
+    "name": "Bituminous Blast",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alara Reunida",
+    "printing_code": "ARB",
+    "collector_number": "34",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bituminous%20Blast",
+    "checked_at": "2026-08-09T19:13:44.686Z"
   },
   "d2964a68-36d9-4b05-8f34-540969b410bf": {
     "status": "available",

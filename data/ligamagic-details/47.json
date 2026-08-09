@@ -82,5 +82,17 @@
     "collector_number": "39",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aethersquall%20Ancient",
     "checked_at": "2026-08-06T11:04:33.877Z"
+  },
+  "47e77918-13ec-47ce-9256-5a3b5bf8d315": {
+    "status": "available",
+    "name": "Bison Whistle",
+    "price_brl": 4.29,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Avatar: The Last Airbender Eternal (Extended Art)",
+    "printing_code": "EATLE",
+    "collector_number": "202",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bison%20Whistle",
+    "checked_at": "2026-08-09T19:10:34.489Z"
   }
 }

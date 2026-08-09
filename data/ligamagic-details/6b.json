@@ -190,5 +190,17 @@
     "collector_number": "14",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archfiend%20of%20Spite",
     "checked_at": "2026-08-07T17:16:54.323Z"
+  },
+  "6bf5dcf1-5c93-42f4-adaf-a6f2e5807596": {
+    "status": "available",
+    "name": "Black Carriage",
+    "price_brl": 1.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Natais",
+    "printing_code": "HL",
+    "collector_number": "42",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Black%20Carriage",
+    "checked_at": "2026-08-09T19:14:14.685Z"
   }
 }

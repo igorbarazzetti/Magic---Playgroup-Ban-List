@@ -1,4 +1,16 @@
 {
+  "5c22447b-7a7f-4a27-8d3b-1bb664ea94c3": {
+    "status": "available",
+    "name": "Biting-Palm Ninja",
+    "price_brl": 0.39,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kamigawa: Dinastia Neon",
+    "printing_code": "NEO",
+    "collector_number": "88",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Biting-Palm%20Ninja",
+    "checked_at": "2026-08-09T19:11:14.634Z"
+  },
   "5c2dbe90-5784-4bc4-a715-76a61c1ecfbc": {
     "status": "available",
     "name": "Anodet Lurker",
@@ -22,6 +34,18 @@
     "collector_number": "152",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Awakening%20of%20Vitu-Ghazi",
     "checked_at": "2026-08-08T13:22:26.953Z"
+  },
+  "5c5b308c-07d5-422a-8b45-b8b19cb967ca": {
+    "status": "available",
+    "name": "Blacksmith's Skill",
+    "price_brl": 0.89,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 2",
+    "printing_code": "MH2",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blacksmith's%20Skill",
+    "checked_at": "2026-08-09T19:20:34.863Z"
   },
   "5c5bfbb2-0e63-4e43-b441-c4878983288f": {
     "status": "available",

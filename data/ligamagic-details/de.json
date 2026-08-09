@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battery%20Bearer",
     "checked_at": "2026-08-08T21:03:56.776Z"
   },
+  "de7839fb-7040-48ab-a6d4-d1952972943d": {
+    "status": "available",
+    "name": "Black Vise",
+    "price_brl": 5.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Pro Tour Decks",
+    "printing_code": "PTD",
+    "collector_number": "19961007",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Black%20Vise",
+    "checked_at": "2026-08-09T19:17:54.731Z"
+  },
   "de8c0e2d-3207-4bc6-83ef-91e33b26a981": {
     "status": "available",
     "name": "All-Out Assault",

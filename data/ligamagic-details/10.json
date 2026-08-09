@@ -119,6 +119,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Eye%20of%20Ugin",
     "checked_at": "2026-08-05T20:05:59.002Z"
   },
+  "10edf7e0-d6be-4510-819f-8834bedfba41": {
+    "status": "available",
+    "name": "Black Cat",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mystery Booster",
+    "printing_code": "MB1",
+    "collector_number": "573",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Black%20Cat",
+    "checked_at": "2026-08-09T19:14:24.670Z"
+  },
   "10f182a7-ffa3-4128-8b2e-e05b97f92e00": {
     "status": "available",
     "name": "Balloon Peddler",

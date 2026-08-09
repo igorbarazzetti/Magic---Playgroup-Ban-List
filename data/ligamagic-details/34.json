@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apothecary%20Geist",
     "checked_at": "2026-08-07T11:18:06.684Z"
   },
+  "34400cf5-b8c4-4cf2-9186-51f12037cc51": {
+    "status": "available",
+    "name": "Blade Juggler",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lealdade em Ravnica",
+    "printing_code": "RNA",
+    "collector_number": "63",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blade%20Juggler",
+    "checked_at": "2026-08-09T19:21:45.192Z"
+  },
   "34493cf5-7586-48ef-806d-57273b2ab034": {
     "status": "available",
     "name": "Avengers Disassembled",

@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ant-Man%2C%20Scott%20Lang",
     "checked_at": "2026-08-07T09:32:36.415Z"
   },
+  "1ea20ecb-1919-4be7-b0bb-d79d2dec98fd": {
+    "status": "available",
+    "name": "Biting Tether",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Pântano Sombrio",
+    "printing_code": "SHM",
+    "collector_number": "29",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Biting%20Tether",
+    "checked_at": "2026-08-09T19:11:34.542Z"
+  },
   "1ebdc091-16d5-4803-821a-ac8c4696b5bc": {
     "status": "available",
     "name": "Binding Grasp",

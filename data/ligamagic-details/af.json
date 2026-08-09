@@ -1,4 +1,16 @@
 {
+  "af105cda-1f7c-4868-9407-a97c46bd762d": {
+    "status": "available",
+    "name": "Black Sun's Twilight",
+    "price_brl": 1.19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Phyrexia: Tudo será um",
+    "printing_code": "ONE",
+    "collector_number": "84",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Black%20Sun's%20Twilight",
+    "checked_at": "2026-08-09T19:17:25.062Z"
+  },
   "af206aed-1f58-4f5a-ba42-0e0d1f282940": {
     "status": "available",
     "name": "Athreos, God of Passage",

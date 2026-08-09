@@ -1,4 +1,16 @@
 {
+  "be0dcad2-8e84-4e9f-b69c-837b40b8fb83": {
+    "status": "available",
+    "name": "Bitter Chill",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Selvagens de Eldraine",
+    "printing_code": "WOE",
+    "collector_number": "44",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bitter%20Chill",
+    "checked_at": "2026-08-09T19:11:44.547Z"
+  },
   "be14b10a-7cac-47fc-a954-685091990291": {
     "status": "available",
     "name": "Artificer's Intuition",

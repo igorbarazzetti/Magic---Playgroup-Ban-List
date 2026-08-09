@@ -119,6 +119,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Glimpse%20of%20Nature",
     "checked_at": "2026-08-05T20:06:58.713Z"
   },
+  "5fc888d1-241f-45e1-9c20-3c5ae0aadc30": {
+    "status": "available",
+    "name": "Black Oak of Odunos",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nascidos dos Deuses",
+    "printing_code": "BNG",
+    "collector_number": "62",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Black%20Oak%20of%20Odunos",
+    "checked_at": "2026-08-09T19:16:14.715Z"
+  },
   "5ffbbce1-fe38-40dc-a7c3-2055ae86c6c5": {
     "status": "available",
     "name": "Arwen Undómiel",

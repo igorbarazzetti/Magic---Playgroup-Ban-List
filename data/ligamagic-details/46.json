@@ -1,4 +1,16 @@
 {
+  "464968a8-865e-4ac8-927e-7c931e3dabb3": {
+    "status": "available",
+    "name": "Black Market Tycoon",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ruas de Nova Capenna",
+    "printing_code": "SNC",
+    "collector_number": "167",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Black%20Market%20Tycoon",
+    "checked_at": "2026-08-09T19:16:04.706Z"
+  },
   "46535f8e-1bcd-4588-ac6c-a4bc89c379c8": {
     "status": "available",
     "name": "Abzan Banner",

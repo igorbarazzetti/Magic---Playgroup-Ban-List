@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aetherflux%20Conduit",
     "checked_at": "2026-08-06T11:02:23.726Z"
   },
+  "776341cb-d2ec-423f-9250-92dc8bd8d503": {
+    "status": "available",
+    "name": "Bitter Triumph",
+    "price_brl": 0.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven: Mystical Archive",
+    "printing_code": "SOA",
+    "collector_number": "26",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bitter%20Triumph",
+    "checked_at": "2026-08-09T19:12:34.593Z"
+  },
   "776aa036-08aa-4fa0-82bd-c09e6e3e2c5e": {
     "status": "available",
     "name": "Bessie, the Doctor's Roadster",
@@ -94,6 +106,18 @@
     "collector_number": "19",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aspect%20of%20Wolf",
     "checked_at": "2026-08-08T02:44:21.832Z"
+  },
+  "77cff683-013c-4568-8ae0-f86ef0590fe1": {
+    "status": "available",
+    "name": "Blade Instructor",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Guildas de Ravnica",
+    "printing_code": "GRN",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blade%20Instructor",
+    "checked_at": "2026-08-09T19:21:35.377Z"
   },
   "77ec26f9-c7de-4bd8-bafb-8b9825891015": {
     "status": "available",

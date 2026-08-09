@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Biomass%20Mutation",
     "checked_at": "2026-08-09T17:10:47.785Z"
   },
+  "2dc6da5d-c4d1-4f2c-8f46-11a935bc0044": {
+    "status": "available",
+    "name": "Blackmail",
+    "price_brl": 0.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Investida",
+    "printing_code": "ON",
+    "collector_number": "127",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blackmail",
+    "checked_at": "2026-08-09T19:20:24.882Z"
+  },
   "2dd32fec-5bc3-4cc0-a9b4-814229a64914": {
     "status": "available",
     "name": "Balustrade Wurm",

@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angler%20Drake",
     "checked_at": "2026-08-07T09:21:25.959Z"
   },
+  "623903de-3c04-4745-9af3-d7ec9fb2574d": {
+    "status": "available",
+    "name": "Bite Down",
+    "price_brl": 0.14,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Foundations",
+    "printing_code": "FDN",
+    "collector_number": "212",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bite%20Down",
+    "checked_at": "2026-08-09T19:10:45.125Z"
+  },
   "62648946-1708-48f4-ba40-c057563ab11b": {
     "status": "available",
     "name": "Argoth, Sanctum of Nature",
