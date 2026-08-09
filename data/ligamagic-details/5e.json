@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Binding%20Geist",
     "checked_at": "2026-08-09T21:38:14.263Z"
   },
+  "5e1bf23b-7fb0-45ff-8544-fce9fa3eba00": {
+    "status": "available",
+    "name": "Blossoming Tortoise",
+    "price_brl": 15.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Selvagens de Eldraine",
+    "printing_code": "WOE",
+    "collector_number": "163",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blossoming%20Tortoise",
+    "checked_at": "2026-08-09T23:05:29.270Z"
+  },
   "5e29aea1-06e3-49ef-8a22-e3acff1fb679": {
     "status": "available",
     "name": "Bell Borca, Spectral Sergeant",
@@ -70,6 +82,18 @@
     "collector_number": "110",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambuscade",
     "checked_at": "2026-08-07T04:37:11.094Z"
+  },
+  "5e4facd9-d416-4ade-ba71-6da32b12a891": {
+    "status": "available",
+    "name": "Bloodfire Enforcers",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Destino Reescrito",
+    "printing_code": "FRF",
+    "collector_number": "93",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodfire%20Enforcers",
+    "checked_at": "2026-08-09T22:51:19.091Z"
   },
   "5e59199c-facc-46b4-9681-988de0cfaba2": {
     "status": "available",

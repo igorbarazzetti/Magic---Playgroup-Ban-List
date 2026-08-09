@@ -1,4 +1,16 @@
 {
+  "0109432d-5a2a-456f-ad39-b75cb4c73420": {
+    "status": "available",
+    "name": "Bogwater Lumaret",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven",
+    "printing_code": "SOS",
+    "collector_number": "177",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bogwater%20Lumaret",
+    "checked_at": "2026-08-09T23:21:10.377Z"
+  },
   "011bb6cc-f1a1-4790-befc-373acabf63b8": {
     "status": "available",
     "name": "Arc Mage",
@@ -82,6 +94,18 @@
     "collector_number": "104",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bedlam%20Reveler",
     "checked_at": "2026-08-09T13:34:24.063Z"
+  },
+  "01ab7724-1967-4da6-aebd-3729983d6a0e": {
+    "status": "available",
+    "name": "Bloodthorn Flail",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "As Cavernas Perdidas de Ixalan",
+    "printing_code": "LCI",
+    "collector_number": "93",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodthorn%20Flail",
+    "checked_at": "2026-08-09T23:01:21.284Z"
   },
   "01cd52f9-7fac-4396-bec7-d06bf683e011": {
     "status": "available",

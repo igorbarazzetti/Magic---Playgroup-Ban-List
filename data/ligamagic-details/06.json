@@ -131,6 +131,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avacyn's%20Pilgrim",
     "checked_at": "2026-08-08T09:09:30.133Z"
   },
+  "06a3fe24-7e1f-4f98-ba2f-dbb5d38f4b9d": {
+    "status": "available",
+    "name": "Bloodrock Cyclops",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Décima Edição",
+    "printing_code": "10E",
+    "collector_number": "192",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodrock%20Cyclops",
+    "checked_at": "2026-08-09T22:57:22.779Z"
+  },
   "06bea0b2-1d0f-4d64-a13e-723d08042e83": {
     "status": "available",
     "name": "Arbalest Engineers",

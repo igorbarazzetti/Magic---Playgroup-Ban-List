@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blitzball%20Shot",
     "checked_at": "2026-08-09T22:08:49.500Z"
   },
+  "c99896a8-8b58-4946-8f2d-b4e2562f278a": {
+    "status": "available",
+    "name": "Bloom Hulk",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra da Centelha",
+    "printing_code": "WAR",
+    "collector_number": "154",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloom%20Hulk",
+    "checked_at": "2026-08-09T23:02:58.652Z"
+  },
   "c99e4768-192c-49bf-8f51-c204a2248326": {
     "status": "available",
     "name": "Bane of the Living",

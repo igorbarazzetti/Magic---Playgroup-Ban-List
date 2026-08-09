@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anathemancer",
     "checked_at": "2026-08-07T04:47:21.534Z"
   },
+  "13822dcf-0639-4852-9a7f-e1d55719e82c": {
+    "status": "available",
+    "name": "Bonfire of the Damned",
+    "price_brl": 0.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Retorno de Avacyn",
+    "printing_code": "AVR",
+    "collector_number": "129",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bonfire%20of%20the%20Damned",
+    "checked_at": "2026-08-09T23:38:28.900Z"
+  },
   "1389c9fa-fec2-4212-a7aa-6dfb318dc202": {
     "status": "available",
     "name": "Bagel and Schmear",
@@ -143,6 +155,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arwen's%20Gift",
     "checked_at": "2026-08-07T21:12:19.078Z"
   },
+  "13b5c9ef-d0e3-453d-ae5e-8de4f310cc38": {
+    "status": "available",
+    "name": "Bone Dancer",
+    "price_brl": 9.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alisios",
+    "printing_code": "WL",
+    "collector_number": "29",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bone%20Dancer",
+    "checked_at": "2026-08-09T23:31:40.752Z"
+  },
   "13cf3ef7-d88e-4cc7-a4d8-cedc671f356a": {
     "status": "available",
     "name": "Ashiok's Erasure",
@@ -154,6 +178,18 @@
     "collector_number": "43",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashiok's%20Erasure",
     "checked_at": "2026-08-08T02:39:02.211Z"
+  },
+  "13f41253-364f-40a5-a7cd-84d8785b2460": {
+    "status": "available",
+    "name": "Bola Warrior",
+    "price_brl": 0.01,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nêmesis",
+    "printing_code": "NE",
+    "collector_number": "78",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bola%20Warrior",
+    "checked_at": "2026-08-09T23:23:33.545Z"
   },
   "13f63240-a6bb-4333-a3dd-818725c6fb73": {
     "status": "available",

@@ -214,5 +214,17 @@
     "collector_number": "42",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Black%20Carriage",
     "checked_at": "2026-08-09T19:14:14.685Z"
+  },
+  "6bff9d3a-a98d-4060-8409-4b81ce5aab15": {
+    "status": "available",
+    "name": "Bog Glider",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Profecia",
+    "printing_code": "PR",
+    "collector_number": "58",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bog%20Glider",
+    "checked_at": "2026-08-09T23:14:06.410Z"
   }
 }

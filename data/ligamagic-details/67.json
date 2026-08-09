@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerie%20Worshippers",
     "checked_at": "2026-08-06T07:19:35.098Z"
   },
+  "67631753-f37a-4f41-a6e6-1edead385acc": {
+    "status": "available",
+    "name": "Bloodsoaked Altar",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Game Night 2022",
+    "printing_code": "GN3",
+    "collector_number": "43",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodsoaked%20Altar",
+    "checked_at": "2026-08-09T22:58:48.482Z"
+  },
   "6777863c-e52c-4a7c-b8d2-a16b1438b3d2": {
     "status": "available",
     "name": "Amzu, Swarm's Hunger",
@@ -82,6 +94,18 @@
     "collector_number": "31",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bespoke%20B%C5%8D",
     "checked_at": "2026-08-09T15:07:55.597Z"
+  },
+  "67953edb-9681-4339-a5d2-917082925c24": {
+    "status": "available",
+    "name": "Bogardan Lancer",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Visão do Futuro",
+    "printing_code": "FUT",
+    "collector_number": "95",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bogardan%20Lancer",
+    "checked_at": "2026-08-09T23:17:25.703Z"
   },
   "67a48e3f-2388-42a9-a8b1-97c08761f807": {
     "status": "available",

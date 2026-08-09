@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battletide%20Alchemist",
     "checked_at": "2026-08-08T22:56:00.272Z"
   },
+  "489a60f1-83f8-465b-918f-7d63d4f76d14": {
+    "status": "available",
+    "name": "Blossoming Calm",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 2",
+    "printing_code": "MH2",
+    "collector_number": "7",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blossoming%20Calm",
+    "checked_at": "2026-08-09T23:04:57.338Z"
+  },
   "48a01671-da1f-4875-bcd5-ca99566ff399": {
     "status": "available",
     "name": "Bastion Mastodon",

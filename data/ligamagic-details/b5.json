@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alley%20Evasion",
     "checked_at": "2026-08-07T00:35:24.669Z"
   },
+  "b59da333-e658-447e-a8bd-8c0124d8b905": {
+    "status": "available",
+    "name": "Bloodthorn Taunter",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fragmentos de Alara",
+    "printing_code": "ALA",
+    "collector_number": "94",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodthorn%20Taunter",
+    "checked_at": "2026-08-09T23:01:31.960Z"
+  },
   "b5a390fd-2864-4481-84b4-41e8fac91a80": {
     "status": "available",
     "name": "Ashnod's Battle Gear",

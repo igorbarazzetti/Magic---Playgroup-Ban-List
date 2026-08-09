@@ -118,5 +118,17 @@
     "collector_number": "299",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbarian%20Ring",
     "checked_at": "2026-08-08T19:05:52.034Z"
+  },
+  "eef40ab2-9e17-4e8d-9e58-1a82ab871b5b": {
+    "status": "available",
+    "name": "Boneyard Scourge",
+    "price_brl": 5.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2017",
+    "printing_code": "C17",
+    "collector_number": "15",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boneyard%20Scourge",
+    "checked_at": "2026-08-09T23:38:06.819Z"
   }
 }

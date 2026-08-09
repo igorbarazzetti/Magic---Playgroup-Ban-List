@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Banshee's%20Blade",
     "checked_at": "2026-08-08T17:09:07.370Z"
   },
+  "81a7f559-5edd-47ec-91f7-51e5ee998ed0": {
+    "status": "available",
+    "name": "Bloodforged Battle-Axe",
+    "price_brl": 4.59,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marcha das Máquinas: Commander",
+    "printing_code": "MOC",
+    "collector_number": "349",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodforged%20Battle-Axe",
+    "checked_at": "2026-08-09T22:52:26.838Z"
+  },
   "81b51bb1-89b9-46a0-ad7a-a43c0d214f11": {
     "status": "available",
     "name": "Belbe's Percher",

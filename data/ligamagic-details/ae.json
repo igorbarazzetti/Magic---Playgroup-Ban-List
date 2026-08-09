@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Admiral's%20Order",
     "checked_at": "2026-08-06T07:09:24.606Z"
   },
+  "ae5b9251-2e2d-4e12-b4b4-da051683f970": {
+    "status": "available",
+    "name": "Bloodcrusher of Khorne",
+    "price_brl": 3.98,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Warhammer 40.000",
+    "printing_code": "40K",
+    "collector_number": "72",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodcrusher%20of%20Khorne",
+    "checked_at": "2026-08-09T22:50:05.166Z"
+  },
   "ae5cf0da-bea8-4ba7-9fb3-0fcb076257ae": {
     "status": "available",
     "name": "Barbed Shocker",
@@ -130,6 +142,18 @@
     "collector_number": "221",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Teferi%2C%20Time%20Raveler",
     "checked_at": "2026-08-05T20:13:23.716Z"
+  },
+  "ae78b6f9-8334-479e-8111-8e3acb2b7ca7": {
+    "status": "available",
+    "name": "Bloodthirsty Aerialist",
+    "price_brl": 0.71,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2020",
+    "printing_code": "M20",
+    "collector_number": "91",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodthirsty%20Aerialist",
+    "checked_at": "2026-08-09T23:00:50.680Z"
   },
   "ae83ef2c-960f-4c5b-97cc-52465c687c18": {
     "status": "available",

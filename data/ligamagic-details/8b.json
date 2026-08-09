@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20the%20Dire%20Hour",
     "checked_at": "2026-08-07T07:56:36.354Z"
   },
+  "8b1fc306-0d8f-4edb-b197-2e99f10c599e": {
+    "status": "available",
+    "name": "Boing!",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unfinity",
+    "printing_code": "UNF",
+    "collector_number": "40",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boing!",
+    "checked_at": "2026-08-09T23:22:50.745Z"
+  },
   "8b25f353-0798-4a03-a928-6a701a919468": {
     "status": "available",
     "name": "Arachnus Web",

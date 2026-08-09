@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Astrid%20Peth",
     "checked_at": "2026-08-08T02:52:32.169Z"
   },
+  "fa602f8f-1d80-4f6d-8b8f-d1a1f36037bd": {
+    "status": "available",
+    "name": "Bolg's Company",
+    "price_brl": 10.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "The Hobbit",
+    "printing_code": "HOB",
+    "collector_number": "149",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bolg's%20Company",
+    "checked_at": "2026-08-09T23:25:32.426Z"
+  },
   "fa732888-5b7d-4087-a6e5-1db1c98fbd4c": {
     "status": "available",
     "name": "A.I.M. Scientists",

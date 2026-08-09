@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcane%20Proxy",
     "checked_at": "2026-08-07T13:53:13.860Z"
   },
+  "79591c18-0065-49bb-a77a-734d4af87a3c": {
+    "status": "available",
+    "name": "Bloodhall Ooze",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Confluência",
+    "printing_code": "CON",
+    "collector_number": "59",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodhall%20Ooze",
+    "checked_at": "2026-08-09T22:53:11.032Z"
+  },
   "79644192-8f99-4d04-b151-6f74a4dbda0a": {
     "status": "available",
     "name": "Amrou Kithkin",
@@ -83,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Basilica%20Bell-Haunt",
     "checked_at": "2026-08-08T20:56:36.513Z"
   },
+  "79af045e-2c73-4003-8f62-b8611a225f08": {
+    "status": "available",
+    "name": "Bonds of Faith",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mystery Booster",
+    "printing_code": "MB1",
+    "collector_number": "39",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bonds%20of%20Faith",
+    "checked_at": "2026-08-09T23:30:55.734Z"
+  },
   "79b48704-480d-4905-b87a-40b127894670": {
     "status": "available",
     "name": "Archetype of Courage",
@@ -94,6 +118,18 @@
     "collector_number": "4",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archetype%20of%20Courage",
     "checked_at": "2026-08-07T17:15:44.192Z"
+  },
+  "79cf9c52-56e0-4237-a595-ec07824e5eed": {
+    "status": "available",
+    "name": "Bloodletter Quill",
+    "price_brl": 0.29,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ravnica: A Cidade das Guildas",
+    "printing_code": "RAV",
+    "collector_number": "254",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodletter%20Quill",
+    "checked_at": "2026-08-09T22:54:27.616Z"
   },
   "79d290ea-c095-4135-9711-f3ce089dae43": {
     "status": "available",
@@ -107,6 +143,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Architects%20of%20Will",
     "checked_at": "2026-08-07T17:17:54.253Z"
   },
+  "79d34537-4633-4728-a1b3-5822119f0c84": {
+    "status": "available",
+    "name": "Bonded Fetch",
+    "price_brl": 0.11,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Visão do Futuro",
+    "printing_code": "FUT",
+    "collector_number": "50",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bonded%20Fetch",
+    "checked_at": "2026-08-09T23:30:01.467Z"
+  },
   "79d577a8-53c0-4220-bc0e-70764d72d5fd": {
     "status": "available",
     "name": "A Killer Among Us",
@@ -118,5 +166,17 @@
     "collector_number": "167",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=A%20Killer%20Among%20Us",
     "checked_at": "2026-08-06T00:02:06.676Z"
+  },
+  "79e91e8a-cee7-411b-b0a3-d3383c0d4a43": {
+    "status": "available",
+    "name": "Blue Mana Battery",
+    "price_brl": 0.68,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quarta Edição",
+    "printing_code": "4E",
+    "collector_number": "36",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blue%20Mana%20Battery",
+    "checked_at": "2026-08-09T23:07:30.160Z"
   }
 }

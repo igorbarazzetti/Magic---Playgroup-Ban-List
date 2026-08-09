@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodstained%20Mire",
     "checked_at": "2026-08-05T20:03:43.191Z"
   },
+  "fc0bf1d0-46a2-4305-ab2e-466d79d60ab2": {
+    "status": "available",
+    "name": "Blue Ward",
+    "price_brl": 0.22,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quarta Edição",
+    "printing_code": "4E",
+    "collector_number": "37",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blue%20Ward",
+    "checked_at": "2026-08-09T23:08:34.739Z"
+  },
   "fc148e1e-dff0-448e-9f16-625341754356": {
     "status": "available",
     "name": "Aether Vial",
@@ -203,6 +215,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Screaming%20Nemesis",
     "checked_at": "2026-08-05T20:12:02.531Z"
   },
+  "fcb811a8-c6e6-4bc4-b64b-8963a7183669": {
+    "status": "available",
+    "name": "Bonny Pall, Clearcutter",
+    "price_brl": 1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Os Fora da Lei de Encruzilhada do Trovão",
+    "printing_code": "OTJ",
+    "collector_number": "196",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bonny%20Pall%2C%20Clearcutter",
+    "checked_at": "2026-08-09T23:38:39.010Z"
+  },
   "fcdeb83f-531c-4087-9254-7f19eb065f00": {
     "status": "available",
     "name": "Assault // Battery",
@@ -250,6 +274,18 @@
     "collector_number": "23",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Backdraft%20Hellkite",
     "checked_at": "2026-08-08T14:57:37.481Z"
+  },
+  "fcf9ced2-867d-4bc5-b7b6-6153ed2cac97": {
+    "status": "available",
+    "name": "Bloodtracker",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "As Cavernas Perdidas de Ixalan Commander",
+    "printing_code": "LCC",
+    "collector_number": "186",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodtracker",
+    "checked_at": "2026-08-09T23:02:15.422Z"
   },
   "fcfcac6b-6d26-4ffe-ae9e-b0ee7fa49787": {
     "status": "available",

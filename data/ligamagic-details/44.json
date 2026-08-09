@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Absorb%20Identity",
     "checked_at": "2026-08-06T00:13:37.739Z"
   },
+  "449db6bf-d766-4d09-a7bd-9c45b3d4c4c3": {
+    "status": "available",
+    "name": "Bone-Cairn Butcher",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm",
+    "printing_code": "TDM",
+    "collector_number": "173",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bone-Cairn%20Butcher",
+    "checked_at": "2026-08-09T23:31:30.162Z"
+  },
   "44c5f8e1-d9b8-4067-a60a-1ecc8bd11145": {
     "status": "available",
     "name": "Augury Owl",

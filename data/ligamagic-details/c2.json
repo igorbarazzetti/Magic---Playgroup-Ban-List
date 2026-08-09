@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abbey%20Gargoyles",
     "checked_at": "2026-08-06T00:06:46.872Z"
   },
+  "c20a96f7-aa5a-4c15-b8b1-806685c99b27": {
+    "status": "available",
+    "name": "Bolt Bend",
+    "price_brl": 12.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra da Centelha",
+    "printing_code": "WAR",
+    "collector_number": "115",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bolt%20Bend",
+    "checked_at": "2026-08-09T23:26:05.071Z"
+  },
   "c2153115-bc12-458d-baeb-538ec61e1242": {
     "status": "available",
     "name": "Always Watching",
@@ -70,6 +82,18 @@
     "collector_number": "136",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Scapeshift",
     "checked_at": "2026-08-05T20:11:59.534Z"
+  },
+  "c23617c9-53f9-4063-8241-b504e9b80cbe": {
+    "status": "available",
+    "name": "Bolrac-Clan Basher",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassinato na Mansão Karlov",
+    "printing_code": "MKM",
+    "collector_number": "112",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bolrac-Clan%20Basher",
+    "checked_at": "2026-08-09T23:25:42.577Z"
   },
   "c2531360-61f8-4edc-886b-408811a0639d": {
     "status": "available",

@@ -131,6 +131,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Belonging",
     "checked_at": "2026-08-09T13:43:14.314Z"
   },
+  "0ecb35b3-5bd1-4467-a4a3-ce468023ced2": {
+    "status": "available",
+    "name": "Blossombind",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed",
+    "printing_code": "ECL",
+    "collector_number": "45",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blossombind",
+    "checked_at": "2026-08-09T23:04:34.221Z"
+  },
   "0edd4894-0df0-4a4e-8a96-d20360ea81c7": {
     "status": "available",
     "name": "Akroan Phalanx",
@@ -142,6 +154,18 @@
     "collector_number": "2",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akroan%20Phalanx",
     "checked_at": "2026-08-06T18:07:17.279Z"
+  },
+  "0ee41ef9-0b39-4d00-a68e-7914839a7175": {
+    "status": "available",
+    "name": "Bone Devourer",
+    "price_brl": 4.19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm Commander",
+    "printing_code": "TDC",
+    "collector_number": "26",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bone%20Devourer",
+    "checked_at": "2026-08-09T23:31:51.058Z"
   },
   "0eec9984-cd11-4a52-9234-469c6a5fb9aa": {
     "status": "available",

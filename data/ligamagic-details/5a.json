@@ -119,6 +119,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amazing%20Alliance",
     "checked_at": "2026-08-07T00:47:45.225Z"
   },
+  "5a851367-1c4a-4cc9-a9c3-3d2775986b4c": {
+    "status": "available",
+    "name": "Blossoming Defense",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed",
+    "printing_code": "ECL",
+    "collector_number": "167",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blossoming%20Defense",
+    "checked_at": "2026-08-09T23:05:07.458Z"
+  },
   "5a88f616-986d-4e97-9457-26c783489123": {
     "status": "available",
     "name": "Barbarian Bully",

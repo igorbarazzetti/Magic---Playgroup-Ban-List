@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amphibian%20Downpour",
     "checked_at": "2026-08-07T04:40:41.253Z"
   },
+  "a429c351-d281-4e49-8564-bd96bdf5c41b": {
+    "status": "available",
+    "name": "Bomber Corps",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portões Violados",
+    "printing_code": "GTC",
+    "collector_number": "86",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bomber%20Corps",
+    "checked_at": "2026-08-09T23:28:08.857Z"
+  },
   "a4499cf9-04a0-45c5-9c73-19f8e7e95da6": {
     "status": "available",
     "name": "Aurora Champion",
@@ -22,6 +34,18 @@
     "collector_number": "24",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aurora%20Champion",
     "checked_at": "2026-08-08T07:34:53.469Z"
+  },
+  "a44e8d98-3bc8-42ce-b09f-a3b947d9ce53": {
+    "status": "available",
+    "name": "Blow Your House Down",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Trono de Eldraine",
+    "printing_code": "ELD",
+    "collector_number": "114",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blow%20Your%20House%20Down",
+    "checked_at": "2026-08-09T23:06:14.310Z"
   },
   "a45bb088-16fd-4d91-8fd6-3c52f1c24748": {
     "status": "available",

@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Axgard%20Armory",
     "checked_at": "2026-08-08T13:24:26.985Z"
   },
+  "bce32541-3bc4-4553-ace2-784a58f164aa": {
+    "status": "available",
+    "name": "Bog Wreckage",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Odisséia",
+    "printing_code": "OD",
+    "collector_number": "314",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bog%20Wreckage",
+    "checked_at": "2026-08-09T23:16:42.218Z"
+  },
   "bceecc64-96f1-4e7b-8904-0aef90377764": {
     "status": "available",
     "name": "Bedevil",

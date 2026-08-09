@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Worldknit",
     "checked_at": "2026-08-05T20:15:33.006Z"
   },
+  "65410f7a-c749-4b23-ad61-8a7136efcad2": {
+    "status": "available",
+    "name": "Blur of Blades",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Hora da Devastação",
+    "printing_code": "HOU",
+    "collector_number": "84",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blur%20of%20Blades",
+    "checked_at": "2026-08-09T23:09:18.595Z"
+  },
   "655847c6-7c5e-4659-870e-825d0cf5e90c": {
     "status": "available",
     "name": "Blade-Tribe Berserkers",
@@ -58,6 +70,18 @@
     "collector_number": "84",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blade-Tribe%20Berserkers",
     "checked_at": "2026-08-09T21:39:42.167Z"
+  },
+  "655a584c-5280-4317-b707-101b7e31dcb1": {
+    "status": "available",
+    "name": "Bloodscale Prowler",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Pacto das Guildas",
+    "printing_code": "GP",
+    "collector_number": "64",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodscale%20Prowler",
+    "checked_at": "2026-08-09T22:57:45.055Z"
   },
   "657a4500-4b47-4c78-945b-a7791af7d10e": {
     "status": "available",
@@ -166,6 +190,18 @@
     "collector_number": "22",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Advanced%20Hoverguard",
     "checked_at": "2026-08-06T07:11:24.703Z"
+  },
+  "65e1558c-6b09-4ddc-b520-f19f4fb972af": {
+    "status": "available",
+    "name": "Blue Elemental Blast",
+    "price_brl": 2.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Collector's Edition",
+    "printing_code": "CED",
+    "collector_number": "50",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blue%20Elemental%20Blast",
+    "checked_at": "2026-08-09T23:06:57.601Z"
   },
   "65f3ebeb-1ca5-4923-b681-032579991c8a": {
     "status": "available",

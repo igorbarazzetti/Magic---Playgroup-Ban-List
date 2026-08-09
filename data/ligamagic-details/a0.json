@@ -167,6 +167,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bebop%20%26%20Rocksteady",
     "checked_at": "2026-08-08T23:06:40.608Z"
   },
+  "a08f69f9-de48-46d6-8b75-31886159cf45": {
+    "status": "available",
+    "name": "Boneclub Berserker",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed",
+    "printing_code": "ECL",
+    "collector_number": "126",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boneclub%20Berserker",
+    "checked_at": "2026-08-09T23:35:22.640Z"
+  },
   "a09da13e-f8a3-410e-941a-9912d2cfe7de": {
     "status": "available",
     "name": "Angler Turtle",
@@ -250,5 +262,17 @@
     "collector_number": "7",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bargain",
     "checked_at": "2026-08-08T19:09:32.169Z"
+  },
+  "a0f6834c-faa9-4d90-adad-847a8b337fe6": {
+    "status": "available",
+    "name": "Bonesplitter Sliver",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Espiral Temporal Remasterizada",
+    "printing_code": "TSR",
+    "collector_number": "155",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bonesplitter%20Sliver",
+    "checked_at": "2026-08-09T23:36:59.824Z"
   }
 }

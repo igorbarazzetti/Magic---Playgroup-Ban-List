@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Attended%20Socialite",
     "checked_at": "2026-08-08T07:22:43.053Z"
   },
+  "5f83fd2f-c4cb-4bcf-a4db-0238df251740": {
+    "status": "available",
+    "name": "Bloodfray Giant",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Retorno a Ravnica",
+    "printing_code": "RTR",
+    "collector_number": "89",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodfray%20Giant",
+    "checked_at": "2026-08-09T22:52:37.436Z"
+  },
   "5f981cca-5cd9-49e4-ab1a-bbbf6fc7e737": {
     "status": "available",
     "name": "Ancient Stone Idol",

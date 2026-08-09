@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Banishing%20Light",
     "checked_at": "2026-08-08T17:06:57.505Z"
   },
+  "f2a54e85-dd8b-462c-a811-c9553dc349a5": {
+    "status": "available",
+    "name": "Bloodline Necromancer",
+    "price_brl": 1.43,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Voto Carmesim (Commander)",
+    "printing_code": "VOC",
+    "collector_number": "120",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodline%20Necromancer",
+    "checked_at": "2026-08-09T22:55:11.485Z"
+  },
   "f2c75577-c9be-48f3-8398-3020c79bd34e": {
     "status": "available",
     "name": "Blight Titan",
@@ -130,6 +142,18 @@
     "collector_number": "6",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Tactician",
     "checked_at": "2026-08-08T09:19:40.627Z"
+  },
+  "f2ecb354-8f79-4c39-989e-7aa37ec75154": {
+    "status": "available",
+    "name": "Bomb Squad",
+    "price_brl": 4.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Odisséia",
+    "printing_code": "OD",
+    "collector_number": "179",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bomb%20Squad",
+    "checked_at": "2026-08-09T23:27:34.638Z"
   },
   "f2f3be8a-5ea1-47c2-8104-747f4589f5e6": {
     "status": "available",

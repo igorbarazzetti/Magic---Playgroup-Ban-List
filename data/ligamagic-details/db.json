@@ -154,5 +154,17 @@
     "collector_number": "45",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancestral%20Reminiscence",
     "checked_at": "2026-08-07T04:50:01.644Z"
+  },
+  "dbfa5409-5706-4de8-8152-e74b8d93910a": {
+    "status": "available",
+    "name": "Bolrac-Clan Crusher",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lealdade em Ravnica",
+    "printing_code": "RNA",
+    "collector_number": "159",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bolrac-Clan%20Crusher",
+    "checked_at": "2026-08-09T23:25:54.486Z"
   }
 }

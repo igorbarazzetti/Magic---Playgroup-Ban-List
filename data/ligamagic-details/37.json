@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aftermath%20Analyst",
     "checked_at": "2026-08-06T11:07:53.980Z"
   },
+  "374e6c1b-5a9a-4d3f-8bff-2f6bc0419391": {
+    "status": "available",
+    "name": "Bold Impaler",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lua Arcana",
+    "printing_code": "EMN",
+    "collector_number": "120",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bold%20Impaler",
+    "checked_at": "2026-08-09T23:24:15.995Z"
+  },
   "37688720-03de-4eca-a82d-a0afe8d58adc": {
     "status": "available",
     "name": "Baleful Strix",

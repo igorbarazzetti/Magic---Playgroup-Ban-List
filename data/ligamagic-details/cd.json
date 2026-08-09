@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agent%20of%20Atlas",
     "checked_at": "2026-08-06T11:11:14.151Z"
   },
+  "cd55a003-da0d-4522-b08a-d0731b1050c6": {
+    "status": "available",
+    "name": "Boiling Blood",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alisios",
+    "printing_code": "WL",
+    "collector_number": "28",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boiling%20Blood",
+    "checked_at": "2026-08-09T23:21:56.458Z"
+  },
   "cd583365-27cc-4170-b138-4b3dd0d842b6": {
     "status": "available",
     "name": "Ambush Paratrooper",

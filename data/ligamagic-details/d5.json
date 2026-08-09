@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adarkar%20Wastes",
     "checked_at": "2026-08-06T07:07:04.556Z"
   },
+  "d5bd7c0b-c412-47ed-afb8-1a9ba04be77c": {
+    "status": "available",
+    "name": "Bloodfire Infusion",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Apocalipse",
+    "printing_code": "AP",
+    "collector_number": "57",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodfire%20Infusion",
+    "checked_at": "2026-08-09T22:51:41.714Z"
+  },
   "d5c4d36c-54b3-4149-906b-a57a670260fc": {
     "status": "available",
     "name": "Alhammarret's Archive",

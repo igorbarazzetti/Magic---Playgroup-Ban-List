@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beyeen%20Veil",
     "checked_at": "2026-08-09T21:38:02.274Z"
   },
+  "b06067e7-330e-47de-be59-c2874eedba1d": {
+    "status": "available",
+    "name": "Bonded Herdbeast // Plated Kilnbeast",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marcha das Máquinas",
+    "printing_code": "MOM",
+    "collector_number": "178",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bonded%20Herdbeast",
+    "checked_at": "2026-08-09T23:30:12.873Z"
+  },
   "b07bd1cd-4000-4e6b-b16b-283c76593377": {
     "status": "available",
     "name": "Aurochs Herd",

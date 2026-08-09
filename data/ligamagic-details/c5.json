@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ant-Man%2C%20Reformed%20Rogue",
     "checked_at": "2026-08-07T09:32:06.392Z"
   },
+  "c52fc8a1-43c6-41f8-b010-03be7c89ef1d": {
+    "status": "available",
+    "name": "Bloodsoaked Insight // Sanguine Morass",
+    "price_brl": 0.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3",
+    "printing_code": "MH3",
+    "collector_number": "252",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodsoaked%20Insight",
+    "checked_at": "2026-08-09T22:59:11.281Z"
+  },
   "c5355c5e-d07d-48ca-90c5-98edcab1a3c7": {
     "status": "available",
     "name": "Axegrinder Giant",
@@ -106,6 +118,18 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aegis%20of%20the%20Gods",
     "checked_at": "2026-08-06T07:14:34.853Z"
+  },
+  "c5dd0d07-d4c2-45ac-9009-27be40262ac3": {
+    "status": "available",
+    "name": "Blurry Beeble",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unstable",
+    "printing_code": "UST",
+    "collector_number": "27",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blurry%20Beeble",
+    "checked_at": "2026-08-09T23:10:03.205Z"
   },
   "c5f50a78-9dc4-4f3c-aa11-b41c8278bc16": {
     "status": "available",

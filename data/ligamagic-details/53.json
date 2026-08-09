@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atsushi%2C%20the%20Blazing%20Sky",
     "checked_at": "2026-08-08T07:21:43.051Z"
   },
+  "537ebea5-f805-4f78-9151-58eb43c4a62d": {
+    "status": "available",
+    "name": "Bog Gnarr",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Apocalipse",
+    "printing_code": "AP",
+    "collector_number": "76",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bog%20Gnarr",
+    "checked_at": "2026-08-09T23:14:17.152Z"
+  },
   "538fa2e0-d225-4232-b243-38868b695e26": {
     "status": "available",
     "name": "Alpha Authority",
@@ -58,6 +70,18 @@
     "collector_number": "114",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alpha%20Authority",
     "checked_at": "2026-08-07T00:40:05.411Z"
+  },
+  "53929852-6359-4e7a-8f2c-a5954c76ffcc": {
+    "status": "available",
+    "name": "Blossom Dryad",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ixalan",
+    "printing_code": "XLN",
+    "collector_number": "178",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blossom%20Dryad",
+    "checked_at": "2026-08-09T23:04:14.703Z"
   },
   "53a1faa1-ca67-4027-bee8-0f7c4584d62b": {
     "status": "available",

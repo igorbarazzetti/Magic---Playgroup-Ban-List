@@ -166,5 +166,17 @@
     "collector_number": "234",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=All-Fates%20Scroll",
     "checked_at": "2026-08-07T00:33:44.592Z"
+  },
+  "cef9e0d3-5e28-4c5f-88fc-0d78af5a4db1": {
+    "status": "available",
+    "name": "Boggart Forager",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn",
+    "printing_code": "LW",
+    "collector_number": "154",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boggart%20Forager",
+    "checked_at": "2026-08-09T23:18:54.131Z"
   }
 }

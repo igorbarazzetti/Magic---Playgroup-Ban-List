@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armored%20Kincaller",
     "checked_at": "2026-08-07T19:34:23.988Z"
   },
+  "6ad1d8d0-06c0-4804-af5f-60ffb358f371": {
+    "status": "available",
+    "name": "Boldwyr Intimidator",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Battlebond",
+    "printing_code": "BBD",
+    "collector_number": "169",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boldwyr%20Intimidator",
+    "checked_at": "2026-08-09T23:24:59.387Z"
+  },
   "6ad8011d-3471-4369-9d68-b264cc027487": {
     "status": "available",
     "name": "Sol Ring",

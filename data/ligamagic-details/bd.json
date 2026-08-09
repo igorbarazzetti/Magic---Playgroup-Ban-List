@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aunt%20May",
     "checked_at": "2026-08-08T07:27:23.214Z"
   },
+  "bdb9e933-f679-4930-b669-0d123db09d16": {
+    "status": "available",
+    "name": "Bloodline Bidding",
+    "price_brl": 2.35,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed",
+    "printing_code": "ECL",
+    "collector_number": "91",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodline%20Bidding",
+    "checked_at": "2026-08-09T22:54:38.180Z"
+  },
   "bddb2064-afdb-4184-ae4a-633745e64a3c": {
     "status": "available",
     "name": "At Knifepoint",

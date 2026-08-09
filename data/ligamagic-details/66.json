@@ -118,5 +118,17 @@
     "collector_number": "3",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel's%20Grace",
     "checked_at": "2026-08-07T07:57:26.416Z"
+  },
+  "66fa2326-1b5d-41fb-b919-83bf9f383577": {
+    "status": "available",
+    "name": "Blooming Marsh",
+    "price_brl": 5.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaladesh",
+    "printing_code": "KLD",
+    "collector_number": "243",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blooming%20Marsh",
+    "checked_at": "2026-08-09T23:03:30.246Z"
   }
 }

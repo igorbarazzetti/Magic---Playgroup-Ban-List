@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arachnoform",
     "checked_at": "2026-08-07T11:24:36.974Z"
   },
+  "2e5b8973-4f6e-4abe-bbbe-81fdca784997": {
+    "status": "available",
+    "name": "Blooming Blast",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Bloomburrow",
+    "printing_code": "BLB",
+    "collector_number": "126",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blooming%20Blast",
+    "checked_at": "2026-08-09T23:03:19.624Z"
+  },
   "2e7e3be5-04dd-4ff4-b121-3e65b3e00699": {
     "status": "available",
     "name": "Bilbo, Retired Burglar",
@@ -47,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bilbo%2C%20Retired%20Burglar",
     "checked_at": "2026-08-09T17:05:27.985Z"
   },
+  "2edf106d-f504-430e-ad9c-50fc95b0ad9c": {
+    "status": "available",
+    "name": "Bone Picker",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Amonkhet",
+    "printing_code": "AKH",
+    "collector_number": "81",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bone%20Picker",
+    "checked_at": "2026-08-09T23:32:45.987Z"
+  },
   "2ee5f5ad-2f16-40d9-831a-2aefece31b36": {
     "status": "available",
     "name": "Befriending the Moths // Imperial Moth",
@@ -58,5 +82,17 @@
     "collector_number": "4",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Befriending%20the%20Moths",
     "checked_at": "2026-08-09T21:37:18.780Z"
+  },
+  "2eed5eb1-ab67-4f23-885d-922131364aba": {
+    "status": "available",
+    "name": "Bloodhall Priest",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lua Arcana",
+    "printing_code": "EMN",
+    "collector_number": "181",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodhall%20Priest",
+    "checked_at": "2026-08-09T22:53:21.416Z"
   }
 }

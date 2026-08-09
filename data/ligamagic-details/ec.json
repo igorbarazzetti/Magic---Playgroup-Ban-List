@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bard%20the%20Bowman",
     "checked_at": "2026-08-08T19:09:22.204Z"
   },
+  "ec17b9db-dd80-4b46-a1b5-215f26bf6498": {
+    "status": "available",
+    "name": "Bloodstone Goblin",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominaria",
+    "printing_code": "DOM",
+    "collector_number": "115",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodstone%20Goblin",
+    "checked_at": "2026-08-09T22:59:56.400Z"
+  },
   "ec187304-4c05-44da-8ad5-7c56f6b05212": {
     "status": "available",
     "name": "Battle Rampart",

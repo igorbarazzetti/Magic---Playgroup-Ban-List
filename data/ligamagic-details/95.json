@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aboshan's%20Desire",
     "checked_at": "2026-08-06T00:11:47.082Z"
   },
+  "95e4b2e9-2205-4ebf-a1db-b30f027c73c0": {
+    "status": "available",
+    "name": "Blue Ribbon",
+    "price_brl": 0.21,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unfinity",
+    "printing_code": "UNF",
+    "collector_number": "184",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blue%20Ribbon",
+    "checked_at": "2026-08-09T23:07:53.809Z"
+  },
   "95e94dea-5ac0-4d6f-adec-ca147aee861f": {
     "status": "available",
     "name": "Ajani's Pridemate",

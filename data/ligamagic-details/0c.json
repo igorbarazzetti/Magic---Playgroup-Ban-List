@@ -23,6 +23,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anowon%2C%20the%20Ruin%20Sage",
     "checked_at": "2026-08-07T09:31:06.369Z"
   },
+  "0c23fefe-9891-4dd8-9bb1-eebdb3274e31": {
+    "status": "available",
+    "name": "Bloom Tender",
+    "price_brl": 54.89,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed",
+    "printing_code": "ECL",
+    "collector_number": "166",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloom%20Tender",
+    "checked_at": "2026-08-09T23:03:09.642Z"
+  },
+  "0c936582-d4c0-4da8-bc7e-49da5a433939": {
+    "status": "available",
+    "name": "Bone Splinters",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Retorno de Avacyn",
+    "printing_code": "AVR",
+    "collector_number": "88",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bone%20Splinters",
+    "checked_at": "2026-08-09T23:34:05.940Z"
+  },
   "0c97aea7-c997-45b4-a044-84fb5c07a021": {
     "status": "available",
     "name": "Aerie Auxiliary",
@@ -58,6 +82,30 @@
     "collector_number": "226",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armored%20Transport",
     "checked_at": "2026-08-07T19:35:14.047Z"
+  },
+  "0cbe2a00-4303-4ade-98b5-4172d97f15fb": {
+    "status": "available",
+    "name": "Boilerbilges Ripper",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Noctumbra: A Casa dos Horrores",
+    "printing_code": "DSK",
+    "collector_number": "127",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boilerbilges%20Ripper",
+    "checked_at": "2026-08-09T23:21:43.898Z"
+  },
+  "0cc38d20-5ae8-413a-9f26-ff13cd92f24c": {
+    "status": "available",
+    "name": "Bone Harvest",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Miragem",
+    "printing_code": "MR",
+    "collector_number": "31",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bone%20Harvest",
+    "checked_at": "2026-08-09T23:32:24.430Z"
   },
   "0cd77ee1-408c-4c51-ac87-24f4fc50083d": {
     "status": "available",

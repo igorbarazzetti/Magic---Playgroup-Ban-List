@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aloe%20Alchemist",
     "checked_at": "2026-08-07T00:39:24.813Z"
   },
+  "9778dd66-6770-4230-9ee1-9b9419e322e6": {
+    "status": "available",
+    "name": "Bloodthirsty Ogre",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Campeões de Kamigawa",
+    "printing_code": "CHK",
+    "collector_number": "104",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodthirsty%20Ogre",
+    "checked_at": "2026-08-09T23:01:11.149Z"
+  },
   "977c2f33-b622-4172-9efb-7f523becd32b": {
     "status": "available",
     "name": "Blazemire Verge",

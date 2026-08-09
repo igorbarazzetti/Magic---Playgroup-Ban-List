@@ -23,6 +23,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Automated%20Assembly%20Line",
     "checked_at": "2026-08-08T09:07:20.065Z"
   },
+  "6e5f908a-f4f1-4718-ac39-34176e401756": {
+    "status": "available",
+    "name": "Boneyard Wurm",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ultimate Masters",
+    "printing_code": "UMA",
+    "collector_number": "159",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boneyard%20Wurm",
+    "checked_at": "2026-08-09T23:38:18.262Z"
+  },
+  "6e760cfe-45b9-4a3f-b2e2-4ca6ec2bd13a": {
+    "status": "available",
+    "name": "Bone Shards",
+    "price_brl": 0.46,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 2",
+    "printing_code": "MH2",
+    "collector_number": "76",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bone%20Shards",
+    "checked_at": "2026-08-09T23:33:43.095Z"
+  },
   "6eb74f6e-1c9d-4caf-a0d8-fa472d435346": {
     "status": "available",
     "name": "Abbey Griffin",

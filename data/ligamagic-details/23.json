@@ -202,5 +202,17 @@
     "collector_number": "17",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avatar%20of%20Me",
     "checked_at": "2026-08-08T09:12:40.216Z"
+  },
+  "23f93411-f83c-4ed2-abed-99cf905f7d7f": {
+    "status": "available",
+    "name": "Bog Initiate",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Invasão",
+    "printing_code": "IN",
+    "collector_number": "95",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bog%20Initiate",
+    "checked_at": "2026-08-09T23:14:50.426Z"
   }
 }

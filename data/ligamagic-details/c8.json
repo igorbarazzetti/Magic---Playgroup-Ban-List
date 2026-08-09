@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bjorna%2C%20Nightfall%20Alchemist",
     "checked_at": "2026-08-09T19:13:54.643Z"
   },
+  "c8a20fc7-025b-403a-b893-ff5efcbdc9d8": {
+    "status": "available",
+    "name": "Bloodmad Vampire",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Sombras em Innistrad",
+    "printing_code": "SOI",
+    "collector_number": "146",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodmad%20Vampire",
+    "checked_at": "2026-08-09T22:56:05.331Z"
+  },
   "c8c110db-4d98-4087-a3b0-c7fe88b5e38a": {
     "status": "available",
     "name": "Angelic Cub",

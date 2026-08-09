@@ -131,6 +131,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blinding%20Powder",
     "checked_at": "2026-08-09T22:04:16.918Z"
   },
+  "75e4448b-5bd7-4ed4-8db8-820cd6d04c12": {
+    "status": "available",
+    "name": "Boar Umbra",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ascensão dos Eldrazi",
+    "printing_code": "ROE",
+    "collector_number": "179",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boar%20Umbra",
+    "checked_at": "2026-08-09T23:10:47.783Z"
+  },
   "75f5d372-4ff9-430c-8302-72472439e0d2": {
     "status": "available",
     "name": "Blood Money",

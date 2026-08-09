@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ayara's%20Oathsworn",
     "checked_at": "2026-08-08T13:25:47.019Z"
   },
+  "ff42551a-a08e-4d0c-a5b1-d1c1bbff4915": {
+    "status": "available",
+    "name": "Bloodfire Dwarf",
+    "price_brl": 1.8,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Apocalipse",
+    "printing_code": "AP",
+    "collector_number": "56",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodfire%20Dwarf",
+    "checked_at": "2026-08-09T22:51:07.826Z"
+  },
   "ff4297d3-3d96-4bd6-a606-1bdc20a6df2b": {
     "status": "available",
     "name": "Aether Storm",

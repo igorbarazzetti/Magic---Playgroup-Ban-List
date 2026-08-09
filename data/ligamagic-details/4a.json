@@ -1,4 +1,16 @@
 {
+  "4a1e67ff-344b-4d58-88d1-bdd4bf1a611b": {
+    "status": "available",
+    "name": "Bloodletter",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unhinged",
+    "printing_code": "UH",
+    "collector_number": "50",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodletter",
+    "checked_at": "2026-08-09T22:54:15.776Z"
+  },
   "4a221518-c850-4e8a-a697-765c0a0e76e7": {
     "status": "available",
     "name": "Barktooth Warbeard",

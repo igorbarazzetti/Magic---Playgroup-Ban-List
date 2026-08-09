@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aetherstream%20Leopard",
     "checked_at": "2026-08-06T11:04:53.866Z"
   },
+  "85277284-1eba-4f87-bf7b-abf1dcbb7691": {
+    "status": "available",
+    "name": "Bold Plagiarist",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2021",
+    "printing_code": "C21",
+    "collector_number": "37",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bold%20Plagiarist",
+    "checked_at": "2026-08-09T23:24:27.590Z"
+  },
   "854278bc-2bcf-45dd-abd5-6aca7a1e5fc9": {
     "status": "available",
     "name": "Aang, A Lot to Learn",
@@ -71,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Invoke%20Prejudice",
     "checked_at": "2026-08-05T20:08:25.931Z"
   },
+  "85573cba-07ae-4421-a167-a8569f85c0f7": {
+    "status": "available",
+    "name": "Bog Witch",
+    "price_brl": 3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Máscaras de Mercádia",
+    "printing_code": "MM",
+    "collector_number": "118",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bog%20Witch",
+    "checked_at": "2026-08-09T23:16:19.420Z"
+  },
   "8561b088-56b3-4732-82e9-8da1e3affd55": {
     "status": "available",
     "name": "Beifong's Bounty Hunters",
@@ -82,6 +106,18 @@
     "collector_number": "209",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beifong's%20Bounty%20Hunters",
     "checked_at": "2026-08-09T13:38:04.128Z"
+  },
+  "8574f57a-768d-42a0-ac8c-cc0a1de181e0": {
+    "status": "available",
+    "name": "Bog Down",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Conjunção",
+    "printing_code": "PS",
+    "collector_number": "39",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bog%20Down",
+    "checked_at": "2026-08-09T23:13:44.900Z"
   },
   "85791f11-44ab-4405-b284-1d91c7e0afbb": {
     "status": "available",

@@ -119,6 +119,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balustrade%20Wurm",
     "checked_at": "2026-08-08T17:02:07.140Z"
   },
+  "2dd3a6f7-65a9-4157-9ad9-13a885ebe927": {
+    "status": "available",
+    "name": "Bloodrite Invoker",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Duel Decks: Zendikar vs. Eldrazi",
+    "printing_code": "DDP",
+    "collector_number": "45",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodrite%20Invoker",
+    "checked_at": "2026-08-09T22:57:12.556Z"
+  },
   "2dd7a4dc-902a-4e85-8a3b-c96a898fba86": {
     "status": "available",
     "name": "Animate Artifact",
@@ -154,5 +166,17 @@
     "collector_number": "65",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambassador%20Laquatus",
     "checked_at": "2026-08-07T00:48:15.235Z"
+  },
+  "2dfad8c3-1973-4fc8-971d-f66cacd88070": {
+    "status": "available",
+    "name": "Blustersquall",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Retorno a Ravnica",
+    "printing_code": "RTR",
+    "collector_number": "30",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blustersquall",
+    "checked_at": "2026-08-09T23:10:15.108Z"
   }
 }

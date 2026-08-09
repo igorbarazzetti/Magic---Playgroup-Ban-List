@@ -71,6 +71,17 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbed%20Sliver",
     "checked_at": "2026-08-08T19:07:52.092Z"
   },
+  "8fd7503b-e722-49a7-a8ac-786e7354bc95": {
+    "status": "unavailable",
+    "name": "B.F.M. (Big Furry Monster)",
+    "price_brl": null,
+    "finish": "normal",
+    "condition": "NM",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=B.F.M.%20(Big%20Furry%20Monster)",
+    "checked_at": "2026-08-09T22:49:10.412Z",
+    "last_error": "A lista de impressões não foi encontrada na página.",
+    "attempts": 2
+  },
   "8fea91ee-5849-4c46-8198-fd383d9a55e8": {
     "status": "available",
     "name": "Arachnus Spinner",

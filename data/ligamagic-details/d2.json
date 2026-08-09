@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Argivian%20Avenger",
     "checked_at": "2026-08-07T19:24:13.543Z"
   },
+  "d21994f2-75e1-456c-a25a-729c3269df1a": {
+    "status": "available",
+    "name": "Bold Defense",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Zendikar",
+    "printing_code": "ZEN",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bold%20Defense",
+    "checked_at": "2026-08-09T23:24:05.883Z"
+  },
   "d21a89eb-7c5b-459a-acc7-12b20b13bf79": {
     "status": "available",
     "name": "Strip Mine",

@@ -107,6 +107,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anger",
     "checked_at": "2026-08-07T09:21:05.995Z"
   },
+  "eab096fd-a7e2-4b96-99ec-1039d3a552f3": {
+    "status": "available",
+    "name": "Bolg, Erebor's Reckoning",
+    "price_brl": 44.91,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "The Hobbit Eternal (Extended Art)",
+    "printing_code": "EAHOC",
+    "collector_number": "102",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bolg%2C%20Erebor's%20Reckoning",
+    "checked_at": "2026-08-09T23:25:09.679Z"
+  },
+  "eaca2576-020b-4af4-b348-6d1b56116c41": {
+    "status": "available",
+    "name": "Body Launderer",
+    "price_brl": 4.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ruas de Nova Capenna",
+    "printing_code": "SNC",
+    "collector_number": "68",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Body%20Launderer",
+    "checked_at": "2026-08-09T23:12:26.139Z"
+  },
   "eae3e762-dacd-4bd2-923c-3abb5ceb729a": {
     "status": "available",
     "name": "Aisha of Sparks and Smoke",

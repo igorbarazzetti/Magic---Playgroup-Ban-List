@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Attendant%20of%20Vraska",
     "checked_at": "2026-08-08T07:22:13.042Z"
   },
+  "9a9877b5-9f75-4c83-b11b-f006aecb075b": {
+    "status": "available",
+    "name": "Bog Serpent",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Caos Planar",
+    "printing_code": "PC",
+    "collector_number": "84",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bog%20Serpent",
+    "checked_at": "2026-08-09T23:15:33.243Z"
+  },
   "9aacc1ce-8d0d-4a24-9a15-74635f2f127d": {
     "status": "available",
     "name": "Athreos, Shroud-Veiled",

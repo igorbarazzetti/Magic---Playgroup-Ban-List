@@ -1,4 +1,16 @@
 {
+  "1d00e54a-5897-43dc-9c38-a0e2ce6a7433": {
+    "status": "available",
+    "name": "Blue Dragon",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Adventures in the Forgotten Realms",
+    "printing_code": "AFR",
+    "collector_number": "49",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blue%20Dragon",
+    "checked_at": "2026-08-09T23:06:46.224Z"
+  },
   "1d078108-f88c-4a32-a28f-bae5182b2f53": {
     "status": "available",
     "name": "Baird, Argivian Recruiter",
@@ -35,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani%2C%20Caller%20of%20the%20Pride",
     "checked_at": "2026-08-06T14:49:22.558Z"
   },
+  "1d61f3a7-5861-479b-8312-f2d308c35b68": {
+    "status": "available",
+    "name": "Bogardan Firefiend",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Planechase",
+    "printing_code": "PCH",
+    "collector_number": "48",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bogardan%20Firefiend",
+    "checked_at": "2026-08-09T23:17:02.861Z"
+  },
   "1d67f5ff-1fce-45e5-b6a1-416c569351e2": {
     "status": "available",
     "name": "Gitaxian Probe",
@@ -58,6 +82,18 @@
     "collector_number": "5",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arbalest%20Elite",
     "checked_at": "2026-08-07T13:46:13.578Z"
+  },
+  "1d95ad32-768f-40a1-a461-e0562326b2b7": {
+    "status": "available",
+    "name": "Bonescythe Sliver",
+    "price_brl": 2.69,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2014",
+    "printing_code": "M14",
+    "collector_number": "9",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bonescythe%20Sliver",
+    "checked_at": "2026-08-09T23:36:26.236Z"
   },
   "1dc73412-c91c-48c9-bde6-b169add79b37": {
     "status": "available",

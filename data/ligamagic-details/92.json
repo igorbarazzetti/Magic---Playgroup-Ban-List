@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani's%20Presence",
     "checked_at": "2026-08-06T14:51:32.094Z"
   },
+  "925ce68e-9323-4985-8fef-0d3f36e0d74c": {
+    "status": "available",
+    "name": "Bombur, Gentle Dreamer",
+    "price_brl": 1.85,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "The Hobbit",
+    "printing_code": "HOB",
+    "collector_number": "88",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bombur%2C%20Gentle%20Dreamer",
+    "checked_at": "2026-08-09T23:28:20.688Z"
+  },
   "9264c198-76c7-4ac0-9334-37c691de1b54": {
     "status": "available",
     "name": "Invigorate",

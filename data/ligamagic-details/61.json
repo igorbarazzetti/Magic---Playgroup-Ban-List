@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Sting",
     "checked_at": "2026-08-06T11:00:13.629Z"
   },
+  "613a41b8-0b4f-4995-bf1e-ca41f96e6438": {
+    "status": "available",
+    "name": "Blue Sun's Zenith",
+    "price_brl": 5.06,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mirrodin Sitiada",
+    "printing_code": "MBS",
+    "collector_number": "20",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blue%20Sun's%20Zenith",
+    "checked_at": "2026-08-09T23:08:24.921Z"
+  },
   "61473d8e-45f1-4753-918d-04918a466031": {
     "status": "available",
     "name": "Alchor's Tomb",

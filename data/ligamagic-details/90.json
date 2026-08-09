@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani%20Steadfast",
     "checked_at": "2026-08-06T14:52:32.098Z"
   },
+  "9041338d-b660-4fc2-922f-cdf9d1a25993": {
+    "status": "available",
+    "name": "Body Count",
+    "price_brl": 6.89,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nova Capenna Commander",
+    "printing_code": "NCC",
+    "collector_number": "34",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Body%20Count",
+    "checked_at": "2026-08-09T23:11:53.436Z"
+  },
   "905e4bd1-f5f2-4691-b13f-ce2628d26a38": {
     "status": "available",
     "name": "Avengers Quinjet",
@@ -118,5 +130,17 @@
     "collector_number": "175",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Awakened%20Amalgam",
     "checked_at": "2026-08-08T13:21:46.935Z"
+  },
+  "90d33e75-17bd-4fc9-82f5-eff254135df5": {
+    "status": "available",
+    "name": "Body of Jukai",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Traidores de Kamigawa",
+    "printing_code": "BOK",
+    "collector_number": "121",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Body%20of%20Jukai",
+    "checked_at": "2026-08-09T23:12:36.613Z"
   }
 }

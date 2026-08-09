@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acererak%20the%20Archlich",
     "checked_at": "2026-08-06T03:52:31.845Z"
   },
+  "31be5bf4-9950-456c-8365-74b48e132ef5": {
+    "status": "available",
+    "name": "Bone to Ash",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2020",
+    "printing_code": "M20",
+    "collector_number": "48",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bone%20to%20Ash",
+    "checked_at": "2026-08-09T23:34:17.391Z"
+  },
   "31d8c2c4-3309-4eee-a704-f760f381f080": {
     "status": "available",
     "name": "Allied Assault",

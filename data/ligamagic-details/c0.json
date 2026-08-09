@@ -1,4 +1,16 @@
 {
+  "c010d833-1873-4132-b4ff-8d78b3d7c2d7": {
+    "status": "available",
+    "name": "Bontu's Last Reckoning",
+    "price_brl": 2.45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Hora da Devastação",
+    "printing_code": "HOU",
+    "collector_number": "60",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bontu's%20Last%20Reckoning",
+    "checked_at": "2026-08-09T23:38:49.450Z"
+  },
   "c025d558-aae8-4146-923b-a98035025a42": {
     "status": "available",
     "name": "Apex Hawks",
@@ -83,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arwen%2C%20Weaver%20of%20Hope",
     "checked_at": "2026-08-07T21:12:39.097Z"
   },
+  "c0899c12-5462-4ff1-a9e5-d99cffa7c6cc": {
+    "status": "available",
+    "name": "Bombard",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Edge of Eternities",
+    "printing_code": "EOE",
+    "collector_number": "129",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bombard",
+    "checked_at": "2026-08-09T23:27:57.528Z"
+  },
   "c0b3bbce-977c-42a9-afcb-dabdfc717c97": {
     "status": "available",
     "name": "Atarka, World Render",
@@ -94,6 +118,18 @@
     "collector_number": "149",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atarka%2C%20World%20Render",
     "checked_at": "2026-08-08T02:54:42.510Z"
+  },
+  "c0c465ea-4242-4737-9c3e-69222bdb8f1b": {
+    "status": "available",
+    "name": "Body Dropper",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ruas de Nova Capenna",
+    "printing_code": "SNC",
+    "collector_number": "168",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Body%20Dropper",
+    "checked_at": "2026-08-09T23:12:14.317Z"
   },
   "c0c96c7a-02d8-40cb-a08b-4a2a3b631eef": {
     "status": "available",

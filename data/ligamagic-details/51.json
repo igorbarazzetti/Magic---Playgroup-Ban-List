@@ -83,6 +83,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abyssal%20Specter",
     "checked_at": "2026-08-06T03:44:41.588Z"
   },
+  "51926430-b98a-424d-9347-c36938132825": {
+    "status": "available",
+    "name": "Bone Dragon",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2019",
+    "printing_code": "M19",
+    "collector_number": "88",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bone%20Dragon",
+    "checked_at": "2026-08-09T23:32:02.384Z"
+  },
+  "5193172c-9024-409e-bd9e-0387971d65fe": {
+    "status": "available",
+    "name": "Boiling Rock Rioter",
+    "price_brl": 0.23,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Avatar: The Last Airbender",
+    "printing_code": "TLA",
+    "collector_number": "87",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boiling%20Rock%20Rioter",
+    "checked_at": "2026-08-09T23:22:29.050Z"
+  },
   "51a886f2-9b0a-4964-9d59-99dc1a68a97c": {
     "status": "available",
     "name": "Armored Whirl Turtle",
@@ -106,6 +130,18 @@
     "collector_number": "46",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blink%20of%20an%20Eye",
     "checked_at": "2026-08-09T22:05:13.398Z"
+  },
+  "51d6d164-6e5f-4be3-8f09-433e0b8d4c6b": {
+    "status": "available",
+    "name": "Bloodline Pretender",
+    "price_brl": 7.18,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaldheim",
+    "printing_code": "KHM",
+    "collector_number": "235",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodline%20Pretender",
+    "checked_at": "2026-08-09T22:55:21.711Z"
   },
   "51d7bd70-0874-41d4-94bc-c3e14c968668": {
     "status": "available",

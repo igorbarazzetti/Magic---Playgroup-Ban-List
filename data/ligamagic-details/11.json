@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arashin%20Sunshield",
     "checked_at": "2026-08-07T13:45:23.623Z"
   },
+  "1195de01-f0ee-42c1-8e9e-a4bb90dd4932": {
+    "status": "available",
+    "name": "Bloodied Ghost",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Entardecer",
+    "printing_code": "EVE",
+    "collector_number": "83",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodied%20Ghost",
+    "checked_at": "2026-08-09T22:54:04.566Z"
+  },
   "1197a595-3afc-4f18-b868-bbb096771922": {
     "status": "available",
     "name": "Leyline of Abundance",
@@ -130,6 +142,18 @@
     "collector_number": "115",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blockbuster",
     "checked_at": "2026-08-09T22:11:12.591Z"
+  },
+  "11e637b4-6ce0-4514-98d6-02a2d073f73b": {
+    "status": "available",
+    "name": "Blue Sun's Twilight",
+    "price_brl": 0.77,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Phyrexia: Tudo será um",
+    "printing_code": "ONE",
+    "collector_number": "43",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blue%20Sun's%20Twilight",
+    "checked_at": "2026-08-09T23:08:14.199Z"
   },
   "11f55ec5-b9a3-4670-8afb-31d29478fb59": {
     "status": "available",

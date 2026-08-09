@@ -1,4 +1,16 @@
 {
+  "9609cd5c-b537-4cb2-9dde-4b12795531f7": {
+    "status": "available",
+    "name": "Blot Out",
+    "price_brl": 0.37,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marcha das Máquinas: Consequências",
+    "printing_code": "MAT",
+    "collector_number": "12",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blot%20Out",
+    "checked_at": "2026-08-09T23:05:52.089Z"
+  },
   "96232342-3ec7-4740-a114-969537b8f2fc": {
     "status": "available",
     "name": "Ballynock Trapper",

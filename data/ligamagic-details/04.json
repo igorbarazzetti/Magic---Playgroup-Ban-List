@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atomic%20Microsizer",
     "checked_at": "2026-08-08T07:20:02.961Z"
   },
+  "04b7362d-0490-4cb0-b5d7-2a7732f659ce": {
+    "status": "available",
+    "name": "Bojuka Bog",
+    "price_brl": 8,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Despertar do Mundo",
+    "printing_code": "WWK",
+    "collector_number": "132",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bojuka%20Bog",
+    "checked_at": "2026-08-09T23:23:00.984Z"
+  },
   "04e3d36f-5dec-422c-a371-15e135fdface": {
     "status": "available",
     "name": "Blessed Defiance",

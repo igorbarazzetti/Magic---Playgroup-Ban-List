@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Biowaste%20Blob",
     "checked_at": "2026-08-09T17:12:47.713Z"
   },
+  "7fc6a5c1-f0da-42f6-93d0-6d94467e2ac0": {
+    "status": "available",
+    "name": "Body of Knowledge",
+    "price_brl": 1.6,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends",
+    "printing_code": "CMR",
+    "collector_number": "59",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Body%20of%20Knowledge",
+    "checked_at": "2026-08-09T23:12:48.157Z"
+  },
   "7fca65b8-01fe-4858-97c6-f97ae82cd801": {
     "status": "available",
     "name": "Bazaar of Wonders",

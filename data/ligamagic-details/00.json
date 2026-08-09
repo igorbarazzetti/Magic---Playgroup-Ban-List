@@ -47,6 +47,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Airdrop%20Aeronauts",
     "checked_at": "2026-08-06T14:47:51.907Z"
   },
+  "00b36996-43c6-42a5-892c-c7c8864cf973": {
+    "status": "available",
+    "name": "Blur",
+    "price_brl": 0.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends: Batalha por Portal de Baldur",
+    "printing_code": "CLB",
+    "collector_number": "58",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blur",
+    "checked_at": "2026-08-09T23:09:07.323Z"
+  },
+  "00e9957a-5684-4a07-954e-8161925fefe4": {
+    "status": "available",
+    "name": "Bond of Discipline",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra da Centelha",
+    "printing_code": "WAR",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bond%20of%20Discipline",
+    "checked_at": "2026-08-09T23:28:54.548Z"
+  },
   "00f579f4-2d18-4c7c-91b2-34726b384535": {
     "status": "available",
     "name": "Bladed Sentinel",

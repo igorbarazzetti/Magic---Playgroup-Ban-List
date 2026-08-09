@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodcrazed%20Goblin",
     "checked_at": "2026-08-09T22:23:12.971Z"
   },
+  "a12880c4-1987-42af-8595-0b88981e1091": {
+    "status": "available",
+    "name": "Bloodfire Kavu",
+    "price_brl": 0.06,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Apocalipse",
+    "printing_code": "AP",
+    "collector_number": "58",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodfire%20Kavu",
+    "checked_at": "2026-08-09T22:51:53.585Z"
+  },
   "a1399cb8-f22a-487e-b539-2db47b09a790": {
     "status": "available",
     "name": "Aeon Chronicler",
@@ -166,6 +178,18 @@
     "collector_number": "146",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baral's%20Expertise",
     "checked_at": "2026-08-08T17:11:07.565Z"
+  },
+  "a1d82070-3198-4ead-9431-d90661e29741": {
+    "status": "available",
+    "name": "Bojuka Brigand",
+    "price_brl": 0.11,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Despertar do Mundo",
+    "printing_code": "WWK",
+    "collector_number": "51",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bojuka%20Brigand",
+    "checked_at": "2026-08-09T23:23:11.932Z"
   },
   "a1eccd85-d243-4d27-bf49-d3ac816159e4": {
     "status": "available",

@@ -1,4 +1,16 @@
 {
+  "880793a2-84b0-4ae1-9bb8-6e942e3dc723": {
+    "status": "available",
+    "name": "Boggart Brute",
+    "price_brl": 0.01,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Duel Decks: Merfolk vs. Goblins",
+    "printing_code": "DDT",
+    "collector_number": "34",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boggart%20Brute",
+    "checked_at": "2026-08-09T23:18:31.708Z"
+  },
   "88159872-d37d-4847-b048-e4a9af6437bd": {
     "status": "available",
     "name": "Barad-dûr",
@@ -23,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beacon%20Bolt",
     "checked_at": "2026-08-08T22:59:30.802Z"
   },
+  "88522a0f-5377-4522-97f4-4148bef954af": {
+    "status": "available",
+    "name": "Bolg of the North",
+    "price_brl": 1.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "The Hobbit",
+    "printing_code": "HOB",
+    "collector_number": "148",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bolg%20of%20the%20North",
+    "checked_at": "2026-08-09T23:25:20.422Z"
+  },
   "88939cb3-5f61-4857-95cb-9446c6c1f1aa": {
     "status": "available",
     "name": "Alpine Houndmaster",
@@ -46,6 +70,18 @@
     "collector_number": "121",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Affectionate%20Indrik",
     "checked_at": "2026-08-06T11:06:33.963Z"
+  },
+  "88aa5cd0-811a-4682-b2b0-2decbd13b332": {
+    "status": "available",
+    "name": "Boneyard Lurker",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ikoria: Terra de Colossos",
+    "printing_code": "IKO",
+    "collector_number": "178",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boneyard%20Lurker",
+    "checked_at": "2026-08-09T23:37:33.449Z"
   },
   "88ce2017-83a6-4b55-afba-371875bf2172": {
     "status": "available",

@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbarian%20Riftcutter",
     "checked_at": "2026-08-08T19:05:42.021Z"
   },
+  "e97f9c2b-b41e-4f36-9245-77c0ac125647": {
+    "status": "available",
+    "name": "Bloodghast",
+    "price_brl": 7,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Zendikar",
+    "printing_code": "ZEN",
+    "collector_number": "83",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodghast",
+    "checked_at": "2026-08-09T22:52:48.705Z"
+  },
   "e98e8129-3e0e-45cc-b00c-1387cc592023": {
     "status": "available",
     "name": "Alluring Suitor // Deadly Dancer",
@@ -106,6 +118,18 @@
     "collector_number": "68",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anaba%20Spirit%20Crafter",
     "checked_at": "2026-08-07T04:45:51.465Z"
+  },
+  "e9c9e730-3b73-48e3-845b-1b7f2d16050c": {
+    "status": "available",
+    "name": "Bond of Flourishing",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra da Centelha",
+    "printing_code": "WAR",
+    "collector_number": "155",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bond%20of%20Flourishing",
+    "checked_at": "2026-08-09T23:29:06.401Z"
   },
   "e9da499c-fa43-4e94-8395-5c030ff39502": {
     "status": "available",

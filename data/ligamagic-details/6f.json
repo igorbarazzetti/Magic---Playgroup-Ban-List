@@ -167,6 +167,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Animal%20Boneyard",
     "checked_at": "2026-08-07T09:24:06.120Z"
   },
+  "6fb45c80-0b6a-4283-a8e6-185b8e4bc756": {
+    "status": "available",
+    "name": "Boldwyr Heavyweights",
+    "price_brl": 1.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alvorecer",
+    "printing_code": "MT",
+    "collector_number": "85",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boldwyr%20Heavyweights",
+    "checked_at": "2026-08-09T23:24:49.227Z"
+  },
   "6fe9fd59-9cac-4572-8f94-bc19bea44f94": {
     "status": "available",
     "name": "Ashling, Flame Dancer",
@@ -190,5 +202,17 @@
     "collector_number": "112",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aysen%20Abbey",
     "checked_at": "2026-08-08T13:26:37.079Z"
+  },
+  "6ff995f9-080d-4316-8fbe-39bf195db91b": {
+    "status": "available",
+    "name": "Bola Slinger",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marcha das Máquinas",
+    "printing_code": "MOM",
+    "collector_number": "8",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bola%20Slinger",
+    "checked_at": "2026-08-09T23:23:22.178Z"
   }
 }

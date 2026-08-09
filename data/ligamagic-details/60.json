@@ -1,4 +1,16 @@
 {
+  "60092fb4-98db-4f2d-a5d7-24b5f11c8acc": {
+    "status": "available",
+    "name": "Bombadil's Song",
+    "price_brl": 0.18,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Senhor dos Anéis: Contos da Terra Média",
+    "printing_code": "LTR",
+    "collector_number": "154",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bombadil's%20Song",
+    "checked_at": "2026-08-09T23:27:46.331Z"
+  },
   "600e1093-5619-49b3-b193-bd263e4fde33": {
     "status": "available",
     "name": "Automated Artificer",
@@ -10,6 +22,18 @@
     "collector_number": "239",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Automated%20Artificer",
     "checked_at": "2026-08-08T09:07:10.046Z"
+  },
+  "601fd61b-4939-459a-84d1-d947d29c9564": {
+    "status": "available",
+    "name": "Bloodhaze Wolverine",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Trono de Eldraine",
+    "printing_code": "ELD",
+    "collector_number": "113",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodhaze%20Wolverine",
+    "checked_at": "2026-08-09T22:53:32.432Z"
   },
   "602cce3e-7033-47d6-aec1-d755f234f270": {
     "status": "available",
@@ -35,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akroan%20Mastiff",
     "checked_at": "2026-08-06T18:07:07.266Z"
   },
+  "60555f06-dc85-4a34-ae3c-fc1cdb923be7": {
+    "status": "available",
+    "name": "Bolt Hound",
+    "price_brl": 0.06,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2021",
+    "printing_code": "M21",
+    "collector_number": "131",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bolt%20Hound",
+    "checked_at": "2026-08-09T23:26:16.064Z"
+  },
   "607425ac-9e90-4c9e-88bf-72f8a76cce97": {
     "status": "available",
     "name": "Big Play",
@@ -58,6 +94,18 @@
     "collector_number": "7",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Altar%20of%20Bone",
     "checked_at": "2026-08-07T00:44:25.081Z"
+  },
+  "60824fae-20ed-4122-82c9-e99a1b679c54": {
+    "status": "available",
+    "name": "Bog Raiders",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2011",
+    "printing_code": "M11",
+    "collector_number": "86",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bog%20Raiders",
+    "checked_at": "2026-08-09T23:15:12.123Z"
   },
   "60875e8e-fc71-4eb3-8c2d-70f2fd1f11ae": {
     "status": "available",

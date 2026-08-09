@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aspect%20of%20Mongoose",
     "checked_at": "2026-08-08T02:44:12.091Z"
   },
+  "dccd0533-fda0-41ff-b540-c4f1bb32fc95": {
+    "status": "available",
+    "name": "Blunt the Assault",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Cicatrizes de Mirrodin",
+    "printing_code": "SOM",
+    "collector_number": "113",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blunt%20the%20Assault",
+    "checked_at": "2026-08-09T23:08:56.119Z"
+  },
   "dcd41ed1-4a12-416b-8ba0-51a9c0927ddb": {
     "status": "available",
     "name": "Binding Agony",
@@ -130,5 +142,17 @@
     "collector_number": "2",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aeronaut%20Admiral",
     "checked_at": "2026-08-06T07:20:35.113Z"
+  },
+  "dcebce37-02eb-4b5d-86be-42b4a0287624": {
+    "status": "available",
+    "name": "Bloodmist Infiltrator",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lealdade em Ravnica",
+    "printing_code": "RNA",
+    "collector_number": "65",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodmist%20Infiltrator",
+    "checked_at": "2026-08-09T22:56:27.912Z"
   }
 }

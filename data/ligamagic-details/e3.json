@@ -143,6 +143,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auntie%20Ool%2C%20Cursewretch",
     "checked_at": "2026-08-08T07:27:43.227Z"
   },
+  "e3d4dd61-d646-449c-84f4-0ff927ca6b0a": {
+    "status": "available",
+    "name": "Bog-Strider Ash",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn",
+    "printing_code": "LW",
+    "collector_number": "198",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bog-Strider%20Ash",
+    "checked_at": "2026-08-09T23:15:56.205Z"
+  },
   "e3d82066-d8b9-47bf-8821-1370c506970b": {
     "status": "available",
     "name": "Barbed Servitor",

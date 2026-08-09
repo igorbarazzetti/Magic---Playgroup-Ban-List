@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Along%20the%20Crooked%20Way",
     "checked_at": "2026-08-07T00:39:34.791Z"
   },
+  "f4490b09-dc55-47ed-a573-4ae0b95725b1": {
+    "status": "available",
+    "name": "Bloodfeather Phoenix",
+    "price_brl": 0.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marcha das Máquinas",
+    "printing_code": "MOM",
+    "collector_number": "132",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodfeather%20Phoenix",
+    "checked_at": "2026-08-09T22:50:36.681Z"
+  },
   "f44eab45-8ff9-40eb-9919-28fe5203fc48": {
     "status": "available",
     "name": "Barreling Attack",

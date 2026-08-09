@@ -94,5 +94,17 @@
     "collector_number": "30",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auntie%20Blyte%2C%20Bad%20Influence",
     "checked_at": "2026-08-08T07:27:33.242Z"
+  },
+  "a5ec7ccd-d1fe-4ca6-b019-d4616c233771": {
+    "status": "available",
+    "name": "Bloodsworn Steward",
+    "price_brl": 0.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Voto Carmesim (Commander)",
+    "printing_code": "VOC",
+    "collector_number": "144",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodsworn%20Steward",
+    "checked_at": "2026-08-09T23:00:18.131Z"
   }
 }

@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Tribute",
     "checked_at": "2026-08-09T22:20:48.500Z"
   },
+  "aa76cc50-5be0-4844-b3a4-fb33fca3cdd3": {
+    "status": "available",
+    "name": "Bloodthrone Vampire",
+    "price_brl": 0.18,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Masters 2015",
+    "printing_code": "MM2",
+    "collector_number": "72",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodthrone%20Vampire",
+    "checked_at": "2026-08-09T23:01:43.346Z"
+  },
   "aa77980d-0434-40f0-990f-1c8c50610174": {
     "status": "available",
     "name": "Rain of Filth",

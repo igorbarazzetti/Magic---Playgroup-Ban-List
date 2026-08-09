@@ -1,4 +1,16 @@
 {
+  "2c47319a-4062-4aec-b68a-e8e8f023cf86": {
+    "status": "available",
+    "name": "Bloodfire Mentor",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Khans de Tarkir",
+    "printing_code": "KTK",
+    "collector_number": "102",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodfire%20Mentor",
+    "checked_at": "2026-08-09T22:52:03.854Z"
+  },
   "2c57c4e9-0a46-45d6-92db-9203fb722b60": {
     "status": "available",
     "name": "Abomination",

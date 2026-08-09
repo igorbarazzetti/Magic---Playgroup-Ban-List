@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Astarion%2C%20the%20Decadent",
     "checked_at": "2026-08-08T02:50:42.341Z"
   },
+  "030e9e3e-ce78-4c3b-bd83-969c07c70459": {
+    "status": "available",
+    "name": "Boggart Birth Rite",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn",
+    "printing_code": "LW",
+    "collector_number": "101",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boggart%20Birth%20Rite",
+    "checked_at": "2026-08-09T23:18:20.283Z"
+  },
   "031ddf1e-afcf-4b09-8859-4df0f0ab5dcf": {
     "status": "available",
     "name": "Blood Cultist",
@@ -58,6 +70,18 @@
     "collector_number": "103",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcbound%20Wanderer",
     "checked_at": "2026-08-07T13:57:54.108Z"
+  },
+  "035d61a9-5ca2-4275-b8df-fcfa9f5c1b31": {
+    "status": "available",
+    "name": "Bog Rats",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Sexta Edição Classica",
+    "printing_code": "6E",
+    "collector_number": "117",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bog%20Rats",
+    "checked_at": "2026-08-09T23:15:22.101Z"
   },
   "035e33ab-adfe-4831-bdbc-52f4ddc7ffe8": {
     "status": "available",
@@ -130,6 +154,18 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baffling%20End",
     "checked_at": "2026-08-08T14:59:57.547Z"
+  },
+  "03ce87f1-cdda-4121-8c0a-988642053055": {
+    "status": "available",
+    "name": "Bonds of Quicksilver",
+    "price_brl": 0.02,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Conspiracy: Take the Crown",
+    "printing_code": "CN2",
+    "collector_number": "102",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bonds%20of%20Quicksilver",
+    "checked_at": "2026-08-09T23:31:19.120Z"
   },
   "03f5946b-e000-4b39-a49f-1c31668b51bd": {
     "status": "available",

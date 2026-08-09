@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Biophagus",
     "checked_at": "2026-08-09T17:11:27.680Z"
   },
+  "7c2f1915-8d91-47c6-bab4-be325348673a": {
+    "status": "available",
+    "name": "Bogstomper",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2020",
+    "printing_code": "M20",
+    "collector_number": "320",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bogstomper",
+    "checked_at": "2026-08-09T23:20:59.707Z"
+  },
   "7c35f3fd-c64e-4944-a4d5-37ce916d23c3": {
     "status": "available",
     "name": "Altered Ego",
@@ -70,6 +82,18 @@
     "collector_number": "10",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ardenn%2C%20Intrepid%20Archaeologist",
     "checked_at": "2026-08-07T17:25:54.622Z"
+  },
+  "7c683855-f32e-42f9-8681-c3335d5eaf79": {
+    "status": "available",
+    "name": "Bloodpyre Elemental",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fragmentos de Alara",
+    "printing_code": "ALA",
+    "collector_number": "93",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodpyre%20Elemental",
+    "checked_at": "2026-08-09T22:56:38.590Z"
   },
   "7c779721-cd1b-4696-9ae9-68ccc284ed2a": {
     "status": "available",

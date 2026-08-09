@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Frantic%20Search",
     "checked_at": "2026-08-05T20:06:34.653Z"
   },
+  "16e555f2-5aa8-4100-a036-eed48db0e84a": {
+    "status": "available",
+    "name": "Bone Saw",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Confluência",
+    "printing_code": "CON",
+    "collector_number": "135",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bone%20Saw",
+    "checked_at": "2026-08-09T23:33:19.583Z"
+  },
   "16f61f69-cdde-4b6c-b855-c74db9038ceb": {
     "status": "available",
     "name": "Azorius Guildmage",
@@ -118,6 +130,18 @@
     "collector_number": "202",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Hermit%20Druid",
     "checked_at": "2026-08-05T20:07:32.226Z"
+  },
+  "16f9368a-5da5-4397-a127-c96cdd115b7b": {
+    "status": "available",
+    "name": "Blue Marvel, Adam Brashear",
+    "price_brl": 0.58,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes Commander",
+    "printing_code": "MSC",
+    "collector_number": "530",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blue%20Marvel%2C%20Adam%20Brashear",
+    "checked_at": "2026-08-09T23:07:42.083Z"
   },
   "16fe1f04-9bbf-43a3-ab14-395fdf4a3a43": {
     "status": "available",

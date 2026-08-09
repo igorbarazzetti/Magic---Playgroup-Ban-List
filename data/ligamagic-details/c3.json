@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Altar%20of%20the%20Brood",
     "checked_at": "2026-08-07T00:44:55.163Z"
   },
+  "c3adc698-a0c5-4c82-8347-536745c9e928": {
+    "status": "available",
+    "name": "Boneyard Desecrator",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Os Fora da Lei de Encruzilhada do Trovão",
+    "printing_code": "OTJ",
+    "collector_number": "81",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boneyard%20Desecrator",
+    "checked_at": "2026-08-09T23:37:21.796Z"
+  },
   "c3b6e114-7bc8-4890-97d9-edbeea1f425f": {
     "status": "available",
     "name": "Assault Suit",

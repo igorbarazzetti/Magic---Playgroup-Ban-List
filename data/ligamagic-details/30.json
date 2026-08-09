@@ -142,5 +142,29 @@
     "collector_number": "119",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beorn%20the%20Fierce",
     "checked_at": "2026-08-09T15:04:45.923Z"
+  },
+  "30d2437a-87c9-4f88-8fb8-b686d6522677": {
+    "status": "available",
+    "name": "Boggart Ram-Gang",
+    "price_brl": 0.27,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Pântano Sombrio",
+    "printing_code": "SHM",
+    "collector_number": "203",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boggart%20Ram-Gang",
+    "checked_at": "2026-08-09T23:20:03.359Z"
+  },
+  "30f3c3be-0fe9-463d-a245-e44701aec7f2": {
+    "status": "available",
+    "name": "Blossoming Bogbeast",
+    "price_brl": 6.45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven Commander",
+    "printing_code": "SOC",
+    "collector_number": "264",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blossoming%20Bogbeast",
+    "checked_at": "2026-08-09T23:04:45.841Z"
   }
 }

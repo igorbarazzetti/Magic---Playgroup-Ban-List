@@ -131,6 +131,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arco-Flagellant",
     "checked_at": "2026-08-07T17:23:24.554Z"
   },
+  "b4a9b328-f976-4390-be9a-711ef357a50d": {
+    "status": "available",
+    "name": "Blur of Heroism",
+    "price_brl": 2.65,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes Commander",
+    "printing_code": "MSC",
+    "collector_number": "585",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blur%20of%20Heroism",
+    "checked_at": "2026-08-09T23:09:30.293Z"
+  },
   "b4cd7e4e-4b63-41a1-bfad-2840a96f84bb": {
     "status": "available",
     "name": "Blightbeetle",

@@ -106,5 +106,17 @@
     "collector_number": "64",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bellowing%20Saddlebrute",
     "checked_at": "2026-08-09T13:42:24.306Z"
+  },
+  "e1e67a2f-61b6-49c5-8bcf-5d2b3f0df35d": {
+    "status": "available",
+    "name": "Bog Tatters",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Zendikar",
+    "printing_code": "ZEN",
+    "collector_number": "84",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bog%20Tatters",
+    "checked_at": "2026-08-09T23:16:07.854Z"
   }
 }

@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Argivian%20Find",
     "checked_at": "2026-08-07T19:24:43.543Z"
   },
+  "0b7fabe8-bc44-47b1-93bb-b895a1bd0aa9": {
+    "status": "available",
+    "name": "Bloodline Culling",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Caçada à Meia-noite",
+    "printing_code": "MID",
+    "collector_number": "89",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodline%20Culling",
+    "checked_at": "2026-08-09T22:54:49.018Z"
+  },
   "0baabe39-72ae-47bd-a095-cbf7eb8a6361": {
     "status": "available",
     "name": "Ancient Ziggurat",

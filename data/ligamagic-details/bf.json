@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bee-Bee%20Gun",
     "checked_at": "2026-08-09T13:34:44.025Z"
   },
+  "bf71c210-8fef-4eda-a943-8c52cbae6159": {
+    "status": "available",
+    "name": "Bonded Horncrest",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ixalan",
+    "printing_code": "XLN",
+    "collector_number": "133",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bonded%20Horncrest",
+    "checked_at": "2026-08-09T23:30:22.836Z"
+  },
   "bf7ec320-64bb-46ca-aac0-ca3d4224b69e": {
     "status": "available",
     "name": "Ajani's Response",

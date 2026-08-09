@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agoraphobia",
     "checked_at": "2026-08-06T14:42:41.724Z"
   },
+  "b2747459-05ec-42a6-81be-e97e182bc778": {
+    "status": "available",
+    "name": "Bloodthirsty Blade",
+    "price_brl": 0.31,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2019",
+    "printing_code": "C19",
+    "collector_number": "53",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodthirsty%20Blade",
+    "checked_at": "2026-08-09T23:01:00.828Z"
+  },
   "b292d183-1ba9-40b4-9cba-bd70bf1380ef": {
     "status": "available",
     "name": "Abzan Kin-Guard",
@@ -130,6 +142,18 @@
     "collector_number": "55",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benthic%20Infiltrator",
     "checked_at": "2026-08-09T15:04:05.487Z"
+  },
+  "b2aabfaf-5996-4b41-987a-6bd941f6ae88": {
+    "status": "available",
+    "name": "Bloodscent",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mirrodin",
+    "printing_code": "MI",
+    "collector_number": "114",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodscent",
+    "checked_at": "2026-08-09T22:57:55.149Z"
   },
   "b2bd58ea-b2c6-47f1-b082-7969f093bbc6": {
     "status": "available",

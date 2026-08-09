@@ -142,5 +142,17 @@
     "collector_number": "160",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agatha's%20Champion",
     "checked_at": "2026-08-06T11:09:14.099Z"
+  },
+  "ded78090-c6a1-4c9d-b7b9-b433b1d963b6": {
+    "status": "available",
+    "name": "Blot Out the Sky",
+    "price_brl": 1.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Strixhaven: Escola de Magos",
+    "printing_code": "STX",
+    "collector_number": "167",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blot%20Out%20the%20Sky",
+    "checked_at": "2026-08-09T23:06:03.454Z"
   }
 }

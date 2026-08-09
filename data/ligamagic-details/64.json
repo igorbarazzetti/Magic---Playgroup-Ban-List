@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aang's%20Iceberg",
     "checked_at": "2026-08-06T00:03:56.694Z"
   },
+  "6494e3c4-5489-44a5-94b6-4ee2d7830896": {
+    "status": "available",
+    "name": "Boneclad Necromancer",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2020",
+    "printing_code": "M20",
+    "collector_number": "93",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boneclad%20Necromancer",
+    "checked_at": "2026-08-09T23:35:12.461Z"
+  },
   "64bf8929-f5f2-4d50-8667-13b1d007bcfc": {
     "status": "available",
     "name": "Seething Song",
@@ -94,6 +106,18 @@
     "collector_number": "30",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armor%20of%20Shadows",
     "checked_at": "2026-08-07T19:32:23.902Z"
+  },
+  "64e29bfc-9313-4e8c-808c-bc27f6b018a6": {
+    "status": "available",
+    "name": "Bloodfell Caves",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Khans de Tarkir",
+    "printing_code": "KTK",
+    "collector_number": "229",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodfell%20Caves",
+    "checked_at": "2026-08-09T22:50:47.587Z"
   },
   "64e3791b-de99-4eed-af49-cbec218c28aa": {
     "status": "available",

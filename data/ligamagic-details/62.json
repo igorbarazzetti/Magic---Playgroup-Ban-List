@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcus%20Acolyte",
     "checked_at": "2026-08-07T17:25:25.164Z"
   },
+  "6290233b-b015-4909-8aba-bf8d65cc37b5": {
+    "status": "available",
+    "name": "Blue Mage's Cane",
+    "price_brl": 2.39,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "FINAL FANTASY Commander",
+    "printing_code": "FIC",
+    "collector_number": "35",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blue%20Mage's%20Cane",
+    "checked_at": "2026-08-09T23:07:19.343Z"
+  },
   "629fe1be-272d-465f-b9b1-2ce177410f13": {
     "status": "available",
     "name": "+2 Mace",
@@ -94,6 +106,18 @@
     "collector_number": "88",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archfiend's%20Vessel",
     "checked_at": "2026-08-07T17:17:14.239Z"
+  },
+  "62cca25f-3bf7-4b67-97d5-280bf2544722": {
+    "status": "available",
+    "name": "Bond of Revival",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra da Centelha",
+    "printing_code": "WAR",
+    "collector_number": "80",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bond%20of%20Revival",
+    "checked_at": "2026-08-09T23:29:40.351Z"
   },
   "62dca41b-58b0-45eb-ada7-568e80a2abec": {
     "status": "available",

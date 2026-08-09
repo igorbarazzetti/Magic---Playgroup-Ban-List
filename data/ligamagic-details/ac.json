@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azra%20Bladeseeker",
     "checked_at": "2026-08-08T13:31:47.239Z"
   },
+  "ac65ed8c-abe8-4044-9ce5-70b1370d0e19": {
+    "status": "available",
+    "name": "Boggart Mischief",
+    "price_brl": 0.24,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed",
+    "printing_code": "ECL",
+    "collector_number": "92",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boggart%20Mischief",
+    "checked_at": "2026-08-09T23:19:28.832Z"
+  },
   "ac74bd52-a450-486f-8161-816fd8d966d0": {
     "status": "available",
     "name": "Blood Tyrant",

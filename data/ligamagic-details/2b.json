@@ -131,6 +131,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambrosia%20Whiteheart",
     "checked_at": "2026-08-07T04:36:51.109Z"
   },
+  "2bd111bb-ce02-414c-b5b7-e0e037d8d96b": {
+    "status": "available",
+    "name": "Bolas's Citadel",
+    "price_brl": 16.93,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra da Centelha",
+    "printing_code": "WAR",
+    "collector_number": "79",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bolas's%20Citadel",
+    "checked_at": "2026-08-09T23:23:44.775Z"
+  },
   "2be2f6c8-d8df-4e5c-a0c1-7566183bbe81": {
     "status": "available",
     "name": "Belligerent of the Ball",

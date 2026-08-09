@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Spring",
     "checked_at": "2026-08-07T07:51:26.132Z"
   },
+  "21695c70-f746-4d77-b6d3-e2713a5c929e": {
+    "status": "available",
+    "name": "Bogslither's Embrace",
+    "price_brl": 0.06,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed",
+    "printing_code": "ECL",
+    "collector_number": "94",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bogslither's%20Embrace",
+    "checked_at": "2026-08-09T23:20:48.037Z"
+  },
   "2188c03f-11b6-4651-914a-b4fdd59127e3": {
     "status": "available",
     "name": "Arcane Adaptation",

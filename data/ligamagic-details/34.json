@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baki's%20Curse",
     "checked_at": "2026-08-08T15:02:07.608Z"
   },
+  "341cf654-faf7-4db9-bd9a-70783f1ccff0": {
+    "status": "available",
+    "name": "Bloodfire Expert",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mystery Booster",
+    "printing_code": "MB1",
+    "collector_number": "858",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodfire%20Expert",
+    "checked_at": "2026-08-09T22:51:30.475Z"
+  },
   "341f198b-beb6-4a44-af91-a64a5989c865": {
     "status": "available",
     "name": "Ajani, Wise Counselor",
@@ -154,6 +166,18 @@
     "collector_number": "2",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aura%20Fracture",
     "checked_at": "2026-08-08T07:29:13.284Z"
+  },
+  "34b2f465-0b15-428a-a1c2-bcd41af07d01": {
+    "status": "available",
+    "name": "Boneknitter",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Investida",
+    "printing_code": "ON",
+    "collector_number": "128",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boneknitter",
+    "checked_at": "2026-08-09T23:36:05.661Z"
   },
   "34c0f75d-10a9-428d-b202-3defb3949090": {
     "status": "available",

@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodcrazed%20Socialite",
     "checked_at": "2026-08-09T22:23:59.383Z"
   },
+  "7e3e09a2-b45c-4897-ba10-02628cca3f4c": {
+    "status": "available",
+    "name": "Bloodhunter Bat",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2013",
+    "printing_code": "M13",
+    "collector_number": "82",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodhunter%20Bat",
+    "checked_at": "2026-08-09T22:53:42.631Z"
+  },
   "7e481e22-4122-4259-8978-4727eb307195": {
     "status": "available",
     "name": "Bearscape",
@@ -142,5 +154,17 @@
     "collector_number": "49",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blitz%20Hellion",
     "checked_at": "2026-08-09T22:08:05.151Z"
+  },
+  "7ef45067-74bd-4df8-9f95-621761a0b4a0": {
+    "status": "available",
+    "name": "Bone Sabres",
+    "price_brl": 17,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Warhammer 40.000",
+    "printing_code": "40K",
+    "collector_number": "88",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bone%20Sabres",
+    "checked_at": "2026-08-09T23:33:08.517Z"
   }
 }

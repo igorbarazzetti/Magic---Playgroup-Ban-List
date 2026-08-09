@@ -35,6 +35,17 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armada%20Wurm",
     "checked_at": "2026-08-07T19:29:03.736Z"
   },
+  "3372b994-47de-4e89-9bfc-76e1cb3f1cfa": {
+    "status": "unavailable",
+    "name": "Blessed Hippogriff // Tyr's Blessing",
+    "price_brl": null,
+    "finish": "normal",
+    "condition": "NM",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blessed%20Hippogriff",
+    "checked_at": "2026-08-09T22:49:54.850Z",
+    "last_error": "A lista de impressões não foi encontrada na página.",
+    "attempts": 2
+  },
   "3378fef3-4d8c-4d9e-a338-4abb6f70d410": {
     "status": "available",
     "name": "Aqueous Form",

@@ -131,6 +131,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Sojourner's%20Companion",
     "checked_at": "2026-08-05T20:12:44.654Z"
   },
+  "1ce6ae30-33c3-4f05-9286-69b0871b1c2d": {
+    "status": "available",
+    "name": "Bloodstone Cameo",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Invasão",
+    "printing_code": "IN",
+    "collector_number": "298",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodstone%20Cameo",
+    "checked_at": "2026-08-09T22:59:44.784Z"
+  },
   "1cf27d78-d6ae-4fa2-9c8d-c277913f821c": {
     "status": "available",
     "name": "Baru, Wurmspeaker",

@@ -1,4 +1,16 @@
 {
+  "ed04f170-a4d9-4151-b4ae-1200d523dc6b": {
+    "status": "available",
+    "name": "Bloodsky Berserker",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaldheim",
+    "printing_code": "KHM",
+    "collector_number": "80",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodsky%20Berserker",
+    "checked_at": "2026-08-09T22:58:38.382Z"
+  },
   "ed10bb4c-f7ef-4046-8dde-465041b55078": {
     "status": "available",
     "name": "Artificer's Epiphany",

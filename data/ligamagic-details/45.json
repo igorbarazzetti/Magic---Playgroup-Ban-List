@@ -59,6 +59,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anthropede",
     "checked_at": "2026-08-07T09:33:46.458Z"
   },
+  "452e3f5f-ce17-4682-966b-5cc100210aee": {
+    "status": "available",
+    "name": "Bonesplitter",
+    "price_brl": 0.17,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Masters",
+    "printing_code": "MMA",
+    "collector_number": "202",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bonesplitter",
+    "checked_at": "2026-08-09T23:36:48.101Z"
+  },
+  "45429b2c-be3b-4b2e-9bab-a059ccbda8cd": {
+    "status": "available",
+    "name": "Blossoming Sands",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm",
+    "printing_code": "TDM",
+    "collector_number": "251",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blossoming%20Sands",
+    "checked_at": "2026-08-09T23:05:17.617Z"
+  },
   "454ed336-362d-46d9-96d5-8fcaa8a1c543": {
     "status": "available",
     "name": "Ambush Party",
@@ -167,6 +191,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azor's%20Elocutors",
     "checked_at": "2026-08-08T13:28:37.145Z"
   },
+  "45b94e3c-a905-435b-aee5-bec9239fd24c": {
+    "status": "available",
+    "name": "Bog Imp",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Oitava Edição - Kit Básico",
+    "printing_code": "8E",
+    "collector_number": "119",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bog%20Imp",
+    "checked_at": "2026-08-09T23:14:39.865Z"
+  },
   "45d652c4-188e-4f00-acdd-1be014922cbc": {
     "status": "available",
     "name": "Attercop",
@@ -178,6 +214,18 @@
     "collector_number": "116",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Attercop",
     "checked_at": "2026-08-08T07:23:13.089Z"
+  },
+  "45ddfa35-7b3c-4916-b231-dc721b7b56d9": {
+    "status": "available",
+    "name": "Bold Biochemist",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes",
+    "printing_code": "MSH",
+    "collector_number": "48",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bold%20Biochemist",
+    "checked_at": "2026-08-09T23:23:54.609Z"
   },
   "45f386ba-ad62-4c0e-b6ad-ae02ca8f2bec": {
     "status": "available",

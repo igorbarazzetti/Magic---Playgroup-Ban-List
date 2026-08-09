@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodbraid%20Elf",
     "checked_at": "2026-08-09T22:22:17.323Z"
   },
+  "3f0dc347-adac-428b-8f04-858799e91243": {
+    "status": "available",
+    "name": "Bogardan Dragonheart",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons",
+    "printing_code": "MH1",
+    "collector_number": "120",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bogardan%20Dragonheart",
+    "checked_at": "2026-08-09T23:16:52.373Z"
+  },
   "3f166376-2739-411c-8f42-96f2ef28ef86": {
     "status": "available",
     "name": "April O'Neil, Kunoichi Trainee",
@@ -70,6 +82,18 @@
     "collector_number": "170",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ace's%20Baseball%20Bat",
     "checked_at": "2026-08-06T03:52:21.850Z"
+  },
+  "3f53fd3e-9116-4599-81df-a9390461b549": {
+    "status": "available",
+    "name": "Bloodcurdler",
+    "price_brl": 0.69,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Odisséia",
+    "printing_code": "OD",
+    "collector_number": "116",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodcurdler",
+    "checked_at": "2026-08-09T22:50:15.352Z"
   },
   "3f5acd90-199c-4ed3-9c8a-eeac4670d876": {
     "status": "available",

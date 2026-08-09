@@ -119,6 +119,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Basic%20Conjuration",
     "checked_at": "2026-08-08T20:56:27.179Z"
   },
+  "54831951-2cd3-41bb-8326-6cfce48feb34": {
+    "status": "available",
+    "name": "Boggart Arsonists",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Pântano Sombrio",
+    "printing_code": "SHM",
+    "collector_number": "85",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boggart%20Arsonists",
+    "checked_at": "2026-08-09T23:18:10.061Z"
+  },
   "54e86bc8-ff48-49be-902c-4923d59901a7": {
     "status": "available",
     "name": "Bearer of the Heavens",

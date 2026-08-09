@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Flash",
     "checked_at": "2026-08-06T07:22:55.636Z"
   },
+  "a3d048c8-e8df-4b50-a422-fc94a69f44bb": {
+    "status": "available",
+    "name": "Boneyard Parley",
+    "price_brl": 0.71,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ixalan",
+    "printing_code": "XLN",
+    "collector_number": "94",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boneyard%20Parley",
+    "checked_at": "2026-08-09T23:37:55.126Z"
+  },
   "a3da7d5b-2c2b-45fe-b9c5-413b8c8fc0a2": {
     "status": "available",
     "name": "Academy Ruins",

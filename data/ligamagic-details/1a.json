@@ -1,4 +1,16 @@
 {
+  "1a0162b9-7a7a-4ed9-9a70-189433932449": {
+    "status": "available",
+    "name": "Boltwing Marauder",
+    "price_brl": 0.35,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dragões de Tarkir",
+    "printing_code": "DTK",
+    "collector_number": "214",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boltwing%20Marauder",
+    "checked_at": "2026-08-09T23:27:00.623Z"
+  },
   "1a0770e6-b093-4439-baff-6889a50ba12e": {
     "status": "available",
     "name": "Mental Misstep",

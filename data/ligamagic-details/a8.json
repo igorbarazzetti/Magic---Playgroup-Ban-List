@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agent's%20Toolkit",
     "checked_at": "2026-08-06T11:13:14.179Z"
   },
+  "a88f3881-4f43-4473-965f-f5c24ae5752f": {
+    "status": "available",
+    "name": "Bomat Courier",
+    "price_brl": 0.18,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaladesh",
+    "printing_code": "KLD",
+    "collector_number": "199",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bomat%20Courier",
+    "checked_at": "2026-08-09T23:27:23.292Z"
+  },
   "a8abc5db-4e0b-488d-898a-8109690d5099": {
     "status": "available",
     "name": "Avacyn's Memorial",

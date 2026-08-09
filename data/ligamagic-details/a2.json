@@ -119,6 +119,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blinking%20Spirit",
     "checked_at": "2026-08-09T22:05:23.966Z"
   },
+  "a2743cb6-564d-43f1-99cc-4ba3ceb2e282": {
+    "status": "available",
+    "name": "Bloody Betrayal",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Voto Carmesim",
+    "printing_code": "VOW",
+    "collector_number": "147",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloody%20Betrayal",
+    "checked_at": "2026-08-09T23:02:48.139Z"
+  },
   "a28fc506-a98c-4b4d-a0f4-7d971489ccbb": {
     "status": "available",
     "name": "Arc-Slogger",

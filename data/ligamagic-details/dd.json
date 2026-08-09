@@ -119,6 +119,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerith%20Gainsborough",
     "checked_at": "2026-08-06T07:19:45.091Z"
   },
+  "ddb2fb87-235a-4365-aa25-40c197425e43": {
+    "status": "available",
+    "name": "Bloodflow Connoisseur",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ultimate Masters",
+    "printing_code": "UMA",
+    "collector_number": "86",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodflow%20Connoisseur",
+    "checked_at": "2026-08-09T22:52:14.990Z"
+  },
   "dde6bce5-8bbe-4866-b5aa-2c05c7d37241": {
     "status": "available",
     "name": "Black Dragon Gate",
@@ -154,5 +166,17 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agent%2013%2C%20Sharon%20Carter",
     "checked_at": "2026-08-06T11:10:24.678Z"
+  },
+  "ddfc7dac-f921-4529-935c-6c588890c522": {
+    "status": "available",
+    "name": "Bone Mask",
+    "price_brl": 2.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Miragem",
+    "printing_code": "MR",
+    "collector_number": "32",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bone%20Mask",
+    "checked_at": "2026-08-09T23:32:34.708Z"
   }
 }

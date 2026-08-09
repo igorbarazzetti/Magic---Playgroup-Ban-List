@@ -155,6 +155,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashiok%2C%20Nightmare%20Muse",
     "checked_at": "2026-08-07T21:19:19.362Z"
   },
+  "ebd06311-4aa6-4db9-a90a-666cc4e744d1": {
+    "status": "available",
+    "name": "Blorbian Buddy",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unfinity",
+    "printing_code": "UNF",
+    "collector_number": "131",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blorbian%20Buddy",
+    "checked_at": "2026-08-09T23:04:03.338Z"
+  },
   "ebd2d760-5ad8-4027-b124-171822f3edfe": {
     "status": "available",
     "name": "Grapeshot",

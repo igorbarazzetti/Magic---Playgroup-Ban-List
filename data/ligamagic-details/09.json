@@ -167,6 +167,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Austere%20Command",
     "checked_at": "2026-08-08T09:06:00.004Z"
   },
+  "09ecb8df-2a17-4e5a-814c-474bce54794d": {
+    "status": "available",
+    "name": "Bloodroot Apothecary",
+    "price_brl": 26.45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Bloomburrow Commander",
+    "printing_code": "BLC",
+    "collector_number": "27",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodroot%20Apothecary",
+    "checked_at": "2026-08-09T22:57:34.767Z"
+  },
   "09ee1332-741f-4c55-abc3-8bcff9031cd9": {
     "status": "available",
     "name": "Benalish Heralds",

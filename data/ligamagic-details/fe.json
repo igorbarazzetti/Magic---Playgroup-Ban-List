@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archfiend%20of%20Sorrows",
     "checked_at": "2026-08-07T17:16:44.286Z"
   },
+  "fe8d2874-c626-4d4e-a7f5-11c175a2b3bb": {
+    "status": "available",
+    "name": "Bonecaller Cleric",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends: Batalha por Portal de Baldur",
+    "printing_code": "CLB",
+    "collector_number": "117",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bonecaller%20Cleric",
+    "checked_at": "2026-08-09T23:35:01.628Z"
+  },
   "fee680c6-afe2-4321-9d8a-8f81a612a53b": {
     "status": "available",
     "name": "Sorin, Imperious Bloodlord",

@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Field%20Marshal",
     "checked_at": "2026-08-07T08:01:27.118Z"
   },
+  "5041dbc4-d01d-4f0a-b5c5-6e1df0976340": {
+    "status": "available",
+    "name": "Bog Smugglers",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Máscaras de Mercádia",
+    "printing_code": "MM",
+    "collector_number": "117",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bog%20Smugglers",
+    "checked_at": "2026-08-09T23:15:44.830Z"
+  },
   "504f21e8-82ac-4433-b5e9-640989480f58": {
     "status": "available",
     "name": "Arbor Armament",
@@ -58,6 +70,18 @@
     "collector_number": "2",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Exaltation",
     "checked_at": "2026-08-07T08:01:06.578Z"
+  },
+  "508248d1-09a4-4e41-a4c9-286618e5061e": {
+    "status": "available",
+    "name": "Bog Wraith",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2010",
+    "printing_code": "M10",
+    "collector_number": "86",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bog%20Wraith",
+    "checked_at": "2026-08-09T23:16:30.751Z"
   },
   "50885640-cdf1-4c62-b3bc-f37db6ab38b5": {
     "status": "available",

@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Annex%20Sentry",
     "checked_at": "2026-08-07T09:27:56.253Z"
   },
+  "be3c7e4c-81fd-49e7-8fb5-5eb83994dafd": {
+    "status": "available",
+    "name": "Bonecache Overseer",
+    "price_brl": 0.21,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Bloomburrow",
+    "printing_code": "BLB",
+    "collector_number": "85",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bonecache%20Overseer",
+    "checked_at": "2026-08-09T23:34:50.579Z"
+  },
   "be5a65fd-0d06-4771-bee7-0e42cc9871da": {
     "status": "available",
     "name": "Augury Adept",

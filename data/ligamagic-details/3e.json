@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abstract%20Performance",
     "checked_at": "2026-08-06T00:14:47.196Z"
   },
+  "3e159175-78e5-40df-8fe9-e694938e7222": {
+    "status": "available",
+    "name": "Boarded Window",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Voto Carmesim",
+    "printing_code": "VOW",
+    "collector_number": "253",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boarded%20Window",
+    "checked_at": "2026-08-09T23:11:09.033Z"
+  },
   "3e765710-e567-4af0-b5f5-7c182649b757": {
     "status": "available",
     "name": "Battle-Scarred Goblin",
@@ -130,6 +142,18 @@
     "collector_number": "114",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amped%20Raptor",
     "checked_at": "2026-08-05T20:02:49.078Z"
+  },
+  "3ee2060a-5152-4a53-8183-cbd642e4cc29": {
+    "status": "available",
+    "name": "Bloodcurdling Scream",
+    "price_brl": 10.76,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portal Segunda Era",
+    "printing_code": "PO2",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodcurdling%20Scream",
+    "checked_at": "2026-08-09T22:50:26.071Z"
   },
   "3eff03f1-2c5f-4c59-b465-a8c4cd05e1ba": {
     "status": "available",

@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bilious%20Skulldweller",
     "checked_at": "2026-08-09T17:07:07.536Z"
   },
+  "83c69c05-173d-4c1b-9541-1dde474fef5f": {
+    "status": "available",
+    "name": "Bonehoard",
+    "price_brl": 0.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Renascer de Zendikar Commander",
+    "printing_code": "ZNC",
+    "collector_number": "108",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bonehoard",
+    "checked_at": "2026-08-09T23:35:44.266Z"
+  },
   "83f776d9-f3b6-40c2-8008-1ace4d110825": {
     "status": "available",
     "name": "Barret, Avalanche Leader",

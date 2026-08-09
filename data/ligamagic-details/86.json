@@ -1,4 +1,16 @@
 {
+  "8603e2d4-93f3-491a-91e7-a187fc6db599": {
+    "status": "available",
+    "name": "Bloodrage Brawler",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Amonkhet",
+    "printing_code": "AKH",
+    "collector_number": "121",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodrage%20Brawler",
+    "checked_at": "2026-08-09T22:56:49.843Z"
+  },
   "860d0449-8032-458b-8335-30be238d6689": {
     "status": "available",
     "name": "Ainok Artillerist",
@@ -46,6 +58,18 @@
     "collector_number": "47",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alchemist's%20Retrieval",
     "checked_at": "2026-08-06T18:15:08.369Z"
+  },
+  "8664a004-d786-4357-8856-2f8f5a9ae24d": {
+    "status": "available",
+    "name": "Bone Flute",
+    "price_brl": 4.69,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "The Dark",
+    "printing_code": "DK",
+    "collector_number": "12",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bone%20Flute",
+    "checked_at": "2026-08-09T23:32:12.763Z"
   },
   "866fc4b9-f661-444b-b7fd-929814dbc69d": {
     "status": "available",

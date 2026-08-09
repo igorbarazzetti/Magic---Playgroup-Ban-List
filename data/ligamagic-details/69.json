@@ -1,4 +1,28 @@
 {
+  "690ba846-964e-44ba-8637-9a1ce62f5931": {
+    "status": "available",
+    "name": "Bone Shaman",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Era Glacial",
+    "printing_code": "IA",
+    "collector_number": "36",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bone%20Shaman",
+    "checked_at": "2026-08-09T23:33:31.103Z"
+  },
+  "69166587-3db4-4eb0-b153-b75021be9a36": {
+    "status": "available",
+    "name": "Bonebreaker Giant",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2012",
+    "printing_code": "M12",
+    "collector_number": "123",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bonebreaker%20Giant",
+    "checked_at": "2026-08-09T23:34:39.965Z"
+  },
   "695ce90b-a5a2-4d8c-ac05-07f04010603e": {
     "status": "available",
     "name": "Blood Celebrant",
@@ -131,6 +155,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blizzard",
     "checked_at": "2026-08-09T22:09:22.567Z"
   },
+  "699bc130-2f1f-4bc8-a25f-9329e40efbb1": {
+    "status": "available",
+    "name": "Bogardan Hellkite",
+    "price_brl": 0.78,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2014",
+    "printing_code": "C14",
+    "collector_number": "173",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bogardan%20Hellkite",
+    "checked_at": "2026-08-09T23:17:14.667Z"
+  },
   "69a72414-d02f-4a5c-b5c9-8941bb181f61": {
     "status": "available",
     "name": "Aven Fisher",
@@ -142,6 +178,18 @@
     "collector_number": "41",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Fisher",
     "checked_at": "2026-08-08T09:15:50.382Z"
+  },
+  "69aa1ac7-17da-4fc9-a3dc-df8a52841f4a": {
+    "status": "available",
+    "name": "Bone Shredder",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marcha das Máquinas: Commander",
+    "printing_code": "MOC",
+    "collector_number": "247",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bone%20Shredder",
+    "checked_at": "2026-08-09T23:33:54.407Z"
   },
   "69aa6809-5468-413a-94c9-562e6de93957": {
     "status": "available",
@@ -238,5 +286,17 @@
     "collector_number": "190",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Invert%20Polarity",
     "checked_at": "2026-08-05T20:08:16.929Z"
+  },
+  "69e92c4f-df05-4297-a453-8e4644c31a90": {
+    "status": "available",
+    "name": "Blossom Prancer",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kamigawa: Dinastia Neon",
+    "printing_code": "NEO",
+    "collector_number": "175",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blossom%20Prancer",
+    "checked_at": "2026-08-09T23:04:23.573Z"
   }
 }

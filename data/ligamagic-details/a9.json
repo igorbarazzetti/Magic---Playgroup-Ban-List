@@ -95,6 +95,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aurora%20Phoenix",
     "checked_at": "2026-08-08T09:04:59.988Z"
   },
+  "a9aa3bc7-db5a-4792-a53a-40acb6ca4b20": {
+    "status": "available",
+    "name": "Bludgeon Brawl",
+    "price_brl": 0.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nova Phyrexia",
+    "printing_code": "NPH",
+    "collector_number": "80",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bludgeon%20Brawl",
+    "checked_at": "2026-08-09T23:06:36.200Z"
+  },
+  "a9c2bf1b-2d5e-42c5-bc76-8429aaae161c": {
+    "status": "available",
+    "name": "Bloodline Shaman",
+    "price_brl": 0.6,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Investida",
+    "printing_code": "ON",
+    "collector_number": "249",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodline%20Shaman",
+    "checked_at": "2026-08-09T22:55:32.708Z"
+  },
   "a9d68cf5-3055-4ec9-9893-244bfd7046be": {
     "status": "available",
     "name": "Action News Crew",

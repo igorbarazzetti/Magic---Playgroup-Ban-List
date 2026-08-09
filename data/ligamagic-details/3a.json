@@ -1,4 +1,16 @@
 {
+  "3a018a54-6094-42bb-af6a-ef436c09f0b4": {
+    "status": "available",
+    "name": "Bloodshed Fever",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Pântano Sombrio",
+    "printing_code": "SHM",
+    "collector_number": "84",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodshed%20Fever",
+    "checked_at": "2026-08-09T22:58:06.657Z"
+  },
   "3a020ae9-279b-4c6c-8d3d-90d7b335fa3c": {
     "status": "available",
     "name": "Bala Ged Thief",
@@ -71,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blasting%20Station",
     "checked_at": "2026-08-09T21:46:25.421Z"
   },
+  "3a51485b-31b2-4fa5-824a-a919f9d28ca8": {
+    "status": "available",
+    "name": "Boil",
+    "price_brl": 1.37,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "World Championship Decks",
+    "printing_code": "WCD",
+    "collector_number": "20040690",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boil",
+    "checked_at": "2026-08-09T23:21:32.828Z"
+  },
   "3a59c882-8bb8-49ba-862f-125020dd5bec": {
     "status": "available",
     "name": "Empty the Warrens",
@@ -118,6 +142,18 @@
     "collector_number": "112",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anger%20of%20the%20Gods",
     "checked_at": "2026-08-07T09:21:15.973Z"
+  },
+  "3a877718-ff90-4d6e-9f95-47b06adad7f8": {
+    "status": "available",
+    "name": "Bond of Insight",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra da Centelha",
+    "printing_code": "WAR",
+    "collector_number": "43",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bond%20of%20Insight",
+    "checked_at": "2026-08-09T23:29:18.170Z"
   },
   "3a92b235-196b-4f46-9d20-06f4d3653d36": {
     "status": "available",

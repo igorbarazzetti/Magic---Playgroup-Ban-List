@@ -1,4 +1,28 @@
 {
+  "c7556be3-649a-4994-8aaa-a0f258856682": {
+    "status": "available",
+    "name": "Bonded Construct",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic Origens",
+    "printing_code": "ORI",
+    "collector_number": "223",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bonded%20Construct",
+    "checked_at": "2026-08-09T23:29:50.541Z"
+  },
+  "c79cf0e5-52dd-4af3-ab06-6cdaab526c23": {
+    "status": "available",
+    "name": "Bonebind Orator",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Bloomburrow",
+    "printing_code": "BLB",
+    "collector_number": "84",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bonebind%20Orator",
+    "checked_at": "2026-08-09T23:34:28.524Z"
+  },
   "c7a6a165-b709-46e0-ae42-6f69a17c0621": {
     "status": "available",
     "name": "Animate Wall",

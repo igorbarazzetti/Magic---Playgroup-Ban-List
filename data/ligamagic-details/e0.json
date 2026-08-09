@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Audacious%20Infiltrator",
     "checked_at": "2026-08-08T07:24:23.135Z"
   },
+  "e04688e0-672b-407f-a2c9-fd7292926483": {
+    "status": "available",
+    "name": "Body Snatcher",
+    "price_brl": 0.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominaria Remastered",
+    "printing_code": "DMR",
+    "collector_number": "75",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Body%20Snatcher",
+    "checked_at": "2026-08-09T23:13:10.662Z"
+  },
   "e04fa58e-be7a-4c9c-98d0-48241742a41b": {
     "status": "available",
     "name": "Backfire",
@@ -107,6 +119,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aether%20Adept",
     "checked_at": "2026-08-06T07:21:45.299Z"
   },
+  "e07f50fb-98b2-40b7-9610-b8e9438be394": {
+    "status": "available",
+    "name": "Bolt of Keranos",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nascidos dos Deuses",
+    "printing_code": "BNG",
+    "collector_number": "89",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bolt%20of%20Keranos",
+    "checked_at": "2026-08-09T23:26:27.554Z"
+  },
   "e0828e8d-f01f-4088-9123-6d923ddb3242": {
     "status": "available",
     "name": "Ancestral Anger",
@@ -154,5 +178,29 @@
     "collector_number": "47",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abomination%2C%20World%20Ravager",
     "checked_at": "2026-08-06T00:11:17.078Z"
+  },
+  "e0c21b32-f672-4496-91ed-7b7f351eb539": {
+    "status": "available",
+    "name": "Body of Research",
+    "price_brl": 1.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Strixhaven: Escola de Magos",
+    "printing_code": "STX",
+    "collector_number": "168",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Body%20of%20Research",
+    "checked_at": "2026-08-09T23:12:59.786Z"
+  },
+  "e0f05979-daba-43eb-b356-24284e7ca99c": {
+    "status": "available",
+    "name": "Blur Sliver",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2014",
+    "printing_code": "M14",
+    "collector_number": "129",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blur%20Sliver",
+    "checked_at": "2026-08-09T23:09:40.579Z"
   }
 }

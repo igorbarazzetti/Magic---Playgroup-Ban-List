@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archangel",
     "checked_at": "2026-08-07T13:59:34.217Z"
   },
+  "997d2f38-5a50-451e-bd48-e36dcb24d967": {
+    "status": "available",
+    "name": "Boggart Shenanigans",
+    "price_brl": 2.35,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn",
+    "printing_code": "LW",
+    "collector_number": "155",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boggart%20Shenanigans",
+    "checked_at": "2026-08-09T23:20:14.872Z"
+  },
   "998daf11-c0ed-4801-b013-d8b3136f16d1": {
     "status": "available",
     "name": "Acolyte Hybrid",

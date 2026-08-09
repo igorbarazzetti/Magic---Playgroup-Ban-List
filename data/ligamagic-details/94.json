@@ -1,4 +1,16 @@
 {
+  "940ba435-7abc-40f8-a5af-c1c653b3284e": {
+    "status": "available",
+    "name": "Bontu's Monument",
+    "price_brl": 7.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Amonkhet",
+    "printing_code": "AKH",
+    "collector_number": "225",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bontu's%20Monument",
+    "checked_at": "2026-08-09T23:38:59.951Z"
+  },
   "941350ba-30e2-4549-865f-ca1bd7626782": {
     "status": "available",
     "name": "Inverter of Truth",
@@ -166,6 +178,18 @@
     "collector_number": "7",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Necropotence",
     "checked_at": "2026-08-05T20:10:41.291Z"
+  },
+  "94ca5db6-86e1-42b4-b776-977efa2e12b6": {
+    "status": "available",
+    "name": "Bloodwater Entity",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Hora da Devastação",
+    "printing_code": "HOU",
+    "collector_number": "138",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodwater%20Entity",
+    "checked_at": "2026-08-09T23:02:38.123Z"
   },
   "94e675d9-f426-4c36-aade-698967e1ed78": {
     "status": "available",

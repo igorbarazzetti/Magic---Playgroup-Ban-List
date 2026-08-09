@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Belligerent%20Guest",
     "checked_at": "2026-08-09T13:40:14.239Z"
   },
+  "419a8ab2-cff6-4811-a559-8791c9bb3d8e": {
+    "status": "available",
+    "name": "Bloodtithe Harvester",
+    "price_brl": 0.28,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Voto Carmesim",
+    "printing_code": "VOW",
+    "collector_number": "232",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodtithe%20Harvester",
+    "checked_at": "2026-08-09T23:02:05.871Z"
+  },
   "41e250e6-8e38-4cbc-ae66-98800a5feba8": {
     "status": "available",
     "name": "Archdemon of Unx",
@@ -118,6 +130,18 @@
     "collector_number": "64",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archdemon%20of%20Unx",
     "checked_at": "2026-08-07T17:14:24.185Z"
+  },
+  "41fa3954-119b-4ff2-ad56-9105482f6b7c": {
+    "status": "available",
+    "name": "Bloodstoke Howler",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Legiões",
+    "printing_code": "LE",
+    "collector_number": "89",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodstoke%20Howler",
+    "checked_at": "2026-08-09T22:59:34.301Z"
   },
   "41fbf835-baee-4530-9155-e2c1b9045567": {
     "status": "available",

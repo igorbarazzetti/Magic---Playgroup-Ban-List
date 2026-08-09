@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adeline%2C%20Resplendent%20Cathar",
     "checked_at": "2026-08-06T07:08:04.497Z"
   },
+  "3859873f-2a0f-463b-8ed9-7f2ab5ed393a": {
+    "status": "available",
+    "name": "Blowfly Infestation",
+    "price_brl": 0.34,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed Commander",
+    "printing_code": "ECC",
+    "collector_number": "46",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blowfly%20Infestation",
+    "checked_at": "2026-08-09T23:06:24.856Z"
+  },
   "386a6fa7-db5b-4e82-bd25-fd86d910ed0c": {
     "status": "available",
     "name": "Baral and Kari Zev",

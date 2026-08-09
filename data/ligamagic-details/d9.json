@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcane%20Encyclopedia",
     "checked_at": "2026-08-07T13:51:23.844Z"
   },
+  "d93ba2f2-bf9b-444b-adbb-3835662734e7": {
+    "status": "available",
+    "name": "Bonds of Mortality",
+    "price_brl": 0.17,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Juramento das Sentinelas",
+    "printing_code": "OGW",
+    "collector_number": "128",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bonds%20of%20Mortality",
+    "checked_at": "2026-08-09T23:31:07.678Z"
+  },
   "d9517c5d-66d0-4178-96fb-a8c04f311ad8": {
     "status": "available",
     "name": "Aven Mindcensor",

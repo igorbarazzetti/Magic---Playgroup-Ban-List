@@ -11,6 +11,17 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Protean%20Hulk",
     "checked_at": "2026-08-05T20:11:29.411Z"
   },
+  "1033a0cb-1a00-46c4-83d5-68a6eac85feb": {
+    "status": "unavailable",
+    "name": "Beckett Mariner, Impetuous Ensign",
+    "price_brl": null,
+    "finish": "normal",
+    "condition": "NM",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beckett%20Mariner%2C%20Impetuous%20Ensign",
+    "checked_at": "2026-08-09T22:49:32.260Z",
+    "last_error": "A lista de impressões não foi encontrada na página.",
+    "attempts": 2
+  },
   "103b92c7-8f8e-4924-8d7e-fc0a01486e86": {
     "status": "available",
     "name": "Auriok Survivors",
@@ -82,6 +93,18 @@
     "collector_number": "242",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=A.I.M.%20Synthoids",
     "checked_at": "2026-08-06T00:01:56.991Z"
+  },
+  "1098ff82-8cad-4283-8493-5492f12ea200": {
+    "status": "available",
+    "name": "Boneshard Slasher",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tormento",
+    "printing_code": "TR",
+    "collector_number": "50",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boneshard%20Slasher",
+    "checked_at": "2026-08-09T23:36:37.558Z"
   },
   "10a66403-606d-4814-9583-50cdcd6976e0": {
     "status": "available",

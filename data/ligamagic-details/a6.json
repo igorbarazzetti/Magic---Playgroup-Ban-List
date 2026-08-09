@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani%2C%20Mentor%20of%20Heroes",
     "checked_at": "2026-08-06T14:50:02.595Z"
   },
+  "a6375c5b-ec78-4ee8-b681-8d92797a5b43": {
+    "status": "available",
+    "name": "Bloodsworn Squire // Bloodsworn Knight",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Voto Carmesim",
+    "printing_code": "VOW",
+    "collector_number": "97",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodsworn%20Squire",
+    "checked_at": "2026-08-09T23:00:07.278Z"
+  },
   "a63eb744-71c4-447d-9372-c3a734f022c5": {
     "status": "available",
     "name": "Accumulate Wisdom",

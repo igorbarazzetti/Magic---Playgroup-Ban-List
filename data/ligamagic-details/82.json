@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abandon%20Attachments",
     "checked_at": "2026-08-06T00:05:16.857Z"
   },
+  "82344b5b-7cd9-460d-9966-f09432ed8e59": {
+    "status": "available",
+    "name": "Bog Elemental",
+    "price_brl": 0.44,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Profecia",
+    "printing_code": "PR",
+    "collector_number": "57",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bog%20Elemental",
+    "checked_at": "2026-08-09T23:13:56.793Z"
+  },
   "824597b8-c89a-47ec-8526-7efc6e24ef0e": {
     "status": "available",
     "name": "Mox Pearl",
@@ -83,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Betor%2C%20Kin%20to%20All",
     "checked_at": "2026-08-09T15:09:15.653Z"
   },
+  "826b83ba-0fe5-4f1d-91c8-799a1100d1e6": {
+    "status": "available",
+    "name": "Bloodlust Inciter",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Amonkhet",
+    "printing_code": "AKH",
+    "collector_number": "120",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodlust%20Inciter",
+    "checked_at": "2026-08-09T22:55:54.161Z"
+  },
   "826e6a6f-3b66-4225-87ee-04e345e047b3": {
     "status": "available",
     "name": "Bighorner Rancher",
@@ -94,6 +118,18 @@
     "collector_number": "73",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bighorner%20Rancher",
     "checked_at": "2026-08-09T17:04:37.480Z"
+  },
+  "826f9f42-f2ff-4b9e-be79-a9de6b5b7b38": {
+    "status": "available",
+    "name": "Bond of Passion",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra da Centelha",
+    "printing_code": "WAR",
+    "collector_number": "116",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bond%20of%20Passion",
+    "checked_at": "2026-08-09T23:29:29.549Z"
   },
   "8294539d-7982-4ec9-8392-99eed78542f5": {
     "status": "available",

@@ -118,5 +118,17 @@
     "collector_number": "47",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abstract%20Iguanart",
     "checked_at": "2026-08-06T00:14:27.183Z"
+  },
+  "87ab1c79-79f5-48a9-af1a-7c876684c8d9": {
+    "status": "available",
+    "name": "Bloodshot Trainee",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Masters 2015",
+    "printing_code": "MM2",
+    "collector_number": "107",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodshot%20Trainee",
+    "checked_at": "2026-08-09T22:58:27.025Z"
   }
 }

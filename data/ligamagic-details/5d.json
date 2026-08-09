@@ -1,4 +1,16 @@
 {
+  "5d58aefe-a3df-4e0a-b679-b967cd5fd2c6": {
+    "status": "available",
+    "name": "Boggart Cursecrafter",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed",
+    "printing_code": "ECL",
+    "collector_number": "206",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boggart%20Cursecrafter",
+    "checked_at": "2026-08-09T23:18:43.645Z"
+  },
   "5d7eea87-b60f-4ab9-b485-30aadda0cd79": {
     "status": "available",
     "name": "Ant-Man's Air Force",

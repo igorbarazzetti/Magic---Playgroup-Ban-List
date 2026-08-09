@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alesha's%20Legacy",
     "checked_at": "2026-08-06T18:16:47.805Z"
   },
+  "c42833e6-3e42-4bd6-acbc-d8e284e9833e": {
+    "status": "available",
+    "name": "Bonepicker Skirge",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Phyrexia: Tudo será um",
+    "printing_code": "ONE",
+    "collector_number": "86",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bonepicker%20Skirge",
+    "checked_at": "2026-08-09T23:36:15.954Z"
+  },
   "c45090bd-a589-45a0-8388-025b8e0b3487": {
     "status": "available",
     "name": "Argivian Cavalier",
@@ -71,6 +83,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avarice%20Totem",
     "checked_at": "2026-08-08T09:11:10.204Z"
   },
+  "c46a7dc0-88d7-4fbe-8d63-a40688bb5861": {
+    "status": "available",
+    "name": "Bomat Bazaar Barge",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaladesh",
+    "printing_code": "KLD",
+    "collector_number": "198",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bomat%20Bazaar%20Barge",
+    "checked_at": "2026-08-09T23:27:12.070Z"
+  },
+  "c48ce36d-46c3-4432-8711-1b10f12efc90": {
+    "status": "available",
+    "name": "Bog Hoodlums",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn",
+    "printing_code": "LW",
+    "collector_number": "100",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bog%20Hoodlums",
+    "checked_at": "2026-08-09T23:14:28.618Z"
+  },
   "c4a03986-4db6-4114-9a58-5a8a3a7a2461": {
     "status": "available",
     "name": "Blessing of Belzenlok",
@@ -82,6 +118,18 @@
     "collector_number": "77",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blessing%20of%20Belzenlok",
     "checked_at": "2026-08-09T21:54:07.944Z"
+  },
+  "c4ce96d8-3ce4-4ed2-9ad3-73119aa79fbe": {
+    "status": "available",
+    "name": "Board the Weatherlight",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominaria",
+    "printing_code": "DOM",
+    "collector_number": "8",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Board%20the%20Weatherlight",
+    "checked_at": "2026-08-09T23:10:58.438Z"
   },
   "c4d2fdf9-637d-4e97-ae33-45f2d27bf8cd": {
     "status": "available",

@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bear's%20Companion",
     "checked_at": "2026-08-08T23:02:00.568Z"
   },
+  "93088b0c-d158-473a-9c06-aa2f344a9868": {
+    "status": "available",
+    "name": "Bloodtithe Collector",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Caçada à Meia-noite",
+    "printing_code": "MID",
+    "collector_number": "90",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodtithe%20Collector",
+    "checked_at": "2026-08-09T23:01:53.640Z"
+  },
   "934094d6-c897-4ae2-89cd-08d106600d3c": {
     "status": "available",
     "name": "Ambitious Dragonborn",
@@ -34,6 +46,18 @@
     "collector_number": "144",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barricade%20Breaker",
     "checked_at": "2026-08-08T19:15:33.120Z"
+  },
+  "9353f6dd-9a08-4e55-9b07-3e68d7d97ef4": {
+    "status": "available",
+    "name": "Bond Beetle",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2013",
+    "printing_code": "M13",
+    "collector_number": "161",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bond%20Beetle",
+    "checked_at": "2026-08-09T23:28:32.213Z"
   },
   "93563b7b-5685-4832-b164-0701dbf3cf18": {
     "status": "available",
@@ -142,6 +166,18 @@
     "collector_number": "4",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blessed%20Wind",
     "checked_at": "2026-08-09T21:53:34.262Z"
+  },
+  "93e1d3a6-e12f-4a0a-be0f-fbf568d89f1a": {
+    "status": "available",
+    "name": "Bloodhusk Ritualist",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2017",
+    "printing_code": "C17",
+    "collector_number": "101",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodhusk%20Ritualist",
+    "checked_at": "2026-08-09T22:53:53.016Z"
   },
   "93ee2ea1-4f9b-47dd-b7d4-b0ed5a26d719": {
     "status": "available",

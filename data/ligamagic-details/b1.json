@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abhorrent%20Oculus",
     "checked_at": "2026-08-06T00:08:46.945Z"
   },
+  "b1b6a840-2dc6-4af3-869a-b3bfe64ff7c0": {
+    "status": "available",
+    "name": "Bloodrage Vampire",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Duel Decks: Sorin vs. Tibalt",
+    "printing_code": "DDK",
+    "collector_number": "10",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodrage%20Vampire",
+    "checked_at": "2026-08-09T22:57:00.530Z"
+  },
   "b1e6921e-e460-4e58-82b0-d98ee31c279d": {
     "status": "available",
     "name": "Accursed Centaur",

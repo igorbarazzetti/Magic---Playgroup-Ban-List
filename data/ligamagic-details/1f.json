@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avenging%20Druid",
     "checked_at": "2026-08-08T13:18:36.806Z"
   },
+  "1f4743ed-4e91-4344-9409-c8ede5c4804d": {
+    "status": "available",
+    "name": "Bloodspore Thrinax",
+    "price_brl": 0.35,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Double Masters",
+    "printing_code": "2XM",
+    "collector_number": "155",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodspore%20Thrinax",
+    "checked_at": "2026-08-09T22:59:23.073Z"
+  },
   "1f4e4750-93e9-4aa2-b105-9482f7b287ec": {
     "status": "available",
     "name": "Bilbo, Unexpected Adventurer",

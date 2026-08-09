@@ -1,4 +1,16 @@
 {
+  "4f13ed2e-7790-499f-87bf-07480b567811": {
+    "status": "available",
+    "name": "Blue, Loyal Raptor",
+    "price_brl": 16,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Jurassic World Collection",
+    "printing_code": "REX",
+    "collector_number": "8",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blue%2C%20Loyal%20Raptor",
+    "checked_at": "2026-08-09T23:07:09.141Z"
+  },
   "4f25b125-1ded-4a34-9ed1-e6ce087ec48d": {
     "status": "available",
     "name": "Barrier of Bones",
@@ -106,6 +118,18 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aurora%20Eidolon",
     "checked_at": "2026-08-08T07:35:03.469Z"
+  },
+  "4fcffb56-5ab6-44e2-804e-8b3c55cc5415": {
+    "status": "available",
+    "name": "Boartusk Liege",
+    "price_brl": 0.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Pântano Sombrio",
+    "printing_code": "SHM",
+    "collector_number": "202",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boartusk%20Liege",
+    "checked_at": "2026-08-09T23:11:31.781Z"
   },
   "4feca1da-dcc8-440c-8933-bab91782b015": {
     "status": "available",

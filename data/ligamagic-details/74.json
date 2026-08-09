@@ -1,4 +1,28 @@
 {
+  "7421b711-81a4-4042-b024-f55bf9ff203f": {
+    "status": "available",
+    "name": "Boiling Seas",
+    "price_brl": 1.95,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portal",
+    "printing_code": "PO",
+    "collector_number": "21",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boiling%20Seas",
+    "checked_at": "2026-08-09T23:22:40.246Z"
+  },
+  "74303ddb-d3b6-433d-a299-e0c4a7267461": {
+    "status": "available",
+    "name": "Bog Naughty",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Trono de Eldraine",
+    "printing_code": "ELD",
+    "collector_number": "80",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bog%20Naughty",
+    "checked_at": "2026-08-09T23:15:01.021Z"
+  },
   "745be03c-69dc-4239-a5e7-38587b56eac0": {
     "status": "available",
     "name": "Ancient Brontodon",

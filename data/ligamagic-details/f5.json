@@ -131,6 +131,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ajani%2C%20the%20Greathearted",
     "checked_at": "2026-08-06T14:52:52.127Z"
   },
+  "f5e2da6c-35fa-4f46-bfae-8ac8907c8300": {
+    "status": "available",
+    "name": "Boggart Mob",
+    "price_brl": 1.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn",
+    "printing_code": "LW",
+    "collector_number": "104",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boggart%20Mob",
+    "checked_at": "2026-08-09T23:19:40.709Z"
+  },
   "f5e2fb92-4678-410c-8c83-42aead9d29d3": {
     "status": "available",
     "name": "Arterial Flow",
