@@ -362,7 +362,10 @@ const worker = {
     }
 
     const isFileRequest = url.pathname.includes(".");
-    if (!isFileRequest) url.pathname = "/index.html";
+    // The asset server canonicalizes /index.html back to /. Fetching the root
+    // directly keeps client-side routes such as /deckbuilder intact instead of
+    // returning that redirect to the browser.
+    if (!isFileRequest) url.pathname = "/";
     const response = await env.ASSETS.fetch(new Request(url, request));
     if (isFileRequest) {
       const headers = new Headers(response.headers);
