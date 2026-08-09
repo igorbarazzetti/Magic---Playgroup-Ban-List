@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Suffering",
     "checked_at": "2026-08-07T07:56:16.394Z"
   },
+  "923d44a9-774d-459c-9cec-1d5b081b51f0": {
+    "status": "available",
+    "name": "Biomancer's Familiar",
+    "price_brl": 2.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lealdade em Ravnica",
+    "printing_code": "RNA",
+    "collector_number": "158",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Biomancer's%20Familiar",
+    "checked_at": "2026-08-09T17:10:27.659Z"
+  },
   "92512acd-bf1e-4133-93cd-6c6af5affb95": {
     "status": "available",
     "name": "Bhaal's Invoker",

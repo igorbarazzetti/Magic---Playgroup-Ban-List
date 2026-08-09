@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atlantean%20Cavalry",
     "checked_at": "2026-08-08T07:18:52.942Z"
   },
+  "e9398f3b-c457-4fff-9b09-377c612b6a48": {
+    "status": "available",
+    "name": "Bishop of the Bloodstained",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ixalan",
+    "printing_code": "XLN",
+    "collector_number": "91",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bishop%20of%20the%20Bloodstained",
+    "checked_at": "2026-08-09T17:15:17.802Z"
+  },
   "e958b3c5-0666-4a99-a933-e5cb8b0da9da": {
     "status": "available",
     "name": "Cranial Ram",
@@ -58,6 +70,18 @@
     "collector_number": "141",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alluring%20Suitor",
     "checked_at": "2026-08-07T00:38:04.777Z"
+  },
+  "e99fde0d-ca28-4a49-abe0-d01cf4e322b6": {
+    "status": "available",
+    "name": "Biovisionary",
+    "price_brl": 0.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portões Violados",
+    "printing_code": "GTC",
+    "collector_number": "146",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Biovisionary",
+    "checked_at": "2026-08-09T17:12:37.706Z"
   },
   "e9bee79c-144f-41e4-a53d-17df8381f691": {
     "status": "available",

@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=A.I.M.%20Scientists",
     "checked_at": "2026-08-06T00:01:46.643Z"
   },
+  "fa85f9e6-69ff-4669-b70a-440aa7b16c97": {
+    "status": "available",
+    "name": "Bilbo Baggins, Burglar // Take a Glance",
+    "price_brl": 1.48,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "The Hobbit",
+    "printing_code": "HOB",
+    "collector_number": "34",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bilbo%20Baggins%2C%20Burglar%20%2F%2F%20Take%20a%20Glance",
+    "checked_at": "2026-08-09T17:04:47.518Z"
+  },
   "fa9b6be2-b88c-4302-b7e2-faf25a60bcb9": {
     "status": "available",
     "name": "Altar's Light",

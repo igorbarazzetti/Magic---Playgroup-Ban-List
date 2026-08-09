@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Behemoth%20of%20Vault%200",
     "checked_at": "2026-08-09T13:36:34.080Z"
   },
+  "7d27c583-469c-42d7-a547-8c65654e9d95": {
+    "status": "available",
+    "name": "Biorganic Carapace",
+    "price_brl": 0.14,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel's Spider-Man",
+    "printing_code": "SPM",
+    "collector_number": "124",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Biorganic%20Carapace",
+    "checked_at": "2026-08-09T17:11:47.743Z"
+  },
   "7d3c25bb-5175-4fb1-992f-62a44722f535": {
     "status": "available",
     "name": "Aspect of Lamprey",
@@ -34,6 +46,18 @@
     "collector_number": "4",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Warhawk",
     "checked_at": "2026-08-08T09:20:21.086Z"
+  },
+  "7d406aa7-636a-45c1-903f-11c2ce2ef3e3": {
+    "status": "available",
+    "name": "Bile Urchin",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Traidores de Kamigawa",
+    "printing_code": "BOK",
+    "collector_number": "61",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bile%20Urchin",
+    "checked_at": "2026-08-09T17:06:47.563Z"
   },
   "7d540860-ae94-4773-a526-aaffca3eb057": {
     "status": "available",

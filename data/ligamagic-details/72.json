@@ -143,6 +143,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Airship%20Crash",
     "checked_at": "2026-08-06T14:48:22.269Z"
   },
+  "72a9a85d-7cfc-4b3c-82db-9d35be6c0982": {
+    "status": "available",
+    "name": "Bilbo, Thief in the Night",
+    "price_brl": 192.6,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "The Hobbit",
+    "printing_code": "HOB",
+    "collector_number": "33",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bilbo%2C%20Thief%20in%20the%20Night",
+    "checked_at": "2026-08-09T17:06:17.516Z"
+  },
   "72d793e8-1d19-4ca1-894c-8851a2ebecde": {
     "status": "available",
     "name": "Bathe in Dragonfire",

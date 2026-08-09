@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bedlam",
     "checked_at": "2026-08-09T13:34:14.045Z"
   },
+  "c2dd6c78-e482-4a3c-ad9c-7dd71b3e34d2": {
+    "status": "available",
+    "name": "Bishop of Binding",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Rivais de Ixalan",
+    "printing_code": "RIX",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bishop%20of%20Binding",
+    "checked_at": "2026-08-09T17:14:57.775Z"
+  },
   "c2f6ddc2-86bc-43da-9bdd-0c2af79c62fd": {
     "status": "available",
     "name": "Ammit Eternal",

@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akroma's%20Devoted",
     "checked_at": "2026-08-06T18:08:17.307Z"
   },
+  "d273f87d-1271-49d2-a628-2d1bd888f56c": {
+    "status": "available",
+    "name": "Bilbo, Fellow Conspirator",
+    "price_brl": 65.47,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "The Hobbit Eternal (Scene Card)",
+    "printing_code": "SCHOC",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bilbo%2C%20Fellow%20Conspirator",
+    "checked_at": "2026-08-09T17:05:07.496Z"
+  },
   "d2964a68-36d9-4b05-8f34-540969b410bf": {
     "status": "available",
     "name": "Auntie's Snitch",
@@ -82,6 +94,18 @@
     "collector_number": "150",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Backwoods%20Survivalists",
     "checked_at": "2026-08-08T14:58:37.520Z"
+  },
+  "d2d84ba5-0d20-4ce3-8f1f-93cd9ef94f5f": {
+    "status": "available",
+    "name": "Biogenic Ooze",
+    "price_brl": 0.44,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Teenage Mutant Ninja Turtles Commander",
+    "printing_code": "TMC",
+    "collector_number": "49",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Biogenic%20Ooze",
+    "checked_at": "2026-08-09T17:09:47.636Z"
   },
   "d2e0d739-b441-4173-a8f1-b831a19ea98e": {
     "status": "available",

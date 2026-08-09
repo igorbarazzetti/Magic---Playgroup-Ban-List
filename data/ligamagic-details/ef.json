@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ali%20Baba",
     "checked_at": "2026-08-06T18:18:57.833Z"
   },
+  "ef71ef07-8a35-41ec-a851-d95e9e3a221b": {
+    "status": "available",
+    "name": "Bilbo's Gambit",
+    "price_brl": 69.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "The Hobbit",
+    "printing_code": "HOB",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bilbo's%20Gambit",
+    "checked_at": "2026-08-09T17:05:57.519Z"
+  },
   "ef833546-f755-4ac5-867a-3926984e68a0": {
     "status": "available",
     "name": "Archaeomancer's Map",

@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aura%20Shards",
     "checked_at": "2026-08-09T13:29:34.219Z"
   },
+  "8d1a3935-8a8c-4754-b474-189611188bc5": {
+    "status": "available",
+    "name": "Bind the Monster",
+    "price_brl": 1.29,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaldheim",
+    "printing_code": "KHM",
+    "collector_number": "48",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bind%20the%20Monster",
+    "checked_at": "2026-08-09T17:08:17.576Z"
+  },
   "8d4d70c4-0490-4239-ac8f-dd1d1a008f08": {
     "status": "available",
     "name": "Anurid Scavenger",

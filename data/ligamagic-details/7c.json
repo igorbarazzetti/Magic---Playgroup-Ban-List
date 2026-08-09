@@ -1,4 +1,16 @@
 {
+  "7c06a368-3306-48e0-825e-a8fdc81fa343": {
+    "status": "available",
+    "name": "Biophagus",
+    "price_brl": 69.86,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Warhammer 40.000",
+    "printing_code": "40K",
+    "collector_number": "87",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Biophagus",
+    "checked_at": "2026-08-09T17:11:27.680Z"
+  },
   "7c35f3fd-c64e-4944-a4d5-37ce916d23c3": {
     "status": "available",
     "name": "Altered Ego",

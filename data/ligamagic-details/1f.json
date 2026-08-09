@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avenging%20Druid",
     "checked_at": "2026-08-08T13:18:36.806Z"
   },
+  "1f4e4750-93e9-4aa2-b105-9482f7b287ec": {
+    "status": "available",
+    "name": "Bilbo, Unexpected Adventurer",
+    "price_brl": 48.89,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "The Hobbit Eternal (Extended Art)",
+    "printing_code": "EAHOC",
+    "collector_number": "98",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bilbo%2C%20Unexpected%20Adventurer",
+    "checked_at": "2026-08-09T17:06:27.504Z"
+  },
   "1f74e26f-5cf3-4b0e-bcc6-f858599474fc": {
     "status": "available",
     "name": "Asmoranomardicadaistinaculdacar",
@@ -46,5 +58,17 @@
     "collector_number": "186",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Asmoranomardicadaistinaculdacar",
     "checked_at": "2026-08-08T02:43:22.352Z"
+  },
+  "1f79de2a-6cef-4285-b008-5b5527c406ab": {
+    "status": "available",
+    "name": "Bioessence Hydra",
+    "price_brl": 0.19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra da Centelha",
+    "printing_code": "WAR",
+    "collector_number": "186",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bioessence%20Hydra",
+    "checked_at": "2026-08-09T17:09:37.625Z"
   }
 }

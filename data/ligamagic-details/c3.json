@@ -1,4 +1,28 @@
 {
+  "c302d64b-8026-401a-a8dd-52cf01160046": {
+    "status": "available",
+    "name": "Biomantic Mastery",
+    "price_brl": 0.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2015",
+    "printing_code": "C15",
+    "collector_number": "239",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Biomantic%20Mastery",
+    "checked_at": "2026-08-09T17:10:37.710Z"
+  },
+  "c3172c5d-c745-4422-b651-cd414c8da11b": {
+    "status": "available",
+    "name": "Birnin Zana Plaza",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes",
+    "printing_code": "MSH",
+    "collector_number": "262",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Birnin%20Zana%20Plaza",
+    "checked_at": "2026-08-09T17:13:57.751Z"
+  },
   "c33af24f-3371-4af9-af33-940078d3cef2": {
     "status": "available",
     "name": "B.O.B. (Bevy of Beebles)",

@@ -1,4 +1,16 @@
 {
+  "7f0544e3-965f-4b12-baaf-d7dfea8d4d41": {
+    "status": "available",
+    "name": "Birth of the Imperium",
+    "price_brl": 9.78,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Warhammer 40.000",
+    "printing_code": "40K",
+    "collector_number": "107",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Birth%20of%20the%20Imperium",
+    "checked_at": "2026-08-09T17:14:07.768Z"
+  },
   "7f2579ef-0422-4cb1-a0f8-6ad0d942515b": {
     "status": "available",
     "name": "Banquet Guests",
@@ -58,6 +70,18 @@
     "collector_number": "128",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Altac%20Bloodseeker",
     "checked_at": "2026-08-07T00:43:35.121Z"
+  },
+  "7fa8647a-7668-4db9-a77d-87e004b160e1": {
+    "status": "available",
+    "name": "Biowaste Blob",
+    "price_brl": 0.54,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends",
+    "printing_code": "CMR",
+    "collector_number": "219",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Biowaste%20Blob",
+    "checked_at": "2026-08-09T17:12:47.713Z"
   },
   "7fca65b8-01fe-4858-97c6-f97ae82cd801": {
     "status": "available",

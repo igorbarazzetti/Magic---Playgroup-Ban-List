@@ -118,5 +118,17 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerial%20Assault",
     "checked_at": "2026-08-06T07:16:14.926Z"
+  },
+  "a4fc174e-7fa6-41a8-ae03-255f226840f9": {
+    "status": "available",
+    "name": "Billiard Room",
+    "price_brl": 3.24,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ravnica: Clue Edition",
+    "printing_code": "CLU",
+    "collector_number": "13",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Billiard%20Room",
+    "checked_at": "2026-08-09T17:07:47.555Z"
   }
 }

@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aspect%20of%20Mongoose",
     "checked_at": "2026-08-08T02:44:12.091Z"
   },
+  "dcd41ed1-4a12-416b-8ba0-51a9c0927ddb": {
+    "status": "available",
+    "name": "Binding Agony",
+    "price_brl": 0.12,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Miragem",
+    "printing_code": "MR",
+    "collector_number": "26",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Binding%20Agony",
+    "checked_at": "2026-08-09T17:08:27.603Z"
+  },
   "dcd5ab1b-adc5-486e-a1e0-636af6ee9470": {
     "status": "available",
     "name": "Ashnod the Uncaring",

@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Admonition%20Angel",
     "checked_at": "2026-08-06T07:09:34.604Z"
   },
+  "78de77ef-c325-4342-869f-042921229577": {
+    "status": "available",
+    "name": "Biotech Specialist",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Edge of Eternities",
+    "printing_code": "EOE",
+    "collector_number": "214",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Biotech%20Specialist",
+    "checked_at": "2026-08-09T17:12:17.717Z"
+  },
   "78f9c223-9982-4282-a496-a6f892f0a5bf": {
     "status": "available",
     "name": "Mind Twist",

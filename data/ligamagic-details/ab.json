@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancestral%20Blade",
     "checked_at": "2026-08-07T04:48:51.625Z"
   },
+  "ab55834f-c935-4773-89c6-bec9712284eb": {
+    "status": "available",
+    "name": "Big Game Hunter",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Espiral Temporal Remasterizada",
+    "printing_code": "TSR",
+    "collector_number": "102",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Big%20Game%20Hunter",
+    "checked_at": "2026-08-09T17:03:17.448Z"
+  },
   "ab855992-34da-42a2-b7c7-dec4db849159": {
     "status": "available",
     "name": "Aerial Volley",

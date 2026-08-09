@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avatar%20of%20Woe",
     "checked_at": "2026-08-08T09:13:30.266Z"
   },
+  "2dbe8aaa-2e34-4552-8da7-cf8ecbbaa7b6": {
+    "status": "available",
+    "name": "Biomass Mutation",
+    "price_brl": 0.17,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portões Violados",
+    "printing_code": "GTC",
+    "collector_number": "213",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Biomass%20Mutation",
+    "checked_at": "2026-08-09T17:10:47.785Z"
+  },
   "2dd32fec-5bc3-4cc0-a9b4-814229a64914": {
     "status": "available",
     "name": "Balustrade Wurm",

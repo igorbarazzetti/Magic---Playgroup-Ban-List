@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashad%2C%20the%20Lone%20Cyberman",
     "checked_at": "2026-08-07T21:16:09.196Z"
   },
+  "f39777be-39af-4a97-a70d-824d713bf145": {
+    "status": "available",
+    "name": "Bioplasm",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Pacto das Guildas",
+    "printing_code": "GP",
+    "collector_number": "81",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bioplasm",
+    "checked_at": "2026-08-09T17:11:37.717Z"
+  },
   "f398d222-f8e7-4983-9a77-267adef7f551": {
     "status": "available",
     "name": "Agatha of the Vile Cauldron",

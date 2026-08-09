@@ -143,6 +143,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Animate%20Graveyard",
     "checked_at": "2026-08-07T09:25:06.136Z"
   },
+  "37a5ab64-12e4-4aad-9a09-46a26fe9953b": {
+    "status": "available",
+    "name": "Birthing Ritual",
+    "price_brl": 34.89,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3",
+    "printing_code": "MH3",
+    "collector_number": "146",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Birthing%20Ritual",
+    "checked_at": "2026-08-09T17:14:47.800Z"
+  },
   "37ad9318-6690-4a8d-bcea-9fcbca58769d": {
     "status": "available",
     "name": "Aven Fleetwing",

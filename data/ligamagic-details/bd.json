@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=At%20Knifepoint",
     "checked_at": "2026-08-08T02:53:22.203Z"
   },
+  "bddd6b93-7c69-427a-97ee-0c1f9f950f09": {
+    "status": "available",
+    "name": "Bird Maiden",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quarta Edição",
+    "printing_code": "4E",
+    "collector_number": "26",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bird%20Maiden",
+    "checked_at": "2026-08-09T17:13:37.783Z"
+  },
   "bdecf59c-f8bd-4003-9058-685b70c08837": {
     "status": "available",
     "name": "Anurid Brushhopper",

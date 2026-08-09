@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Banish%20from%20Edoras",
     "checked_at": "2026-08-08T17:05:57.263Z"
   },
+  "e461ef8d-59ca-440a-8773-da1de3b6b195": {
+    "status": "available",
+    "name": "Bill the Pony",
+    "price_brl": 0.18,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Senhor dos Anéis: Contos da Terra Média",
+    "printing_code": "LTR",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bill%20the%20Pony",
+    "checked_at": "2026-08-09T17:07:37.573Z"
+  },
   "e46b2ac6-97d6-48f2-aba3-cd92f8e092c6": {
     "status": "available",
     "name": "Aang, Air Nomad",

@@ -1,4 +1,16 @@
 {
+  "4c054431-3667-4e28-9d68-03b43447c35b": {
+    "status": "available",
+    "name": "Bilbo's Deadly Slice",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "The Hobbit",
+    "printing_code": "HOB",
+    "collector_number": "62",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bilbo's%20Deadly%20Slice",
+    "checked_at": "2026-08-09T17:05:47.489Z"
+  },
   "4c05b382-58ab-4a2d-a81c-408ea273b6b6": {
     "status": "available",
     "name": "Dreadhorde Arcanist",

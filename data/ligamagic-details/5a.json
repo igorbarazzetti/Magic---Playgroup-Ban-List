@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Sinkhole",
     "checked_at": "2026-08-05T20:12:38.623Z"
   },
+  "5a651557-ce08-46ba-aecd-0e4fbfdef3c0": {
+    "status": "available",
+    "name": "Bile-Vial Boggart",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed",
+    "printing_code": "ECL",
+    "collector_number": "87",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bile-Vial%20Boggart",
+    "checked_at": "2026-08-09T17:06:57.584Z"
+  },
   "5a70ccfa-d12d-4e62-a1a4-f05cda2fd442": {
     "status": "available",
     "name": "Abandoned Outpost",
@@ -142,5 +154,17 @@
     "collector_number": "97",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arc%20Lightning",
     "checked_at": "2026-08-07T13:48:53.687Z"
+  },
+  "5adc9d0d-3393-4d91-be85-1f9dd344698b": {
+    "status": "available",
+    "name": "Binding Mummy",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Amonkhet",
+    "printing_code": "AKH",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Binding%20Mummy",
+    "checked_at": "2026-08-09T17:08:57.615Z"
   }
 }

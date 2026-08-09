@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aradesh%2C%20the%20Founder",
     "checked_at": "2026-08-07T11:25:47.078Z"
   },
+  "32654ffa-b869-4f8b-a153-4242e8f9d92e": {
+    "status": "available",
+    "name": "Big Bertha",
+    "price_brl": 1.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes Commander",
+    "printing_code": "MSC",
+    "collector_number": "714",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Big%20Bertha",
+    "checked_at": "2026-08-09T17:02:57.428Z"
+  },
   "3269f589-00fc-4f0b-8693-656f2ab0670d": {
     "status": "available",
     "name": "Argent Dais",

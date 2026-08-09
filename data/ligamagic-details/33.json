@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Felidar%20Guardian",
     "checked_at": "2026-08-05T20:06:10.590Z"
   },
+  "33899675-0de2-4adb-bf3f-55e18b493015": {
+    "status": "available",
+    "name": "Birthing Hulk",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Juramento das Sentinelas",
+    "printing_code": "OGW",
+    "collector_number": "121",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Birthing%20Hulk",
+    "checked_at": "2026-08-09T17:14:37.826Z"
+  },
   "33b401b1-cf94-4c7a-8a8a-426ac3d87bd0": {
     "status": "available",
     "name": "Baeloth Barrityl, Entertainer",

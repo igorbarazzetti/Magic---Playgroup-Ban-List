@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Basalt%20Gargoyle",
     "checked_at": "2026-08-08T19:19:32.519Z"
   },
+  "83bf5610-a798-4508-88d2-c60d96f60d23": {
+    "status": "available",
+    "name": "Bilious Skulldweller",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Phyrexia: Tudo será um",
+    "printing_code": "ONE",
+    "collector_number": "83",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bilious%20Skulldweller",
+    "checked_at": "2026-08-09T17:07:07.536Z"
+  },
   "83f776d9-f3b6-40c2-8008-1ace4d110825": {
     "status": "available",
     "name": "Barret, Avalanche Leader",

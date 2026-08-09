@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Indemnity",
     "checked_at": "2026-08-07T07:54:36.293Z"
   },
+  "4f958678-2a32-4a30-8fe7-47df9ada6b2f": {
+    "status": "available",
+    "name": "Birthday Escape",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Senhor dos Anéis: Contos da Terra Média",
+    "printing_code": "LTR",
+    "collector_number": "43",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Birthday%20Escape",
+    "checked_at": "2026-08-09T17:14:18.467Z"
+  },
   "4fa113da-44aa-4c84-8f63-b1cad63da926": {
     "status": "available",
     "name": "Arcbound Slith",

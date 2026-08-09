@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beckoning%20Will-o'-Wisp",
     "checked_at": "2026-08-09T13:32:44.468Z"
   },
+  "d3a0b660-358c-41bd-9cd2-41fbf3491b1a": {
+    "status": "available",
+    "name": "Birds of Paradise",
+    "price_brl": 27.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ravnica: A Cidade das Guildas",
+    "printing_code": "RAV",
+    "collector_number": "153",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Birds%20of%20Paradise",
+    "checked_at": "2026-08-09T17:13:48.373Z"
+  },
   "d3c3f293-6790-4dce-900a-8af0464c2572": {
     "status": "available",
     "name": "Anhelo, the Painter",

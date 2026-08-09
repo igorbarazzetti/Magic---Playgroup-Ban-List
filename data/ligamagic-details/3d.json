@@ -143,6 +143,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beastie%20Beatdown",
     "checked_at": "2026-08-08T23:05:40.631Z"
   },
+  "3da604fc-68e9-4749-98f9-6fbcebcab9b6": {
+    "status": "available",
+    "name": "Bioshift",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portões Violados",
+    "printing_code": "GTC",
+    "collector_number": "214",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bioshift",
+    "checked_at": "2026-08-09T17:11:57.692Z"
+  },
   "3dadb654-6191-4ad3-8315-46f5613fbc01": {
     "status": "available",
     "name": "Biblioplex Assistant",

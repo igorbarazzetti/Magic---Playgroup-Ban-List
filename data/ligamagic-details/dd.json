@@ -1,4 +1,16 @@
 {
+  "dd01ef1f-f6be-498f-82e0-dc04833e685f": {
+    "status": "available",
+    "name": "Big Apple, 3 a.m.",
+    "price_brl": 2.23,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Teenage Mutant Ninja Turtles Commander",
+    "printing_code": "TMC",
+    "collector_number": "42",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Big%20Apple%2C%203%20a.m.",
+    "checked_at": "2026-08-09T17:02:47.625Z"
+  },
   "dd0412ee-6c14-4cfc-95d8-942a2392111a": {
     "status": "available",
     "name": "Angelic Rocket",

@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beneath%20the%20Sands",
     "checked_at": "2026-08-09T15:00:55.526Z"
   },
+  "27683e43-7c3f-45b3-8ca4-968428000315": {
+    "status": "available",
+    "name": "Bionic Blow",
+    "price_brl": 2.94,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes Commander",
+    "printing_code": "MSC",
+    "collector_number": "680",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bionic%20Blow",
+    "checked_at": "2026-08-09T17:11:17.690Z"
+  },
   "2786f210-ec64-46ea-9a7f-b03759fb1dae": {
     "status": "available",
     "name": "Ancestral Knowledge",

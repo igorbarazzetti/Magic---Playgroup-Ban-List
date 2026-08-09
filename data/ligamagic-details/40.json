@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambassador%20Oak",
     "checked_at": "2026-08-07T00:48:25.248Z"
   },
+  "4050e5b3-07c2-461c-9852-a2c081c0198d": {
+    "status": "available",
+    "name": "Binding the Old Gods",
+    "price_brl": 0.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed Commander",
+    "printing_code": "ECC",
+    "collector_number": "120",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Binding%20the%20Old%20Gods",
+    "checked_at": "2026-08-09T17:09:17.699Z"
+  },
   "405c4a7b-dbb3-48a1-9205-7dbe6e2ad363": {
     "status": "available",
     "name": "Aatchik, Emerald Radian",

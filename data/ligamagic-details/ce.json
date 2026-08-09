@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alania's%20Pathmaker",
     "checked_at": "2026-08-06T18:13:18.291Z"
   },
+  "ce45d6bd-74e3-401b-983d-028d3fb942da": {
+    "status": "available",
+    "name": "Billowing Shriekmass",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Foundations",
+    "printing_code": "FDN",
+    "collector_number": "56",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Billowing%20Shriekmass",
+    "checked_at": "2026-08-09T17:07:57.564Z"
+  },
   "ce690a21-8117-420e-be00-cd6d9923a812": {
     "status": "available",
     "name": "Anzrag's Rampage",

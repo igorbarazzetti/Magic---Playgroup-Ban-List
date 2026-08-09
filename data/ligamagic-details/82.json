@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Betor%2C%20Kin%20to%20All",
     "checked_at": "2026-08-09T15:09:15.653Z"
   },
+  "826e6a6f-3b66-4225-87ee-04e345e047b3": {
+    "status": "available",
+    "name": "Bighorner Rancher",
+    "price_brl": 3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fallout",
+    "printing_code": "PIP",
+    "collector_number": "73",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bighorner%20Rancher",
+    "checked_at": "2026-08-09T17:04:37.480Z"
+  },
   "8294539d-7982-4ec9-8392-99eed78542f5": {
     "status": "available",
     "name": "Battle for Bretagard",

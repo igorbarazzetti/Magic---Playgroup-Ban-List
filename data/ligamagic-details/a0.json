@@ -203,6 +203,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archwing%20Dragon",
     "checked_at": "2026-08-07T17:23:04.872Z"
   },
+  "a0c78518-cc81-401b-87a1-b58af01a9aa6": {
+    "status": "available",
+    "name": "Big Boa Constrictor",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unstable",
+    "printing_code": "UST",
+    "collector_number": "51",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Big%20Boa%20Constrictor",
+    "checked_at": "2026-08-09T17:03:07.421Z"
+  },
   "a0cd19c1-9125-4627-83ba-d42c489b4e7d": {
     "status": "available",
     "name": "Aeromunculus",

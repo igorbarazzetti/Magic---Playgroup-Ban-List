@@ -131,6 +131,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Behold%20the%20Sinister%20Six!",
     "checked_at": "2026-08-09T13:37:44.124Z"
   },
+  "6fa78914-85b3-46fd-977a-0e5b4d29eca4": {
+    "status": "available",
+    "name": "Bioengineered Future",
+    "price_brl": 0.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Edge of Eternities",
+    "printing_code": "EOE",
+    "collector_number": "172",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bioengineered%20Future",
+    "checked_at": "2026-08-09T17:09:27.634Z"
+  },
   "6fa9debf-c60e-432d-86c8-aed16556c532": {
     "status": "available",
     "name": "Animal Boneyard",

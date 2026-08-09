@@ -94,5 +94,17 @@
     "collector_number": "79",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balduvian%20Atrocity",
     "checked_at": "2026-08-08T15:04:07.683Z"
+  },
+  "0dd95516-893d-477e-a38c-3cc37c6e7ae0": {
+    "status": "available",
+    "name": "Bile Blight",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nascidos dos Deuses",
+    "printing_code": "BNG",
+    "collector_number": "61",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bile%20Blight",
+    "checked_at": "2026-08-09T17:06:37.621Z"
   }
 }

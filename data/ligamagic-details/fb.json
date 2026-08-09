@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Mystical%20Tutor",
     "checked_at": "2026-08-05T20:10:29.262Z"
   },
+  "fb8b8c58-7bdc-4daa-b48b-728a26e174dd": {
+    "status": "available",
+    "name": "Bioluminary",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unfinity",
+    "printing_code": "UNF",
+    "collector_number": "38",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bioluminary",
+    "checked_at": "2026-08-09T17:10:17.642Z"
+  },
   "fb9af562-7384-4575-93bb-34f1ada23735": {
     "status": "available",
     "name": "Alley Strangler",

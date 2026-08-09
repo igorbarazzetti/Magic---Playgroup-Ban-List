@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=And%20They%20Shall%20Know%20No%20Fear",
     "checked_at": "2026-08-07T07:52:16.624Z"
   },
+  "0ebe67ed-8a71-4bbc-8e58-cebbd7b2d83f": {
+    "status": "available",
+    "name": "Bill Potts",
+    "price_brl": 1.18,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Doctor Who",
+    "printing_code": "WHO",
+    "collector_number": "76",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bill%20Potts",
+    "checked_at": "2026-08-09T17:07:27.558Z"
+  },
   "0ec88e35-191b-411b-9eb0-2dfef7ae4174": {
     "status": "available",
     "name": "Belonging",

@@ -1,4 +1,16 @@
 {
+  "a73d9109-36e0-40ea-ab06-5c5f7eb4ac54": {
+    "status": "available",
+    "name": "Bilbo, Luckwearer // Burglar's Plot",
+    "price_brl": 1.45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "The Hobbit",
+    "printing_code": "HOB",
+    "collector_number": "32",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bilbo%2C%20Luckwearer%20%2F%2F%20Burglar's%20Plot",
+    "checked_at": "2026-08-09T17:05:17.503Z"
+  },
   "a74d80ec-9f42-418d-ab98-897acc23c319": {
     "status": "available",
     "name": "Apothecary Initiate",
@@ -94,6 +106,18 @@
     "collector_number": "145",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Basking%20Broodscale",
     "checked_at": "2026-08-05T20:03:25.156Z"
+  },
+  "a7cc0f6b-6b17-4e76-b2a6-6a6ee2519b61": {
+    "status": "available",
+    "name": "Bilbo's Ring",
+    "price_brl": 68.35,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Senhor dos Anéis: Contos da Terra Média",
+    "printing_code": "LTR",
+    "collector_number": "298",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bilbo's%20Ring",
+    "checked_at": "2026-08-09T17:06:07.496Z"
   },
   "a7ee67a6-0ac7-4079-a947-4e52d09ace8e": {
     "status": "available",

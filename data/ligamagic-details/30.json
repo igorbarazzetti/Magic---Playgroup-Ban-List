@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Grudge",
     "checked_at": "2026-08-07T07:49:46.046Z"
   },
+  "30812870-87c0-469c-95a5-811d5a181e72": {
+    "status": "available",
+    "name": "Biogenic Upgrade",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lealdade em Ravnica",
+    "printing_code": "RNA",
+    "collector_number": "123",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Biogenic%20Upgrade",
+    "checked_at": "2026-08-09T17:09:58.115Z"
+  },
   "3095f2cf-05c3-4381-929f-c526b6fc30a7": {
     "status": "available",
     "name": "Atog",

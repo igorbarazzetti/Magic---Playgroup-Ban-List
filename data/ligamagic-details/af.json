@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barging%20Sergeant",
     "checked_at": "2026-08-08T19:10:02.383Z"
   },
+  "af4684cf-f109-44be-adfb-7c551a36635e": {
+    "status": "available",
+    "name": "Bishop of Wings",
+    "price_brl": 15.34,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2020",
+    "printing_code": "M20",
+    "collector_number": "8",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bishop%20of%20Wings",
+    "checked_at": "2026-08-09T17:15:27.909Z"
+  },
   "af471455-6b9f-4c14-bb90-a74a44ecd247": {
     "status": "available",
     "name": "Aeon Engine",

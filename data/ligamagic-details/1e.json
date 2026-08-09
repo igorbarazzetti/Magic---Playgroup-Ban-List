@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ant-Man%2C%20Scott%20Lang",
     "checked_at": "2026-08-07T09:32:36.415Z"
   },
+  "1ebdc091-16d5-4803-821a-ac8c4696b5bc": {
+    "status": "available",
+    "name": "Binding Grasp",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quinta Edição",
+    "printing_code": "5E",
+    "collector_number": "34",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Binding%20Grasp",
+    "checked_at": "2026-08-09T17:08:47.631Z"
+  },
   "1ecd7248-ff28-4e12-b72a-0cb279ec7561": {
     "status": "available",
     "name": "Bar the Door",

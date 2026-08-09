@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akroan%20Mastiff",
     "checked_at": "2026-08-06T18:07:07.266Z"
   },
+  "607425ac-9e90-4c9e-88bf-72f8a76cce97": {
+    "status": "available",
+    "name": "Big Play",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Strixhaven: Escola de Magos",
+    "printing_code": "STX",
+    "collector_number": "122",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Big%20Play",
+    "checked_at": "2026-08-09T17:03:37.475Z"
+  },
   "607a3f5f-4a36-4077-b5cf-40ffd52fa580": {
     "status": "available",
     "name": "Altar of Bone",

@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bellowing%20Aegisaur",
     "checked_at": "2026-08-09T13:41:24.268Z"
   },
+  "70868667-a843-4954-863f-990854188c53": {
+    "status": "available",
+    "name": "Biomathematician",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Strixhaven: Escola de Magos",
+    "printing_code": "STX",
+    "collector_number": "164",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Biomathematician",
+    "checked_at": "2026-08-09T17:10:57.660Z"
+  },
   "709e99f1-288b-49e0-80a1-f817b457a2cf": {
     "status": "available",
     "name": "Bay Falcon",

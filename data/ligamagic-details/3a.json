@@ -131,6 +131,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=The%20One%20Ring",
     "checked_at": "2026-08-05T20:13:38.785Z"
   },
+  "3abd2342-f783-4871-ac78-1a54b35722c2": {
+    "status": "available",
+    "name": "Biosynthic Burst",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Edge of Eternities",
+    "printing_code": "EOE",
+    "collector_number": "173",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Biosynthic%20Burst",
+    "checked_at": "2026-08-09T17:12:07.695Z"
+  },
   "3afdc98e-aeeb-43e9-bdcd-0c51da44d2f8": {
     "status": "available",
     "name": "Autonomous Assembler",
