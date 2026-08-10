@@ -18,6 +18,14 @@ test('deck builder and catalog share the protected catalog loader', () => {
   assert.doesNotMatch(loader, /fetch\(/);
 });
 
+test('LigaMagic prices prefer the current network index over a fresh local cache', () => {
+  const loader = functionSource('getPersistentCatalogData', 'buildCatalogCards');
+  assert.match(loader, /catalog-prices-v1[^\n]+preferNetwork: true/);
+  const resource = functionSource('fetchCatalogResource', 'getPersistentCatalogData');
+  assert.match(resource, /if \(preferNetwork\)/);
+  assert.match(resource, /6000, 'no-cache'/);
+});
+
 test('catalog worker filter has a deadline and local recovery path', () => {
   const request = functionSource('requestCatalogWorkerFilter', 'canFilterCatalogInWorker');
   const apply = functionSource('applyCatalogFiltersInWorker', 'applyFilters');

@@ -3185,7 +3185,7 @@ function validCatalogResource(key, payload) {
   return true;
 }
 
-async function fetchCatalogResource(url, key, maxAge) {
+async function fetchCatalogResource(url, key, maxAge, { preferNetwork = false } = {}) {
   const cached = await readPersistentCatalogResource(key);
   const cachedIsValid = validCatalogResource(key, cached?.payload);
   const cacheIsFresh = cachedIsValid && Date.now() - Number(cached.storedAt || 0) < maxAge;
@@ -3213,6 +3213,18 @@ async function fetchCatalogResource(url, key, maxAge) {
       return fetchFreshFrom(`${fallbackUrl}?v=${Date.now()}`, 20_000, 'no-store');
     }
   };
+  if (preferNetwork) {
+    try {
+      const separator = url.includes('?') ? '&' : '?';
+      return await fetchFreshFrom(`${url}${separator}v=${Date.now()}`, 6000, 'no-cache');
+    } catch (error) {
+      if (cachedIsValid) {
+        void fetchFresh().catch(() => {});
+        return cached.payload;
+      }
+      return fetchFresh();
+    }
+  }
   if (cacheIsFresh) {
     void fetchFresh().catch(() => {});
     return cached.payload;
@@ -3230,7 +3242,7 @@ async function getPersistentCatalogData() {
   if (!persistentCatalogDataPromise) {
     persistentCatalogDataPromise = Promise.all([
       fetchCatalogResource(catalogIndexUrl, 'catalog-index-v1', 12 * 60 * 60 * 1000),
-      fetchCatalogResource(catalogPriceIndexUrl, 'catalog-prices-v1', 90 * 60 * 1000).catch(() => ({ prices: {}, coverage: null })),
+      fetchCatalogResource(catalogPriceIndexUrl, 'catalog-prices-v1', 90 * 60 * 1000, { preferNetwork: true }).catch(() => ({ prices: {}, coverage: null })),
     ]).then(([index, prices]) => ({ index, prices })).catch((error) => {
       persistentCatalogDataPromise = null;
       throw error;
