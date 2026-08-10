@@ -92,15 +92,18 @@ jobs:
           }
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          Invoke-Git add data
-          Invoke-Git commit -m "Atualiza cobertura LigaMagic [skip ci]"
-          $dataCommit = (& git rev-parse HEAD | Select-Object -First 1).Trim()
-          if ($LASTEXITCODE -ne 0 -or -not $dataCommit) { throw "Não foi possível identificar o commit de dados." }
+
+          $snapshotRoot = Join-Path $env:RUNNER_TEMP "ligamagic-$env:GITHUB_RUN_ID-$env:GITHUB_RUN_ATTEMPT"
+          $snapshotData = Join-Path $snapshotRoot "data"
+          New-Item -ItemType Directory -Path $snapshotRoot -Force | Out-Null
+          Copy-Item -LiteralPath "data" -Destination $snapshotData -Recurse -Force
+          Invoke-Git restore --source=$env:GITHUB_SHA --staged --worktree -- data
 
           for ($attempt = 1; $attempt -le 3; $attempt++) {
             Invoke-Git fetch origin main
             Invoke-Git checkout --detach origin/main
-            Invoke-Git restore --source=$dataCommit --staged --worktree -- data
+            & node scripts/merge-ligamagic-data.mjs "--snapshot=$snapshotData"
+            if ($LASTEXITCODE -ne 0) { throw "Não foi possível mesclar os dados coletados com o main atual." }
 
             $pendingChanges = git status --porcelain -- data | Out-String
             if ([string]::IsNullOrWhiteSpace($pendingChanges)) {
@@ -108,6 +111,7 @@ jobs:
               exit 0
             }
 
+            Invoke-Git add data
             Invoke-Git commit -m "Atualiza cobertura LigaMagic [skip ci]"
             & git push origin HEAD:main
             if ($LASTEXITCODE -eq 0) {

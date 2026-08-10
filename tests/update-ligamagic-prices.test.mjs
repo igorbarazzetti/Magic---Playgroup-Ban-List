@@ -14,6 +14,7 @@ import {
   selectBatch,
   usdCents,
 } from '../scripts/update-ligamagic-prices.mjs';
+import { mergeLegacyBooks, mergePriceIndexes, mergeRecordMaps } from '../scripts/merge-ligamagic-data.mjs';
 
 test('consulta cartas de duas faces pelo nome da face principal', () => {
   const url = new URL(ligaMagicUrl('Adventurous Eater // Have a Bite'));
@@ -111,4 +112,36 @@ test('permite priorizar uma carta pelo nome exato ou pela face principal', () =>
   assert.equal(selectPriorityCard(targets, 'colossus hammer')?.oracleId, 'hammer');
   assert.equal(selectPriorityCard(targets, 'Delver of Secrets')?.oracleId, 'delver');
   assert.equal(selectPriorityCard(targets, 'Carta inventada'), null);
+});
+
+test('mescla lotes concorrentes sem apagar um preço prioritário', () => {
+  const hammerId = '8ec03b88-8d3a-4a32-8b7c-7da59b0c03d0';
+  const current = {
+    generated_at: '2026-08-09T23:56:00.378Z',
+    coverage: { target_count: 32046 },
+    prices: { [hammerId]: [400, 'a', 1786319760] },
+    failures: {},
+  };
+  const incoming = {
+    generated_at: '2026-08-10T00:35:18.763Z',
+    coverage: { target_count: 32046 },
+    prices: { 'outra-carta': [250, 'a', 1786322118] },
+    failures: {},
+  };
+
+  const merged = mergePriceIndexes(current, incoming);
+  assert.deepEqual(merged.prices[hammerId], [400, 'a', 1786319760]);
+  assert.deepEqual(merged.prices['outra-carta'], [250, 'a', 1786322118]);
+  assert.equal(merged.coverage.attempted_count, 2);
+  assert.equal(merged.coverage.confirmed_count, 2);
+});
+
+test('mantém o detalhe mais recente de cada carta durante a mesclagem', () => {
+  const older = { status: 'available', price_brl: 3, checked_at: '2026-08-09T22:00:00.000Z' };
+  const newer = { status: 'available', price_brl: 4, checked_at: '2026-08-09T23:56:00.000Z' };
+  assert.deepEqual(mergeRecordMaps({ hammer: newer }, { hammer: older }), { hammer: newer });
+  assert.deepEqual(mergeLegacyBooks({ cards: { hammer: newer } }, { cards: { outra: older } }).cards, {
+    hammer: newer,
+    outra: older,
+  });
 });
