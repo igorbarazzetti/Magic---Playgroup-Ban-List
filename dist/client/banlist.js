@@ -48,7 +48,7 @@ function createViewState(tab) {
     savedScroll: 0, loadingMore: false, loadToken: 0, rawDetailsReady: false, loaded: false,
     deckFormat: 'formatinho', deckLastFocus: null, maxPrice: 99, showBanned: false,
     oracleMatchKey: '', oracleMatches: null, oracleSearchToken: 0, oracleSearchAbort: null,
-    scryfallSearchCards: null, scryfallSearchKey: '', scryfallSearchToken: 0, scryfallSearchAbort: null,
+    scryfallSearchCards: null, scryfallSearchKey: '', scryfallSearchToken: 0, scryfallSearchAbort: null, scryfallSearchPending: false,
   };
 }
 const viewStates = { banlist: createViewState('banlist'), catalog: createViewState('catalog') };
@@ -74,7 +74,6 @@ const catalogHydrating = new Set();
 const catalogHydrationPromises = new Map();
 const catalogDetailShards = new Map();
 const catalogOracleSearchCache = new Map();
-let catalogDataPromise;
 let catalogHydrationObserver;
 let catalogHydrationTimer;
 const catalogHydrationQueue = new Map();
@@ -85,6 +84,8 @@ let catalogWorkerReadyPromise;
 let catalogWorkerRequestId = 0;
 let catalogFilterToken = 0;
 const catalogWorkerRequests = new Map();
+const catalogWorkerFilterTimeoutMs = 5000;
+const scryfallRequestTimeoutMs = 15000;
 const catalogCacheDbName = 'formatinho-catalog-cache-v1';
 let catalogCacheDbPromise;
 const deckCardCache = new Map();
@@ -122,6 +123,24 @@ function isScryfallSyntaxSearch(value = '') {
   return /(?:^|\s)-?[a-z][\w-]*:|(?:^|\s)[a-z][\w-]*(?:<=|>=|!=|=|<|>)/i.test(query);
 }
 function sourceCards() { return state.scryfallSearchCards || state.cards; }
+function setCatalogPhase(phase) {
+  if (document.body) document.body.dataset.catalogPhase = phase;
+}
+
+async function fetchWithTimeout(url, options = {}, timeoutMs = scryfallRequestTimeoutMs) {
+  const controller = new AbortController();
+  const externalSignal = options.signal;
+  const abortFromExternalSignal = () => controller.abort(externalSignal?.reason);
+  if (externalSignal?.aborted) abortFromExternalSignal();
+  else externalSignal?.addEventListener('abort', abortFromExternalSignal, { once: true });
+  const timeout = setTimeout(() => controller.abort(new DOMException('Tempo limite excedido', 'TimeoutError')), timeoutMs);
+  try {
+    return await fetch(url, { ...options, signal: controller.signal });
+  } finally {
+    clearTimeout(timeout);
+    externalSignal?.removeEventListener('abort', abortFromExternalSignal);
+  }
+}
 function colorMatchHint(mode = state.colorMatch) {
   return {
     exact: 'Mostra apenas cartas cuja identidade é exatamente as cores selecionadas.',
@@ -387,10 +406,10 @@ async function switchCollectionTab(tab, { pushHistory = true, restoreScroll = tr
   if (!state.loaded) {
     if (tab === 'catalog') await loadCatalog(); else await loadCards();
   } else {
-    if (!await ensureScryfallSyntaxSearch()) {
-      await ensureCatalogOracleMatches();
-      applyFilters();
-    }
+    $('loadingState').hidden = true;
+    $('errorState').hidden = true;
+    applyFiltersSync({ allowPendingOracle: true });
+    void refreshActiveRemoteFilters(state);
   }
   if (restoreScroll) requestAnimationFrame(() => scrollTo({ top: state.savedScroll, behavior: 'auto' }));
 }
@@ -453,7 +472,7 @@ async function fetchScryfallPages(query, { signal, onPage } = {}) {
   const cards = [];
   let url = `https://api.scryfall.com/cards/search?q=${encodeURIComponent(query)}&unique=cards&order=name`;
   while (url) {
-    const response = await fetch(url, { headers: { Accept: 'application/json;q=0.9,*/*;q=0.8' }, signal });
+    const response = await fetchWithTimeout(url, { headers: { Accept: 'application/json;q=0.9,*/*;q=0.8' }, signal });
     if (response.status === 404) return [];
     if (!response.ok) throw new Error(`Scryfall ${response.status}`);
     const payload = await response.json();
@@ -469,6 +488,7 @@ async function fetchScryfallPages(query, { signal, onPage } = {}) {
 function clearScryfallSyntaxSearch() {
   state.scryfallSearchAbort?.abort();
   state.scryfallSearchAbort = null;
+  state.scryfallSearchPending = false;
   state.scryfallSearchCards = null;
   state.scryfallSearchKey = '';
 }
@@ -479,16 +499,18 @@ async function ensureScryfallSyntaxSearch() {
     return false;
   }
   const key = `${state.tab}:${state.query}`;
-  if (state.scryfallSearchKey === key && state.scryfallSearchCards) return true;
+  if (state.scryfallSearchKey === key && state.scryfallSearchCards && !state.scryfallSearchPending) return true;
+  if (state.scryfallSearchKey === key && state.scryfallSearchPending) return true;
   clearScryfallSyntaxSearch();
   const controller = new AbortController();
   const token = ++state.scryfallSearchToken;
   state.scryfallSearchAbort = controller;
+  state.scryfallSearchPending = true;
   state.scryfallSearchKey = key;
   state.scryfallSearchCards = [];
   state.loadingMore = true;
-  $('loadingState').hidden = false;
-  applyFilters();
+  const showBlockingLoader = !state.cards.length;
+  if (showBlockingLoader) $('loadingState').hidden = false;
   const scope = state.tab === 'catalog' ? (catalogIndex?.query || site.catalogQuery) : site.scryfallQuery;
   const partialByOracle = new Map();
   try {
@@ -513,7 +535,9 @@ async function ensureScryfallSyntaxSearch() {
   } finally {
     if (token === state.scryfallSearchToken && state.scryfallSearchKey === key) {
       state.loadingMore = false;
-      $('loadingState').hidden = true;
+      state.scryfallSearchPending = false;
+      state.scryfallSearchAbort = null;
+      if (showBlockingLoader) $('loadingState').hidden = true;
       applyFilters();
     }
   }
@@ -554,7 +578,8 @@ async function ensureCatalogOracleMatches() {
   const controller = new AbortController();
   state.oracleSearchAbort = controller;
   const token = ++state.oracleSearchToken;
-  $('loadingState').hidden = false;
+  const showBlockingLoader = !state.cards.length;
+  if (showBlockingLoader) $('loadingState').hidden = false;
   try {
     const phraseQuery = phrases.map((phrase) => `o:"${phrase.replace(/"/g, '\\"')}"`).join(' ');
     const cards = await fetchScryfallPages(`${catalogIndex?.query || '(game:paper) usd<20.00 prefer:best'} ${phraseQuery} ${serverFilters}`, { signal: controller.signal });
@@ -573,8 +598,20 @@ async function ensureCatalogOracleMatches() {
   } finally {
     if (token === state.oracleSearchToken) {
       state.oracleSearchAbort = null;
-      $('loadingState').hidden = true;
+      if (showBlockingLoader) $('loadingState').hidden = true;
     }
+  }
+}
+
+async function refreshActiveRemoteFilters(targetState = state) {
+  try {
+    if (await ensureScryfallSyntaxSearch()) return;
+    await ensureCatalogOracleMatches();
+    if (state === targetState) applyFilters();
+  } catch (error) {
+    if (state !== targetState) return;
+    console.warn('Falha no refinamento remoto; mantendo os filtros locais.', error);
+    applyFiltersSync({ allowPendingOracle: true });
   }
 }
 
@@ -598,16 +635,34 @@ function cardTypeMatches(card, type) {
   return !/(creature|instant|sorcery|artifact|enchantment|planeswalker|land|battle)/.test(line);
 }
 
+function rejectCatalogWorkerRequests(error = new Error('Filtro do catálogo reiniciado')) {
+  for (const pending of catalogWorkerRequests.values()) {
+    clearTimeout(pending.timeout);
+    pending.reject(error);
+  }
+  catalogWorkerRequests.clear();
+}
+
+function resetCatalogWorker(error) {
+  catalogWorker?.terminate();
+  catalogWorker = null;
+  catalogWorkerReady = false;
+  catalogWorkerReadyPromise = null;
+  rejectCatalogWorkerRequests(error);
+}
+
 function initializeCatalogWorker() {
   if (catalogWorkerReadyPromise) return catalogWorkerReadyPromise;
   if (!('Worker' in window)) return Promise.resolve(false);
   catalogWorkerReadyPromise = new Promise((resolve) => {
     try {
-      catalogWorker = new Worker('./catalog-worker.js?v=codex-35');
+      catalogWorker = new Worker('./catalog-worker.js?v=codex-58');
+      const workerInstance = catalogWorker;
       const timeout = setTimeout(() => {
-        catalogWorker?.terminate(); catalogWorker = null; catalogWorkerReady = false; resolve(false);
+        if (catalogWorker === workerInstance) resetCatalogWorker(new Error('Inicialização do filtro excedeu o tempo limite'));
+        resolve(false);
       }, 8000);
-      catalogWorker.addEventListener('message', ({ data }) => {
+      workerInstance.addEventListener('message', ({ data }) => {
         if (data?.type === 'ready') {
           clearTimeout(timeout); catalogWorkerReady = true; resolve(true); return;
         }
@@ -615,22 +670,23 @@ function initializeCatalogWorker() {
         const pending = catalogWorkerRequests.get(data.requestId);
         if (!pending) return;
         catalogWorkerRequests.delete(data.requestId);
+        clearTimeout(pending.timeout);
         pending.resolve(data.indexes || []);
       });
-      catalogWorker.addEventListener('error', () => {
-        clearTimeout(timeout); catalogWorkerReady = false;
-        for (const pending of catalogWorkerRequests.values()) pending.reject(new Error('Catálogo indisponível'));
-        catalogWorkerRequests.clear(); resolve(false);
+      workerInstance.addEventListener('error', () => {
+        clearTimeout(timeout);
+        if (catalogWorker === workerInstance) resetCatalogWorker(new Error('Filtro otimizado indisponível'));
+        resolve(false);
       });
-      catalogWorker.postMessage({
+      workerInstance.postMessage({
         type: 'init',
         tuples: catalogIndex?.cards || [],
         sets: catalogIndex?.sets || {},
         prices: catalogPriceIndex?.prices || {},
         usdBrlRate: catalogIndex?.usd_brl?.rate || 0,
       });
-    } catch {
-      catalogWorker = null; catalogWorkerReady = false; resolve(false);
+    } catch (error) {
+      resetCatalogWorker(error); resolve(false);
     }
   });
   return catalogWorkerReadyPromise;
@@ -638,9 +694,27 @@ function initializeCatalogWorker() {
 
 function requestCatalogWorkerFilter(criteria) {
   return new Promise((resolve, reject) => {
+    if (!catalogWorker || !catalogWorkerReady) {
+      reject(new Error('Filtro otimizado indisponível'));
+      return;
+    }
     const requestId = ++catalogWorkerRequestId;
-    catalogWorkerRequests.set(requestId, { resolve, reject });
-    catalogWorker.postMessage({ type: 'filter', requestId, criteria });
+    const timeout = setTimeout(() => {
+      if (!catalogWorkerRequests.has(requestId)) return;
+      catalogWorkerRequests.delete(requestId);
+      const error = new Error('Filtro do catálogo excedeu o tempo limite');
+      resetCatalogWorker(error);
+      reject(error);
+    }, catalogWorkerFilterTimeoutMs);
+    catalogWorkerRequests.set(requestId, { resolve, reject, timeout });
+    try {
+      catalogWorker.postMessage({ type: 'filter', requestId, criteria });
+    } catch (error) {
+      clearTimeout(timeout);
+      catalogWorkerRequests.delete(requestId);
+      resetCatalogWorker(error);
+      reject(error);
+    }
   });
 }
 
@@ -657,6 +731,7 @@ async function applyCatalogFiltersInWorker() {
     ? [...(targetState.oracleMatches || [])]
     : null;
   $('cardGrid').setAttribute('aria-busy', 'true');
+  setCatalogPhase('filtering');
   try {
     const indexes = await requestCatalogWorkerFilter({
       freeText: search.freeText,
@@ -676,10 +751,14 @@ async function applyCatalogFiltersInWorker() {
     targetState.filtered = indexes.map((index) => targetState.cards[index]).filter(Boolean);
     targetState.visible = 48;
     render();
-  } catch {
+  } catch (error) {
+    console.warn('Filtro otimizado indisponível; usando o filtro local.', error);
     if (token === catalogFilterToken && state === targetState) applyFiltersSync();
   } finally {
-    if (token === catalogFilterToken && state === targetState) $('cardGrid').setAttribute('aria-busy', 'false');
+    if (token === catalogFilterToken && state === targetState) {
+      $('cardGrid').setAttribute('aria-busy', 'false');
+      setCatalogPhase('ready');
+    }
   }
 }
 
@@ -692,7 +771,7 @@ function applyFilters() {
   applyFiltersSync();
 }
 
-function applyFiltersSync() {
+function applyFiltersSync({ allowPendingOracle = false } = {}) {
   if (pendingFilterFrame) { cancelAnimationFrame(pendingFilterFrame); pendingFilterFrame = 0; }
   const search = parseCardSearch(state.query);
   const syntaxSearchActive = Boolean(state.scryfallSearchKey);
@@ -708,7 +787,9 @@ function applyFiltersSync() {
       if (search.freeText && !card._searchable.includes(search.freeText)) continue;
       if (search.exactPhrases.length) {
         if (catalog) {
-          if (state.oracleMatchKey !== oracleKey || !state.oracleMatches?.has(card.oracle_id || card.id)) continue;
+          if (state.oracleMatchKey !== oracleKey) {
+            if (!allowPendingOracle) continue;
+          } else if (!state.oracleMatches?.has(card.oracle_id || card.id)) continue;
         } else if (!search.exactPhrases.every((phrase) => card._oracleText.includes(phrase))) continue;
       }
     }
@@ -739,6 +820,7 @@ function applyFiltersSync() {
   else if (state.sort !== 'name-asc') state.filtered.sort(sorters[state.sort] || compareNames);
   state.visible = 48;
   render();
+  if (catalog) setCatalogPhase('ready');
 }
 
 function scheduleApplyFilters() {
@@ -2748,11 +2830,11 @@ function bind() {
     syncUrl(); applyFilters();
   });
 
-  const applySelect = (key, element, { refreshOracle = false } = {}) => element.addEventListener('change', async () => {
+  const applySelect = (key, element, { refreshOracle = false } = {}) => element.addEventListener('change', () => {
     state[key] = element.value;
     syncUrl();
-    if (refreshOracle) await ensureCatalogOracleMatches();
-    applyFilters();
+    applyFiltersSync({ allowPendingOracle: refreshOracle });
+    if (refreshOracle) void refreshActiveRemoteFilters(state);
   });
   applySelect('type', $('typeFilter'), { refreshOracle: true });
   applySelect('cmc', $('cmcFilter'), { refreshOracle: true });
@@ -2764,12 +2846,11 @@ function bind() {
   $('searchInput').addEventListener('input', (event) => {
     clearTimeout(searchTimer);
     $('searchClear').hidden = !event.target.value;
-    searchTimer = setTimeout(async () => {
+    searchTimer = setTimeout(() => {
       state.query = event.target.value.trim();
       syncUrl();
-      if (await ensureScryfallSyntaxSearch()) return;
-      await ensureCatalogOracleMatches();
-      applyFilters();
+      applyFiltersSync({ allowPendingOracle: true });
+      void refreshActiveRemoteFilters(state);
     }, 220);
   });
   $('searchClear').addEventListener('click', () => { clearTimeout(searchTimer); $('searchInput').value = ''; state.query = ''; clearScryfallSyntaxSearch(); $('searchClear').hidden = true; syncUrl(); applyFilters(); $('searchInput').focus(); });
@@ -2798,7 +2879,7 @@ function bind() {
     $('searchInput').value = state.query;
     syncUrl(); applyFilters();
   });
-  $('activeFilters').addEventListener('click', async (event) => {
+  $('activeFilters').addEventListener('click', (event) => {
     const button = event.target.closest('[data-remove-filter]');
     if (!button) return;
     const key = button.dataset.removeFilter;
@@ -2810,8 +2891,8 @@ function bind() {
     else if (key === 'showBanned') { state.showBanned = false; $('showBannedCatalog').checked = false; }
     else state[key] = '';
     syncUrl(); restoreControlsFromState(); populateSetFilter();
-    await ensureCatalogOracleMatches();
-    applyFilters();
+    applyFiltersSync({ allowPendingOracle: true });
+    void refreshActiveRemoteFilters(state);
   });
 
   let priceFilterTimer;
@@ -2960,7 +3041,7 @@ function bind() {
   });
 
   $('shareButton').addEventListener('click', shareCurrentPage);
-  $('retryButton').addEventListener('click', () => { if (state.tab === 'catalog') loadCatalog(); else loadCards(); });
+  $('retryButton').addEventListener('click', () => { if (state.tab === 'catalog') retryCatalogLoad(); else loadCards(); });
 
   addEventListener('online', updateConnectionStatus);
   addEventListener('offline', updateConnectionStatus);
@@ -2972,10 +3053,11 @@ function bind() {
       restoreControlsFromState();
       if (!state.loaded) { if (state.tab === 'catalog') loadCatalog(); else loadCards(); }
       else {
+        $('loadingState').hidden = true;
+        $('errorState').hidden = true;
         populateSetFilter();
-        ensureScryfallSyntaxSearch().then((syntaxSearch) => {
-          if (!syntaxSearch) ensureCatalogOracleMatches().then(applyFilters);
-        });
+        applyFiltersSync({ allowPendingOracle: true });
+        void refreshActiveRemoteFilters(state);
       }
       return;
     }
@@ -2987,19 +3069,7 @@ function bind() {
 }
 
 async function getCatalogData() {
-  if (!catalogDataPromise) {
-    catalogDataPromise = Promise.all([
-      fetch(catalogIndexUrl, { headers: { Accept: 'application/json' }, cache: 'default' }),
-      fetch(catalogPriceIndexUrl, { headers: { Accept: 'application/json' }, cache: 'default' }),
-    ]).then(async ([catalogResponse, priceResponse]) => {
-      if (!catalogResponse.ok) throw new Error(`Catálogo ${catalogResponse.status}`);
-      return {
-        index: await catalogResponse.json(),
-        prices: priceResponse.ok ? await priceResponse.json() : { prices: {}, coverage: null },
-      };
-    }).catch((error) => { catalogDataPromise = null; throw error; });
-  }
-  return catalogDataPromise;
+  return getPersistentCatalogData();
 }
 
 function renderPriceCoverage(payload) {
@@ -3102,7 +3172,11 @@ async function writePersistentCatalogResource(key, payload) {
 
 function validCatalogResource(key, payload) {
   if (!payload || typeof payload !== 'object') return false;
-  if (key === 'catalog-index-v1') return Array.isArray(payload.cards) && payload.cards.length > 0;
+  if (key === 'catalog-index-v1') {
+    if (!Array.isArray(payload.cards) || payload.cards.length < 100) return false;
+    const samples = [payload.cards[0], payload.cards[Math.floor(payload.cards.length / 2)], payload.cards.at(-1)];
+    return samples.every((tuple) => Array.isArray(tuple) && tuple.length >= 9 && typeof tuple[0] === 'string' && typeof tuple[2] === 'string');
+  }
   if (key === 'catalog-prices-v1') return payload.prices && typeof payload.prices === 'object';
   return true;
 }
@@ -3172,10 +3246,24 @@ async function buildCatalogCards(tuples, token, view) {
   return cards;
 }
 
+function retryCatalogLoad() {
+  const view = viewStates.catalog;
+  resetCatalogWorker(new Error('Catálogo reiniciado pelo usuário'));
+  persistentCatalogDataPromise = null;
+  clearScryfallSyntaxSearch();
+  view.oracleSearchAbort?.abort();
+  view.oracleSearchAbort = null;
+  view.oracleMatchKey = '';
+  view.oracleMatches = null;
+  view.loaded = false;
+  void loadCatalog();
+}
+
 async function loadCatalog() {
   const view = viewStates.catalog;
   const token = ++view.loadToken;
   if (state === view) {
+    setCatalogPhase('loading-data');
     $('loadingState').hidden = false; $('errorState').hidden = true; $('emptyState').hidden = true;
     $('cardGrid').setAttribute('aria-busy', 'true'); $('cardGrid').innerHTML = '';
   }
@@ -3185,28 +3273,35 @@ async function loadCatalog() {
     catalogPriceIndex = data.prices;
     if (token !== view.loadToken) return;
     if (!Array.isArray(catalogIndex?.cards) || !catalogIndex.cards.length) throw new Error('Catalogo vazio');
+    if (state === view) setCatalogPhase('building-cards');
     view.cards = await buildCatalogCards(catalogIndex.cards, token, view);
     if (token !== view.loadToken) return;
     catalogCardById.clear();
     view.cards.forEach((card) => catalogCardById.set(card.id, card));
-    view.loaded = true; view.loadingMore = false;
+    view.loadingMore = false;
     if (state !== view) return;
     populateSetFilter();
-    if (!await ensureScryfallSyntaxSearch()) {
-      await ensureCatalogOracleMatches();
-    }
-    applyFilters();
+    applyFiltersSync({ allowPendingOracle: true });
+    view.loaded = true;
+    setCatalogPhase('rendered');
+    void refreshActiveRemoteFilters(view);
     requestAnimationFrame(() => setTimeout(() => void initializeCatalogWorker(), 0));
     const selectedId = new URLSearchParams(location.search).get('card');
     const selected = view.cards.find((card) => card.id === selectedId);
-    if (selected) { await hydrateCatalogCards([selected]); openCard(selected, { pushHistory: false, initial: true }); }
+    if (selected) {
+      void hydrateCatalogCards([selected]).then(() => {
+        if (state === view && view.loadToken === token) openCard(selected, { pushHistory: false, initial: true });
+      });
+    }
   } catch (error) {
     if (token !== view.loadToken || state !== view) return;
     console.error('Falha ao carregar a Lista de cartas.', error);
+    setCatalogPhase('error');
     view.cards = []; view.filtered = []; view.loaded = false; render(); $('errorState').hidden = false;
   } finally {
     if (token === view.loadToken && state === view) {
       $('loadingState').hidden = true; $('cardGrid').setAttribute('aria-busy', 'false');
+      if (view.loaded) setCatalogPhase('ready');
     }
   }
 }
@@ -3265,7 +3360,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   updateDeckBuilderFab();
   const cardsPromise = state.tab === 'catalog' && !pageMode.builderPage ? Promise.resolve() : loadCards();
   if (state.tab === 'catalog' && !pageMode.builderPage) void loadCatalog();
-  if (isScryfallSyntaxSearch(state.query)) void ensureScryfallSyntaxSearch();
+  else if (isScryfallSyntaxSearch(state.query)) void cardsPromise.then(() => refreshActiveRemoteFilters(state));
   loadBackground();
   if (pageMode.builderPage) {
     await cardsPromise.catch(() => null);
