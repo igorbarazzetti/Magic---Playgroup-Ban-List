@@ -66,6 +66,7 @@ jobs:
           LIGAMAGIC_BLOCK_COOLDOWN_MS: "21600000"
           LIGAMAGIC_MAINTENANCE_INTERVAL_MS: "43200000"
           LIGAMAGIC_MAINTENANCE_LIMIT: "100"
+          FORMATINHO_PUBLISHED_DECKS_URL: "https://formatinho.igorb.com.br/api/decks/price-priority"
           BATCH_SIZE: ${{ inputs.batch_size || 300 }}
           PRIORITY_CARD: ${{ inputs.priority_card || '' }}
           FORCE_ARG: ${{ inputs.force && '--force' || '' }}

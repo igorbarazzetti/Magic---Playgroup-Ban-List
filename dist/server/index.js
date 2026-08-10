@@ -19,11 +19,12 @@ const OFFICIAL_FORMATS = [
   "pauper",
 ];
 
-const json = (body, status = 200) => new Response(JSON.stringify(body), {
+const json = (body, status = 200, extraHeaders = {}) => new Response(JSON.stringify(body), {
   status,
   headers: {
     "content-type": "application/json; charset=utf-8",
     "cache-control": "no-store",
+    ...extraHeaders,
   },
 });
 
@@ -203,6 +204,41 @@ async function listDecks(env) {
   const result = await env.DB.prepare(`SELECT id, name, pilot, format, card_count, unique_count,
     cover_name, cover_image, is_valid, created_at FROM validated_decks ORDER BY created_at DESC LIMIT 250`).all();
   return json({ decks: (result.results || []).map((row) => publicDeck(row)) });
+}
+
+async function listDeckPricePriorities(env) {
+  await ensureDeckSchema(env.DB);
+  const result = await env.DB.prepare(`SELECT deck_json, created_at
+    FROM validated_decks ORDER BY created_at DESC LIMIT 1000`).all();
+  const latestPublicationByName = new Map();
+
+  for (const row of result.results || []) {
+    let entries = [];
+    try {
+      entries = JSON.parse(row.deck_json);
+    } catch {
+      continue;
+    }
+
+    for (const entry of Array.isArray(entries) ? entries : []) {
+      if (Number(entry?.quantity || 0) <= 0) continue;
+      const name = cleanText(entry?.name, 160).split(/\s*\/\/\s*/, 1)[0].trim();
+      const key = normalizeName(name);
+      if (!key) continue;
+      const previous = latestPublicationByName.get(key);
+      if (!previous || String(row.created_at) > previous[1]) {
+        latestPublicationByName.set(key, [name, row.created_at]);
+      }
+    }
+  }
+
+  const cards = [...latestPublicationByName.values()]
+    .sort((left, right) => String(right[1]).localeCompare(String(left[1])) || left[0].localeCompare(right[0], "en"));
+  return json({
+    generated_at: new Date().toISOString(),
+    deck_count: (result.results || []).length,
+    cards,
+  }, 200, { "cache-control": "public, max-age=60, stale-while-revalidate=300" });
 }
 
 async function getDeck(env, id) {
@@ -415,6 +451,11 @@ const worker = {
       if (url.pathname === "/api/decks") {
         if (request.method === "GET") return listDecks(env);
         if (request.method === "POST") return createDeck(request, env);
+        return json({ error: "Método não permitido." }, 405);
+      }
+
+      if (url.pathname === "/api/decks/price-priority") {
+        if (request.method === "GET") return listDeckPricePriorities(env);
         return json({ error: "Método não permitido." }, 405);
       }
 

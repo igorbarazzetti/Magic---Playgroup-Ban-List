@@ -4,10 +4,13 @@ import assert from 'node:assert/strict';
 import {
   extractCheapestNormalPrinting,
   extractLigaMagicResultUrl,
+  fetchPublishedDeckPriorities,
   isDeterministicFailure,
   ligaMagicLookupName,
   ligaMagicUrl,
+  prependPublishedDeckPriorities,
   priceTuple,
+  publishedDeckPriorityCards,
   requestDelayMs,
   selectPriorityCard,
   scryfallPriceCents,
@@ -112,6 +115,64 @@ test('permite priorizar uma carta pelo nome exato ou pela face principal', () =>
   assert.equal(selectPriorityCard(targets, 'colossus hammer')?.oracleId, 'hammer');
   assert.equal(selectPriorityCard(targets, 'Delver of Secrets')?.oracleId, 'delver');
   assert.equal(selectPriorityCard(targets, 'Carta inventada'), null);
+});
+
+test('prioriza preços ausentes ou anteriores à publicação sem inventar correspondências', () => {
+  const targets = [
+    { oracleId: 'delver', name: 'Delver of Secrets // Insectile Aberration' },
+    { oracleId: 'hammer', name: 'Colossus Hammer' },
+    { oracleId: 'forest', name: 'Forest' },
+  ];
+  const prices = {
+    hammer: [400, 'a', Math.floor(Date.parse('2026-08-10T13:00:00.000Z') / 1000)],
+  };
+  const cards = [
+    ['Delver of Secrets', '2026-08-10T12:00:00.000Z'],
+    ['Colossus Hammer', '2026-08-10T12:00:00.000Z'],
+    ['Forest', '2026-08-10T12:00:00.000Z'],
+    ['Delver of Secret', '2026-08-10T14:00:00.000Z'],
+  ];
+
+  assert.deepEqual(publishedDeckPriorityCards(targets, prices, cards), [
+    { oracleId: 'delver', name: 'Delver of Secrets // Insectile Aberration' },
+  ]);
+});
+
+test('cartas de decks publicados entram na frente sem aumentar nem duplicar o lote', () => {
+  const regular = {
+    mode: 'bootstrap', missing: 3,
+    cards: [
+      { oracleId: 'a', name: 'Alpha' },
+      { oracleId: 'b', name: 'Beta' },
+      { oracleId: 'c', name: 'Gamma' },
+    ],
+  };
+  const priority = [
+    { oracleId: 'c', name: 'Gamma' },
+    { oracleId: 'p', name: 'Priority' },
+  ];
+  const selection = prependPublishedDeckPriorities(regular, priority, 3);
+  assert.equal(selection.priorityCount, 2);
+  assert.deepEqual(selection.cards.map((card) => card.oracleId), ['c', 'p', 'a']);
+});
+
+test('a prioridade publicada reserva parte do lote para a cobertura normal', () => {
+  const regular = {
+    mode: 'bootstrap', missing: 2,
+    cards: [{ oracleId: 'a', name: 'Alpha' }, { oracleId: 'b', name: 'Beta' }],
+  };
+  const priority = Array.from({ length: 10 }, (_, index) => ({ oracleId: `p${index}`, name: `Priority ${index}` }));
+  const selection = prependPublishedDeckPriorities(regular, priority, 5);
+  assert.equal(selection.priorityCount, 4);
+  assert.deepEqual(selection.cards.map((card) => card.oracleId), ['p0', 'p1', 'p2', 'p3', 'a']);
+});
+
+test('falha ao consultar decks publicados preserva a fila normal', async () => {
+  const priorities = await fetchPublishedDeckPriorities('https://formatinho.test/api/decks/price-priority', async () => {
+    throw new Error('offline');
+  });
+  assert.deepEqual(priorities, []);
+  assert.equal(selectBatch([{ oracleId: 'a', name: 'Alpha' }], {}, 1).cards[0].oracleId, 'a');
 });
 
 test('mescla lotes concorrentes sem apagar um preço prioritário', () => {

@@ -23,6 +23,7 @@ const defaultDelayMs = Math.max(10_000, Number(process.env.LIGAMAGIC_REQUEST_DEL
 const maximumDelayMs = Math.max(defaultDelayMs, Number(process.env.LIGAMAGIC_REQUEST_DELAY_MAX_MS || 12_000));
 const maximumRunMs = Math.max(60_000, Number(process.env.LIGAMAGIC_MAX_RUN_MS || 50 * 60 * 1000));
 const blockCooldownMs = Math.max(60 * 60 * 1000, Number(process.env.LIGAMAGIC_BLOCK_COOLDOWN_MS || 6 * 60 * 60 * 1000));
+const publishedDecksUrl = process.env.FORMATINHO_PUBLISHED_DECKS_URL || 'https://formatinho.igorb.com.br/api/decks/price-priority';
 const deterministicFailureLimit = 2;
 const bootstrapCardsPerDayEstimate = 6_000;
 const requestHeaders = {
@@ -428,6 +429,77 @@ export function selectPriorityCard(targets, cardName) {
   return targets.find((card) => normalizeName(card.name) === expected || normalizeName(ligaMagicLookupName(card.name)) === expected) || null;
 }
 
+const zeroCostBasicLandNames = new Set([
+  'plains', 'island', 'swamp', 'mountain', 'forest', 'wastes',
+  'snow covered plains', 'snow covered island', 'snow covered swamp',
+  'snow covered mountain', 'snow covered forest',
+]);
+
+export function publishedDeckPriorityCards(targets, prices, publishedCards) {
+  const targetByName = new Map();
+  for (const target of targets) {
+    targetByName.set(normalizeName(target.name), target);
+    targetByName.set(normalizeName(ligaMagicLookupName(target.name)), target);
+  }
+
+  const priorities = new Map();
+  for (const value of Array.isArray(publishedCards) ? publishedCards : []) {
+    const name = Array.isArray(value) ? value[0] : value?.name;
+    const publishedAt = Array.isArray(value) ? value[1] : value?.published_at;
+    const normalized = normalizeName(ligaMagicLookupName(name));
+    if (!normalized || zeroCostBasicLandNames.has(normalized)) continue;
+    const target = targetByName.get(normalized);
+    if (!target) continue;
+    const publicationMilliseconds = Date.parse(publishedAt || '');
+    if (!Number.isFinite(publicationMilliseconds)) continue;
+    const publicationSeconds = Math.ceil(publicationMilliseconds / 1000);
+    const checkedAt = Number(prices[target.oracleId]?.[priceTuple.checkedAt] || 0);
+    if (checkedAt >= publicationSeconds) continue;
+    const previous = priorities.get(target.oracleId);
+    if (!previous || publicationSeconds > previous.publicationSeconds) {
+      priorities.set(target.oracleId, { ...target, publicationSeconds });
+    }
+  }
+
+  return [...priorities.values()]
+    .sort((left, right) => right.publicationSeconds - left.publicationSeconds || normalizeName(left.name).localeCompare(normalizeName(right.name), 'pt-BR'))
+    .map(({ publicationSeconds: _publicationSeconds, ...card }) => card);
+}
+
+export function prependPublishedDeckPriorities(selection, priorityCards, limit) {
+  const cards = [];
+  const seen = new Set();
+  const regularCards = selection.cards || [];
+  const priorityLimit = regularCards.length && limit > 1 ? Math.max(1, Math.floor(limit * 0.8)) : limit;
+  const append = (card) => {
+    if (!card || seen.has(card.oracleId) || cards.length >= limit) return;
+    seen.add(card.oracleId);
+    cards.push(card);
+  };
+  for (const card of priorityCards) {
+    if (cards.length >= priorityLimit) break;
+    append(card);
+  }
+  const priorityCount = cards.length;
+  for (const card of regularCards) append(card);
+  return { ...selection, cards, priorityCount };
+}
+
+export async function fetchPublishedDeckPriorities(url = publishedDecksUrl, fetchImpl = fetch) {
+  try {
+    const response = await fetchImpl(url, {
+      headers: jsonHeaders,
+      signal: AbortSignal.timeout(10_000),
+    });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const payload = await response.json();
+    return Array.isArray(payload?.cards) ? payload.cards : [];
+  } catch (error) {
+    console.warn(`Prioridade dos decks publicados indisponível; a fila normal será mantida (${error instanceof Error ? error.message : 'falha desconhecida'}).`);
+    return [];
+  }
+}
+
 export function requestDelayMs(random = Math.random) {
   const sample = Math.max(0, Math.min(1, Number(random()) || 0));
   return Math.round(defaultDelayMs + sample * (maximumDelayMs - defaultDelayMs));
@@ -504,20 +576,29 @@ async function main() {
   await removeBlockedPlaceholders(priceIndex, legacyBook, shards);
   const targets = targetCards(catalog);
   let selection = selectBatch(targets, priceIndex.prices, options.limit);
-  if (options.cardName) {
-    const priorityCard = selectPriorityCard(targets, options.cardName);
-    if (!priorityCard) throw new Error(`Carta prioritária não encontrada no catálogo: ${options.cardName}`);
-    selection = { mode: 'priority', cards: [priorityCard], missing: selection.missing };
-  } else if (selection.mode === 'maintenance') {
+  if (selection.mode === 'maintenance') {
     selection = selectBatch(targets, priceIndex.prices, Math.min(options.limit, maintenanceLimit));
   }
   const lastBatchAt = Date.parse(priceIndex.last_batch_at || '');
   const maintenanceDue = options.force || !Number.isFinite(lastBatchAt) || Date.now() - lastBatchAt >= maintenanceIntervalMs;
+  if (options.cardName) {
+    const priorityCard = selectPriorityCard(targets, options.cardName);
+    if (!priorityCard) throw new Error(`Carta prioritária não encontrada no catálogo: ${options.cardName}`);
+    selection = { mode: 'priority', cards: [priorityCard], missing: selection.missing, priorityCount: 1 };
+  } else if (!options.prepareOnly) {
+    const publishedCards = await fetchPublishedDeckPriorities();
+    const priorityCards = publishedDeckPriorityCards(targets, priceIndex.prices, publishedCards);
+    const regularSelection = selection.mode === 'maintenance' && !maintenanceDue
+      ? { ...selection, cards: [] }
+      : selection;
+    selection = prependPublishedDeckPriorities(regularSelection, priorityCards, options.limit);
+  }
+  selection.priorityCount ||= 0;
   const cooldownUntil = Date.parse(priceIndex.cooldown_until || '');
   const cooldownActive = !options.force && Number.isFinite(cooldownUntil) && Date.now() < cooldownUntil;
 
   if (options.dryRun) {
-    console.log(JSON.stringify({ mode: selection.mode, selected: selection.cards.length, missing: selection.missing, target_count: targets.length, maintenance_due: maintenanceDue, cooldown_active: cooldownActive, max_run_minutes: maximumRunMs / 60_000, delay_ms: [defaultDelayMs, maximumDelayMs] }, null, 2));
+    console.log(JSON.stringify({ mode: selection.mode, selected: selection.cards.length, published_deck_priority: selection.priorityCount, missing: selection.missing, target_count: targets.length, maintenance_due: maintenanceDue, cooldown_active: cooldownActive, max_run_minutes: maximumRunMs / 60_000, delay_ms: [defaultDelayMs, maximumDelayMs] }, null, 2));
     return;
   }
 
@@ -538,7 +619,7 @@ async function main() {
   }
   if (priceIndex.cooldown_until) priceIndex.cooldown_until = null;
 
-  if (selection.mode === 'maintenance' && !maintenanceDue) {
+  if (selection.mode === 'maintenance' && !maintenanceDue && selection.priorityCount === 0) {
     console.log(`A manutenção ainda está dentro da janela de ${Math.round(maintenanceIntervalMs / 3_600_000)} horas; nenhum lote foi iniciado.`);
     if (JSON.stringify(catalog) !== JSON.stringify(previousCatalog)) await writeJson(catalogPath, catalog);
     return;
@@ -559,6 +640,7 @@ async function main() {
   let processed = 0;
   let requested = 0;
   let stateChanged = false;
+  if (selection.priorityCount) console.log(`${selection.priorityCount} cartas de decks publicados foram antecipadas neste lote.`);
   console.log(`Modo ${selection.mode}: consultando até ${selection.cards.length} cartas por no máximo ${Math.round(maximumRunMs / 60_000)} minutos, com intervalo de ${defaultDelayMs}–${maximumDelayMs} ms.`);
 
   for (const card of selection.cards) {

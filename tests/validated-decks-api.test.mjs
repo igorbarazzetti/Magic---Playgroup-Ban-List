@@ -2,8 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import worker from '../dist/server/index.js';
 
-function database(createdAt = '2026-08-08T10:00:00.000Z') {
-  const state = { createdAt, inserted: null, updated: null };
+function database(createdAt = '2026-08-08T10:00:00.000Z', priorityRows = []) {
+  const state = { createdAt, inserted: null, updated: null, priorityRows };
   return {
     state,
     async batch() {},
@@ -14,6 +14,10 @@ function database(createdAt = '2026-08-08T10:00:00.000Z') {
         async first() {
           if (sql.includes('SELECT created_at')) return { created_at: state.createdAt };
           return null;
+        },
+        async all() {
+          if (sql.includes('SELECT deck_json, created_at')) return { results: state.priorityRows };
+          return { results: [] };
         },
         async run() {
           if (sql.includes('INSERT INTO validated_decks')) {
@@ -141,4 +145,34 @@ test('public deck editing rejects a stale version instead of overwriting it', as
     assert.equal(response.status, 409);
     assert.match((await response.json()).error, /alterado por outra pessoa/i);
   } finally { globalThis.fetch = originalFetch; }
+});
+
+test('published decks expose a compact deduplicated price-priority list', async () => {
+  const db = database('2026-08-08T10:00:00.000Z', [
+    {
+      created_at: '2026-08-10T12:00:00.000Z',
+      deck_json: JSON.stringify([
+        { name: 'Delver of Secrets // Insectile Aberration', quantity: 4, section: 'main' },
+        { name: 'Island', quantity: 18, section: 'main' },
+      ]),
+    },
+    {
+      created_at: '2026-08-09T12:00:00.000Z',
+      deck_json: JSON.stringify([
+        { name: 'Delver of Secrets // Insectile Aberration', quantity: 2, section: 'sideboard' },
+        { name: 'Colossus Hammer', quantity: 4, section: 'main' },
+      ]),
+    },
+  ]);
+
+  const response = await worker.fetch(new Request('https://formatinho.test/api/decks/price-priority'), { DB: db });
+  const payload = await response.json();
+  assert.equal(response.status, 200);
+  assert.equal(response.headers.get('cache-control'), 'public, max-age=60, stale-while-revalidate=300');
+  assert.equal(payload.deck_count, 2);
+  assert.deepEqual(payload.cards, [
+    ['Delver of Secrets', '2026-08-10T12:00:00.000Z'],
+    ['Island', '2026-08-10T12:00:00.000Z'],
+    ['Colossus Hammer', '2026-08-09T12:00:00.000Z'],
+  ]);
 });
