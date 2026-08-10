@@ -58,7 +58,12 @@
         </span>
       </a>
       <div class="header-actions">
-        <a class="header-decks-link" href="?page=decks&rev=28" aria-label="Abrir decks validados"><span aria-hidden="true">◇</span><span>Decks validados</span></a>
+        <nav class="desktop-nav" aria-label="Menu principal">
+          <a class="desktop-nav__item" href="/deckbuilder"><span aria-hidden="true">▱</span><span>Deck Builder</span><b id="desktopDeckCount">0</b></a>
+          <button class="desktop-nav__item" id="desktopValidator" type="button"><span aria-hidden="true">✓</span><span>Valide seu deck</span></button>
+          <a class="desktop-nav__item" href="/?page=decks&rev=30"><span aria-hidden="true">◇</span><span>Decks validados</span></a>
+          <button class="desktop-nav__item" id="desktopInstallApp" type="button"><span aria-hidden="true">↓</span><span id="desktopInstallLabel">Instalar app</span></button>
+        </nav>
         <span class="fanmade-mark"><i aria-hidden="true"></i> Fanmade</span>
         <button class="icon-button" id="shareButton" type="button" aria-label="Compartilhar esta seleção" title="Copiar link desta seleção">
           <span aria-hidden="true">↗</span><span class="icon-button__label">Compartilhar</span>
@@ -185,6 +190,7 @@
           <div class="deck-save-form__heading"><strong>Como este deck será conhecido?</strong><span>O nome ficará público no arquivo do playgroup. O piloto é opcional.</span></div>
           <label for="deckBuilderSaveName">Nome do deck<input id="deckBuilderSaveName" name="name" maxlength="80" required placeholder="Ex.: Elfos da Lathril" autocomplete="off" /></label>
           <label for="deckBuilderSavePilot">Piloto<input id="deckBuilderSavePilot" name="pilot" maxlength="60" placeholder="Seu nome ou apelido" autocomplete="name" /></label>
+          <fieldset class="deck-cover-picker" id="deckBuilderCoverPicker"><legend>Carta em destaque</legend></fieldset>
           <div class="deck-save-form__actions"><button type="submit">Selar no arquivo</button><button type="button" id="deckBuilderSaveCancel">Cancelar</button></div>
         </form>
 

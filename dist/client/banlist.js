@@ -1888,6 +1888,13 @@ function renderDeckValidation({ entries, format, cards, partial = false }) {
   const { groups, issueCount, issueCopies, valid, formatInfo } = evaluation;
   const totalCopies = entries.reduce((total, entry) => total + entry.quantity, 0);
   const coverCard = entries.map((entry) => cards.get(entry.key) || localBannedCard(entry, format)).find(Boolean) || null;
+  const coverOptions = entries.map((entry) => {
+    const card = cards.get(entry.key) || localBannedCard(entry, format);
+    return {
+      name: card?.name || entry.name,
+      image: card?.image_uris?.art_crop || card?.image_uris?.normal || card?.card_faces?.[0]?.image_uris?.art_crop || card?.card_faces?.[0]?.image_uris?.normal || '',
+    };
+  });
   pendingValidatedDeck = valid ? {
     entries: entries.map(({ name, quantity }) => ({ name, quantity })),
     format,
@@ -1895,6 +1902,7 @@ function renderDeckValidation({ entries, format, cards, partial = false }) {
     uniqueCount: entries.length,
     coverName: coverCard?.name || entries[0]?.name || '',
     coverImage: coverCard?.image_uris?.art_crop || coverCard?.image_uris?.normal || coverCard?.card_faces?.[0]?.image_uris?.art_crop || '',
+    coverOptions,
   } : null;
   const result = $('deckValidationResult');
   const statusClass = partial ? 'partial' : valid ? 'valid' : 'invalid';
@@ -1963,6 +1971,32 @@ function closeDeckValidator() {
   state.deckLastFocus?.focus?.({ preventScroll: true });
 }
 
+function deckCoverPickerContents(deck, selectedName = '', pickerId = 'deck-cover') {
+  const seen = new Set();
+  const options = (deck?.coverOptions || deck?.entries || []).map((option) => ({
+    name: option?.name || '',
+    image: option?.image || '',
+  })).filter((option) => {
+    const key = normalizeDeckName(option.name);
+    if (!key || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+  const selectedKey = normalizeDeckName(selectedName || deck?.coverName || options[0]?.name || '');
+  return `<legend>Carta em destaque</legend><span class="deck-cover-picker__hint">Escolha a arte que representa o deck no arquivo.</span><div class="deck-cover-picker__options">${options.map((option, index) => {
+    const id = `${pickerId}-${index}-${normalizeDeckName(option.name).replace(/\s+/g, '-').slice(0, 28)}`;
+    const checked = normalizeDeckName(option.name) === selectedKey ? ' checked' : '';
+    const image = option.image
+      ? `<img src="${escapeHtml(option.image)}" alt="" loading="lazy" decoding="async" />`
+      : '<span class="deck-cover-picker__placeholder" aria-hidden="true">✦</span>';
+    return `<input id="${escapeHtml(id)}" type="radio" name="cover_name" value="${escapeHtml(option.name)}"${checked} /><label for="${escapeHtml(id)}">${image}<strong>${escapeHtml(option.name)}</strong></label>`;
+  }).join('')}</div>`;
+}
+
+function renderDeckCoverPicker(target, deck, selectedName = '') {
+  if (target) target.innerHTML = deckCoverPickerContents(deck, selectedName, target.id || 'deck-cover');
+}
+
 function renderDeckSaveForm() {
   if (!pendingValidatedDeck) return;
   const prompt = $('deckValidationResult').querySelector('.deck-save-prompt');
@@ -1972,6 +2006,7 @@ function renderDeckSaveForm() {
       <div class="deck-save-form__heading"><strong>Como este deck será conhecido?</strong><span>O nome ficará público no arquivo do playgroup. O piloto é opcional.</span></div>
       <label for="deckSaveName">Nome do deck<input id="deckSaveName" name="name" maxlength="80" required placeholder="Ex.: Elfos da Lathril" autocomplete="off" /></label>
       <label for="deckSavePilot">Piloto<input id="deckSavePilot" name="pilot" maxlength="60" placeholder="Seu nome ou apelido" autocomplete="name" /></label>
+      <fieldset class="deck-cover-picker">${deckCoverPickerContents(pendingValidatedDeck, '', 'validator-cover')}</fieldset>
       <div class="deck-save-form__actions"><button type="submit">Selar no arquivo</button><button type="button" data-save-deck-cancel>Cancelar</button></div>
     </form>`;
   $('deckSaveName')?.focus();
@@ -1982,13 +2017,15 @@ async function saveValidatedDeck(event) {
   if (!pendingValidatedDeck) return;
   const form = event.target;
   const submit = form.querySelector('button[type="submit"]');
-  const name = String(new FormData(form).get('name') || '').trim();
-  const pilot = String(new FormData(form).get('pilot') || '').trim();
+  const data = new FormData(form);
+  const name = String(data.get('name') || '').trim();
+  const pilot = String(data.get('pilot') || '').trim();
+  const coverName = String(data.get('cover_name') || '').trim();
   if (!name) { $('deckSaveName')?.focus(); return; }
   submit.disabled = true;
   submit.textContent = 'Conferindo e salvando…';
   try {
-    await persistValidatedDeck(pendingValidatedDeck, { name, pilot });
+    await persistValidatedDeck(pendingValidatedDeck, { name, pilot, coverName });
     pendingValidatedDeck = null;
     form.outerHTML = '<div class="deck-save-success"><span aria-hidden="true">✓</span><div><strong>Deck selado no arquivo.</strong><a href="?page=decks&rev=28">Ver em Decks validados →</a></div></div>';
     showToast('Deck salvo no arquivo do playgroup');
@@ -1999,11 +2036,11 @@ async function saveValidatedDeck(event) {
   }
 }
 
-async function persistValidatedDeck(deck, { name, pilot = '' }) {
+async function persistValidatedDeck(deck, { name, pilot = '', coverName = '' }) {
   const response = await fetch('/api/decks', {
     method: 'POST',
     headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
-    body: JSON.stringify({ name, pilot, format: deck.format, entries: deck.entries, valid: deck.valid !== false }),
+    body: JSON.stringify({ name, pilot, format: deck.format, entries: deck.entries, cover_name: coverName, valid: deck.valid !== false }),
   });
   const payload = await response.json().catch(() => ({}));
   if (!response.ok) throw new Error(payload.error || 'Não foi possível salvar o deck.');
@@ -2015,17 +2052,17 @@ async function persistValidatedDeck(deck, { name, pilot = '' }) {
   return saved;
 }
 
-async function updateValidatedDeck(deck, { name, pilot = '' }) {
+async function updateValidatedDeck(deck, { name, pilot = '', coverName = '' }) {
   if (!deckBuilderEdit?.id) throw new Error('Nenhum deck está em edição.');
   const response = await fetch(`/api/decks/${encodeURIComponent(deckBuilderEdit.id)}`, {
     method: 'PUT',
     headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
-    body: JSON.stringify({ name, pilot, format: deck.format, entries: deck.entries, valid: deck.valid !== false, base_updated_at: deckBuilderEdit.baseUpdatedAt }),
+    body: JSON.stringify({ name, pilot, format: deck.format, entries: deck.entries, cover_name: coverName, valid: deck.valid !== false, base_updated_at: deckBuilderEdit.baseUpdatedAt }),
   });
   const payload = await response.json().catch(() => ({}));
   if (!response.ok) throw new Error(payload.error || 'Não foi possível atualizar o deck.');
   const saved = { ...payload.deck, entries: payload.deck?.entries || deck.entries };
-  deckBuilderEdit = { id: saved.id, name: saved.name, pilot: saved.pilot || '', format: saved.format, baseUpdatedAt: saved.created_at, draftVersion: 2 };
+  deckBuilderEdit = { id: saved.id, name: saved.name, pilot: saved.pilot || '', format: saved.format, coverName: saved.cover_name || '', baseUpdatedAt: saved.created_at, draftVersion: 2 };
   persistDeckBuilderEdit();
   savedDeckCache.set(saved.id, saved);
   validatedDecks = [saved, ...validatedDecks.filter((item) => item.id !== saved.id)];
@@ -2258,6 +2295,7 @@ async function editCurrentSavedDeck() {
       name: currentSavedDeck.name,
       pilot: currentSavedDeck.pilot || '',
       format: currentSavedDeck.format,
+      coverName: currentSavedDeck.cover_name || '',
       baseUpdatedAt: currentSavedDeck.created_at,
       draftVersion: 2,
     };
@@ -2367,6 +2405,7 @@ function updateDeckBuilderFab() {
   fab.classList.toggle('is-complete', total >= 60);
   $('deckBuilderFabCount').textContent = total > 999 ? '999+' : String(total);
   if ($('mobileMenuDeckCount')) $('mobileMenuDeckCount').textContent = total > 999 ? '999+' : String(total);
+  if ($('desktopDeckCount')) $('desktopDeckCount').textContent = total > 999 ? '999+' : String(total);
   fab.setAttribute('aria-label', `Abrir Deck Builder com ${total} ${total === 1 ? 'carta' : 'cartas'} no Main Deck`);
 }
 
@@ -2589,6 +2628,14 @@ async function validateDeckBuilder() {
     const allEntries = deckBuilderAllEntries();
     const coverEntry = deckBuilderZoneEntries('main')[0] || allEntries[0];
     const coverCard = coverEntry ? deckBuilderCard(coverEntry) : null;
+    const coverOptions = allEntries.map((entry) => {
+      const card = deckBuilderCard(entry);
+      return {
+        name: card?.name || entry.name,
+        image: card?.image_uris?.art_crop || card?.image_uris?.normal || card?.card_faces?.[0]?.image_uris?.art_crop || card?.card_faces?.[0]?.image_uris?.normal || entry.image || '',
+      };
+    });
+    const preferredCover = coverOptions.find((option) => normalizeDeckName(option.name) === normalizeDeckName(deckBuilderEdit?.coverName || ''));
     deckBuilderValidation = {
       valid, reasons: valid ? [] : reasons, mainCount, pricing, legality,
       pending: {
@@ -2599,8 +2646,10 @@ async function validateDeckBuilder() {
         uniqueCount: entries.length,
         coverName: coverCard?.name || coverEntry?.name || '',
         coverImage: coverCard?.image_uris?.art_crop || coverCard?.image_uris?.normal || coverEntry?.image || '',
+        coverOptions,
       },
     };
+    if (preferredCover) deckBuilderValidation.pending.coverName = preferredCover.name;
     renderDeckBuilder();
   } catch {
     if (token !== deckBuilderValidationToken) return;
@@ -2652,14 +2701,15 @@ async function saveDeckBuilder(event) {
   const data = new FormData(form);
   const name = String(data.get('name') || '').trim();
   const pilot = String(data.get('pilot') || '').trim();
+  const coverName = String(data.get('cover_name') || '').trim();
   if (!name) { $('deckBuilderSaveName').focus(); return; }
   const submit = form.querySelector('button[type="submit"]');
   submit.disabled = true;
   submit.textContent = 'Conferindo e salvando…';
   try {
     const saved = deckBuilderEdit
-      ? await updateValidatedDeck(deckBuilderValidation.pending, { name, pilot })
-      : await persistValidatedDeck(deckBuilderValidation.pending, { name, pilot });
+      ? await updateValidatedDeck(deckBuilderValidation.pending, { name, pilot, coverName })
+      : await persistValidatedDeck(deckBuilderValidation.pending, { name, pilot, coverName });
     form.hidden = true;
     form.reset();
     const success = document.createElement('div');
@@ -2670,6 +2720,7 @@ async function saveDeckBuilder(event) {
     if (deckBuilderEdit) {
       deckBuilderEdit.name = saved.name;
       deckBuilderEdit.pilot = saved.pilot || '';
+      deckBuilderEdit.coverName = saved.cover_name || '';
       deckBuilderEdit.baseUpdatedAt = saved.created_at;
       persistDeckBuilderEdit();
     }
@@ -2708,8 +2759,10 @@ async function installFormatinhoApp() {
   const help = $('installAppHelp');
   if (isInstalledWebApp()) {
     $('installAppHint').textContent = 'O Formatinho já está instalado';
+    if ($('desktopInstallLabel')) $('desktopInstallLabel').textContent = 'App instalado';
     help.hidden = false;
     $('installAppInstructions').textContent = 'Este aparelho já está usando o Formatinho como web app.';
+    if (!$('mobileMenu')?.open) showToast('O Formatinho já está instalado neste aparelho');
     return;
   }
   if (deferredInstallPrompt) {
@@ -2723,6 +2776,7 @@ async function installFormatinhoApp() {
   $('installAppInstructions').textContent = isIos
     ? 'No Safari, toque em Compartilhar e depois em “Adicionar à Tela de Início”.'
     : 'Abra o menu do navegador e escolha “Adicionar à tela inicial” ou “Instalar aplicativo”.';
+  if (!$('mobileMenu')?.open) showToast(isIos ? 'Use Compartilhar e Adicionar à Tela de Início' : 'Use o menu do navegador e escolha Instalar aplicativo');
 }
 
 async function shareCurrentPage() {
@@ -2789,14 +2843,18 @@ function bind() {
   $('mobileMenuValidator').addEventListener('click', () => { closeMobileMenu({ restoreFocus: false }); openDeckValidator(); });
   $('installAppButton').addEventListener('click', installFormatinhoApp);
   $('mobileMenuShare').addEventListener('click', shareCurrentPage);
+  $('desktopValidator')?.addEventListener('click', openDeckValidator);
+  $('desktopInstallApp')?.addEventListener('click', installFormatinhoApp);
   addEventListener('beforeinstallprompt', (event) => {
     event.preventDefault();
     deferredInstallPrompt = event;
     $('installAppHint').textContent = 'Instale com um toque neste aparelho';
+    if ($('desktopInstallLabel')) $('desktopInstallLabel').textContent = 'Instalar app';
   });
   addEventListener('appinstalled', () => {
     deferredInstallPrompt = null;
     $('installAppHint').textContent = 'Instalado na tela inicial';
+    if ($('desktopInstallLabel')) $('desktopInstallLabel').textContent = 'App instalado';
     $('installAppHelp').hidden = true;
   });
 
@@ -2983,6 +3041,7 @@ function bind() {
     if (!deckBuilderValidation?.pending) return;
     document.querySelector('.deck-builder-save-success')?.remove();
     $('deckBuilderSaveForm').hidden = false;
+    renderDeckCoverPicker($('deckBuilderCoverPicker'), deckBuilderValidation.pending, deckBuilderEdit?.coverName || deckBuilderValidation.pending.coverName);
     if (deckBuilderEdit) {
       $('deckBuilderSaveName').value = deckBuilderEdit.name || '';
       $('deckBuilderSavePilot').value = deckBuilderEdit.pilot || '';

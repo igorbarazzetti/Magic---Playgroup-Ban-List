@@ -199,6 +199,24 @@ function validateCards(entries, format, cardsByName) {
   return issues;
 }
 
+function resolveDeckCover(canonicalEntries, cardsByName, requestedName = "") {
+  const requestedKey = normalizeName(requestedName);
+  const requestedEntry = requestedKey
+    ? canonicalEntries.find((entry) => normalizeName(entry.name) === requestedKey)
+    : null;
+  if (requestedKey && !requestedEntry) return null;
+  const candidates = [
+    requestedEntry,
+    ...canonicalEntries.filter((entry) => entry.section !== "sideboard"),
+    ...canonicalEntries,
+  ].filter(Boolean);
+  for (const entry of candidates) {
+    const card = cardsByName.get(normalizeName(entry.name));
+    if (card) return { entry, card };
+  }
+  return { entry: requestedEntry || candidates[0] || canonicalEntries[0], card: null };
+}
+
 async function listDecks(env) {
   await ensureDeckSchema(env.DB);
   const result = await env.DB.prepare(`SELECT id, name, pilot, format, card_count, unique_count,
@@ -261,6 +279,7 @@ async function createDeck(request, env) {
   const name = cleanText(body?.name, 80);
   const pilot = cleanText(body?.pilot, 60);
   const format = cleanText(body?.format, 20).toLowerCase();
+  const requestedCoverName = cleanText(body?.cover_name, 160);
   if (!name) return json({ error: "Dê um nome ao deck." }, 400);
   if (!VALID_FORMATS.has(format)) return json({ error: "Formato inválido." }, 400);
   if (!Array.isArray(body?.entries) || body.entries.length < 1 || body.entries.length > 300) {
@@ -301,9 +320,10 @@ async function createDeck(request, env) {
     const card = cardsByName.get(normalizeName(entry.name));
     return { name: card?.name || entry.name, quantity: entry.quantity, section: entry.section };
   });
-  const coverCard = [...canonicalEntries.filter((entry) => entry.section !== "sideboard"), ...canonicalEntries]
-    .map((entry) => cardsByName.get(normalizeName(entry.name)))
-    .find(Boolean);
+  const cover = resolveDeckCover(canonicalEntries, cardsByName, requestedCoverName);
+  if (!cover) return json({ error: "A carta de destaque precisa fazer parte do deck." }, 400);
+  const coverCard = cover.card;
+  const coverName = cover.entry?.name || canonicalEntries[0]?.name || "";
   const coverImage = coverCard?.image_uris?.art_crop
     || coverCard?.image_uris?.normal
     || coverCard?.card_faces?.[0]?.image_uris?.art_crop
@@ -324,7 +344,7 @@ async function createDeck(request, env) {
       JSON.stringify(canonicalEntries),
       cardCount,
       canonicalEntries.length,
-      coverCard?.name || canonicalEntries[0]?.name || "",
+      coverName,
       coverImage,
       isValid ? 1 : 0,
       createdAt,
@@ -340,7 +360,7 @@ async function createDeck(request, env) {
       entries: canonicalEntries,
       card_count: cardCount,
       unique_count: canonicalEntries.length,
-      cover_name: coverCard?.name || canonicalEntries[0]?.name || "",
+      cover_name: coverName,
       cover_image: coverImage,
       valid: isValid,
       created_at: createdAt,
@@ -357,6 +377,7 @@ async function updateDeck(request, env, id) {
   const name = cleanText(body?.name, 80);
   const pilot = cleanText(body?.pilot, 60);
   const format = cleanText(body?.format, 20).toLowerCase();
+  const requestedCoverName = cleanText(body?.cover_name, 160);
   const baseUpdatedAt = cleanText(body?.base_updated_at, 40);
   if (!name) return json({ error: "Dê um nome ao deck." }, 400);
   if (!baseUpdatedAt) return json({ error: "Reabra o deck antes de editar." }, 409);
@@ -389,8 +410,10 @@ async function updateDeck(request, env, id) {
     const card = cardsByName.get(normalizeName(entry.name));
     return { name: card?.name || entry.name, quantity: entry.quantity, section: entry.section };
   });
-  const coverCard = [...canonicalEntries.filter((entry) => entry.section !== "sideboard"), ...canonicalEntries]
-    .map((entry) => cardsByName.get(normalizeName(entry.name))).find(Boolean);
+  const cover = resolveDeckCover(canonicalEntries, cardsByName, requestedCoverName);
+  if (!cover) return json({ error: "A carta de destaque precisa fazer parte do deck." }, 400);
+  const coverCard = cover.card;
+  const coverName = cover.entry?.name || canonicalEntries[0]?.name || "";
   const coverImage = coverCard?.image_uris?.art_crop || coverCard?.image_uris?.normal || coverCard?.card_faces?.[0]?.image_uris?.art_crop || coverCard?.card_faces?.[0]?.image_uris?.normal || "";
   const updatedAt = new Date().toISOString();
 
@@ -403,13 +426,13 @@ async function updateDeck(request, env, id) {
     card_count = ?, unique_count = ?, cover_name = ?, cover_image = ?, is_valid = ?, created_at = ?
     WHERE id = ? AND created_at = ?`)
   .bind(name, pilot, format, JSON.stringify(canonicalEntries), cardCount, canonicalEntries.length,
-      coverCard?.name || canonicalEntries[0]?.name || "", coverImage, isValid ? 1 : 0, updatedAt, id, baseUpdatedAt)
+      coverName, coverImage, isValid ? 1 : 0, updatedAt, id, baseUpdatedAt)
     .run();
   if (!Number(result.meta?.changes || 0)) return json({ error: "Este deck mudou enquanto você editava. Reabra a versão mais recente." }, 409);
 
   return json({ deck: {
     id, name, pilot, format, entries: canonicalEntries, card_count: cardCount,
-    unique_count: canonicalEntries.length, cover_name: coverCard?.name || canonicalEntries[0]?.name || "",
+    unique_count: canonicalEntries.length, cover_name: coverName,
     cover_image: coverImage, valid: isValid, created_at: updatedAt,
   } });
 }
