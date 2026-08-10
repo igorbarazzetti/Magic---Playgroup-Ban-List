@@ -50,6 +50,13 @@ const bannedCard = {
   name: 'Black Lotus', set: 'lea', legalities: { vintage: 'restricted', legacy: 'banned' },
   image_uris: { art_crop: 'https://cards.example/lotus.jpg' },
 };
+const delver = {
+  name: 'Delver of Secrets // Insectile Aberration', set: 'isd', legalities: {},
+  card_faces: [
+    { name: 'Delver of Secrets', image_uris: { art_crop: 'https://cards.example/delver.jpg' } },
+    { name: 'Insectile Aberration', image_uris: { art_crop: 'https://cards.example/insectile.jpg' } },
+  ],
+};
 
 test('public deck editing revalidates and updates the existing deck', async () => {
   const db = database();
@@ -68,6 +75,37 @@ test('public deck editing revalidates and updates the existing deck', async () =
     assert.equal(response.status, 200);
     assert.equal((await response.json()).deck.name, 'Mono Green atualizado');
     assert.equal(db.state.updated.entries[0].quantity, 60);
+  } finally { globalThis.fetch = originalFetch; }
+});
+
+test('a double-faced card found by its front face remains valid when editing', async () => {
+  const db = database();
+  const originalFetch = globalThis.fetch;
+  globalThis.fetch = async (input) => {
+    const url = String(input);
+    if (url.includes('/cards/collection')) {
+      return new Response(JSON.stringify({ data: [], not_found: [{ name: delver.name }] }), { status: 200, headers: { 'content-type': 'application/json' } });
+    }
+    if (url.includes('/cards/named?fuzzy=Delver%20of%20Secrets')) {
+      return new Response(JSON.stringify(delver), { status: 200, headers: { 'content-type': 'application/json' } });
+    }
+    return new Response('{}', { status: 404, headers: { 'content-type': 'application/json' } });
+  };
+  try {
+    const response = await worker.fetch(new Request('https://formatinho.test/api/decks/deck-1', {
+      method: 'PUT',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({
+        name: 'Monoblue', format: 'formatinho', valid: true,
+        base_updated_at: '2026-08-08T10:00:00.000Z',
+        entries: [{ name: delver.name, quantity: 60, section: 'main' }],
+      }),
+    }), { DB: db });
+    const payload = await response.json();
+    assert.equal(response.status, 200);
+    assert.equal(payload.deck.valid, true);
+    assert.equal(payload.deck.entries[0].name, delver.name);
+    assert.equal(db.state.updated.valid, true);
   } finally { globalThis.fetch = originalFetch; }
 });
 

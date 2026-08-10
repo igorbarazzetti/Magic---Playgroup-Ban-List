@@ -60,7 +60,7 @@ function nameDistance(left, right, maximum) {
 
 function isConservativeCorrection(input, candidate) {
   const source = normalizeName(input);
-  const target = normalizeName(candidate);
+  const target = normalizeName(String(candidate || "").split(/\s*\/\/\s*/)[0]);
   if (!source || !target || source === target) return source === target;
   if (source.split(" ").length !== target.split(" ").length) return false;
   const maximum = source.length >= 16 ? 2 : source.length >= 6 ? 1 : 0;
