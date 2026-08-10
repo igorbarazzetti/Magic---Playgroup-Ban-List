@@ -485,6 +485,10 @@ async function fetchScryfallPages(query, { signal, onPage } = {}) {
   return cards;
 }
 
+function composeScopedScryfallQuery(scope, query) {
+  return [scope, query].map((part) => String(part || '').trim()).filter(Boolean).join(' ');
+}
+
 function clearScryfallSyntaxSearch() {
   state.scryfallSearchAbort?.abort();
   state.scryfallSearchAbort = null;
@@ -514,7 +518,7 @@ async function ensureScryfallSyntaxSearch() {
   const scope = state.tab === 'catalog' ? (catalogIndex?.query || site.catalogQuery) : site.scryfallQuery;
   const partialByOracle = new Map();
   try {
-    const cards = await fetchScryfallPages(`(${scope}) (${state.query})`, {
+    const cards = await fetchScryfallPages(composeScopedScryfallQuery(scope, state.query), {
       signal: controller.signal,
       onPage: (pageCards) => {
         if (token !== state.scryfallSearchToken || state.scryfallSearchKey !== key) return;

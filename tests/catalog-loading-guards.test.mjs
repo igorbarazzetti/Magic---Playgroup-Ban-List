@@ -41,3 +41,11 @@ test('Scryfall page requests cannot wait forever', () => {
   const fetchPages = functionSource('fetchScryfallPages', 'clearScryfallSyntaxSearch');
   assert.match(fetchPages, /fetchWithTimeout\(/);
 });
+
+test('Scryfall display options stay outside artificial parentheses', () => {
+  const compose = functionSource('composeScopedScryfallQuery', 'clearScryfallSyntaxSearch');
+  const search = functionSource('ensureScryfallSyntaxSearch', 'catalogServerFilterSyntax');
+  assert.match(compose, /join\(' '\)/);
+  assert.match(search, /composeScopedScryfallQuery\(scope, state\.query\)/);
+  assert.doesNotMatch(search, /`\(\$\{scope\}\) \(\$\{state\.query\}\)`/);
+});
