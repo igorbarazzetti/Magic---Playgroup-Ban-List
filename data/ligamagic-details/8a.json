@@ -11,6 +11,17 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ares%2C%20God%20of%20War",
     "checked_at": "2026-08-07T19:23:13.482Z"
   },
+  "8a0e35ac-6c03-4922-b3b4-e419419fe3d7": {
+    "status": "unavailable",
+    "name": "Bofur, Reliable Guardian // Concerted Care",
+    "price_brl": null,
+    "finish": "normal",
+    "condition": "NM",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bofur%2C%20Reliable%20Guardian",
+    "checked_at": "2026-08-09T23:45:35.033Z",
+    "last_error": "A lista de impressões não foi encontrada na página.",
+    "attempts": 2
+  },
   "8a206c6f-4f6f-4c31-9dab-d73a57db989c": {
     "status": "available",
     "name": "Akroan Sergeant",

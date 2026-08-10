@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcbound%20Bruiser",
     "checked_at": "2026-08-07T13:55:03.974Z"
   },
+  "51685f85-06ad-4de2-a7a6-06e6f59a1cbb": {
+    "status": "available",
+    "name": "Breakneck Rider // Neck Breaker",
+    "price_brl": 0.22,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Sombras em Innistrad",
+    "printing_code": "SOI",
+    "collector_number": "147",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Breakneck%20Rider",
+    "checked_at": "2026-08-10T00:31:23.127Z"
+  },
   "518115c9-0f0f-4249-81ff-e79b27dda1be": {
     "status": "available",
     "name": "Aven Trailblazer",

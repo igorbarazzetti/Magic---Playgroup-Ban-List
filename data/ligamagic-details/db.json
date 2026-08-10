@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bark%20of%20Doran",
     "checked_at": "2026-08-08T19:10:32.389Z"
   },
+  "db4f67a9-6b47-4abe-9367-718da9e0609e": {
+    "status": "available",
+    "name": "Bramble Wurm",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad Remastered",
+    "printing_code": "INR",
+    "collector_number": "187",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bramble%20Wurm",
+    "checked_at": "2026-08-10T00:17:32.906Z"
+  },
   "db5380ed-ba28-4ea2-abc3-4998e2022903": {
     "status": "available",
     "name": "Ancestral Mask",

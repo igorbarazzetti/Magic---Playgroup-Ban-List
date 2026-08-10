@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beetle-Headed%20Merchants",
     "checked_at": "2026-08-09T13:35:04.613Z"
   },
+  "0e676904-17c3-40f2-9b5b-eb29cacc336f": {
+    "status": "available",
+    "name": "Boxing Ring",
+    "price_brl": 1.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nova Capenna Commander",
+    "printing_code": "NCC",
+    "collector_number": "91",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boxing%20Ring",
+    "checked_at": "2026-08-10T00:10:58.481Z"
+  },
   "0e69e6c2-fdc5-4c1a-bd96-c4283b82743a": {
     "status": "available",
     "name": "Blood of the Martyr",

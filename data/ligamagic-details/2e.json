@@ -1,4 +1,16 @@
 {
+  "2e114d15-4356-4cef-8f89-260ab4c8d4b9": {
+    "status": "available",
+    "name": "Brass-Talon Chimera",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Visões",
+    "printing_code": "VI",
+    "collector_number": "8",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brass-Talon%20Chimera",
+    "checked_at": "2026-08-10T00:22:52.262Z"
+  },
   "2e1deb7e-d40d-437e-b817-b66132d2d1d6": {
     "status": "available",
     "name": "Avarax",
@@ -58,6 +70,18 @@
     "collector_number": "196",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bilbo%2C%20Retired%20Burglar",
     "checked_at": "2026-08-09T17:05:27.985Z"
+  },
+  "2eb69a8f-9456-4852-b868-85ae609d3441": {
+    "status": "available",
+    "name": "Bountiful Landscape",
+    "price_brl": 0.19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3",
+    "printing_code": "MH3",
+    "collector_number": "217",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bountiful%20Landscape",
+    "checked_at": "2026-08-10T00:08:35.375Z"
   },
   "2edf106d-f504-430e-ad9c-50fc95b0ad9c": {
     "status": "available",

@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bonded%20Construct",
     "checked_at": "2026-08-09T23:29:50.541Z"
   },
+  "c775d3ef-2184-4425-8c8e-2bbc49687f76": {
+    "status": "available",
+    "name": "Brackish Trudge",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Strixhaven: Escola de Magos",
+    "printing_code": "STX",
+    "collector_number": "65",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brackish%20Trudge",
+    "checked_at": "2026-08-10T00:11:31.948Z"
+  },
   "c79cf0e5-52dd-4af3-ab06-6cdaab526c23": {
     "status": "available",
     "name": "Bonebind Orator",

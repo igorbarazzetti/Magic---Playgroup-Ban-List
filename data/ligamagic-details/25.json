@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Allure%20of%20the%20Unknown",
     "checked_at": "2026-08-07T00:37:34.786Z"
   },
+  "25328cab-c7c0-4c55-99bb-a4149f6c511a": {
+    "status": "available",
+    "name": "Bramble Armor",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Voto Carmesim",
+    "printing_code": "VOW",
+    "collector_number": "188",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bramble%20Armor",
+    "checked_at": "2026-08-10T00:16:37.153Z"
+  },
   "254878f0-be90-4653-a395-0c41258fceaf": {
     "status": "available",
     "name": "Tinker",
@@ -59,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beacon%20Behemoth",
     "checked_at": "2026-08-08T22:59:26.323Z"
   },
+  "256ab1e2-0c6a-41c1-ba01-021f3c90cfa2": {
+    "status": "available",
+    "name": "Brazen Dwarf",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Adventures in the Forgotten Realms",
+    "printing_code": "AFR",
+    "collector_number": "134",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brazen%20Dwarf",
+    "checked_at": "2026-08-10T00:26:22.232Z"
+  },
   "2577ef8e-d85e-47af-ac34-629f31992751": {
     "status": "available",
     "name": "Aether Rift",
@@ -94,6 +118,18 @@
     "collector_number": "12",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Sleuth",
     "checked_at": "2026-08-07T09:20:25.950Z"
+  },
+  "257f7c29-8857-429e-a421-9262982804e0": {
+    "status": "available",
+    "name": "Bounding Wolf",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Caçada à Meia-noite",
+    "printing_code": "MID",
+    "collector_number": "170",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bounding%20Wolf",
+    "checked_at": "2026-08-10T00:07:53.060Z"
   },
   "258073aa-6500-46a2-a5e5-22378b14260b": {
     "status": "available",

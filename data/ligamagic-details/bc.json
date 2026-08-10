@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archon's%20Glory",
     "checked_at": "2026-08-07T17:21:54.439Z"
   },
+  "bc6b40b1-0d17-4dd2-bec9-f1653611dba3": {
+    "status": "available",
+    "name": "Boros Challenger",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Guildas de Ravnica",
+    "printing_code": "GRN",
+    "collector_number": "156",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boros%20Challenger",
+    "checked_at": "2026-08-09T23:56:26.226Z"
+  },
   "bc842838-1993-4480-b8fe-f9d9f2dee7a4": {
     "status": "available",
     "name": "Alrund's Epiphany",
@@ -70,6 +82,30 @@
     "collector_number": "205",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashling%20the%20Pilgrim",
     "checked_at": "2026-08-08T02:40:52.116Z"
+  },
+  "bc9c7e1a-5155-431a-be21-fcbd18718980": {
+    "status": "available",
+    "name": "Brambleguard Veteran",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Bloomburrow",
+    "printing_code": "BLB",
+    "collector_number": "165",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brambleguard%20Veteran",
+    "checked_at": "2026-08-10T00:18:27.504Z"
+  },
+  "bcbaef07-1d5b-457b-b373-77d3a2884b39": {
+    "status": "available",
+    "name": "Boros Mastiff",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Labirinto do Dragão",
+    "printing_code": "DGM",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boros%20Mastiff",
+    "checked_at": "2026-08-09T23:58:13.979Z"
   },
   "bcbe879a-4609-4493-bd7d-47c26d27e83c": {
     "status": "available",

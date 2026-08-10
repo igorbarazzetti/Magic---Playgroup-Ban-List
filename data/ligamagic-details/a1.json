@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodcrazed%20Goblin",
     "checked_at": "2026-08-09T22:23:12.971Z"
   },
+  "a11d8372-87fb-40a2-b638-314c6a5af03b": {
+    "status": "available",
+    "name": "Break Down the Door",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Noctumbra: A Casa dos Horrores",
+    "printing_code": "DSK",
+    "collector_number": "170",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Break%20Down%20the%20Door",
+    "checked_at": "2026-08-10T00:28:42.603Z"
+  },
   "a12880c4-1987-42af-8595-0b88981e1091": {
     "status": "available",
     "name": "Bloodfire Kavu",
@@ -118,6 +130,18 @@
     "collector_number": "123",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ara%C3%B1a%2C%20Heart%20of%20the%20Spider",
     "checked_at": "2026-08-07T11:26:57.094Z"
+  },
+  "a1a791be-71e6-4c1f-8717-08ca62d40de2": {
+    "status": "available",
+    "name": "Brave Brawler",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes",
+    "printing_code": "MSH",
+    "collector_number": "8",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brave%20Brawler",
+    "checked_at": "2026-08-10T00:23:36.325Z"
   },
   "a1ab033f-9605-4ca2-a98b-c0b2e1599609": {
     "status": "available",

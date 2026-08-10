@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baneful%20Omen",
     "checked_at": "2026-08-08T17:05:07.344Z"
   },
+  "dc3af7cb-03b9-445f-82eb-18798ec92934": {
+    "status": "available",
+    "name": "Breathe Your Last",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3",
+    "printing_code": "MH3",
+    "collector_number": "82",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Breathe%20Your%20Last",
+    "checked_at": "2026-08-10T00:33:14.611Z"
+  },
   "dc3b2bab-755d-4b2f-97c0-70a74d721a79": {
     "status": "available",
     "name": "Black Mana Battery",
@@ -23,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Black%20Mana%20Battery",
     "checked_at": "2026-08-09T19:15:34.671Z"
   },
+  "dc4a4996-108a-4aac-850f-2d9f76403446": {
+    "status": "available",
+    "name": "Boomerang",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Décima Edição",
+    "printing_code": "10E",
+    "collector_number": "70",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boomerang",
+    "checked_at": "2026-08-09T23:48:10.644Z"
+  },
   "dc671205-f2fa-454f-9957-921a6069ad53": {
     "status": "available",
     "name": "High Tide",
@@ -34,6 +58,18 @@
     "collector_number": "35",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=High%20Tide",
     "checked_at": "2026-08-05T20:07:34.851Z"
+  },
+  "dc788b66-d03d-4066-be35-481be96ed2f7": {
+    "status": "available",
+    "name": "Boughside Wanderers",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "The Hobbit",
+    "printing_code": "HOB",
+    "collector_number": "121",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boughside%20Wanderers",
+    "checked_at": "2026-08-10T00:04:48.208Z"
   },
   "dc7f0c33-80ea-453e-a237-473f077f038e": {
     "status": "available",

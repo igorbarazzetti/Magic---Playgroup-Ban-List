@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ardent%20Plea",
     "checked_at": "2026-08-07T17:26:44.675Z"
   },
+  "49d189dd-9ce7-434f-931b-7110cd5255e7": {
+    "status": "available",
+    "name": "Brave the Wilds",
+    "price_brl": 0.18,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Selvagens de Eldraine",
+    "printing_code": "WOE",
+    "collector_number": "165",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brave%20the%20Wilds",
+    "checked_at": "2026-08-10T00:24:20.801Z"
+  },
   "49d44e89-b94e-43f7-a996-f50651df9264": {
     "status": "available",
     "name": "Barbarian Outcast",

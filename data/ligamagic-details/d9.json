@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Mindcensor",
     "checked_at": "2026-08-08T09:17:30.421Z"
   },
+  "d965e8c2-34b1-42eb-9647-59951d9fc06b": {
+    "status": "available",
+    "name": "Bortuk Bonerattle",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominária Unida (Stained Glass)",
+    "printing_code": "SGDMU",
+    "collector_number": "296",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bortuk%20Bonerattle",
+    "checked_at": "2026-08-10T00:00:36.299Z"
+  },
   "d981d85c-e97b-4fe7-b415-6e73a3e7e35c": {
     "status": "available",
     "name": "Akroan Crusader",
@@ -70,6 +82,18 @@
     "collector_number": "111",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akroan%20Crusader",
     "checked_at": "2026-08-06T18:06:17.245Z"
+  },
+  "d9c29e6e-5949-4599-bf74-b9539e753f76": {
+    "status": "available",
+    "name": "Bounce Off",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Aetherdrift",
+    "printing_code": "DFT",
+    "collector_number": "39",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bounce%20Off",
+    "checked_at": "2026-08-10T00:06:03.664Z"
   },
   "d9c2e674-11a9-47f0-8790-a53b62c43fe6": {
     "status": "available",

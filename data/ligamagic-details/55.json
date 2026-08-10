@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benthic%20Criminologists",
     "checked_at": "2026-08-09T15:03:25.460Z"
   },
+  "555c571e-ccfc-4a8e-8a40-7b1eab0fbbef": {
+    "status": "available",
+    "name": "Break Through the Line",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Destino Reescrito",
+    "printing_code": "FRF",
+    "collector_number": "94",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Break%20Through%20the%20Line",
+    "checked_at": "2026-08-10T00:29:47.406Z"
+  },
   "5563427d-ffdc-4bea-ad7d-1605894b8a6c": {
     "status": "available",
     "name": "Awakening",
@@ -46,6 +58,18 @@
     "collector_number": "3",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Awakening",
     "checked_at": "2026-08-08T13:22:16.927Z"
+  },
+  "55821968-baf2-4fa6-8376-9ec305e27b3b": {
+    "status": "available",
+    "name": "Boon of Erebos",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros",
+    "printing_code": "THS",
+    "collector_number": "80",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boon%20of%20Erebos",
+    "checked_at": "2026-08-09T23:50:01.942Z"
   },
   "55a0a40c-cb40-469d-9bf3-9c33b378f4f7": {
     "status": "available",

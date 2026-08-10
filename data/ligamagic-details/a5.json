@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bewitching%20Leechcraft",
     "checked_at": "2026-08-09T15:10:45.753Z"
   },
+  "a5e3ca74-ec33-4679-9366-8b1a45048783": {
+    "status": "available",
+    "name": "Book of Rass",
+    "price_brl": 0.98,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Chronicles",
+    "printing_code": "CH",
+    "collector_number": "20",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Book%20of%20Rass",
+    "checked_at": "2026-08-09T23:47:04.400Z"
+  },
   "a5e9142e-76bf-40d4-aeaa-ffe197d38f25": {
     "status": "available",
     "name": "Auntie Blyte, Bad Influence",

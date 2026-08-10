@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bogstomper",
     "checked_at": "2026-08-09T23:20:59.707Z"
   },
+  "7c304547-a4b1-46c9-baed-16d2bfbe16eb": {
+    "status": "available",
+    "name": "Branchloft Pathway // Boulderloft Pathway",
+    "price_brl": 14.73,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Renascer de Zendikar (Variantes)",
+    "printing_code": "CBZNR",
+    "collector_number": "284",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Branchloft%20Pathway",
+    "checked_at": "2026-08-10T00:19:56.590Z"
+  },
   "7c35f3fd-c64e-4944-a4d5-37ce916d23c3": {
     "status": "available",
     "name": "Altered Ego",
@@ -106,6 +118,18 @@
     "collector_number": "29",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aetherize",
     "checked_at": "2026-08-06T11:02:53.757Z"
+  },
+  "7c83fb45-03af-4f1a-b7e3-2c4f47511658": {
+    "status": "available",
+    "name": "Boros Elite",
+    "price_brl": 0.17,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kit de Guilda: Boros",
+    "printing_code": "GK1B",
+    "collector_number": "78",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boros%20Elite",
+    "checked_at": "2026-08-09T23:56:59.893Z"
   },
   "7c854a07-e031-458e-a335-9c31865020b8": {
     "status": "available",

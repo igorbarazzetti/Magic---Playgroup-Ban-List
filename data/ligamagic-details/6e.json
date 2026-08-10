@@ -70,5 +70,17 @@
     "collector_number": "45",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Air-Cult%20Elemental",
     "checked_at": "2026-08-06T14:46:02.450Z"
+  },
+  "6effbf59-3933-4a77-9a6a-fd3bedf45c26": {
+    "status": "available",
+    "name": "Borough Backup",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes",
+    "printing_code": "MSH",
+    "collector_number": "7",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Borough%20Backup",
+    "checked_at": "2026-08-09T23:59:21.073Z"
   }
 }

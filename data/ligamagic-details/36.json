@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armory%20Paladin",
     "checked_at": "2026-08-07T19:36:44.088Z"
   },
+  "361b965f-2ce7-49f8-84e7-7325ea0c948d": {
+    "status": "available",
+    "name": "Bow of Nylea",
+    "price_brl": 4.84,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros",
+    "printing_code": "THS",
+    "collector_number": "153",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bow%20of%20Nylea",
+    "checked_at": "2026-08-10T00:10:24.452Z"
+  },
   "3656338d-ca08-465b-b09a-d8d8d1196eec": {
     "status": "available",
     "name": "Blazing Volley",
@@ -22,6 +34,18 @@
     "collector_number": "119",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blazing%20Volley",
     "checked_at": "2026-08-09T21:50:02.678Z"
+  },
+  "367282d6-956b-470d-a131-d22beff610b0": {
+    "status": "available",
+    "name": "Bramblecrush",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad",
+    "printing_code": "ISD",
+    "collector_number": "172",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bramblecrush",
+    "checked_at": "2026-08-10T00:17:55.313Z"
   },
   "3676b745-001d-46e6-880f-2fe26476a38d": {
     "status": "available",
@@ -71,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Be'lakor%2C%20the%20Dark%20Master",
     "checked_at": "2026-08-08T22:59:14.854Z"
   },
+  "36937483-30cb-449a-8028-75017a124922": {
+    "status": "available",
+    "name": "Boseiju, Who Shelters All",
+    "price_brl": 43.87,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Campeões de Kamigawa",
+    "printing_code": "CHK",
+    "collector_number": "273",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boseiju%2C%20Who%20Shelters%20All",
+    "checked_at": "2026-08-10T00:01:08.468Z"
+  },
   "36a600fe-91b4-46a0-97ee-0cea2b63ec8e": {
     "status": "available",
     "name": "Aven Sentry",
@@ -83,6 +119,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Sentry",
     "checked_at": "2026-08-08T09:18:22.085Z"
   },
+  "36ac8fc6-98ad-499b-9adf-046433e2c122": {
+    "status": "available",
+    "name": "Bouncer's Beatdown",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ruas de Nova Capenna",
+    "printing_code": "SNC",
+    "collector_number": "135",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bouncer's%20Beatdown",
+    "checked_at": "2026-08-10T00:06:15.214Z"
+  },
   "36c2fc4c-7d8b-47c2-91c3-e356df60b219": {
     "status": "available",
     "name": "Angel of Jubilation",
@@ -94,6 +142,18 @@
     "collector_number": "2",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Jubilation",
     "checked_at": "2026-08-07T07:54:56.273Z"
+  },
+  "36cd2364-d113-47d1-b2c4-b088d9eb88dd": {
+    "status": "available",
+    "name": "Brainstorm",
+    "price_brl": 2.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "MTGO Masters Edition II",
+    "printing_code": "ME2",
+    "collector_number": "42",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brainstorm",
+    "checked_at": "2026-08-10T00:15:54.146Z"
   },
   "36d1a46e-44ac-4a65-a93c-8d6ab5c31cbf": {
     "status": "available",

@@ -1,4 +1,16 @@
 {
+  "46334ae3-e496-4f15-8033-0f42ee0ae375": {
+    "status": "available",
+    "name": "Bottle Golems",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 2",
+    "printing_code": "MH2",
+    "collector_number": "222",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bottle%20Golems",
+    "checked_at": "2026-08-10T00:03:44.571Z"
+  },
   "464372ef-0b16-4b8d-ba6f-fbf5c905c479": {
     "status": "available",
     "name": "Behold the Unspeakable // Vision of the Unspeakable",
@@ -22,6 +34,30 @@
     "collector_number": "167",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Black%20Market%20Tycoon",
     "checked_at": "2026-08-09T19:16:04.706Z"
+  },
+  "464c0150-3dbc-403b-9ada-fef25ab1f29d": {
+    "status": "available",
+    "name": "Brain Freeze",
+    "price_brl": 31.68,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven: Mystical Archive",
+    "printing_code": "SOA",
+    "collector_number": "13",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brain%20Freeze",
+    "checked_at": "2026-08-10T00:13:52.355Z"
+  },
+  "464df46a-079b-47c1-95e7-930160abef2f": {
+    "status": "available",
+    "name": "Brallin, Skyshark Rider",
+    "price_brl": 3.32,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "The List",
+    "printing_code": "PLIST",
+    "collector_number": "319",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brallin%2C%20Skyshark%20Rider",
+    "checked_at": "2026-08-10T00:16:26.948Z"
   },
   "46535f8e-1bcd-4588-ac6c-a4bc89c379c8": {
     "status": "available",
@@ -142,6 +178,18 @@
     "collector_number": "86",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aberrant",
     "checked_at": "2026-08-06T00:07:56.985Z"
+  },
+  "46c727cb-1f47-4775-8af4-0230ef53966b": {
+    "status": "available",
+    "name": "Brainsurge",
+    "price_brl": 1.35,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3",
+    "printing_code": "MH3",
+    "collector_number": "53",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brainsurge",
+    "checked_at": "2026-08-10T00:16:04.342Z"
   },
   "46c77100-ab2e-43eb-b1cb-c22ed114213e": {
     "status": "available",

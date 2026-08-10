@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Accursed%20Horde",
     "checked_at": "2026-08-06T03:51:31.789Z"
   },
+  "8fa3ac81-3dfe-4565-be99-5554f7597b4b": {
+    "status": "available",
+    "name": "Boros Garrison",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ravnica: A Cidade das Guildas",
+    "printing_code": "RAV",
+    "collector_number": "275",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boros%20Garrison",
+    "checked_at": "2026-08-09T23:57:21.233Z"
+  },
   "8fbca9ba-8b83-40ca-9f7e-5c483ba76675": {
     "status": "available",
     "name": "Barbed Sliver",

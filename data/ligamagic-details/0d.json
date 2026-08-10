@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balin%2C%20Loremaster",
     "checked_at": "2026-08-08T15:08:17.930Z"
   },
+  "0d6507b0-c986-49d1-aea3-77b2cf2a7433": {
+    "status": "available",
+    "name": "Borrowed Knowledge",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven",
+    "printing_code": "SOS",
+    "collector_number": "178",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Borrowed%20Knowledge",
+    "checked_at": "2026-08-09T23:59:53.381Z"
+  },
   "0d6b89dc-23fb-48e9-a54b-cea2838ae7c8": {
     "status": "available",
     "name": "Grief",
@@ -70,6 +82,18 @@
     "collector_number": "87",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Grief",
     "checked_at": "2026-08-05T20:07:16.725Z"
+  },
+  "0d8c2d7b-7cce-4115-a3f8-18c23731544e": {
+    "status": "available",
+    "name": "Brass Secretary",
+    "price_brl": 0.12,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Destino de Urza",
+    "printing_code": "UD",
+    "collector_number": "128",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brass%20Secretary",
+    "checked_at": "2026-08-10T00:22:30.242Z"
   },
   "0daefecb-7189-44bb-9ca0-96a9572cd240": {
     "status": "available",

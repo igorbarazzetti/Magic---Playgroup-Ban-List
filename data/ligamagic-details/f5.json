@@ -1,4 +1,16 @@
 {
+  "f5070528-cc4c-4910-8047-1ed17efd6496": {
+    "status": "available",
+    "name": "Brambleweft Behemoth",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Hora da Devastação",
+    "printing_code": "HOU",
+    "collector_number": "202",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brambleweft%20Behemoth",
+    "checked_at": "2026-08-10T00:18:49.821Z"
+  },
   "f543dfcd-015e-48bc-851d-08002d0241fa": {
     "status": "available",
     "name": "Ana Disciple",
@@ -82,6 +94,18 @@
     "collector_number": "230",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Accomplished%20Automaton",
     "checked_at": "2026-08-06T03:50:22.457Z"
+  },
+  "f5af85a0-73be-4210-89ae-357e8966cd91": {
+    "status": "available",
+    "name": "Boomflinger",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unstable",
+    "printing_code": "UST",
+    "collector_number": "172",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boomflinger",
+    "checked_at": "2026-08-09T23:48:44.365Z"
   },
   "f5c5f64c-6911-430c-a825-b32b96d39c7d": {
     "status": "available",

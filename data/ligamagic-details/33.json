@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blade%20of%20the%20Swarm",
     "checked_at": "2026-08-09T21:39:08.926Z"
   },
+  "33416979-2a3b-4184-818c-6a4e9ccb4580": {
+    "status": "available",
+    "name": "Bramble Creeper",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2010",
+    "printing_code": "M10",
+    "collector_number": "171",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bramble%20Creeper",
+    "checked_at": "2026-08-10T00:16:48.113Z"
+  },
   "3354c3d3-5713-4139-beb2-4fa17f6b47d9": {
     "status": "available",
     "name": "Balduvian Shaman",

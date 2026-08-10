@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aegis%20of%20Honor",
     "checked_at": "2026-08-06T07:14:24.872Z"
   },
+  "ea9b2e3d-2de4-4cde-b233-6d0ba5797c20": {
+    "status": "available",
+    "name": "Brass Herald",
+    "price_brl": 0.12,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends",
+    "printing_code": "CMR",
+    "collector_number": "301",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brass%20Herald",
+    "checked_at": "2026-08-10T00:21:24.423Z"
+  },
   "eaa9baac-72f2-4bde-9146-860878d9860b": {
     "status": "available",
     "name": "Abuelo, Ancestral Echo",

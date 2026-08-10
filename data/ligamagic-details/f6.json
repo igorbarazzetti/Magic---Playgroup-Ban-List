@@ -83,6 +83,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atreus%2C%20Impulsive%20Son",
     "checked_at": "2026-08-08T07:21:13.067Z"
   },
+  "f6c3b420-9aca-4fab-b7bb-1814bd2d93f6": {
+    "status": "available",
+    "name": "Boros Cluestone",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2015",
+    "printing_code": "C15",
+    "collector_number": "246",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boros%20Cluestone",
+    "checked_at": "2026-08-09T23:56:47.715Z"
+  },
+  "f6dae324-cc79-4093-8cce-667015c1de6d": {
+    "status": "available",
+    "name": "Boreas Charger",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Voto Carmesim (Commander)",
+    "printing_code": "VOC",
+    "collector_number": "79",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boreas%20Charger",
+    "checked_at": "2026-08-09T23:55:20.739Z"
+  },
   "f6e1eb52-9f13-425c-8309-1b08ed6557db": {
     "status": "available",
     "name": "Barbed Lightning",

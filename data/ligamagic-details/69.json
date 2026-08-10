@@ -227,6 +227,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=The%20Tabernacle%20at%20Pendrell%20Vale",
     "checked_at": "2026-08-05T20:13:41.758Z"
   },
+  "69b5af09-b3e6-4abf-b62e-9199c4f43ba7": {
+    "status": "available",
+    "name": "Bravado",
+    "price_brl": 0.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Saga de Urza",
+    "printing_code": "US",
+    "collector_number": "177",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bravado",
+    "checked_at": "2026-08-10T00:23:24.986Z"
+  },
   "69bcdb42-c170-4848-b95b-f4621867d084": {
     "status": "available",
     "name": "Arashin Cleric",

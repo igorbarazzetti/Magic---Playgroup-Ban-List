@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alpha%20Kavu",
     "checked_at": "2026-08-07T00:40:44.870Z"
   },
+  "f1ac4e0e-5633-46e4-9a21-d3924e481d13": {
+    "status": "available",
+    "name": "Borrowed Time",
+    "price_brl": 0.21,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Caçada à Meia-noite",
+    "printing_code": "MID",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Borrowed%20Time",
+    "checked_at": "2026-08-10T00:00:13.988Z"
+  },
   "f1c26b25-371e-4fbf-a43d-7fd59a364d3a": {
     "status": "available",
     "name": "Arc Trail",

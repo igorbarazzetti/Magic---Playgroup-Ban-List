@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ainok%20Artillerist",
     "checked_at": "2026-08-06T14:44:41.847Z"
   },
+  "862ecb4e-7030-48d5-bbdf-655662059430": {
+    "status": "available",
+    "name": "Boreal Griffin",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Frente Fria",
+    "printing_code": "CS",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boreal%20Griffin",
+    "checked_at": "2026-08-09T23:54:48.398Z"
+  },
   "86373537-7424-416a-8d89-cc38f6538458": {
     "status": "available",
     "name": "Advantageous Proclamation",
@@ -58,6 +70,18 @@
     "collector_number": "47",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alchemist's%20Retrieval",
     "checked_at": "2026-08-06T18:15:08.369Z"
+  },
+  "8652d88f-edca-4235-b942-6e7467608de8": {
+    "status": "available",
+    "name": "Boon-Bringer Valkyrie",
+    "price_brl": 0.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marcha das Máquinas",
+    "printing_code": "MOM",
+    "collector_number": "9",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boon-Bringer%20Valkyrie",
+    "checked_at": "2026-08-09T23:49:28.892Z"
   },
   "8664a004-d786-4357-8856-2f8f5a9ae24d": {
     "status": "available",
@@ -130,5 +154,17 @@
     "collector_number": "127",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alpine%20Grizzly",
     "checked_at": "2026-08-07T00:41:55.049Z"
+  },
+  "86ef06b3-2049-494d-9ecb-ca14766d3b68": {
+    "status": "available",
+    "name": "Braided Net // Braided Quipu",
+    "price_brl": 0.16,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "As Cavernas Perdidas de Ixalan",
+    "printing_code": "LCI",
+    "collector_number": "47",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Braided%20Net",
+    "checked_at": "2026-08-10T00:12:35.979Z"
   }
 }

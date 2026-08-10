@@ -119,6 +119,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blight-Breath%20Catoblepas",
     "checked_at": "2026-08-09T21:55:25.562Z"
   },
+  "40ab2b22-9cf6-4a73-a05f-6ce496d10bf7": {
+    "status": "available",
+    "name": "Bonus Round",
+    "price_brl": 43.26,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Battlebond",
+    "printing_code": "BBD",
+    "collector_number": "56",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bonus%20Round",
+    "checked_at": "2026-08-09T23:46:08.847Z"
+  },
   "40ae17be-9998-4ee4-9d95-82a08895405f": {
     "status": "available",
     "name": "An-Havva Township",

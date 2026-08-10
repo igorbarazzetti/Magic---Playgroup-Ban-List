@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baboon%20Spirit",
     "checked_at": "2026-08-08T14:56:17.421Z"
   },
+  "eb25920a-3162-4838-b092-09cbd43332fd": {
+    "status": "available",
+    "name": "Brambleback Brute",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed",
+    "printing_code": "ECL",
+    "collector_number": "128",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brambleback%20Brute",
+    "checked_at": "2026-08-10T00:17:43.459Z"
+  },
   "eb260cd3-9060-4a5e-bc60-a8ca13d542cc": {
     "status": "available",
     "name": "Barl's Cage",
@@ -107,6 +119,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Belt%20of%20Giant%20Strength",
     "checked_at": "2026-08-09T13:43:54.326Z"
   },
+  "eb77f7dc-e9e4-44ef-8616-9f4e737e8ca5": {
+    "status": "available",
+    "name": "Breeches, Brazen Plunderer",
+    "price_brl": 0.33,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "As Cavernas Perdidas de Ixalan Commander",
+    "printing_code": "LCC",
+    "collector_number": "217",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Breeches%2C%20Brazen%20Plunderer",
+    "checked_at": "2026-08-10T00:34:22.188Z"
+  },
+  "eb887067-4466-45da-8387-4444fdc723f8": {
+    "status": "available",
+    "name": "Breath of the Sleepless",
+    "price_brl": 0.45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad: Voto Carmesim (Commander)",
+    "printing_code": "VOC",
+    "collector_number": "11",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Breath%20of%20the%20Sleepless",
+    "checked_at": "2026-08-10T00:32:50.990Z"
+  },
   "eb9c9a34-88a8-4afe-a053-806f6b29834f": {
     "status": "available",
     "name": "Memory Jar",
@@ -118,6 +154,18 @@
     "collector_number": "129",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Memory%20Jar",
     "checked_at": "2026-08-05T20:09:38.083Z"
+  },
+  "ebbd5b9c-07ff-4b42-81c2-ba09539f3a42": {
+    "status": "available",
+    "name": "Breach the Multiverse",
+    "price_brl": 33.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marcha das Máquinas",
+    "printing_code": "MOM",
+    "collector_number": "94",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Breach%20the%20Multiverse",
+    "checked_at": "2026-08-10T00:27:38.745Z"
   },
   "ebbe5d82-a7a4-4f4b-b038-095021d9a6a8": {
     "status": "available",

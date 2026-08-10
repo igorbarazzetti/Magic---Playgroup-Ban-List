@@ -155,6 +155,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20for%20Bones",
     "checked_at": "2026-08-09T22:14:32.392Z"
   },
+  "fc7cda6f-7e5e-4a56-8d67-ffdea7edf269": {
+    "status": "available",
+    "name": "Bred for the Hunt",
+    "price_brl": 0.14,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Labirinto do Dragão",
+    "printing_code": "DGM",
+    "collector_number": "59",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bred%20for%20the%20Hunt",
+    "checked_at": "2026-08-10T00:34:10.466Z"
+  },
   "fc80380c-7d75-4556-aaf2-bf7b2c757e75": {
     "status": "available",
     "name": "Besmirch",
@@ -202,6 +214,18 @@
     "collector_number": "9",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anoint",
     "checked_at": "2026-08-07T09:29:26.326Z"
+  },
+  "fcb0c7db-bd07-4c25-b7f8-b6c207e4f6be": {
+    "status": "available",
+    "name": "Brago, King Eternal",
+    "price_brl": 11.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaldheim Commander",
+    "printing_code": "KHC",
+    "collector_number": "82",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brago%2C%20King%20Eternal",
+    "checked_at": "2026-08-10T00:12:03.084Z"
   },
   "fcb7c93c-46ab-49b5-a6e0-35d73f3be8f0": {
     "status": "available",

@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Artist",
     "checked_at": "2026-08-09T22:11:33.499Z"
   },
+  "312ce96b-6abe-4f72-a205-9b27c885a5fe": {
+    "status": "available",
+    "name": "Bramblesnap",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ascensão dos Eldrazi",
+    "printing_code": "ROE",
+    "collector_number": "180",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bramblesnap",
+    "checked_at": "2026-08-10T00:18:38.076Z"
+  },
   "314f0a96-5e91-42a3-9d75-3f641f22a9ee": {
     "status": "available",
     "name": "Blade Historian",
@@ -82,6 +94,18 @@
     "collector_number": "48",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bone%20to%20Ash",
     "checked_at": "2026-08-09T23:34:17.391Z"
+  },
+  "31d572b8-2c5e-4819-b2a6-e7ef90872d9e": {
+    "status": "available",
+    "name": "Bounteous Kirin",
+    "price_brl": 0.48,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Salvadores Kamigawa",
+    "printing_code": "SOK",
+    "collector_number": "123",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bounteous%20Kirin",
+    "checked_at": "2026-08-10T00:08:13.881Z"
   },
   "31d8c2c4-3309-4eee-a704-f760f381f080": {
     "status": "available",

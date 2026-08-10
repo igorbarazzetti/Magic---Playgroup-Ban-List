@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barrow%20Witches",
     "checked_at": "2026-08-08T19:17:32.523Z"
   },
+  "9d73a51a-1c8e-40cd-8124-aeff406a0884": {
+    "status": "available",
+    "name": "Brave the Elements",
+    "price_brl": 0.76,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2014",
+    "printing_code": "M14",
+    "collector_number": "10",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brave%20the%20Elements",
+    "checked_at": "2026-08-10T00:23:58.340Z"
+  },
   "9d7624ea-ffff-470b-928b-bbac66ddbd1c": {
     "status": "available",
     "name": "Act of Aggression",

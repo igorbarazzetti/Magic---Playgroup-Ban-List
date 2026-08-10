@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Behemoth%20Sledge",
     "checked_at": "2026-08-09T13:36:54.233Z"
   },
+  "00876e98-d062-4a12-85e6-86a2b20cf867": {
+    "status": "available",
+    "name": "Brawn",
+    "price_brl": 0.7,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ultimate Masters",
+    "printing_code": "UMA",
+    "collector_number": "160",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brawn",
+    "checked_at": "2026-08-10T00:25:06.229Z"
+  },
   "009a399b-c78e-475b-8bc3-7db2afc9d676": {
     "status": "available",
     "name": "Airdrop Aeronauts",
@@ -46,6 +58,18 @@
     "collector_number": "5",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Airdrop%20Aeronauts",
     "checked_at": "2026-08-06T14:47:51.907Z"
+  },
+  "00abb43b-550f-42d2-9049-61ac56ff5d8d": {
+    "status": "available",
+    "name": "Boros Recruit",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ravnica: A Cidade das Guildas",
+    "printing_code": "RAV",
+    "collector_number": "243",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boros%20Recruit",
+    "checked_at": "2026-08-09T23:58:37.367Z"
   },
   "00b36996-43c6-42a5-892c-c7c8864cf973": {
     "status": "available",

@@ -1,4 +1,16 @@
 {
+  "14079f05-fbc1-401c-9008-da678656b4c6": {
+    "status": "available",
+    "name": "Bot Bashing Time",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Teenage Mutant Ninja Turtles",
+    "printing_code": "TMT",
+    "collector_number": "85",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bot%20Bashing%20Time",
+    "checked_at": "2026-08-10T00:02:14.614Z"
+  },
   "141f952b-9e9f-48c5-9c88-b1504dfa73bc": {
     "status": "available",
     "name": "Anthousa, Setessan Hero",

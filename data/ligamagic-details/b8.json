@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbed%20Battlegear",
     "checked_at": "2026-08-08T19:06:32.061Z"
   },
+  "b84dedfd-4020-444f-ac5a-54c65c0d0378": {
+    "status": "available",
+    "name": "Bosk Banneret",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alvorecer",
+    "printing_code": "MT",
+    "collector_number": "114",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bosk%20Banneret",
+    "checked_at": "2026-08-10T00:01:41.678Z"
+  },
   "b8510b34-0e5f-4639-9db1-1ba40d84b800": {
     "status": "available",
     "name": "Ancient Cellarspawn",
@@ -58,6 +70,18 @@
     "collector_number": "37",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bamboozling%20Beeble",
     "checked_at": "2026-08-08T17:02:37.277Z"
+  },
+  "b86d3142-568a-4eea-b1ae-5fcfc1453533": {
+    "status": "available",
+    "name": "Boon Reflection",
+    "price_brl": 34.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Pântano Sombrio",
+    "printing_code": "SHM",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boon%20Reflection",
+    "checked_at": "2026-08-09T23:50:47.613Z"
   },
   "b8942c72-16ce-4f2f-875f-97a56e85a03e": {
     "status": "available",
@@ -106,6 +130,18 @@
     "collector_number": "48",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcanum%20Wings",
     "checked_at": "2026-08-07T13:54:43.964Z"
+  },
+  "b8cee34a-710d-4c09-b475-0e4754eccd66": {
+    "status": "available",
+    "name": "Bound in Silence",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Visão do Futuro",
+    "printing_code": "FUT",
+    "collector_number": "20",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bound%20in%20Silence",
+    "checked_at": "2026-08-10T00:07:10.068Z"
   },
   "b8d563e4-e2bc-4e8b-8841-6655beff9138": {
     "status": "available",

@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bolg%20of%20the%20North",
     "checked_at": "2026-08-09T23:25:20.422Z"
   },
+  "8877b896-8458-4828-9ff6-9e0ecc180cf7": {
+    "status": "available",
+    "name": "Brago's Representative",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Conspiracy",
+    "printing_code": "CNS",
+    "collector_number": "14",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brago's%20Representative",
+    "checked_at": "2026-08-10T00:12:14.115Z"
+  },
   "88939cb3-5f61-4857-95cb-9446c6c1f1aa": {
     "status": "available",
     "name": "Alpine Houndmaster",
@@ -106,6 +118,18 @@
     "collector_number": "4",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Emissary's%20Ploy",
     "checked_at": "2026-08-05T20:05:40.496Z"
+  },
+  "88f8f683-738e-48f3-afff-c8f73f1033a2": {
+    "status": "available",
+    "name": "Botanical Sanctum",
+    "price_brl": 4.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Os Fora da Lei de Encruzilhada do Trovão",
+    "printing_code": "OTJ",
+    "collector_number": "267",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Botanical%20Sanctum",
+    "checked_at": "2026-08-10T00:02:48.398Z"
   },
   "88fc179c-055b-47c2-b830-1fd2b1377147": {
     "status": "available",

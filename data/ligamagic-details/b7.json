@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Proft's%20Eidetic%20Memory",
     "checked_at": "2026-08-05T20:11:23.412Z"
   },
+  "b7505737-1fc8-4ee8-8b1d-5dde73b6a76d": {
+    "status": "available",
+    "name": "Borborygmos Enraged",
+    "price_brl": 0.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ravnica Remasterizada (Moldura Retrô)",
+    "printing_code": "RFRVR",
+    "collector_number": "357",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Borborygmos%20Enraged",
+    "checked_at": "2026-08-09T23:52:38.079Z"
+  },
   "b761f6d9-1063-40f8-a3f1-25b1f9b46963": {
     "status": "available",
     "name": "Auramancer's Guise",

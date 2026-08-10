@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bard's%20Bow",
     "checked_at": "2026-08-08T19:09:02.161Z"
   },
+  "4ad34f85-a185-458a-a7a1-eb60f7efce5b": {
+    "status": "available",
+    "name": "Brackish Blunder",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "As Cavernas Perdidas de Ixalan",
+    "printing_code": "LCI",
+    "collector_number": "46",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brackish%20Blunder",
+    "checked_at": "2026-08-10T00:11:20.129Z"
+  },
   "4adcd967-9ff7-4940-b8b9-0c4215bbcb75": {
     "status": "available",
     "name": "Anzrag, the Quake-Mole",

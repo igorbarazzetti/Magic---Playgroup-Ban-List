@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Vendetta",
     "checked_at": "2026-08-07T07:51:56.872Z"
   },
+  "6f067bfd-1c59-463f-99e1-61161b43b405": {
+    "status": "available",
+    "name": "Bounty of Might",
+    "price_brl": 0.18,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Guildas de Ravnica",
+    "printing_code": "GRN",
+    "collector_number": "124",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bounty%20of%20Might",
+    "checked_at": "2026-08-10T00:09:30.914Z"
+  },
   "6f14f61f-e533-4541-b861-4dbaf0d88833": {
     "status": "available",
     "name": "Backup Plan",
@@ -58,6 +70,18 @@
     "collector_number": "17",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Banishing%20Knack",
     "checked_at": "2026-08-08T17:06:47.278Z"
+  },
+  "6f6601bc-cb12-4054-9027-e4a0ebdae1a3": {
+    "status": "available",
+    "name": "Boots of Speed",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Adventures in the Forgotten Realms",
+    "printing_code": "AFR",
+    "collector_number": "133",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boots%20of%20Speed",
+    "checked_at": "2026-08-09T23:52:04.894Z"
   },
   "6f6e0abb-18d0-4a15-9b21-0a72542998ac": {
     "status": "available",

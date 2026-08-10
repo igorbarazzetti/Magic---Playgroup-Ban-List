@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Belbe's%20Armor",
     "checked_at": "2026-08-09T13:38:34.453Z"
   },
+  "1654cab1-0697-4547-b1fe-2d0a61385199": {
+    "status": "available",
+    "name": "Boulderborn Dragon",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm",
+    "printing_code": "TDM",
+    "collector_number": "239",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boulderborn%20Dragon",
+    "checked_at": "2026-08-10T00:05:19.720Z"
+  },
   "1675476c-25b1-46c2-81ce-fef9a2360bcc": {
     "status": "available",
     "name": "Blaring Captain",
@@ -82,6 +94,18 @@
     "collector_number": "20040929",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Gush",
     "checked_at": "2026-08-05T20:07:25.806Z"
+  },
+  "16df20e2-5228-4543-84b7-74a3170d9d31": {
+    "status": "available",
+    "name": "Boulder Salvo",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Juramento das Sentinelas",
+    "printing_code": "OGW",
+    "collector_number": "102",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boulder%20Salvo",
+    "checked_at": "2026-08-10T00:05:09.716Z"
   },
   "16e015b2-f8a3-4b1a-80be-58a8f5fb5e8c": {
     "status": "available",

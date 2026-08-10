@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bane%2C%20Lord%20of%20Darkness",
     "checked_at": "2026-08-08T17:03:47.189Z"
   },
+  "ca597a0d-b510-4b25-9a83-4d4e613546f5": {
+    "status": "available",
+    "name": "Bound in Gold",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaldheim",
+    "printing_code": "KHM",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bound%20in%20Gold",
+    "checked_at": "2026-08-10T00:06:59.136Z"
+  },
   "ca7d093c-0533-493f-9ad3-8af30118fbfc": {
     "status": "available",
     "name": "Abraded Bluffs",

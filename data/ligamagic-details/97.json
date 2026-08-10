@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blazemire%20Verge",
     "checked_at": "2026-08-09T21:47:20.283Z"
   },
+  "978e07fd-8b8c-4eab-850e-e4c0e712251e": {
+    "status": "available",
+    "name": "Bothersome Noisemaker",
+    "price_brl": 1.74,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "The Hobbit",
+    "printing_code": "HOB",
+    "collector_number": "89",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bothersome%20Noisemaker",
+    "checked_at": "2026-08-10T00:02:59.122Z"
+  },
   "97913c3c-eec0-4510-921a-d70c022f7961": {
     "status": "available",
     "name": "Blind with Anger",

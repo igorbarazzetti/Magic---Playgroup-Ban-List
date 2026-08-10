@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcbound%20Slith",
     "checked_at": "2026-08-07T13:57:24.042Z"
   },
+  "4fa46972-d953-4328-9c31-96e134234133": {
+    "status": "available",
+    "name": "Bouncing Beebles",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Legado de Urza",
+    "printing_code": "UL",
+    "collector_number": "28",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bouncing%20Beebles",
+    "checked_at": "2026-08-10T00:06:25.783Z"
+  },
   "4faf62c3-3ba7-4540-be26-777305ef184e": {
     "status": "available",
     "name": "Ambush Gigapede",

@@ -1,4 +1,16 @@
 {
+  "d11e627b-8a48-411d-a261-2c9a02a758ba": {
+    "status": "available",
+    "name": "Breena, the Demagogue",
+    "price_brl": 11.44,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven Commander",
+    "printing_code": "SOC",
+    "collector_number": "298",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Breena%2C%20the%20Demagogue",
+    "checked_at": "2026-08-10T00:35:18.752Z"
+  },
   "d12cf640-ff60-4935-a2c7-28ab788de42c": {
     "status": "available",
     "name": "Angel of Light",
@@ -262,5 +274,17 @@
     "collector_number": "3",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alabaster%20Host%20Intercessor",
     "checked_at": "2026-08-06T18:09:57.393Z"
+  },
+  "d1deba03-b26a-4a0d-b242-24bb3a3f9ea6": {
+    "status": "available",
+    "name": "Bootleggers' Stash",
+    "price_brl": 4.45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Aetherdrift Commander",
+    "printing_code": "DRC",
+    "collector_number": "110",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bootleggers'%20Stash",
+    "checked_at": "2026-08-09T23:51:53.006Z"
   }
 }

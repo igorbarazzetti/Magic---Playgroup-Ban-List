@@ -71,6 +71,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boarded%20Window",
     "checked_at": "2026-08-09T23:11:09.033Z"
   },
+  "3e41648f-c5a9-4b26-b97e-8176fe5e9c85": {
+    "status": "available",
+    "name": "Brash Taunter",
+    "price_brl": 11.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2021",
+    "printing_code": "M21",
+    "collector_number": "133",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brash%20Taunter",
+    "checked_at": "2026-08-10T00:21:02.838Z"
+  },
+  "3e46381a-7850-4e50-9213-e1a180299977": {
+    "status": "available",
+    "name": "Booby Trap",
+    "price_brl": 0.6,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Nona Edição - Kit Básico",
+    "printing_code": "9E",
+    "collector_number": "289",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Booby%20Trap",
+    "checked_at": "2026-08-09T23:46:19.653Z"
+  },
   "3e765710-e567-4af0-b5f5-7c182649b757": {
     "status": "available",
     "name": "Battle-Scarred Goblin",

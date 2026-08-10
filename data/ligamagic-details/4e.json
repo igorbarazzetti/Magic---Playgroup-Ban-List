@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alchemist's%20Gift",
     "checked_at": "2026-08-06T18:14:37.641Z"
   },
+  "4e89bd75-f59d-4f08-be51-5660fbbba3c2": {
+    "status": "available",
+    "name": "Brave the Sands",
+    "price_brl": 0.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Khans de Tarkir",
+    "printing_code": "KTK",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brave%20the%20Sands",
+    "checked_at": "2026-08-10T00:24:09.392Z"
+  },
   "4eb1414c-ba12-4bae-b410-79d51925d6fa": {
     "status": "available",
     "name": "Avalanche of Sector 7",

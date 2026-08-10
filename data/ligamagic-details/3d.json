@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aliban's%20Tower",
     "checked_at": "2026-08-06T18:19:07.834Z"
   },
+  "3d19561e-521f-417e-bd6b-963fc261f6d1": {
+    "status": "available",
+    "name": "Border Guardian",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unstable",
+    "printing_code": "UST",
+    "collector_number": "140",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Border%20Guardian",
+    "checked_at": "2026-08-09T23:52:59.842Z"
+  },
   "3d19823a-dbb8-4384-81f4-5c6818b7f46d": {
     "status": "available",
     "name": "Agrus Kos, Eternal Soldier",

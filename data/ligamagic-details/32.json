@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancestral%20Vengeance",
     "checked_at": "2026-08-07T04:50:31.715Z"
   },
+  "321dbd10-1d48-49fc-ba6a-1df241a53338": {
+    "status": "available",
+    "name": "Brain in a Jar",
+    "price_brl": 0.32,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Sombras em Innistrad",
+    "printing_code": "SOI",
+    "collector_number": "252",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brain%20in%20a%20Jar",
+    "checked_at": "2026-08-10T00:14:14.573Z"
+  },
   "322d2407-fa9f-48d0-bdf0-88f6d24cf865": {
     "status": "available",
     "name": "Amarant Coral",
@@ -154,6 +166,18 @@
     "collector_number": "302",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Hypnotist",
     "checked_at": "2026-08-09T22:16:11.033Z"
+  },
+  "3292d795-4fdc-4e42-959a-dd5e8591c5cc": {
+    "status": "available",
+    "name": "Boomer Scrapper",
+    "price_brl": 1.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fallout (Extended Art)",
+    "printing_code": "EAPIP",
+    "collector_number": "408",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boomer%20Scrapper",
+    "checked_at": "2026-08-09T23:48:00.540Z"
   },
   "32b401e9-163f-4917-a728-fc63b25ef602": {
     "status": "available",

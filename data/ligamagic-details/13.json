@@ -167,6 +167,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bone%20Dancer",
     "checked_at": "2026-08-09T23:31:40.752Z"
   },
+  "13cb958f-1e66-4219-901a-ff58275c8475": {
+    "status": "available",
+    "name": "Brainstealer Dragon",
+    "price_brl": 69.3,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends: Batalha por Portal de Baldur",
+    "printing_code": "CLB",
+    "collector_number": "670",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brainstealer%20Dragon",
+    "checked_at": "2026-08-10T00:15:30.810Z"
+  },
   "13cf3ef7-d88e-4cc7-a4d8-cedc671f356a": {
     "status": "available",
     "name": "Ashiok's Erasure",
@@ -178,6 +190,18 @@
     "collector_number": "43",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashiok's%20Erasure",
     "checked_at": "2026-08-08T02:39:02.211Z"
+  },
+  "13e8d063-eece-4f38-83f6-02403130defa": {
+    "status": "available",
+    "name": "Brazen Freebooter",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Rivais de Ixalan",
+    "printing_code": "RIX",
+    "collector_number": "95",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brazen%20Freebooter",
+    "checked_at": "2026-08-10T00:26:32.227Z"
   },
   "13f41253-364f-40a5-a7cd-84d8785b2460": {
     "status": "available",
@@ -202,5 +226,17 @@
     "collector_number": "75",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abhorrent%20Overlord",
     "checked_at": "2026-08-06T00:08:57.045Z"
+  },
+  "13f63b98-40b0-499b-bb5d-640b95a6ea1c": {
+    "status": "available",
+    "name": "Branching Bolt",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fragmentos de Alara",
+    "printing_code": "ALA",
+    "collector_number": "158",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Branching%20Bolt",
+    "checked_at": "2026-08-10T00:19:35.671Z"
   }
 }

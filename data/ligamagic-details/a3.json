@@ -131,6 +131,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Academy%20Ruins",
     "checked_at": "2026-08-06T03:48:31.675Z"
   },
+  "a3f10772-d055-419d-a535-4f094eaf437c": {
+    "status": "available",
+    "name": "Borrowing 100,000 Arrows",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Masters 25",
+    "printing_code": "A25",
+    "collector_number": "45",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Borrowing%20100%2C000%20Arrows",
+    "checked_at": "2026-08-10T00:00:25.515Z"
+  },
   "a3f35e0f-bf7a-42bf-b612-ac3af3a33727": {
     "status": "available",
     "name": "Arborback Stomper",

@@ -22,5 +22,29 @@
     "collector_number": "103",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Speaker",
     "checked_at": "2026-08-09T22:20:03.783Z"
+  },
+  "266c2f49-82eb-48e9-a7ea-e0da787fa40e": {
+    "status": "available",
+    "name": "Boros Guildmage",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Anthology",
+    "printing_code": "CMA2",
+    "collector_number": "199",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boros%20Guildmage",
+    "checked_at": "2026-08-09T23:57:42.254Z"
+  },
+  "2679d0dd-ba30-4a1c-b6a0-b3ac6c790496": {
+    "status": "available",
+    "name": "Boros Charm",
+    "price_brl": 16.88,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portões Violados",
+    "printing_code": "GTC",
+    "collector_number": "148",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boros%20Charm",
+    "checked_at": "2026-08-09T23:56:37.337Z"
   }
 }

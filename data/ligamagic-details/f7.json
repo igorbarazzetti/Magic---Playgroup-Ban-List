@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Balduvian%20Warlord",
     "checked_at": "2026-08-08T15:06:27.760Z"
   },
+  "f74d8f53-a239-4641-90f1-bf786d57e253": {
+    "status": "available",
+    "name": "Brass Infiniscope",
+    "price_brl": 8.7,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Secrets of Strixhaven Commander",
+    "printing_code": "SOC",
+    "collector_number": "51",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brass%20Infiniscope",
+    "checked_at": "2026-08-10T00:21:35.694Z"
+  },
   "f74ef5b0-9222-43d0-a919-aaf28dc21b59": {
     "status": "available",
     "name": "Anointer of Champions",

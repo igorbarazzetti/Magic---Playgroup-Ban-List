@@ -1,4 +1,16 @@
 {
+  "e40c66cf-0a4a-4833-98bf-c685d35b9309": {
+    "status": "available",
+    "name": "Bounty Board",
+    "price_brl": 2.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Os Fora da Lei de Encruzilhada do Trovão Commander (Arte Estendida)",
+    "printing_code": "EAOTC",
+    "collector_number": "73",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bounty%20Board",
+    "checked_at": "2026-08-10T00:09:08.346Z"
+  },
   "e4125377-34c0-4b54-bdf8-4e88f5d24565": {
     "status": "available",
     "name": "Approach of the Second Sun",
@@ -22,6 +34,18 @@
     "collector_number": "32",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aquatic%20Incursion",
     "checked_at": "2026-08-07T11:23:17.406Z"
+  },
+  "e43413e4-be17-49af-978a-26210d05f52a": {
+    "status": "available",
+    "name": "Bottomless Vault",
+    "price_brl": 0.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quinta Edição",
+    "printing_code": "5E",
+    "collector_number": "47",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bottomless%20Vault",
+    "checked_at": "2026-08-10T00:04:38.164Z"
   },
   "e4508afd-7cc3-4176-8291-cfc2c155ac11": {
     "status": "available",
@@ -130,6 +154,18 @@
     "collector_number": "212",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alpharael%2C%20Dreaming%20Acolyte",
     "checked_at": "2026-08-07T00:41:24.932Z"
+  },
+  "e4bfe005-7c4e-4178-ae41-a28eb2352ad1": {
+    "status": "available",
+    "name": "Bounty of Skemfar",
+    "price_brl": 1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Foundations Jumpstart 2025",
+    "printing_code": "J25",
+    "collector_number": "638",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bounty%20of%20Skemfar",
+    "checked_at": "2026-08-10T00:09:40.974Z"
   },
   "e4f880f5-0639-4acb-a099-e48f5707f0db": {
     "status": "available",

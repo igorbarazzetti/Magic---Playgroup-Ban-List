@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Lion's%20Eye%20Diamond",
     "checked_at": "2026-08-05T20:09:14.013Z"
   },
+  "ee6e0279-9606-4877-a3a0-5d9dd557ff15": {
+    "status": "available",
+    "name": "Borrowed Malevolence",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lua Arcana",
+    "printing_code": "EMN",
+    "collector_number": "82",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Borrowed%20Malevolence",
+    "checked_at": "2026-08-10T00:00:03.984Z"
+  },
   "ee8f16ba-cbf0-4286-b26c-d78dd35bee17": {
     "status": "available",
     "name": "Ankle Biter",
@@ -118,6 +130,18 @@
     "collector_number": "299",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbarian%20Ring",
     "checked_at": "2026-08-08T19:05:52.034Z"
+  },
+  "eec7500b-418d-4387-beb2-d53e047c1d22": {
+    "status": "available",
+    "name": "Brand",
+    "price_brl": 4.95,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Saga de Urza",
+    "printing_code": "US",
+    "collector_number": "176",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brand",
+    "checked_at": "2026-08-10T00:20:18.811Z"
   },
   "eef40ab2-9e17-4e8d-9e58-1a82ab871b5b": {
     "status": "available",

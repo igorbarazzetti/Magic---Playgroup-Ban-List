@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armament%20Corps",
     "checked_at": "2026-08-07T19:29:53.825Z"
   },
+  "3b9369ae-8827-45d1-af85-c777cde8e1bc": {
+    "status": "available",
+    "name": "Brain Gorgers",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Caos Planar",
+    "printing_code": "PC",
+    "collector_number": "65",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brain%20Gorgers",
+    "checked_at": "2026-08-10T00:14:04.314Z"
+  },
   "3b943c3e-1f18-4997-b6d0-28ef75aed88e": {
     "status": "available",
     "name": "Bloodthirsty Adversary",

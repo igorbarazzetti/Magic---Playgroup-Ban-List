@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aerial%20Doombot",
     "checked_at": "2026-08-06T07:16:45.629Z"
   },
+  "f250fb94-e519-4bfa-921e-eddeeafcf76c": {
+    "status": "available",
+    "name": "Brace for Impact",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Insurreição",
+    "printing_code": "DI",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brace%20for%20Impact",
+    "checked_at": "2026-08-10T00:11:09.997Z"
+  },
   "f26fa9e4-f528-4e22-8f7c-329fc3b633e4": {
     "status": "available",
     "name": "Baleful Force",

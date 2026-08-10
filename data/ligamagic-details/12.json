@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aura%20Flux",
     "checked_at": "2026-08-08T07:29:03.260Z"
   },
+  "128c40ea-1786-4b28-b1f7-f0c9b4c72267": {
+    "status": "available",
+    "name": "Bosom Buddy",
+    "price_brl": 0.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unhinged",
+    "printing_code": "UH",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bosom%20Buddy",
+    "checked_at": "2026-08-10T00:01:52.871Z"
+  },
   "12971527-aa8e-4517-9b00-71474caebfd0": {
     "status": "available",
     "name": "Azorius Aethermage",

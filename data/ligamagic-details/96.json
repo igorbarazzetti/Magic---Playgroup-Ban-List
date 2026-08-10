@@ -119,6 +119,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akki%20Coalflinger",
     "checked_at": "2026-08-06T14:55:02.276Z"
   },
+  "96e081d2-ec72-41fc-ad81-2e31ab823ae0": {
+    "status": "available",
+    "name": "Breaking of the Fellowship",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Senhor dos Anéis: Contos da Terra Média",
+    "printing_code": "LTR",
+    "collector_number": "117",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Breaking%20of%20the%20Fellowship",
+    "checked_at": "2026-08-10T00:30:40.451Z"
+  },
   "96e1d890-4ebb-4c79-8df9-24e3adaf4d9b": {
     "status": "available",
     "name": "Ambuscade Shaman",

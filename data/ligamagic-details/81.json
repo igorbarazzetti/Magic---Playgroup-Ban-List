@@ -82,5 +82,17 @@
     "collector_number": "77",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blood%20Funnel",
     "checked_at": "2026-08-09T22:15:17.374Z"
+  },
+  "81e6ade9-a38f-4655-b09c-9ca41a11face": {
+    "status": "available",
+    "name": "Breath of Malfegor",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alara Reunida",
+    "printing_code": "ARB",
+    "collector_number": "35",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Breath%20of%20Malfegor",
+    "checked_at": "2026-08-10T00:32:40.419Z"
   }
 }

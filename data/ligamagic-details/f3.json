@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Astroquarium",
     "checked_at": "2026-08-08T02:53:02.381Z"
   },
+  "f32d19d6-8ac1-4744-b2c2-5c9d4cd0da70": {
+    "status": "available",
+    "name": "Bottle of Suleiman",
+    "price_brl": 0.45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quarta Edição",
+    "printing_code": "4E",
+    "collector_number": "40",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bottle%20of%20Suleiman",
+    "checked_at": "2026-08-10T00:03:54.903Z"
+  },
   "f33217cc-175f-45e8-bc69-801f41cb4495": {
     "status": "available",
     "name": "Agent Bishop, Man in Black",
@@ -226,6 +238,18 @@
     "collector_number": "20040",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Flooded%20Strand",
     "checked_at": "2026-08-05T20:06:25.615Z"
+  },
+  "f3dd1f6d-f7d7-4358-8139-7495404f29c7": {
+    "status": "available",
+    "name": "Breath Weapon",
+    "price_brl": 39.6,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends: Batalha por Portal de Baldur",
+    "printing_code": "CLB",
+    "collector_number": "165",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Breath%20Weapon",
+    "checked_at": "2026-08-10T00:33:02.715Z"
   },
   "f3e025ce-6114-42d0-842f-73366c853657": {
     "status": "available",

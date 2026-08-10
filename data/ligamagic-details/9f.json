@@ -1,4 +1,16 @@
 {
+  "9f18a580-1c30-4f97-be06-098a763dfda8": {
+    "status": "available",
+    "name": "Breakneck Berserker",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaldheim",
+    "printing_code": "KHM",
+    "collector_number": "124",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Breakneck%20Berserker",
+    "checked_at": "2026-08-10T00:31:12.945Z"
+  },
   "9f1c5040-ac46-4e8f-a5ff-8205e13a8893": {
     "status": "available",
     "name": "Atrocious Experiment",

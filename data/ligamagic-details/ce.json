@@ -1,4 +1,16 @@
 {
+  "ce19962d-94f9-4b2b-b668-963c0acce308": {
+    "status": "available",
+    "name": "Borne Upon a Wind",
+    "price_brl": 38,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Senhor dos Anéis: Contos da Terra Média",
+    "printing_code": "LTR",
+    "collector_number": "44",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Borne%20Upon%20a%20Wind",
+    "checked_at": "2026-08-09T23:55:43.418Z"
+  },
   "ce1a6c1f-6b4e-4d19-b256-48d073b359b7": {
     "status": "available",
     "name": "Additive Evolution",
@@ -58,6 +70,18 @@
     "collector_number": "18",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Back%20in%20Town",
     "checked_at": "2026-08-08T14:56:57.855Z"
+  },
+  "ce77fff1-32f8-4a55-9124-b1dafe95840d": {
+    "status": "available",
+    "name": "Bookwurm",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Strixhaven: Escola de Magos",
+    "printing_code": "STX",
+    "collector_number": "123",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bookwurm",
+    "checked_at": "2026-08-09T23:47:14.925Z"
   },
   "ce79bbd2-edf0-4d5e-9aaf-717ec3960c48": {
     "status": "available",
@@ -130,6 +154,18 @@
     "collector_number": "144",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aurelia's%20Fury",
     "checked_at": "2026-08-08T07:31:13.368Z"
+  },
+  "cec10abd-2a2d-4d89-9ecc-ea50c2ac1538": {
+    "status": "available",
+    "name": "Boosted Sloop",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Aetherdrift",
+    "printing_code": "DFT",
+    "collector_number": "190",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boosted%20Sloop",
+    "checked_at": "2026-08-09T23:51:20.320Z"
   },
   "ceddea59-de47-4ddd-b424-6e1dcb13ab79": {
     "status": "available",

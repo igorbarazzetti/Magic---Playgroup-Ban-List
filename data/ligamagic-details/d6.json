@@ -107,6 +107,17 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baba%20Lysaga%2C%20Night%20Witch",
     "checked_at": "2026-08-08T14:56:07.435Z"
   },
+  "d6d72f5f-8f5d-4180-b514-f22ff5482902": {
+    "status": "unavailable",
+    "name": "Bonecrusher Giant // Stomp",
+    "price_brl": null,
+    "finish": "normal",
+    "condition": "NM",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bonecrusher%20Giant",
+    "checked_at": "2026-08-09T23:45:46.479Z",
+    "last_error": "A lista de impressões não foi encontrada na página.",
+    "attempts": 2
+  },
   "d6d7faa8-ecc9-408b-9c46-a0f62c74f567": {
     "status": "available",
     "name": "Abolish",

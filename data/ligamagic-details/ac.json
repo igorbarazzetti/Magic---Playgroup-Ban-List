@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Azra%20Bladeseeker",
     "checked_at": "2026-08-08T13:31:47.239Z"
   },
+  "ac5c0078-e2f1-4ac1-8748-575d69e09cf8": {
+    "status": "available",
+    "name": "Bramble Elemental",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ravnica: A Cidade das Guildas",
+    "printing_code": "RAV",
+    "collector_number": "154",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bramble%20Elemental",
+    "checked_at": "2026-08-10T00:16:59.159Z"
+  },
   "ac65ed8c-abe8-4044-9ce5-70b1370d0e19": {
     "status": "available",
     "name": "Boggart Mischief",
@@ -130,6 +142,18 @@
     "collector_number": "360",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcbound%20Shikari",
     "checked_at": "2026-08-07T13:57:04.048Z"
+  },
+  "acd881eb-f3b4-4174-9fc2-e3c7c213886b": {
+    "status": "available",
+    "name": "Boomerang Basics",
+    "price_brl": 3.89,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Avatar: The Last Airbender",
+    "printing_code": "TLA",
+    "collector_number": "46",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boomerang%20Basics",
+    "checked_at": "2026-08-09T23:48:21.950Z"
   },
   "acdcffa0-87e5-48a2-93d2-572febfc9d52": {
     "status": "available",

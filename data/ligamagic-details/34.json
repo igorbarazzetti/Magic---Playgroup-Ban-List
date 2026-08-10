@@ -214,5 +214,17 @@
     "collector_number": "2",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Augur%20il-Vec",
     "checked_at": "2026-08-08T07:26:03.174Z"
+  },
+  "34f0beae-a8e2-4474-9f7f-4735d3f26863": {
+    "status": "available",
+    "name": "Boon of Safety",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ruas de Nova Capenna",
+    "printing_code": "SNC",
+    "collector_number": "4",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boon%20of%20Safety",
+    "checked_at": "2026-08-09T23:50:13.644Z"
   }
 }

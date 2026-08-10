@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baloth%20Pup",
     "checked_at": "2026-08-08T17:00:47.175Z"
   },
+  "cb3edb86-ddd5-461c-98b5-ffb4df437a39": {
+    "status": "available",
+    "name": "Boommobile",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Aetherdrift",
+    "printing_code": "DFT",
+    "collector_number": "113",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boommobile",
+    "checked_at": "2026-08-09T23:48:55.623Z"
+  },
   "cb479ce1-59e8-4531-9a21-f7c97d334817": {
     "status": "available",
     "name": "Blinding Angel",

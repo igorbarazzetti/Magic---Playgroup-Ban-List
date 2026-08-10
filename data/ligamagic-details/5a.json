@@ -1,4 +1,16 @@
 {
+  "5a10c3a5-6724-4e5a-ae4f-b27dde12735a": {
+    "status": "available",
+    "name": "Brass Squire",
+    "price_brl": 0.95,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mirrodin Sitiada",
+    "printing_code": "MBS",
+    "collector_number": "101",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brass%20Squire",
+    "checked_at": "2026-08-10T00:22:40.849Z"
+  },
   "5a2dfff5-9dba-42f5-bcca-918c16f23807": {
     "status": "available",
     "name": "Alchemist's Talent",
@@ -71,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bitterthorn%2C%20Nissa's%20Animus",
     "checked_at": "2026-08-09T19:13:34.703Z"
   },
+  "5a6176cc-98bf-43ac-815a-1f19c4e9329c": {
+    "status": "available",
+    "name": "Boss's Chauffeur",
+    "price_brl": 0.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Bloomburrow Commander",
+    "printing_code": "BLC",
+    "collector_number": "137",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boss's%20Chauffeur",
+    "checked_at": "2026-08-10T00:02:05.070Z"
+  },
   "5a651557-ce08-46ba-aecd-0e4fbfdef3c0": {
     "status": "available",
     "name": "Bile-Vial Boggart",
@@ -107,6 +131,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battle%20of%20Frost%20and%20Fire",
     "checked_at": "2026-08-08T21:06:16.838Z"
   },
+  "5a81755f-bc44-47ac-8039-8847a5e37922": {
+    "status": "available",
+    "name": "Brainwash",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quinta Edição",
+    "printing_code": "5E",
+    "collector_number": "49",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brainwash",
+    "checked_at": "2026-08-10T00:16:15.381Z"
+  },
   "5a824aff-52fe-4402-b074-884afb5286d4": {
     "status": "available",
     "name": "Amazing Alliance",
@@ -130,6 +166,18 @@
     "collector_number": "167",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blossoming%20Defense",
     "checked_at": "2026-08-09T23:05:07.458Z"
+  },
+  "5a8630a8-804e-4789-b9a3-96d9ede5e188": {
+    "status": "available",
+    "name": "Brass Knuckles",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Masters",
+    "printing_code": "CMM",
+    "collector_number": "372",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brass%20Knuckles",
+    "checked_at": "2026-08-10T00:21:45.821Z"
   },
   "5a88f616-986d-4e97-9457-26c783489123": {
     "status": "available",

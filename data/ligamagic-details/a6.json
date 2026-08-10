@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bladeback%20Sliver",
     "checked_at": "2026-08-09T21:39:52.660Z"
   },
+  "a648b9ed-810a-41db-af40-3b5b4658db90": {
+    "status": "available",
+    "name": "Breaking Point",
+    "price_brl": 0.38,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Duel Decks: Sorin vs. Tibalt",
+    "printing_code": "DDK",
+    "collector_number": "67",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Breaking%20Point",
+    "checked_at": "2026-08-10T00:30:51.012Z"
+  },
   "a6496440-dc0c-4d9b-bf37-f537b6f0187b": {
     "status": "available",
     "name": "Blightning",
@@ -178,6 +190,18 @@
     "collector_number": "87",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assassin's%20Ink",
     "checked_at": "2026-08-08T02:46:12.352Z"
+  },
+  "a6eab631-77d8-4fc2-9305-a299ecf33e46": {
+    "status": "available",
+    "name": "Booster Tutor",
+    "price_brl": 3.84,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unsanctioned",
+    "printing_code": "UND",
+    "collector_number": "33",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Booster%20Tutor",
+    "checked_at": "2026-08-09T23:51:31.464Z"
   },
   "a6ffcbc9-0990-4d95-a995-1b2f321256d7": {
     "status": "available",

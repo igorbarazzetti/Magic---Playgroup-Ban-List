@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Amazing%20Acrobatics",
     "checked_at": "2026-08-07T00:47:35.393Z"
   },
+  "046923d6-2d58-42ce-afb8-886f4932e76c": {
+    "status": "available",
+    "name": "Breath of Fire",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Global Series: Jiang Yanggu and Mu Yanling",
+    "printing_code": "GS1",
+    "collector_number": "33",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Breath%20of%20Fire",
+    "checked_at": "2026-08-10T00:32:06.989Z"
+  },
   "048c3b0b-48ef-42f5-a2af-90aa1d133296": {
     "status": "available",
     "name": "Atomic Microsizer",

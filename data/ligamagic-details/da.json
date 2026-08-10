@@ -11,6 +11,17 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armistice",
     "checked_at": "2026-08-07T19:31:53.904Z"
   },
+  "da1e019c-2ffb-412d-90d7-f2e5e5c44c4b": {
+    "status": "unavailable",
+    "name": "Bloomvine Regent // Claim Territory",
+    "price_brl": null,
+    "finish": "normal",
+    "condition": "NM",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloomvine%20Regent",
+    "checked_at": "2026-08-09T23:45:23.808Z",
+    "last_error": "A lista de impressões não foi encontrada na página.",
+    "attempts": 2
+  },
   "da307ea2-4df7-4d6b-be0f-9dc6ac93db61": {
     "status": "available",
     "name": "Baldur's Gate",

@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Baxter%20Stockman",
     "checked_at": "2026-08-08T22:57:30.449Z"
   },
+  "e6337404-2978-47a8-a5ae-4a70add2df69": {
+    "status": "available",
+    "name": "Boot Nipper",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ikoria: Terra de Colossos",
+    "printing_code": "IKO",
+    "collector_number": "76",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boot%20Nipper",
+    "checked_at": "2026-08-09T23:51:41.381Z"
+  },
   "e6479195-cbdf-4d2b-9f45-5fd0a6ab4a77": {
     "status": "available",
     "name": "Arm with Aether",
@@ -106,6 +118,30 @@
     "collector_number": "151",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ayli%2C%20Eternal%20Pilgrim",
     "checked_at": "2026-08-08T13:26:27.094Z"
+  },
+  "e6acafb7-856f-4125-a908-a620635b8ba3": {
+    "status": "available",
+    "name": "Boundless Realms",
+    "price_brl": 6.72,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2013",
+    "printing_code": "M13",
+    "collector_number": "162",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boundless%20Realms",
+    "checked_at": "2026-08-10T00:08:03.309Z"
+  },
+  "e6b20c30-88c2-4cb0-a5e4-46f1df924a7c": {
+    "status": "available",
+    "name": "Bounty of the Luxa",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Amonkhet",
+    "printing_code": "AKH",
+    "collector_number": "196",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bounty%20of%20the%20Luxa",
+    "checked_at": "2026-08-10T00:10:02.891Z"
   },
   "e6bef0c4-3dfc-49a8-8fec-22b2570b704b": {
     "status": "available",

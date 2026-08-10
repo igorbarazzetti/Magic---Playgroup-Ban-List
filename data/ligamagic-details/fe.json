@@ -130,5 +130,17 @@
     "collector_number": "166",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Heartstabber",
     "checked_at": "2026-08-08T09:16:40.398Z"
+  },
+  "fef94125-aa8d-4147-a609-1e990961bde2": {
+    "status": "available",
+    "name": "Brainbite",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alara Reunida",
+    "printing_code": "ARB",
+    "collector_number": "18",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brainbite",
+    "checked_at": "2026-08-10T00:14:57.996Z"
   }
 }

@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Asmodeus%20the%20Archfiend",
     "checked_at": "2026-08-08T02:43:12.301Z"
   },
+  "1e44bb4e-aeea-4f43-9cbd-4c24a9b6b022": {
+    "status": "available",
+    "name": "Break Ties",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 2",
+    "printing_code": "MH2",
+    "collector_number": "8",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Break%20Ties",
+    "checked_at": "2026-08-10T00:29:57.459Z"
+  },
   "1e4cf4a4-50a4-4856-bf7e-20899e8affd1": {
     "status": "available",
     "name": "Ant-Man, Scott Lang",
@@ -142,5 +154,17 @@
     "collector_number": "128",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ardent%20Elementalist",
     "checked_at": "2026-08-07T17:26:24.622Z"
+  },
+  "1ef5003c-f540-4cdc-913f-7d5280ad9f62": {
+    "status": "available",
+    "name": "Border Guard",
+    "price_brl": 0.45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portal",
+    "printing_code": "PO",
+    "collector_number": "22",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Border%20Guard",
+    "checked_at": "2026-08-09T23:52:48.928Z"
   }
 }

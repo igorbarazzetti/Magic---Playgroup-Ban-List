@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atsushi%2C%20the%20Blazing%20Sky",
     "checked_at": "2026-08-08T07:21:43.051Z"
   },
+  "5370ee80-0354-454f-a16e-ec133e432ecb": {
+    "status": "available",
+    "name": "Breaching Dragonstorm",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tarkir: Dragonstorm",
+    "printing_code": "TDM",
+    "collector_number": "101",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Breaching%20Dragonstorm",
+    "checked_at": "2026-08-10T00:27:50.364Z"
+  },
   "537ebea5-f805-4f78-9151-58eb43c4a62d": {
     "status": "available",
     "name": "Bog Gnarr",

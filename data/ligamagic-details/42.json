@@ -1,4 +1,16 @@
 {
+  "422ef4ec-863a-450e-9577-a0707bc16532": {
+    "status": "available",
+    "name": "Brazen Scourge",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaladesh",
+    "printing_code": "KLD",
+    "collector_number": "107",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brazen%20Scourge",
+    "checked_at": "2026-08-10T00:26:43.225Z"
+  },
   "4236851b-5366-43a1-bde4-f525b4fbcbce": {
     "status": "available",
     "name": "Bloodchief's Thirst",

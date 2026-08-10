@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blind%20Seer",
     "checked_at": "2026-08-09T22:02:06.306Z"
   },
+  "f91ef713-5289-4901-9291-0a5afe6f997b": {
+    "status": "available",
+    "name": "Bower Passage",
+    "price_brl": 0.18,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Retorno de Avacyn",
+    "printing_code": "AVR",
+    "collector_number": "170",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bower%20Passage",
+    "checked_at": "2026-08-10T00:10:34.878Z"
+  },
   "f9275c99-0616-44b3-a19e-98c683e87ad3": {
     "status": "available",
     "name": "Barbed Foliage",
@@ -22,6 +34,18 @@
     "collector_number": "18",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbed%20Foliage",
     "checked_at": "2026-08-08T19:07:02.081Z"
+  },
+  "f93dc9cc-3dd2-4e2b-b972-217ab9d89dfe": {
+    "status": "available",
+    "name": "Brazen Collector",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Bloomburrow",
+    "printing_code": "BLB",
+    "collector_number": "128",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brazen%20Collector",
+    "checked_at": "2026-08-10T00:26:10.430Z"
   },
   "f953afdf-96f7-4851-994c-1617e8f5e5c9": {
     "status": "available",

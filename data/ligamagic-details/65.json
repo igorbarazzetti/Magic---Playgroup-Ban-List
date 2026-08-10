@@ -179,6 +179,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Demonic%20Attorney",
     "checked_at": "2026-08-05T20:05:07.681Z"
   },
+  "65bc4f8a-3226-4648-862b-3f62736ff1ae": {
+    "status": "available",
+    "name": "Borderland Explorer",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2018",
+    "printing_code": "C18",
+    "collector_number": "133",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Borderland%20Explorer",
+    "checked_at": "2026-08-09T23:53:33.209Z"
+  },
   "65dc61a4-9052-49d4-bce8-9c16f0339382": {
     "status": "available",
     "name": "Advanced Hoverguard",

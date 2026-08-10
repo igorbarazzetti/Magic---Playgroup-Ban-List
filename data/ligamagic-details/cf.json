@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blight%20Rot",
     "checked_at": "2026-08-09T21:56:44.372Z"
   },
+  "cf5bf1ef-e40b-4fb5-8148-d4ca7a307501": {
+    "status": "available",
+    "name": "Boros Battleshaper",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Labirinto do Dragão",
+    "printing_code": "DGM",
+    "collector_number": "58",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boros%20Battleshaper",
+    "checked_at": "2026-08-09T23:56:15.750Z"
+  },
   "cf6dc79e-840c-4d47-8f94-c8623528acd2": {
     "status": "available",
     "name": "Angry Rabble",

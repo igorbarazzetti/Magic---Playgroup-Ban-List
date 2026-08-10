@@ -131,6 +131,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boggart%20Arsonists",
     "checked_at": "2026-08-09T23:18:10.061Z"
   },
+  "54b5e429-7a44-480d-bea4-4f8eeb7449b5": {
+    "status": "available",
+    "name": "Bottle Gnomes",
+    "price_brl": 0.02,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Anthology 2018",
+    "printing_code": "CM2",
+    "collector_number": "177",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bottle%20Gnomes",
+    "checked_at": "2026-08-10T00:03:33.310Z"
+  },
   "54e86bc8-ff48-49be-902c-4923d59901a7": {
     "status": "available",
     "name": "Bearer of the Heavens",

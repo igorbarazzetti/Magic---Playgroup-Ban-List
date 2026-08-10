@@ -155,6 +155,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agony%20Warp",
     "checked_at": "2026-08-06T14:42:31.743Z"
   },
+  "377e4dad-866b-4e02-8c10-072bf7f000be": {
+    "status": "available",
+    "name": "Boros Swiftblade",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Masters 2015",
+    "printing_code": "MM2",
+    "collector_number": "172",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boros%20Swiftblade",
+    "checked_at": "2026-08-09T23:59:11.204Z"
+  },
+  "378a78d8-9001-4aa5-a66b-2aca27fa8180": {
+    "status": "available",
+    "name": "Borderland Behemoth",
+    "price_brl": 0.4,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2015",
+    "printing_code": "C15",
+    "collector_number": "142",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Borderland%20Behemoth",
+    "checked_at": "2026-08-09T23:53:22.712Z"
+  },
   "379ce83a-478a-429b-8f15-935e63efe00e": {
     "status": "available",
     "name": "Animate Graveyard",

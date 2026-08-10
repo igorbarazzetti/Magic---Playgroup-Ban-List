@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bleeding%20Effect",
     "checked_at": "2026-08-09T21:51:09.458Z"
   },
+  "68a2e371-ccf0-4c2a-aeef-c66852811e1a": {
+    "status": "available",
+    "name": "Boreal Elemental",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2020",
+    "printing_code": "M20",
+    "collector_number": "49",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boreal%20Elemental",
+    "checked_at": "2026-08-09T23:54:38.352Z"
+  },
   "68a99e50-0e98-480b-ad25-aa2c226d24ca": {
     "status": "available",
     "name": "Battlefield Raptor",

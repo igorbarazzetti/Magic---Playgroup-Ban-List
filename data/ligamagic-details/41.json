@@ -119,6 +119,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodtithe%20Harvester",
     "checked_at": "2026-08-09T23:02:05.871Z"
   },
+  "419b5b4f-cac7-44bf-b1e2-655b5a5d37b1": {
+    "status": "available",
+    "name": "Brain Maggot",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Viagem para Nyx",
+    "printing_code": "JOU",
+    "collector_number": "62",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brain%20Maggot",
+    "checked_at": "2026-08-10T00:14:26.415Z"
+  },
+  "41c84665-1f99-40ab-aaca-1188649eb263": {
+    "status": "available",
+    "name": "Boros Signet",
+    "price_brl": 1.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kit de Guilda: Boros",
+    "printing_code": "GK1B",
+    "collector_number": "97",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boros%20Signet",
+    "checked_at": "2026-08-09T23:58:48.911Z"
+  },
   "41e250e6-8e38-4cbc-ae66-98800a5feba8": {
     "status": "available",
     "name": "Archdemon of Unx",

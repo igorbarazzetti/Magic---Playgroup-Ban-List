@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Sowing%20Mycospawn",
     "checked_at": "2026-08-05T20:12:57.145Z"
   },
+  "63b0538e-aa94-4e23-adf1-704cbf5bc3e5": {
+    "status": "available",
+    "name": "Brass's Bounty",
+    "price_brl": 0.66,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Rivais de Ixalan",
+    "printing_code": "RIX",
+    "collector_number": "94",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brass's%20Bounty",
+    "checked_at": "2026-08-10T00:22:08.552Z"
+  },
   "63c04040-e109-494e-baa6-c639a6c9a996": {
     "status": "available",
     "name": "Bag of Holding",

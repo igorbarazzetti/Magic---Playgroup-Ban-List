@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avalanche%20Caller",
     "checked_at": "2026-08-08T09:10:10.230Z"
   },
+  "c6736bac-314b-48af-8722-c16a0d66affa": {
+    "status": "available",
+    "name": "Bounding Krasis",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic Origens",
+    "printing_code": "ORI",
+    "collector_number": "212",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bounding%20Krasis",
+    "checked_at": "2026-08-10T00:07:42.913Z"
+  },
   "c6836d78-ca71-4413-aced-d4de19976221": {
     "status": "available",
     "name": "Birthing Boughs",
@@ -130,6 +142,18 @@
     "collector_number": "79",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angel%20of%20Glory's%20Rise",
     "checked_at": "2026-08-07T07:54:16.246Z"
+  },
+  "c6b26c1f-121f-4b7c-921e-429b623ca934": {
+    "status": "available",
+    "name": "Breakthrough",
+    "price_brl": 0.21,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Double Masters 2022",
+    "printing_code": "2X2",
+    "collector_number": "41",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Breakthrough",
+    "checked_at": "2026-08-10T00:31:33.891Z"
   },
   "c6bb4b41-8dae-429a-b928-ae9d39c74711": {
     "status": "available",

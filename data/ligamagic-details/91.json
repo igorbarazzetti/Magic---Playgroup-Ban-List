@@ -143,6 +143,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adanto%20Vanguard",
     "checked_at": "2026-08-06T03:59:12.181Z"
   },
+  "91e6fb47-59e4-4616-b8dd-3a7e30070074": {
+    "status": "available",
+    "name": "Bottomless Pit",
+    "price_brl": 24.99,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fortaleza",
+    "printing_code": "SH",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bottomless%20Pit",
+    "checked_at": "2026-08-10T00:04:16.341Z"
+  },
   "91f95d83-3637-4cf8-af6c-56bc4e4b2591": {
     "status": "available",
     "name": "Akki Underling",

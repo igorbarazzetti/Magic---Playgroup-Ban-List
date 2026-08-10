@@ -119,6 +119,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aligned%20Heart",
     "checked_at": "2026-08-07T00:32:44.561Z"
   },
+  "ae685a9b-4cb8-4a8a-935d-378102431c51": {
+    "status": "available",
+    "name": "Branchblight Stalker",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Phyrexia: Tudo será um",
+    "printing_code": "ONE",
+    "collector_number": "160",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Branchblight%20Stalker",
+    "checked_at": "2026-08-10T00:19:23.993Z"
+  },
   "ae6ef097-bd52-4bf8-81a8-2e6c643fc805": {
     "status": "available",
     "name": "Banish to Another Universe",
@@ -214,6 +226,18 @@
     "collector_number": "176",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Atzocan%20Archer",
     "checked_at": "2026-08-08T07:24:03.116Z"
+  },
+  "aedcd2fb-813a-4915-b7b9-ac7479863462": {
+    "status": "available",
+    "name": "Boon Satyr",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros",
+    "printing_code": "THS",
+    "collector_number": "152",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boon%20Satyr",
+    "checked_at": "2026-08-09T23:50:58.590Z"
   },
   "aedcde3b-3ed5-443c-a81c-03d785153e55": {
     "status": "available",

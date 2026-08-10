@@ -143,6 +143,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Backwoods%20Survivalists",
     "checked_at": "2026-08-08T14:58:37.520Z"
   },
+  "d2c53737-c265-46e3-a779-52c6b4f82d7d": {
+    "status": "available",
+    "name": "Break Asunder",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Flagelo",
+    "printing_code": "SC",
+    "collector_number": "113",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Break%20Asunder",
+    "checked_at": "2026-08-10T00:28:22.443Z"
+  },
   "d2d84ba5-0d20-4ce3-8f1f-93cd9ef94f5f": {
     "status": "available",
     "name": "Biogenic Ooze",

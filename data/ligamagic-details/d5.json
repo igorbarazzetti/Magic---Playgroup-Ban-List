@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcane%20Infusion",
     "checked_at": "2026-08-07T13:52:13.840Z"
   },
+  "d52b72ff-a82d-430e-94c7-675c83b43e50": {
+    "status": "available",
+    "name": "Braidwood Cup",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Destino de Urza",
+    "printing_code": "UD",
+    "collector_number": "126",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Braidwood%20Cup",
+    "checked_at": "2026-08-10T00:13:31.594Z"
+  },
   "d551931d-4ebe-4acc-9e87-6c628897071a": {
     "status": "available",
     "name": "Archon of Justice",

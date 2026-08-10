@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Banquet%20Guests",
     "checked_at": "2026-08-08T17:08:37.326Z"
   },
+  "7f6ddfa2-31ba-4cb7-83e7-1f099e3e8dc3": {
+    "status": "available",
+    "name": "Brass Gnat",
+    "price_brl": 0.02,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Espiral Temporal",
+    "printing_code": "TS",
+    "collector_number": "249",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brass%20Gnat",
+    "checked_at": "2026-08-10T00:21:13.306Z"
+  },
   "7f715f72-5444-4ab3-a6ca-3d5bfd0d4851": {
     "status": "available",
     "name": "Airborne Aid",

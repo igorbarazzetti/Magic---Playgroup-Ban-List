@@ -1,4 +1,16 @@
 {
+  "b00f316d-7c82-40e6-80e5-9f36434590a3": {
+    "status": "available",
+    "name": "Bounding Felidar",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Os Fora da Lei de Encruzilhada do Trovão",
+    "printing_code": "OTJ",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bounding%20Felidar",
+    "checked_at": "2026-08-10T00:07:32.049Z"
+  },
   "b0102259-7a2c-470e-b04b-4a1f615d057c": {
     "status": "available",
     "name": "Blightbelly Rat",
@@ -46,6 +58,18 @@
     "collector_number": "46",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beyeen%20Veil",
     "checked_at": "2026-08-09T21:38:02.274Z"
+  },
+  "b044b4fd-d504-4a11-80bf-eb8fb0b6e21e": {
+    "status": "available",
+    "name": "Boros Locket",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Guildas de Ravnica",
+    "printing_code": "GRN",
+    "collector_number": "231",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boros%20Locket",
+    "checked_at": "2026-08-09T23:58:02.879Z"
   },
   "b06067e7-330e-47de-be59-c2874eedba1d": {
     "status": "available",
@@ -142,5 +166,17 @@
     "collector_number": "201",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ant-Man%2C%20Colony%20Commander",
     "checked_at": "2026-08-07T09:31:46.392Z"
+  },
+  "b0fdf2e0-3025-4919-a9dc-d33100e487fd": {
+    "status": "available",
+    "name": "Boom Box",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Os Fora da Lei de Encruzilhada do Trovão",
+    "printing_code": "OTJ",
+    "collector_number": "241",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boom%20Box",
+    "checked_at": "2026-08-09T23:47:25.081Z"
   }
 }

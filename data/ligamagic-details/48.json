@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aang%20and%20Katara",
     "checked_at": "2026-08-06T00:03:26.685Z"
   },
+  "48296cc0-0141-47c6-9ec8-ada6171fee6f": {
+    "status": "available",
+    "name": "Boom Scholar",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Aetherdrift",
+    "printing_code": "DFT",
+    "collector_number": "189",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boom%20Scholar",
+    "checked_at": "2026-08-09T23:47:48.596Z"
+  },
   "48369aec-a991-4bef-8554-01c84302b063": {
     "status": "available",
     "name": "Aetherspouts",

@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodlord%20of%20Vaasgoth",
     "checked_at": "2026-08-09T22:55:43.293Z"
   },
+  "d85aa59b-c6aa-4b2f-885c-59d6e5e6e8b9": {
+    "status": "available",
+    "name": "Braids, Cabal Minion",
+    "price_brl": 6.38,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Eternal Masters",
+    "printing_code": "EMA",
+    "collector_number": "82",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Braids%2C%20Cabal%20Minion",
+    "checked_at": "2026-08-10T00:12:59.425Z"
+  },
   "d87ebd8c-ad2c-45c9-8c97-f046aeda861c": {
     "status": "available",
     "name": "Anvilwrought Raptor",
@@ -130,6 +142,18 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Acrobatic%20Cheerleader",
     "checked_at": "2026-08-06T03:56:42.408Z"
+  },
+  "d8d5d0a4-9a56-404c-b459-a37dc5ae6bc1": {
+    "status": "available",
+    "name": "Botanical Brawler",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marcha das Máquinas",
+    "printing_code": "MOM",
+    "collector_number": "220",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Botanical%20Brawler",
+    "checked_at": "2026-08-10T00:02:25.971Z"
   },
   "d8e1e9ba-708c-4f54-abc3-817004a2f2ac": {
     "status": "available",

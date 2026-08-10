@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alms%20of%20the%20Vein",
     "checked_at": "2026-08-07T00:39:14.815Z"
   },
+  "20283c4a-f1f0-42f0-bc08-6da87474426b": {
+    "status": "available",
+    "name": "Breeding Pool",
+    "price_brl": 36,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portões Violados",
+    "printing_code": "GTC",
+    "collector_number": "240",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Breeding%20Pool",
+    "checked_at": "2026-08-10T00:35:07.299Z"
+  },
   "203b72d2-a273-49cc-bd10-2fbc07ed2fc8": {
     "status": "available",
     "name": "Agents of S.H.I.E.L.D.",
@@ -71,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Badgermole",
     "checked_at": "2026-08-08T14:59:27.526Z"
   },
+  "20b549e9-26db-40a5-8bcc-e8de6c559d32": {
+    "status": "available",
+    "name": "Boreal Shelf",
+    "price_brl": 0.94,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Frente Fria",
+    "printing_code": "CS",
+    "collector_number": "144",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boreal%20Shelf",
+    "checked_at": "2026-08-09T23:55:10.353Z"
+  },
   "20c20c86-4435-49e0-bbf3-b51c49c2eadd": {
     "status": "available",
     "name": "Beguiler of Wills",
@@ -82,6 +106,30 @@
     "collector_number": "28",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Beguiler%20of%20Wills",
     "checked_at": "2026-08-09T13:36:24.128Z"
+  },
+  "20d30d4d-cf38-41fe-a2ce-8327f7c87c01": {
+    "status": "available",
+    "name": "Boon of Emrakul",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lua Arcana",
+    "printing_code": "EMN",
+    "collector_number": "81",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boon%20of%20Emrakul",
+    "checked_at": "2026-08-09T23:49:50.385Z"
+  },
+  "20eff2ce-f26d-48a2-8a1f-435a7e2968c8": {
+    "status": "available",
+    "name": "Boros Fury-Shield",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ravnica: A Cidade das Guildas",
+    "printing_code": "RAV",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boros%20Fury-Shield",
+    "checked_at": "2026-08-09T23:57:10.155Z"
   },
   "20f7f33d-0c49-49f7-80fa-aed86e33a528": {
     "status": "available",

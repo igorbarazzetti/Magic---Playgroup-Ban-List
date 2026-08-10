@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ancient%20Spring",
     "checked_at": "2026-08-07T07:51:26.132Z"
   },
+  "2160aed4-5a7a-4eca-96b5-707204fa73bb": {
+    "status": "available",
+    "name": "Boulderfall",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros",
+    "printing_code": "THS",
+    "collector_number": "115",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boulderfall",
+    "checked_at": "2026-08-10T00:05:41.063Z"
+  },
   "21695c70-f746-4d77-b6d3-e2713a5c929e": {
     "status": "available",
     "name": "Bogslither's Embrace",

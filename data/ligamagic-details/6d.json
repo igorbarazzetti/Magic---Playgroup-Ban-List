@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Assimilation%20Aegis",
     "checked_at": "2026-08-08T02:50:02.101Z"
   },
+  "6d53f58c-6cf3-4ecc-8227-8c264fecc836": {
+    "status": "available",
+    "name": "Brawl",
+    "price_brl": 0.85,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Máscaras de Mercádia",
+    "printing_code": "MM",
+    "collector_number": "178",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brawl",
+    "checked_at": "2026-08-10T00:24:31.655Z"
+  },
   "6d8e464c-9df1-46b1-88e6-dcc7fe7b7caa": {
     "status": "available",
     "name": "Bog Badger",

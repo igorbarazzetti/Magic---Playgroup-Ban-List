@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bonecache%20Overseer",
     "checked_at": "2026-08-09T23:34:50.579Z"
   },
+  "be455184-c57d-4504-8c34-3be42bc3f04b": {
+    "status": "available",
+    "name": "Bramblewood Paragon",
+    "price_brl": 0.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alvorecer",
+    "printing_code": "MT",
+    "collector_number": "115",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bramblewood%20Paragon",
+    "checked_at": "2026-08-10T00:19:01.492Z"
+  },
   "be5a65fd-0d06-4771-bee7-0e42cc9871da": {
     "status": "available",
     "name": "Augury Adept",

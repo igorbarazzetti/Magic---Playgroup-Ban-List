@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Afiya%20Grove",
     "checked_at": "2026-08-06T11:07:04.000Z"
   },
+  "056b5d53-f2fd-4e83-9fd3-d8f0d0be64b9": {
+    "status": "available",
+    "name": "Bounty Agent",
+    "price_brl": 0.45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Guildas de Ravnica",
+    "printing_code": "GRN",
+    "collector_number": "2",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bounty%20Agent",
+    "checked_at": "2026-08-10T00:08:57.583Z"
+  },
   "05828c1e-9185-4b70-94fe-753eacdf45a1": {
     "status": "available",
     "name": "Ambush",

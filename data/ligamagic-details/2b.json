@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armory%20Veteran",
     "checked_at": "2026-08-07T19:36:54.083Z"
   },
+  "2b548f9a-c160-427d-9bb4-1fe940f8ab28": {
+    "status": "available",
+    "name": "Boreal Centaur",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Frente Fria",
+    "printing_code": "CS",
+    "collector_number": "104",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boreal%20Centaur",
+    "checked_at": "2026-08-09T23:54:16.436Z"
+  },
   "2b6d95b5-0680-43ae-9ff3-8e287a9eb837": {
     "status": "available",
     "name": "Acceptable Losses",

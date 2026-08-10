@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akroma's%20Will",
     "checked_at": "2026-08-06T18:08:37.330Z"
   },
+  "fdaa0faf-e7ee-48b3-9330-de0fc3792ad3": {
+    "status": "available",
+    "name": "Breath of Fury",
+    "price_brl": 22.8,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ravnica: A Cidade das Guildas",
+    "printing_code": "RAV",
+    "collector_number": "116",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Breath%20of%20Fury",
+    "checked_at": "2026-08-10T00:32:18.942Z"
+  },
   "fdcfa49a-70ed-48a4-b424-527a1698fd85": {
     "status": "available",
     "name": "Battering Wurm",

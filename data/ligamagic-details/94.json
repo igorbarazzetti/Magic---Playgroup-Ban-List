@@ -155,6 +155,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abundant%20Growth",
     "checked_at": "2026-08-06T00:16:27.319Z"
   },
+  "947bd180-ee95-4db4-b5d9-432428018eb8": {
+    "status": "available",
+    "name": "Brand of Ill Omen",
+    "price_brl": 1.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Era Glacial",
+    "printing_code": "IA",
+    "collector_number": "38",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brand%20of%20Ill%20Omen",
+    "checked_at": "2026-08-10T00:20:29.571Z"
+  },
   "949eb86a-94b2-4c9f-8040-f4ad8e1a7e33": {
     "status": "available",
     "name": "Aphetto Runecaster",
@@ -190,6 +202,18 @@
     "collector_number": "138",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodwater%20Entity",
     "checked_at": "2026-08-09T23:02:38.123Z"
+  },
+  "94dc9937-91e3-4c38-a544-c1cdb6989222": {
+    "status": "available",
+    "name": "Brain Pry",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Insurreição",
+    "printing_code": "DI",
+    "collector_number": "39",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brain%20Pry",
+    "checked_at": "2026-08-10T00:14:36.561Z"
   },
   "94e675d9-f426-4c36-aade-698967e1ed78": {
     "status": "available",

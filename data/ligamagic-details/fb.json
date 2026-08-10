@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Adorned%20Crocodile",
     "checked_at": "2026-08-06T07:09:54.645Z"
   },
+  "fb6d24cb-4e79-4d0c-b32f-47d5f709de1b": {
+    "status": "available",
+    "name": "Book Devourer",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Guildas de Ravnica",
+    "printing_code": "GRN",
+    "collector_number": "93",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Book%20Devourer",
+    "checked_at": "2026-08-09T23:46:42.290Z"
+  },
   "fb773114-6161-46a3-ab30-1853958fbcb0": {
     "status": "available",
     "name": "Bello, Bard of the Brambles",

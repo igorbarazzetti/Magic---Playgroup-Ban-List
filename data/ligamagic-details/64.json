@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashes%20of%20the%20Fallen",
     "checked_at": "2026-08-07T21:18:49.335Z"
   },
+  "644a8946-4890-4c2b-978f-02eedc95b5ad": {
+    "status": "available",
+    "name": "Book Burning",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Julgamento",
+    "printing_code": "JU",
+    "collector_number": "80",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Book%20Burning",
+    "checked_at": "2026-08-09T23:46:31.385Z"
+  },
   "644c785d-3061-44bc-9f78-bc939c565bf4": {
     "status": "available",
     "name": "Bladegraft Aspirant",
@@ -130,5 +142,17 @@
     "collector_number": "7",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Airbender's%20Reversal",
     "checked_at": "2026-08-06T14:47:21.911Z"
+  },
+  "64f56228-7874-4465-ba58-1049083ea02f": {
+    "status": "available",
+    "name": "Brass Man",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quarta Edição",
+    "printing_code": "4E",
+    "collector_number": "42",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brass%20Man",
+    "checked_at": "2026-08-10T00:21:57.132Z"
   }
 }

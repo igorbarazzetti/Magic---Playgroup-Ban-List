@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bard%20the%20Bowman",
     "checked_at": "2026-08-08T19:09:22.204Z"
   },
+  "ec08aeb3-bba7-4982-9160-68d25bd411d6": {
+    "status": "available",
+    "name": "Boseiju Reaches Skyward // Branch of Boseiju",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kamigawa: Dinastia Neon",
+    "printing_code": "NEO",
+    "collector_number": "177",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boseiju%20Reaches%20Skyward",
+    "checked_at": "2026-08-10T00:00:57.876Z"
+  },
   "ec17b9db-dd80-4b46-a1b5-215f26bf6498": {
     "status": "available",
     "name": "Bloodstone Goblin",

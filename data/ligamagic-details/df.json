@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Hymn%20of%20the%20Wilds",
     "checked_at": "2026-08-05T20:07:55.847Z"
   },
+  "dfa8de88-9222-435f-a56e-c32e91fd5289": {
+    "status": "available",
+    "name": "Brain Weevil",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Duel Decks: Izzet vs. Golgari",
+    "printing_code": "DDJ",
+    "collector_number": "58",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brain%20Weevil",
+    "checked_at": "2026-08-10T00:14:46.975Z"
+  },
   "dfb5f660-fd8b-4b7b-934c-6a71cd182f15": {
     "status": "available",
     "name": "Ajani Goldmane",

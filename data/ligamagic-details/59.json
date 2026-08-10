@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aegar%2C%20the%20Freezing%20Flame",
     "checked_at": "2026-08-06T07:13:54.902Z"
   },
+  "59384481-3ca0-49dd-b94f-d3680b336f1e": {
+    "status": "available",
+    "name": "Bre of Clan Stoutarm",
+    "price_brl": 0.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lorwyn Eclipsed",
+    "printing_code": "ECL",
+    "collector_number": "207",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bre%20of%20Clan%20Stoutarm",
+    "checked_at": "2026-08-10T00:27:17.065Z"
+  },
   "5966c464-5f63-4c71-9317-e2ca79da5aba": {
     "status": "available",
     "name": "Archmage Ascension",
@@ -58,6 +70,18 @@
     "collector_number": "42",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archmage%20Ascension",
     "checked_at": "2026-08-07T17:18:54.324Z"
+  },
+  "59674589-b174-4150-b8d6-30d25c5ead4c": {
+    "status": "available",
+    "name": "Break of Day",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ascensão das Trevas",
+    "printing_code": "DKA",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Break%20of%20Day",
+    "checked_at": "2026-08-10T00:28:54.092Z"
   },
   "5973725c-6e1f-4d7e-bcef-3d867ea4c244": {
     "status": "available",

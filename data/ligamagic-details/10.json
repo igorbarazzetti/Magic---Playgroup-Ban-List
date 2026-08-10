@@ -34,6 +34,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Auriok%20Survivors",
     "checked_at": "2026-08-08T07:33:33.442Z"
   },
+  "104baa4e-a3f3-45dc-979d-4c58b659ba1a": {
+    "status": "available",
+    "name": "Brambleguard Captain",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Bloomburrow",
+    "printing_code": "BLB",
+    "collector_number": "127",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brambleguard%20Captain",
+    "checked_at": "2026-08-10T00:18:16.814Z"
+  },
   "10733767-1c97-4e2e-b02b-54bf346f6583": {
     "status": "available",
     "name": "Abyssal Nightstalker",

@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Squire",
     "checked_at": "2026-08-08T09:19:10.463Z"
   },
+  "0156bfbc-26bc-4699-a7ff-437f7c043716": {
+    "status": "available",
+    "name": "Brawl-Bash Ogre",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Core Set 2019",
+    "printing_code": "M19",
+    "collector_number": "213",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brawl-Bash%20Ogre",
+    "checked_at": "2026-08-10T00:24:42.556Z"
+  },
   "01790829-cc03-430f-a899-2f274b7dbf62": {
     "status": "available",
     "name": "Arcbond",
@@ -70,6 +82,18 @@
     "collector_number": "91",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arcbond",
     "checked_at": "2026-08-07T13:54:54.130Z"
+  },
+  "017f1f83-18a8-4523-917d-98f6ca7838b7": {
+    "status": "available",
+    "name": "Box of Free-Range Goblins",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unstable",
+    "printing_code": "UST",
+    "collector_number": "77",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Box%20of%20Free-Range%20Goblins",
+    "checked_at": "2026-08-10T00:10:46.570Z"
   },
   "01906aae-fc53-40b0-a386-dae43e4f437f": {
     "status": "available",

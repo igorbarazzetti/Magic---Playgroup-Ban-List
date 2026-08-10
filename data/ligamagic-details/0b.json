@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apostle%20of%20Purifying%20Light",
     "checked_at": "2026-08-07T11:17:46.683Z"
   },
+  "0b5a3d7b-6b2c-4e91-8218-2b957277855c": {
+    "status": "available",
+    "name": "Brazen Wolves",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lua Arcana",
+    "printing_code": "EMN",
+    "collector_number": "122",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brazen%20Wolves",
+    "checked_at": "2026-08-10T00:27:05.389Z"
+  },
   "0b633017-bfdf-47cd-a60f-c93816b47e9c": {
     "status": "available",
     "name": "Arcane Teachings",
@@ -106,6 +118,18 @@
     "collector_number": "64",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Peregrine%20Drake",
     "checked_at": "2026-08-05T20:10:59.351Z"
+  },
+  "0be1ace3-2b3d-4465-b63a-be523f73df36": {
+    "status": "available",
+    "name": "Breaker of Armies",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Batalha por Zendikar",
+    "printing_code": "BFZ",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Breaker%20of%20Armies",
+    "checked_at": "2026-08-10T00:30:07.981Z"
   },
   "0bf619f9-4b19-404c-995f-f23a4b859dd4": {
     "status": "available",

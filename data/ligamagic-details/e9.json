@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Barbarian%20Riftcutter",
     "checked_at": "2026-08-08T19:05:42.021Z"
   },
+  "e975a8b3-f817-42f3-84da-b03ebf95cf25": {
+    "status": "available",
+    "name": "Branded Brawlers",
+    "price_brl": 0.01,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Profecia",
+    "printing_code": "PR",
+    "collector_number": "84",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Branded%20Brawlers",
+    "checked_at": "2026-08-10T00:20:40.788Z"
+  },
   "e97f9c2b-b41e-4f36-9245-77c0ac125647": {
     "status": "available",
     "name": "Bloodghast",
@@ -118,6 +130,18 @@
     "collector_number": "68",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anaba%20Spirit%20Crafter",
     "checked_at": "2026-08-07T04:45:51.465Z"
+  },
+  "e9c78601-4bec-4d16-8fd9-88c6053bd9c4": {
+    "status": "available",
+    "name": "Bottle-Cap Blast",
+    "price_brl": 29.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fallout",
+    "printing_code": "PIP",
+    "collector_number": "55",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bottle-Cap%20Blast",
+    "checked_at": "2026-08-10T00:03:21.147Z"
   },
   "e9c9e730-3b73-48e3-845b-1b7f2d16050c": {
     "status": "available",

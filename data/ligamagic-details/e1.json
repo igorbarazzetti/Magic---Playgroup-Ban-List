@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Akroan%20Hoplite",
     "checked_at": "2026-08-06T18:06:27.322Z"
   },
+  "e15fb040-2e11-478e-87f1-55675d614f8e": {
+    "status": "available",
+    "name": "Breathless Knight",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 2",
+    "printing_code": "MH2",
+    "collector_number": "187",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Breathless%20Knight",
+    "checked_at": "2026-08-10T00:33:36.834Z"
+  },
   "e1a2bd31-b800-47cd-8866-1b849a601b09": {
     "status": "available",
     "name": "Agate Instigator",

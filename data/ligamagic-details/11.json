@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Arashin%20Sunshield",
     "checked_at": "2026-08-07T13:45:23.623Z"
   },
+  "1189b5d5-ca8f-4b4e-a5f1-91122a485cf3": {
+    "status": "available",
+    "name": "Boundary Lands Ranger",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Selvagens de Eldraine",
+    "printing_code": "WOE",
+    "collector_number": "123",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boundary%20Lands%20Ranger",
+    "checked_at": "2026-08-10T00:07:21.060Z"
+  },
   "1195de01-f0ee-42c1-8e9e-a4bb90dd4932": {
     "status": "available",
     "name": "Bloodied Ghost",
@@ -166,5 +178,17 @@
     "collector_number": "47",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bar%20the%20Gate",
     "checked_at": "2026-08-08T17:10:27.539Z"
+  },
+  "11fd2650-2150-4e62-8b64-e820d734a231": {
+    "status": "available",
+    "name": "Borderland Marauder",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Battlebond",
+    "printing_code": "BBD",
+    "collector_number": "170",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Borderland%20Marauder",
+    "checked_at": "2026-08-09T23:53:44.304Z"
   }
 }

@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blinkmoth%20Well",
     "checked_at": "2026-08-09T22:06:05.898Z"
   },
+  "dd464a76-5f96-4e21-b7c6-4a476e7f9ce6": {
+    "status": "available",
+    "name": "Brainspoil",
+    "price_brl": 0.23,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ravnica: A Cidade das Guildas",
+    "printing_code": "RAV",
+    "collector_number": "78",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brainspoil",
+    "checked_at": "2026-08-10T00:15:18.976Z"
+  },
   "dd489f30-d1cf-4236-8390-9c21cd8659e0": {
     "status": "available",
     "name": "Blizzard Elemental",
@@ -130,6 +142,18 @@
     "collector_number": "86",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodflow%20Connoisseur",
     "checked_at": "2026-08-09T22:52:14.990Z"
+  },
+  "ddc83b35-cf7c-495b-bd30-e409b622e299": {
+    "status": "available",
+    "name": "Breeding Pit",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Duel Decks Anthology: Divine vs. Demonic",
+    "printing_code": "DDADVD",
+    "collector_number": "53",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Breeding%20Pit",
+    "checked_at": "2026-08-10T00:34:55.827Z"
   },
   "dde6bce5-8bbe-4866-b5aa-2c05c7d37241": {
     "status": "available",

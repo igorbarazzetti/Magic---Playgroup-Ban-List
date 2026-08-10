@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Audacious%20Infiltrator",
     "checked_at": "2026-08-08T07:24:23.135Z"
   },
+  "e0445c80-fa53-4c3e-881e-940e9fce7f57": {
+    "status": "available",
+    "name": "Braids, Arisen Nightmare",
+    "price_brl": 21.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominária Unida",
+    "printing_code": "DMU",
+    "collector_number": "84",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Braids%2C%20Arisen%20Nightmare",
+    "checked_at": "2026-08-10T00:12:47.687Z"
+  },
   "e04688e0-672b-407f-a2c9-fd7292926483": {
     "status": "available",
     "name": "Body Snatcher",
@@ -154,6 +166,30 @@
     "collector_number": "52",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Armored%20Wolf-Rider",
     "checked_at": "2026-08-07T19:35:44.083Z"
+  },
+  "e09b24a0-675b-4c64-ac44-74ddf109598a": {
+    "status": "available",
+    "name": "Branchsnap Lorian",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Legiões",
+    "printing_code": "LE",
+    "collector_number": "118",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Branchsnap%20Lorian",
+    "checked_at": "2026-08-10T00:20:07.084Z"
+  },
+  "e0a9c4be-74fe-4984-9028-60380db1575b": {
+    "status": "available",
+    "name": "Brazen Upstart",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ruas de Nova Capenna",
+    "printing_code": "SNC",
+    "collector_number": "169",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brazen%20Upstart",
+    "checked_at": "2026-08-10T00:26:54.405Z"
   },
   "e0aa5e3d-17c0-4ac7-9d76-9ce579d1eb2b": {
     "status": "available",

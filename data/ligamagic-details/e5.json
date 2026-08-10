@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ambush%20Krotiq",
     "checked_at": "2026-08-07T04:38:01.161Z"
   },
+  "e56a9b7b-ce3f-4f5c-87d0-6f1d50d98ac3": {
+    "status": "available",
+    "name": "Bramblefort Fink",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Trono de Eldraine",
+    "printing_code": "ELD",
+    "collector_number": "311",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bramblefort%20Fink",
+    "checked_at": "2026-08-10T00:18:05.916Z"
+  },
   "e580a229-e800-4746-9d37-c32fcef8de28": {
     "status": "available",
     "name": "Blightstep Pathway // Searstep Pathway",

@@ -119,6 +119,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anavolver",
     "checked_at": "2026-08-07T04:47:31.514Z"
   },
+  "03a9ac3f-f6e4-4ade-9770-cf723434b7e8": {
+    "status": "available",
+    "name": "Borderland Minotaur",
+    "price_brl": 0.04,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros",
+    "printing_code": "THS",
+    "collector_number": "114",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Borderland%20Minotaur",
+    "checked_at": "2026-08-09T23:53:55.203Z"
+  },
   "03ad624e-71f6-4f72-8ce0-7700e83458d9": {
     "status": "available",
     "name": "Barbtooth Wurm",

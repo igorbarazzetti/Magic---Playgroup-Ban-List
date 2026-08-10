@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alien%20Symbiosis",
     "checked_at": "2026-08-07T00:32:34.531Z"
   },
+  "1954994f-17bf-4ea5-af72-60f9bfcb6569": {
+    "status": "available",
+    "name": "Breath of Darigaaz",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Invasão",
+    "printing_code": "IN",
+    "collector_number": "138",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Breath%20of%20Darigaaz",
+    "checked_at": "2026-08-10T00:31:43.668Z"
+  },
   "196962f0-6aff-4198-9e0c-eaf42aeaf147": {
     "status": "available",
     "name": "Astor, Bearer of Blades",
@@ -118,6 +130,18 @@
     "collector_number": "293",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Astor%2C%20Bearer%20of%20Blades",
     "checked_at": "2026-08-08T02:51:12.584Z"
+  },
+  "19910a90-d334-4d99-89f2-cd81cea3c824": {
+    "status": "available",
+    "name": "Brawn, Amadeus Cho",
+    "price_brl": 4.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes Commander",
+    "printing_code": "MSC",
+    "collector_number": "567",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brawn%2C%20Amadeus%20Cho",
+    "checked_at": "2026-08-10T00:25:16.202Z"
   },
   "19a0d191-64c0-4e8a-8cb0-bf680cc681bb": {
     "status": "available",
@@ -214,6 +238,30 @@
     "collector_number": "7",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Archangel%20of%20Strife",
     "checked_at": "2026-08-07T17:13:24.112Z"
+  },
+  "19e6ebaf-7148-428f-8c79-1e9e57a4e659": {
+    "status": "available",
+    "name": "Botanical Plaza",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ruas de Nova Capenna (Skyscraper)",
+    "printing_code": "SSSNC",
+    "collector_number": "350",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Botanical%20Plaza",
+    "checked_at": "2026-08-10T00:02:37.272Z"
+  },
+  "19ef24b7-25f5-4ae2-b892-3e15ed62d299": {
+    "status": "available",
+    "name": "Boreal Outrider",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kaldheim",
+    "printing_code": "KHM",
+    "collector_number": "163",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boreal%20Outrider",
+    "checked_at": "2026-08-09T23:54:59.272Z"
   },
   "19f344ee-031d-4346-9553-c5d32b02df43": {
     "status": "available",

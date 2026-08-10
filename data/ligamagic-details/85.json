@@ -35,6 +35,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benefactor's%20Draught",
     "checked_at": "2026-08-09T15:01:25.370Z"
   },
+  "8514f20a-50c7-4319-84cb-2bf263548234": {
+    "status": "available",
+    "name": "Breeches, the Blastmaker",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Os Fora da Lei de Encruzilhada do Trovão",
+    "printing_code": "OTJ",
+    "collector_number": "197",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Breeches%2C%20the%20Blastmaker",
+    "checked_at": "2026-08-10T00:34:44.642Z"
+  },
   "8517e5f4-89c5-4879-9b4f-b35e268798df": {
     "status": "available",
     "name": "Aetherstream Leopard",
@@ -190,6 +202,18 @@
     "collector_number": "162",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Abzan%20Guide",
     "checked_at": "2026-08-06T03:46:11.620Z"
+  },
+  "85b8902f-2515-4ded-b28a-a83334f089f1": {
+    "status": "available",
+    "name": "Boompile",
+    "price_brl": 0.45,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2016",
+    "printing_code": "C16",
+    "collector_number": "52",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boompile",
+    "checked_at": "2026-08-09T23:49:06.361Z"
   },
   "85cbb035-25df-43bb-ae06-ab098f448b02": {
     "status": "available",

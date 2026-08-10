@@ -167,6 +167,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benthic%20Giant",
     "checked_at": "2026-08-09T15:03:55.503Z"
   },
+  "43c92618-0aae-41f8-aa39-393e5d6b5ff7": {
+    "status": "available",
+    "name": "Brazen Blademaster",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "As Cavernas Perdidas de Ixalan",
+    "printing_code": "LCI",
+    "collector_number": "136",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brazen%20Blademaster",
+    "checked_at": "2026-08-10T00:25:26.392Z"
+  },
   "43cee9b6-9853-4337-869a-45540c9db10f": {
     "status": "available",
     "name": "Betrayal of Flesh",

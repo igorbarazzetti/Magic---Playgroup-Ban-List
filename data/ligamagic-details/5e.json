@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blossoming%20Tortoise",
     "checked_at": "2026-08-09T23:05:29.270Z"
   },
+  "5e26a688-67d7-48a5-8862-653851bf3784": {
+    "status": "available",
+    "name": "Bramble Sovereign",
+    "price_brl": 8.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander Legends: Batalha por Portal de Baldur",
+    "printing_code": "CLB",
+    "collector_number": "218",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bramble%20Sovereign",
+    "checked_at": "2026-08-10T00:17:21.561Z"
+  },
   "5e29aea1-06e3-49ef-8a22-e3acff1fb679": {
     "status": "available",
     "name": "Bell Borca, Spectral Sergeant",

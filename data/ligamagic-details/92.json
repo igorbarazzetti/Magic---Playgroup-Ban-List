@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Biomancer's%20Familiar",
     "checked_at": "2026-08-09T17:10:27.659Z"
   },
+  "9249adf2-8607-424f-a73b-fcddaf124af9": {
+    "status": "available",
+    "name": "Brawler's Plate",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2015",
+    "printing_code": "M15",
+    "collector_number": "213",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brawler's%20Plate",
+    "checked_at": "2026-08-10T00:24:54.428Z"
+  },
   "92512acd-bf1e-4133-93cd-6c6af5affb95": {
     "status": "available",
     "name": "Bhaal's Invoker",

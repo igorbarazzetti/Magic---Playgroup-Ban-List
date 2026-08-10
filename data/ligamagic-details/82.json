@@ -191,6 +191,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Apocalypse",
     "checked_at": "2026-08-07T11:16:46.612Z"
   },
+  "82caf3e2-da42-4851-b4db-546e2403c4bf": {
+    "status": "available",
+    "name": "Boulderbranch Golem",
+    "price_brl": 3.49,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "A Guerra dos Irmãos",
+    "printing_code": "BRO",
+    "collector_number": "197",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boulderbranch%20Golem",
+    "checked_at": "2026-08-10T00:05:30.475Z"
+  },
   "82d51c8a-d42b-48b3-a726-3a8d28d057e5": {
     "status": "unavailable",
     "name": "Arden Angel",

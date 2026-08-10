@@ -83,6 +83,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodmad%20Vampire",
     "checked_at": "2026-08-09T22:56:05.331Z"
   },
+  "c8afa4b5-01be-400a-836f-aa27e1ae1346": {
+    "status": "available",
+    "name": "Brazen Buccaneers",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ixalan",
+    "printing_code": "XLN",
+    "collector_number": "134",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brazen%20Buccaneers",
+    "checked_at": "2026-08-10T00:25:47.437Z"
+  },
   "c8c110db-4d98-4087-a3b0-c7fe88b5e38a": {
     "status": "available",
     "name": "Angelic Cub",
@@ -130,6 +142,18 @@
     "collector_number": "140",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bladed%20Pinions",
     "checked_at": "2026-08-09T21:41:00.119Z"
+  },
+  "c8ce324f-aa58-48f9-9f56-435e49dfff0a": {
+    "status": "available",
+    "name": "Brassclaw Orcs",
+    "price_brl": 0.07,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Quinta Edição",
+    "printing_code": "5E",
+    "collector_number": "50",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brassclaw%20Orcs",
+    "checked_at": "2026-08-10T00:23:03.946Z"
   },
   "c8deef08-fcf2-41e1-8aeb-aa4e0af147ca": {
     "status": "available",

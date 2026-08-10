@@ -23,6 +23,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Anarchy",
     "checked_at": "2026-08-07T04:47:11.543Z"
   },
+  "b9212658-8406-489f-80d6-7af42df8956c": {
+    "status": "available",
+    "name": "Brazen Cannonade",
+    "price_brl": 13.9,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Jumpstart 2022",
+    "printing_code": "J22",
+    "collector_number": "31",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brazen%20Cannonade",
+    "checked_at": "2026-08-10T00:25:58.833Z"
+  },
   "b921a672-721e-4bd8-a10b-a6de8c13c7d8": {
     "status": "available",
     "name": "Achilles Davenport",
@@ -130,6 +142,18 @@
     "collector_number": "110",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bladebrand",
     "checked_at": "2026-08-09T21:40:04.844Z"
+  },
+  "b9d51e07-851f-4b7b-bffe-7c1efff0714c": {
+    "status": "available",
+    "name": "Break the Spell",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Terras Selvagens de Eldraine",
+    "printing_code": "WOE",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Break%20the%20Spell",
+    "checked_at": "2026-08-10T00:29:37.684Z"
   },
   "b9dd5841-7e4b-40bf-9969-e8fb5df46763": {
     "status": "available",

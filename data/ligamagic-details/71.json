@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bedhead%20Beastie",
     "checked_at": "2026-08-09T13:34:04.015Z"
   },
+  "714f12f5-fe9a-4c8a-9929-2b9f554480cd": {
+    "status": "available",
+    "name": "Boomstacker",
+    "price_brl": 0.68,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Unsanctioned",
+    "printing_code": "UND",
+    "collector_number": "49",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boomstacker",
+    "checked_at": "2026-08-09T23:49:17.274Z"
+  },
   "715f0832-696c-4111-b418-d9b6da403159": {
     "status": "available",
     "name": "Berta, Wise Extrapolator",

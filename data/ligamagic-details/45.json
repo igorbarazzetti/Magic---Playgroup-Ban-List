@@ -107,6 +107,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ashen%20Rider",
     "checked_at": "2026-08-07T21:17:49.290Z"
   },
+  "4567a42a-aa1c-4ca2-b5e2-b09acac3f276": {
+    "status": "available",
+    "name": "Braids's Frightful Return",
+    "price_brl": 0.15,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Dominária Unida",
+    "printing_code": "DMU",
+    "collector_number": "85",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Braids's%20Frightful%20Return",
+    "checked_at": "2026-08-10T00:13:21.101Z"
+  },
   "4567a528-75f0-4ea6-b927-3a500caf76ac": {
     "status": "available",
     "name": "Arbor Elf",
@@ -166,6 +178,18 @@
     "collector_number": "3",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aven%20Farseer",
     "checked_at": "2026-08-08T09:15:30.339Z"
+  },
+  "4598c221-b111-4bde-b4dc-673186c4efe6": {
+    "status": "available",
+    "name": "Book of Mazarbul",
+    "price_brl": 0.22,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Senhor dos Anéis: Contos da Terra Média",
+    "printing_code": "LTR",
+    "collector_number": "116",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Book%20of%20Mazarbul",
+    "checked_at": "2026-08-09T23:46:53.518Z"
   },
   "45a40b4c-1d37-4d87-adf1-abf0ea4c86b4": {
     "status": "available",

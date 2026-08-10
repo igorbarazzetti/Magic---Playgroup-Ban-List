@@ -95,6 +95,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alchemist's%20Greeting",
     "checked_at": "2026-08-06T18:14:47.678Z"
   },
+  "9ab0820b-4f5f-47b3-8fa9-43f802aed275": {
+    "status": "available",
+    "name": "Borborygmos",
+    "price_brl": 0.75,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Pacto das Guildas",
+    "printing_code": "GP",
+    "collector_number": "103",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Borborygmos",
+    "checked_at": "2026-08-09T23:52:16.249Z"
+  },
   "9abeb38c-2243-424c-bfbc-87aa45b6ea4f": {
     "status": "available",
     "name": "Blindblast",

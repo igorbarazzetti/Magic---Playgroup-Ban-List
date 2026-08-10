@@ -1,4 +1,16 @@
 {
+  "9908e597-9470-4c13-8387-39431b380138": {
+    "status": "available",
+    "name": "Braingeyser",
+    "price_brl": 25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Revised Edition (Summer Magic \"Edgar\")",
+    "printing_code": "SUMMER",
+    "collector_number": "50",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Braingeyser",
+    "checked_at": "2026-08-10T00:15:08.129Z"
+  },
   "990b5e12-6e04-4832-9d64-87278f12cbda": {
     "status": "available",
     "name": "Betor, Ancestor's Voice",
@@ -10,6 +22,18 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Betor%2C%20Ancestor's%20Voice",
     "checked_at": "2026-08-09T15:09:05.641Z"
+  },
+  "991ae2f7-3f8e-4364-8698-5277786d7dcd": {
+    "status": "available",
+    "name": "Boros Keyrune",
+    "price_brl": 0.19,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Portões Violados",
+    "printing_code": "GTC",
+    "collector_number": "227",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boros%20Keyrune",
+    "checked_at": "2026-08-09T23:57:52.041Z"
   },
   "991fd651-0cba-41ee-855a-d01a1a7c8f60": {
     "status": "available",
@@ -178,6 +202,18 @@
     "collector_number": "209",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aesthir%20Glider",
     "checked_at": "2026-08-06T07:21:35.187Z"
+  },
+  "99eaac39-28d4-4af7-984b-f75fd37902ed": {
+    "status": "available",
+    "name": "Break Out",
+    "price_brl": 0.24,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassinato na Mansão Karlov",
+    "printing_code": "MKM",
+    "collector_number": "190",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Break%20Out",
+    "checked_at": "2026-08-10T00:29:15.903Z"
   },
   "99eb05eb-11ef-456f-9132-166a0691dd04": {
     "status": "available",

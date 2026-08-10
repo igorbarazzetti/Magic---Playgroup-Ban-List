@@ -59,6 +59,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bilbo%2C%20Unexpected%20Adventurer",
     "checked_at": "2026-08-09T17:06:27.504Z"
   },
+  "1f5b7f4c-a3d2-4472-80f5-8504562fc7fd": {
+    "status": "available",
+    "name": "Brave-Kin Duo",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Bloomburrow",
+    "printing_code": "BLB",
+    "collector_number": "3",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brave-Kin%20Duo",
+    "checked_at": "2026-08-10T00:23:46.644Z"
+  },
   "1f74e26f-5cf3-4b0e-bcc6-f858599474fc": {
     "status": "available",
     "name": "Asmoranomardicadaistinaculdacar",
@@ -82,5 +94,29 @@
     "collector_number": "186",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bioessence%20Hydra",
     "checked_at": "2026-08-09T17:09:37.625Z"
+  },
+  "1fcec3b2-47ba-4c56-9ce1-a4807e8ad262": {
+    "status": "available",
+    "name": "Break Open",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Investida",
+    "printing_code": "ON",
+    "collector_number": "190",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Break%20Open",
+    "checked_at": "2026-08-10T00:29:05.228Z"
+  },
+  "1fd5e5e7-f23d-4891-86c4-268195ea09fc": {
+    "status": "available",
+    "name": "Bottled Cloister",
+    "price_brl": 0.48,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Ravnica Remasterizada (Moldura Retrô)",
+    "printing_code": "RFRVR",
+    "collector_number": "389",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bottled%20Cloister",
+    "checked_at": "2026-08-10T00:04:06.050Z"
   }
 }

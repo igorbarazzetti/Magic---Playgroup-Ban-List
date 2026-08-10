@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bloodhall%20Ooze",
     "checked_at": "2026-08-09T22:53:11.032Z"
   },
+  "796009b3-73b5-42c0-a490-66f12be5a42e": {
+    "status": "available",
+    "name": "Braid of Fire",
+    "price_brl": 52.94,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Frente Fria",
+    "printing_code": "CS",
+    "collector_number": "78",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Braid%20of%20Fire",
+    "checked_at": "2026-08-10T00:12:25.772Z"
+  },
   "79644192-8f99-4d04-b151-6f74a4dbda0a": {
     "status": "available",
     "name": "Amrou Kithkin",
@@ -178,5 +190,17 @@
     "collector_number": "36",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blue%20Mana%20Battery",
     "checked_at": "2026-08-09T23:07:30.160Z"
+  },
+  "79eed0c6-1853-4032-9d12-aebf5e15e78c": {
+    "status": "available",
+    "name": "Boonweaver Giant",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Magic 2015",
+    "printing_code": "M15",
+    "collector_number": "5",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boonweaver%20Giant",
+    "checked_at": "2026-08-09T23:51:09.496Z"
   }
 }

@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blasphemous%20Act",
     "checked_at": "2026-08-09T21:44:21.243Z"
   },
+  "7a30316b-dcd5-4a4b-b959-eecde7ca92e7": {
+    "status": "available",
+    "name": "Branch of Vitu-Ghazi",
+    "price_brl": 0.09,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Assassinato na Mansão Karlov",
+    "printing_code": "MKM",
+    "collector_number": "258",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Branch%20of%20Vitu-Ghazi",
+    "checked_at": "2026-08-10T00:19:13.430Z"
+  },
   "7a43bd27-fdd8-41f0-9bc4-92568f3408f1": {
     "status": "available",
     "name": "Mox Amber",
@@ -70,6 +82,18 @@
     "collector_number": "160",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battle%20Mammoth",
     "checked_at": "2026-08-08T21:05:46.785Z"
+  },
+  "7a98a1d1-7366-4b38-9047-48269790d328": {
+    "status": "available",
+    "name": "Bound by Moonsilver",
+    "price_brl": 0.03,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Innistrad Remastered",
+    "printing_code": "INR",
+    "collector_number": "13",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bound%20by%20Moonsilver",
+    "checked_at": "2026-08-10T00:06:37.672Z"
   },
   "7aa5db50-5057-45fd-bce9-fb4a5e874263": {
     "status": "available",

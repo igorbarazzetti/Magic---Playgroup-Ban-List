@@ -106,5 +106,17 @@
     "collector_number": "122",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Simian%20Spirit%20Guide",
     "checked_at": "2026-08-05T20:12:35.609Z"
+  },
+  "44e1946d-01b5-45db-abdc-2f6d6480cf60": {
+    "status": "available",
+    "name": "Boon of Boseiju",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kamigawa: Dinastia Neon",
+    "printing_code": "NEO",
+    "collector_number": "176",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boon%20of%20Boseiju",
+    "checked_at": "2026-08-09T23:49:39.390Z"
   }
 }

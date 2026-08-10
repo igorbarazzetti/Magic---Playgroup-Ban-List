@@ -83,6 +83,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Angelic%20Guardian",
     "checked_at": "2026-08-07T08:01:46.594Z"
   },
+  "2fa6f1b1-00af-433f-b8e1-36db99cd9bba": {
+    "status": "available",
+    "name": "Bösium Strip",
+    "price_brl": 114.95,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Alisios",
+    "printing_code": "WL",
+    "collector_number": "30",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=B%C3%B6sium%20Strip",
+    "checked_at": "2026-08-10T00:01:31.064Z"
+  },
+  "2fb6f65f-a0fb-4d45-be1b-d6405e61d47a": {
+    "status": "available",
+    "name": "Bosh, Iron Golem",
+    "price_brl": 0.1,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Mirrodin",
+    "printing_code": "MI",
+    "collector_number": "147",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bosh%2C%20Iron%20Golem",
+    "checked_at": "2026-08-10T00:01:19.593Z"
+  },
   "2fbf95b4-bcf4-4b5e-b5dc-0294f2b48d3e": {
     "status": "available",
     "name": "Aether Tide",
@@ -107,6 +131,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Avatar%20of%20Slaughter",
     "checked_at": "2026-08-08T09:13:00.238Z"
   },
+  "2fcc69ff-8ab5-4e14-afe3-db892049a872": {
+    "status": "available",
+    "name": "Boreal Druid",
+    "price_brl": 16.17,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Frente Fria",
+    "printing_code": "CS",
+    "collector_number": "105",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boreal%20Druid",
+    "checked_at": "2026-08-09T23:54:27.677Z"
+  },
   "2fcca686-03c8-4407-9f9f-2b7462470044": {
     "status": "available",
     "name": "Alabaster Potion",
@@ -118,6 +154,18 @@
     "collector_number": "7",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alabaster%20Potion",
     "checked_at": "2026-08-06T18:10:48.190Z"
+  },
+  "2fd1cfc5-fbcd-4d31-ba8b-759d8c41b435": {
+    "status": "available",
+    "name": "Bounty Hunter",
+    "price_brl": 6.44,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Tempestade",
+    "printing_code": "TP",
+    "collector_number": "25",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bounty%20Hunter",
+    "checked_at": "2026-08-10T00:09:19.684Z"
   },
   "2fdc0d15-ecb4-4a6d-be77-7a3fca188c9c": {
     "status": "available",

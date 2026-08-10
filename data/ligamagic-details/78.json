@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Ascendant%20Spirit",
     "checked_at": "2026-08-07T21:14:19.146Z"
   },
+  "785026c5-3f26-489c-8e26-96dd3ca6bc98": {
+    "status": "available",
+    "name": "Breaker of Creation",
+    "price_brl": 0.25,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 3",
+    "printing_code": "MH3",
+    "collector_number": "1",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Breaker%20of%20Creation",
+    "checked_at": "2026-08-10T00:30:19.039Z"
+  },
   "7861ac9b-3024-4935-804c-2ca4c5a46bf4": {
     "status": "available",
     "name": "Black Ward",

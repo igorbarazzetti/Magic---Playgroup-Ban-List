@@ -1,4 +1,16 @@
 {
+  "7402d98f-6d58-4ff2-a0db-9eec4417a75f": {
+    "status": "available",
+    "name": "Bovine Intervention",
+    "price_brl": 0.41,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marvel Super Heroes Commander",
+    "printing_code": "MSC",
+    "collector_number": "123",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Bovine%20Intervention",
+    "checked_at": "2026-08-10T00:10:14.070Z"
+  },
   "7421b711-81a4-4042-b024-f55bf9ff203f": {
     "status": "available",
     "name": "Boiling Seas",

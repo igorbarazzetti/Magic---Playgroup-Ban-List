@@ -47,6 +47,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Benevolent%20Unicorn",
     "checked_at": "2026-08-09T15:02:35.403Z"
   },
+  "b44816b4-44ef-446d-a254-b4b7bc015a42": {
+    "status": "available",
+    "name": "Braidwood Sextant",
+    "price_brl": 0.21,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "O Destino de Urza",
+    "printing_code": "UD",
+    "collector_number": "127",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Braidwood%20Sextant",
+    "checked_at": "2026-08-10T00:13:41.718Z"
+  },
   "b4505b07-ac99-4706-88b2-6164389e447c": {
     "status": "available",
     "name": "Ark of Blight",
@@ -70,6 +82,18 @@
     "collector_number": "1",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Battlewise%20Valor",
     "checked_at": "2026-08-08T22:56:50.356Z"
+  },
+  "b45fc33b-0658-4fe1-89da-54a07a12ebd4": {
+    "status": "available",
+    "name": "Borrowed Hostility",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lua Arcana",
+    "printing_code": "EMN",
+    "collector_number": "121",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Borrowed%20Hostility",
+    "checked_at": "2026-08-09T23:59:42.411Z"
   },
   "b46351cf-73c7-493c-b8a7-5d7bedc8b205": {
     "status": "available",

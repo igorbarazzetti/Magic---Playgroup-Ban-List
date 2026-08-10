@@ -178,5 +178,17 @@
     "collector_number": "4",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Aboroth",
     "checked_at": "2026-08-06T00:11:27.076Z"
+  },
+  "28fe909b-06e0-424c-9f75-c824a25f5865": {
+    "status": "available",
+    "name": "Branching Evolution",
+    "price_brl": 13.27,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Fallout (Surge Foil)",
+    "printing_code": "SFPIP",
+    "collector_number": "723",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Branching%20Evolution",
+    "checked_at": "2026-08-10T00:19:46.379Z"
   }
 }

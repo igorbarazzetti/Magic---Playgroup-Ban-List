@@ -119,6 +119,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Agna%20Qel'a",
     "checked_at": "2026-08-06T14:41:31.675Z"
   },
+  "22d9eef5-0f86-4d1a-bde0-65b990d4be75": {
+    "status": "available",
+    "name": "Borborygmos and Fblthp",
+    "price_brl": 0.44,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Marcha das Máquinas",
+    "printing_code": "MOM",
+    "collector_number": "219",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Borborygmos%20and%20Fblthp",
+    "checked_at": "2026-08-09T23:52:26.638Z"
+  },
   "22e89c6d-2304-4def-8a74-e53a6271e9b9": {
     "status": "available",
     "name": "Echoing Boon",
@@ -130,6 +142,18 @@
     "collector_number": "3",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Echoing%20Boon",
     "checked_at": "2026-08-05T20:05:37.498Z"
+  },
+  "22ec98d2-0ac5-48a2-b48b-c6a98f35ecf0": {
+    "status": "available",
+    "name": "Break the Ice",
+    "price_brl": 0.2,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Modern Horizons 2",
+    "printing_code": "MH2",
+    "collector_number": "77",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Break%20the%20Ice",
+    "checked_at": "2026-08-10T00:29:26.768Z"
   },
   "22f1a4a4-c423-4d1c-8775-0ed604a9fa51": {
     "status": "available",

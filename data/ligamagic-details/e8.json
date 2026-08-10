@@ -71,6 +71,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Behind%20the%20Scenes",
     "checked_at": "2026-08-09T13:37:14.125Z"
   },
+  "e858d26f-db45-4c56-b40a-bbaeedbf5549": {
+    "status": "available",
+    "name": "Borrowed Grace",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Lua Arcana",
+    "printing_code": "EMN",
+    "collector_number": "14",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Borrowed%20Grace",
+    "checked_at": "2026-08-09T23:59:31.989Z"
+  },
   "e8815686-8c47-4067-9dfa-744b2f5c1ba2": {
     "status": "available",
     "name": "Black Widow, Daring Operative",

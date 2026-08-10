@@ -11,6 +11,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Behemoth%20of%20Vault%200",
     "checked_at": "2026-08-09T13:36:34.080Z"
   },
+  "7d249b16-33ef-463e-9e5d-0b84d434f093": {
+    "status": "available",
+    "name": "Breaching Leviathan",
+    "price_brl": 12.54,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Commander 2014",
+    "printing_code": "C14",
+    "collector_number": "12",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Breaching%20Leviathan",
+    "checked_at": "2026-08-10T00:28:10.785Z"
+  },
   "7d27c583-469c-42d7-a547-8c65654e9d95": {
     "status": "available",
     "name": "Biorganic Carapace",
@@ -154,6 +166,18 @@
     "collector_number": "42",
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Alirios%2C%20Enraptured",
     "checked_at": "2026-08-07T00:33:04.568Z"
+  },
+  "7ddd84d2-1a6d-43f5-a42d-3c66eee5f7e5": {
+    "status": "available",
+    "name": "Born to Drive",
+    "price_brl": 0.13,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kamigawa: Dinastia Neon",
+    "printing_code": "NEO",
+    "collector_number": "6",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Born%20to%20Drive",
+    "checked_at": "2026-08-09T23:55:32.679Z"
   },
   "7df49476-7b6c-4b5d-bede-463a7d2e0a58": {
     "status": "available",

@@ -1,4 +1,16 @@
 {
+  "5f079a75-899e-467d-b443-3b87ce2fb548": {
+    "status": "available",
+    "name": "Boros Reckoner",
+    "price_brl": 0.43,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Kit de Guilda: Boros",
+    "printing_code": "GK1B",
+    "collector_number": "85",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boros%20Reckoner",
+    "checked_at": "2026-08-09T23:58:25.671Z"
+  },
   "5f12134c-d626-4a5e-8653-700681a491fc": {
     "status": "available",
     "name": "Ancient Silverback",

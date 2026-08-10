@@ -95,6 +95,30 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Blight%20Sickle",
     "checked_at": "2026-08-09T21:56:54.603Z"
   },
+  "5ba04e0d-a3eb-448d-8a97-08c155ef9694": {
+    "status": "available",
+    "name": "Breaching Hippocamp",
+    "price_brl": 0.08,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Theros",
+    "printing_code": "THS",
+    "collector_number": "43",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Breaching%20Hippocamp",
+    "checked_at": "2026-08-10T00:28:00.448Z"
+  },
+  "5bb5e4e5-c3b4-4f67-83e1-bde9ce9f18c4": {
+    "status": "available",
+    "name": "Boromir, Gondor's Hope",
+    "price_brl": 3.5,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Contos da Terra Média Commander",
+    "printing_code": "LTC",
+    "collector_number": "49",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Boromir%2C%20Gondor's%20Hope",
+    "checked_at": "2026-08-09T23:55:54.363Z"
+  },
   "5bbc3ad0-4865-43f0-8baf-e7f4af5db656": {
     "status": "available",
     "name": "Bard Class",

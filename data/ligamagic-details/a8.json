@@ -131,6 +131,18 @@
     "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Wheel%20of%20Fortune",
     "checked_at": "2026-08-05T20:15:11.978Z"
   },
+  "a8af4d61-1aed-415d-8d8e-7384194ee3e2": {
+    "status": "available",
+    "name": "Brackwater Elemental",
+    "price_brl": 0.05,
+    "finish": "normal",
+    "condition": "NM",
+    "printing_name": "Duel Decks: Ajani vs. Nicol Bolas",
+    "printing_code": "DDH",
+    "collector_number": "46",
+    "source_url": "https://www.ligamagic.com.br/?view=cards/card&card=Brackwater%20Elemental",
+    "checked_at": "2026-08-10T00:11:42.418Z"
+  },
   "a8b018a7-0350-4ee0-9582-8d391018bdee": {
     "status": "available",
     "name": "Azog, Moria's Ruin",
