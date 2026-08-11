@@ -1885,8 +1885,10 @@ function evaluateDeckLegality(entries, format, cards, { partial = false } = {}) 
 
 function renderDeckValidation({ entries, format, cards, partial = false }) {
   const evaluation = evaluateDeckLegality(entries, format, cards, { partial });
-  const { groups, issueCount, issueCopies, valid, formatInfo } = evaluation;
+  const { groups, issueCount, issueCopies, valid: legalityValid, formatInfo } = evaluation;
   const totalCopies = entries.reduce((total, entry) => total + entry.quantity, 0);
+  const minimumValid = format !== 'formatinho' || totalCopies >= 60;
+  const valid = legalityValid && minimumValid;
   const coverCard = entries.map((entry) => cards.get(entry.key) || localBannedCard(entry, format)).find(Boolean) || null;
   const coverOptions = entries.map((entry) => {
     const card = cards.get(entry.key) || localBannedCard(entry, format);
@@ -1912,6 +1914,8 @@ function renderDeckValidation({ entries, format, cards, partial = false }) {
     ? 'O Scryfall não respondeu. Conferimos apenas as cartas banidas já carregadas nesta página.'
     : valid
       ? 'Nenhuma carta proibida ou fora do formato foi encontrada.'
+      : !minimumValid
+        ? `O Main Deck tem ${totalCopies} cartas; o Formatinho exige no mínimo 60.`
       : `${issueCount} ${issueCount === 1 ? 'carta precisa' : 'cartas precisam'} de atenção antes de jogar.`;
 
   result.className = `deck-result deck-result--${statusClass}`;
@@ -2533,7 +2537,7 @@ function renderDeckBuilder() {
   const pricing = deckBuilderPricing([...mainEntries, ...sideEntries]);
   $('deckBuilderMainCount').textContent = mainCount;
   $('deckBuilderSideCount').textContent = sideCount;
-  $('deckBuilderMainMeta').textContent = `${mainCount} / 60 cartas`;
+  $('deckBuilderMainMeta').textContent = `${mainCount} cartas · mínimo 60`;
   $('deckBuilderSideMeta').textContent = `${sideCount} ${sideCount === 1 ? 'carta' : 'cartas'}`;
   $('deckBuilderTotalPrice').innerHTML = pricing.quoted
     ? `${priceSourceDot(pricing.estimated)}${pricing.estimated || pricing.missing ? '~ ' : ''}${formatBrlPrice(pricing.value)}${pricing.missing ? '+' : ''}`
@@ -2557,7 +2561,7 @@ function renderDeckBuilderStatus() {
   target.classList.remove('is-valid', 'is-invalid', 'is-loading');
   if (!total) {
     seal.textContent = '◇';
-    copy.innerHTML = '<h2>Comece adicionando cartas</h2><p>O Main Deck precisa chegar a 60 cartas e respeitar o limite de R$ 100,00.</p>';
+    copy.innerHTML = '<h2>Comece adicionando cartas</h2><p>O Main Deck precisa ter pelo menos 60 cartas e respeitar o limite de R$ 100,00.</p>';
     save.disabled = true;
     return;
   }
@@ -2572,7 +2576,7 @@ function renderDeckBuilderStatus() {
   target.classList.add(validation.valid ? 'is-valid' : 'is-invalid');
   seal.textContent = validation.valid ? '✓' : '×';
   copy.innerHTML = validation.valid
-    ? '<h2>Deck válido no Formatinho</h2><p>60 cartas, orçamento e legalidade conferidos. A lista está pronta para ser selada.</p>'
+    ? '<h2>Deck válido no Formatinho</h2><p>Mínimo de 60 cartas, orçamento e legalidade conferidos. A lista está pronta para ser selada.</p>'
     : `<h2>Deck ainda não é válido</h2><ul>${validation.reasons.map((reason) => `<li>${escapeHtml(reason)}</li>`).join('')}</ul>`;
   save.textContent = validation.valid
     ? (deckBuilderEdit ? 'Salvar alterações no deck' : 'Salvar em decks validados')
@@ -2619,12 +2623,12 @@ async function validateDeckBuilder() {
     const mainCount = deckBuilderTotal('main');
     const pricing = deckBuilderPricing();
     const reasons = [];
-    if (mainCount !== 60) reasons.push(`Main Deck: ${mainCount} / 60 cartas`);
+    if (mainCount < 60) reasons.push(`Main Deck: ${mainCount} / mínimo de 60 cartas`);
     if (pricing.missing) reasons.push(`${pricing.missing} ${pricing.missing === 1 ? 'carta está' : 'cartas estão'} sem preço disponível`);
     else if (pricing.value > 100) reasons.push(`Preço: ${formatBrlPrice(pricing.value)} / R$ 100,00`);
     if (legality.issueCount) reasons.push(`${legality.issueCount} ${legality.issueCount === 1 ? 'carta não permitida' : 'cartas não permitidas'}`);
     const priceValid = !pricing.missing && pricing.value <= 100;
-    const valid = mainCount === 60 && priceValid && legality.valid;
+    const valid = mainCount >= 60 && priceValid && legality.valid;
     const allEntries = deckBuilderAllEntries();
     const coverEntry = deckBuilderZoneEntries('main')[0] || allEntries[0];
     const coverCard = coverEntry ? deckBuilderCard(coverEntry) : null;

@@ -57,3 +57,16 @@ test('Scryfall display options stay outside artificial parentheses', () => {
   assert.match(search, /composeScopedScryfallQuery\(scope, state\.query\)/);
   assert.doesNotMatch(search, /`\(\$\{scope\}\) \(\$\{state\.query\}\)`/);
 });
+
+test('Formatinho deck builder accepts any Main Deck with at least 60 cards', () => {
+  const validate = functionSource('validateDeckBuilder', 'scheduleDeckBuilderValidation');
+  assert.match(validate, /if \(mainCount < 60\)/);
+  assert.match(validate, /const valid = mainCount >= 60/);
+  assert.doesNotMatch(validate, /mainCount === 60/);
+});
+
+test('pasted Formatinho lists use the same minimum of 60 cards', () => {
+  const render = functionSource('renderDeckValidation', 'renderDeckEmpty');
+  assert.match(render, /format !== 'formatinho' \|\| totalCopies >= 60/);
+  assert.match(render, /valid = legalityValid && minimumValid/);
+});

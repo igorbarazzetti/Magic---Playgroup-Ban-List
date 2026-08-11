@@ -130,6 +130,46 @@ test('an incomplete deck can be saved and is persisted as invalid', async () => 
   } finally { globalThis.fetch = originalFetch; }
 });
 
+test('the server marks a Formatinho deck below 60 Main Deck cards as invalid', async () => {
+  const db = database();
+  const originalFetch = globalThis.fetch;
+  globalThis.fetch = async () => new Response(JSON.stringify({ data: [forest] }), { status: 200, headers: { 'content-type': 'application/json' } });
+  try {
+    const response = await worker.fetch(new Request('https://formatinho.test/api/decks', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({
+        name: 'Deck com 59 cartas', format: 'formatinho', valid: true,
+        entries: [{ name: 'Forest', quantity: 59, section: 'main' }],
+      }),
+    }), { DB: db });
+    const payload = await response.json();
+    assert.equal(response.status, 201);
+    assert.equal(payload.deck.valid, false);
+    assert.equal(db.state.inserted.valid, false);
+  } finally { globalThis.fetch = originalFetch; }
+});
+
+test('the server accepts a Formatinho deck with more than 60 Main Deck cards', async () => {
+  const db = database();
+  const originalFetch = globalThis.fetch;
+  globalThis.fetch = async () => new Response(JSON.stringify({ data: [forest] }), { status: 200, headers: { 'content-type': 'application/json' } });
+  try {
+    const response = await worker.fetch(new Request('https://formatinho.test/api/decks', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({
+        name: 'Deck com 61 cartas', format: 'formatinho', valid: true,
+        entries: [{ name: 'Forest', quantity: 61, section: 'main' }],
+      }),
+    }), { DB: db });
+    const payload = await response.json();
+    assert.equal(response.status, 201);
+    assert.equal(payload.deck.valid, true);
+    assert.equal(db.state.inserted.valid, true);
+  } finally { globalThis.fetch = originalFetch; }
+});
+
 test('public editing accepts an incomplete deck and keeps its invalid status', async () => {
   const db = database();
   const originalFetch = globalThis.fetch;

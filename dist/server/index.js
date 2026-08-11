@@ -303,6 +303,7 @@ async function createDeck(request, env) {
 
   const entries = [...mergedEntries.values()];
   const cardCount = entries.reduce((total, entry) => total + entry.quantity, 0);
+  const mainCardCount = entries.filter((entry) => entry.section !== "sideboard").reduce((total, entry) => total + entry.quantity, 0);
   if (cardCount > 1_000) return json({ error: "A lista excede o limite de 1.000 cartas." }, 400);
 
   let cardsByName;
@@ -314,7 +315,7 @@ async function createDeck(request, env) {
 
   const issues = validateCards(entries, format, cardsByName);
   const requestedValid = typeof body?.valid === "boolean" ? body.valid : true;
-  const isValid = requestedValid && issues.length === 0;
+  const isValid = requestedValid && issues.length === 0 && (format !== "formatinho" || mainCardCount >= 60);
 
   const canonicalEntries = entries.map((entry) => {
     const card = cardsByName.get(normalizeName(entry.name));
@@ -399,12 +400,13 @@ async function updateDeck(request, env, id) {
 
   const entries = [...mergedEntries.values()];
   const cardCount = entries.reduce((total, entry) => total + entry.quantity, 0);
+  const mainCardCount = entries.filter((entry) => entry.section !== "sideboard").reduce((total, entry) => total + entry.quantity, 0);
   if (cardCount > 1_000) return json({ error: "A lista excede o limite de 1.000 cartas." }, 400);
   let cardsByName;
   try { cardsByName = await fetchCards(entries); } catch { return json({ error: "Não foi possível confirmar o deck com o Scryfall. Tente novamente." }, 503); }
   const issues = validateCards(entries, format, cardsByName);
   const requestedValid = typeof body?.valid === "boolean" ? body.valid : true;
-  const isValid = requestedValid && issues.length === 0;
+  const isValid = requestedValid && issues.length === 0 && (format !== "formatinho" || mainCardCount >= 60);
 
   const canonicalEntries = entries.map((entry) => {
     const card = cardsByName.get(normalizeName(entry.name));
