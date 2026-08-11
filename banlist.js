@@ -102,10 +102,16 @@ let deckBuilderValidationTimer;
 let deckBuilderWasValid = false;
 let pendingValidatedDeck = null;
 let validatedDecks = [];
+let myValidatedDecks = [];
 let validatedDecksLoaded = false;
+let myValidatedDecksLoaded = false;
+let validatedDecksScope = 'public';
 let currentSavedDeck = null;
 let savedDeckPriceBook = null;
 let deferredInstallPrompt = null;
+let authConfig = { enabled: false, google_client_id: '' };
+let currentUser = null;
+let googleIdentityReady = false;
 const $ = (id) => document.getElementById(id);
 const escapeHtml = (value = '') => String(value).replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[char]));
 const slug = (value = '') => value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
@@ -122,6 +128,139 @@ function isScryfallSyntaxSearch(value = '') {
   const query = String(value).trim();
   return /(?:^|\s)-?[a-z][\w-]*:|(?:^|\s)[a-z][\w-]*(?:<=|>=|!=|=|<|>)/i.test(query);
 }
+
+function renderAuthState() {
+  const signedIn = Boolean(currentUser);
+  if ($('desktopAccountLabel')) $('desktopAccountLabel').textContent = signedIn ? currentUser.name : 'Entrar';
+  if ($('desktopAccountButton')) {
+    $('desktopAccountButton').classList.toggle('is-signed-in', signedIn);
+    $('desktopAccountButton').title = signedIn ? `Conta de ${currentUser.email}` : 'Entrar com Google';
+  }
+  if ($('mobileAccountLabel')) $('mobileAccountLabel').textContent = signedIn ? currentUser.name : 'Entrar com Google';
+  if ($('mobileAccountHint')) $('mobileAccountHint').textContent = signedIn ? currentUser.email : 'Acesse seus decks privados';
+  if ($('myDecksTabHint')) $('myDecksTabHint').textContent = signedIn ? 'Seus decks públicos e privados' : 'Entre para ver rascunhos privados';
+}
+
+async function loadAuthState() {
+  try {
+    const [configResponse, sessionResponse] = await Promise.all([
+      fetch('/api/auth/config', { headers: { Accept: 'application/json' }, cache: 'no-store' }),
+      fetch('/api/auth/session', { headers: { Accept: 'application/json' }, cache: 'no-store' }),
+    ]);
+    if (configResponse.ok) authConfig = await configResponse.json();
+    if (sessionResponse.ok) currentUser = (await sessionResponse.json()).user || null;
+  } catch {
+    authConfig = { enabled: false, google_client_id: '' };
+    currentUser = null;
+  }
+  renderAuthState();
+}
+
+function loadGoogleIdentity() {
+  if (globalThis.google?.accounts?.id) return Promise.resolve();
+  return new Promise((resolve, reject) => {
+    const existing = document.querySelector('script[data-formatinho-google]');
+    if (existing) {
+      existing.addEventListener('load', resolve, { once: true });
+      existing.addEventListener('error', reject, { once: true });
+      return;
+    }
+    const script = document.createElement('script');
+    script.src = 'https://accounts.google.com/gsi/client';
+    script.async = true;
+    script.defer = true;
+    script.dataset.formatinhoGoogle = 'true';
+    script.addEventListener('load', resolve, { once: true });
+    script.addEventListener('error', reject, { once: true });
+    document.head.append(script);
+  });
+}
+
+async function handleGoogleCredential(response) {
+  const status = $('authModalStatus');
+  if (status) status.textContent = 'Confirmando seu acesso…';
+  try {
+    const loginResponse = await fetch('/api/auth/google', {
+      method: 'POST',
+      headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
+      body: JSON.stringify({ credential: response?.credential || '' }),
+    });
+    const payload = await loginResponse.json().catch(() => ({}));
+    if (!loginResponse.ok) throw new Error(payload.error || 'Não foi possível entrar agora.');
+    currentUser = payload.user;
+    myValidatedDecksLoaded = false;
+    renderAuthState();
+    if ($('authModal')?.open) $('authModal').close();
+    document.body.classList.remove('is-locked');
+    showToast(`Bem-vindo, ${currentUser.name}`);
+    if (validatedDecksScope === 'mine') await loadMyValidatedDecks({ force: true });
+  } catch (error) {
+    if (status) status.textContent = error.message || 'Não foi possível validar esta conta.';
+  }
+}
+
+async function renderAuthControl() {
+  const target = $('googleSignInButton');
+  const status = $('authModalStatus');
+  if (!target) return;
+  target.innerHTML = '';
+  if (currentUser) {
+    target.innerHTML = `<div class="auth-user"><span>${currentUser.avatar ? `<img src="${escapeHtml(currentUser.avatar)}" alt="" />` : '♙'}</span><div><strong>${escapeHtml(currentUser.name)}</strong><small>${escapeHtml(currentUser.email)}</small></div><button type="button" data-auth-logout>Sair</button></div>`;
+    target.querySelector('[data-auth-logout]')?.addEventListener('click', logoutCurrentUser);
+    if (status) status.textContent = 'Sua conta está autorizada.';
+    return;
+  }
+  if (!authConfig.enabled || !authConfig.google_client_id) {
+    if (status) status.textContent = 'O acesso Google ainda está sendo configurado.';
+    return;
+  }
+  try {
+    await loadGoogleIdentity();
+    if (!googleIdentityReady) {
+      google.accounts.id.initialize({ client_id: authConfig.google_client_id, callback: handleGoogleCredential, ux_mode: 'popup' });
+      googleIdentityReady = true;
+    }
+    google.accounts.id.renderButton(target, { type: 'standard', theme: 'filled_black', size: 'large', shape: 'pill', text: 'signin_with', width: Math.min(340, Math.max(220, target.clientWidth || 300)) });
+    if (status) status.textContent = '';
+  } catch {
+    if (status) status.textContent = 'Não foi possível abrir o login Google. Verifique a conexão e tente novamente.';
+  }
+}
+
+function openAuthModal(message = '') {
+  const modal = $('authModal');
+  if (!modal) return;
+  $('authModalStatus').textContent = message;
+  if (typeof modal.showModal === 'function') modal.showModal(); else modal.setAttribute('open', '');
+  document.body.classList.add('is-locked');
+  void renderAuthControl();
+  $('closeAuthModal').focus();
+}
+
+function closeAuthModal() {
+  const modal = $('authModal');
+  if (modal?.open) modal.close(); else modal?.removeAttribute('open');
+  if (!$('mobileMenu')?.open && !$('savedDeckModal')?.open && !$('deckValidatorModal')?.open && !$('cardModal')?.open) document.body.classList.remove('is-locked');
+}
+
+async function logoutCurrentUser() {
+  const response = await fetch('/api/auth/logout', { method: 'POST', headers: { Accept: 'application/json' } }).catch(() => null);
+  if (!response?.ok) { $('authModalStatus').textContent = 'Não foi possível sair agora.'; return; }
+  currentUser = null;
+  myValidatedDecks = [];
+  myValidatedDecksLoaded = false;
+  if (validatedDecksScope === 'mine') switchValidatedDeckScope('public');
+  renderAuthState();
+  closeAuthModal();
+  showToast('Você saiu do Formatinho');
+}
+
+function requireAuthenticated(message = 'Entre com Google para continuar.') {
+  if (currentUser) return true;
+  openAuthModal(message);
+  return false;
+}
+
 function sourceCards() { return state.scryfallSearchCards || state.cards; }
 function setCatalogPhase(phase) {
   if (document.body) document.body.dataset.catalogPhase = phase;
@@ -2001,8 +2140,18 @@ function renderDeckCoverPicker(target, deck, selectedName = '') {
   if (target) target.innerHTML = deckCoverPickerContents(deck, selectedName, target.id || 'deck-cover');
 }
 
+function deckVisibilityPickerContents(selected = 'private', canChange = true) {
+  const value = selected === 'public' ? 'public' : 'private';
+  return `<legend>Visibilidade</legend><label><input type="radio" name="visibility" value="private"${value === 'private' ? ' checked' : ''}${canChange ? '' : ' disabled'} /><span><strong>Privado</strong><small>Só você pode ver e editar</small></span></label><label><input type="radio" name="visibility" value="public"${value === 'public' ? ' checked' : ''}${canChange ? '' : ' disabled'} /><span><strong>Público</strong><small>O playgroup pode ver e editar</small></span></label>`;
+}
+
+function selectedDeckVisibility(form, fallback = 'private') {
+  return String(new FormData(form).get('visibility') || fallback) === 'public' ? 'public' : 'private';
+}
+
 function renderDeckSaveForm() {
   if (!pendingValidatedDeck) return;
+  if (!requireAuthenticated('Entre com uma conta autorizada para salvar este deck.')) return;
   const prompt = $('deckValidationResult').querySelector('.deck-save-prompt');
   if (!prompt) return;
   prompt.outerHTML = `
@@ -2010,6 +2159,7 @@ function renderDeckSaveForm() {
       <div class="deck-save-form__heading"><strong>Como este deck será conhecido?</strong><span>O nome ficará público no arquivo do playgroup. O piloto é opcional.</span></div>
       <label for="deckSaveName">Nome do deck<input id="deckSaveName" name="name" maxlength="80" required placeholder="Ex.: Elfos da Lathril" autocomplete="off" /></label>
       <label for="deckSavePilot">Piloto<input id="deckSavePilot" name="pilot" maxlength="60" placeholder="Seu nome ou apelido" autocomplete="name" /></label>
+      <fieldset class="deck-visibility-picker">${deckVisibilityPickerContents('private')}</fieldset>
       <fieldset class="deck-cover-picker">${deckCoverPickerContents(pendingValidatedDeck, '', 'validator-cover')}</fieldset>
       <div class="deck-save-form__actions"><button type="submit">Selar no arquivo</button><button type="button" data-save-deck-cancel>Cancelar</button></div>
     </form>`;
@@ -2025,13 +2175,14 @@ async function saveValidatedDeck(event) {
   const name = String(data.get('name') || '').trim();
   const pilot = String(data.get('pilot') || '').trim();
   const coverName = String(data.get('cover_name') || '').trim();
+  const visibility = selectedDeckVisibility(form);
   if (!name) { $('deckSaveName')?.focus(); return; }
   submit.disabled = true;
   submit.textContent = 'Conferindo e salvando…';
   try {
-    await persistValidatedDeck(pendingValidatedDeck, { name, pilot, coverName });
+    const saved = await persistValidatedDeck(pendingValidatedDeck, { name, pilot, coverName, visibility });
     pendingValidatedDeck = null;
-    form.outerHTML = '<div class="deck-save-success"><span aria-hidden="true">✓</span><div><strong>Deck selado no arquivo.</strong><a href="?page=decks&rev=28">Ver em Decks validados →</a></div></div>';
+    form.outerHTML = `<div class="deck-save-success"><span aria-hidden="true">✓</span><div><strong>${saved.visibility === 'private' ? 'Rascunho privado salvo.' : 'Deck selado no arquivo.'}</strong><a href="?page=decks${saved.visibility === 'private' ? '&scope=mine' : ''}">${saved.visibility === 'private' ? 'Ver em Meus decks' : 'Ver em Decks validados'} →</a></div></div>`;
     showToast('Deck salvo no arquivo do playgroup');
   } catch (error) {
     submit.disabled = false;
@@ -2040,37 +2191,45 @@ async function saveValidatedDeck(event) {
   }
 }
 
-async function persistValidatedDeck(deck, { name, pilot = '', coverName = '' }) {
+async function persistValidatedDeck(deck, { name, pilot = '', coverName = '', visibility = 'private' }) {
+  if (!requireAuthenticated('Entre com uma conta autorizada para salvar este deck.')) throw new Error('Entre com Google para salvar o deck.');
   const response = await fetch('/api/decks', {
     method: 'POST',
     headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
-    body: JSON.stringify({ name, pilot, format: deck.format, entries: deck.entries, cover_name: coverName, valid: deck.valid !== false }),
+    body: JSON.stringify({ name, pilot, format: deck.format, entries: deck.entries, cover_name: coverName, valid: deck.valid !== false, visibility }),
   });
   const payload = await response.json().catch(() => ({}));
+  if (response.status === 401) { currentUser = null; renderAuthState(); openAuthModal(payload.error); }
   if (!response.ok) throw new Error(payload.error || 'Não foi possível salvar o deck.');
   const saved = { ...payload.deck, entries: deck.entries };
   savedDeckCache.set(saved.id, saved);
-  validatedDecks = [saved, ...validatedDecks.filter((item) => item.id !== saved.id)];
-  validatedDecksLoaded = true;
+  if (saved.visibility === 'public') {
+    validatedDecks = [saved, ...validatedDecks.filter((item) => item.id !== saved.id)];
+    validatedDecksLoaded = true;
+  }
+  myValidatedDecks = [saved, ...myValidatedDecks.filter((item) => item.id !== saved.id)];
+  myValidatedDecksLoaded = true;
   renderValidatedDecks();
   return saved;
 }
 
-async function updateValidatedDeck(deck, { name, pilot = '', coverName = '' }) {
+async function updateValidatedDeck(deck, { name, pilot = '', coverName = '', visibility = '' }) {
   if (!deckBuilderEdit?.id) throw new Error('Nenhum deck está em edição.');
+  if (!requireAuthenticated('Entre com uma conta autorizada para editar este deck.')) throw new Error('Entre com Google para editar o deck.');
   const response = await fetch(`/api/decks/${encodeURIComponent(deckBuilderEdit.id)}`, {
     method: 'PUT',
     headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
-    body: JSON.stringify({ name, pilot, format: deck.format, entries: deck.entries, cover_name: coverName, valid: deck.valid !== false, base_updated_at: deckBuilderEdit.baseUpdatedAt }),
+    body: JSON.stringify({ name, pilot, format: deck.format, entries: deck.entries, cover_name: coverName, valid: deck.valid !== false, base_updated_at: deckBuilderEdit.baseUpdatedAt, visibility: visibility || deckBuilderEdit.visibility }),
   });
   const payload = await response.json().catch(() => ({}));
+  if (response.status === 401) { currentUser = null; renderAuthState(); openAuthModal(payload.error); }
   if (!response.ok) throw new Error(payload.error || 'Não foi possível atualizar o deck.');
   const saved = { ...payload.deck, entries: payload.deck?.entries || deck.entries };
-  deckBuilderEdit = { id: saved.id, name: saved.name, pilot: saved.pilot || '', format: saved.format, coverName: saved.cover_name || '', baseUpdatedAt: saved.created_at, draftVersion: 2 };
+  deckBuilderEdit = { id: saved.id, name: saved.name, pilot: saved.pilot || '', format: saved.format, coverName: saved.cover_name || '', baseUpdatedAt: saved.updated_at || saved.created_at, visibility: saved.visibility || 'public', canChangeVisibility: saved.can_change_visibility !== false, draftVersion: 2 };
   persistDeckBuilderEdit();
   savedDeckCache.set(saved.id, saved);
-  validatedDecks = [saved, ...validatedDecks.filter((item) => item.id !== saved.id)];
-  validatedDecksLoaded = true;
+  validatedDecks = saved.visibility === 'public' ? [saved, ...validatedDecks.filter((item) => item.id !== saved.id)] : validatedDecks.filter((item) => item.id !== saved.id);
+  myValidatedDecks = saved.is_owner ? [saved, ...myValidatedDecks.filter((item) => item.id !== saved.id)] : myValidatedDecks.filter((item) => item.id !== saved.id);
   renderValidatedDecks();
   return saved;
 }
@@ -2087,19 +2246,21 @@ function validatedDeckDate(value) {
 
 function renderValidatedDecks() {
   if (!$('validatedDecksGrid')) return;
+  const decks = validatedDecksScope === 'mine' ? myValidatedDecks : validatedDecks;
   const query = slug($('validatedDeckSearch')?.value || '').trim();
   const format = $('validatedDeckFormat')?.value || '';
-  const filtered = validatedDecks.filter((deck) => (!query || slug(`${deck.name} ${deck.pilot || ''}`).includes(query)) && (!format || deck.format === format));
-  $('validatedDeckCount').textContent = validatedDecks.length;
+  const filtered = decks.filter((deck) => (!query || slug(`${deck.name} ${deck.pilot || ''}`).includes(query)) && (!format || deck.format === format));
+  $('validatedDeckCount').textContent = decks.length;
   $('validatedDeckResultCount').textContent = `${filtered.length} ${filtered.length === 1 ? 'deck' : 'decks'}`;
   $('validatedDecksGrid').innerHTML = filtered.map((deck) => {
     const image = deck.cover_image ? `<img src="${escapeHtml(deck.cover_image)}" alt="" loading="lazy" decoding="async" />` : '';
     const pilot = deck.pilot ? `Pilotado por ${escapeHtml(deck.pilot)}` : 'Piloto não informado';
     const isValid = deck.valid !== false;
     const status = isValid ? 'Validado' : 'Inválido';
-    return `<button class="validated-deck-card${isValid ? '' : ' is-invalid'}" type="button" data-saved-deck-id="${escapeHtml(deck.id)}" aria-label="Abrir deck ${escapeHtml(deck.name)}, ${status.toLowerCase()}">
+    const privacy = deck.visibility === 'private' ? '<span class="validated-deck-card__privacy"><span aria-hidden="true">♙</span> Privado</span>' : '';
+    return `<button class="validated-deck-card${isValid ? '' : ' is-invalid'}${deck.visibility === 'private' ? ' is-private' : ''}" type="button" data-saved-deck-id="${escapeHtml(deck.id)}" aria-label="Abrir deck ${escapeHtml(deck.name)}, ${status.toLowerCase()}">
       <span class="validated-deck-card__art">${image}<span class="validated-deck-card__seal${isValid ? '' : ' is-invalid'}"><span aria-hidden="true">${isValid ? '✓' : '×'}</span> ${status}</span></span>
-      <span class="validated-deck-card__body"><span class="validated-deck-card__format">${escapeHtml(validatedDeckFormatLabel(deck.format))}</span><h3>${escapeHtml(deck.name)}</h3><span class="validated-deck-card__pilot">${pilot}</span><span class="validated-deck-card__meta"><span>${Number(deck.card_count) || 0} cartas</span><span>${validatedDeckDate(deck.created_at)}</span></span><span class="validated-deck-card__open" aria-hidden="true">→</span></span>
+      <span class="validated-deck-card__body"><span class="validated-deck-card__format">${escapeHtml(validatedDeckFormatLabel(deck.format))}</span>${privacy}<h3>${escapeHtml(deck.name)}</h3><span class="validated-deck-card__pilot">${pilot}</span><span class="validated-deck-card__meta"><span>${Number(deck.card_count) || 0} cartas</span><span>${validatedDeckDate(deck.updated_at || deck.created_at)}</span></span><span class="validated-deck-card__open" aria-hidden="true">→</span></span>
     </button>`;
   }).join('');
   $('validatedDecksGrid').setAttribute('aria-busy', 'false');
@@ -2107,14 +2268,26 @@ function renderValidatedDecks() {
   $('validatedDecksError').hidden = true;
   const empty = !filtered.length;
   $('validatedDecksEmpty').hidden = !empty;
-  if (empty && validatedDecks.length) {
+  if (empty && decks.length) {
     $('validatedDecksEmpty').querySelector('h2').textContent = 'Nenhum deck com esses filtros';
     $('validatedDecksEmpty').querySelector('p').textContent = 'Tente outro nome ou selecione todos os formatos.';
   } else if (empty) {
-    $('validatedDecksEmpty').querySelector('h2').textContent = 'Nenhum deck salvo ainda';
-    $('validatedDecksEmpty').querySelector('p').textContent = 'Monte ou valide a primeira lista e inaugure o arquivo do playgroup.';
+    $('validatedDecksEmpty').querySelector('h2').textContent = validatedDecksScope === 'mine' ? 'Você ainda não salvou decks' : 'Nenhum deck salvo ainda';
+    $('validatedDecksEmpty').querySelector('p').textContent = validatedDecksScope === 'mine' ? 'Seus decks públicos e rascunhos privados aparecerão aqui.' : 'Monte ou valide a primeira lista e inaugure o arquivo do playgroup.';
   }
-  $('validatedDecksEmpty').querySelector('[data-open-deck-validator]').hidden = empty && validatedDecks.length > 0;
+  $('validatedDecksEmpty').querySelector('[data-open-deck-validator]').hidden = empty && decks.length > 0;
+}
+
+function switchValidatedDeckScope(scope) {
+  const next = scope === 'mine' ? 'mine' : 'public';
+  if (next === 'mine' && !requireAuthenticated('Entre para acessar seus decks privados.')) return;
+  validatedDecksScope = next;
+  document.querySelectorAll('[data-decks-scope]').forEach((button) => {
+    const active = button.dataset.decksScope === next;
+    button.classList.toggle('is-active', active);
+    button.setAttribute('aria-selected', String(active));
+  });
+  if (next === 'mine') void loadMyValidatedDecks(); else renderValidatedDecks();
 }
 
 async function loadValidatedDecks({ force = false } = {}) {
@@ -2138,6 +2311,29 @@ async function loadValidatedDecks({ force = false } = {}) {
   }
 }
 
+async function loadMyValidatedDecks({ force = false } = {}) {
+  if (!currentUser) { switchValidatedDeckScope('public'); return; }
+  if (myValidatedDecksLoaded && !force) { renderValidatedDecks(); return; }
+  $('validatedDecksLoading').hidden = false;
+  $('validatedDecksError').hidden = true;
+  $('validatedDecksEmpty').hidden = true;
+  $('validatedDecksGrid').setAttribute('aria-busy', 'true');
+  try {
+    const response = await fetch('/api/me/decks', { headers: { Accept: 'application/json' }, cache: 'no-store' });
+    if (response.status === 401) { currentUser = null; renderAuthState(); openAuthModal('Sua sessão terminou. Entre novamente para acessar seus decks.'); switchValidatedDeckScope('public'); return; }
+    if (!response.ok) throw new Error(`Decks ${response.status}`);
+    const payload = await response.json();
+    myValidatedDecks = Array.isArray(payload.decks) ? payload.decks : [];
+    myValidatedDecks.forEach((deck) => savedDeckCache.set(deck.id, deck));
+    myValidatedDecksLoaded = true;
+    renderValidatedDecks();
+  } catch {
+    $('validatedDecksLoading').hidden = true;
+    $('validatedDecksGrid').setAttribute('aria-busy', 'false');
+    $('validatedDecksError').hidden = false;
+  }
+}
+
 async function openSavedDeck(id) {
   const modal = $('savedDeckModal');
   let deck = savedDeckCache.get(id);
@@ -2150,8 +2346,18 @@ async function openSavedDeck(id) {
     }
     currentSavedDeck = deck;
     const isValid = deck.valid !== false;
-    $('editSavedDeck').disabled = false;
-    $('editSavedDeck').innerHTML = '<span aria-hidden="true">✎</span> Editar este deck';
+    const editButton = $('editSavedDeck');
+    editButton.hidden = Boolean(currentUser && !deck.can_edit);
+    editButton.disabled = false;
+    editButton.innerHTML = currentUser ? '<span aria-hidden="true">✎</span> Editar este deck' : '<span aria-hidden="true">♙</span> Entrar para editar';
+    const visibilityButton = $('savedDeckVisibility');
+    visibilityButton.hidden = !deck.can_change_visibility;
+    visibilityButton.innerHTML = deck.visibility === 'private' ? '<span aria-hidden="true">◇</span> Tornar público' : '<span aria-hidden="true">♙</span> Tornar privado';
+    $('savedDeckEditNote').textContent = deck.visibility === 'private'
+      ? 'Deck privado: somente você pode ver, editar ou publicar esta lista.'
+      : currentUser
+        ? 'Edição pública: usuários autorizados podem aprimorar esta lista. Toda alteração passa novamente pela validação do Formatinho.'
+        : 'Este deck é público. Entre com uma conta autorizada para aprimorar a lista.';
     $('savedDeckTitle').textContent = deck.name;
     $('savedDeckEyebrow').textContent = `${isValid ? 'Deck aprovado' : 'Deck em construção'} · ${validatedDeckFormatLabel(deck.format)}`;
     const seal = modal.querySelector('.saved-deck-modal__seal');
@@ -2278,6 +2484,8 @@ function loadDeckBuilderEdit() {
 
 async function editCurrentSavedDeck() {
   if (!currentSavedDeck?.entries?.length) return;
+  if (!requireAuthenticated('Entre com uma conta autorizada para editar decks.')) return;
+  if (!currentSavedDeck.can_edit) { showToast('Você não pode editar este deck.'); return; }
   const button = $('editSavedDeck');
   button.disabled = true;
   button.textContent = 'Preparando edição…';
@@ -2300,7 +2508,9 @@ async function editCurrentSavedDeck() {
       pilot: currentSavedDeck.pilot || '',
       format: currentSavedDeck.format,
       coverName: currentSavedDeck.cover_name || '',
-      baseUpdatedAt: currentSavedDeck.created_at,
+      baseUpdatedAt: currentSavedDeck.updated_at || currentSavedDeck.created_at,
+      visibility: currentSavedDeck.visibility || 'public',
+      canChangeVisibility: currentSavedDeck.can_change_visibility !== false,
       draftVersion: 2,
     };
     persistDeckBuilderDraft();
@@ -2312,6 +2522,42 @@ async function editCurrentSavedDeck() {
     button.innerHTML = '<span aria-hidden="true">✎</span> Editar este deck';
     showToast(error.message || 'Não foi possível iniciar a edição agora.');
   }
+}
+
+async function changeCurrentSavedDeckVisibility() {
+  if (!currentSavedDeck?.id || !currentSavedDeck.can_change_visibility) return;
+  const next = currentSavedDeck.visibility === 'private' ? 'public' : 'private';
+  const button = $('savedDeckVisibility');
+  button.disabled = true;
+  try {
+    const response = await fetch(`/api/decks/${encodeURIComponent(currentSavedDeck.id)}/visibility`, {
+      method: 'PATCH',
+      headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
+      body: JSON.stringify({ visibility: next }),
+    });
+    const payload = await response.json().catch(() => ({}));
+    if (response.status === 401) { currentUser = null; renderAuthState(); openAuthModal(payload.error); throw new Error(payload.error); }
+    if (!response.ok) throw new Error(payload.error || 'Não foi possível alterar a visibilidade.');
+    currentSavedDeck = { ...currentSavedDeck, ...payload.deck };
+    savedDeckCache.set(currentSavedDeck.id, currentSavedDeck);
+    validatedDecks = next === 'public' ? [currentSavedDeck, ...validatedDecks.filter((deck) => deck.id !== currentSavedDeck.id)] : validatedDecks.filter((deck) => deck.id !== currentSavedDeck.id);
+    myValidatedDecks = [currentSavedDeck, ...myValidatedDecks.filter((deck) => deck.id !== currentSavedDeck.id)];
+    visibilityButtonUpdate(currentSavedDeck);
+    renderValidatedDecks();
+    showToast(next === 'private' ? 'Deck ocultado do arquivo público' : 'Deck publicado no arquivo do playgroup');
+  } catch (error) {
+    if (error?.message) showToast(error.message);
+  } finally { button.disabled = false; }
+}
+
+function visibilityButtonUpdate(deck) {
+  const button = $('savedDeckVisibility');
+  if (!button) return;
+  button.hidden = !deck?.can_change_visibility;
+  button.innerHTML = deck?.visibility === 'private' ? '<span aria-hidden="true">◇</span> Tornar público' : '<span aria-hidden="true">♙</span> Tornar privado';
+  if ($('savedDeckEditNote')) $('savedDeckEditNote').textContent = deck?.visibility === 'private'
+    ? 'Deck privado: somente você pode ver, editar ou publicar esta lista.'
+    : 'Edição pública: usuários autorizados podem aprimorar esta lista. Toda alteração passa novamente pela validação do Formatinho.';
 }
 
 function persistDeckBuilderEdit() {
@@ -2706,26 +2952,28 @@ async function saveDeckBuilder(event) {
   const name = String(data.get('name') || '').trim();
   const pilot = String(data.get('pilot') || '').trim();
   const coverName = String(data.get('cover_name') || '').trim();
+  const visibility = selectedDeckVisibility(form, deckBuilderEdit?.visibility || 'private');
   if (!name) { $('deckBuilderSaveName').focus(); return; }
   const submit = form.querySelector('button[type="submit"]');
   submit.disabled = true;
   submit.textContent = 'Conferindo e salvando…';
   try {
     const saved = deckBuilderEdit
-      ? await updateValidatedDeck(deckBuilderValidation.pending, { name, pilot, coverName })
-      : await persistValidatedDeck(deckBuilderValidation.pending, { name, pilot, coverName });
+      ? await updateValidatedDeck(deckBuilderValidation.pending, { name, pilot, coverName, visibility })
+      : await persistValidatedDeck(deckBuilderValidation.pending, { name, pilot, coverName, visibility });
     form.hidden = true;
     form.reset();
     const success = document.createElement('div');
     success.className = 'deck-builder-save-success';
     const isValid = saved.valid !== false;
     success.classList.toggle('is-invalid', !isValid);
-    success.innerHTML = `<span aria-hidden="true">${isValid ? '✓' : '×'}</span><div><strong>${deckBuilderEdit ? 'Alterações publicadas.' : 'Deck salvo no arquivo.'}</strong>${isValid ? '' : '<br><span>Marcado como inválido até cumprir as regras.</span>'}<br><a href="/?page=decks&rev=31">Ver no arquivo →</a></div>`;
+    success.innerHTML = `<span aria-hidden="true">${isValid ? '✓' : '×'}</span><div><strong>${deckBuilderEdit ? 'Alterações salvas.' : saved.visibility === 'private' ? 'Rascunho privado salvo.' : 'Deck salvo no arquivo.'}</strong>${isValid ? '' : '<br><span>Marcado como inválido até cumprir as regras.</span>'}<br><a href="/?page=decks${saved.visibility === 'private' ? '&scope=mine' : ''}">${saved.visibility === 'private' ? 'Ver em Meus decks' : 'Ver no arquivo'} →</a></div>`;
     if (deckBuilderEdit) {
       deckBuilderEdit.name = saved.name;
       deckBuilderEdit.pilot = saved.pilot || '';
       deckBuilderEdit.coverName = saved.cover_name || '';
-      deckBuilderEdit.baseUpdatedAt = saved.created_at;
+      deckBuilderEdit.baseUpdatedAt = saved.updated_at || saved.created_at;
+      deckBuilderEdit.visibility = saved.visibility || deckBuilderEdit.visibility;
       persistDeckBuilderEdit();
     }
     form.after(success);
@@ -2794,9 +3042,9 @@ async function shareCurrentPage() {
 function renderDeckBuilderMode() {
   if (!$('deckBuilderPage')) return;
   if (deckBuilderEdit) {
-    $('deckBuilderEyebrow').innerHTML = '<span aria-hidden="true">✦</span> Edição pública';
+    $('deckBuilderEyebrow').innerHTML = `<span aria-hidden="true">✦</span> ${deckBuilderEdit.visibility === 'private' ? 'Edição privada' : 'Edição pública'}`;
     $('deckBuilderTitle').textContent = 'Aprimore este deck';
-    $('deckBuilderBrief').textContent = `Você está editando “${deckBuilderEdit.name}”. A lista será revalidada antes de publicar.`;
+    $('deckBuilderBrief').textContent = `Você está editando “${deckBuilderEdit.name}”. A lista será revalidada antes de salvar.`;
     $('deckBuilderExitEdit').hidden = false;
   } else {
     $('deckBuilderEyebrow').innerHTML = '<span aria-hidden="true">✦</span> Oficina do Formatinho';
@@ -2816,7 +3064,8 @@ async function loadDeckBuilderPage() {
 
 function configurePageMode() {
   const builderPage = location.pathname.replace(/\/+$/, '') === '/deckbuilder';
-  const decksPage = !builderPage && new URLSearchParams(location.search).get('page') === 'decks';
+  const pageParams = new URLSearchParams(location.search);
+  const decksPage = !builderPage && pageParams.get('page') === 'decks';
   $('homeHero').hidden = decksPage || builderPage;
   $('archiveSection').hidden = decksPage || builderPage;
   $('validatedDecksPage').hidden = !decksPage;
@@ -2827,7 +3076,8 @@ function configurePageMode() {
   if (decksPage) {
     document.title = 'Decks validados · Códice do Formatinho';
     document.querySelector('.skip-link').href = '#validatedDecksTitle';
-    loadValidatedDecks();
+    if (pageParams.get('scope') === 'mine' && currentUser) switchValidatedDeckScope('mine');
+    else loadValidatedDecks();
   } else if (builderPage) {
     document.title = 'Deck Builder · Códice do Formatinho';
     document.querySelector('.skip-link').href = '#deckBuilderTitle';
@@ -2845,10 +3095,15 @@ function bind() {
   $('mobileMenu').addEventListener('click', (event) => { if (event.target === $('mobileMenu')) closeMobileMenu(); });
   $('mobileMenu').querySelectorAll('[data-mobile-menu-link]').forEach((link) => link.addEventListener('click', () => closeMobileMenu({ restoreFocus: false })));
   $('mobileMenuValidator').addEventListener('click', () => { closeMobileMenu({ restoreFocus: false }); openDeckValidator(); });
+  $('mobileAccountButton').addEventListener('click', () => { closeMobileMenu({ restoreFocus: false }); openAuthModal(); });
   $('installAppButton').addEventListener('click', installFormatinhoApp);
   $('mobileMenuShare').addEventListener('click', shareCurrentPage);
   $('desktopValidator')?.addEventListener('click', openDeckValidator);
   $('desktopInstallApp')?.addEventListener('click', installFormatinhoApp);
+  $('desktopAccountButton')?.addEventListener('click', () => openAuthModal());
+  $('closeAuthModal').addEventListener('click', closeAuthModal);
+  $('authModal').addEventListener('cancel', (event) => { event.preventDefault(); closeAuthModal(); });
+  $('authModal').addEventListener('click', (event) => { if (event.target === $('authModal')) closeAuthModal(); });
   addEventListener('beforeinstallprompt', (event) => {
     event.preventDefault();
     deferredInstallPrompt = event;
@@ -3010,6 +3265,7 @@ function bind() {
   $('validatedDecksPage').addEventListener('click', (event) => { if (event.target.closest('[data-open-deck-validator]')) openDeckValidator(); });
   $('validatedDeckSearch').addEventListener('input', renderValidatedDecks);
   $('validatedDeckFormat').addEventListener('change', renderValidatedDecks);
+  document.querySelectorAll('[data-decks-scope]').forEach((button) => button.addEventListener('click', () => switchValidatedDeckScope(button.dataset.decksScope)));
   $('retryValidatedDecks').addEventListener('click', () => loadValidatedDecks({ force: true }));
   $('validatedDecksGrid').addEventListener('click', (event) => {
     const card = event.target.closest('[data-saved-deck-id]');
@@ -3025,6 +3281,7 @@ function bind() {
   });
   $('copySavedDeck').addEventListener('click', copySavedDeck);
   $('editSavedDeck').addEventListener('click', editCurrentSavedDeck);
+  $('savedDeckVisibility').addEventListener('click', changeCurrentSavedDeckVisibility);
   $('savedDeckModal').addEventListener('cancel', (event) => { event.preventDefault(); closeSavedDeck(); });
   $('savedDeckModal').addEventListener('click', (event) => { if (event.target === $('savedDeckModal')) closeSavedDeck(); });
 
@@ -3043,17 +3300,19 @@ function bind() {
   });
   $('deckBuilderSave').addEventListener('click', () => {
     if (!deckBuilderValidation?.pending) return;
+    if (!requireAuthenticated('Entre com uma conta autorizada para salvar este deck.')) return;
     document.querySelector('.deck-builder-save-success')?.remove();
     $('deckBuilderSaveForm').hidden = false;
     renderDeckCoverPicker($('deckBuilderCoverPicker'), deckBuilderValidation.pending, deckBuilderEdit?.coverName || deckBuilderValidation.pending.coverName);
+    $('deckBuilderVisibilityPicker').innerHTML = deckVisibilityPickerContents(deckBuilderEdit?.visibility || 'private', deckBuilderEdit?.canChangeVisibility !== false);
     if (deckBuilderEdit) {
       $('deckBuilderSaveName').value = deckBuilderEdit.name || '';
       $('deckBuilderSavePilot').value = deckBuilderEdit.pilot || '';
-      $('deckBuilderSaveForm').querySelector('.deck-save-form__heading').innerHTML = `<strong>Publicar alterações neste deck?</strong><span>${deckBuilderValidation.valid ? 'A lista será publicada como válida.' : 'A lista continuará pública e será marcada como inválida até cumprir as regras.'}</span>`;
-      $('deckBuilderSaveForm').querySelector('button[type="submit"]').textContent = 'Publicar alterações';
+      $('deckBuilderSaveForm').querySelector('.deck-save-form__heading').innerHTML = `<strong>Salvar alterações neste deck?</strong><span>${deckBuilderValidation.valid ? 'A lista será salva como válida.' : 'A lista será marcada como inválida até cumprir as regras.'}</span>`;
+      $('deckBuilderSaveForm').querySelector('button[type="submit"]').textContent = 'Salvar alterações';
     } else {
-      $('deckBuilderSaveForm').querySelector('.deck-save-form__heading').innerHTML = `<strong>Como este deck será conhecido?</strong><span>${deckBuilderValidation.valid ? 'O nome ficará público no arquivo do playgroup.' : 'O deck ficará público com o selo Inválido e poderá ser editado depois.'} O piloto é opcional.</span>`;
-      $('deckBuilderSaveForm').querySelector('button[type="submit"]').textContent = deckBuilderValidation.valid ? 'Selar no arquivo' : 'Salvar como inválido';
+      $('deckBuilderSaveForm').querySelector('.deck-save-form__heading').innerHTML = `<strong>Como este deck será conhecido?</strong><span>Escolha se ele começa privado ou entra no arquivo público. O piloto é opcional.</span>`;
+      $('deckBuilderSaveForm').querySelector('button[type="submit"]').textContent = deckBuilderValidation.valid ? 'Salvar deck' : 'Salvar como inválido';
     }
     $('deckBuilderSaveName').focus();
   });
@@ -3426,6 +3685,7 @@ async function loadCards() {
 document.addEventListener('DOMContentLoaded', async () => {
   loadDeckBuilderEdit();
   loadDeckBuilderDraft();
+  await loadAuthState();
   $('brandLogo').src = site.logoPath;
   $('brandName').textContent = site.playgroupName;
   $('pageTitle').textContent = site.pageTitle;
