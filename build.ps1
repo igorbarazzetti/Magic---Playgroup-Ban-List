@@ -3,6 +3,7 @@ $ErrorActionPreference = "Stop"
 $projectRoot = $PSScriptRoot
 $clientOutput = Join-Path $projectRoot "dist\client"
 $hostingOutput = Join-Path $projectRoot "dist\.openai"
+$serverOutput = Join-Path $projectRoot "dist\server"
 
 & node --check (Join-Path $projectRoot "banlist.js")
 if ($LASTEXITCODE -ne 0) {
@@ -11,6 +12,7 @@ if ($LASTEXITCODE -ne 0) {
 
 New-Item -ItemType Directory -Force -Path $clientOutput | Out-Null
 New-Item -ItemType Directory -Force -Path $hostingOutput | Out-Null
+New-Item -ItemType Directory -Force -Path $serverOutput | Out-Null
 
 $clientFiles = @(
   "index.html",
@@ -39,6 +41,7 @@ if (Test-Path -LiteralPath $heroSource) {
 }
 
 Copy-Item -LiteralPath (Join-Path $projectRoot ".openai\hosting.json") -Destination (Join-Path $hostingOutput "hosting.json") -Force
+Copy-Item -LiteralPath (Join-Path $projectRoot "server\index.js") -Destination (Join-Path $serverOutput "index.js") -Force
 
 $drizzleSource = Join-Path $projectRoot "drizzle"
 $drizzleOutput = Join-Path $hostingOutput "drizzle"

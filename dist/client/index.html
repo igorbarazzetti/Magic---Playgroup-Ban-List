@@ -63,6 +63,7 @@
           <button class="desktop-nav__item" id="desktopValidator" type="button"><span aria-hidden="true">✓</span><span>Valide seu deck</span></button>
           <a class="desktop-nav__item" href="/?page=decks&rev=30"><span aria-hidden="true">◇</span><span>Decks validados</span></a>
           <button class="desktop-nav__item" id="desktopInstallApp" type="button"><span aria-hidden="true">↓</span><span id="desktopInstallLabel">Instalar app</span></button>
+          <button class="desktop-nav__item desktop-account" id="desktopAccountButton" type="button"><span aria-hidden="true">♙</span><span id="desktopAccountLabel">Entrar</span></button>
         </nav>
         <span class="fanmade-mark"><i aria-hidden="true"></i> Fanmade</span>
         <button class="icon-button" id="shareButton" type="button" aria-label="Compartilhar esta seleção" title="Copiar link desta seleção">
@@ -97,6 +98,7 @@
           <button type="button" id="mobileMenuValidator"><span class="mobile-menu__icon" aria-hidden="true">✓</span><span><strong>Valide seu deck</strong><small>Cole uma lista e confira as regras</small></span><span aria-hidden="true">→</span></button>
           <a href="/?page=decks&rev=30" data-mobile-menu-link><span class="mobile-menu__icon" aria-hidden="true">◇</span><span><strong>Decks validados</strong><small>Explore e edite listas do playgroup</small></span><span aria-hidden="true">→</span></a>
           <button type="button" id="installAppButton"><span class="mobile-menu__icon" aria-hidden="true">↓</span><span><strong>Adicione como web app</strong><small id="installAppHint">Tenha o Formatinho na tela inicial</small></span><span aria-hidden="true">＋</span></button>
+          <button type="button" id="mobileAccountButton"><span class="mobile-menu__icon" aria-hidden="true">♙</span><span><strong id="mobileAccountLabel">Entrar com Google</strong><small id="mobileAccountHint">Acesse seus decks privados</small></span><span aria-hidden="true">→</span></button>
         </nav>
         <div class="mobile-menu__install-help" id="installAppHelp" hidden role="status">
           <strong>Adicionar à tela inicial</strong>
@@ -149,6 +151,11 @@
           </div>
         </header>
 
+        <div class="decks-scope-tabs" role="tablist" aria-label="Escopo dos decks">
+          <button class="is-active" id="publicDecksTab" type="button" role="tab" aria-selected="true" data-decks-scope="public"><span aria-hidden="true">◇</span><span><strong>Arquivo público</strong><small>Listas compartilhadas pelo playgroup</small></span></button>
+          <button id="myDecksTab" type="button" role="tab" aria-selected="false" data-decks-scope="mine"><span aria-hidden="true">♙</span><span><strong>Meus decks</strong><small id="myDecksTabHint">Entre para ver rascunhos privados</small></span></button>
+        </div>
+
         <div class="decks-toolbar">
           <label class="decks-search" for="validatedDeckSearch"><span aria-hidden="true">⌕</span><span class="sr-only">Buscar decks por nome ou piloto</span><input id="validatedDeckSearch" type="search" inputmode="search" placeholder="Buscar deck ou piloto…" autocomplete="off" /></label>
           <label class="decks-format-filter" for="validatedDeckFormat"><span class="sr-only">Filtrar decks por formato</span><select id="validatedDeckFormat"><option value="">Todos os formatos</option></select></label>
@@ -190,6 +197,7 @@
           <div class="deck-save-form__heading"><strong>Como este deck será conhecido?</strong><span>O nome ficará público no arquivo do playgroup. O piloto é opcional.</span></div>
           <label for="deckBuilderSaveName">Nome do deck<input id="deckBuilderSaveName" name="name" maxlength="80" required placeholder="Ex.: Elfos da Lathril" autocomplete="off" /></label>
           <label for="deckBuilderSavePilot">Piloto<input id="deckBuilderSavePilot" name="pilot" maxlength="60" placeholder="Seu nome ou apelido" autocomplete="name" /></label>
+          <fieldset class="deck-visibility-picker" id="deckBuilderVisibilityPicker"><legend>Visibilidade</legend><label><input type="radio" name="visibility" value="private" checked /><span><strong>Privado</strong><small>Só você pode ver e editar</small></span></label><label><input type="radio" name="visibility" value="public" /><span><strong>Público</strong><small>O playgroup pode ver e editar</small></span></label></fieldset>
           <fieldset class="deck-cover-picker" id="deckBuilderCoverPicker"><legend>Carta em destaque</legend></fieldset>
           <div class="deck-save-form__actions"><button type="submit">Selar no arquivo</button><button type="button" id="deckBuilderSaveCancel">Cancelar</button></div>
         </form>
@@ -507,11 +515,24 @@
             <h2 id="savedDeckTitle">Deck validado</h2>
             <p class="saved-deck-modal__pilot" id="savedDeckPilot"></p>
             <div class="saved-deck-modal__stats" id="savedDeckStats"></div>
-            <div class="saved-deck-modal__actions"><button id="copySavedDeck" type="button"><span aria-hidden="true">⧉</span> Copiar lista</button><button id="editSavedDeck" type="button"><span aria-hidden="true">✎</span> Editar este deck</button></div>
-            <p class="saved-deck-modal__edit-note">Edição pública: qualquer pessoa pode aprimorar esta lista. Toda alteração passa novamente pela validação do Formatinho.</p>
+            <div class="saved-deck-modal__actions"><button id="copySavedDeck" type="button"><span aria-hidden="true">⧉</span> Copiar lista</button><button id="editSavedDeck" type="button"><span aria-hidden="true">✎</span> Editar este deck</button><button id="savedDeckVisibility" type="button" hidden><span aria-hidden="true">♙</span> Tornar privado</button></div>
+            <p class="saved-deck-modal__edit-note" id="savedDeckEditNote">Edição pública: usuários autorizados podem aprimorar esta lista. Toda alteração passa novamente pela validação do Formatinho.</p>
             <div class="saved-deck-list" id="savedDeckList"></div>
           </article>
         </div>
+      </div>
+    </dialog>
+
+    <dialog id="authModal" class="auth-modal" aria-labelledby="authModalTitle" aria-describedby="authModalDescription">
+      <div class="auth-modal__shell">
+        <button class="auth-modal__close" id="closeAuthModal" type="button" aria-label="Fechar">×</button>
+        <span class="auth-modal__seal" aria-hidden="true">♙</span>
+        <p class="eyebrow">Acesso ao conselho</p>
+        <h2 id="authModalTitle">Entre no Formatinho</h2>
+        <p id="authModalDescription">Use uma conta Google autorizada para salvar decks, manter rascunhos privados e editar o arquivo público.</p>
+        <div class="auth-modal__google" id="googleSignInButton"></div>
+        <p class="auth-modal__status" id="authModalStatus" role="status" aria-live="polite"></p>
+        <small>O acesso é concedido manualmente. Não há cadastro público.</small>
       </div>
     </dialog>
 
@@ -524,6 +545,6 @@
     </dialog>
 
     <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
-    <script type="module" src="banlist.js?v=codex-60"></script>
+    <script type="module" src="banlist.js?v=codex-61"></script>
   </body>
 </html>

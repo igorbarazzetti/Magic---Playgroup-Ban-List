@@ -11,6 +11,25 @@ export const validatedDecksSchema = {
     coverName: "TEXT NOT NULL DEFAULT ''",
     coverImage: "TEXT NOT NULL DEFAULT ''",
     isValid: "INTEGER NOT NULL DEFAULT 1",
+    ownerUserId: "TEXT",
+    visibility: "TEXT NOT NULL DEFAULT 'public'",
+    updatedAt: "TEXT",
+    updatedByUserId: "TEXT",
     createdAt: "TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP",
+  },
+} as const;
+
+export const authorizedUsersSchema = {
+  table: "authorized_users",
+  columns: {
+    id: "TEXT PRIMARY KEY",
+    email: "TEXT NOT NULL UNIQUE",
+    googleSub: "TEXT UNIQUE",
+    displayName: "TEXT NOT NULL DEFAULT ''",
+    avatarUrl: "TEXT NOT NULL DEFAULT ''",
+    role: "TEXT NOT NULL DEFAULT 'member'",
+    status: "TEXT NOT NULL DEFAULT 'active'",
+    createdAt: "TEXT NOT NULL",
+    lastLoginAt: "TEXT",
   },
 } as const;

@@ -1,9 +1,22 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import worker from '../dist/server/index.js';
+import worker from '../server/index.js';
 
 function database(createdAt = '2026-08-08T10:00:00.000Z', priorityRows = []) {
-  const state = { createdAt, inserted: null, updated: null, priorityRows };
+  const state = {
+    createdAt,
+    inserted: null,
+    updated: null,
+    priorityRows,
+    viewer: { id: 'user-1', email: 'igor@example.com', display_name: 'Igor', avatar_url: '', role: 'member', status: 'active' },
+    existing: {
+      id: 'deck-1', name: 'Deck atual', pilot: 'Igor', format: 'formatinho',
+      deck_json: JSON.stringify([{ name: 'Forest', quantity: 60, section: 'main' }]),
+      card_count: 60, unique_count: 1, cover_name: 'Forest', cover_image: '',
+      is_valid: 1, owner_user_id: null, visibility: 'public',
+      updated_at: createdAt, created_at: createdAt,
+    },
+  };
   return {
     state,
     async batch() {},
@@ -12,6 +25,10 @@ function database(createdAt = '2026-08-08T10:00:00.000Z', priorityRows = []) {
         args: [],
         bind(...args) { this.args = args; return this; },
         async first() {
+          if (sql.includes('FROM auth_sessions s JOIN authorized_users u')) {
+            return state.viewer;
+          }
+          if (sql.includes('SELECT * FROM validated_decks WHERE id')) return state.existing;
           if (sql.includes('SELECT created_at')) return { created_at: state.createdAt };
           return null;
         },
@@ -21,14 +38,18 @@ function database(createdAt = '2026-08-08T10:00:00.000Z', priorityRows = []) {
         },
         async run() {
           if (sql.includes('INSERT INTO validated_decks')) {
-            state.inserted = { name: this.args[1], entries: JSON.parse(this.args[4]), coverName: this.args[7], valid: Boolean(this.args[9]) };
+            state.inserted = {
+              name: this.args[1], entries: JSON.parse(this.args[4]), coverName: this.args[7],
+              valid: Boolean(this.args[9]), owner: this.args[10], visibility: this.args[11],
+            };
             return { meta: { changes: 1 } };
           }
           if (sql.includes('UPDATE validated_decks')) {
             const expectedVersion = this.args.at(-1);
             if (expectedVersion !== state.createdAt) return { meta: { changes: 0 } };
             state.updated = { name: this.args[0], entries: JSON.parse(this.args[3]), coverName: this.args[6], valid: Boolean(this.args[8]) };
-            state.createdAt = this.args[9];
+            state.createdAt = this.args[11];
+            state.existing = { ...state.existing, updated_at: state.createdAt };
             return { meta: { changes: 1 } };
           }
           return { meta: { changes: 0 } };
@@ -37,6 +58,8 @@ function database(createdAt = '2026-08-08T10:00:00.000Z', priorityRows = []) {
     },
   };
 }
+
+const authHeaders = { 'content-type': 'application/json', cookie: 'formatinho_session=test-token' };
 
 const forest = {
   name: 'Forest', set: 'fdn', legalities: {},
@@ -65,7 +88,7 @@ test('public deck editing revalidates and updates the existing deck', async () =
   try {
     const response = await worker.fetch(new Request('https://formatinho.test/api/decks/deck-1', {
       method: 'PUT',
-      headers: { 'content-type': 'application/json' },
+      headers: authHeaders,
       body: JSON.stringify({
         name: 'Mono Green atualizado', pilot: 'Igor', format: 'formatinho',
         base_updated_at: '2026-08-08T10:00:00.000Z',
@@ -94,7 +117,7 @@ test('a double-faced card found by its front face remains valid when editing', a
   try {
     const response = await worker.fetch(new Request('https://formatinho.test/api/decks/deck-1', {
       method: 'PUT',
-      headers: { 'content-type': 'application/json' },
+      headers: authHeaders,
       body: JSON.stringify({
         name: 'Monoblue', format: 'formatinho', valid: true,
         base_updated_at: '2026-08-08T10:00:00.000Z',
@@ -116,7 +139,7 @@ test('an incomplete deck can be saved and is persisted as invalid', async () => 
   try {
     const response = await worker.fetch(new Request('https://formatinho.test/api/decks', {
       method: 'POST',
-      headers: { 'content-type': 'application/json' },
+      headers: authHeaders,
       body: JSON.stringify({
         name: 'Rascunho verde', format: 'formatinho', valid: false,
         entries: [{ name: 'Forest', quantity: 52, section: 'main' }],
@@ -137,7 +160,7 @@ test('the server marks a Formatinho deck below 60 Main Deck cards as invalid', a
   try {
     const response = await worker.fetch(new Request('https://formatinho.test/api/decks', {
       method: 'POST',
-      headers: { 'content-type': 'application/json' },
+      headers: authHeaders,
       body: JSON.stringify({
         name: 'Deck com 59 cartas', format: 'formatinho', valid: true,
         entries: [{ name: 'Forest', quantity: 59, section: 'main' }],
@@ -157,7 +180,7 @@ test('the server accepts a Formatinho deck with more than 60 Main Deck cards', a
   try {
     const response = await worker.fetch(new Request('https://formatinho.test/api/decks', {
       method: 'POST',
-      headers: { 'content-type': 'application/json' },
+      headers: authHeaders,
       body: JSON.stringify({
         name: 'Deck com 61 cartas', format: 'formatinho', valid: true,
         entries: [{ name: 'Forest', quantity: 61, section: 'main' }],
@@ -177,7 +200,7 @@ test('public editing accepts an incomplete deck and keeps its invalid status', a
   try {
     const response = await worker.fetch(new Request('https://formatinho.test/api/decks/deck-1', {
       method: 'PUT',
-      headers: { 'content-type': 'application/json' },
+      headers: authHeaders,
       body: JSON.stringify({
         name: 'Mono Green em construção', format: 'formatinho', valid: false,
         base_updated_at: '2026-08-08T10:00:00.000Z',
@@ -198,7 +221,7 @@ test('the server never marks a banned deck as valid even if the client requests 
   try {
     const response = await worker.fetch(new Request('https://formatinho.test/api/decks', {
       method: 'POST',
-      headers: { 'content-type': 'application/json' },
+      headers: authHeaders,
       body: JSON.stringify({
         name: 'Lista proibida', format: 'formatinho', valid: true,
         entries: [{ name: 'Black Lotus', quantity: 60, section: 'main' }],
@@ -218,7 +241,7 @@ test('public deck editing rejects a stale version instead of overwriting it', as
   try {
     const response = await worker.fetch(new Request('https://formatinho.test/api/decks/deck-1', {
       method: 'PUT',
-      headers: { 'content-type': 'application/json' },
+      headers: authHeaders,
       body: JSON.stringify({
         name: 'Versão antiga', format: 'formatinho', base_updated_at: '2026-08-08T10:00:00.000Z',
         entries: [{ name: 'Forest', quantity: 60, section: 'main' }],
@@ -266,7 +289,7 @@ test('a published deck can choose any of its cards as the featured cover', async
   try {
     const response = await worker.fetch(new Request('https://formatinho.test/api/decks', {
       method: 'POST',
-      headers: { 'content-type': 'application/json' },
+      headers: authHeaders,
       body: JSON.stringify({
         name: 'Terras favoritas', format: 'formatinho', cover_name: 'Island',
         entries: [
@@ -290,7 +313,7 @@ test('the featured cover must belong to the published deck', async () => {
   try {
     const response = await worker.fetch(new Request('https://formatinho.test/api/decks', {
       method: 'POST',
-      headers: { 'content-type': 'application/json' },
+      headers: authHeaders,
       body: JSON.stringify({
         name: 'Capa inválida', format: 'formatinho', cover_name: 'Island',
         entries: [{ name: 'Forest', quantity: 60, section: 'main' }],
@@ -298,5 +321,80 @@ test('the featured cover must belong to the published deck', async () => {
     }), { DB: db });
     assert.equal(response.status, 400);
     assert.match((await response.json()).error, /fazer parte do deck/i);
+  } finally { globalThis.fetch = originalFetch; }
+});
+
+test('saving a deck requires an authenticated authorized user', async () => {
+  const db = database();
+  const response = await worker.fetch(new Request('https://formatinho.test/api/decks', {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ name: 'Sem sessão', format: 'formatinho', entries: [{ name: 'Forest', quantity: 60, section: 'main' }] }),
+  }), { DB: db });
+  assert.equal(response.status, 401);
+  assert.match((await response.json()).error, /entre com google/i);
+});
+
+test('a private deck is invisible to anonymous visitors', async () => {
+  const db = database();
+  db.state.existing = { ...db.state.existing, owner_user_id: 'user-1', visibility: 'private' };
+  const response = await worker.fetch(new Request('https://formatinho.test/api/decks/deck-1'), { DB: db });
+  assert.equal(response.status, 404);
+});
+
+test('a private deck is available to its owner', async () => {
+  const db = database();
+  db.state.existing = { ...db.state.existing, owner_user_id: 'user-1', visibility: 'private' };
+  const response = await worker.fetch(new Request('https://formatinho.test/api/decks/deck-1', { headers: { cookie: 'formatinho_session=test-token' } }), { DB: db });
+  const payload = await response.json();
+  assert.equal(response.status, 200);
+  assert.equal(payload.deck.visibility, 'private');
+  assert.equal(payload.deck.is_owner, true);
+  assert.equal(payload.deck.can_change_visibility, true);
+});
+
+test('a private deck rejects a different authorized user', async () => {
+  const db = database();
+  db.state.existing = { ...db.state.existing, owner_user_id: 'user-1', visibility: 'private' };
+  db.state.viewer = { ...db.state.viewer, id: 'user-2', email: 'friend@example.com' };
+  const response = await worker.fetch(new Request('https://formatinho.test/api/decks/deck-1', { headers: { cookie: 'formatinho_session=test-token' } }), { DB: db });
+  assert.equal(response.status, 403);
+});
+
+test('Google login verifies a signed ID token and creates a secure server session', async () => {
+  const db = database();
+  const clientId = 'formatinho-test.apps.googleusercontent.com';
+  const keyPair = await crypto.subtle.generateKey(
+    { name: 'RSASSA-PKCS1-v1_5', modulusLength: 2048, publicExponent: new Uint8Array([1, 0, 1]), hash: 'SHA-256' },
+    true,
+    ['sign', 'verify'],
+  );
+  const publicJwk = await crypto.subtle.exportKey('jwk', keyPair.publicKey);
+  publicJwk.kid = 'formatinho-test-key';
+  publicJwk.alg = 'RS256';
+  publicJwk.use = 'sig';
+  const encode = (value) => Buffer.from(typeof value === 'string' ? value : JSON.stringify(value)).toString('base64url');
+  const now = Math.floor(Date.now() / 1000);
+  const header = encode({ alg: 'RS256', kid: publicJwk.kid, typ: 'JWT' });
+  const claims = encode({
+    iss: 'https://accounts.google.com', aud: clientId, sub: 'google-user-1',
+    email: 'igor@example.com', email_verified: true, name: 'Igor', iat: now, exp: now + 600,
+  });
+  const signature = await crypto.subtle.sign('RSASSA-PKCS1-v1_5', keyPair.privateKey, new TextEncoder().encode(`${header}.${claims}`));
+  const credential = `${header}.${claims}.${Buffer.from(signature).toString('base64url')}`;
+  const originalFetch = globalThis.fetch;
+  globalThis.fetch = async (input) => String(input).includes('googleapis.com/oauth2/v3/certs')
+    ? new Response(JSON.stringify({ keys: [publicJwk] }), { status: 200, headers: { 'content-type': 'application/json', 'cache-control': 'max-age=3600' } })
+    : originalFetch(input);
+  try {
+    const response = await worker.fetch(new Request('https://formatinho.test/api/auth/google', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json', origin: 'https://formatinho.test' },
+      body: JSON.stringify({ credential }),
+    }), { DB: db, GOOGLE_CLIENT_ID: clientId, FORMATINHO_ALLOWED_EMAILS: 'igor@example.com' });
+    const payload = await response.json();
+    assert.equal(response.status, 200);
+    assert.equal(payload.user.email, 'igor@example.com');
+    assert.match(response.headers.get('set-cookie'), /formatinho_session=.*HttpOnly; Secure; SameSite=Lax/i);
   } finally { globalThis.fetch = originalFetch; }
 });
