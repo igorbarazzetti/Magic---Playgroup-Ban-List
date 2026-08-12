@@ -37,7 +37,7 @@
     <link rel="preconnect" href="https://cards.scryfall.io" />
     <link rel="preconnect" href="https://api.scryfall.com" />
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=codex-56" />
+    <link rel="stylesheet" href="styles.css?v=codex-57" />
     <script>
       (() => {
         if (!('serviceWorker' in navigator)) return;
@@ -177,6 +177,7 @@
           </div>
           <div class="deck-builder-hero__actions">
             <button class="deck-builder-exit-edit" id="deckBuilderExitEdit" type="button" hidden><span aria-hidden="true">←</span><span>Voltar ao meu deck</span></button>
+            <button class="deck-builder-import-list" id="deckBuilderImport" type="button"><span aria-hidden="true">⇩</span><span>Importar lista</span></button>
             <a class="deck-builder-add-cards" id="deckBuilderAddCards" href="/?tab=catalog"><span aria-hidden="true">＋</span><span>Adicionar cartas</span></a>
           </div>
         </header>
@@ -503,6 +504,42 @@
       </div>
     </dialog>
 
+    <dialog id="deckBuilderImportModal" class="deck-validator deck-builder-import" aria-labelledby="deckBuilderImportTitle" aria-describedby="deckBuilderImportDescription">
+      <div class="deck-validator__shell">
+        <header class="deck-validator__header">
+          <div>
+            <p class="eyebrow">Transcrição do grimório</p>
+            <h2 id="deckBuilderImportTitle">Importar uma lista</h2>
+          </div>
+          <button class="deck-validator__close" id="closeDeckBuilderImport" type="button" aria-label="Fechar importação">×</button>
+        </header>
+
+        <div class="deck-validator__scroll">
+          <p class="deck-validator__intro" id="deckBuilderImportDescription">Cole uma lista pronta para acrescentar as cartas ao deck em construção.</p>
+
+          <label class="deck-validator__label" for="deckBuilderImportInput">
+            <span>Lista do deck</span>
+            <small id="deckBuilderImportCount">0 cartas lidas</small>
+          </label>
+          <div class="deck-validator__input-wrap">
+            <textarea id="deckBuilderImportInput" rows="12" spellcheck="false" autocapitalize="none" placeholder="4 Lightning Bolt&#10;4 Monastery Swiftspear&#10;&#10;Sideboard&#10;2 Dispel"></textarea>
+            <button id="clearDeckBuilderImport" class="deck-validator__clear" type="button" hidden>Limpar lista</button>
+          </div>
+          <p class="deck-validator__hint">Aceita listas do Arena, Moxfield e texto simples. Main Deck e Sideboard são reconhecidos automaticamente.</p>
+
+          <section id="deckBuilderImportResult" class="deck-import-result" role="status" aria-live="polite" hidden></section>
+
+          <div class="deck-validator__actions">
+            <button id="confirmDeckBuilderImport" class="deck-validator__submit" type="button">
+              <span aria-hidden="true">⇩</span><span>Adicionar lista ao deck</span>
+            </button>
+          </div>
+
+          <p class="deck-validator__scope">Cartas proibidas, listas incompletas e valores acima do limite podem ser importados e salvos. O deck será identificado como inválido até cumprir as regras.</p>
+        </div>
+      </div>
+    </dialog>
+
     <dialog id="savedDeckModal" class="saved-deck-modal" aria-labelledby="savedDeckTitle">
       <div class="saved-deck-modal__shell">
         <header class="saved-deck-modal__header">
@@ -545,6 +582,6 @@
     </dialog>
 
     <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
-    <script type="module" src="banlist.js?v=codex-61"></script>
+    <script type="module" src="banlist.js?v=codex-62"></script>
   </body>
 </html>

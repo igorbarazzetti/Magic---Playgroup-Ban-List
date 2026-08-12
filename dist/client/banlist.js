@@ -1887,6 +1887,31 @@ function parseDeckList(value) {
   return [...entries.values()];
 }
 
+function parseDeckBuilderImport(value) {
+  const merged = new Map();
+  const mainHeadings = new Set(['deck', 'mainboard', 'main deck', 'commander', 'commanders', 'companion', 'lista', 'baralho', 'comandante']);
+  const sideHeadings = new Set(['sideboard', 'maybeboard', 'reserva']);
+  let section = 'main';
+
+  String(value || '').split(/\r?\n/).forEach((originalLine) => {
+    const trimmed = originalLine.trim();
+    if (!trimmed || /^(?:\/\/|#)/.test(trimmed)) return;
+    const heading = slug(trimmed.replace(/:\s*$/, '').replace(/\s*\(\d+\)\s*$/, '')).trim();
+    if (mainHeadings.has(heading)) { section = 'main'; return; }
+    if (sideHeadings.has(heading)) { section = 'sideboard'; return; }
+
+    const lineSection = /^SB:\s*/i.test(trimmed) ? 'sideboard' : section;
+    parseDeckList(trimmed).forEach((entry) => {
+      const key = `${lineSection}:${entry.key}`;
+      const existing = merged.get(key);
+      if (existing) existing.quantity += entry.quantity;
+      else merged.set(key, { ...entry, section: lineSection });
+    });
+  });
+
+  return [...merged.values()];
+}
+
 function normalizeDeckName(value = '') {
   return slug(String(value))
     .replace(/[\u2018\u2019\u02bc\uff07]/g, "'")
@@ -1934,6 +1959,14 @@ function updateDeckListCount() {
   $('clearDeckList').hidden = !$('deckListInput').value;
   $('deckValidationResult').hidden = true;
   pendingValidatedDeck = null;
+}
+
+function updateDeckBuilderImportCount() {
+  const entries = parseDeckBuilderImport($('deckBuilderImportInput').value);
+  const copies = entries.reduce((total, entry) => total + entry.quantity, 0);
+  $('deckBuilderImportCount').textContent = `${copies} ${copies === 1 ? 'carta lida' : 'cartas lidas'}`;
+  $('clearDeckBuilderImport').hidden = !$('deckBuilderImportInput').value;
+  $('deckBuilderImportResult').hidden = true;
 }
 
 function cardNameKeys(card) {
@@ -2627,6 +2660,89 @@ function deckBuilderStoredEntry(card, quantity = 1) {
   };
 }
 
+function deckBuilderUnresolvedEntry(entry) {
+  const key = normalizeDeckName(entry.name);
+  return {
+    id: `name:${key}`,
+    key,
+    oracleId: '',
+    cardId: '',
+    name: entry.name,
+    quantity: Number(entry.quantity) || 1,
+    image: '',
+    usd: null,
+  };
+}
+
+function openDeckBuilderImport() {
+  state.deckImportLastFocus = document.activeElement;
+  const modal = $('deckBuilderImportModal');
+  $('deckBuilderImportResult').hidden = true;
+  if (typeof modal.showModal === 'function') modal.showModal(); else modal.setAttribute('open', '');
+  document.body.classList.add('is-locked');
+  setTimeout(() => $('deckBuilderImportInput').focus(), 0);
+}
+
+function closeDeckBuilderImport({ restoreFocus = true } = {}) {
+  const modal = $('deckBuilderImportModal');
+  if (modal.open) modal.close(); else modal.removeAttribute('open');
+  if (!$('mobileMenu')?.open && !$('savedDeckModal')?.open && !$('deckValidatorModal')?.open && !$('cardModal')?.open) document.body.classList.remove('is-locked');
+  if (restoreFocus) state.deckImportLastFocus?.focus?.({ preventScroll: true });
+}
+
+function renderDeckBuilderImportMessage(message, { error = false } = {}) {
+  const target = $('deckBuilderImportResult');
+  target.classList.toggle('is-error', error);
+  target.textContent = message;
+  target.hidden = false;
+}
+
+async function importDeckBuilderList() {
+  const entries = parseDeckBuilderImport($('deckBuilderImportInput').value);
+  if (!entries.length) {
+    renderDeckBuilderImportMessage('Cole ao menos uma carta, por exemplo: 4 Lightning Bolt.', { error: true });
+    $('deckBuilderImportInput').focus();
+    return;
+  }
+  if (entries.length > 300) {
+    renderDeckBuilderImportMessage('A lista ultrapassa o limite técnico de 300 nomes diferentes. Divida-a em duas importações.', { error: true });
+    return;
+  }
+
+  const button = $('confirmDeckBuilderImport');
+  button.disabled = true;
+  button.innerHTML = '<span aria-hidden="true">✦</span><span>Reconhecendo as cartas…</span>';
+  try {
+    const cards = await fetchDeckCards(entries).catch(() => new Map(entries.map((entry) => [entry.key, null])));
+    let unresolved = 0;
+    entries.forEach((entry) => {
+      const card = cards.get(entry.key) || deckCardForEntry(entry);
+      if (card) cardNameKeys(card).forEach((key) => deckCardCache.set(key, card));
+      else unresolved += 1;
+      const stored = card ? deckBuilderStoredEntry(card, entry.quantity) : deckBuilderUnresolvedEntry(entry);
+      const zone = entry.section === 'sideboard' ? 'sideboard' : 'main';
+      const existing = Object.values(deckBuilder[zone]).find((item) => item.id === stored.id || normalizeDeckName(item.name) === normalizeDeckName(stored.name));
+      if (existing) existing.quantity = Math.min(999, Number(existing.quantity) + Number(stored.quantity));
+      else deckBuilder[zone][stored.id] = stored;
+    });
+
+    persistDeckBuilderDraft();
+    $('deckBuilderImportInput').value = '';
+    updateDeckBuilderImportCount();
+    closeDeckBuilderImport({ restoreFocus: false });
+    renderDeckBuilder();
+    updateCardAddLabels();
+    scheduleDeckBuilderValidation();
+    const copies = entries.reduce((total, entry) => total + entry.quantity, 0);
+    showToast(unresolved
+      ? `${copies} cartas importadas · ${unresolved} ${unresolved === 1 ? 'nome será revisado' : 'nomes serão revisados'}`
+      : `${copies} cartas importadas para o deck`);
+  } finally {
+    button.disabled = false;
+    button.innerHTML = '<span aria-hidden="true">⇩</span><span>Adicionar lista ao deck</span>';
+  }
+}
+
 function deckBuilderReturnUrl() {
   const fallback = '/?tab=catalog';
   try {
@@ -3289,6 +3405,17 @@ function bind() {
     rememberDeckBuilderReturnUrl();
     location.assign('/deckbuilder');
   });
+  $('deckBuilderImport').addEventListener('click', openDeckBuilderImport);
+  $('closeDeckBuilderImport').addEventListener('click', () => closeDeckBuilderImport());
+  $('deckBuilderImportModal').addEventListener('cancel', (event) => { event.preventDefault(); closeDeckBuilderImport(); });
+  $('deckBuilderImportModal').addEventListener('click', (event) => { if (event.target === $('deckBuilderImportModal')) closeDeckBuilderImport(); });
+  $('deckBuilderImportInput').addEventListener('input', updateDeckBuilderImportCount);
+  $('clearDeckBuilderImport').addEventListener('click', () => {
+    $('deckBuilderImportInput').value = '';
+    updateDeckBuilderImportCount();
+    $('deckBuilderImportInput').focus();
+  });
+  $('confirmDeckBuilderImport').addEventListener('click', () => { void importDeckBuilderList(); });
   $('deckBuilderPage').addEventListener('click', (event) => {
     const item = event.target.closest('[data-builder-entry]');
     if (!item) return;

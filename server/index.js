@@ -516,13 +516,13 @@ async function createDeck(request, env, viewer) {
     const cardName = cleanText(item?.name, 160);
     const quantity = Math.trunc(Number(item?.quantity));
     const section = item?.section === "sideboard" ? "sideboard" : "main";
-    if (!cardName || !Number.isFinite(quantity) || quantity < 1 || quantity > 99) {
+    if (!cardName || !Number.isFinite(quantity) || quantity < 1 || quantity > 999) {
       return json({ error: "Há uma carta ou quantidade inválida na lista." }, 400);
     }
     const key = `${section}:${normalizeName(cardName)}`;
     const current = mergedEntries.get(key);
     const total = (current?.quantity || 0) + quantity;
-    if (total > 99) return json({ error: `Quantidade inválida para ${cardName}.` }, 400);
+    if (total > 999) return json({ error: `Quantidade inválida para ${cardName}.` }, 400);
     mergedEntries.set(key, { name: current?.name || cardName, quantity: total, section });
   }
 
@@ -625,11 +625,11 @@ async function updateDeck(request, env, id, viewer) {
     const cardName = cleanText(item?.name, 160);
     const quantity = Math.trunc(Number(item?.quantity));
     const section = item?.section === "sideboard" ? "sideboard" : "main";
-    if (!cardName || !Number.isFinite(quantity) || quantity < 1 || quantity > 99) return json({ error: "Há uma carta ou quantidade inválida na lista." }, 400);
+    if (!cardName || !Number.isFinite(quantity) || quantity < 1 || quantity > 999) return json({ error: "Há uma carta ou quantidade inválida na lista." }, 400);
     const key = `${section}:${normalizeName(cardName)}`;
     const current = mergedEntries.get(key);
     const total = (current?.quantity || 0) + quantity;
-    if (total > 99) return json({ error: `Quantidade inválida para ${cardName}.` }, 400);
+    if (total > 999) return json({ error: `Quantidade inválida para ${cardName}.` }, 400);
     mergedEntries.set(key, { name: current?.name || cardName, quantity: total, section });
   }
 
