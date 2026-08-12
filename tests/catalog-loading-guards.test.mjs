@@ -20,7 +20,7 @@ test('deck builder and catalog share the protected catalog loader', () => {
 
 test('LigaMagic prices prefer the current network index over a fresh local cache', () => {
   const loader = functionSource('getPersistentCatalogData', 'buildCatalogCards');
-  assert.match(loader, /catalog-prices-v1[^\n]+preferNetwork: true/);
+  assert.match(loader, /catalog-prices-v2[^\n]+preferNetwork: true/);
   const resource = functionSource('fetchCatalogResource', 'getPersistentCatalogData');
   assert.match(resource, /if \(preferNetwork\)/);
   assert.match(resource, /6000, 'no-cache'/);

@@ -62,8 +62,8 @@ const isLocalPreview = /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
 const catalogIndexUrl = isLocalPreview ? `${localDataBase}/catalog/scryfall-index.json` : '/api/catalog/index';
 const catalogPriceIndexUrl = isLocalPreview ? `${localDataBase}/ligamagic-catalog-prices.json` : '/api/catalog/prices';
 const catalogFallbackUrls = {
-  'catalog-index-v1': `${repositoryDataBase}/catalog/scryfall-index.json`,
-  'catalog-prices-v1': `${repositoryDataBase}/ligamagic-catalog-prices.json`,
+  'catalog-index-v2': `${repositoryDataBase}/catalog/scryfall-index.json`,
+  'catalog-prices-v2': `${repositoryDataBase}/ligamagic-catalog-prices.json`,
 };
 let ligaMagicPriceBookPromise;
 let catalogIndex;
@@ -86,7 +86,9 @@ let catalogFilterToken = 0;
 const catalogWorkerRequests = new Map();
 const catalogWorkerFilterTimeoutMs = 5000;
 const scryfallRequestTimeoutMs = 15000;
-const catalogCacheDbName = 'formatinho-catalog-cache-v1';
+// Bump this namespace whenever the compact catalog contract changes. A bad or
+// incomplete IndexedDB entry must never survive a deploy and strand the catalog.
+const catalogCacheDbName = 'formatinho-catalog-cache-v2';
 let catalogCacheDbPromise;
 const deckCardCache = new Map();
 const savedDeckCache = new Map();
@@ -3625,12 +3627,12 @@ async function writePersistentCatalogResource(key, payload) {
 
 function validCatalogResource(key, payload) {
   if (!payload || typeof payload !== 'object') return false;
-  if (key === 'catalog-index-v1') {
+  if (key === 'catalog-index-v2') {
     if (!Array.isArray(payload.cards) || payload.cards.length < 100) return false;
     const samples = [payload.cards[0], payload.cards[Math.floor(payload.cards.length / 2)], payload.cards.at(-1)];
     return samples.every((tuple) => Array.isArray(tuple) && tuple.length >= 9 && typeof tuple[0] === 'string' && typeof tuple[2] === 'string');
   }
-  if (key === 'catalog-prices-v1') return payload.prices && typeof payload.prices === 'object';
+  if (key === 'catalog-prices-v2') return payload.prices && typeof payload.prices === 'object';
   return true;
 }
 
@@ -3690,8 +3692,8 @@ let persistentCatalogDataPromise;
 async function getPersistentCatalogData() {
   if (!persistentCatalogDataPromise) {
     persistentCatalogDataPromise = Promise.all([
-      fetchCatalogResource(catalogIndexUrl, 'catalog-index-v1', 12 * 60 * 60 * 1000),
-      fetchCatalogResource(catalogPriceIndexUrl, 'catalog-prices-v1', 90 * 60 * 1000, { preferNetwork: true }).catch(() => ({ prices: {}, coverage: null })),
+      fetchCatalogResource(catalogIndexUrl, 'catalog-index-v2', 12 * 60 * 60 * 1000),
+      fetchCatalogResource(catalogPriceIndexUrl, 'catalog-prices-v2', 90 * 60 * 1000, { preferNetwork: true }).catch(() => ({ prices: {}, coverage: null })),
     ]).then(([index, prices]) => ({ index, prices })).catch((error) => {
       persistentCatalogDataPromise = null;
       throw error;
