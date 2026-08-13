@@ -2279,6 +2279,33 @@ function validatedDeckDate(value) {
   return formatDate(normalized);
 }
 
+function deckColorSymbols(deck) {
+  const colors = Array.isArray(deck?.color_identity) ? deck.color_identity.filter((color) => 'WUBRG'.includes(color)) : [];
+  const identity = colors.length ? colors : ['C'];
+  const label = colors.length ? `Identidade de cor: ${colors.join(' ')}` : 'Deck incolor';
+  return `<span class="validated-deck-card__colors" aria-label="${label}" title="${label}">${identity.map((color) => manaSymbolImage(color)).join('')}</span>`;
+}
+
+async function hydrateValidatedDeckColors(decks) {
+  const pending = decks.filter((deck) => !Array.isArray(deck.color_identity) || !deck.color_identity.length).slice(0, 18);
+  if (!pending.length) return;
+  const detailed = await Promise.all(pending.map(async (deck) => {
+    try { const response = await fetch(`/api/decks/${encodeURIComponent(deck.id)}`, { headers: { Accept: 'application/json' }, cache: 'force-cache' }); return response.ok ? (await response.json()).deck : null; } catch { return null; }
+  }));
+  const entries = detailed.flatMap((deck) => Array.isArray(deck?.entries) ? deck.entries : []);
+  if (!entries.length) return;
+  await fetchDeckCards(entries);
+  let changed = false;
+  for (const deck of detailed) {
+    if (!deck?.id || !Array.isArray(deck.entries)) continue;
+    const colors = new Set();
+    deck.entries.forEach((entry) => (deckCardForEntry(entry)?.color_identity || []).forEach((color) => { if ('WUBRG'.includes(color)) colors.add(color); }));
+    const identity = ['W', 'U', 'B', 'R', 'G'].filter((color) => colors.has(color));
+    [validatedDecks, myValidatedDecks].forEach((collection) => collection.forEach((item) => { if (item.id === deck.id) { item.color_identity = identity; changed = true; } }));
+  }
+  if (changed) renderValidatedDecks();
+}
+
 function renderValidatedDecks() {
   if (!$('validatedDecksGrid')) return;
   const decks = validatedDecksScope === 'mine' ? myValidatedDecks : validatedDecks;
@@ -2293,9 +2320,10 @@ function renderValidatedDecks() {
     const isValid = deck.valid !== false;
     const status = isValid ? 'Validado' : 'Inválido';
     const privacy = deck.visibility === 'private' ? '<span class="validated-deck-card__privacy"><span aria-hidden="true">♙</span> Privado</span>' : '';
+    const colors = deckColorSymbols(deck);
     return `<button class="validated-deck-card${isValid ? '' : ' is-invalid'}${deck.visibility === 'private' ? ' is-private' : ''}" type="button" data-saved-deck-id="${escapeHtml(deck.id)}" aria-label="Abrir deck ${escapeHtml(deck.name)}, ${status.toLowerCase()}">
       <span class="validated-deck-card__art">${image}<span class="validated-deck-card__seal${isValid ? '' : ' is-invalid'}"><span aria-hidden="true">${isValid ? '✓' : '×'}</span> ${status}</span></span>
-      <span class="validated-deck-card__body"><span class="validated-deck-card__format">${escapeHtml(validatedDeckFormatLabel(deck.format))}</span>${privacy}<h3>${escapeHtml(deck.name)}</h3><span class="validated-deck-card__pilot">${pilot}</span><span class="validated-deck-card__meta"><span>${Number(deck.card_count) || 0} cartas</span><span>${validatedDeckDate(deck.updated_at || deck.created_at)}</span></span><span class="validated-deck-card__open" aria-hidden="true">→</span></span>
+      <span class="validated-deck-card__body"><span class="validated-deck-card__format">${escapeHtml(validatedDeckFormatLabel(deck.format))}</span>${privacy}<span class="validated-deck-card__title-row"><h3>${escapeHtml(deck.name)}</h3>${colors}</span><span class="validated-deck-card__pilot">${pilot}</span><span class="validated-deck-card__meta"><span>${Number(deck.card_count) || 0} cartas</span><span>${validatedDeckDate(deck.updated_at || deck.created_at)}</span></span><span class="validated-deck-card__open" aria-hidden="true">→</span></span>
     </button>`;
   }).join('');
   $('validatedDecksGrid').setAttribute('aria-busy', 'false');
@@ -2311,6 +2339,7 @@ function renderValidatedDecks() {
     $('validatedDecksEmpty').querySelector('p').textContent = validatedDecksScope === 'mine' ? 'Seus decks públicos e rascunhos privados aparecerão aqui.' : 'Monte ou valide a primeira lista e inaugure o arquivo do playgroup.';
   }
   $('validatedDecksEmpty').querySelector('[data-open-deck-validator]').hidden = empty && decks.length > 0;
+  if (filtered.length) void hydrateValidatedDeckColors(filtered);
 }
 
 function switchValidatedDeckScope(scope) {

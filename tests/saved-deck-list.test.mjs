@@ -12,3 +12,9 @@ test('saved deck detail separates sideboard only when it exists', () => {
   assert.match(render, /section\('Main Deck', main/);
   assert.match(render, /sideboard\.length \? section\('Sideboard', sideboard/);
 });
+
+test('deck cards show their combined color identity beside the title', () => {
+  assert.match(source, /function deckColorSymbols/);
+  assert.match(source, /validated-deck-card__title-row/);
+  assert.match(source, /hydrateValidatedDeckColors\(filtered\)/);
+});

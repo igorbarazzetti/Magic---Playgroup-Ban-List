@@ -281,6 +281,7 @@ async function ensureDeckSchema(db) {
       cover_name TEXT NOT NULL DEFAULT '',
       cover_image TEXT NOT NULL DEFAULT '',
       is_valid INTEGER NOT NULL DEFAULT 1,
+      color_identity TEXT NOT NULL DEFAULT '',
       owner_user_id TEXT,
       visibility TEXT NOT NULL DEFAULT 'public',
       updated_at TEXT,
@@ -307,6 +308,7 @@ function publicDeck(row, includeEntries = false, viewer = null) {
     unique_count: Number(row.unique_count),
     cover_name: row.cover_name || "",
     cover_image: row.cover_image || "",
+    color_identity: [...new Set(String(row.color_identity || "").match(/[WUBRG]/g) || [])],
     valid: row.is_valid == null ? true : Boolean(Number(row.is_valid)),
     visibility,
     is_owner: isOwner,
@@ -430,15 +432,23 @@ function resolveDeckCover(canonicalEntries, cardsByName, requestedName = "") {
 async function listDecks(env, viewer = null) {
   await ensureDeckSchema(env.DB);
   const result = await env.DB.prepare(`SELECT id, name, pilot, format, card_count, unique_count,
-    cover_name, cover_image, is_valid, owner_user_id, visibility, updated_at, created_at
+    cover_name, cover_image, is_valid, color_identity, owner_user_id, visibility, updated_at, created_at
     FROM validated_decks WHERE visibility = 'public' ORDER BY COALESCE(updated_at, created_at) DESC LIMIT 250`).all();
   return json({ decks: (result.results || []).map((row) => publicDeck(row, false, viewer)) });
+}
+
+function deckColorIdentity(cardsByName) {
+  const colors = new Set();
+  for (const card of cardsByName.values()) {
+    for (const color of card?.color_identity || []) if ("WUBRG".includes(color)) colors.add(color);
+  }
+  return ["W", "U", "B", "R", "G"].filter((color) => colors.has(color)).join("");
 }
 
 async function listMyDecks(env, viewer) {
   await ensureDeckSchema(env.DB);
   const result = await env.DB.prepare(`SELECT id, name, pilot, format, card_count, unique_count,
-    cover_name, cover_image, is_valid, owner_user_id, visibility, updated_at, created_at
+    cover_name, cover_image, is_valid, color_identity, owner_user_id, visibility, updated_at, created_at
     FROM validated_decks WHERE owner_user_id = ? ORDER BY COALESCE(updated_at, created_at) DESC LIMIT 250`)
     .bind(viewer.id).all();
   return json({ decks: (result.results || []).map((row) => publicDeck(row, false, viewer)) });
@@ -547,6 +557,7 @@ async function createDeck(request, env, viewer) {
     const card = cardsByName.get(normalizeName(entry.name));
     return { name: card?.name || entry.name, quantity: entry.quantity, section: entry.section };
   });
+  const colorIdentity = deckColorIdentity(cardsByName);
   const cover = resolveDeckCover(canonicalEntries, cardsByName, requestedCoverName);
   if (!cover) return json({ error: "A carta de destaque precisa fazer parte do deck." }, 400);
   const coverCard = cover.card;
@@ -561,9 +572,9 @@ async function createDeck(request, env, viewer) {
 
   await ensureDeckSchema(env.DB);
   await env.DB.prepare(`INSERT INTO validated_decks
-    (id, name, pilot, format, deck_json, card_count, unique_count, cover_name, cover_image, is_valid,
+    (id, name, pilot, format, deck_json, card_count, unique_count, cover_name, cover_image, is_valid, color_identity,
       owner_user_id, visibility, updated_at, updated_by_user_id, created_at)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`)
     .bind(
       id,
       name,
@@ -575,6 +586,7 @@ async function createDeck(request, env, viewer) {
       coverName,
       coverImage,
       isValid ? 1 : 0,
+      colorIdentity,
       viewer.id,
       visibility,
       createdAt,
@@ -594,6 +606,7 @@ async function createDeck(request, env, viewer) {
       unique_count: canonicalEntries.length,
       cover_name: coverName,
       cover_image: coverImage,
+      color_identity: colorIdentity.split(''),
       valid: isValid,
       visibility,
       is_owner: true,
@@ -648,6 +661,7 @@ async function updateDeck(request, env, id, viewer) {
     const card = cardsByName.get(normalizeName(entry.name));
     return { name: card?.name || entry.name, quantity: entry.quantity, section: entry.section };
   });
+  const colorIdentity = deckColorIdentity(cardsByName);
   const cover = resolveDeckCover(canonicalEntries, cardsByName, requestedCoverName);
   if (!cover) return json({ error: "A carta de destaque precisa fazer parte do deck." }, 400);
   const coverCard = cover.card;
@@ -668,10 +682,10 @@ async function updateDeck(request, env, id, viewer) {
   const ownerUserId = existing.owner_user_id || (requestedVisibility === "private" ? viewer.id : null);
 
   const result = await env.DB.prepare(`UPDATE validated_decks SET name = ?, pilot = ?, format = ?, deck_json = ?,
-    card_count = ?, unique_count = ?, cover_name = ?, cover_image = ?, is_valid = ?, owner_user_id = ?, visibility = ?,
+    card_count = ?, unique_count = ?, cover_name = ?, cover_image = ?, is_valid = ?, color_identity = ?, owner_user_id = ?, visibility = ?,
     updated_at = ?, updated_by_user_id = ? WHERE id = ? AND COALESCE(updated_at, created_at) = ?`)
   .bind(name, pilot, format, JSON.stringify(canonicalEntries), cardCount, canonicalEntries.length,
-      coverName, coverImage, isValid ? 1 : 0, ownerUserId, requestedVisibility, updatedAt, viewer.id, id, baseUpdatedAt)
+      coverName, coverImage, isValid ? 1 : 0, colorIdentity, ownerUserId, requestedVisibility, updatedAt, viewer.id, id, baseUpdatedAt)
     .run();
   if (!Number(result.meta?.changes || 0)) return json({ error: "Este deck mudou enquanto você editava. Reabra a versão mais recente." }, 409);
 
@@ -682,7 +696,7 @@ async function updateDeck(request, env, id, viewer) {
   return json({ deck: {
     id, name, pilot, format, entries: canonicalEntries, card_count: cardCount,
     unique_count: canonicalEntries.length, cover_name: coverName,
-    cover_image: coverImage, valid: isValid, visibility: requestedVisibility,
+    cover_image: coverImage, color_identity: colorIdentity.split(''), valid: isValid, visibility: requestedVisibility,
     is_owner: ownerUserId === viewer.id, can_edit: true,
     can_change_visibility: ownerUserId === viewer.id || isAdmin,
     created_at: existing.created_at, updated_at: updatedAt,
