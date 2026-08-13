@@ -2447,13 +2447,18 @@ function renderSavedDeckStats(deck, entries) {
 }
 
 function renderSavedDeckList(entries) {
-  $('savedDeckList').innerHTML = `<div class="saved-deck-list__heading"><strong>Lista completa</strong><span>${entries.length} nomes</span></div><ul>${entries.map((entry) => {
+  const main = entries.filter((entry) => entry.section !== 'sideboard');
+  const sideboard = entries.filter((entry) => entry.section === 'sideboard');
+  const cardTotal = (items) => items.reduce((total, entry) => total + (Number(entry.quantity) || 0), 0);
+  const renderEntries = (items) => `<ul>${items.map((entry) => {
     const price = savedDeckEntryPrice(entry);
     const quantity = Number(entry.quantity) || 1;
     const subtotal = price ? price.value * quantity : null;
     const priceMarkup = price ? `<span class="saved-deck-entry__price${price.estimated ? ' is-estimated' : ''}"><small>${priceSourceDot(price)}${price.estimated ? '~ ' : ''}${formatBrlPrice(price.value)} × ${quantity}</small><strong>${priceSourceDot(price)}${price.estimated ? '~ ' : ''}${formatBrlPrice(subtotal)}</strong></span>` : '<span class="saved-deck-entry__price is-pending"><small>Preço</small><strong>pendente</strong></span>';
     return `<li><button class="saved-deck-entry" type="button" data-saved-deck-entry="${escapeHtml(entry.key)}" aria-label="Abrir detalhes de ${escapeHtml(entry.name)}"><span class="saved-deck-entry__art">${savedDeckEntryImage(entry)}</span><span class="saved-deck-entry__quantity">${quantity}×</span><strong>${escapeHtml(entry.name)}</strong>${priceMarkup}<span class="saved-deck-entry__open" aria-hidden="true">↗</span></button></li>`;
   }).join('')}</ul>`;
+  const section = (label, items, className) => `<section class="saved-deck-list__section ${className}"><div class="saved-deck-list__section-heading"><strong>${label}</strong><span>${cardTotal(items)} cartas · ${items.length} nomes</span></div>${renderEntries(items)}</section>`;
+  $('savedDeckList').innerHTML = `<div class="saved-deck-list__heading"><strong>Lista completa</strong><span>${entries.length} nomes</span></div>${section('Main Deck', main, 'is-main')}${sideboard.length ? section('Sideboard', sideboard, 'is-sideboard') : ''}`;
 }
 
 async function hydrateSavedDeckPreviews(entries, deckId) {
