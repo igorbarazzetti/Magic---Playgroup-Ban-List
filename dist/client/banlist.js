@@ -2387,6 +2387,7 @@ async function openSavedDeck(id) {
     editButton.innerHTML = currentUser ? '<span aria-hidden="true">✎</span> Editar este deck' : '<span aria-hidden="true">♙</span> Entrar para editar';
     const visibilityButton = $('savedDeckVisibility');
     visibilityButton.hidden = !deck.can_change_visibility;
+    $('deleteSavedDeck').hidden = !deck.can_delete;
     visibilityButton.innerHTML = deck.visibility === 'private' ? '<span aria-hidden="true">◇</span> Tornar público' : '<span aria-hidden="true">♙</span> Tornar privado';
     $('savedDeckEditNote').textContent = deck.visibility === 'private'
       ? 'Deck privado: somente você pode ver, editar ou publicar esta lista.'
@@ -2589,10 +2590,44 @@ function visibilityButtonUpdate(deck) {
   const button = $('savedDeckVisibility');
   if (!button) return;
   button.hidden = !deck?.can_change_visibility;
+  $('deleteSavedDeck').hidden = !deck?.can_delete;
   button.innerHTML = deck?.visibility === 'private' ? '<span aria-hidden="true">◇</span> Tornar público' : '<span aria-hidden="true">♙</span> Tornar privado';
   if ($('savedDeckEditNote')) $('savedDeckEditNote').textContent = deck?.visibility === 'private'
     ? 'Deck privado: somente você pode ver, editar ou publicar esta lista.'
     : 'Edição pública: usuários autorizados podem aprimorar esta lista. Toda alteração passa novamente pela validação do Formatinho.';
+}
+
+function openDeleteSavedDeck() {
+  if (!currentSavedDeck?.can_delete) return;
+  const modal = $('deleteSavedDeckModal');
+  modal.returnValue = '';
+  if (typeof modal.showModal === 'function') modal.showModal(); else modal.setAttribute('open', '');
+}
+
+async function deleteCurrentSavedDeck() {
+  if (!currentSavedDeck?.id || !currentSavedDeck.can_delete) return;
+  const deck = currentSavedDeck;
+  const button = $('deleteSavedDeckConfirm');
+  button.disabled = true;
+  try {
+    const response = await fetch(`/api/decks/${encodeURIComponent(deck.id)}`, {
+      method: 'DELETE',
+      headers: { Accept: 'application/json' },
+    });
+    const payload = await response.json().catch(() => ({}));
+    if (response.status === 401) { currentUser = null; renderAuthState(); openAuthModal(payload.error); throw new Error(payload.error); }
+    if (!response.ok) throw new Error(payload.error || 'Não foi possível excluir este deck.');
+    savedDeckCache.delete(deck.id);
+    validatedDecks = validatedDecks.filter((item) => item.id !== deck.id);
+    myValidatedDecks = myValidatedDecks.filter((item) => item.id !== deck.id);
+    closeSavedDeck();
+    renderValidatedDecks();
+    showToast('Deck excluído do arquivo');
+  } catch (error) {
+    if (error?.message) showToast(error.message);
+  } finally {
+    button.disabled = false;
+  }
 }
 
 function persistDeckBuilderEdit() {
@@ -3400,6 +3435,8 @@ function bind() {
   $('copySavedDeck').addEventListener('click', copySavedDeck);
   $('editSavedDeck').addEventListener('click', editCurrentSavedDeck);
   $('savedDeckVisibility').addEventListener('click', changeCurrentSavedDeckVisibility);
+  $('deleteSavedDeck').addEventListener('click', openDeleteSavedDeck);
+  $('deleteSavedDeckModal').addEventListener('close', () => { if ($('deleteSavedDeckModal').returnValue === 'confirm') void deleteCurrentSavedDeck(); });
   $('savedDeckModal').addEventListener('cancel', (event) => { event.preventDefault(); closeSavedDeck(); });
   $('savedDeckModal').addEventListener('click', (event) => { if (event.target === $('savedDeckModal')) closeSavedDeck(); });
 

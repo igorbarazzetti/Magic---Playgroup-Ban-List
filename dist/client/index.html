@@ -552,12 +552,20 @@
             <h2 id="savedDeckTitle">Deck validado</h2>
             <p class="saved-deck-modal__pilot" id="savedDeckPilot"></p>
             <div class="saved-deck-modal__stats" id="savedDeckStats"></div>
-            <div class="saved-deck-modal__actions"><button id="copySavedDeck" type="button"><span aria-hidden="true">⧉</span> Copiar lista</button><button id="editSavedDeck" type="button"><span aria-hidden="true">✎</span> Editar este deck</button><button id="savedDeckVisibility" type="button" hidden><span aria-hidden="true">♙</span> Tornar privado</button></div>
+            <div class="saved-deck-modal__actions"><button id="copySavedDeck" type="button"><span aria-hidden="true">⧉</span> Copiar lista</button><button id="editSavedDeck" type="button"><span aria-hidden="true">✎</span> Editar este deck</button><button id="savedDeckVisibility" type="button" hidden><span aria-hidden="true">♙</span> Tornar privado</button><button id="deleteSavedDeck" class="is-danger" type="button" hidden><span aria-hidden="true">×</span> Excluir este deck</button></div>
             <p class="saved-deck-modal__edit-note" id="savedDeckEditNote">Edição pública: usuários autorizados podem aprimorar esta lista. Toda alteração passa novamente pela validação do Formatinho.</p>
             <div class="saved-deck-list" id="savedDeckList"></div>
           </article>
         </div>
       </div>
+    </dialog>
+
+    <dialog id="deleteSavedDeckModal" class="deck-builder-confirm" aria-labelledby="deleteSavedDeckTitle">
+      <form method="dialog" class="deck-builder-confirm__shell">
+        <span class="deck-builder-confirm__seal" aria-hidden="true">!</span>
+        <div><p class="eyebrow">Ação irreversível</p><h2 id="deleteSavedDeckTitle">Excluir este deck?</h2><p>Ele será removido definitivamente do arquivo e dos seus rascunhos publicados.</p></div>
+        <div class="deck-builder-confirm__actions"><button value="cancel">Cancelar</button><button id="deleteSavedDeckConfirm" class="is-danger" value="confirm">Sim, excluir deck</button></div>
+      </form>
     </dialog>
 
     <dialog id="authModal" class="auth-modal" aria-labelledby="authModalTitle" aria-describedby="authModalDescription">

@@ -7,6 +7,7 @@ function database(createdAt = '2026-08-08T10:00:00.000Z', priorityRows = []) {
     createdAt,
     inserted: null,
     updated: null,
+    deleted: null,
     priorityRows,
     viewer: { id: 'user-1', email: 'igor@example.com', display_name: 'Igor', avatar_url: '', role: 'member', status: 'active' },
     existing: {
@@ -28,7 +29,7 @@ function database(createdAt = '2026-08-08T10:00:00.000Z', priorityRows = []) {
           if (sql.includes('FROM auth_sessions s JOIN authorized_users u')) {
             return state.viewer;
           }
-          if (sql.includes('SELECT * FROM validated_decks WHERE id')) return state.existing;
+          if (sql.includes('FROM validated_decks WHERE id')) return state.existing;
           if (sql.includes('SELECT created_at')) return { created_at: state.createdAt };
           return null;
         },
@@ -37,6 +38,13 @@ function database(createdAt = '2026-08-08T10:00:00.000Z', priorityRows = []) {
           return { results: [] };
         },
         async run() {
+          if (sql.includes('DELETE FROM validated_decks')) {
+            const [id, ownerId] = this.args;
+            if (state.existing?.id !== id || state.existing?.owner_user_id !== ownerId) return { meta: { changes: 0 } };
+            state.deleted = id;
+            state.existing = null;
+            return { meta: { changes: 1 } };
+          }
           if (sql.includes('INSERT INTO validated_decks')) {
             state.inserted = {
               name: this.args[1], entries: JSON.parse(this.args[4]), coverName: this.args[7],
@@ -359,6 +367,28 @@ test('a private deck rejects a different authorized user', async () => {
   db.state.viewer = { ...db.state.viewer, id: 'user-2', email: 'friend@example.com' };
   const response = await worker.fetch(new Request('https://formatinho.test/api/decks/deck-1', { headers: { cookie: 'formatinho_session=test-token' } }), { DB: db });
   assert.equal(response.status, 403);
+});
+
+test('only the deck creator can delete a deck', async () => {
+  const db = database();
+  db.state.existing = { ...db.state.existing, owner_user_id: 'user-1' };
+  const response = await worker.fetch(new Request('https://formatinho.test/api/decks/deck-1', {
+    method: 'DELETE', headers: { cookie: 'formatinho_session=test-token', origin: 'https://formatinho.test' },
+  }), { DB: db });
+  assert.equal(response.status, 200);
+  assert.equal(db.state.deleted, 'deck-1');
+});
+
+test('an administrator cannot delete a deck created by another user', async () => {
+  const db = database();
+  db.state.existing = { ...db.state.existing, owner_user_id: 'user-2' };
+  db.state.viewer = { ...db.state.viewer, role: 'admin' };
+  const response = await worker.fetch(new Request('https://formatinho.test/api/decks/deck-1', {
+    method: 'DELETE', headers: { cookie: 'formatinho_session=test-token', origin: 'https://formatinho.test' },
+  }), { DB: db });
+  assert.equal(response.status, 403);
+  assert.match((await response.json()).error, /quem criou/i);
+  assert.equal(db.state.deleted, null);
 });
 
 test('Google login verifies a signed ID token and creates a secure server session', async () => {

@@ -312,6 +312,7 @@ function publicDeck(row, includeEntries = false, viewer = null) {
     is_owner: isOwner,
     can_edit: Boolean(viewer && (visibility === "public" || isOwner || isAdmin)),
     can_change_visibility: Boolean(viewer && (isOwner || isAdmin)),
+    can_delete: isOwner,
     created_at: row.created_at,
     updated_at: row.updated_at || row.created_at,
   };
@@ -706,6 +707,20 @@ async function changeDeckVisibility(request, env, id, viewer) {
   return json({ deck: publicDeck({ ...existing, visibility, owner_user_id: ownerUserId, updated_at: updatedAt, updated_by_user_id: viewer.id }, true, viewer) });
 }
 
+async function deleteDeck(request, env, id, viewer) {
+  if (!requestHasSafeOrigin(request)) return json({ error: "Origem inválida." }, 403);
+  await ensureDeckSchema(env.DB);
+  const existing = await env.DB.prepare("SELECT id, owner_user_id FROM validated_decks WHERE id = ? LIMIT 1").bind(id).first();
+  if (!existing) return json({ error: "Deck não encontrado." }, 404);
+  if (!existing.owner_user_id || existing.owner_user_id !== viewer.id) {
+    return json({ error: "Somente quem criou este deck pode excluí-lo." }, 403);
+  }
+  const result = await env.DB.prepare("DELETE FROM validated_decks WHERE id = ? AND owner_user_id = ?")
+    .bind(id, viewer.id).run();
+  if (!Number(result.meta?.changes || 0)) return json({ error: "Não foi possível excluir este deck agora." }, 409);
+  return json({ ok: true, id });
+}
+
 const CATALOG_RESOURCES = {
   index: "https://raw.githubusercontent.com/igorbarazzetti/Magic---Playgroup-Ban-List/main/data/catalog/scryfall-index.json",
   prices: "https://raw.githubusercontent.com/igorbarazzetti/Magic---Playgroup-Ban-List/main/data/ligamagic-catalog-prices.json",
@@ -796,6 +811,9 @@ const worker = {
         if (request.method === "PUT") {
           if (!requestHasSafeOrigin(request)) return json({ error: "Origem inválida." }, 403);
           return viewer ? updateDeck(request, env, id, viewer) : json({ error: "Entre com Google para editar este deck." }, 401);
+        }
+        if (request.method === "DELETE") {
+          return viewer ? deleteDeck(request, env, id, viewer) : json({ error: "Entre com Google para excluir este deck." }, 401);
         }
         return json({ error: "Método não permitido." }, 405);
       }
