@@ -2313,6 +2313,55 @@ function deckColorSymbols(deck) {
   return `<span class="validated-deck-card__colors" aria-label="${label}" title="${label}">${identity.map((color) => manaSymbolImage(color)).join('')}</span>`;
 }
 
+function validatedDeckPricing(entries = []) {
+  return entries.reduce((summary, entry) => {
+    const price = resolvedCardPrice(deckCardForEntry(entry));
+    const quantity = Number(entry.quantity) || 1;
+    if (!price) { summary.missing += quantity; return summary; }
+    summary.value += price.value * quantity;
+    summary.estimated ||= price.estimated;
+    summary.quoted += quantity;
+    return summary;
+  }, { value: 0, quoted: 0, missing: 0, estimated: false });
+}
+
+function validatedDeckPriceMarkup(deck) {
+  const pricing = deck?._marketPricing;
+  if (!pricing) return `<span class="validated-deck-card__price is-loading">Consultando valor do deck…</span>`;
+  if (!pricing.quoted) return `<span class="validated-deck-card__price is-pending">Preço pendente</span>`;
+  const estimated = pricing.estimated || pricing.missing;
+  return `<span class="validated-deck-card__price${estimated ? ' is-estimated' : ''}">${priceSourceDot({ estimated })}${estimated ? '~ ' : ''}${formatBrlPrice(pricing.value)}${pricing.missing ? '+' : ''}</span>`;
+}
+
+async function hydrateValidatedDeckMarketPrices(decks) {
+  const pending = decks.filter((deck) => !deck._marketHydrated && !deck._marketLoading).slice(0, 18);
+  if (!pending.length) return;
+  pending.forEach((deck) => { deck._marketLoading = true; });
+  const details = await Promise.all(pending.map(async (deck) => {
+    try {
+      const response = await fetch(`/api/decks/${encodeURIComponent(deck.id)}`, { headers: { Accept: 'application/json' }, cache: 'force-cache' });
+      return response.ok ? (await response.json()).deck : null;
+    } catch { return null; }
+  }));
+  const entries = details.flatMap((deck) => Array.isArray(deck?.entries) ? deck.entries : []);
+  await Promise.allSettled([
+    getCurrentCatalogPriceIndex({ forceNetwork: true }),
+    entries.length ? fetchDeckCards(entries) : Promise.resolve(),
+  ]);
+  for (const detail of details) {
+    if (!detail?.id) continue;
+    const pricing = validatedDeckPricing(Array.isArray(detail.entries) ? detail.entries : []);
+    [validatedDecks, myValidatedDecks].forEach((collection) => collection.forEach((deck) => {
+      if (deck.id !== detail.id) return;
+      deck._marketPricing = pricing;
+      deck._marketHydrated = true;
+      deck._marketLoading = false;
+    }));
+  }
+  pending.filter((deck) => !deck._marketHydrated).forEach((deck) => { deck._marketLoading = false; deck._marketHydrated = true; });
+  renderValidatedDecks();
+}
+
 async function hydrateValidatedDeckColors(decks) {
   const pending = decks.filter((deck) => !Array.isArray(deck.color_identity) || !deck.color_identity.length).slice(0, 18);
   if (!pending.length) return;
@@ -2350,7 +2399,7 @@ function renderValidatedDecks() {
     const colors = deckColorSymbols(deck);
     return `<button class="validated-deck-card${isValid ? '' : ' is-invalid'}${deck.visibility === 'private' ? ' is-private' : ''}" type="button" data-saved-deck-id="${escapeHtml(deck.id)}" aria-label="Abrir deck ${escapeHtml(deck.name)}, ${status.toLowerCase()}">
       <span class="validated-deck-card__art">${image}<span class="validated-deck-card__seal${isValid ? '' : ' is-invalid'}"><span aria-hidden="true">${isValid ? '✓' : '×'}</span> ${status}</span></span>
-      <span class="validated-deck-card__body"><span class="validated-deck-card__format">${escapeHtml(validatedDeckFormatLabel(deck.format))}</span>${privacy}<span class="validated-deck-card__title-row"><h3>${escapeHtml(deck.name)}</h3>${colors}</span><span class="validated-deck-card__pilot">${pilot}</span><span class="validated-deck-card__meta"><span>${Number(deck.card_count) || 0} cartas</span><span>${validatedDeckDate(deck.updated_at || deck.created_at)}</span></span><span class="validated-deck-card__open" aria-hidden="true">→</span></span>
+      <span class="validated-deck-card__body"><span class="validated-deck-card__format">${escapeHtml(validatedDeckFormatLabel(deck.format))}</span>${privacy}<span class="validated-deck-card__title-row"><h3>${escapeHtml(deck.name)}</h3>${colors}</span><span class="validated-deck-card__pilot">${pilot}</span>${validatedDeckPriceMarkup(deck)}<span class="validated-deck-card__meta"><span>${Number(deck.card_count) || 0} cartas</span><span>${validatedDeckDate(deck.updated_at || deck.created_at)}</span></span><span class="validated-deck-card__open" aria-hidden="true">→</span></span>
     </button>`;
   }).join('');
   $('validatedDecksGrid').setAttribute('aria-busy', 'false');
@@ -2366,7 +2415,10 @@ function renderValidatedDecks() {
     $('validatedDecksEmpty').querySelector('p').textContent = validatedDecksScope === 'mine' ? 'Seus decks públicos e rascunhos privados aparecerão aqui.' : 'Monte ou valide a primeira lista e inaugure o arquivo do playgroup.';
   }
   $('validatedDecksEmpty').querySelector('[data-open-deck-validator]').hidden = empty && decks.length > 0;
-  if (filtered.length) void hydrateValidatedDeckColors(filtered);
+  if (filtered.length) {
+    void hydrateValidatedDeckColors(filtered);
+    void hydrateValidatedDeckMarketPrices(filtered);
+  }
 }
 
 function switchValidatedDeckScope(scope) {
@@ -3916,6 +3968,57 @@ async function loadCards() {
   }
 }
 
+function setupMobilePullToRefresh() {
+  if (!matchMedia('(pointer: coarse)').matches || document.documentElement.classList.contains('has-pull-refresh')) return;
+  document.documentElement.classList.add('has-pull-refresh');
+  const indicator = document.createElement('div');
+  indicator.className = 'pull-refresh';
+  indicator.setAttribute('role', 'status');
+  indicator.setAttribute('aria-live', 'polite');
+  indicator.innerHTML = '<span aria-hidden="true">↻</span><strong>Arraste para atualizar</strong>';
+  document.body.append(indicator);
+
+  let startY = 0;
+  let distance = 0;
+  let tracking = false;
+  let refreshing = false;
+  const threshold = 76;
+  const reset = () => {
+    tracking = false;
+    distance = 0;
+    indicator.classList.remove('is-ready', 'is-pulling');
+    indicator.style.removeProperty('--pull-distance');
+  };
+  document.addEventListener('touchstart', (event) => {
+    if (refreshing || window.scrollY > 0 || event.touches.length !== 1) return;
+    if (event.target.closest('dialog[open], input, textarea, select')) return;
+    startY = event.touches[0].clientY;
+    tracking = true;
+    indicator.classList.add('is-pulling');
+  }, { passive: true });
+  document.addEventListener('touchmove', (event) => {
+    if (!tracking || refreshing) return;
+    distance = Math.max(0, event.touches[0].clientY - startY);
+    if (!distance) return;
+    if (distance > 10) event.preventDefault();
+    indicator.style.setProperty('--pull-distance', `${Math.min(distance, threshold + 24)}px`);
+    const ready = distance >= threshold;
+    indicator.classList.toggle('is-ready', ready);
+    indicator.querySelector('strong').textContent = ready ? 'Solte para atualizar' : 'Arraste para atualizar';
+  }, { passive: false });
+  document.addEventListener('touchend', () => {
+    if (!tracking) return;
+    const shouldRefresh = distance >= threshold;
+    reset();
+    if (!shouldRefresh || refreshing) return;
+    refreshing = true;
+    indicator.classList.add('is-refreshing');
+    indicator.querySelector('strong').textContent = 'Atualizando arquivo…';
+    setTimeout(() => location.reload(), 240);
+  }, { passive: true });
+  document.addEventListener('touchcancel', reset, { passive: true });
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
   loadDeckBuilderEdit();
   loadDeckBuilderDraft();
@@ -3929,6 +4032,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   void hydratePriceCoverage();
   $('validatedDeckFormat').innerHTML = `<option value="">Todos os formatos</option>${deckFormats.map((format) => `<option value="${format.key}">${format.label}</option>`).join('')}`;
   bind();
+  setupMobilePullToRefresh();
   const pageMode = configurePageMode();
   updateDeckBuilderFab();
   const cardsPromise = state.tab === 'catalog' && !pageMode.builderPage ? Promise.resolve() : loadCards();

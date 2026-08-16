@@ -19,6 +19,15 @@ test('deck cards show their combined color identity beside the title', () => {
   assert.match(source, /hydrateValidatedDeckColors\(filtered\)/);
 });
 
+test('deck cards display a live total directly below the pilot', () => {
+  const renderStart = source.indexOf('function renderValidatedDecks');
+  const renderEnd = source.indexOf('function switchValidatedDeckScope', renderStart);
+  const render = source.slice(renderStart, renderEnd);
+  assert.match(source, /function validatedDeckPricing/);
+  assert.match(render, /validatedDeckPriceMarkup\(deck\)/);
+  assert.match(render, /hydrateValidatedDeckMarketPrices\(filtered\)/);
+});
+
 test('saved deck prices wait for the current catalog index and never use legacy card values', () => {
   const resolvedStart = source.indexOf('function resolvedCardPrice');
   const resolvedEnd = source.indexOf('function effectiveCatalogPrice', resolvedStart);
