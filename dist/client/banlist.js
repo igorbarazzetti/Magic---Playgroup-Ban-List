@@ -68,6 +68,7 @@ const catalogFallbackUrls = {
 let ligaMagicPriceBookPromise;
 let catalogIndex;
 let catalogPriceIndex;
+let catalogPriceIndexPromise;
 const catalogHydrationCache = new Map();
 const catalogCardById = new Map();
 const catalogHydrating = new Set();
@@ -110,6 +111,7 @@ let myValidatedDecksLoaded = false;
 let validatedDecksScope = 'public';
 let currentSavedDeck = null;
 let savedDeckPriceBook = null;
+let savedDeckPriceLookupDeckId = null;
 let deferredInstallPrompt = null;
 let authConfig = { enabled: false, google_client_id: '' };
 let currentUser = null;
@@ -584,11 +586,6 @@ function resolvedCardPrice(card) {
   const ligaCents = tuple?.[0] === null || tuple?.[0] === undefined || tuple?.[0] === '' ? null : Number(tuple[0]);
   if (Number.isFinite(ligaCents) && ligaCents > 0 && ['a', 's'].includes(tuple[1])) {
     return { value: ligaCents / 100, source: 'LigaMagic', estimated: false, stale: tuple[1] === 's', checkedAt: tuple[2] ? new Date(Number(tuple[2]) * 1000).toISOString() : null };
-  }
-  const ligaEntry = savedDeckPriceBook?.cards?.[card.oracle_id || card.id];
-  const ligaPrice = Number(ligaEntry?.price_brl);
-  if (['available', 'stale'].includes(ligaEntry?.status) && Number.isFinite(ligaPrice) && ligaPrice > 0) {
-    return { value: ligaPrice, source: 'LigaMagic', estimated: false, stale: ligaEntry.status === 'stale', checkedAt: ligaEntry.checked_at || null };
   }
   const rawUsd = card?.prices?.usd;
   const usd = rawUsd === null || rawUsd === undefined || rawUsd === '' ? null : Number(rawUsd);
@@ -1401,6 +1398,24 @@ async function getLigaMagicPriceBook() {
   return ligaMagicPriceBookPromise;
 }
 
+async function getCurrentCatalogPriceIndex({ forceNetwork = false } = {}) {
+  const load = () => fetchCatalogResource(
+    catalogPriceIndexUrl,
+    'catalog-prices-v2',
+    90 * 60 * 1000,
+    { preferNetwork: true },
+  ).then((payload) => {
+    catalogPriceIndex = payload;
+    invalidateResolvedCardPriceCache();
+    return payload;
+  });
+  if (forceNetwork) return load();
+  if (!catalogPriceIndexPromise) {
+    catalogPriceIndexPromise = load().finally(() => { catalogPriceIndexPromise = null; });
+  }
+  return catalogPriceIndexPromise;
+}
+
 async function getCatalogPriceDetail(oracleId) {
   const prefix = String(oracleId || 'xx').slice(0, 2).toLowerCase();
   if (!catalogDetailShards.has(prefix)) {
@@ -1887,6 +1902,18 @@ function parseDeckList(value) {
   });
 
   return [...entries.values()];
+}
+
+function invalidateResolvedCardPriceCache() {
+  const cards = new Set([
+    ...viewStates.banlist.cards,
+    ...viewStates.catalog.cards,
+    ...deckCardCache.values(),
+  ].filter(Boolean));
+  cards.forEach((card) => {
+    delete card._catalogPrice;
+    delete card._catalogPriceReady;
+  });
 }
 
 function parseDeckBuilderImport(value) {
@@ -2409,6 +2436,7 @@ async function openSavedDeck(id) {
       savedDeckCache.set(id, deck);
     }
     currentSavedDeck = deck;
+    savedDeckPriceLookupDeckId = null;
     const isValid = deck.valid !== false;
     const editButton = $('editSavedDeck');
     editButton.hidden = Boolean(currentUser && !deck.can_edit);
@@ -2453,6 +2481,7 @@ function savedDeckEntryImage(entry) {
 }
 
 function savedDeckEntryPrice(entry) {
+  if (savedDeckPriceLookupDeckId !== currentSavedDeck?.id) return null;
   const card = deckCardForEntry(entry);
   return resolvedCardPrice(card);
 }
@@ -2491,21 +2520,26 @@ function renderSavedDeckList(entries) {
 }
 
 async function hydrateSavedDeckPreviews(entries, deckId) {
-  try {
-    const [, book] = await Promise.all([fetchDeckCards(entries), getLigaMagicPriceBook().catch(() => null)]);
-    if (book) savedDeckPriceBook = book;
-    if (currentSavedDeck?.id !== deckId || !$('savedDeckModal').open) return;
-    renderSavedDeckStats(currentSavedDeck, entries);
-    renderSavedDeckList(entries);
-  } catch {
-    // The text list remains fully usable if Scryfall artwork is temporarily unavailable.
-  }
+  const [, prices, book] = await Promise.allSettled([
+    fetchDeckCards(entries),
+    getCurrentCatalogPriceIndex({ forceNetwork: true }),
+    getLigaMagicPriceBook(),
+  ]);
+  if (book.status === 'fulfilled' && book.value) savedDeckPriceBook = book.value;
+  if (currentSavedDeck?.id !== deckId || !$('savedDeckModal').open) return;
+  // The current catalog index is the sole card-price authority. The legacy
+  // book is retained only for PTAX metadata when an estimate is unavoidable.
+  if (prices.status === 'fulfilled' || catalogPriceIndex?.prices) savedDeckPriceLookupDeckId = deckId;
+  else savedDeckPriceLookupDeckId = deckId;
+  renderSavedDeckStats(currentSavedDeck, entries);
+  renderSavedDeckList(entries);
 }
 
 function closeSavedDeck() {
   const modal = $('savedDeckModal');
   if (modal.open) modal.close(); else modal.removeAttribute('open');
   currentSavedDeck = null;
+  savedDeckPriceLookupDeckId = null;
   if (!$('deckValidatorModal').open && !$('cardModal').open) document.body.classList.remove('is-locked');
 }
 
@@ -3035,7 +3069,8 @@ function combinedDeckBuilderEntries() {
 async function ensureDeckBuilderData(entries) {
   const catalogPromise = getCatalogData().then((data) => {
     catalogIndex ||= data.index;
-    catalogPriceIndex ||= data.prices;
+    catalogPriceIndex = data.prices;
+    invalidateResolvedCardPriceCache();
   }).catch(() => null);
   const marketPromise = getLigaMagicPriceBook().then((book) => { savedDeckPriceBook = book; }).catch(() => null);
   const cardsPromise = fetchDeckCards(entries);
