@@ -2529,8 +2529,7 @@ async function hydrateSavedDeckPreviews(entries, deckId) {
   if (currentSavedDeck?.id !== deckId || !$('savedDeckModal').open) return;
   // The current catalog index is the sole card-price authority. The legacy
   // book is retained only for PTAX metadata when an estimate is unavoidable.
-  if (prices.status === 'fulfilled' || catalogPriceIndex?.prices) savedDeckPriceLookupDeckId = deckId;
-  else savedDeckPriceLookupDeckId = deckId;
+  savedDeckPriceLookupDeckId = deckId;
   renderSavedDeckStats(currentSavedDeck, entries);
   renderSavedDeckList(entries);
 }
