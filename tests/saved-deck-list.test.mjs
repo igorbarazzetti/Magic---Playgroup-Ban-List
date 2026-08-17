@@ -40,3 +40,15 @@ test('saved deck prices wait for the current catalog index and never use legacy 
   assert.match(hydrate, /getCurrentCatalogPriceIndex\(\{ forceNetwork: true \}\)/);
   assert.match(hydrate, /Promise\.allSettled/);
 });
+
+test('card modal always refreshes from the current catalog price index', () => {
+  const start = source.indexOf('async function hydrateLigaMagicPrice');
+  const end = source.indexOf('function legalitiesMarkup', start);
+  const hydrate = source.slice(start, end);
+  const catalogStart = source.indexOf('async function hydrateCatalogMarketPrice');
+  const catalogEnd = source.indexOf('async function hydrateLigaMagicPrice', catalogStart);
+  const catalog = source.slice(catalogStart, catalogEnd);
+  assert.match(hydrate, /return hydrateCatalogMarketPrice\(card\)/);
+  assert.doesNotMatch(hydrate, /getLigaMagicPriceBook/);
+  assert.match(catalog, /getCurrentCatalogPriceIndex\(\{ forceNetwork: true \}\)/);
+});
