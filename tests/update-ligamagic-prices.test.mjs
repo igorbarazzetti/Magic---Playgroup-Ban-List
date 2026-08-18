@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 
 import {
+  challengeCooldownDurationMs,
   extractCheapestNormalPrinting,
   extractLigaMagicResultUrl,
   fetchPublishedDeckPriorities,
@@ -15,6 +16,7 @@ import {
   selectPriorityCard,
   scryfallPriceCents,
   selectBatch,
+  upgradeLegacyChallengeCooldown,
   usdCents,
 } from '../scripts/update-ligamagic-prices.mjs';
 import { mergeLegacyBooks, mergePriceIndexes, mergeRecordMaps } from '../scripts/merge-ligamagic-data.mjs';
@@ -95,10 +97,30 @@ test('após a cobertura atualiza primeiro os registros mais antigos', () => {
   assert.equal(prices.c[priceTuple.status], 's');
 });
 
-test('varia o intervalo de consulta somente entre 10 e 12 segundos', () => {
-  assert.equal(requestDelayMs(() => 0), 10_000);
-  assert.equal(requestDelayMs(() => 0.5), 11_000);
-  assert.equal(requestDelayMs(() => 1), 12_000);
+test('varia o intervalo de recuperação somente entre 25 e 35 segundos', () => {
+  assert.equal(requestDelayMs(() => 0), 25_000);
+  assert.equal(requestDelayMs(() => 0.5), 30_000);
+  assert.equal(requestDelayMs(() => 1), 35_000);
+});
+
+test('aumenta o cooldown do desafio sem ultrapassar 72 horas', () => {
+  assert.equal(challengeCooldownDurationMs(1), 24 * 60 * 60 * 1000);
+  assert.equal(challengeCooldownDurationMs(2), 48 * 60 * 60 * 1000);
+  assert.equal(challengeCooldownDurationMs(3), 72 * 60 * 60 * 1000);
+  assert.equal(challengeCooldownDurationMs(10), 72 * 60 * 60 * 1000);
+});
+
+test('converte o cooldown legado em uma janela silenciosa de 24 horas apenas uma vez', () => {
+  const now = Date.parse('2026-08-18T20:00:00.000Z');
+  const priceIndex = {
+    last_batch_at: '2026-08-18T17:41:48.186Z',
+    cooldown_until: '2026-08-18T23:41:48.159Z',
+  };
+  assert.equal(upgradeLegacyChallengeCooldown(priceIndex, now), true);
+  assert.equal(priceIndex.cooldown_reason, 'cloudflare_challenge');
+  assert.equal(priceIndex.challenge_block_count, 1);
+  assert.equal(priceIndex.cooldown_until, '2026-08-19T20:00:00.000Z');
+  assert.equal(upgradeLegacyChallengeCooldown(priceIndex, now + 60_000), false);
 });
 
 test('separa falhas determinísticas de bloqueios e falhas temporárias', () => {

@@ -19,10 +19,12 @@ const sourceHomepage = 'https://www.ligamagic.com.br/';
 const catalogRefreshMs = 24 * 60 * 60 * 1000;
 const maintenanceIntervalMs = Math.max(6 * 60 * 60 * 1000, Number(process.env.LIGAMAGIC_MAINTENANCE_INTERVAL_MS || 12 * 60 * 60 * 1000));
 const maintenanceLimit = Math.max(1, Number(process.env.LIGAMAGIC_MAINTENANCE_LIMIT || 100));
-const defaultDelayMs = Math.max(10_000, Number(process.env.LIGAMAGIC_REQUEST_DELAY_MS || 10_000));
-const maximumDelayMs = Math.max(defaultDelayMs, Number(process.env.LIGAMAGIC_REQUEST_DELAY_MAX_MS || 12_000));
+const defaultDelayMs = Math.max(10_000, Number(process.env.LIGAMAGIC_REQUEST_DELAY_MS || 25_000));
+const maximumDelayMs = Math.max(defaultDelayMs, Number(process.env.LIGAMAGIC_REQUEST_DELAY_MAX_MS || 35_000));
 const maximumRunMs = Math.max(60_000, Number(process.env.LIGAMAGIC_MAX_RUN_MS || 50 * 60 * 1000));
 const blockCooldownMs = Math.max(60 * 60 * 1000, Number(process.env.LIGAMAGIC_BLOCK_COOLDOWN_MS || 6 * 60 * 60 * 1000));
+const challengeCooldownBaseMs = Math.max(24 * 60 * 60 * 1000, Number(process.env.LIGAMAGIC_CHALLENGE_COOLDOWN_MS || 24 * 60 * 60 * 1000));
+const challengeCooldownMaxMs = Math.max(challengeCooldownBaseMs, Number(process.env.LIGAMAGIC_CHALLENGE_COOLDOWN_MAX_MS || 72 * 60 * 60 * 1000));
 const publishedDecksUrl = process.env.FORMATINHO_PUBLISHED_DECKS_URL || 'https://formatinho.igorb.com.br/api/decks/price-priority';
 const deterministicFailureLimit = 2;
 const bootstrapCardsPerDayEstimate = 6_000;
@@ -154,6 +156,7 @@ async function fetchWithRetry(url, { headers = jsonHeaders, expect = 'json', sto
         const error = new Error(`HTTP ${response.status}`);
         error.status = response.status;
         error.retryAfter = Number(response.headers.get('retry-after')) || null;
+        error.cloudflareChallenge = String(response.headers.get('cf-mitigated') || '').toLowerCase() === 'challenge';
         throw error;
       }
       return expect === 'text' ? response.text() : response.json();
@@ -505,6 +508,24 @@ export function requestDelayMs(random = Math.random) {
   return Math.round(defaultDelayMs + sample * (maximumDelayMs - defaultDelayMs));
 }
 
+export function challengeCooldownDurationMs(blockCount = 1) {
+  const count = Math.max(1, Math.floor(Number(blockCount) || 1));
+  const multiplier = 2 ** Math.min(10, count - 1);
+  return Math.min(challengeCooldownMaxMs, challengeCooldownBaseMs * multiplier);
+}
+
+export function upgradeLegacyChallengeCooldown(priceIndex, now = Date.now()) {
+  if (!priceIndex?.cooldown_until || priceIndex.cooldown_reason) return false;
+  const currentUntil = Date.parse(priceIndex.cooldown_until);
+  if (!Number.isFinite(currentUntil) || currentUntil <= now) return false;
+  const blockCount = Math.max(1, Number(priceIndex.challenge_block_count) || 1);
+  priceIndex.challenge_block_count = blockCount;
+  priceIndex.cooldown_reason = 'cloudflare_challenge';
+  priceIndex.last_blocked_at ||= priceIndex.last_batch_at || new Date(now).toISOString();
+  priceIndex.cooldown_until = new Date(Math.max(currentUntil, now + challengeCooldownDurationMs(blockCount))).toISOString();
+  return true;
+}
+
 export function isDeterministicFailure(statusCode, message = '') {
   return !statusCode && /lista de impressões não foi encontrada/i.test(String(message));
 }
@@ -556,8 +577,9 @@ async function collectPrice(card, previousEntry, throttle, deadline) {
     if (error?.code === 'RUN_DEADLINE') return { entry: null, stopped: true };
     const message = error instanceof Error ? error.message : 'Falha desconhecida';
     const statusCode = Number(error?.status || message.match(/HTTP\s+(\d+)/)?.[1]) || null;
-    if (previousEntry?.price_brl) return { entry: { ...previousEntry, status: 'stale', name: card.name, source_url: sourceUrl, attempted_at: new Date().toISOString(), last_error: message }, statusCode };
-    return { entry: null, statusCode, error: message };
+    const cloudflareChallenge = Boolean(error?.cloudflareChallenge);
+    if (previousEntry?.price_brl) return { entry: { ...previousEntry, status: 'stale', name: card.name, source_url: sourceUrl, attempted_at: new Date().toISOString(), last_error: message }, statusCode, cloudflareChallenge };
+    return { entry: null, statusCode, error: message, cloudflareChallenge };
   }
 }
 
@@ -594,6 +616,7 @@ async function main() {
     selection = prependPublishedDeckPriorities(regularSelection, priorityCards, options.limit);
   }
   selection.priorityCount ||= 0;
+  const legacyCooldownUpgraded = upgradeLegacyChallengeCooldown(priceIndex);
   const cooldownUntil = Date.parse(priceIndex.cooldown_until || '');
   const cooldownActive = !options.force && Number.isFinite(cooldownUntil) && Date.now() < cooldownUntil;
 
@@ -615,7 +638,10 @@ async function main() {
 
   if (cooldownActive) {
     console.log(`Coleta pausada até ${priceIndex.cooldown_until} após bloqueios consecutivos da LigaMagic.`);
-    if (JSON.stringify(catalog) !== JSON.stringify(previousCatalog)) await writeJson(catalogPath, catalog);
+    const writes = [];
+    if (JSON.stringify(catalog) !== JSON.stringify(previousCatalog)) writes.push(writeJson(catalogPath, catalog));
+    if (legacyCooldownUpgraded) writes.push(writeJson(priceIndexPath, priceIndex));
+    if (writes.length) await Promise.all(writes);
     return;
   }
   if (priceIndex.cooldown_until) priceIndex.cooldown_until = null;
@@ -650,13 +676,29 @@ async function main() {
       break;
     }
     const previousEntry = await shards.get(card.oracleId);
-    const { entry, statusCode, error, stopped } = await collectPrice(card, previousEntry, throttle, deadline);
+    const { entry, statusCode, error, stopped, cloudflareChallenge } = await collectPrice(card, previousEntry, throttle, deadline);
     if (stopped) {
       console.log('Limite de 50 minutos atingido durante a espera; encerrando o lote com segurança.');
       break;
     }
     requested += 1;
-    if (entry) {
+    if (cloudflareChallenge) {
+      const blockCount = Math.max(0, Number(priceIndex.challenge_block_count) || 0) + 1;
+      const cooldownMs = challengeCooldownDurationMs(blockCount);
+      const blockedAt = new Date().toISOString();
+      priceIndex.challenge_block_count = blockCount;
+      priceIndex.cooldown_reason = 'cloudflare_challenge';
+      priceIndex.last_blocked_at = blockedAt;
+      priceIndex.cooldown_until = new Date(Date.now() + cooldownMs).toISOString();
+      stateChanged = true;
+      console.warn(`Desafio do Cloudflare detectado na primeira resposta; nenhuma nova consulta será feita antes de ${priceIndex.cooldown_until}.`);
+      break;
+    } else if (entry) {
+      if (priceIndex.challenge_block_count || priceIndex.cooldown_reason || priceIndex.last_blocked_at) {
+        delete priceIndex.challenge_block_count;
+        delete priceIndex.cooldown_reason;
+        delete priceIndex.last_blocked_at;
+      }
       const checkedAt = entry.checked_at || entry.attempted_at || new Date().toISOString();
       const status = entry.status === 'available' ? 'a' : entry.status === 'stale' ? 's' : 'u';
       const cents = priceToCents(entry.price_brl);
@@ -696,6 +738,8 @@ async function main() {
     consecutiveBlocks = [403, 429].includes(statusCode) ? consecutiveBlocks + 1 : 0;
     if (consecutiveBlocks >= 2) {
       priceIndex.cooldown_until = new Date(Date.now() + blockCooldownMs).toISOString();
+      priceIndex.cooldown_reason = 'rate_limit';
+      priceIndex.last_blocked_at = new Date().toISOString();
       stateChanged = true;
       console.warn(`Circuito de segurança acionado após dois bloqueios consecutivos; coleta pausada até ${priceIndex.cooldown_until}.`);
       break;

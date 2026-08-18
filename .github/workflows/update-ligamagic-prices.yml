@@ -13,7 +13,7 @@ on:
       batch_size:
         description: "Quantidade de cartas no lote"
         required: false
-        default: 300
+        default: 100
         type: number
       priority_card:
         description: "Nome de uma carta para atualizar antes da fila"
@@ -60,14 +60,16 @@ jobs:
       - name: Consultar lote de preços
         shell: powershell
         env:
-          LIGAMAGIC_REQUEST_DELAY_MS: "10000"
-          LIGAMAGIC_REQUEST_DELAY_MAX_MS: "12000"
+          LIGAMAGIC_REQUEST_DELAY_MS: "25000"
+          LIGAMAGIC_REQUEST_DELAY_MAX_MS: "35000"
           LIGAMAGIC_MAX_RUN_MS: "3000000"
           LIGAMAGIC_BLOCK_COOLDOWN_MS: "21600000"
+          LIGAMAGIC_CHALLENGE_COOLDOWN_MS: "86400000"
+          LIGAMAGIC_CHALLENGE_COOLDOWN_MAX_MS: "259200000"
           LIGAMAGIC_MAINTENANCE_INTERVAL_MS: "43200000"
           LIGAMAGIC_MAINTENANCE_LIMIT: "100"
           FORMATINHO_PUBLISHED_DECKS_URL: "https://formatinho.igorb.com.br/api/decks/price-priority"
-          BATCH_SIZE: ${{ inputs.batch_size || 300 }}
+          BATCH_SIZE: ${{ inputs.batch_size || 100 }}
           PRIORITY_CARD: ${{ inputs.priority_card || '' }}
           FORCE_ARG: ${{ inputs.force && '--force' || '' }}
         run: |
