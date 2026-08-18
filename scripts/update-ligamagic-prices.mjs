@@ -618,7 +618,7 @@ async function main() {
   selection.priorityCount ||= 0;
   const legacyCooldownUpgraded = upgradeLegacyChallengeCooldown(priceIndex);
   const cooldownUntil = Date.parse(priceIndex.cooldown_until || '');
-  const cooldownActive = !options.force && Number.isFinite(cooldownUntil) && Date.now() < cooldownUntil;
+  const cooldownActive = Number.isFinite(cooldownUntil) && Date.now() < cooldownUntil;
 
   if (options.dryRun) {
     console.log(JSON.stringify({ mode: selection.mode, selected: selection.cards.length, published_deck_priority: selection.priorityCount, missing: selection.missing, target_count: targets.length, maintenance_due: maintenanceDue, cooldown_active: cooldownActive, max_run_minutes: maximumRunMs / 60_000, delay_ms: [defaultDelayMs, maximumDelayMs] }, null, 2));
