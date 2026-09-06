@@ -4,13 +4,19 @@ import assert from 'node:assert/strict';
 import {
   challengeCooldownDurationMs,
   extractCheapestNormalPrinting,
+  extractLigaMagicEditionCatalog,
+  extractLigaMagicEditionRecords,
   extractLigaMagicResultUrl,
   fetchPublishedDeckPriorities,
   isRetryableUnavailableDetail,
   isDeterministicFailure,
+  isCloudflareChallengeHtml,
   ligaMagicLookupName,
+  ligaMagicEditionUrl,
   ligaMagicUrl,
   markInactivePriceTargets,
+  mergeEditionScanCandidates,
+  pendingTargetsByName,
   prependPublishedDeckPriorities,
   priceTuple,
   publishedDeckPriorityCards,
@@ -329,4 +335,69 @@ test('aceita o formato cardsjson atual da LigaMagic e ignora outras cartas', () 
     printingCode: 'W24',
     collectorNumber: '162',
   });
+});
+
+test('descobre o catálogo de edições e monta a URL oficial de busca', () => {
+  const html = `
+    <select name="idioma"><option value="pt">Português</option></select>
+    <select name="edicao">
+      <option value="">Escolher edição</option>
+      <option value="m20">Core Set 2020</option>
+      <option value="sld112">Artist Series: Chris Rahn</option>
+    </select>
+    <a href="/?view=cards/search&amp;card=ed%3Dwar+searchprod%3D0">War of the Spark</a>`;
+
+  assert.deepEqual(extractLigaMagicEditionCatalog(html), [
+    { code: 'm20', name: 'Core Set 2020' },
+    { code: 'sld112', name: 'Artist Series: Chris Rahn' },
+    { code: 'war', name: 'War of the Spark' },
+  ]);
+  const url = new URL(ligaMagicEditionUrl('M20'));
+  assert.equal(url.searchParams.get('view'), 'cards/search');
+  assert.equal(url.searchParams.get('card'), 'ed=m20 searchprod=0');
+  assert.equal(url.searchParams.get('tipo'), '1');
+});
+
+test('reconhece desafio Cloudflare entregue com status HTTP 200', () => {
+  assert.equal(isCloudflareChallengeHtml('<title>Just a moment...</title><script src="/cdn-cgi/challenge-platform/x.js"></script>'), true);
+  assert.equal(isCloudflareChallengeHtml('<title>LigaMagic</title><script>var cardsjson = [];</script>'), false);
+});
+
+test('acumula o menor preço normal por carta sem consolidar resultados parciais', () => {
+  const firstHtml = `<script>var cardsjson = ${JSON.stringify([
+    { nEN: 'Giant Growth', sSigla: 'M20', sN: '180', p1a: '0.35' },
+    { nEN: 'Outra Carta', sSigla: 'M20', sN: '1', precoMenor: '0.10' },
+  ])};</script>`;
+  const secondHtml = `<script>var cardsjson = ${JSON.stringify([
+    { nEN: 'Giant Growth', sSigla: 'WAR', sN: '162', p1a: '0.09' },
+    { nEN: 'Giant Growth', sSigla: 'WAR', sN: '162p', p1a: null },
+  ])};</script>`;
+  const targets = [{ oracleId: 'growth', name: 'Giant Growth' }];
+  const targetByName = pendingTargetsByName(targets, {});
+  const first = mergeEditionScanCandidates({}, extractLigaMagicEditionRecords(firstHtml), targetByName, { code: 'm20', name: 'Core Set 2020' }, '2026-09-06T20:00:00.000Z');
+  const second = mergeEditionScanCandidates(first, extractLigaMagicEditionRecords(secondHtml), targetByName, { code: 'war', name: 'War of the Spark' }, '2026-09-06T21:00:00.000Z');
+
+  assert.deepEqual(first.growth, {
+    cents: 35,
+    printing_code: 'M20',
+    printing_name: 'Core Set 2020',
+    collector_number: '180',
+    source_url: ligaMagicEditionUrl('m20'),
+    checked_at: '2026-09-06T20:00:00.000Z',
+  });
+  assert.equal(second.growth.cents, 9);
+  assert.equal(second.growth.printing_code, 'WAR');
+  assert.equal(second.growth.checked_at, '2026-09-06T21:00:00.000Z');
+});
+
+test('a varredura por edição considera somente alvos ainda pendentes', () => {
+  const map = pendingTargetsByName([
+    { oracleId: 'done', name: 'Alpha' },
+    { oracleId: 'retry', name: 'Fire // Ice' },
+    { oracleId: 'new', name: 'Beta' },
+  ], { done: [100, 'a', 1], retry: [null, 'r', 2] });
+
+  assert.equal(map.has('alpha'), false);
+  assert.equal(map.get('fire').oracleId, 'retry');
+  assert.equal(map.get('beta').oracleId, 'new');
 });

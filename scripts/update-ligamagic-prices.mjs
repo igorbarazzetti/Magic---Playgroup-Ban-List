@@ -25,10 +25,14 @@ const maximumRunMs = Math.max(60_000, Number(process.env.LIGAMAGIC_MAX_RUN_MS ||
 const blockCooldownMs = Math.max(60 * 60 * 1000, Number(process.env.LIGAMAGIC_BLOCK_COOLDOWN_MS || 6 * 60 * 60 * 1000));
 const challengeCooldownBaseMs = Math.max(24 * 60 * 60 * 1000, Number(process.env.LIGAMAGIC_CHALLENGE_COOLDOWN_MS || 24 * 60 * 60 * 1000));
 const challengeCooldownMaxMs = Math.max(challengeCooldownBaseMs, Number(process.env.LIGAMAGIC_CHALLENGE_COOLDOWN_MAX_MS || 72 * 60 * 60 * 1000));
+const bulkEditionScanEnabled = !/^(?:0|false|no)$/i.test(String(process.env.LIGAMAGIC_BULK_EDITION_SCAN || ''));
 const publishedDecksUrl = process.env.FORMATINHO_PUBLISHED_DECKS_URL || 'https://formatinho.igorb.com.br/api/decks/price-priority';
 const deterministicFailureLimit = 2;
 const parserVersion = 2;
 const bootstrapCardsPerDayEstimate = 6_000;
+const editionScanVersion = 1;
+const editionScanDiscoveryCode = 'm20';
+const minimumEditionCatalogSize = 200;
 const requestHeaders = {
   Accept: 'text/html,application/xhtml+xml',
   'Accept-Language': 'pt-BR,pt;q=0.9,en;q=0.8',
@@ -111,6 +115,14 @@ function priceToCents(value) {
   return Number.isFinite(amount) && amount > 0 ? Math.round(amount * 100) : null;
 }
 
+export function ligaMagicEditionUrl(editionCode) {
+  const url = new URL(sourceHomepage);
+  url.searchParams.set('view', 'cards/search');
+  url.searchParams.set('card', `ed=${String(editionCode || '').trim().toLowerCase()} searchprod=0`);
+  url.searchParams.set('tipo', '1');
+  return url.toString();
+}
+
 function extractInlineJsonArray(html, variableName) {
   const source = String(html);
   const assignment = new RegExp(`var\\s+${variableName}\\s*=\\s*\\[`, 'i').exec(source);
@@ -155,6 +167,94 @@ export function extractCheapestNormalPrinting(html, expectedCardName = '') {
     .filter((edition) => edition.price !== null)
     .sort((left, right) => left.price - right.price);
   return candidates[0] || null;
+}
+
+export function extractLigaMagicEditionCatalog(html) {
+  const editions = new Map();
+  const parseEdition = (rawCode, rawName = '') => {
+    const code = decodeHtml(rawCode).trim().toLowerCase();
+    if (!/^(?=.*[a-z])[a-z0-9]{1,24}$/.test(code)) return null;
+    const name = decodeHtml(rawName).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+    return { code, name };
+  };
+  const addEdition = (rawCode, rawName = '') => {
+    const edition = parseEdition(rawCode, rawName);
+    if (!edition) return;
+    const { code, name } = edition;
+    if (!editions.has(code) || (!editions.get(code) && name)) editions.set(code, name);
+  };
+
+  const optionLists = [];
+  for (const select of String(html).matchAll(/<select\b[^>]*>([\s\S]*?)<\/select>/gi)) {
+    const options = new Map();
+    for (const match of select[1].matchAll(/<option\b[^>]*\bvalue=["']([^"']*)["'][^>]*>([\s\S]*?)<\/option>/gi)) {
+      const edition = parseEdition(match[1], match[2]);
+      if (edition) options.set(edition.code, edition.name);
+    }
+    optionLists.push(options);
+  }
+  const largestOptionList = optionLists.sort((left, right) => right.size - left.size)[0];
+  for (const [code, name] of largestOptionList || []) {
+    addEdition(code, name);
+  }
+  for (const match of String(html).matchAll(/<a\b[^>]*\bhref=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)) {
+    try {
+      const url = new URL(decodeHtml(match[1]), sourceHomepage);
+      const query = url.searchParams.get('card') || '';
+      const code = query.match(/(?:^|\s)ed=([a-z0-9]{1,24})(?:\s|$)/i)?.[1];
+      if (code) addEdition(code, match[2]);
+    } catch {
+      // Links malformados não fazem parte do catálogo de edições.
+    }
+  }
+
+  return [...editions].map(([code, name]) => ({ code, name })).sort((left, right) => left.code.localeCompare(right.code));
+}
+
+export function isCloudflareChallengeHtml(html) {
+  return /(?:cf-chl-|challenge-platform|just a moment|enable javascript and cookies to continue)/i.test(String(html));
+}
+
+function assertNoCloudflareChallenge(html) {
+  if (!isCloudflareChallengeHtml(html)) return;
+  const error = new Error('Desafio do Cloudflare');
+  error.status = 403;
+  error.cloudflareChallenge = true;
+  throw error;
+}
+
+export function extractLigaMagicEditionRecords(html) {
+  const cards = extractInlineJsonArray(html, 'cardsjson');
+  if (!cards) throw new Error('A lista de cartas da edição não foi encontrada na página.');
+  return cards.map((card) => ({
+    name: decodeHtml(card?.nEN || ''),
+    price: parsePrice(card?.p1a) ?? parsePrice(card?.precoMenor),
+    printingCode: String(card?.sSigla || '').toLowerCase(),
+    printingName: decodeHtml(card?.ed_sNome || card?.sNomeEdicao || ''),
+    collectorNumber: String(card?.sN || ''),
+  })).filter((card) => card.name && card.price !== null);
+}
+
+export function mergeEditionScanCandidates(candidates = {}, records = [], targetByName = new Map(), edition = {}, checkedAt = new Date().toISOString()) {
+  const merged = { ...candidates };
+  for (const record of records) {
+    const exactName = comparableCardName(record.name);
+    const frontName = normalizeName(ligaMagicLookupName(record.name));
+    const target = targetByName.get(exactName) || targetByName.get(frontName);
+    if (!target) continue;
+    const cents = priceToCents(record.price);
+    if (cents === null || (merged[target.oracleId]?.cents ?? Infinity) <= cents) continue;
+    const code = String(record.printingCode || edition.code || '').toLowerCase();
+    merged[target.oracleId] = {
+      cents,
+      printing_code: code.toUpperCase(),
+      printing_name: record.printingName || edition.name || code.toUpperCase(),
+      collector_number: record.collectorNumber || '',
+      source_url: ligaMagicEditionUrl(code || edition.code),
+      checked_at: checkedAt,
+    };
+  }
+  return merged;
 }
 
 async function readJson(path, fallback = null) {
@@ -479,6 +579,24 @@ export function selectBatch(targets, prices, limit) {
   return { mode: 'maintenance', cards: oldest.slice(0, limit), missing: 0 };
 }
 
+export function pendingTargetsByName(targets, prices) {
+  const map = new Map();
+  const pendingStatuses = new Set(['r', 'x']);
+  const addAlias = (alias, target) => {
+    if (!alias) return;
+    const existing = map.get(alias);
+    if (!map.has(alias)) map.set(alias, target);
+    else if (existing?.oracleId !== target.oracleId) map.set(alias, null);
+  };
+  for (const target of targets) {
+    const tuple = prices[target.oracleId];
+    if (tuple && !pendingStatuses.has(tuple[priceTuple.status])) continue;
+    addAlias(comparableCardName(target.name), target);
+    addAlias(normalizeName(ligaMagicLookupName(target.name)), target);
+  }
+  return map;
+}
+
 export function markInactivePriceTargets(priceIndex, targets, now = Date.now()) {
   const targetIds = new Set(targets.map((card) => card.oracleId));
   const checkedAt = Math.floor(now / 1000);
@@ -619,6 +737,7 @@ async function collectPrice(card, previousEntry, throttle, deadline) {
   try {
     if (!await throttle()) return { entry: null, stopped: true };
     let html = await fetchWithRetry(sourceUrl, { headers: requestHeaders, expect: 'text', stopOnBlock: true, deadline });
+    assertNoCloudflareChallenge(html);
     let cheapest;
     try {
       cheapest = extractCheapestNormalPrinting(html, lookupName);
@@ -628,6 +747,7 @@ async function collectPrice(card, previousEntry, throttle, deadline) {
       sourceUrl = resolvedUrl;
       if (!await throttle()) return { entry: null, stopped: true };
       html = await fetchWithRetry(sourceUrl, { headers: requestHeaders, expect: 'text', stopOnBlock: true, deadline });
+      assertNoCloudflareChallenge(html);
       cheapest = extractCheapestNormalPrinting(html, lookupName);
     }
     const checkedAt = new Date().toISOString();
@@ -648,6 +768,36 @@ async function collectPrice(card, previousEntry, throttle, deadline) {
     if (previousEntry?.price_brl) return { entry: { ...previousEntry, status: 'stale', name: card.name, source_url: sourceUrl, attempted_at: new Date().toISOString(), last_error: message }, statusCode, cloudflareChallenge };
     return { entry: null, statusCode, error: message, cloudflareChallenge };
   }
+}
+
+async function finalizeEditionScan(priceIndex, targets, scan, shards, legacyBook, banlistIds) {
+  const pendingStatuses = new Set(['r', 'x']);
+  let processed = 0;
+  for (const target of targets) {
+    const tuple = priceIndex.prices[target.oracleId];
+    if (tuple && !pendingStatuses.has(tuple[priceTuple.status])) continue;
+    const candidate = scan.candidates?.[target.oracleId];
+    if (!candidate?.cents) continue;
+    const checkedAt = candidate.checked_at || scan.updated_at || new Date().toISOString();
+    const entry = {
+      status: 'available',
+      name: target.name,
+      price_brl: candidate.cents / 100,
+      finish: 'normal',
+      condition: 'NM',
+      printing_name: candidate.printing_name,
+      printing_code: candidate.printing_code,
+      collector_number: candidate.collector_number,
+      source_url: candidate.source_url,
+      checked_at: checkedAt,
+    };
+    priceIndex.prices[target.oracleId] = [candidate.cents, 'a', timestampSeconds(checkedAt)];
+    await shards.set(target.oracleId, entry);
+    if (banlistIds.has(target.oracleId)) legacyBook.cards[target.oracleId] = entry;
+    delete priceIndex.failures[target.oracleId];
+    processed += 1;
+  }
+  return processed;
 }
 
 async function main() {
@@ -689,7 +839,23 @@ async function main() {
   const cooldownActive = Number.isFinite(cooldownUntil) && Date.now() < cooldownUntil;
 
   if (options.dryRun) {
-    console.log(JSON.stringify({ mode: selection.mode, selected: selection.cards.length, published_deck_priority: selection.priorityCount, missing: selection.missing, target_count: targets.length, maintenance_due: maintenanceDue, cooldown_active: cooldownActive, max_run_minutes: maximumRunMs / 60_000, delay_ms: [defaultDelayMs, maximumDelayMs] }, null, 2));
+    console.log(JSON.stringify({
+      mode: selection.mode,
+      selected: selection.cards.length,
+      published_deck_priority: selection.priorityCount,
+      missing: selection.missing,
+      target_count: targets.length,
+      maintenance_due: maintenanceDue,
+      cooldown_active: cooldownActive,
+      edition_scan: {
+        enabled: bulkEditionScanEnabled,
+        status: priceIndex.edition_scan?.status || null,
+        completed_editions: priceIndex.edition_scan?.completed_codes?.length || 0,
+        total_editions: priceIndex.edition_scan?.editions?.length || priceIndex.edition_scan?.edition_count || 0,
+      },
+      max_run_minutes: maximumRunMs / 60_000,
+      delay_ms: [defaultDelayMs, maximumDelayMs],
+    }, null, 2));
     return;
   }
 
@@ -749,10 +915,150 @@ async function main() {
   let processed = 0;
   let requested = 0;
   let stateChanged = false;
-  if (selection.priorityCount) console.log(`${selection.priorityCount} cartas de decks publicados foram antecipadas neste lote.`);
-  console.log(`Modo ${selection.mode}: consultando até ${selection.cards.length} cartas por no máximo ${Math.round(maximumRunMs / 60_000)} minutos, com intervalo de ${defaultDelayMs}–${maximumDelayMs} ms.`);
+  let collectIndividualCards = true;
 
-  for (const card of selection.cards) {
+  const existingEditionScan = priceIndex.edition_scan;
+  const shouldUseEditionScan = bulkEditionScanEnabled
+    && selection.mode === 'bootstrap'
+    && !options.cardName
+    && (!existingEditionScan || existingEditionScan.status === 'running');
+
+  if (shouldUseEditionScan) {
+    collectIndividualCards = false;
+    let scan = existingEditionScan?.status === 'running' && existingEditionScan.version === editionScanVersion
+      ? existingEditionScan
+      : null;
+    const targetByName = pendingTargetsByName(targets, priceIndex.prices);
+
+    if (!scan && await throttle()) {
+      const discoveryUrl = ligaMagicEditionUrl(editionScanDiscoveryCode);
+      requested += 1;
+      try {
+        const html = await fetchWithRetry(discoveryUrl, { headers: requestHeaders, expect: 'text', stopOnBlock: true, deadline });
+        assertNoCloudflareChallenge(html);
+        let editions = extractLigaMagicEditionCatalog(html);
+        if (editions.length < minimumEditionCatalogSize) {
+          priceIndex.edition_scan = {
+            version: editionScanVersion,
+            status: 'unavailable',
+            checked_at: new Date().toISOString(),
+            reason: `A página oficial expôs somente ${editions.length} códigos de edição; a varredura completa exige ao menos ${minimumEditionCatalogSize}.`,
+          };
+          stateChanged = true;
+          collectIndividualCards = true;
+          console.warn(`${priceIndex.edition_scan.reason} Mantendo a coleta individual.`);
+        } else {
+          const discoveredAt = new Date().toISOString();
+          const seedEdition = editions.find((edition) => edition.code === editionScanDiscoveryCode)
+            || { code: editionScanDiscoveryCode, name: editionScanDiscoveryCode.toUpperCase() };
+          if (!editions.some((edition) => edition.code === seedEdition.code)) {
+            editions = [...editions, seedEdition].sort((left, right) => left.code.localeCompare(right.code));
+          }
+          const records = extractLigaMagicEditionRecords(html);
+          scan = {
+            version: editionScanVersion,
+            status: 'running',
+            started_at: discoveredAt,
+            updated_at: discoveredAt,
+            editions,
+            completed_codes: [editionScanDiscoveryCode],
+            candidates: mergeEditionScanCandidates({}, records, targetByName, seedEdition, discoveredAt),
+          };
+          priceIndex.edition_scan = scan;
+          stateChanged = true;
+          console.log(`Catálogo oficial descoberto com ${editions.length} edições; a varredura transacional foi iniciada.`);
+        }
+      } catch (error) {
+        const message = error instanceof Error ? error.message : String(error);
+        const statusCode = Number(error?.status || message.match(/HTTP\s+(\d+)/)?.[1]) || null;
+        if (error?.cloudflareChallenge) {
+          const blockCount = Math.max(0, Number(priceIndex.challenge_block_count) || 0) + 1;
+          const blockedAt = new Date().toISOString();
+          priceIndex.challenge_block_count = blockCount;
+          priceIndex.cooldown_reason = 'cloudflare_challenge';
+          priceIndex.last_blocked_at = blockedAt;
+          priceIndex.cooldown_until = new Date(Date.now() + challengeCooldownDurationMs(blockCount)).toISOString();
+          stateChanged = true;
+          console.warn(`Desafio do Cloudflare detectado na descoberta de edições; nenhuma nova consulta será feita antes de ${priceIndex.cooldown_until}.`);
+        } else if ([403, 429].includes(statusCode)) {
+          priceIndex.cooldown_until = new Date(Date.now() + blockCooldownMs).toISOString();
+          priceIndex.cooldown_reason = 'rate_limit';
+          priceIndex.last_blocked_at = new Date().toISOString();
+          stateChanged = true;
+          console.warn(`A descoberta de edições recebeu HTTP ${statusCode}; coleta pausada até ${priceIndex.cooldown_until}.`);
+        } else {
+          console.warn(`Não foi possível descobrir o catálogo oficial de edições (${message}); uma execução futura tentará novamente.`);
+        }
+      }
+    }
+
+    if (scan?.status === 'running' && !priceIndex.cooldown_until) {
+      const completedCodes = new Set(scan.completed_codes || []);
+      for (const edition of scan.editions || []) {
+        if (completedCodes.has(edition.code)) continue;
+        if (requested >= options.limit || Date.now() >= deadline || !await throttle()) break;
+        requested += 1;
+        try {
+          const html = await fetchWithRetry(ligaMagicEditionUrl(edition.code), { headers: requestHeaders, expect: 'text', stopOnBlock: true, deadline });
+          assertNoCloudflareChallenge(html);
+          const checkedAt = new Date().toISOString();
+          const records = extractLigaMagicEditionRecords(html);
+          scan.candidates = mergeEditionScanCandidates(scan.candidates, records, targetByName, edition, checkedAt);
+          completedCodes.add(edition.code);
+          scan.completed_codes = [...completedCodes];
+          scan.updated_at = checkedAt;
+          priceIndex.edition_scan = scan;
+          stateChanged = true;
+          console.log(`[${completedCodes.size}/${scan.editions.length}] Edição ${edition.code.toUpperCase()}: ${records.length} preços normais lidos; ${Object.keys(scan.candidates).length} cartas pendentes encontradas.`);
+        } catch (error) {
+          if (error?.code === 'RUN_DEADLINE') break;
+          const message = error instanceof Error ? error.message : String(error);
+          const statusCode = Number(error?.status || message.match(/HTTP\s+(\d+)/)?.[1]) || null;
+          if (error?.cloudflareChallenge) {
+            const blockCount = Math.max(0, Number(priceIndex.challenge_block_count) || 0) + 1;
+            const blockedAt = new Date().toISOString();
+            priceIndex.challenge_block_count = blockCount;
+            priceIndex.cooldown_reason = 'cloudflare_challenge';
+            priceIndex.last_blocked_at = blockedAt;
+            priceIndex.cooldown_until = new Date(Date.now() + challengeCooldownDurationMs(blockCount)).toISOString();
+            stateChanged = true;
+            console.warn(`Desafio do Cloudflare detectado durante a varredura; nenhuma nova consulta será feita antes de ${priceIndex.cooldown_until}.`);
+          } else if ([403, 429].includes(statusCode)) {
+            priceIndex.cooldown_until = new Date(Date.now() + blockCooldownMs).toISOString();
+            priceIndex.cooldown_reason = 'rate_limit';
+            priceIndex.last_blocked_at = new Date().toISOString();
+            stateChanged = true;
+            console.warn(`A edição ${edition.code.toUpperCase()} recebeu HTTP ${statusCode}; coleta pausada até ${priceIndex.cooldown_until}.`);
+          } else {
+            console.warn(`A edição ${edition.code.toUpperCase()} não pôde ser concluída (${message}); ela permanecerá pendente para a próxima execução.`);
+          }
+          break;
+        }
+      }
+
+      if ((scan.editions || []).every((edition) => completedCodes.has(edition.code))) {
+        const completedAt = new Date().toISOString();
+        const matched = await finalizeEditionScan(priceIndex, targets, scan, shards, legacyBook, banlistIds);
+        processed += matched;
+        priceIndex.edition_scan = {
+          version: editionScanVersion,
+          status: 'complete',
+          started_at: scan.started_at,
+          completed_at: completedAt,
+          edition_count: scan.editions.length,
+          matched_count: matched,
+        };
+        stateChanged = true;
+        console.log(`Varredura oficial concluída: ${scan.editions.length} edições e ${matched} cartas pendentes consolidadas pelo menor preço normal.`);
+      }
+    }
+  }
+
+  if (selection.priorityCount) console.log(`${selection.priorityCount} cartas de decks publicados foram antecipadas neste lote.`);
+  const individualCards = collectIndividualCards ? selection.cards.slice(0, Math.max(0, options.limit - requested)) : [];
+  if (individualCards.length) console.log(`Modo ${selection.mode}: consultando até ${individualCards.length} cartas por no máximo ${Math.round(maximumRunMs / 60_000)} minutos, com intervalo de ${defaultDelayMs}–${maximumDelayMs} ms.`);
+
+  for (const card of individualCards) {
     if (Date.now() >= deadline) {
       console.log('Limite de 50 minutos atingido; encerrando o lote antes de iniciar outra consulta.');
       break;
@@ -791,7 +1097,7 @@ async function main() {
       processed += 1;
       stateChanged = true;
       const amount = cents !== null ? `R$ ${(cents / 100).toFixed(2)}` : entry.status;
-      console.log(`[${requested}/${selection.cards.length}] ${card.name}: ${amount}`);
+      console.log(`[${requested}/${options.limit}] ${card.name}: ${amount}`);
     } else if (isDeterministicFailure(statusCode, error)) {
       const failure = priceIndex.failures[card.oracleId] || { count: 0 };
       const count = Number(failure.count || 0) + 1;
@@ -809,12 +1115,12 @@ async function main() {
         if (banlistIds.has(card.oracleId)) legacyBook.cards[card.oracleId] = unavailableEntry;
         delete priceIndex.failures[card.oracleId];
         processed += 1;
-        console.warn(`[${requested}/${selection.cards.length}] ${card.name}: marcada como indisponível após ${count} tentativas determinísticas.`);
+        console.warn(`[${requested}/${options.limit}] ${card.name}: marcada como indisponível após ${count} tentativas determinísticas.`);
       } else {
-        console.warn(`[${requested}/${selection.cards.length}] ${card.name}: falha determinística ${count}/${deterministicFailureLimit}; será tentada mais uma vez.`);
+        console.warn(`[${requested}/${options.limit}] ${card.name}: falha determinística ${count}/${deterministicFailureLimit}; será tentada mais uma vez.`);
       }
     } else {
-      console.warn(`[${requested}/${selection.cards.length}] ${card.name}: consulta não registrada (${error || 'falha temporária'}).`);
+      console.warn(`[${requested}/${options.limit}] ${card.name}: consulta não registrada (${error || 'falha temporária'}).`);
     }
 
     consecutiveBlocks = [403, 429].includes(statusCode) ? consecutiveBlocks + 1 : 0;
