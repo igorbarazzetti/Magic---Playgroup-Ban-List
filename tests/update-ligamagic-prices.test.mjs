@@ -228,3 +228,18 @@ test('mantém o detalhe mais recente de cada carta durante a mesclagem', () => {
     outra: older,
   });
 });
+
+test('aceita o formato cardsjson atual da LigaMagic e ignora outras cartas', () => {
+  const html = `<script>var cardsjson = ${JSON.stringify([
+    { nEN: 'Outra Carta', sSigla: 'OTR', sN: '1', p1a: '0.10' },
+    { nEN: 'Giant Growth', sSigla: 'W24', sN: '162', p1a: '0.25' },
+    { nEN: 'Giant Growth', sSigla: '30A', sN: '193', p1a: '7.99' },
+  ])};</script>`;
+
+  assert.deepEqual(extractCheapestNormalPrinting(html, 'Giant Growth'), {
+    price: 0.25,
+    printingName: 'Giant Growth',
+    printingCode: 'W24',
+    collectorNumber: '162',
+  });
+});

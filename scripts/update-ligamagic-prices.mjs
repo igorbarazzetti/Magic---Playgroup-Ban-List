@@ -108,16 +108,46 @@ function priceToCents(value) {
   return Number.isFinite(amount) && amount > 0 ? Math.round(amount * 100) : null;
 }
 
-export function extractCheapestNormalPrinting(html) {
-  const match = String(html).match(/var\s+cards_editions\s*=\s*(\[[\s\S]*?\]);/i);
-  if (!match) throw new Error('A lista de impressões não foi encontrada na página.');
-  const editions = JSON.parse(match[1]);
-  const candidates = editions
+function extractInlineJsonArray(html, variableName) {
+  const source = String(html);
+  const assignment = new RegExp(`var\\s+${variableName}\\s*=\\s*\\[`, 'i').exec(source);
+  if (!assignment) return null;
+
+  const arrayStart = source.indexOf('[', assignment.index);
+  let depth = 0;
+  let quote = '';
+  for (let index = arrayStart; index < source.length; index += 1) {
+    const character = source[index];
+    if (quote) {
+      if (character === '\\') index += 1;
+      else if (character === quote) quote = '';
+      continue;
+    }
+    if (character === '"' || character === "'") quote = character;
+    else if (character === '[') depth += 1;
+    else if (character === ']' && --depth === 0) return JSON.parse(source.slice(arrayStart, index + 1));
+  }
+  throw new Error(`O array ${variableName} está incompleto na página.`);
+}
+
+function comparableCardName(value) {
+  return normalizeName(decodeHtml(value).replace(/\s*\([^()]*\)\s*$/, ''));
+}
+
+export function extractCheapestNormalPrinting(html, expectedCardName = '') {
+  const editions = extractInlineJsonArray(html, 'cards_editions');
+  const cards = editions || extractInlineJsonArray(html, 'cardsjson');
+  if (!cards) throw new Error('A lista de impressões não foi encontrada na página.');
+
+  const expected = comparableCardName(expectedCardName);
+  const candidates = cards
+    .filter((printing) => editions || !expected || [printing?.nEN, printing?.nPT]
+      .some((name) => comparableCardName(name) === expected))
     .map((edition) => ({
-      price: parsePrice(edition?.price?.['0']?.p),
-      printingName: decodeHtml(edition?.name || ''),
-      printingCode: String(edition?.code || '').toUpperCase(),
-      collectorNumber: String(edition?.num || ''),
+      price: parsePrice(editions ? edition?.price?.['0']?.p : edition?.p1a ?? edition?.precoMenor),
+      printingName: decodeHtml(editions ? edition?.name || '' : edition?.ed_sNome || edition?.sNomeEdicao || edition?.nEN || ''),
+      printingCode: String(editions ? edition?.code || '' : edition?.sSigla || '').toUpperCase(),
+      collectorNumber: String(editions ? edition?.num || '' : edition?.sN || ''),
     }))
     .filter((edition) => edition.price !== null)
     .sort((left, right) => left.price - right.price);
@@ -554,14 +584,14 @@ async function collectPrice(card, previousEntry, throttle, deadline) {
     let html = await fetchWithRetry(sourceUrl, { headers: requestHeaders, expect: 'text', stopOnBlock: true, deadline });
     let cheapest;
     try {
-      cheapest = extractCheapestNormalPrinting(html);
+      cheapest = extractCheapestNormalPrinting(html, lookupName);
     } catch (error) {
       const resolvedUrl = extractLigaMagicResultUrl(html, lookupName);
       if (!resolvedUrl || resolvedUrl === sourceUrl) throw error;
       sourceUrl = resolvedUrl;
       if (!await throttle()) return { entry: null, stopped: true };
       html = await fetchWithRetry(sourceUrl, { headers: requestHeaders, expect: 'text', stopOnBlock: true, deadline });
-      cheapest = extractCheapestNormalPrinting(html);
+      cheapest = extractCheapestNormalPrinting(html, lookupName);
     }
     const checkedAt = new Date().toISOString();
     if (!cheapest) return { entry: { status: 'unavailable', name: card.name, price_brl: null, finish: 'normal', condition: 'NM', source_url: sourceUrl, checked_at: checkedAt }, statusCode: null };
