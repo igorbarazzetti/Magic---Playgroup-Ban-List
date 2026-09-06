@@ -472,10 +472,24 @@ function targetCards(catalog) {
 }
 
 export function selectBatch(targets, prices, limit) {
-  const missing = targets.filter((card) => !prices[card.oracleId] || prices[card.oracleId]?.[priceTuple.status] === 'r');
+  const pendingStatuses = new Set(['r', 'x']);
+  const missing = targets.filter((card) => !prices[card.oracleId] || pendingStatuses.has(prices[card.oracleId]?.[priceTuple.status]));
   if (missing.length) return { mode: 'bootstrap', cards: missing.slice(0, limit), missing: missing.length };
   const oldest = [...targets].sort((left, right) => Number(prices[left.oracleId]?.[priceTuple.checkedAt] || 0) - Number(prices[right.oracleId]?.[priceTuple.checkedAt] || 0));
   return { mode: 'maintenance', cards: oldest.slice(0, limit), missing: 0 };
+}
+
+export function markInactivePriceTargets(priceIndex, targets, now = Date.now()) {
+  const targetIds = new Set(targets.map((card) => card.oracleId));
+  const checkedAt = Math.floor(now / 1000);
+  let marked = 0;
+  for (const [oracleId, tuple] of Object.entries(priceIndex.prices || {})) {
+    if (targetIds.has(oracleId) || tuple?.[priceTuple.status] === 'x') continue;
+    priceIndex.prices[oracleId] = [tuple?.[priceTuple.cents] ?? null, 'x', checkedAt];
+    marked += 1;
+  }
+  if (marked) console.log(`${marked} preços fora do catálogo atual foram marcados como inativos.`);
+  return marked;
 }
 
 export function selectPriorityCard(targets, cardName) {
@@ -582,8 +596,9 @@ export function isDeterministicFailure(statusCode, message = '') {
 }
 
 function coverageFor(targets, prices, mode) {
+  const pendingStatuses = new Set(['r', 'x']);
   const values = targets.map((card) => prices[card.oracleId])
-    .filter((entry) => entry && entry[priceTuple.status] !== 'r');
+    .filter((entry) => entry && !pendingStatuses.has(entry[priceTuple.status]));
   const attempted = values.length;
   const remaining = Math.max(0, targets.length - attempted);
   const days = remaining / bootstrapCardsPerDayEstimate;
@@ -649,6 +664,7 @@ async function main() {
   await migrateLegacy(priceIndex, legacyBook, shards);
   const retryablePlaceholdersRemoved = await requeueRetryablePlaceholders(priceIndex, legacyBook, shards);
   const targets = targetCards(catalog);
+  const inactiveTargetsMarked = markInactivePriceTargets(priceIndex, targets);
   let selection = selectBatch(targets, priceIndex.prices, options.limit);
   if (selection.mode === 'maintenance') {
     selection = selectBatch(targets, priceIndex.prices, Math.min(options.limit, maintenanceLimit));
@@ -692,7 +708,7 @@ async function main() {
     console.log(`Coleta pausada até ${priceIndex.cooldown_until} após bloqueios consecutivos da LigaMagic.`);
     const writes = [];
     if (JSON.stringify(catalog) !== JSON.stringify(previousCatalog)) writes.push(writeJson(catalogPath, catalog));
-    if (retryablePlaceholdersRemoved) {
+    if (retryablePlaceholdersRemoved || inactiveTargetsMarked) {
       const requeuedAt = new Date().toISOString();
       priceIndex.mode = selection.mode;
       priceIndex.generated_at = requeuedAt;
@@ -705,7 +721,7 @@ async function main() {
         stale: legacyValues.filter((entry) => entry.status === 'stale').length,
       };
     }
-    if (legacyCooldownUpgraded || retryablePlaceholdersRemoved) writes.push(writeJson(priceIndexPath, priceIndex));
+    if (legacyCooldownUpgraded || retryablePlaceholdersRemoved || inactiveTargetsMarked) writes.push(writeJson(priceIndexPath, priceIndex));
     if (retryablePlaceholdersRemoved) writes.push(writeJson(legacyPath, legacyBook), shards.write());
     if (writes.length) await Promise.all(writes);
     return;

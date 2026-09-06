@@ -10,6 +10,7 @@ import {
   isDeterministicFailure,
   ligaMagicLookupName,
   ligaMagicUrl,
+  markInactivePriceTargets,
   prependPublishedDeckPriorities,
   priceTuple,
   publishedDeckPriorityCards,
@@ -117,6 +118,19 @@ test('trata tombstone de repetição como carta ainda não tentada', () => {
     cards: [{ oracleId: 'a', name: 'Alpha' }],
     missing: 1,
   });
+});
+
+test('trata preço inativo que voltou ao catálogo como pendente', () => {
+  const targets = [{ oracleId: 'a', name: 'Alpha' }];
+  assert.equal(selectBatch(targets, { a: [100, 'x', 2000] }, 1).missing, 1);
+});
+
+test('marca preços órfãos sem apagar seu valor histórico', () => {
+  const priceIndex = { prices: { active: [100, 'a', 1000], orphan: [250, 'a', 1000] } };
+  const marked = markInactivePriceTargets(priceIndex, [{ oracleId: 'active', name: 'Active' }], 3_000_000);
+  assert.equal(marked, 1);
+  assert.deepEqual(priceIndex.prices.active, [100, 'a', 1000]);
+  assert.deepEqual(priceIndex.prices.orphan, [250, 'x', 3000]);
 });
 
 test('varia o intervalo de recuperação somente entre 25 e 35 segundos', () => {
@@ -270,6 +284,26 @@ test('preserva tombstone recente sem contá-lo como tentativa concluída', () =>
   assert.equal(merged.coverage.confirmed_count, 1);
   assert.equal(merged.mode, 'bootstrap');
   assert.equal(merged.failures.retry.count, 1);
+});
+
+test('aceita redução do catálogo mais recente e exclui inativos da cobertura', () => {
+  const current = {
+    generated_at: '2026-09-06T19:00:00.000Z',
+    coverage: { target_count: 3 },
+    prices: { active: [100, 'a', 1000], orphan: [200, 'a', 1000] },
+    failures: {},
+  };
+  const incoming = {
+    generated_at: '2026-09-06T20:00:00.000Z',
+    coverage: { target_count: 2 },
+    prices: { active: [100, 'a', 1000], orphan: [200, 'x', 2000] },
+    failures: {},
+  };
+
+  const merged = mergePriceIndexes(current, incoming);
+  assert.equal(merged.coverage.target_count, 2);
+  assert.equal(merged.coverage.attempted_count, 1);
+  assert.equal(merged.coverage.confirmed_count, 1);
 });
 
 test('mantém o detalhe mais recente de cada carta durante a mesclagem', () => {

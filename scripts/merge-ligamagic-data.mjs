@@ -65,7 +65,7 @@ function mergePriceTuples(current = {}, incoming = {}) {
 }
 
 function coverageFor(prices, targetCount, previousCoverage = {}) {
-  const values = Object.values(prices || {}).filter((entry) => entry?.[1] !== 'r');
+  const values = Object.values(prices || {}).filter((entry) => !['r', 'x'].includes(entry?.[1]));
   const attemptedCount = values.length;
   const confirmedCount = values.filter((entry) => entry?.[1] === 'a').length;
   const unavailableCount = values.filter((entry) => entry?.[1] === 'u').length;
@@ -84,7 +84,8 @@ function coverageFor(prices, targetCount, previousCoverage = {}) {
 export function mergePriceIndexes(current = {}, incoming = {}) {
   const newest = timeValue(incoming.generated_at) >= timeValue(current.generated_at) ? incoming : current;
   const prices = mergePriceTuples(current.prices, incoming.prices);
-  const targetCount = Math.max(Number(current.coverage?.target_count) || 0, Number(incoming.coverage?.target_count) || 0);
+  const targetCount = Number(newest.coverage?.target_count)
+    || Math.max(Number(current.coverage?.target_count) || 0, Number(incoming.coverage?.target_count) || 0);
   const coverage = coverageFor(prices, targetCount, newest.coverage);
   return {
     ...current,
