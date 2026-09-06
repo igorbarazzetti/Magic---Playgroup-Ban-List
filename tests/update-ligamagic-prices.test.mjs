@@ -6,6 +6,7 @@ import {
   extractCheapestNormalPrinting,
   extractLigaMagicResultUrl,
   fetchPublishedDeckPriorities,
+  isRetryableUnavailableDetail,
   isDeterministicFailure,
   ligaMagicLookupName,
   ligaMagicUrl,
@@ -104,6 +105,20 @@ test('após a cobertura atualiza primeiro os registros mais antigos', () => {
   assert.equal(prices.c[priceTuple.status], 's');
 });
 
+test('trata tombstone de repetição como carta ainda não tentada', () => {
+  const targets = [
+    { oracleId: 'a', name: 'Alpha' },
+    { oracleId: 'b', name: 'Beta' },
+  ];
+  const prices = { a: [null, 'r', 2000], b: [100, 'a', 1000] };
+
+  assert.deepEqual(selectBatch(targets, prices, 1), {
+    mode: 'bootstrap',
+    cards: [{ oracleId: 'a', name: 'Alpha' }],
+    missing: 1,
+  });
+});
+
 test('varia o intervalo de recuperação somente entre 25 e 35 segundos', () => {
   assert.equal(requestDelayMs(() => 0), 25_000);
   assert.equal(requestDelayMs(() => 0.5), 30_000);
@@ -134,6 +149,14 @@ test('separa falhas determinísticas de bloqueios e falhas temporárias', () => 
   assert.equal(isDeterministicFailure(null, 'A lista de impressões não foi encontrada na página.'), true);
   assert.equal(isDeterministicFailure(429, 'HTTP 429'), false);
   assert.equal(isDeterministicFailure(null, 'fetch failed'), false);
+});
+
+test('recoloca bloqueios e falhas do parser antigo na fila de preços', () => {
+  assert.equal(isRetryableUnavailableDetail({ last_error: 'HTTP 403' }), true);
+  assert.equal(isRetryableUnavailableDetail({ last_error: 'HTTP 429' }), true);
+  assert.equal(isRetryableUnavailableDetail({ last_error: 'A lista de impressões não foi encontrada na página.' }), true);
+  assert.equal(isRetryableUnavailableDetail({ last_error: 'HTTP 500' }), false);
+  assert.equal(isRetryableUnavailableDetail({}), false);
 });
 
 test('permite priorizar uma carta pelo nome exato ou pela face principal', () => {
@@ -224,6 +247,29 @@ test('mescla lotes concorrentes sem apagar um preço prioritário', () => {
   assert.deepEqual(merged.prices['outra-carta'], [250, 'a', 1786322118]);
   assert.equal(merged.coverage.attempted_count, 2);
   assert.equal(merged.coverage.confirmed_count, 2);
+});
+
+test('preserva tombstone recente sem contá-lo como tentativa concluída', () => {
+  const current = {
+    generated_at: '2026-09-06T19:00:00.000Z',
+    coverage: { target_count: 2 },
+    prices: { retry: [null, 'u', 1000], ok: [150, 'a', 1000] },
+    failures: {},
+  };
+  const incoming = {
+    generated_at: '2026-09-06T20:00:00.000Z',
+    parser_version: 2,
+    coverage: { target_count: 2 },
+    prices: { retry: [null, 'r', 2000], ok: [150, 'a', 1000] },
+    failures: { retry: { count: 1, attempted_at: '2026-09-06T20:00:00.000Z' } },
+  };
+
+  const merged = mergePriceIndexes(current, incoming);
+  assert.deepEqual(merged.prices.retry, [null, 'r', 2000]);
+  assert.equal(merged.coverage.attempted_count, 1);
+  assert.equal(merged.coverage.confirmed_count, 1);
+  assert.equal(merged.mode, 'bootstrap');
+  assert.equal(merged.failures.retry.count, 1);
 });
 
 test('mantém o detalhe mais recente de cada carta durante a mesclagem', () => {

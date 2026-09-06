@@ -27,6 +27,7 @@ const challengeCooldownBaseMs = Math.max(24 * 60 * 60 * 1000, Number(process.env
 const challengeCooldownMaxMs = Math.max(challengeCooldownBaseMs, Number(process.env.LIGAMAGIC_CHALLENGE_COOLDOWN_MAX_MS || 72 * 60 * 60 * 1000));
 const publishedDecksUrl = process.env.FORMATINHO_PUBLISHED_DECKS_URL || 'https://formatinho.igorb.com.br/api/decks/price-priority';
 const deterministicFailureLimit = 2;
+const parserVersion = 2;
 const bootstrapCardsPerDayEstimate = 6_000;
 const requestHeaders = {
   Accept: 'text/html,application/xhtml+xml',
@@ -370,6 +371,7 @@ async function repairCatalogPrices(catalog) {
 function emptyPriceIndex() {
   return {
     schema_version: 1,
+    parser_version: parserVersion,
     source: { name: sourceName, homepage: sourceHomepage, attribution: 'Preços consultados na LigaMagic para uso pessoal do playgroup.' },
     generated_at: null,
     last_batch_at: null,
@@ -431,18 +433,35 @@ async function migrateLegacy(priceIndex, legacyBook, shards) {
   }
 }
 
-async function removeBlockedPlaceholders(priceIndex, legacyBook, shards) {
+export function isRetryableUnavailableDetail(detail) {
+  const error = String(detail?.last_error || '');
+  return /^HTTP\s+(403|429)\b/.test(error)
+    || /lista de impressões não foi encontrada/i.test(error);
+}
+
+async function requeueRetryablePlaceholders(priceIndex, legacyBook, shards) {
+  if (Number(priceIndex.parser_version || 1) >= parserVersion) return 0;
   let removed = 0;
+  const requeuedAt = new Date().toISOString();
   for (const [oracleId, tuple] of Object.entries(priceIndex.prices || {})) {
     if (tuple?.[priceTuple.status] !== 'u') continue;
     const detail = await shards.get(oracleId);
-    if (!/^HTTP\s+(403|429)\b/.test(String(detail?.last_error || ''))) continue;
-    delete priceIndex.prices[oracleId];
-    delete legacyBook.cards?.[oracleId];
-    await shards.delete(oracleId);
+    if (!isRetryableUnavailableDetail(detail)) continue;
+    priceIndex.prices[oracleId] = [null, 'r', timestampSeconds(requeuedAt)];
+    const retryDetail = {
+      ...detail,
+      status: 'retry',
+      price_brl: null,
+      checked_at: requeuedAt,
+      last_error: `Recolocada na fila após atualização do parser ${parserVersion}.`,
+    };
+    if (legacyBook.cards?.[oracleId]) legacyBook.cards[oracleId] = retryDetail;
+    await shards.set(oracleId, retryDetail);
     removed += 1;
   }
-  if (removed) console.log(`${removed} bloqueios antigos foram removidos da cobertura para nova tentativa.`);
+  priceIndex.parser_version = parserVersion;
+  if (removed) console.log(`${removed} bloqueios ou falhas do parser antigo foram recolocados na fila.`);
+  return removed;
 }
 
 function targetCards(catalog) {
@@ -453,7 +472,7 @@ function targetCards(catalog) {
 }
 
 export function selectBatch(targets, prices, limit) {
-  const missing = targets.filter((card) => !prices[card.oracleId]);
+  const missing = targets.filter((card) => !prices[card.oracleId] || prices[card.oracleId]?.[priceTuple.status] === 'r');
   if (missing.length) return { mode: 'bootstrap', cards: missing.slice(0, limit), missing: missing.length };
   const oldest = [...targets].sort((left, right) => Number(prices[left.oracleId]?.[priceTuple.checkedAt] || 0) - Number(prices[right.oracleId]?.[priceTuple.checkedAt] || 0));
   return { mode: 'maintenance', cards: oldest.slice(0, limit), missing: 0 };
@@ -563,7 +582,8 @@ export function isDeterministicFailure(statusCode, message = '') {
 }
 
 function coverageFor(targets, prices, mode) {
-  const values = targets.map((card) => prices[card.oracleId]).filter(Boolean);
+  const values = targets.map((card) => prices[card.oracleId])
+    .filter((entry) => entry && entry[priceTuple.status] !== 'r');
   const attempted = values.length;
   const remaining = Math.max(0, targets.length - attempted);
   const days = remaining / bootstrapCardsPerDayEstimate;
@@ -627,7 +647,7 @@ async function main() {
   const legacyBook = await readJson(legacyPath, { cards: {} });
   const shards = await createShardStore();
   await migrateLegacy(priceIndex, legacyBook, shards);
-  await removeBlockedPlaceholders(priceIndex, legacyBook, shards);
+  const retryablePlaceholdersRemoved = await requeueRetryablePlaceholders(priceIndex, legacyBook, shards);
   const targets = targetCards(catalog);
   let selection = selectBatch(targets, priceIndex.prices, options.limit);
   if (selection.mode === 'maintenance') {
@@ -672,7 +692,21 @@ async function main() {
     console.log(`Coleta pausada até ${priceIndex.cooldown_until} após bloqueios consecutivos da LigaMagic.`);
     const writes = [];
     if (JSON.stringify(catalog) !== JSON.stringify(previousCatalog)) writes.push(writeJson(catalogPath, catalog));
-    if (legacyCooldownUpgraded) writes.push(writeJson(priceIndexPath, priceIndex));
+    if (retryablePlaceholdersRemoved) {
+      const requeuedAt = new Date().toISOString();
+      priceIndex.mode = selection.mode;
+      priceIndex.generated_at = requeuedAt;
+      priceIndex.coverage = coverageFor(targets, priceIndex.prices, selection.mode);
+      legacyBook.generated_at = requeuedAt;
+      const legacyValues = Object.values(legacyBook.cards || {});
+      legacyBook.summary = {
+        available: legacyValues.filter((entry) => entry.status === 'available').length,
+        unavailable: legacyValues.filter((entry) => entry.status === 'unavailable').length,
+        stale: legacyValues.filter((entry) => entry.status === 'stale').length,
+      };
+    }
+    if (legacyCooldownUpgraded || retryablePlaceholdersRemoved) writes.push(writeJson(priceIndexPath, priceIndex));
+    if (retryablePlaceholdersRemoved) writes.push(writeJson(legacyPath, legacyBook), shards.write());
     if (writes.length) await Promise.all(writes);
     return;
   }

@@ -47,7 +47,9 @@ export function mergeRecordMaps(current = {}, incoming = {}) {
 
 function mergeFailures(current = {}, incoming = {}, prices = {}) {
   const merged = mergeRecordMaps(current, incoming);
-  for (const id of Object.keys(prices)) delete merged[id];
+  for (const [id, tuple] of Object.entries(prices)) {
+    if (tuple?.[1] !== 'r') delete merged[id];
+  }
   return merged;
 }
 
@@ -63,7 +65,7 @@ function mergePriceTuples(current = {}, incoming = {}) {
 }
 
 function coverageFor(prices, targetCount, previousCoverage = {}) {
-  const values = Object.values(prices || {});
+  const values = Object.values(prices || {}).filter((entry) => entry?.[1] !== 'r');
   const attemptedCount = values.length;
   const confirmedCount = values.filter((entry) => entry?.[1] === 'a').length;
   const unavailableCount = values.filter((entry) => entry?.[1] === 'u').length;
