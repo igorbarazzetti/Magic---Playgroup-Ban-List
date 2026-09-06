@@ -81,14 +81,16 @@ export function extractLigaMagicResultUrl(html, cardName) {
   const expectedName = normalizeName(cardName);
   const anchors = String(html).matchAll(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi);
   for (const match of anchors) {
-    const text = decodeHtml(match[2].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim())
-      .replace(/&(?:l|r)dquo;/gi, '"')
-      .replace(/&(?:l|r)squo;/gi, "'");
-    if (normalizeName(text) !== expectedName) continue;
     const href = decodeHtml(match[1]);
     try {
       const url = new URL(href, sourceHomepage);
       if (url.hostname !== 'www.ligamagic.com.br' || url.searchParams.get('view') !== 'cards/card' || !url.searchParams.get('card')) continue;
+      const normalizeResultName = (value) => normalizeName(decodeHtml(value)
+        .replace(/&(?:l|r)dquo;/gi, '"')
+        .replace(/&(?:l|r)squo;/gi, "'"));
+      const text = match[2].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+      const linkedName = ligaMagicLookupName(url.searchParams.get('card'));
+      if (normalizeResultName(text) !== expectedName && normalizeResultName(linkedName) !== expectedName) continue;
       return url.toString();
     } catch {
       // Ignora links malformados presentes no HTML e continua procurando.

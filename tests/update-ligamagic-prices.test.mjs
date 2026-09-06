@@ -38,6 +38,13 @@ test('resolve o link canônico retornado pela LigaMagic para nomes especiais', (
   assert.equal(new URL(url).searchParams.get('card'), '&ldquo;Ach! Hans, Run!&rdquo;');
 });
 
+test('resolve pelo nome canônico do link quando o resultado não tem texto visível', () => {
+  const html = '<a href="/?view=cards/card&amp;card=Giant+Growth&amp;aux=Crescimento+Desenfreado"><img alt=""></a>';
+  const url = extractLigaMagicResultUrl(html, 'Giant Growth');
+  assert.equal(new URL(url).searchParams.get('card'), 'Giant Growth');
+  assert.equal(new URL(url).searchParams.get('aux'), 'Crescimento Desenfreado');
+});
+
 test('não converte preço USD ausente em zero', () => {
   assert.equal(usdCents({ prices: { usd: null } }), null);
   assert.equal(usdCents({ prices: { usd: '' } }), null);
